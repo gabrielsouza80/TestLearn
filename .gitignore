@@ -147,3 +147,12 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+node_modules/
+dist/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Local copyrighted reference documents and audit extraction tools
+/docs/Certified Tester Foundation Level (CTFL) v4.0/
+/tmp/
