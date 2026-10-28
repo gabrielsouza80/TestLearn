@@ -1,3 +1,5 @@
+> Revisão atual **2026-10-27.7**: [Fase 5B — revisão de distratores](#fase-5b--revisão-final-6--7). Registos anteriores preservados como histórico.
+
 > Revisão atual **2026-10-27.6**: [Fase 5A — variedade e K3](#fase-5a--variedade-e-k3), no fim. Os registos anteriores são históricos.
 
 ﻿# Auditoria académica e PT-PT — TestLearn
@@ -1101,3 +1103,871 @@ Foram revistas 64 alternativas novas e as justificações nos dois idiomas. PT-P
 Os 66 objetos anteriores permanecem profundamente iguais ao arquivo .5, incluindo as 39 perguntas antigas de três opções, deixadas para a fase 5B. O banco atual tem K1=18/K2=47/K3=17 e capítulos 16/12/8/21/21/4. Há apenas duas perguntas para cada um dos 16 LO agora reforçados; a repetição continua possível. Algumas opções corretas podem continuar mais completas que os distratores; não foram medidos dificuldade empírica, discriminação ou tempo com candidatos. Os novos K3 exigem aplicação de dados/regras, mas não se afirma dificuldade equivalente a exame oficial.
 
 Software PASS, avaliação académica por IA PASS, aprovação humana e calibração psicométrica são estados separados. **82 perguntas e 82 traduções aguardam aprovação humana; HUMAN_APPROVED=0**. A evidência quantitativa e de execução fica na [validação da fase 5A](blueprint-validation.md#fase-5a--variedade-quantificada). Recomenda-se revisão humana sem acesso prévio à chave, começando pelos sete novos K3 e pelas justificações dos distratores.
+
+## Fase 5B — baseline editorial anterior às alterações (28-10-2026)
+
+Preflight concluído antes do arquivo .6 e antes de editar o banco: 82 IDs consecutivos tl-001–tl-082, 82 elegíveis, 64 LO, 29 grupos. Exatamente 39 itens de três opções: tl-002–tl-040; os outros 43 ficam fora do âmbito. Revisão .6 e arquivos .1–.5 válidos. Trabalho local 5C inventariado em tmp/phase5b-preflight.json e preservado; evidência imediatamente anterior: 112 unitários/integração e 50 E2E passaram, exit 0. Não há falha de integridade material.
+
+Consulta técnica: syllabus EN 4.0.1 (15-09-2024), secções/páginas por item abaixo; PT 4.0 v1.0 como referência terminológica, não tradução do erratum. Tabelas v1.19 pp.1,4–5 confirmam 40 perguntas, 8/24/8 por K-level e 29 grupos. Amostras A1.7/B1.7/C1.6/D1.5, p.13 de cada, apenas para estilo/estrutura; nada dessas perguntas foi incorporado. A consulta é parcial e não implica auditoria integral das amostras.
+
+Categorias: defeito factual = incompatibilidade demonstrável; fragilidade pedagógica = distrator/indício/nível pouco exigente; preferência editorial = forma sem mudança de conceito. Não foi identificado erro de chave que exija bloqueio. As insuficiências de contexto em tl-005/tl-010/tl-034 e a fragilidade K2 em tl-024 podem ser corrigidas preservando conceito/chave/LO. EN/PT analisados em paralelo: não se encontrou nova divergência factual nos 39; a reformulação exigirá nova verificação.
+
+| ID     | LO / K / versão .6 / chave / cardinalidade | Fonte EN: secção, páginas PDF | Resolução e diagnóstico individual antes da edição                                                                                                                                                                                                           |
+| ------ | ------------------------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| tl-002 | FL-1.2.2 / K1 / v2 / o1 / 1                | 1.2.2, 17                     | QA/QC: o1 melhora o processo; o2/o3 avaliam/reportam o produto. K1 adequado. Falta uma alternativa próxima de revisão; sem defeito factual identificado.                                                                                                     |
+| tl-003 | FL-1.1.2 / K2 / v3 / o1 / 1                | 1.1.2, 16                     | Debugging: o1 localiza/remove o defeito; confirmação é teste. K2 muito direto, mas distinção válida. A reprodução isolada seria ambígua; preservar ressalva e aproximar distratores de atividades reais de teste.                                            |
+| tl-004 | FL-1.2.3 / K2 / v1 / o1 / 1                | 1.2.3, 17                     | A fórmula no código é um defeito (o1), não a ação humana nem o comportamento observado. K2 classifica um exemplo concreto. Completar a cadeia causal com uma alternativa de causa raiz, sem confundir a causa com a fórmula.                                 |
+| tl-005 | FL-1.3.1 / K2 / v1 / o1 / 1                | 1.3, 17, 18                   | Variar testes/dados (o1) pode melhorar deteção, mas ausência de novos defeitos, sozinha, não prova desgaste. Clarificar falhas novas fora da suite; substituir declarar ausência de defeitos/parar regressão por estratégias plausíveis porém insuficientes. |
+| tl-006 | FL-1.4.1 / K2 / v2 / o1 / 1                | 1.4.1, 18, 19                 | Derivar condições é análise (o1). K2 adequado, contexto suficiente. Execução/conclusão são distantes; acrescentar conceção, a confusão mais próxima, e explicar o que versus como testar.                                                                    |
+| tl-007 | FL-1.4.4 / K2 / v1 / o1 / 1                | 1.4.4, 20, 21                 | Ligações identificam impacto (o1). Reparação automática e eliminação da análise tornam os distratores óbvios. Substituir por confusão entre rastreabilidade, evidência de execução e oráculo de resultados.                                                  |
+| tl-008 | FL-1.5.3 / K2 / v3 / o1 / 1                | 1.5.3, 22, 23                 | Perspetivas diferentes (o1) desafiam pressupostos. Independentes nunca falham é pista absoluta; explorar transferência de responsabilidade, perda de competências e isolamento. K2 simples, sem garantia de deteção.                                         |
+| tl-009 | FL-2.1.2 / K1 / v1 / o1 / 1                | 2.1.2, 25, 26                 | Análise paralela ao desenvolvimento (o1) é boa prática. K1 adequado. Esperar deployment/um nível apenas são pouco competitivos; aproximar os erros de timing, objetivos por nível e substituição indevida de revisões.                                       |
+| tl-010 | FL-2.1.3 / K1 / v2 / o1 / 1                | 2.1.3, 26                     | TDD (o1) é compatível; escrever testes antes do código também ocorre em ATDD/BDD. Clarificar o ciclo teste-código-refatoração antes de oferecer essas alternativas plausíveis. K1 reconhece uma característica, sem aplicação adicional.                     |
+| tl-011 | FL-2.2.3 / K2 / v1 / o1 / 1                | 2.2.3, 30, 31                 | Repetir teste falhado é confirmação, verificar efeitos noutras áreas é regressão (o1). K2 adequado. Usar quatro combinações simétricas e justificar cada classificação.                                                                                      |
+| tl-012 | FL-2.2.1 / K2 / v2 / o1 / 1                | 2.2.1, 28, 29                 | Interfaces entre módulos internos implicam integração de componentes (o1). K2 adequado. Falta componente isolado, confusão de âmbito relevante. Não confundir integração interna com sistemas externos.                                                      |
+| tl-013 | FL-2.1.5 / K2 / v1 / o1 / 1                | 2.1.5, 27                     | Antecipar revisão é shift left (o1). Os distratores atuais negar testes posteriores/produção apenas são fáceis. Contrastar timing e finalidade de shift right, regressão e conclusão.                                                                        |
+| tl-014 | FL-2.3.1 / K2 / v1 / o1 / 1                | 2.3, 31                       | Migrar ambiente operacional desencadeia manutenção (o1). Os incorretos negam regressões/efeitos da infraestrutura. Substituir por confusões entre mudança de ambiente, dados e validade da evidência anterior.                                               |
+| tl-015 | FL-3.1.1 / K1 / v1 / o1 / 1                | 3.1.1, 33                     | Requisitos são um produto examinável estaticamente (o1). Não usar logs/código como distratores, pois também são examináveis. Contrastar documento com medições/comportamentos dependentes de execução. K1 continua reconhecimento.                           |
+| tl-016 | FL-3.2.3 / K1 / v2 / o1 / 1                | 3.2.3, 36                     | Moderador facilita a reunião (o1). K1 correto; redator/gestor já são plausíveis. Acrescentar líder de revisão e distinguir responsabilidade global de facilitação.                                                                                           |
+| tl-017 | FL-3.1.3 / K2 / v1 / o1 / 1                | 3.1.3, 34                     | Revisão encontra defeito diretamente; execução observa falha (o1). K2 contextual. Os incorretos atuais são frágeis; criar classificações simétricas de defeito/falha e limites da inferência da causa.                                                       |
+| tl-018 | FL-3.2.4 / K2 / v2 / o1 / 1                | 3.2.4, 36, 37                 | Inspeção (o1) é a mais formal e recolhe métricas. K2 simples, cenário suficiente. Distratores técnicos/walkthrough adequados; acrescentar revisão informal sem alegar que outras revisões nunca recolhem métricas.                                           |
+| tl-019 | FL-4.1.1 / K2 / v1 / o1 / 1                | 4.1, 39                       | Base em comportamento especificado indica caixa-preta (o1). K2 adequado. Remover apenas em experiência; a quarta opção deve distinguir abordagem de risco da família por base de derivação, sem inventar uma família CTFL.                                   |
+| tl-020 | FL-4.3.1 / K2 / v1 / o1 / 1                | 4.3.1, 42                     | Cobertura de instruções 100% não implica ramos (o1). K2 correto. Requisitos corretos é demasiado distante; contrastar ramos, caminhos e correção funcional.                                                                                                  |
+| tl-021 | FL-4.3.2 / K2 / v1 / o1 / 1                | 4.3.2, 43                     | Um ramo de dois dá 50% (o1). K2 explica a medida com aritmética elementar; não promover para K3. Novo 25% deve corresponder a denominador duplicado; manter âmbito restrito aos dois ramos.                                                                  |
+| tl-022 | FL-4.4.1 / K2 / v2 / o1 / 1                | 4.4.1, 43, 44                 | Conhecimento de falhas anteriores guia antecipação de erros (o1). K2 adequado; exaustivo é distante. Clarificar a base de seleção e distinguir exploração e fronteiras, admitindo combinação de técnicas noutros contextos.                                  |
+| tl-023 | FL-4.4.2 / K2 / v3 / o1 / 1                | 4.4.2, 44                     | Aprender/conceber/executar em conjunto caracteriza exploração (o1). K2 adequado. Retirar apenas; distinguir scripts fixos, antecipação de erros e checklists, sem afirmar exclusividade entre técnicas.                                                      |
+| tl-024 | FL-4.5.2 / K2 / v2 / o1 / 1                | 4.5.2, 45, 46                 | o1 explicita contexto-evento-resultado. Enunciado atual pede reconhecer palavras Given/When/Then, fragilidade K2. Pedir adequação a uma necessidade de exemplo observável; manter regra de negócio e o1.                                                     |
+| tl-025 | FL-4.2.1 / K3 / v1 / o1 / 1                | 4.2.1, 39, 40                 | Partições <3, 3..8, >8: 2/5/9 é mínimo (o1), três representantes. K3 aplicado e inequívoco. Acrescentar conjunto de três que repete válida e omite superior; não oferecer outra solução válida.                                                              |
+| tl-026 | FL-4.2.2 / K3 / v2 / o1 / 1                | 4.2.2, 40                     | BVA 2 valores: 9/10 e 20/21 (o1). K3 aplicado. Um superconjunto de seis valores também cobriria os quatro e não pode ser distrator no enunciado atual. Usar erros de inclusão/exclusão de fronteiras.                                                        |
+| tl-027 | FL-4.2.3 / K3 / v2 / o1 / 1                | 4.2.3, 41                     | R1 exige membro e total≥50; sim/60 (o1). K3 aplicado; tabela suficiente. Quarta opção deve corresponder a R4, completando os quatro padrões sem alterar tabela.                                                                                              |
+| tl-028 | FL-4.2.4 / K3 / v2 / o1 / 1                | 4.2.4, 41, 42                 | Rascunho-Submeter-Pendente-Pagar-Paga resolve o1. K3 aplicado, todas as restantes combinações são inválidas. Acrescentar transição extra após chegar a Paga; não supor eventos ignorados.                                                                    |
+| tl-029 | FL-4.5.3 / K3 / v2 / o1 / 1                | 4.5.3, 46                     | 49→5 e 50→0 (o1) pela regra inclusiva. K3 aplicado. Completar as quatro combinações possíveis de resultados; manter formato paralelo e colaboração ATDD anterior à implementação.                                                                            |
+| tl-030 | FL-5.1.6 / K1 / v1 / o1 / 1                | 5.1.6, 50, 51                 | Pirâmide favorece muitos testes pequenos e poucos grandes (o1). K1 adequado. Só UI/igual obrigatório são óbvios; contrastar pirâmide invertida, distribuição uniforme e concentração na integração.                                                          |
+| tl-031 | FL-5.1.1 / K2 / v2 / o1 / 1                | 5.1.1, 48                     | Plano reúne âmbito, recursos e abordagem (o1). K2 contextual, mas relatório de defeito/registo são distantes. Distinguir política, cronograma e relatório de conclusão como artefactos relacionados mas insuficientes.                                       |
+| tl-032 | FL-5.1.3 / K2 / v2 / o1 / 1                | 5.1.3, 49                     | Ambiente antes do início é entrada; aceitação de risco para conclusão é saída (o1). K2 adequado. Ambos dados é absurdo; oferecer as quatro combinações entrada/saída.                                                                                        |
+| tl-033 | FL-5.2.2 / K2 / v2 / o1 / 1                | 5.2.2, 52                     | Cálculo fiscal incorreto é risco de qualidade do produto (o1), saídas/atrasos são projeto. K2 adequado. Formular como possibilidade, sem converter a classificação num defeito já observado; acrescentar risco de fornecedor.                                |
+| tl-034 | FL-5.2.3 / K2 / v1 / o1 / 1                | 5.2.3, 52, 53                 | Impacto importa, mas probabilidade ausente deixa a alocação comparativa subespecificada. Explicitar probabilidade comparável para sustentar o1; contrastar visibilidade, duração e probabilidade isolada.                                                    |
+| tl-035 | FL-5.4.1 / K2 / v2 / o1 / 1                | 5.4, 56                       | Reprodução precisa de identificar configuração de software/testes/dados (o1). K2 adequado. Nome de testador é fraco; contrastar preservação parcial e atualização de um elemento da configuração.                                                            |
+| tl-036 | FL-5.1.4 / K3 / v2 / o1 / 1                | 5.1.4, 49, 50                 | (2+4×5+14)/6=6 (o1), média simples=7; K3 aplicado. Acrescentar 5, confundindo estimativa mais provável com ponderada. Manter valores/unidades.                                                                                                               |
+| tl-037 | FL-5.1.5 / K3 / v1 / o1 / 1                | 5.1.5, 50, 51                 | Disponíveis inicialmente B/C; B primeiro, depois C desbloqueia A: B,C,A (o1). K3 aplicado. Acrescentar B,A,C, que respeita a primeira prioridade mas viola a dependência.                                                                                    |
+| tl-038 | FL-5.5.1 / K3 / v2 / o1 / 1                | 5.5, 56, 57                   | o1 preserva QA/build82/INV-7/25/Save/201/500/r17. K3 seleciona relatório aplicado. Outros dois alteram resultados/configuração; acrescentar diagnóstico inventado sem evidência. Igualar estrutura das quatro opções.                                        |
+| tl-039 | FL-6.1.1 / K2 / v1 / o1 / 1                | 6.1, 59                       | Gerar tráfego e medir latência exige ferramenta de carga (o1). K2 contextual, mas corretor/lista são absurdos. Contrastar ferramentas reais de análise estática, monitorização e gestão; esclarecer geração ativa da carga.                                  |
+| tl-040 | FL-6.2.1 / K1 / v2 / o1 / 1                | 6.2, 59, 60                   | Subestimar manutenção é risco (o1); opções atuais são garantias falsas. K1 distingue risco de benefícios reais: redução de repetição, repetibilidade e métricas. Não inserir outros riscos que seriam igualmente corretos.                                   |
+
+Todos os 39: review/translationReview=AI_REVIEWED, academicReview=PASS anterior (não prova independente), humanApproval=PENDING. Cenários K3 com dados suficientes; resultados derivados acima antes de criar alternativas. Complexidade simples continua uma limitação pedagógica, não se alteram K-levels para a esconder. Métricas de comprimento e termos absolutos serão comparadas na avaliação final, sem as confundir com dificuldade psicométrica.
+
+## Fase 5B — revisão final .6 → .7
+
+Foram revistos os 39 alvos, sem novos IDs. Todos recebem o4, uma alternativa incorreta original; a chave o1 e a cardinalidade 1 mantêm-se. Os outros 43 objetos são profundamente iguais ao arquivo .6. O banco .7 tem 82 perguntas e 328 opções (quatro em cada pergunta); a pergunta múltipla tl-001 mantém o1/o4 e cardinalidade 2.
+
+Arquivo .6: `src/data/archive/questions-2026-10-27.6.json`, 82 objetos, serialização Prettier JSON com LF, SHA-256 **8bf1990ee8eb05f93eec529fe903a05db20ad72a649648f161f2847802c6012e**. Foi criado exclusivamente antes de alterar o banco e comparado profundamente com o runtime .6. Os hashes .1–.5 mantêm-se. O resolver continua assíncrono; .6 só foi acrescentada à lista de imports dinâmicos e revisões suportadas, sem fallback/migração.
+
+### Método e alcance da contestação
+
+Depois da primeira redação, as 39 perguntas foram apresentadas com alternativas baralhadas em letras A–D, sem chaves, explicações ou IDs de opção. Foram registadas respostas e razões antes de consultar o mapa letra→ID/chave: 39 coincidências. O agente já tinha visto as chaves e também escreveu o conteúdo: esta é uma **passagem adversarial separada do mesmo agente, com exposição prévia**, não revisão externa cega nem revisão independente entre modelos. A coincidência de chaves não determinou automaticamente PASS: abaixo constam argumentos em defesa das alternativas incorretas e a respetiva refutação.
+
+Foram assinaladas NEEDS_REVISION durante a contestação tl-008 (benefício principal CTFL, não promessa de isolamento), tl-023 (atividades combinadas, não exclusão de técnicas auxiliares) e tl-034 (esforço baseado no risco, não ordenação por custo). Os enunciados foram clarificados e reavaliados; os 39 ficaram PASS dentro deste âmbito de revisão por IA. Não ficou bloqueio técnico identificado que exija trocar chave/LO/K/cardinalidade. Em tl-038, PT usa bloqueio mútuo, em vez de inglês não necessário.
+
+Uma segunda passagem editorial detetou uma pista introduzida no rascunho: a correta era estritamente a mais curta em 13/39 EN. As opções foram reequilibradas por redação natural, sem quotas artificiais de comprimento. A versão final foi relida contra as razões da contestação; as seleções e princípios mantêm-se. Não se afirma independência psicométrica ou dificuldade de exame oficial.
+
+### Indicadores editoriais
+
+Contagem por palavras separadas por espaço; apenas textos das alternativas dos 39 alvos, não enunciados/explicações. Mais longa/curta significa estritamente, sem empates. Termos EN: always/never/only/all/guarantee(d)/impossible; PT: sempre/nunca/apenas/todos/todas/garante/garantido/impossível. É um diagnóstico lexical limitado, não análise gramatical ou calibração.
+
+| Indicador                         | EN antes → depois | PT antes → depois |
+| --------------------------------- | ----------------: | ----------------: |
+| Opções analisadas                 |         117 → 156 |         117 → 156 |
+| Correta estritamente mais longa   |             9 → 3 |             9 → 4 |
+| Correta estritamente mais curta   |             5 → 0 |             7 → 1 |
+| Ocorrências dos termos absolutos  |            19 → 1 |            23 → 2 |
+| Comprimento mínimo/mediano/máximo |   1/4/23 → 1/5/27 |   1/5/26 → 1/6/30 |
+
+Persistem pistas pontuais de comprimento: EN tl-003/008/009 mais longas; PT tl-002/009/020/034 mais longas e tl-013 mais curta (termo shift left). Não se removeu precisão nem se esticaram rótulos só para igualar comprimentos. K1 continua reconhecimento, incluindo tl-015 e tl-040; vários K2/K3 permanecem exercícios simples. As médias de tempo/dificuldade, discriminação e funcionamento dos distratores exigem dados de utilização e revisão humana.
+
+### Verificação bilingue
+
+390 pares de texto dos itens alterados (enunciado, explicação geral, quatro alternativas e quatro justificações) foram verificados para presença e valores numéricos na mesma ordem. A revisão semântica por IA verificou atores, condições, limiares inclusivos, eventos/estados, modalidade e erro de raciocínio nos dois idiomas. A verificação numérica automatizada não substitui essa revisão. Tabelas, identificadores, símbolos e fórmulas foram preservados. Terminologia PT consultada no syllabus PSTQB: scripts de teste (p.20/22/62), moderador/redator/líder (p.39), antecipação de erros (p.47) e carta de testes/checklists (p.48). O inglês técnico 4.0.1 prevalece sobre o português 4.0 para conteúdo técnico.
+
+### Fase 5B — tl-002
+
+FL-1.2.2, capítulo 1, K1; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.2.2, PDF p.17**. Alterações: explicação geral EN/PT; o1.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Reviewing the source code of the tax module
+
+Novo **o4 PT-PT:** Rever o código-fonte do módulo fiscal
+
+**Resolução e K-level — PASS:** letra D → o1. QA melhora o processo; executar, reportar e rever código avaliam produto. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A execução automatizada é frequentemente chamada QA no uso corrente. Refutação — A execução avalia o produto.
+
+- **o3:** argumento possível — O reporte pode fornecer dados usados para melhorar processos. Refutação — Isto reporta um problema do produto.
+
+- **o4:** argumento possível — A revisão de código também é informalmente designada QA. Refutação — Uma revisão de código avalia um produto e encontra defeitos diretamente. Melhorar a forma de realizar as revisões é a atividade de QA orientada para o processo.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-003
+
+FL-1.1.2, capítulo 1, K2; v3 → v4; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.1.2, PDF p.16**. Alterações: o1.text EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Checking related payment flows for adverse effects of the fix
+
+Novo **o4 PT-PT:** Verificar fluxos de pagamento relacionados para detetar efeitos adversos da correção
+
+**Resolução e K-level — PASS:** letra C → o1. Diagnosticar e reparar o defeito é debugging; comparação de resultados, confirmação e regressão são teste. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Comparar resultados pode ajudar uma investigação. Refutação — Comparar resultados durante a execução de teste é uma atividade de teste. A reprodução de uma falha existente também pode fazer parte do debugging, pelo que a reprodução, por si só, não distingue as atividades.
+
+- **o3:** argumento possível — Confirmação faz parte do fluxo global de correção. Refutação — Executar um teste de confirmação verifica se a correção resolveu o problema original; localizar e remover o defeito pertence ao debugging.
+
+- **o4:** argumento possível — Regressão procura problemas depois da correção. Refutação — Procurar efeitos adversos de uma alteração é teste de regressão. Diagnosticar e remover a causa da falha original é debugging.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-004
+
+FL-1.2.3, capítulo 1, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.2.3, PDF p.17**. Alterações: explicação geral EN/PT; o1.explanation EN/PT; o2.text EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** A root cause in the development process
+
+Novo **o4 PT-PT:** Uma causa raiz no processo de desenvolvimento
+
+**Resolução e K-level — PASS:** letra D → o1. A fórmula é um produto defeituoso; erro é a interpretação humana, falha é a manifestação e causa de processo não é a fórmula. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Erro pode ser usado coloquialmente para código errado. Refutação — A interpretação incorreta é o erro humano.
+
+- **o3:** argumento possível — Uma fórmula errada pode originar um valor incorreto observado. Refutação — Uma falha é observada durante a execução.
+
+- **o4:** argumento possível — Um defeito pode contribuir causalmente para uma falha. Refutação — Uma causa raiz é uma razão subjacente a um problema, como formação inadequada. A própria fórmula errada é o defeito no produto de trabalho, não essa causa subjacente do processo.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-005
+
+FL-1.3.1, capítulo 1, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.3, PDF p.17/18**. Alterações: enunciado EN/PT; explicação geral EN/PT; o1.text EN/PT; o1.explanation EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Vary the execution order of existing tests while keeping their data unchanged
+
+Novo **o4 PT-PT:** Variar a ordem de execução dos testes existentes, mantendo os seus dados inalterados
+
+**Resolução e K-level — PASS:** letra D → o1. Faltam cenários; frequência/ordem não criam essa cobertura e substituir toda a regressão perde proteção útil. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Mais execuções podem descobrir falhas mais cedo. Refutação — Uma execução mais frequente pode detetar regressões mais cedo, mas não acrescenta cobertura dos cenários em falta.
+
+- **o3:** argumento possível — Focar a falha mais recente parece eficiente. Refutação — Um novo teste focado é útil, mas substituir a bateria elimina cobertura de regressão útil para outros comportamentos.
+
+- **o4:** argumento possível — Variar a ordem pode revelar dependências entre testes. Refutação — Mudar a ordem pode revelar dependências de ordem, mas, por si só, não cobre os novos cenários de falha. É necessário rever a bateria e os dados.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-006
+
+FL-1.4.1, capítulo 1, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.4.1, PDF p.18/19**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Test design
+
+Novo **o4 PT-PT:** Conceção de teste
+
+**Resolução e K-level — PASS:** letra C → o1. Definir condições a partir da base de teste é análise, antes da conceção de casos. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A conceção também consulta os requisitos. Refutação — A execução realiza testes e compara resultados.
+
+- **o3:** argumento possível — Executar testes também produz informação sobre condições. Refutação — A conclusão consolida resultados e recursos.
+
+- **o4:** argumento possível — A conclusão revê os resultados da análise. Refutação — A análise define o que testar através de condições de teste. A conceção desenvolve essas condições em casos de teste e determina como as testar.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-007
+
+FL-1.4.4, capítulo 1, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.4.4, PDF p.20/21**. Alterações: o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Treat a linked test as unaffected when its script has not been edited
+
+Novo **o4 PT-PT:** Considerar um teste ligado como não afetado quando o seu script não foi editado
+
+**Resolução e K-level — PASS:** letra A → o1. Uma relação identifica impacto, mas não executa testes nem reescreve o oráculo; ausência de diff no script não prova ausência de impacto. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A ligação permite localizar resultados aprovados antigos. Refutação — Uma ligação regista uma relação, não um novo resultado de execução. É necessário avaliar o comportamento alterado e executar os testes relevantes.
+
+- **o3:** argumento possível — A ligação identifica a origem do comportamento esperado. Refutação — A rastreabilidade aponta para o requisito afetado; o seu conteúdo atualizado, e não a existência da ligação, define o comportamento esperado.
+
+- **o4:** argumento possível — Um script sem alterações parece manter a validade. Refutação — Uma alteração de requisito pode invalidar um teste ou o seu resultado esperado mesmo sem alterações no ficheiro do teste. As ligações apoiam essa análise de impacto.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-008
+
+FL-1.5.3, capítulo 1, K2; v3 → v4; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §1.5.3, PDF p.22/23**. Alterações: enunciado EN/PT; o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** It reduces bias by avoiding discussions with the developers
+
+Novo **o4 PT-PT:** Reduz o enviesamento ao evitar discussões com os programadores
+
+**Resolução e K-level — PASS:** letra A → o1. Perspetivas e enviesamentos distintos permitem questionar pressupostos; não transferem responsabilidade nem legitimam isolamento ou falta de competências. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Uma equipa independente pode assumir tarefas de avaliação. Refutação — A independência não transfere a responsabilidade pela qualidade. Os programadores e os outros membros da equipa continuam responsáveis pela qualidade.
+
+- **o3:** argumento possível — Independência pode ser confundida com competência suficiente. Refutação — Os testadores independentes continuam a precisar de conhecimentos e competências relevantes. A independência oferece outra perspetiva, não substitui a competência.
+
+- **o4:** argumento possível — Preparação individual pode limitar influência do autor. Refutação — Perspetivas diferentes podem questionar pressupostos mantendo a colaboração. O isolamento e os problemas de comunicação são desvantagens da independência, não o benefício pretendido.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-009
+
+FL-2.1.2, capítulo 2, K1; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §2.1.2, PDF p.25/26**. Alterações: o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Replace reviews of development work products with later system-test execution
+
+Novo **o4 PT-PT:** Substituir revisões de produtos de desenvolvimento pela execução posterior de testes de sistema
+
+**Resolução e K-level — PASS:** letra B → o1. Análise acompanha desenvolvimento; esperar por código atrasa feedback, objetivos por nível diferem e revisão complementa execução. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Esperar por código parece tornar análise mais concreta. Refutação — Esperar por código concluído atrasa uma análise que pode começar a partir de produtos de desenvolvimento, como os requisitos.
+
+- **o3:** argumento possível — Um produto tem objetivos de qualidade comuns. Refutação — Os diferentes níveis de teste têm objetivos distintos; uma boa prática aplicável a vários ciclos de vida não torna os seus objetivos idênticos.
+
+- **o4:** argumento possível — Testes de sistema também podem detetar defeitos que uma revisão perderia. Refutação — As revisões de versões preliminares apoiam a deteção precoce de defeitos e complementam os testes dinâmicos posteriores. O teste de sistema posterior não substitui essas atividades iniciais.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-010
+
+FL-2.1.3, capítulo 2, K1; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §2.1.3, PDF p.26**. Alterações: enunciado EN/PT; explicação geral EN/PT; o1.explanation EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Continuous integration (CI)
+
+Novo **o4 PT-PT:** Integração contínua (CI)
+
+**Resolução e K-level — PASS:** letra D → o1. Teste-código-refatorização identifica TDD; ATDD aceita exemplos de negócio e BDD expressa comportamento; CI integra alterações. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — ATDD também define testes antes da implementação. Refutação — O ATDD deriva testes de aceitação em colaboração a partir de critérios de aceitação antes da implementação. O ciclo teste-código-refatorização especificado identifica o TDD.
+
+- **o3:** argumento possível — BDD também é test-first. Refutação — O BDD expressa o comportamento pretendido em exemplos compreensíveis pelos stakeholders, frequentemente Dado/Quando/Então. Escrever testes primeiro é uma característica partilhada; o ciclo de teste de componente-código-refatorização é aqui a característica do TDD.
+
+- **o4:** argumento possível — CI executa testes automaticamente e dá feedback rápido. Refutação — A CI integra alterações com frequência e pode executar testes automatizados. Não define o ciclo de programação orientada por testes e refatorização descrito.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-011
+
+FL-2.2.3, capítulo 2, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §2.2.3, PDF p.30/31**. Alterações: o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Both are regression testing
+
+Novo **o4 PT-PT:** Ambos são testes de regressão
+
+**Resolução e K-level — PASS:** letra B → o1. A primeira execução verifica a correção do defeito original; a segunda procura efeitos adversos noutras áreas. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Os termos são frequentemente invertidos. Refutação — A ordem está invertida.
+
+- **o3:** argumento possível — Ambas as verificações se seguem à mesma correção. Refutação — A confirmação verifica se o defeito original foi corrigido. Verificar outros fluxos de pagamento para detetar efeitos adversos da alteração é teste de regressão.
+
+- **o4:** argumento possível — Ambas reutilizam testes depois de uma alteração. Refutação — A primeira verificação confirma especificamente a correção ao repetir o teste que falhava. A segunda procura efeitos adversos noutras áreas.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-012
+
+FL-2.2.1, capítulo 2, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §2.2.1, PDF p.28/29**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Component testing in isolation
+
+Novo **o4 PT-PT:** Teste de componente isolado
+
+**Resolução e K-level — PASS:** letra D → o1. A interface entre dois componentes da mesma aplicação é integração de componentes, não componente isolado, sistema externo ou aceitação. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Os dois módulos são componentes. Refutação — A aceitação centra-se nas necessidades de negócio e na prontidão.
+
+- **o3:** argumento possível — O fluxo tem significado de negócio. Refutação — O âmbito descrito não inclui um sistema externo.
+
+- **o4:** argumento possível — Integração pode ser entendida como integração de sistemas em sentido amplo. Refutação — Um teste de componente isolado centra-se num módulo individual. O âmbito indicado é a interface e a interação entre dois módulos internos.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-013
+
+FL-2.1.5, capítulo 2, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §2.1.5, PDF p.27**. Alterações: o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Test completion
+
+Novo **o4 PT-PT:** Conclusão do teste
+
+**Resolução e K-level — PASS:** letra B → o1. Rever critérios antes de programar antecipa feedback; não é execução, regressão ou conclusão. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A revisão é uma atividade do processo de teste. Refutação — A execução de teste executa o objeto de teste e compara os resultados obtidos e esperados. Rever critérios antes da implementação é uma atividade estática antecipada que ilustra shift left.
+
+- **o3:** argumento possível — Rever critérios pode apoiar testes após mudanças. Refutação — O teste de regressão procura efeitos adversos de alterações. A finalidade descrita é obter feedback mais cedo sobre critérios de aceitação, não verificar efeitos de uma alteração.
+
+- **o4:** argumento possível — Critérios também são revistos ao decidir a conclusão. Refutação — A conclusão consolida resultados e recursos de teste após as atividades de teste. Rever critérios antes da programação antecipa a avaliação no ciclo de vida.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-014
+
+FL-2.3.1, capítulo 2, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §2.3, PDF p.31**. Alterações: o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Data-migration checks replace regression checks of the service behavior
+
+Novo **o4 PT-PT:** As verificações da migração de dados substituem as verificações de regressão do comportamento do serviço
+
+**Resolução e K-level — PASS:** letra A → o1. Mudar o motor pode alterar dados e comportamento; resultados antigos ou verificação de dados isolada não cobrem o novo ambiente. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — As funcionalidades requeridas não mudaram. Refutação — Requisitos funcionais inalterados não demonstram que a aplicação se comporta corretamente com outro motor de base de dados. A migração pode introduzir regressões.
+
+- **o3:** argumento possível — O código da aplicação pode continuar igual. Refutação — Os testes de manutenção podem ser desencadeados por atualizações ou migrações do ambiente, não apenas por alterações ao código-fonte.
+
+- **o4:** argumento possível — Uma migração parece dizer respeito apenas aos dados. Refutação — A correção dos dados é importante, mas o novo motor também pode afetar o comportamento existente da aplicação. Os testes de manutenção incluem avaliar a alteração e possíveis regressões.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-015
+
+FL-3.1.1, capítulo 3, K1; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §3.1.1, PDF p.33**. Alterações: enunciado EN/PT; o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** The observed checkout behavior after selecting Pay
+
+Novo **o4 PT-PT:** O comportamento da compra observado após selecionar Pagar
+
+**Resolução e K-level — PASS:** letra B → o1. O documento tem conteúdo legível diretamente; as outras opções pedem observação da aplicação em execução. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Um relatório posterior poderia conter medições de latência. Refutação — Medir a latência de resposta exige execução em condições definidas; é uma avaliação dinâmica, não a inspeção de um documento.
+
+- **o3:** argumento possível — Um relatório de memória poderia ser revisto estaticamente. Refutação — O crescimento da memória durante um teste de carga é observado com a aplicação em execução. Rever posteriormente um relatório escrito seria uma atividade diferente, estática.
+
+- **o4:** argumento possível — A especificação do comportamento também poderia ser revista. Refutação — Observar o comportamento após uma ação exige executar a aplicação. Um requisito que descreva esse comportamento pode, em alternativa, ser revisto estaticamente.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-016
+
+FL-3.2.3, capítulo 3, K1; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §3.2.3, PDF p.36**. Alterações: explicação geral EN/PT; o1.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** The review leader
+
+Novo **o4 PT-PT:** O líder de revisão
+
+**Resolução e K-level — PASS:** letra D → o1. O moderador gere mediação/tempo/participação; líder organiza a revisão, redator regista e gestor disponibiliza recursos. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — O redator participa na reunião e pode tomar a palavra. Refutação — O redator regista anomalias e decisões da revisão; facilitar a reunião não é esta responsabilidade.
+
+- **o3:** argumento possível — O gestor disponibiliza tempo e pessoas. Refutação — O gestor disponibiliza recursos e decide o que será revisto; o moderador facilita a reunião.
+
+- **o4:** argumento possível — O líder de revisão organiza o evento. Refutação — O líder de revisão tem responsabilidade global e organiza participantes, data e local. O moderador é especificamente responsável pela facilitação eficaz da reunião.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-017
+
+FL-3.1.3, capítulo 3, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §3.1.3, PDF p.34**. Alterações: o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Both directly found code defects because each result identifies the faulty statement
+
+Novo **o4 PT-PT:** Ambos encontraram diretamente defeitos no código porque cada resultado identifica a instrução incorreta
+
+**Resolução e K-level — PASS:** letra A → o1. Contradição documental é defeito direto; data exibida errada é falha e não localiza por si a causa no código. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Uma revisão também encontra resultados contrários à expectativa. Refutação — Os mecanismos estão invertidos: a revisão do documento encontra diretamente a inconsistência, enquanto a data incorreta apresentada é uma falha observada que exige análise adicional para localizar a causa.
+
+- **o3:** argumento possível — Ambas as observações indicam problemas. Refutação — Uma falha é um desvio observado durante a execução. Requisitos escritos contraditórios são defeitos encontrados sem executar a aplicação.
+
+- **o4:** argumento possível — Uma falha pode dar pistas sobre a causa no código. Refutação — A revisão encontrou um defeito nos requisitos, não uma instrução de código. A falha apresentada, por si só, não identifica a instrução de código que a causou.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-018
+
+FL-3.2.4, capítulo 3, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §3.2.4, PDF p.36/37**. Alterações: explicação geral EN/PT; o1.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Informal review
+
+Novo **o4 PT-PT:** Revisão informal
+
+**Resolução e K-level — PASS:** letra C → o1. Inspeção é o tipo mais formal, com processo completo e métricas; não se presume que outros tipos nunca tenham métricas. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A revisão técnica também tem moderador e pode recolher métricas. Refutação — Uma revisão técnica envolve revisores tecnicamente qualificados e um moderador, mas a inspeção é o tipo mais formal descrito.
+
+- **o3:** argumento possível — Um walkthrough também pode ter preparação e relatório. Refutação — Um walkthrough é conduzido pelo autor e não exige todo o processo de inspeção nem as suas métricas.
+
+- **o4:** argumento possível — Uma revisão informal pode detetar os mesmos defeitos. Refutação — Uma revisão informal não exige o processo completo definido e as métricas recolhidas característicos de uma inspeção. Outros tipos podem recolher métricas, mas a inspeção é o tipo CTFL mais formal.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-019
+
+FL-4.1.1, capítulo 4, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.1, PDF p.39**. Alterações: o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Risk-based testing
+
+Novo **o4 PT-PT:** Teste baseado no risco
+
+**Resolução e K-level — PASS:** letra D → o1. O comportamento especificado é base de caixa-preta; risco orienta esforço/prioridade, não define uma quarta família por base de derivação. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Caixa-branca pode verificar o mesmo comportamento. Refutação — As técnicas de caixa-branca usam a estrutura interna.
+
+- **o3:** argumento possível — Experiência pode ajudar a interpretar requisitos. Refutação — As técnicas baseadas na experiência derivam testes dos conhecimentos e da experiência do testador. A base de derivação indicada é o comportamento especificado externamente, o que identifica técnicas de caixa-preta.
+
+- **o4:** argumento possível — Riscos podem orientar quais os requisitos testados primeiro. Refutação — O teste baseado no risco orienta o âmbito, a profundidade e a prioridade usando os riscos avaliados. Não é a família de técnicas CTFL identificada pela derivação de testes do comportamento especificado sem usar a estrutura do código.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-020
+
+FL-4.3.1, capítulo 4, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.3.1, PDF p.42**. Alterações: o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** It establishes the functional correctness of the executed statements
+
+Novo **o4 PT-PT:** Estabelece a correção funcional das instruções executadas
+
+**Resolução e K-level — PASS:** letra D → o1. Executar todas as instruções prova cobertura de instruções, não resultados de decisão, caminhos nem correção funcional. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Todas as instruções executadas parecem cobrir decisões. Refutação — Executar todas as instruções não demonstra que ambos os resultados de cada decisão foram exercitados. A cobertura de ramos engloba a de instruções, não o inverso.
+
+- **o3:** argumento possível — Cada caminho é formado por instruções executáveis. Refutação — A cobertura de instruções não demonstra cobertura de todas as sequências de resultados de decisão. Um caminho viável pode ficar por testar mesmo com todas as instruções executadas.
+
+- **o4:** argumento possível — Executar código pode revelar defeitos funcionais. Refutação — A cobertura regista execução, não correção. As instruções executadas podem continuar a conter defeitos ou produzir resultados que não foram adequadamente verificados.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-021
+
+FL-4.3.2, capítulo 4, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.3.2, PDF p.43**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** 25%
+
+Novo **o4 PT-PT:** 25%
+
+**Resolução e K-level — PASS:** letra C → o1. Numerador um ramo, denominador dois: 1/2=50%; não contar decisões completas ou duplicar o denominador. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A decisão foi executada uma vez. Refutação — Falta o ramo falso.
+
+- **o3:** argumento possível — A decisão não teve ambos os resultados exercitados. Refutação — Um ramo foi executado.
+
+- **o4:** argumento possível — Alguém pode contar dois ramos e mais dois resultados como quatro itens. Refutação — O âmbito indicado contém dois ramos. Dividir o ramo exercitado por quatro duplica o denominador; a fração correta é 1/2, ou 50%.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-022
+
+FL-4.4.1, capítulo 4, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.4.1, PDF p.43/44**. Alterações: enunciado EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Boundary value analysis
+
+Novo **o4 PT-PT:** Análise de valor fronteira
+
+**Resolução e K-level — PASS:** letra A → o1. A base declarada é conhecimento de falhas anteriores, não cobertura estrutural/fronteiras nem o ciclo simultâneo da exploração. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A execução das datas pode cobrir instruções. Refutação — Não é indicado um critério de cobertura do código.
+
+- **o3:** argumento possível — Exploração também usa experiência do testador. Refutação — O teste exploratório combina aprendizagem, conceção e execução de testes. A base de seleção descrita é o conhecimento de falhas anteriores, o que ilustra especificamente a antecipação de erros; as técnicas podem ser combinadas na prática.
+
+- **o4:** argumento possível — Datas de fronteira podem estar relacionadas com falhas bissextas. Refutação — A BVA deriva casos das fronteiras de partições ordenadas. O cenário fornece conhecimento de falhas anteriores como base, não fronteiras de partições das quais tenham sido derivados estes casos.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-023
+
+FL-4.4.2, capítulo 4, K2; v3 → v4; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.4.2, PDF p.44**. Alterações: enunciado EN/PT; o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Checklist-based testing
+
+Novo **o4 PT-PT:** Teste baseado em checklists
+
+**Resolução e K-level — PASS:** letra C → o1. O conjunto aprender-conceber-executar caracteriza exploração; erros e checklists podem apoiar mas não definem essas atividades combinadas. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Scripts também podem ser executados numa sessão com duração definida. Refutação — O testador concebe e adapta testes enquanto aprende. Uma repetição fixa não explica essa aprendizagem, conceção e execução em simultâneo.
+
+- **o3:** argumento possível — Antecipação de erros pode guiar a exploração. Refutação — A antecipação de erros seleciona alvos prováveis de defeitos usando a experiência de erros e falhas. Aqui, o comportamento distintivo é a aprendizagem, a conceção e a execução simultâneas orientadas por uma carta de testes; a antecipação de erros pode apoiar, mas não substitui, essa abordagem exploratória.
+
+- **o4:** argumento possível — Uma checklist também pode apoiar uma sessão exploratória. Refutação — O teste baseado em checklists deriva testes de uma lista de condições de teste. Uma carta de testes define objetivos da sessão; o cenário descreve descobrir e adaptar testes durante a sessão, não derivá-los de entradas de uma checklist.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-024
+
+FL-4.5.2, capítulo 4, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.5.2, PDF p.45/46**. Alterações: enunciado EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** When the basket opens, calculate its total by calling the pricing service
+
+Novo **o4 PT-PT:** Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços
+
+**Resolução e K-level — PASS:** letra C → o1. O exemplo do cesto vazio explicita contexto, evento e resultado; regras omitem evento e o comando de implementação omite estado/oráculo. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Uma regra formal é um critério de aceitação válido. Refutação — Este é um critério orientado para regras, não um cenário Dado/Quando/Então.
+
+- **o3:** argumento possível — A regra do cesto vazio exprime o mesmo resultado esperado. Refutação — Isto apresenta uma regra sem a estrutura explícita de contexto, evento e resultado.
+
+- **o4:** argumento possível — A chamada ao serviço descreve uma ação durante a abertura. Refutação — Isto descreve uma ação de implementação, mas omite o estado inicial do cesto e o total esperado observável. Não é um exemplo de aceitação completo no formato solicitado.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-025
+
+FL-4.2.1, capítulo 4, K3; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.2.1, PDF p.39/40**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** 2, 3, 5
+
+Novo **o4 PT-PT:** 2, 3, 5
+
+**Resolução e K-level — PASS:** letra C → o1. Partições <3, [3,8], >8: 2,5,9 cobre três; restantes omitem válida, superior ou ambas inválidas. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Valores nos dois limites válidos parecem diversificados. Refutação — Os três valores estão na partição válida.
+
+- **o3:** argumento possível — As duas partições inválidas são cobertas. Refutação — A partição válida não está coberta.
+
+- **o4:** argumento possível — Há três valores distintos no conjunto. Refutação — 2 cobre a partição abaixo do intervalo; 3 e 5 cobrem ambos a partição válida. Nenhum valor cobre a partição acima do intervalo, pelo que o conjunto de três valores é insuficiente.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-026
+
+FL-4.2.2, capítulo 4, K3; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.2.2, PDF p.40**. Alterações: o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** 10, 11, 20, 21
+
+Novo **o4 PT-PT:** 10, 11, 20, 21
+
+**Resolução e K-level — PASS:** letra D → o1. Pares de fronteira 9/10 e 20/21: os outros conjuntos omitem 9 ou 21 ou ambos. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Testar mínimo, meio e máximo cobre a partição válida. Refutação — Faltam os valores inválidos vizinhos.
+
+- **o3:** argumento possível — O limite superior pode ser confundido com exclusivo. Refutação — Isto trata incorretamente 19/20 como o par de fronteira superior. Como 20 é válido, o par superior tem de ser 20/21; falta 21.
+
+- **o4:** argumento possível — O limite inferior pode ser confundido com exclusivo. Refutação — Isto trata incorretamente 10/11 como o par de fronteira inferior. Como 10 é válido, o par inferior tem de ser 9/10; falta 9.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-027
+
+FL-4.2.3, capítulo 4, K3; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.2.3, PDF p.41**. Alterações: o2.explanation EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Member = no; total = 20
+
+Novo **o4 PT-PT:** Membro = não; total = 20
+
+**Resolução e K-level — PASS:** letra D → o1. R1=T,T: membro sim e 60≥50; outras opções representam R2, R3, R4. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — O total é suficientemente elevado. Refutação — Um não membro com total 60 satisfaz apenas a condição do total, o que corresponde a R3, não a R1.
+
+- **o3:** argumento possível — O cliente é membro. Refutação — Um membro com total 20 satisfaz apenas a condição de ser membro, o que corresponde a R2, não a R1.
+
+- **o4:** argumento possível — A combinação de duas condições falsas é uma regra válida da tabela. Refutação — Estas entradas não satisfazem nenhuma das condições e exercitam R4, não R1. R1 exige que o cliente seja membro e que o total seja pelo menos 50.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-028
+
+FL-4.2.4, capítulo 4, K3; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.2.4, PDF p.41/42**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Submit, Pay, Pay
+
+Novo **o4 PT-PT:** Submeter, Pagar, Pagar
+
+**Resolução e K-level — PASS:** letra A → o1. Rascunho --Submeter--> Pendente --Pagar--> Paga. Qualquer evento inválido invalida a sequência; Pagar adicional não é ignorado. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Os dois eventos corretos aparecem no conjunto. Refutação — Pagar é inicialmente inválido.
+
+- **o3:** argumento possível — Submeter duas vezes pode parecer uma operação repetível. Refutação — O segundo Submeter é inválido em Pendente e a encomenda nunca chega a Paga.
+
+- **o4:** argumento possível — O estado pretendido é atingido antes do último evento. Refutação — Submeter e Pagar levam a Paga, mas o Pagar adicional é inválido em Paga. Chegar ao destino antes de um evento inválido não torna válida a sequência completa.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-029
+
+FL-4.5.3, capítulo 4, K3; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §4.5.3, PDF p.46**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 5.
+
+Novo **o4 PT-PT:** Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 5.
+
+**Resolução e K-level — PASS:** letra C → o1. Regra do negócio exige 49→5, 50→0. As outras três combinações trocam um ou os dois resultados. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — No limite superior o resultado está correto. Refutação — O resultado esperado para 49 contradiz o custo aplicável abaixo do limiar.
+
+- **o3:** argumento possível — Abaixo do limite o resultado está correto. Refutação — O resultado esperado para 50 exclui incorretamente o limiar inclusivo.
+
+- **o4:** argumento possível — Um candidato pode inverter a regra comercial inteira. Refutação — Ambos os resultados esperados estão invertidos: 49 é inferior a 50 e implica um custo de 5; o limiar inclusivo torna a entrega gratuita em 50.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-030
+
+FL-5.1.6, capítulo 5, K1; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.1.6, PDF p.50/51**. Alterações: o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Many integration tests, fewer component and end-to-end tests
+
+Novo **o4 PT-PT:** Muitos testes de integração, menos testes de componente e de ponta a ponta
+
+**Resolução e K-level — PASS:** letra B → o1. Base larga de testes pequenos e poucos grandes; distribuição uniforme, invertida ou centrada na integração não é a pirâmide descrita. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Testes de ponta a ponta parecem mais próximos da utilização real. Refutação — Isto inverte a pirâmide. Os testes grandes de ponta a ponta exigem geralmente mais tempo e dão feedback menos localizado do que os testes pequenos e isolados.
+
+- **o3:** argumento possível — Equilibrar contagens parece dar atenção igual a cada nível. Refutação — Uma pirâmide representa proporções diferentes de acordo com a granularidade, o isolamento e o custo de execução, não contagens iguais entre níveis.
+
+- **o4:** argumento possível — Uma arquitetura pode legitimamente adotar mais testes de integração. Refutação — Uma concentração no meio corresponde a uma distribuição diferente. A pirâmide tem geralmente uma base larga de testes pequenos e isolados e menos testes maiores nos níveis superiores.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-031
+
+FL-5.1.1, capítulo 5, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.1.1, PDF p.48**. Alterações: enunciado EN/PT; explicação geral EN/PT; o1.text EN/PT; o1.explanation EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Test completion report
+
+Novo **o4 PT-PT:** Relatório de conclusão do teste
+
+**Resolução e K-level — PASS:** letra A → o1. O plano reúne âmbito, recursos, objetivos e abordagem do projeto; política, cronograma e conclusão têm finalidades mais restritas/diferentes. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A política contém orientação para os testes. Refutação — Uma política fornece orientação organizacional. O plano de testes do projeto comunica o âmbito, os recursos e a abordagem específicos deste esforço de teste.
+
+- **o3:** argumento possível — O cronograma inclui ordem e recursos de execução. Refutação — Um cronograma de execução organiza execuções e dependências. Não reúne os objetivos, o âmbito, os recursos e a abordagem de teste do projeto como um plano de testes.
+
+- **o4:** argumento possível — O relatório de conclusão comunica informação aos stakeholders. Refutação — Um relatório de conclusão resume os resultados dos testes concluídos. Não é o documento de planeamento usado para acordar como serão organizados os testes do projeto.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-032
+
+FL-5.1.3, capítulo 5, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.1.3, PDF p.49**. Alterações: o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Both are exit criteria
+
+Novo **o4 PT-PT:** Ambos são critérios de saída
+
+**Resolução e K-level — PASS:** letra D → o1. Antes de começar: entrada. Para declarar concluído: saída. Quatro combinações, só uma respeita o timing. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — As condições podem ser classificadas em ordem inversa. Refutação — A ordem está invertida.
+
+- **o3:** argumento possível — Ambas têm de estar satisfeitas nalgum momento. Refutação — A disponibilidade do ambiente é uma pré-condição para começar, mas o risco residual aceite é aqui especificado como condição para declarar os testes concluídos.
+
+- **o4:** argumento possível — Ambas contribuem para uma conclusão bem-sucedida. Refutação — A primeira condição tem de ser satisfeita antes de começar o teste de sistema, pelo que é um critério de entrada. A segunda apoia a decisão de conclusão.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-033
+
+FL-5.2.2, capítulo 5, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.2.2, PDF p.52**. Alterações: enunciado EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** A test-tool supplier misses the agreed delivery date
+
+Novo **o4 PT-PT:** Um fornecedor de uma ferramenta de teste falha a data de entrega acordada
+
+**Resolução e K-level — PASS:** letra C → o1. Cálculo incorreto ameaça qualidade funcional do produto; pessoas, ambiente atrasado e fornecedor ameaçam execução do projeto. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A saída de uma pessoa pode afetar a qualidade final. Refutação — A disponibilidade da equipa ameaça a entrega do projeto.
+
+- **o3:** argumento possível — Um ambiente indisponível pode impedir descobrir defeitos do produto. Refutação — Um ambiente atrasado ameaça o calendário do projeto.
+
+- **o4:** argumento possível — A ferramenta atrasada pode reduzir a cobertura. Refutação — Um atraso de entrega do fornecedor ameaça o calendário e os recursos do projeto. Um cálculo fiscal incorreto diz respeito à qualidade funcional do produto.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-034
+
+FL-5.2.3, capítulo 5, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.2.3, PDF p.52/53**. Alterações: enunciado EN/PT; o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Treat comparable likelihood as comparable risk and split effort equally
+
+Novo **o4 PT-PT:** Tratar probabilidades comparáveis como riscos comparáveis e dividir o esforço igualmente
+
+**Resolução e K-level — PASS:** letra A → o1. Com probabilidade comparável, maior impacto implica risco superior; visibilidade e rapidez não determinam profundidade baseada nesse risco. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Visibilidade para o utilizador é relevante ao avaliar um problema. Refutação — A visibilidade, por si só, não é o nível de risco avaliado. Com probabilidades comparáveis, o impacto muito superior das transferências incorretas exige testes mais aprofundados.
+
+- **o3:** argumento possível — Testes rápidos podem ser úteis no planeamento da execução. Refutação — A rapidez de execução pode afetar o planeamento, mas não se sobrepõe ao risco de produto superior indicado ao decidir a profundidade dos testes.
+
+- **o4:** argumento possível — Probabilidade é um dos fatores do nível de risco. Refutação — O nível de risco considera a probabilidade e o impacto. Probabilidades comparáveis não implicam riscos comparáveis quando os impactos diferem substancialmente.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-035
+
+FL-5.4.1, capítulo 5, K2; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.4, PDF p.56**. Alterações: enunciado EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Preserve dataset C, but reproduce the result using the latest build
+
+Novo **o4 PT-PT:** Preservar o conjunto de dados C, mas reproduzir o resultado com a versão mais recente do software
+
+**Resolução e K-level — PASS:** letra C → o1. Reproduzir a configuração observada exige versões do software, testes e dados; trocar ou omitir uma delas perde identificação da baseline. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A versão mais recente dos dados pode ser a recomendada para uso futuro. Refutação — A substituição pode perder as condições que provocam a falha.
+
+- **o3:** argumento possível — Software e dados são elementos importantes da baseline. Refutação — As versões dos testes também fazem parte da configuração: alterações nos passos ou nas verificações podem alterar o resultado. Preservar apenas software e dados deixa a baseline incompleta.
+
+- **o4:** argumento possível — Uma versão recente pode servir para testar se uma correção funcionou. Refutação — Uma versão posterior não corresponde à configuração observada da versão 82. Pode ser útil para testes de confirmação, mas não preserva a baseline original de reprodução.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-036
+
+FL-5.1.4, capítulo 5, K3; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.1.4, PDF p.49/50**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** 5 person-hours
+
+Novo **o4 PT-PT:** 5 pessoas-hora
+
+**Resolução e K-level — PASS:** letra C → o1. (2 + 4 × 5 + 14) / 6 = 36 / 6 = 6. 7 é a média simples, 5 é a estimativa mais provável e 14 é a estimativa pessimista. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Uma média simples é uma operação familiar sobre três valores. Refutação — 7 é a média não ponderada (2 + 5 + 14) / 3; omite a ponderação exigida.
+
+- **o3:** argumento possível — A estimativa pessimista é uma aproximação conservadora. Refutação — 14 é apenas a estimativa pessimista, não a estimativa ponderada.
+
+- **o4:** argumento possível — A estimativa mais provável parece o melhor palpite individual. Refutação — 5 é apenas a estimativa mais provável. Aplicar os pesos exigidos dá (2 + 4 × 5 + 14) / 6 = 6, não 5.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-037
+
+FL-5.1.5, capítulo 5, K3; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.1.5, PDF p.50/51**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** B, A, C
+
+Novo **o4 PT-PT:** B, A, C
+
+**Resolução e K-level — PASS:** letra A → o1. Disponíveis B e C: B vence. C permite A; B,A,C viola dependência e C,A,B escolhe primeiro um risco menor disponível. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — A,B,C segue a prioridade de risco sem considerar dependência. Refutação — A não pode ser executado antes de C.
+
+- **o3:** argumento possível — C,A,B respeita a dependência e antecipa A. Refutação — Isto executa C de menor risco quando B de maior risco está disponível.
+
+- **o4:** argumento possível — B está corretamente em primeiro lugar. Refutação — B é corretamente escolhido primeiro, mas A continua bloqueado até executar C. Após B, executar C e depois A.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-038
+
+FL-5.5.1, capítulo 5, K3; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §5.5, PDF p.56/57**. Alterações: o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** QA / build 82; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; confirmed cause: database deadlock; attach r17.
+
+Novo **o4 PT-PT:** QA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; causa confirmada: bloqueio mútuo na base de dados; anexar r17.
+
+**Resolução e K-level — PASS:** letra D → o1. O relatório mantém ambiente/dados/resultados observados e referência do registo; inversões, versão errada ou causa confirmada não fornecida distorcem evidência. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — O relatório tem as mesmas classes de resultados HTTP. Refutação — Isto inverte o resultado esperado especificado e o resultado obtido observado.
+
+- **o3:** argumento possível — O relatório mantém passos e resultados. Refutação — Isto altera o ambiente e a versão observados, tornando incorreto o contexto de reprodução.
+
+- **o4:** argumento possível — Um HTTP 500 e um registo podem sugerir uma causa de base de dados. Refutação — O cenário fornece sintomas e uma referência de registo, mas nenhuma evidência que confirme um bloqueio mútuo na base de dados. Registar uma causa confirmada inventa um diagnóstico para além da evidência observada.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-039
+
+FL-6.1.1, capítulo 6, K2; v1 → v2; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §6.1, PDF p.59**. Alterações: enunciado EN/PT; o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Test management tool
+
+Novo **o4 PT-PT:** Ferramenta de gestão de testes
+
+**Resolução e K-level — PASS:** letra C → o1. A necessidade inclui gerar tráfego concorrente controlado e medir latência; monitorização observa, análise estática não executa e gestão organiza. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Análise estática pode encontrar problemas de desempenho no código. Refutação — A análise estática examina código sem executar o serviço. Não gera o tráfego concorrente solicitado nem mede a latência sob esse tráfego.
+
+- **o3:** argumento possível — Monitorização mede latência em tráfego real. Refutação — A monitorização pode observar a latência do tráfego existente, mas o requisito inclui gerar ativamente pedidos concorrentes controlados contra um ambiente de teste.
+
+- **o4:** argumento possível — Gestão de testes pode recolher resultados e métricas. Refutação — A gestão de testes organiza planos, casos e resultados. A sua função principal não é gerar carga concorrente num serviço nem medir o desempenho em execução.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Fase 5B — tl-040
+
+FL-6.2.1, capítulo 6, K1; v2 → v3; chave **o1**, cardinalidade 1. Fonte primária: **ISTQB CTFL Syllabus v4.0.1, §6.2, PDF p.59/60**. Alterações: enunciado EN/PT; o1.text EN/PT; o2.text EN/PT; o2.explanation EN/PT; o3.text EN/PT; o3.explanation EN/PT; o4 novo; data/report da revisão atualizados. LO/K/capítulo/tipo/tabela preservados.
+
+Novo **o4 EN:** Obtaining tool-supported coverage metrics that would be difficult to collect by hand
+
+Novo **o4 PT-PT:** Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente
+
+**Resolução e K-level — PASS:** letra B → o1. Custos de manutenção subestimados são risco; trabalho repetitivo reduzido, repetibilidade e medição são benefícios potenciais, não garantias. O nível é o mesmo da baseline; não se promoveu dificuldade pela extensão do texto.
+
+**Contestação das incorretas:**
+
+- **o2:** argumento possível — Reduzir trabalho manual é uma expectativa realista. Refutação — Reduzir trabalho manual repetitivo é um benefício potencial da automação. O risco é não prever realisticamente o esforço de introdução e manutenção.
+
+- **o3:** argumento possível — Repetibilidade é um objetivo legítimo da automação. Refutação — Uma execução consistente e repetível é um benefício potencial. Não elimina a necessidade de manter os scripts à medida que o produto muda.
+
+- **o4:** argumento possível — Ferramentas permitem medir cobertura difícil de recolher manualmente. Refutação — A medição apoiada por ferramentas pode ser um benefício. Subestimar o esforço necessário para manter úteis os testes automatizados e as ferramentas é o risco aqui identificado.
+
+**EN/PT — PASS limitado à IA:** condições e consequências equivalentes; mesma chave/cardinalidade; valores e eventos verificados. A aprovação humana continua **PENDING**. A plausibilidade é julgamento editorial, ainda sem calibração empírica.
+
+### Validação de software da fase 5B
+
+Resultados de comandos, compatibilidade e bundle: ver a secção Fase 5B de [blueprint-validation.md](blueprint-validation.md). A revisão académica acima é separada de validação de software, aprovação humana e calibração psicométrica. Os testes não provam qualidade académica. Nenhuma aprovação humana/ISTQB/PSTQB foi atribuída.

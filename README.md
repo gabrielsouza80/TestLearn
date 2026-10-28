@@ -27,6 +27,8 @@ npm run test:e2e
 
 `npm run format` formata os ficheiros. `dist/` contém a aplicação estática, com caminhos relativos para alojamento em subdiretórios. Pode ser alojada em Vercel (`npm run build`, saída `dist`) ou GitHub Pages. Nenhuma publicação foi efetuada. A workflow GitHub Actions valida tipos, lint, formatação, testes, build e Chromium desktop/móvel. A execução remota da CI ainda não foi observada.
 
+Os E2E fazem um build e iniciam um preview exclusivo em `127.0.0.1:4174`; essa porta deve estar livre. Não reutilizam o servidor de desenvolvimento. As revisões históricas são carregadas apenas quando necessárias para recuperar sessões ou calcular as suas métricas; uma falha preserva o progresso e oferece recarregamento para tentar novamente. Medições e limites estão na [validação da fase 5C](docs/blueprint-validation.md#fase-5c--carregamento-histórico-e-estabilidade-e2e-28-10-2026).
+
 ## Utilização
 
 - **Praticar:** filtrar capítulo, tema, objetivo de aprendizagem, nível cognitivo, quantidade e histórico. Confirmar cada resposta para ver explicações de todas as alternativas.

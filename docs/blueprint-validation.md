@@ -412,3 +412,189 @@ Regressões ajustadas: o teste do tópico Tools assumia que só existia tl-039; 
 O erro EPERM de npm ci foi associado ao Vite TestLearn PID 138740 e ao seu serviço esbuild a manterem binários carregados. Só esses processos verificados foram parados; as dependências já restauradas passaram typecheck e o executável Vite respondeu com a versão correta. Para reinstalar dependências, fechar primeiro o servidor com Ctrl+C e depois executar npm ci; para iniciar normalmente usar npm run dev, sem reinstalar a cada arranque. Não são necessários privilégios de administrador para contornar um bloqueio de ficheiro em uso. Playwright voltou a iniciar o servidor local durante a validação.
 
 Não houve novas dependências, serviços, push, deploy ou alterações a KAVTRIS. Não se otimizaram bundles nem se alteraram limites de avisos. Revisão humana, calibração psicométrica, CI remota, Firefox/WebKit reais e leitores de ecrã reais permanecem por executar.
+
+## Fase 5C — carregamento histórico e estabilidade E2E (28-10-2026)
+
+### Preflight e integridade
+
+Ponto de partida: `main` limpo em `9d41e1b`, revisão **2026-10-27.6**, 82 perguntas, 64 LO, 29 grupos e 40 perguntas por exame. A baseline voltou a executar os **93 testes / 10 ficheiros** com sucesso (13,98 s). Dependências existentes reutilizadas; nenhum `npm ci`, dependência nova, mudança académica, migração, push ou deploy nesta fase.
+
+A cadeia `main → App → engine → bank-history` importava estaticamente os cinco JSON históricos: **259 registos / 655 837 bytes de JSON** entravam no grafo inicial. A análise Rollup confirmou os cinco módulos dentro da entrada única. Os arquivos não eram a única fonte de tamanho: React DOM, Zod, interface e banco atual também têm peso relevante. Comprimentos de módulos antes da minificação não são tamanhos gzip atribuíveis individualmente.
+
+### Fronteira assíncrona
+
+- `src/data/bank-history.ts`: imports dinâmicos literais, lista fechada de revisões, cache por revisão e uma promessa partilhada durante cada carregamento. Validação integral do schema, IDs e cardinalidade antes de disponibilizar um arquivo não vazio. Falhas libertam a promessa; revisões desconhecidas são recusadas. Nunca existe fallback para o banco atual.
+- `src/domain/question.ts`: schema e validadores extraídos sem alteração semântica para evitar dependência circular entre motor e carregador. O motor reexporta a API existente; pontuação, seleção, baralhamento e temporizadores continuam síncronos depois da preparação do banco.
+- `src/storage/store.ts`: valida primeiro a estrutura persistida, prepara apenas as revisões referenciadas e aplica depois as verificações completas anteriores. Se os bytes guardados mudarem durante a espera, a recuperação é recusada; não apresenta um snapshot obsoleto nem escreve dados. `save` mantém a mesma implementação e validação.
+- `src/App.tsx`: uma pequena barreira de recuperação antecede a interface existente. Durante a espera não há perguntas, chaves ou seleção de sessões. Erros mostram uma mensagem bilingue e permitem **recarregar e tentar novamente**, preservando LocalStorage. O recarregamento também contorna rejeições de import dinâmico memorizadas pelo navegador. Resultados de uma montagem entretanto desmontada são ignorados.
+- As métricas atuais do painel calculam pontuações/fragilidades usando o histórico completo. Por isso, quando há histórico persistido, é necessário preparar as suas revisões antes de mostrar essas métricas. Uma visita sem histórico não descarrega arquivos; não existe prefetch especulativo. Alternar entre sessões já recuperadas usa a cache, sem novo pedido por pergunta.
+- Os imports estáticos usados como oráculos históricos foram movidos para `tests/fixtures/banks.ts`, fora do grafo da aplicação. Os testes síncronos históricos preparam explicitamente a cache; nenhuma asserção anterior foi removida ou enfraquecida.
+
+### Medição de produção antes/depois
+
+Método: builds Vite separados e preview local; Chromium headless **156.0.8078.4**, Node **24.19.0**, Ryzen Z1 Extreme, 16 CPUs lógicas, 13 628 198 912 bytes de RAM. Sem throttling de rede/CPU, outros processos presentes. Três contextos novos por cenário, cada um seguido de reload com cache HTTP; relógio de domínio fixo sem alterar Resource Timing. Tempos medidos da navegação até ao elemento funcional esperado. Não constituem benchmark universal nem medem equipamento móvel real.
+
+| Métrica                                                          |       Antes |      Depois |
+| ---------------------------------------------------------------- | ----------: | ----------: |
+| Entrada JS minificada                                            | 1 057 868 B |   550 677 B |
+| Entrada JS gzip                                                  |   287 139 B |   168 508 B |
+| JS transferido no painel novo (Resource Timing, inclui overhead) |   287 439 B |   168 808 B |
+| Pedidos JS / arquivos incorporados na entrada                    |       1 / 5 |       1 / 0 |
+| Total JS gerado, todos os chunks                                 | 1 057 868 B | 1 062 579 B |
+| Soma gzip de todos os chunks                                     |   287 139 B |   293 182 B |
+
+Redução inicial: **47,9% minificado / 41,3% gzip**. Overhead total: +4 711 B minificados e +6 043 B na soma gzip, incluindo a fronteira de recuperação/imports e compressão separada. Os arquivos continuam disponíveis; a redução é de transferência e parsing iniciais, não eliminação de conteúdo. O aviso de entrada acima de 500 kB mantém-se e não foi suprimido.
+
+| Chunk histórico | Minificado |     Gzip |
+| --------------- | ---------: | -------: |
+| .1              |   51 782 B | 12 545 B |
+| .2              |   65 758 B | 14 708 B |
+| .3              |   87 739 B | 20 828 B |
+| .4              |  153 173 B | 38 265 B |
+| .5              |  153 450 B | 38 328 B |
+
+O painel novo solicita apenas a entrada JS e o CSS (além do documento/outros recursos do navegador). Recuperar `.1` solicita a entrada e apenas o chunk `.1`: 181 653 B JS transferidos; `.4`: 207 373 B; `.5`: 207 436 B. Não se confundem ausência de pedidos JSON com ausência de arquivos: estes eram código embutido antes, agora são chunks JS identificados no grafo e na rede.
+
+| Cenário                           | Antes frio / reload quente (ms) | Depois frio / reload quente (ms) |
+| --------------------------------- | ------------------------------- | -------------------------------- |
+| Painel novo                       | 316–616 / 61–77                 | 269–290 / 51–73                  |
+| Exame .1                          | 285–488 / 64–91                 | 249–318 / 76–117                 |
+| Exame .4                          | 262–270 / 63–68                 | 283–293 / 69–102                 |
+| Exame .5                          | 270–291 / 61–62                 | 249–261 / 75–110                 |
+| Prática .5, 66 perguntas          | 289–316 / 58–83                 | 283–293 / 89–93                  |
+| Painel com histórico .5 concluído | 319–341 / 67–90                 | 298–331 / 86–97                  |
+
+Abrir a revisão depois do painel histórico: antes 200–307 ms frio / 92–144 ms quente; depois 186–222 / 97–124 ms. O custo extra de import/validação existe, sobretudo no reload quente histórico; não se afirma melhoria em todos os cenários. A mediana fria do painel novo passou de 320 para 285 ms, numa amostra de apenas três. Heap JS observado no painel novo frio: ~6,65–6,68 MB → ~4,16–4,17 MB; sem GC forçado, não equivale a memória total do processo. No histórico .5 quente: ~9,94–9,96 MB → ~9,42–9,45 MB. A cache acumula as revisões usadas durante a vida da página; neste âmbito existem apenas cinco.
+
+### Investigação de concorrência
+
+A configuração anterior verificava apenas o HTML de um servidor de desenvolvimento, permitia reutilizar um processo existente e deixava a compilação do grafo para as primeiras navegações. Isso introduzia variabilidade e risco de reutilizar um servidor desatualizado. Agora os E2E compilam uma vez antes da suite e usam **preview de produção exclusivo em 127.0.0.1:4174**, `strictPort`, sem reutilização. Um conflito de porta falha explicitamente. Não se alteraram timeouts, retries existentes (`CI: 1`, local: 0) nem o número automático de workers. Não há dados persistidos partilhados entre contextos de browser; os testes que os inserem fazem-no no próprio contexto.
+
+Diagnóstico controlado: 1/2/4/8 navegadores simultâneos, **duas repetições por configuração**, antes/depois e dev/preview; 30 navegações por matriz, **120/120 passaram**. Dev com cache de compilação nova em cada repetição; preview usa os artefactos congelados antes/depois. Os valores seguintes são intervalos de `page.goto`, não duração da suite completa nem medição de cada worker Playwright.
+
+| Navegadores | Dev antes (ms) | Dev depois (ms) | Preview antes (ms) | Preview depois (ms) |
+| ----------- | -------------- | --------------- | ------------------ | ------------------- |
+| 1           | 2 015–2 192    | 2 025–3 516     | 121–144            | 92–114              |
+| 2           | 2 129–2 220    | 2 079–2 331     | 123–146            | 94–118              |
+| 4           | 2 106–2 298    | 2 237–4 183     | 152–244            | 106–147             |
+| 8           | 2 500–3 694    | 2 431–3 642     | 180–547            | 155–454             |
+
+Com oito, a memória global livre mínima foi ~163 MiB antes /185 MiB depois em dev, e ~989/1 025 MiB em preview. CPU global média nos intervalos com oito: ~41–47% dev /85–87% preview. São métricas do sistema inteiro, afetadas por outras aplicações; não demonstram a causa única dos timeouts antigos. O diagnóstico inicial com cache fora de `node_modules` foi descartado: provocava reprocessamento pelo plugin React e não representava a configuração real; os resultados acima usam o protocolo corrigido.
+
+**Os sete timeouts da fase 5A não foram reproduzidos neste diagnóstico.** Compilação fria, readiness só do HTML e pressão de memória são fatores observados/plausíveis, não uma causa exclusiva provada. Não se declara estabilidade universal de oito workers com base nestas navegações curtas. A suite completa e as repetições estão registadas abaixo.
+
+### Evidência de compatibilidade e QA
+
+Os SHA-256 dos cinco JSON permanecem:
+
+| Revisão | Perguntas | SHA-256                                                          |
+| ------- | --------: | ---------------------------------------------------------------- |
+| .1      |        40 | b5f44fc33cfd55b8e7aea1fceff7348c32857580f04ef493156107788d5717f5 |
+| .2      |        40 | 982e73ec30706a5e8cca992b80f9157d18cda2d3e77791b32430a804c3574cbb |
+| .3      |        47 | cc70ebf8768c1236fcb89099d88ad275600d542078c1531c1195fe43f2f96d38 |
+| .4      |        66 | 413e93605f8026e7a633f92c512c0f93b2a466867e4a1d4d3752dbd03ee1f104 |
+| .5      |        66 | c57da2c300f58dd5714a8c54746b9e1cd404b8134347c3b13123e83b97823a79 |
+
+O banco atual serializado mantém SHA-256 `5d384e9de8a7962d8bbbf73fe5339d4cffdc779f17a8562019c6f619a7aac06c`. Comparação adicional de AST confirmou as 11 funções não relacionadas com resolução do motor, o schema de perguntas, a estrutura/refinamentos de sessão/estado, `save` e as asserções dos 16 ficheiros de testes originais sem alteração. Hashes de fontes de conteúdo, metadados editoriais, revisão, blueprint, auditor do blueprint e package/lock também coincidem com a baseline.
+
+Os testes existentes verificam todas as revisões .1–.5, textos, opções/IDs, explicações, respostas, ordem, posição, flags, timestamps, prazos, pontuação e conclusão em exame/prática. Os novos testes controlam falhas, validação, promessas concorrentes, cache, ausência de fallback, mudanças de dados durante espera e cancelamento de resultados obsoletos. E2E acrescentam ausência de arquivo numa visita nova, falha/recuperação, reload enquanto pendente e todas as justificações na revisão bilingue; preservam os cenários .1/.4/.5 anteriores.
+
+Evidência local detalhada (ignorada pelo Git): `tmp/phase5c-*-performance.json`, `tmp/phase5c-*-concurrency.json`, `tmp/phase5c-integrity-before.json`, `tmp/phase5c-static-integrity.mjs` e logs `tmp/phase5c-*`. Não contém PDFs oficiais nem dados pessoais de utilizadores.
+
+Limites: não foram testados Safari real/Firefox, rede remota ou CI remota. Num alojamento estático, a publicação deve preservar os chunks pedidos por páginas já abertas; um chunk indisponível produz erro recuperável, não conteúdo substituto. Usar um separador de cada vez continua recomendado; a deteção de alteração durante recuperação não acrescenta sincronização entre separadores. Esta fase só valida software: revisão académica humana e calibração psicométrica continuam pendentes, sem endosso ISTQB/PSTQB.
+
+### Execuções de regressão da fase 5C
+
+| Verificação                                    | Resultado / exit code                                                                                                      |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| npm run typecheck                              | PASS, 0                                                                                                                    |
+| npm run lint                                   | PASS, 0                                                                                                                    |
+| npm run format:check                           | PASS, 0; novamente verificado depois de terminar a documentação                                                            |
+| npm test                                       | 112/112 em 13 ficheiros, 0; 93 anteriores + 19 novos                                                                       |
+| npm run build                                  | PASS, 0; seis chunks JS, avisos Zod preexistentes e entrada >500 kB mantidos                                               |
+| npm run test:e2e, predefinição de 8 workers    | 50/50, 0, antes da correção da asserção nova; execução final abaixo                                                        |
+| E2E novos, 2 workers                           | 8/8, 0                                                                                                                     |
+| E2E novos corrigidos, 4 workers, repeat-each=2 | 16/16, 0                                                                                                                   |
+| Blueprint                                      | 1 000 seeds determinísticos, quotas/grupos/diversidade, IDs únicos, chaves após baralhamento e ordem inversa do pool: PASS |
+| Hashes e diff                                  | 16 fontes/arquivos protegidos coincidem; banco atual intacto; git diff --check: 0                                          |
+
+A primeira validação TypeScript durante a escrita dos testes identificou dois erros nos novos testes (nome de campo de justificação e opção de seletor da Testing Library); foram corrigidos antes da QA final. Não exigiram mudanças no produto.
+
+Comparação de suites completas, 100 casos por configuração (50 testes × duas repetições), sem retries locais:
+
+| Workers | Primeiro resultado | Tempo total incluindo build/runner | Seguimento                                                            |
+| ------- | ------------------ | ---------------------------------: | --------------------------------------------------------------------- |
+| 1       | 100/100, exit 0    |                           177,64 s | Antes da correção descrita abaixo                                     |
+| 2       | 100/100, exit 0    |                           100,85 s | Antes da correção descrita abaixo                                     |
+| 4       | **99/100, exit 1** |                            69,92 s | Falha de asserção no teste novo; repetição corrigida abaixo           |
+| 8       | 100/100, exit 0    |                            68,99 s | Além da execução predefinida 50/50; antes da correção descrita abaixo |
+
+A falha com quatro workers **não foi um timeout de navegação**. O novo teste de ausência de arquivos exigia um radio, embora a primeira pergunta sorteada pudesse ser múltipla. O snapshot mostrava tl-001 e as quatro checkboxes corretas. A asserção foi corrigida para validar enunciado, tipo, quantidade e nomes de todas as alternativas do item realmente guardado; uma seed fixa reproduz intencionalmente a pergunta múltipla. Isto reforça a verificação e elimina a dependência acidental do sorteio; não se alterou o produto, a aleatoriedade, as asserções anteriores, workers, timeout ou retries. Log e trace desta falha estão preservados em tmp/phase5c-radio-assumption-*.
+
+As comparações de tempos acima são observações locais, com caches/processos do sistema variáveis, e não uma calibração de capacidade. A predefinição automática (oito nesta máquina) mantém-se; não há evidência para baixar workers para esconder um problema. A causa exclusiva dos sete timeouts antigos continua por demonstrar.
+
+Resultados depois da correção do teste novo:
+
+| Comando                                                                        | Resultado final                 | Tempo total incluindo build/runner |
+| ------------------------------------------------------------------------------ | ------------------------------- | ---------------------------------: |
+| npm run test:e2e -- tests/e2e/lazy-history.spec.ts --workers=4 --repeat-each=2 | 16/16, exit 0                   |                23,6 s (Playwright) |
+| npm run test:e2e -- --workers=4 --repeat-each=2                                | 100/100, exit 0                 |                            77,91 s |
+| npm run test:e2e                                                               | **50/50 com 8 workers, exit 0** |        49,33 s (47,4 s Playwright) |
+
+Nenhuma falha de navegação na configuração final observada. As suites completas com 1, 2 e 8 workers tinham passado antes desta correção exclusivamente no teste; os testes originais e o artefacto da aplicação são os mesmos. Os resultados anteriores não são apresentados como uma nova execução da asserção corrigida. O build final mantém os mesmos nomes/hashes de chunks da medição otimizada. A revisão permanece 2026-10-27.6, com 82 perguntas, 64 LO, 29 grupos e exames de 40 perguntas. Nenhum conteúdo académico ou arquivo foi alterado e não houve push/deploy.
+
+## Fase 5B — qualidade académica e revisão .7 (28-10-2026)
+
+A baseline real era `.6`: 82 perguntas, 64 LO, 29 grupos, 82 elegíveis; 39 itens de três alternativas, exatamente **tl-002–tl-040**. Preflight, diagnóstico anterior às alterações, revisões por ID, novas opções o4, fontes, resolução, contestação de cada alternativa e limites metodológicos estão em [academic-audit.md](academic-audit.md#fase-5b--revisão-final-6--7). O trabalho local não commitado da fase 5C foi preservado; não se recomeçou a arquitetura.
+
+Foi arquivado o runtime completo `.6` antes de alterar o conteúdo, segundo a serialização Prettier JSON/LF existente. Arquivo: `src/data/archive/questions-2026-10-27.6.json`; **82 objetos**, SHA-256 **8bf1990ee8eb05f93eec529fe903a05db20ad72a649648f161f2847802c6012e**. Os hashes `.1`–`.5` continuam os registados na fase 5C. Os testes comparam os seis arquivos e validam os seus schemas.
+
+A revisão ativa é **2026-10-27.7**. Foram alterados exatamente os 39 alvos; cada um tem quatro alternativas, versão incrementada uma vez, novo o4 incorreto e metadados AI_REVIEWED/PASS com aprovação humana PENDING. Os outros **43 objetos são profundamente iguais à `.6`**, incluindo tl-001 e os seus dois IDs corretos. Todas as 82 chaves, cardinalidades, IDs originais, LO, K-levels, capítulos, tipos e tabelas foram preservados. Não houve novos IDs nem migração de tentativas. A distribuição continua capítulos **16/12/8/21/21/4** e K1/K2/K3 **18/47/17**.
+
+Mudanças de suporte limitadas: `.6` adicionada ao registo de imports dinâmicos, enum de persistência e classificação de revisões alinhadas; novo aviso histórico `.6` para evitar a mensagem incorreta de revisão anterior ao blueprint. Cache, partilha de promessas, barreira assíncrona, erros e retry da fase 5C mantêm-se. Motor, algoritmo de seleção, quotas e configuração Playwright não foram alterados nesta fase. A igualdade histórica dos primeiros 66 itens na fase 5A passa a ser verificada explicitamente contra o arquivo `.6`, conservando a comparação exata com `.5`; expectativas de revisão ativa foram atualizadas para `.7`, sem remover asserções de comportamento.
+
+### Regressões verificadas
+
+- As mesmas 82 identidades, 64 LO e 29 grupos; exames de 40 com capítulo **8/6/4/11/9/2** e K **8/24/8**.
+- Os testes existentes executam **1 000 seeds determinísticos** no banco atual, com oráculo de quotas/grupos/diversidade, unicidade, determinismo, inversão da ordem do pool e chaves após baralhamento. A suite de variedade também verifica 1 000 seeds.
+- Comparação integral dos 39/43 itens; versões/metadados, quatro opções, IDs estáveis e chaves inalteradas; 390 pares bilingues com valores numéricos iguais. Os testes estruturais não provam equivalência semântica: esta foi revista separadamente por IA.
+- Soluções derivadas para partições, BVA, tabela de decisão, transições, exemplos ATDD, estimativa e priorização; múltipla seleção continua sem crédito parcial. As oito aplicações K3 dos alvos foram revistas sem alterar classificação.
+- `.6` retoma exame e prática com as três alternativas originais, ordem, respostas, flags, posição, timestamps, resultados e prazo original. A prática livre mantém prazo nulo; exames mantêm 60/75 minutos. A recuperação não escreve nem migra os dados. Testes usam até um banco atual deliberadamente alterado para provar que a pontuação histórica usa o arquivo.
+- E2E novos: exame `.7` determinístico com quatro alternativas e ordem ligada aos IDs, alternância PT/EN e revisão das quatro justificações; prática que seleciona o4 e pontua 0; exame `.6` com três alternativas e revisão histórica; reload de prática `.6` enquanto o arquivo está pendente. Os 50 E2E anteriores mantêm recuperação de `.1`–`.5`, falha/retry e ausência de arquivos numa visita nova.
+
+### Impacto de desempenho
+
+Método igual ao da fase 5C: build Vite observado por plugin Rollup, preview local, Chromium headless 156.0.8078.4, Node 24.19.0, Ryzen Z1 Extreme/16 CPUs lógicas/13 628 198 912 B RAM, sem throttling e com outros processos presentes. Três contextos frios por cenário e um reload quente por contexto. Não se comparam estes tempos como benchmark universal ou experiência num telemóvel real.
+
+| Métrica JS                                                    | Fase 5C (.6 ativa) | Fase 5B (.7 ativa) |
+| ------------------------------------------------------------- | -----------------: | -----------------: |
+| Entrada inicial minificada                                    |          550 677 B |          584 109 B |
+| Entrada inicial gzip                                          |          168 508 B |          177 959 B |
+| Transferência JS fria observada, incluindo overhead           |          168 808 B |          178 259 B |
+| Total gerado em todos os chunks                               |        1 062 579 B |        1 301 319 B |
+| Soma gzip de todos os chunks                                  |          293 182 B |          355 072 B |
+| Arquivos no grafo inicial / pedidos históricos no painel novo |              0 / 0 |              0 / 0 |
+
+Acréscimo inicial **33 432 B minificados (+6,1%) /9 451 B gzip (+5,6%)**, compatível com 39 alternativas e explicações adicionais e reformulação dos distratores, sem novas dependências. O crescimento total inclui o novo arquivo `.6`, **205 308 B minificados /52 439 B gzip**, carregado a pedido. Os cinco chunks anteriores conservam exatamente os nomes e tamanhos da fase 5C. Não se confundiu crescimento do total arquivado com transferência inicial; o build tem agora sete chunks JS. O aviso da entrada acima de 500 kB e os avisos de comentários Zod permanecem visíveis.
+
+Painel novo frio: **238–276 ms**, reload quente **48–59 ms**, um pedido JS, zero arquivos. Recuperação `.6` fria/quente: exame **237–257/84–357 ms**, prática de 82 perguntas **241–254/75–89 ms**, painel com histórico concluído **272–296/73–90 ms**. Abrir a revisão histórica depois do painel: **179–242/99–121 ms**. Cada cenário `.6` solicita apenas entrada + chunk `.6` (230 998 B JS transferidos frios); no reload quente, 600 B de overhead observados. Houve uma observação de reload quente do exame a 357 ms; não foi descartada nem se aumentou timeout para a esconder. A `.6` era ativa na baseline anterior, pelo que não há medição histórica `.6` estritamente equivalente antes desta fase. A mediana fria do painel 5C foi ~285 ms e agora ~251 ms; a amostra/caches não permitem atribuir uma aceleração ao conteúdo novo. O sinal de desempenho relevante é o aumento inicial moderado e a preservação de zero arquivo inicial.
+
+### Execuções e limites
+
+Os oito E2E novos passaram em desktop e mobile Chromium, dois workers, **8/8**, exit 0 (21,2 s Playwright). A primeira suite com os testes novos de manutenção teve **119/120, exit 1**: uma asserção nova esperava expiração da prática livre, cujo contrato é prazo nulo/Infinity. Foi corrigida a asserção, acrescentando verificações distintas de prática sem prazo e exame a 75 minutos, inclusive limite do timestamp de conclusão. Não se alterou o produto nem um timeout para corrigir essa falha. Repetição posterior: **120/120 em 14 ficheiros, exit 0**, 16,08 s Vitest. A primeira passagem, anterior à inclusão dos sete testes novos, tinha 113/113.
+
+| Comando              | Resultado final                                                                                         | Exit code |
+| -------------------- | ------------------------------------------------------------------------------------------------------- | --------: |
+| npm run typecheck    | PASS (5,31 s)                                                                                           |         0 |
+| npm run lint         | PASS (6,30 s)                                                                                           |         0 |
+| npm run format:check | PASS; repetido após a documentação final                                                                |         0 |
+| npm test             | **120/120**, 14 ficheiros; execução final após preservar a restrição original de tl-035, 17,74 s Vitest |         0 |
+| npm run build        | PASS; entrada index-BOSP4dkl.js coincide com a medição final (8,05 s do comando)                        |         0 |
+| npm run test:e2e     | **58/58 com 8 workers**, sem retries locais; 40,4 s Playwright /41,81 s do comando                      |         0 |
+| git diff --check     | Sem erros de whitespace                                                                                 |         0 |
+
+A suite E2E completa anterior também passou 58/58 antes da última conferência textual. Essa conferência repôs em tl-035 a condição original de exclusividade da falha na versão 82/dados C; os testes e a medição foram repetidos sobre o texto final. O gráfico de chunks e a rede continuam a demonstrar zero arquivo histórico no painel novo. Os seis hashes e a comparação de 39 alterados/43 iguais mantêm-se válidos. O motor, schema partilhado, blueprint, configuração Playwright e dependências anteriores continuam intactos, exceto as extensões de reconhecimento da revisão .6 documentadas acima.
+
+Evidência local em `tmp/phase5b-*`: inventário/hashes do trabalho pré-existente, banco anterior, validação de três lotes (15/28/39 itens), apresentação sem chaves, resoluções registadas, contestação, métricas editoriais, comparação de 39/43 objetos e relatório de produção com grafo e rede. Os PDFs oficiais e extrações não foram incorporados no site ou nos novos arquivos. Não há push/deploy, novas dependências, alterações KAVTRIS ou limpeza destrutiva.
+
+Restam revisão académica humana independente, teste com candidatos e calibração de dificuldade/discriminação. As 43 perguntas fora do âmbito conservam também as suas limitações anteriores. Persistem algumas pistas de comprimento e exercícios simples, documentados por ID na auditoria. A contestação foi uma passagem separada do mesmo agente, não uma revisão independente entre fornecedores; o resultado PASS é limitado à avaliação por IA. Não se atribuiu aprovação humana nem equivalência/acreditação ISTQB/PSTQB.
