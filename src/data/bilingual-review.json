@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tl-002",
+    "previousVersion": 1,
+    "version": 2,
+    "reviewedAt": "2026-10-27",
+    "report": "docs/academic-audit.md#fase-41--tl-002",
+    "finding": "Alinhar product failure com falha de produto em PT, mantendo a distinção entre garantia da qualidade e reporte de problemas do produto."
+  },
+  {
+    "id": "tl-003",
+    "previousVersion": 2,
+    "version": 3,
+    "reviewedAt": "2026-10-27",
+    "report": "docs/academic-audit.md#fase-41--tl-003",
+    "finding": "Explicitar teste de confirmação em o3 nos dois idiomas e na justificação; localizar e remover o defeito continua a ser debugging."
+  },
+  {
+    "id": "tl-008",
+    "previousVersion": 2,
+    "version": 3,
+    "reviewedAt": "2026-10-27",
+    "report": "docs/academic-audit.md#fase-41--tl-008",
+    "finding": "Uniformizar testadores em PT, sem alterar o inglês nem o conteúdo sobre independência."
+  },
+  {
+    "id": "tl-023",
+    "previousVersion": 2,
+    "version": 3,
+    "reviewedAt": "2026-10-27",
+    "report": "docs/academic-audit.md#fase-41--tl-023",
+    "finding": "Uniformizar scripts de teste em PT, conforme convenção do projeto e referência PSTQB §1.4.3 p.22."
+  },
+  {
+    "id": "tl-058",
+    "previousVersion": 1,
+    "version": 2,
+    "reviewedAt": "2026-10-27",
+    "report": "docs/academic-audit.md#fase-41--tl-058",
+    "finding": "Traduzir deployment guide por guia de colocação em serviço de software, sem limitar o documento à instalação ou acrescentar um ambiente de produção."
+  }
+]

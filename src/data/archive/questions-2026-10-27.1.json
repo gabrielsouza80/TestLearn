@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "tl-001",
+    "chapter": 1,
+    "lo": "FL-1.1.1",
+    "level": "K1",
+    "topic": "Objectives",
+    "type": "multiple",
+    "required": 2,
+    "text": {
+      "en": "Select TWO useful testing objectives.",
+      "pt": "Selecione DOIS objetivos úteis dos testes."
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Provide information for a release decision",
+          "pt": "Fornecer informação para decidir uma entrega"
+        },
+        "explanation": {
+          "en": "Test evidence informs decisions about risk.",
+          "pt": "A evidência de teste informa decisões sobre risco."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Prove that no defects exist",
+          "pt": "Provar que não existem defeitos"
+        },
+        "explanation": {
+          "en": "Finite testing cannot prove defect absence.",
+          "pt": "Testes finitos não provam a ausência de defeitos."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Guarantee every user is satisfied",
+          "pt": "Garantir a satisfação de todos os utilizadores"
+        },
+        "explanation": {
+          "en": "Satisfaction cannot be guaranteed by testing.",
+          "pt": "Os testes não garantem satisfação."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Find defects in work products",
+          "pt": "Encontrar defeitos em produtos de trabalho"
+        },
+        "explanation": {
+          "en": "Finding flaws is a testing objective.",
+          "pt": "Encontrar imperfeições é um objetivo dos testes."
+        }
+      }
+    ],
+    "correct": ["o1", "o4"],
+    "explanation": {
+      "en": "Test evidence informs decisions about risk.",
+      "pt": "A evidência de teste informa decisões sobre risco."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-002",
+    "chapter": 1,
+    "lo": "FL-1.2.2",
+    "level": "K1",
+    "topic": "Quality assurance",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which activity is primarily process-oriented quality assurance?",
+      "pt": "Que atividade de garantia da qualidade se centra principalmente no processo?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Improving the team review process",
+          "pt": "Melhorar o processo de revisão da equipa"
+        },
+        "explanation": {
+          "en": "QA improves processes to help prevent defects.",
+          "pt": "A garantia da qualidade melhora processos para ajudar a prevenir defeitos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Executing a checkout test",
+          "pt": "Executar um teste de compra"
+        },
+        "explanation": {
+          "en": "Execution evaluates the product.",
+          "pt": "A execução avalia o produto."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Reporting a crash in a build",
+          "pt": "Reportar uma falha numa versão"
+        },
+        "explanation": {
+          "en": "This reports a product problem.",
+          "pt": "Isto reporta um problema do produto."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "QA improves processes to help prevent defects.",
+      "pt": "A garantia da qualidade melhora processos para ajudar a prevenir defeitos."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-003",
+    "chapter": 1,
+    "lo": "FL-1.1.2",
+    "level": "K2",
+    "topic": "Debugging",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "A tester reproduces a crash; a developer locates and repairs the faulty statement. Which activity is debugging?",
+      "pt": "Um tester reproduz uma falha; um programador localiza e corrige a instrução defeituosa. Qual atividade é depuração?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Locating and repairing the cause",
+          "pt": "Localizar e corrigir a causa"
+        },
+        "explanation": {
+          "en": "Debugging diagnoses and removes the cause.",
+          "pt": "A depuração diagnostica e remove a causa."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Reproducing the observed failure",
+          "pt": "Reproduzir a falha observada"
+        },
+        "explanation": {
+          "en": "Reproduction is dynamic testing.",
+          "pt": "A reprodução é teste dinâmico."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Checking the repair afterwards",
+          "pt": "Verificar a correção depois"
+        },
+        "explanation": {
+          "en": "Checking a repair is confirmation testing.",
+          "pt": "Verificar a correção é teste de confirmação."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Debugging diagnoses and removes the cause.",
+      "pt": "A depuração diagnostica e remove a causa."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-004",
+    "chapter": 1,
+    "lo": "FL-1.2.3",
+    "level": "K2",
+    "topic": "Error and defect",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "A programmer misunderstands a tax rule and writes the wrong formula. What is the wrong formula?",
+      "pt": "Um programador interpreta mal uma regra fiscal e escreve uma fórmula errada. O que é a fórmula errada?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "A defect",
+          "pt": "Um defeito"
+        },
+        "explanation": {
+          "en": "The formula is a flaw in a work product.",
+          "pt": "A fórmula é uma imperfeição num produto de trabalho."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "A human error",
+          "pt": "Um erro humano"
+        },
+        "explanation": {
+          "en": "The misunderstanding is the human error.",
+          "pt": "A interpretação incorreta é o erro humano."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "An observed failure",
+          "pt": "Uma falha observada"
+        },
+        "explanation": {
+          "en": "A failure is observed during execution.",
+          "pt": "Uma falha é observada durante a execução."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "The formula is a flaw in a work product.",
+      "pt": "A fórmula é uma imperfeição num produto de trabalho."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-005",
+    "chapter": 1,
+    "lo": "FL-1.3.1",
+    "level": "K2",
+    "topic": "Testing principles",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "The same regression tests stop finding new defects. What is the best response?",
+      "pt": "Os mesmos testes de regressão deixam de encontrar novos defeitos. Qual é a melhor resposta?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Review and vary tests and data",
+          "pt": "Rever e variar testes e dados"
+        },
+        "explanation": {
+          "en": "Tests can wear out; refresh them while retaining useful checks.",
+          "pt": "Os testes podem perder eficácia; devem ser renovados mantendo verificações úteis."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Declare the product defect-free",
+          "pt": "Declarar o produto sem defeitos"
+        },
+        "explanation": {
+          "en": "A clean test run is not proof of absence.",
+          "pt": "Uma execução sem falhas não prova ausência de defeitos."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Stop all regression testing",
+          "pt": "Parar todos os testes de regressão"
+        },
+        "explanation": {
+          "en": "Existing checks still detect regressions.",
+          "pt": "As verificações existentes ainda detetam regressões."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Tests can wear out; refresh them while retaining useful checks.",
+      "pt": "Os testes podem perder eficácia; devem ser renovados mantendo verificações úteis."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-006",
+    "chapter": 1,
+    "lo": "FL-1.4.1",
+    "level": "K2",
+    "topic": "Test activities",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A tester derives test conditions from requirements. Which activity is this?",
+      "pt": "Um tester deriva condições de teste a partir de requisitos. Que atividade é esta?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Test analysis",
+          "pt": "Análise de teste"
+        },
+        "explanation": {
+          "en": "Analysis identifies what needs testing.",
+          "pt": "A análise identifica o que é necessário testar."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Test execution",
+          "pt": "Execução de teste"
+        },
+        "explanation": {
+          "en": "Execution runs tests and compares results.",
+          "pt": "A execução realiza testes e compara resultados."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Test completion",
+          "pt": "Conclusão de teste"
+        },
+        "explanation": {
+          "en": "Completion consolidates outcomes and assets.",
+          "pt": "A conclusão consolida resultados e recursos."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Analysis identifies what needs testing.",
+      "pt": "A análise identifica o que é necessário testar."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-007",
+    "chapter": 1,
+    "lo": "FL-1.4.4",
+    "level": "K2",
+    "topic": "Traceability",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A payment requirement changes. How do requirement-to-test links help?",
+      "pt": "Um requisito de pagamento muda. Como ajudam as ligações entre requisitos e testes?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Identify tests affected by the change",
+          "pt": "Identificam testes afetados pela alteração"
+        },
+        "explanation": {
+          "en": "Traceability supports change impact analysis.",
+          "pt": "A rastreabilidade apoia a análise de impacto das alterações."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Automatically repair every affected test",
+          "pt": "Corrigem automaticamente todos os testes afetados"
+        },
+        "explanation": {
+          "en": "Links do not rewrite tests.",
+          "pt": "As ligações não reescrevem testes."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Remove the need for impact analysis",
+          "pt": "Eliminam a necessidade de análise de impacto"
+        },
+        "explanation": {
+          "en": "Links supply evidence for the analysis.",
+          "pt": "As ligações fornecem evidência para a análise."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Traceability supports change impact analysis.",
+      "pt": "A rastreabilidade apoia a análise de impacto das alterações."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-008",
+    "chapter": 1,
+    "lo": "FL-1.5.3",
+    "level": "K2",
+    "topic": "Independence",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Why involve someone other than the author in testing?",
+      "pt": "Porquê envolver alguém além do autor nos testes?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Different perspectives may challenge assumptions",
+          "pt": "Perspetivas diferentes podem questionar pressupostos"
+        },
+        "explanation": {
+          "en": "Different backgrounds expose different assumptions.",
+          "pt": "Experiências distintas revelam pressupostos diferentes."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The author no longer has quality responsibility",
+          "pt": "O autor deixa de ter responsabilidade pela qualidade"
+        },
+        "explanation": {
+          "en": "Quality remains a shared responsibility.",
+          "pt": "A qualidade continua a ser responsabilidade partilhada."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Independent testers never miss defects",
+          "pt": "Testers independentes nunca deixam passar defeitos"
+        },
+        "explanation": {
+          "en": "All testers can miss defects.",
+          "pt": "Todos os testers podem deixar passar defeitos."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Different backgrounds expose different assumptions.",
+      "pt": "Experiências distintas revelam pressupostos diferentes."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-009",
+    "chapter": 2,
+    "lo": "FL-2.1.2",
+    "level": "K1",
+    "topic": "Lifecycle",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which practice applies across development lifecycles?",
+      "pt": "Que prática se aplica aos vários ciclos de desenvolvimento?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Start test analysis alongside related development work",
+          "pt": "Iniciar a análise de teste em paralelo com o trabalho de desenvolvimento relacionado"
+        },
+        "explanation": {
+          "en": "Early corresponding test activities support feedback.",
+          "pt": "Atividades de teste correspondentes e precoces apoiam o feedback."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Wait for deployment before any testing",
+          "pt": "Esperar pela instalação antes de qualquer teste"
+        },
+        "explanation": {
+          "en": "Static testing can start earlier.",
+          "pt": "Os testes estáticos podem começar antes."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Use only one test level",
+          "pt": "Usar apenas um nível de teste"
+        },
+        "explanation": {
+          "en": "Different levels address different objectives.",
+          "pt": "Níveis diferentes abordam objetivos diferentes."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Early corresponding test activities support feedback.",
+      "pt": "Atividades de teste correspondentes e precoces apoiam o feedback."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-010",
+    "chapter": 2,
+    "lo": "FL-2.1.3",
+    "level": "K1",
+    "topic": "Test first",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which approach writes component tests before the corresponding implementation?",
+      "pt": "Que abordagem escreve testes de componente antes da implementação correspondente?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Test-driven development (TDD)",
+          "pt": "Desenvolvimento orientado por testes (TDD)"
+        },
+        "explanation": {
+          "en": "TDD uses tests to guide small implementation steps.",
+          "pt": "O TDD usa testes para orientar pequenos passos de implementação."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Testing only after release",
+          "pt": "Testar apenas após a entrega"
+        },
+        "explanation": {
+          "en": "This is not test first.",
+          "pt": "Isto não é uma abordagem test first."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Production monitoring alone",
+          "pt": "Apenas monitorização em produção"
+        },
+        "explanation": {
+          "en": "Monitoring does not prescribe test-first development.",
+          "pt": "A monitorização não prescreve desenvolvimento test first."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "TDD uses tests to guide small implementation steps.",
+      "pt": "O TDD usa testes para orientar pequenos passos de implementação."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-011",
+    "chapter": 2,
+    "lo": "FL-2.2.3",
+    "level": "K2",
+    "topic": "Regression",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "After fixing a discount defect, the team reruns its failing test and checks unaffected payment flows. What are these checks respectively?",
+      "pt": "Após corrigir um defeito num desconto, a equipa repete o teste que falhou e verifica fluxos de pagamento não alterados. Que testes são, respetivamente?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Confirmation and regression",
+          "pt": "Confirmação e regressão"
+        },
+        "explanation": {
+          "en": "Confirmation verifies the fix; regression checks adverse effects elsewhere.",
+          "pt": "A confirmação verifica a correção; a regressão procura efeitos adversos noutras áreas."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Regression and confirmation",
+          "pt": "Regressão e confirmação"
+        },
+        "explanation": {
+          "en": "The order is reversed.",
+          "pt": "A ordem está invertida."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Both are only confirmation",
+          "pt": "Ambos são apenas confirmação"
+        },
+        "explanation": {
+          "en": "Unchanged flows are regression checks.",
+          "pt": "Os fluxos não alterados são verificações de regressão."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Confirmation verifies the fix; regression checks adverse effects elsewhere.",
+      "pt": "A confirmação verifica a correção; a regressão procura efeitos adversos noutras áreas."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-012",
+    "chapter": 2,
+    "lo": "FL-2.2.1",
+    "level": "K2",
+    "topic": "Test levels",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A test focuses on the interface between a tax module and an invoice module within one application. Which level fits best?",
+      "pt": "Um teste centra-se na interface entre um módulo fiscal e um módulo de faturação da mesma aplicação. Qual é o nível mais adequado?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Component integration testing",
+          "pt": "Teste de integração de componentes"
+        },
+        "explanation": {
+          "en": "The scope is interaction between internal components.",
+          "pt": "O âmbito é a interação entre componentes internos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Acceptance testing",
+          "pt": "Teste de aceitação"
+        },
+        "explanation": {
+          "en": "Acceptance focuses on business needs and readiness.",
+          "pt": "A aceitação centra-se nas necessidades de negócio e na prontidão."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "System integration with external systems",
+          "pt": "Integração de sistemas com sistemas externos"
+        },
+        "explanation": {
+          "en": "No external system is in the stated scope.",
+          "pt": "O âmbito descrito não inclui um sistema externo."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "The scope is interaction between internal components.",
+      "pt": "O âmbito é a interação entre componentes internos."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-013",
+    "chapter": 2,
+    "lo": "FL-2.1.5",
+    "level": "K2",
+    "topic": "Shift left",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Reviewing acceptance criteria before coding is an example of what?",
+      "pt": "Rever critérios de aceitação antes de programar é um exemplo de quê?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Shift left",
+          "pt": "Shift left"
+        },
+        "explanation": {
+          "en": "Earlier evaluation gives earlier feedback.",
+          "pt": "A avaliação antecipada permite feedback mais cedo."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Eliminating later testing",
+          "pt": "Eliminar os testes posteriores"
+        },
+        "explanation": {
+          "en": "Earlier tests complement later tests.",
+          "pt": "Os testes antecipados complementam os posteriores."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Production-only testing",
+          "pt": "Testar apenas em produção"
+        },
+        "explanation": {
+          "en": "The review occurs before implementation.",
+          "pt": "A revisão ocorre antes da implementação."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Earlier evaluation gives earlier feedback.",
+      "pt": "A avaliação antecipada permite feedback mais cedo."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-014",
+    "chapter": 2,
+    "lo": "FL-2.3.1",
+    "level": "K2",
+    "topic": "Maintenance",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "An operational service moves to a new database engine. Why plan maintenance testing?",
+      "pt": "Um serviço em operação muda para outro motor de base de dados. Porquê planear testes de manutenção?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Migration can affect data and existing behaviour",
+          "pt": "A migração pode afetar dados e comportamento existente"
+        },
+        "explanation": {
+          "en": "Environment migration is a maintenance-testing trigger.",
+          "pt": "A migração do ambiente é um motivo para testes de manutenção."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Only new features ever need tests",
+          "pt": "Só as novas funcionalidades precisam de testes"
+        },
+        "explanation": {
+          "en": "Existing features can regress.",
+          "pt": "As funcionalidades existentes podem sofrer regressões."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Infrastructure changes cannot affect software",
+          "pt": "Alterações de infraestrutura não afetam o software"
+        },
+        "explanation": {
+          "en": "Dependencies can alter behaviour.",
+          "pt": "As dependências podem alterar o comportamento."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Environment migration is a maintenance-testing trigger.",
+      "pt": "A migração do ambiente é um motivo para testes de manutenção."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-015",
+    "chapter": 3,
+    "lo": "FL-3.1.1",
+    "level": "K1",
+    "topic": "Static work products",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which work product can be reviewed without executing software?",
+      "pt": "Que produto de trabalho pode ser revisto sem executar software?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "A requirements document",
+          "pt": "Um documento de requisitos"
+        },
+        "explanation": {
+          "en": "Requirements can be inspected directly.",
+          "pt": "Os requisitos podem ser inspecionados diretamente."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Only a running server response",
+          "pt": "Apenas uma resposta de servidor em execução"
+        },
+        "explanation": {
+          "en": "A running response requires execution.",
+          "pt": "Uma resposta em execução exige execução."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Only a deployed binary under load",
+          "pt": "Apenas um binário instalado sob carga"
+        },
+        "explanation": {
+          "en": "Load execution is dynamic testing.",
+          "pt": "A execução sob carga é teste dinâmico."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Requirements can be inspected directly.",
+      "pt": "Os requisitos podem ser inspecionados diretamente."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-016",
+    "chapter": 3,
+    "lo": "FL-3.2.3",
+    "level": "K1",
+    "topic": "Review roles",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Who normally facilitates a review meeting and helps keep it effective?",
+      "pt": "Quem normalmente facilita uma reunião de revisão e ajuda a mantê-la eficaz?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "The moderator",
+          "pt": "O moderador"
+        },
+        "explanation": {
+          "en": "The moderator facilitates the review.",
+          "pt": "O moderador facilita a revisão."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The author alone as mandatory decision maker",
+          "pt": "Apenas o autor como decisor obrigatório"
+        },
+        "explanation": {
+          "en": "The author creates and may correct the work product.",
+          "pt": "O autor cria e pode corrigir o produto de trabalho."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "The customer support queue",
+          "pt": "A fila de apoio ao cliente"
+        },
+        "explanation": {
+          "en": "A queue is not a review role.",
+          "pt": "Uma fila não é um papel de revisão."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "The moderator facilitates the review.",
+      "pt": "O moderador facilita a revisão."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-017",
+    "chapter": 3,
+    "lo": "FL-3.1.3",
+    "level": "K2",
+    "topic": "Static versus dynamic",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Review finds contradictory date requirements; execution finds an incorrect date displayed. Which statement is accurate?",
+      "pt": "Uma revisão encontra requisitos contraditórios de datas; a execução encontra uma data incorreta apresentada. Qual afirmação é correta?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Static testing found a defect directly; dynamic testing observed a failure",
+          "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+        },
+        "explanation": {
+          "en": "Review can find flaws without execution; execution exposes failures.",
+          "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Both required executing the application",
+          "pt": "Ambos exigiram executar a aplicação"
+        },
+        "explanation": {
+          "en": "Review does not require execution.",
+          "pt": "A revisão não exige execução."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Only the displayed date can indicate a problem",
+          "pt": "Só a data apresentada pode indicar um problema"
+        },
+        "explanation": {
+          "en": "Contradictory requirements are also a problem.",
+          "pt": "Requisitos contraditórios também são um problema."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Review can find flaws without execution; execution exposes failures.",
+      "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-018",
+    "chapter": 3,
+    "lo": "FL-3.2.4",
+    "level": "K2",
+    "topic": "Review types",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A team needs the most formal review type, with defined roles and collected metrics. Which fits?",
+      "pt": "Uma equipa precisa do tipo de revisão mais formal, com papéis definidos e métricas recolhidas. Qual é adequado?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Inspection",
+          "pt": "Inspeção"
+        },
+        "explanation": {
+          "en": "Inspection has a formal process and metrics.",
+          "pt": "A inspeção tem um processo formal e métricas."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Informal peer conversation",
+          "pt": "Conversa informal entre colegas"
+        },
+        "explanation": {
+          "en": "An informal review lacks that formal structure.",
+          "pt": "Uma revisão informal não tem essa estrutura formal."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Unstructured author demonstration",
+          "pt": "Demonstração não estruturada pelo autor"
+        },
+        "explanation": {
+          "en": "An unstructured demonstration lacks the required controls.",
+          "pt": "Uma demonstração não estruturada não tem os controlos pedidos."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Inspection has a formal process and metrics.",
+      "pt": "A inspeção tem um processo formal e métricas."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-019",
+    "chapter": 4,
+    "lo": "FL-4.1.1",
+    "level": "K2",
+    "topic": "Technique families",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Tests derived from externally specified behaviour, without using code structure, belong to which family?",
+      "pt": "Testes derivados do comportamento especificado externamente, sem usar a estrutura do código, pertencem a que família?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Black-box techniques",
+          "pt": "Técnicas de caixa-preta"
+        },
+        "explanation": {
+          "en": "The source is specified behaviour.",
+          "pt": "A origem é o comportamento especificado."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "White-box techniques",
+          "pt": "Técnicas de caixa-branca"
+        },
+        "explanation": {
+          "en": "White-box techniques use internal structure.",
+          "pt": "As técnicas de caixa-branca usam a estrutura interna."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Only experience-based techniques",
+          "pt": "Apenas técnicas baseadas na experiência"
+        },
+        "explanation": {
+          "en": "Experience is not the stated basis.",
+          "pt": "A experiência não é a base indicada."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "The source is specified behaviour.",
+      "pt": "A origem é o comportamento especificado."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-020",
+    "chapter": 4,
+    "lo": "FL-4.3.1",
+    "level": "K2",
+    "topic": "Statement coverage",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A suite executes all executable statements. What can we conclude?",
+      "pt": "Uma bateria executa todas as instruções executáveis. O que podemos concluir?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "It has 100% statement coverage, but may miss branches",
+          "pt": "Tem 100% de cobertura de instruções, mas pode omitir ramos"
+        },
+        "explanation": {
+          "en": "Statement coverage counts executed statements, not every possible branch.",
+          "pt": "A cobertura de instruções conta instruções executadas, não todos os ramos possíveis."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "It necessarily covers every branch",
+          "pt": "Cobre necessariamente todos os ramos"
+        },
+        "explanation": {
+          "en": "A decision outcome can be missed despite executing every statement.",
+          "pt": "Um resultado de decisão pode ser omitido apesar de executar todas as instruções."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "It proves every requirement is correct",
+          "pt": "Prova que todos os requisitos estão corretos"
+        },
+        "explanation": {
+          "en": "Structural coverage does not prove requirement correctness.",
+          "pt": "A cobertura estrutural não prova a correção dos requisitos."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Statement coverage counts executed statements, not every possible branch.",
+      "pt": "A cobertura de instruções conta instruções executadas, não todos os ramos possíveis."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-021",
+    "chapter": 4,
+    "lo": "FL-4.3.2",
+    "level": "K2",
+    "topic": "Branch coverage",
+    "type": "calculation",
+    "required": 1,
+    "text": {
+      "en": "A decision has true and false branches. Only true is executed. What is branch coverage for these two branches?",
+      "pt": "Uma decisão tem ramos verdadeiro e falso. Só o verdadeiro é executado. Qual é a cobertura destes dois ramos?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "50%",
+          "pt": "50%"
+        },
+        "explanation": {
+          "en": "One of two branches is covered: 1/2.",
+          "pt": "Um de dois ramos está coberto: 1/2."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "100%",
+          "pt": "100%"
+        },
+        "explanation": {
+          "en": "The false branch is missing.",
+          "pt": "Falta o ramo falso."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "0%",
+          "pt": "0%"
+        },
+        "explanation": {
+          "en": "One branch was executed.",
+          "pt": "Um ramo foi executado."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "One of two branches is covered: 1/2.",
+      "pt": "Um de dois ramos está coberto: 1/2."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-022",
+    "chapter": 4,
+    "lo": "FL-4.4.1",
+    "level": "K2",
+    "topic": "Error guessing",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A tester targets date parsing because similar products failed on leap days. Which technique is used?",
+      "pt": "Um tester foca a interpretação de datas porque produtos semelhantes falharam em dias bissextos. Que técnica usa?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Error guessing",
+          "pt": "Suposição de erros"
+        },
+        "explanation": {
+          "en": "Prior experience guides likely defect targets.",
+          "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Statement testing",
+          "pt": "Teste de instruções"
+        },
+        "explanation": {
+          "en": "No code coverage criterion is given.",
+          "pt": "Não é indicado um critério de cobertura do código."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Exhaustive testing",
+          "pt": "Teste exaustivo"
+        },
+        "explanation": {
+          "en": "Only selected risk areas are targeted.",
+          "pt": "Só são visadas áreas de risco selecionadas."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Prior experience guides likely defect targets.",
+      "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-023",
+    "chapter": 4,
+    "lo": "FL-4.4.2",
+    "level": "K2",
+    "topic": "Exploratory testing",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A tester learns a new search feature, designs tests, and executes them during a timeboxed charter. Which technique fits?",
+      "pt": "Um tester aprende uma nova pesquisa, concebe testes e executa-os durante uma sessão limitada por uma missão. Que técnica é adequada?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Exploratory testing",
+          "pt": "Teste exploratório"
+        },
+        "explanation": {
+          "en": "Learning, design and execution inform each other.",
+          "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Only scripted replay",
+          "pt": "Apenas repetição de guiões"
+        },
+        "explanation": {
+          "en": "The tester adapts tests while learning.",
+          "pt": "O tester adapta os testes enquanto aprende."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Only static analysis",
+          "pt": "Apenas análise estática"
+        },
+        "explanation": {
+          "en": "The scenario includes execution.",
+          "pt": "O cenário inclui execução."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Learning, design and execution inform each other.",
+      "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-024",
+    "chapter": 4,
+    "lo": "FL-4.5.2",
+    "level": "K2",
+    "topic": "Acceptance criteria",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which criterion uses scenario-oriented Given/When/Then structure?",
+      "pt": "Que critério usa a estrutura de cenário Dado/Quando/Então?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Given an empty basket, when opened, then show a zero total",
+          "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+        },
+        "explanation": {
+          "en": "The criterion describes a concrete context, event and observable outcome.",
+          "pt": "O critério descreve contexto, evento e resultado observável concretos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The design must look nice",
+          "pt": "O aspeto deve ser bonito"
+        },
+        "explanation": {
+          "en": "Nice is subjective and not an explicit scenario.",
+          "pt": "Bonito é subjetivo e não constitui um cenário explícito."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "The team should work faster",
+          "pt": "A equipa deve trabalhar mais depressa"
+        },
+        "explanation": {
+          "en": "Team speed is not product acceptance behaviour.",
+          "pt": "A rapidez da equipa não é comportamento de aceitação do produto."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "The criterion describes a concrete context, event and observable outcome.",
+      "pt": "O critério descreve contexto, evento e resultado observável concretos."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-025",
+    "chapter": 4,
+    "lo": "FL-4.2.1",
+    "level": "K3",
+    "topic": "Equivalence partitioning",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "An integer quantity is accepted from 3 to 8 inclusive. Which smallest set covers the below-range, valid and above-range partitions?",
+      "pt": "Uma quantidade inteira é aceite de 3 a 8 inclusive. Que conjunto mínimo cobre as partições abaixo do intervalo, válida e acima do intervalo?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "2, 5, 9",
+          "pt": "2, 5, 9"
+        },
+        "explanation": {
+          "en": "Each of the three partitions has one representative.",
+          "pt": "Cada uma das três partições tem um representante."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "3, 5, 8",
+          "pt": "3, 5, 8"
+        },
+        "explanation": {
+          "en": "All three values are in the valid partition.",
+          "pt": "Os três valores estão na partição válida."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "2, 9",
+          "pt": "2, 9"
+        },
+        "explanation": {
+          "en": "The valid partition is not covered.",
+          "pt": "A partição válida não está coberta."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Each of the three partitions has one representative.",
+      "pt": "Cada uma das três partições tem um representante."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-026",
+    "chapter": 4,
+    "lo": "FL-4.2.2",
+    "level": "K3",
+    "topic": "Boundary values",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "An integer score from 10 to 20 inclusive is valid. Which set gives 2-value boundary coverage for both validity boundaries?",
+      "pt": "Uma pontuação inteira de 10 a 20 inclusive é válida. Que conjunto dá cobertura de valores fronteira de 2 valores para ambas as fronteiras de validade?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "9, 10, 20, 21",
+          "pt": "9, 10, 20, 21"
+        },
+        "explanation": {
+          "en": "Each boundary has adjacent values on opposite sides of validity.",
+          "pt": "Cada fronteira tem valores adjacentes em lados opostos da validade."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "10, 15, 20",
+          "pt": "10, 15, 20"
+        },
+        "explanation": {
+          "en": "The neighbouring invalid values are missing.",
+          "pt": "Faltam os valores inválidos vizinhos."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "8, 12, 18, 23",
+          "pt": "8, 12, 18, 23"
+        },
+        "explanation": {
+          "en": "These are not the boundary pairs.",
+          "pt": "Estes não são os pares de fronteira."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Each boundary has adjacent values on opposite sides of validity.",
+      "pt": "Cada fronteira tem valores adjacentes em lados opostos da validade."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-027",
+    "chapter": 4,
+    "lo": "FL-4.2.3",
+    "level": "K3",
+    "topic": "Decision tables",
+    "type": "table",
+    "required": 1,
+    "text": {
+      "en": "Using the table, which input tests the rule that grants free delivery?",
+      "pt": "Usando a tabela, que entrada testa a regra que concede entrega gratuita?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Member = yes; total = 60",
+          "pt": "Membro = sim; total = 60"
+        },
+        "explanation": {
+          "en": "Both required conditions are true.",
+          "pt": "Ambas as condições necessárias são verdadeiras."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Member = no; total = 60",
+          "pt": "Membro = não; total = 60"
+        },
+        "explanation": {
+          "en": "Membership is required.",
+          "pt": "É necessário ser membro."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Member = yes; total = 20",
+          "pt": "Membro = sim; total = 20"
+        },
+        "explanation": {
+          "en": "The total must be at least 50.",
+          "pt": "O total tem de ser pelo menos 50."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Both required conditions are true.",
+      "pt": "Ambas as condições necessárias são verdadeiras."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original",
+    "table": {
+      "headers": ["Member / Membro", "Total ≥ 50", "Free / Gratuita"],
+      "rows": [
+        ["Yes / Sim", "Yes / Sim", "Yes / Sim"],
+        ["Yes / Sim", "No / Não", "No / Não"],
+        ["No / Não", "Yes / Sim", "No / Não"],
+        ["No / Não", "No / Não", "No / Não"]
+      ]
+    }
+  },
+  {
+    "id": "tl-028",
+    "chapter": 4,
+    "lo": "FL-4.2.4",
+    "level": "K3",
+    "topic": "State transitions",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "An order starts Draft. Submit moves Draft to Pending; Pay moves Pending to Paid. Pay in Draft is invalid. Which sequence reaches Paid using only valid transitions?",
+      "pt": "Uma encomenda começa em Rascunho. Submeter passa para Pendente; Pagar passa de Pendente para Paga. Pagar em Rascunho é inválido. Que sequência chega a Paga só com transições válidas?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Submit, Pay",
+          "pt": "Submeter, Pagar"
+        },
+        "explanation": {
+          "en": "Submit establishes the state required by Pay.",
+          "pt": "Submeter estabelece o estado necessário para Pagar."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Pay, Submit",
+          "pt": "Pagar, Submeter"
+        },
+        "explanation": {
+          "en": "Pay is initially invalid.",
+          "pt": "Pagar é inicialmente inválido."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Submit, Submit",
+          "pt": "Submeter, Submeter"
+        },
+        "explanation": {
+          "en": "Repeating Submit does not pay the order.",
+          "pt": "Repetir Submeter não paga a encomenda."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Submit establishes the state required by Pay.",
+      "pt": "Submeter estabelece o estado necessário para Pagar."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-029",
+    "chapter": 4,
+    "lo": "FL-4.5.3",
+    "level": "K3",
+    "topic": "ATDD",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "Before coding, the team agrees: delivery is free for totals at least 50. Which acceptance test checks the inclusive threshold?",
+      "pt": "Antes de programar, a equipa acorda: a entrega é gratuita para totais de pelo menos 50. Que teste de aceitação verifica o limiar inclusivo?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Given total 50, when delivery is priced, then charge 0",
+          "pt": "Dado total 50, ao calcular a entrega, cobrar 0"
+        },
+        "explanation": {
+          "en": "The test makes the agreed boundary behaviour executable.",
+          "pt": "O teste torna executável o comportamento de fronteira acordado."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Given total 50, always charge 5",
+          "pt": "Dado total 50, cobrar sempre 5"
+        },
+        "explanation": {
+          "en": "This contradicts the agreed rule.",
+          "pt": "Isto contradiz a regra acordada."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Check only that the pricing method exists",
+          "pt": "Verificar apenas que o método de cálculo existe"
+        },
+        "explanation": {
+          "en": "Method existence does not verify the acceptance rule.",
+          "pt": "A existência do método não verifica a regra de aceitação."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "The test makes the agreed boundary behaviour executable.",
+      "pt": "O teste torna executável o comportamento de fronteira acordado."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-030",
+    "chapter": 5,
+    "lo": "FL-5.1.6",
+    "level": "K1",
+    "topic": "Test pyramid",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which distribution is generally encouraged by a test pyramid?",
+      "pt": "Que distribuição é geralmente incentivada pela pirâmide de testes?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Many small low-level tests, fewer large end-to-end tests",
+          "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+        },
+        "explanation": {
+          "en": "Smaller tests often give fast, focused feedback.",
+          "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Only UI end-to-end tests",
+          "pt": "Apenas testes de interface de ponta a ponta"
+        },
+        "explanation": {
+          "en": "Only large tests tend to slow diagnosis and feedback.",
+          "pt": "Apenas testes grandes tendem a atrasar o diagnóstico e o feedback."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "An equal mandatory number at every level",
+          "pt": "Um número igual obrigatório em todos os níveis"
+        },
+        "explanation": {
+          "en": "The pyramid is a model, not an equal-count rule.",
+          "pt": "A pirâmide é um modelo, não uma regra de contagem igual."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Smaller tests often give fast, focused feedback.",
+      "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-031",
+    "chapter": 5,
+    "lo": "FL-5.1.1",
+    "level": "K2",
+    "topic": "Test plan",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A team needs agreement on test scope, resources and approach. Which artifact addresses this?",
+      "pt": "Uma equipa precisa de acordar âmbito, recursos e abordagem de teste. Que artefacto responde a isto?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "A test plan",
+          "pt": "Um plano de teste"
+        },
+        "explanation": {
+          "en": "A test plan communicates how testing will be organised.",
+          "pt": "Um plano de teste comunica como os testes serão organizados."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "One defect report",
+          "pt": "Um relatório de defeito"
+        },
+        "explanation": {
+          "en": "A defect report describes a specific anomaly.",
+          "pt": "Um relatório de defeito descreve uma anomalia específica."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Only an execution log",
+          "pt": "Apenas um registo de execução"
+        },
+        "explanation": {
+          "en": "A log records events rather than agreeing the approach.",
+          "pt": "Um registo documenta eventos em vez de acordar a abordagem."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "A test plan communicates how testing will be organised.",
+      "pt": "Um plano de teste comunica como os testes serão organizados."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-032",
+    "chapter": 5,
+    "lo": "FL-5.1.3",
+    "level": "K2",
+    "topic": "Entry and exit",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A team requires a working environment before system testing and a risk assessment before ending it. How are these classified?",
+      "pt": "Uma equipa exige um ambiente funcional antes do teste de sistema e avaliação de risco antes de o terminar. Como se classificam?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Entry criterion, then exit criterion",
+          "pt": "Critério de entrada, depois critério de saída"
+        },
+        "explanation": {
+          "en": "Entry supports starting; exit supports deciding completion.",
+          "pt": "A entrada apoia o início; a saída apoia a decisão de conclusão."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Exit criterion, then entry criterion",
+          "pt": "Critério de saída, depois critério de entrada"
+        },
+        "explanation": {
+          "en": "The order is reversed.",
+          "pt": "A ordem está invertida."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Both are test data",
+          "pt": "Ambos são dados de teste"
+        },
+        "explanation": {
+          "en": "These are conditions for activities, not input values.",
+          "pt": "São condições para atividades, não valores de entrada."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Entry supports starting; exit supports deciding completion.",
+      "pt": "A entrada apoia o início; a saída apoia a decisão de conclusão."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-033",
+    "chapter": 5,
+    "lo": "FL-5.2.2",
+    "level": "K2",
+    "topic": "Risk types",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which is a product risk rather than a project risk?",
+      "pt": "Qual é um risco de produto em vez de risco de projeto?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "An invoice calculates the wrong tax",
+          "pt": "Uma fatura calcula imposto incorreto"
+        },
+        "explanation": {
+          "en": "Wrong tax threatens product quality.",
+          "pt": "Imposto incorreto ameaça a qualidade do produto."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "A tester leaves the team",
+          "pt": "Um tester sai da equipa"
+        },
+        "explanation": {
+          "en": "Staff availability threatens project delivery.",
+          "pt": "A disponibilidade da equipa ameaça a entrega do projeto."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "A test environment arrives late",
+          "pt": "Um ambiente de teste chega atrasado"
+        },
+        "explanation": {
+          "en": "A late environment threatens the project schedule.",
+          "pt": "Um ambiente atrasado ameaça o calendário do projeto."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Wrong tax threatens product quality.",
+      "pt": "Imposto incorreto ameaça a qualidade do produto."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-034",
+    "chapter": 5,
+    "lo": "FL-5.2.3",
+    "level": "K2",
+    "topic": "Risk-based testing",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Incorrect transfers have much higher impact than a cosmetic alignment issue. How should this influence testing?",
+      "pt": "Transferências incorretas têm impacto muito superior a um desalinhamento visual. Como deve isto influenciar os testes?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Allocate deeper testing to transfers, considering likelihood too",
+          "pt": "Atribuir testes mais aprofundados às transferências, considerando também a probabilidade"
+        },
+        "explanation": {
+          "en": "Risk analysis guides effort and scope; both impact and likelihood matter.",
+          "pt": "A análise de risco orienta esforço e âmbito; impacto e probabilidade contam."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Always spend equal effort on both",
+          "pt": "Gastar sempre esforço igual em ambos"
+        },
+        "explanation": {
+          "en": "Equal effort ignores differing risks.",
+          "pt": "Esforço igual ignora riscos diferentes."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Ignore all visual tests automatically",
+          "pt": "Ignorar automaticamente todos os testes visuais"
+        },
+        "explanation": {
+          "en": "Lower risk does not automatically mean no testing.",
+          "pt": "Risco menor não implica automaticamente ausência de testes."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Risk analysis guides effort and scope; both impact and likelihood matter.",
+      "pt": "A análise de risco orienta esforço e âmbito; impacto e probabilidade contam."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-035",
+    "chapter": 5,
+    "lo": "FL-5.4.1",
+    "level": "K2",
+    "topic": "Configuration management",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A failure occurs only in build 82 with dataset C. What helps reproduce it?",
+      "pt": "Uma falha ocorre apenas na versão 82 com o conjunto de dados C. O que ajuda a reproduzi-la?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Identify and preserve versions of build, tests and data",
+          "pt": "Identificar e preservar versões do software, testes e dados"
+        },
+        "explanation": {
+          "en": "Configuration identification supports reproducible testing.",
+          "pt": "A identificação da configuração apoia testes reproduzíveis."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Overwrite the data with the latest version",
+          "pt": "Substituir os dados pela versão mais recente"
+        },
+        "explanation": {
+          "en": "Overwriting may lose the triggering conditions.",
+          "pt": "A substituição pode perder as condições que provocam a falha."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Record only the tester name",
+          "pt": "Registar apenas o nome do tester"
+        },
+        "explanation": {
+          "en": "A name does not identify the tested configuration.",
+          "pt": "Um nome não identifica a configuração testada."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Configuration identification supports reproducible testing.",
+      "pt": "A identificação da configuração apoia testes reproduzíveis."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-036",
+    "chapter": 5,
+    "lo": "FL-5.1.4",
+    "level": "K3",
+    "topic": "Estimation",
+    "type": "calculation",
+    "required": 1,
+    "text": {
+      "en": "Using three-point estimation (optimistic + 4 × most likely + pessimistic) / 6, estimates are 2, 5 and 8 hours. What is the estimate?",
+      "pt": "Usando a estimativa de três pontos (otimista + 4 × mais provável + pessimista) / 6, as estimativas são 2, 5 e 8 horas. Qual é a estimativa?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "5 hours",
+          "pt": "5 horas"
+        },
+        "explanation": {
+          "en": "(2 + 20 + 8) / 6 = 5.",
+          "pt": "(2 + 20 + 8) / 6 = 5."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "15 hours",
+          "pt": "15 horas"
+        },
+        "explanation": {
+          "en": "15 adds the estimates without weighting or averaging.",
+          "pt": "15 soma as estimativas sem ponderar ou calcular a média."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "8 hours",
+          "pt": "8 horas"
+        },
+        "explanation": {
+          "en": "8 is only the pessimistic estimate.",
+          "pt": "8 é apenas a estimativa pessimista."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "(2 + 20 + 8) / 6 = 5.",
+      "pt": "(2 + 20 + 8) / 6 = 5."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-037",
+    "chapter": 5,
+    "lo": "FL-5.1.5",
+    "level": "K3",
+    "topic": "Prioritization",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "Risk priority is A before B before C, but A requires C to run first. B is independent. Which order respects the dependency and runs the highest-risk available test first?",
+      "pt": "A prioridade de risco é A antes de B antes de C, mas A exige executar C primeiro. B é independente. Que ordem respeita a dependência e executa primeiro o teste disponível de maior risco?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "B, C, A",
+          "pt": "B, C, A"
+        },
+        "explanation": {
+          "en": "Initially only B and C are available; B has higher risk. C then enables A.",
+          "pt": "Inicialmente só B e C estão disponíveis; B tem risco maior. Depois C permite A."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "A, B, C",
+          "pt": "A, B, C"
+        },
+        "explanation": {
+          "en": "A cannot run before C.",
+          "pt": "A não pode ser executado antes de C."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "C, A, B",
+          "pt": "C, A, B"
+        },
+        "explanation": {
+          "en": "This runs lower-risk C while higher-risk B is available.",
+          "pt": "Isto executa C de menor risco quando B de maior risco está disponível."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Initially only B and C are available; B has higher risk. C then enables A.",
+      "pt": "Inicialmente só B e C estão disponíveis; B tem risco maior. Depois C permite A."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-038",
+    "chapter": 5,
+    "lo": "FL-5.5.1",
+    "level": "K3",
+    "topic": "Defect reports",
+    "type": "scenario",
+    "required": 1,
+    "text": {
+      "en": "On build 82, submitting a valid invoice returns HTTP 500 instead of saving it. Which report best enables reproduction?",
+      "pt": "Na versão 82, submeter uma fatura válida devolve HTTP 500 em vez de a guardar. Que relatório melhor permite reproduzir?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Include build/environment, sanitised input, steps, expected save, actual 500 and logs",
+          "pt": "Incluir versão/ambiente, entrada sem dados pessoais, passos, gravação esperada, erro 500 real e registos"
+        },
+        "explanation": {
+          "en": "Reproduction needs context, steps and expected versus actual outcomes.",
+          "pt": "A reprodução exige contexto, passos e resultados esperados e obtidos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Write only: invoices broken",
+          "pt": "Escrever apenas: faturação avariada"
+        },
+        "explanation": {
+          "en": "This omits reproducible evidence.",
+          "pt": "Isto omite evidência reproduzível."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Include only a proposed code fix",
+          "pt": "Incluir apenas uma proposta de correção do código"
+        },
+        "explanation": {
+          "en": "A hypothesis does not replace failure evidence.",
+          "pt": "Uma hipótese não substitui a evidência da falha."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Reproduction needs context, steps and expected versus actual outcomes.",
+      "pt": "A reprodução exige contexto, passos e resultados esperados e obtidos."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-039",
+    "chapter": 6,
+    "lo": "FL-6.1.1",
+    "level": "K2",
+    "topic": "Tools",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "A team needs to simulate thousands of simultaneous requests and measure response latency. Which tool fits best?",
+      "pt": "Uma equipa precisa de simular milhares de pedidos simultâneos e medir a latência. Que ferramenta é mais adequada?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "A load-testing tool",
+          "pt": "Uma ferramenta de teste de carga"
+        },
+        "explanation": {
+          "en": "Load tools generate traffic and measure performance.",
+          "pt": "As ferramentas de carga geram tráfego e medem desempenho."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "A spelling checker",
+          "pt": "Um corretor ortográfico"
+        },
+        "explanation": {
+          "en": "Spelling checks do not simulate traffic.",
+          "pt": "A correção ortográfica não simula tráfego."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "A review checklist alone",
+          "pt": "Apenas uma lista de verificação de revisão"
+        },
+        "explanation": {
+          "en": "A checklist cannot generate concurrent load.",
+          "pt": "Uma lista não gera carga concorrente."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Load tools generate traffic and measure performance.",
+      "pt": "As ferramentas de carga geram tráfego e medem desempenho."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  },
+  {
+    "id": "tl-040",
+    "chapter": 6,
+    "lo": "FL-6.2.1",
+    "level": "K1",
+    "topic": "Automation",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "Which is a realistic risk of test automation?",
+      "pt": "Qual é um risco realista da automação de testes?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Underestimating script maintenance effort",
+          "pt": "Subestimar o esforço de manutenção dos guiões"
+        },
+        "explanation": {
+          "en": "Maintenance costs must be considered.",
+          "pt": "Os custos de manutenção têm de ser considerados."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "All human judgement becomes unnecessary",
+          "pt": "Todo o julgamento humano se torna desnecessário"
+        },
+        "explanation": {
+          "en": "Human analysis remains necessary.",
+          "pt": "A análise humana continua a ser necessária."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Automation guarantees no future failures",
+          "pt": "A automação garante ausência de falhas futuras"
+        },
+        "explanation": {
+          "en": "Automation cannot guarantee defect absence.",
+          "pt": "A automação não garante ausência de defeitos."
+        }
+      }
+    ],
+    "correct": ["o1"],
+    "explanation": {
+      "en": "Maintenance costs must be considered.",
+      "pt": "Os custos de manutenção têm de ser considerados."
+    },
+    "review": "pending",
+    "translationReview": "pending",
+    "version": 1,
+    "syllabus": "4.0.1",
+    "origin": "original"
+  }
+]
