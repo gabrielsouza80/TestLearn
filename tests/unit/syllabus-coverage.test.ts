@@ -1,3 +1,6 @@
+import { beforeAll } from 'vitest';
+import { prepareHistoricalBanks } from '../fixtures/banks';
+beforeAll(prepareHistoricalBanks);
 import { describe, it, expect } from 'vitest';
 import { questions } from '../../src/data/questions';
 import { syllabusQuestions } from '../../src/data/syllabus-questions';
@@ -6,7 +9,7 @@ import {
   legacyQuestions,
   auditedQuestions,
   coverageArchivedQuestions,
-} from '../../src/data/bank-history';
+} from '../fixtures/banks';
 import { learningObjectiveLevels } from '../../src/domain/objectives';
 import {
   answer,
@@ -192,7 +195,7 @@ describe('full syllabus coverage, distinct from academic approval', () => {
       expect(load().state.history[0]).toEqual(completed);
       expect(score(completed, altered).correct).toBe(1);
     }
-    expect(CONTENT_REVISION).toBe('2026-10-27.6');
+    expect(CONTENT_REVISION).toBe('2026-10-27.7');
   });
   it('rejects missing/whitespace explanations and wrong answer cardinalities instead of hiding content errors', () => {
     const q = syllabusQuestions[0];

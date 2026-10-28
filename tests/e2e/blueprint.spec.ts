@@ -1,7 +1,7 @@
 ﻿import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
-import { auditedQuestions } from '../../src/data/bank-history';
+import { auditedQuestions } from '../fixtures/banks';
 import { createSession } from '../../src/domain/engine';
 import { AUDITED_CONTENT_REVISION } from '../../src/domain/revision';
 import { expectedGroups } from '../fixtures/blueprint-oracle';

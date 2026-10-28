@@ -1,7 +1,7 @@
 import { archivedExam } from '../fixtures/sessions';
 import { test, expect } from '@playwright/test';
 import { questions } from '../../src/data/questions';
-import { legacyQuestions } from '../../src/data/bank-history';
+import { legacyQuestions } from '../fixtures/banks';
 import { createSession } from '../../src/domain/engine';
 import { LEGACY_CONTENT_REVISION } from '../../src/domain/revision';
 const fixed = Date.parse('2026-10-27T12:00:00Z');

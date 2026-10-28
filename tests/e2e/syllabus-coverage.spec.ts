@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import { blueprintArchivedQuestions } from '../../src/data/bank-history';
+import { blueprintArchivedQuestions } from '../fixtures/banks';
 import { selectPracticeExam } from '../../src/domain/blueprint';
 import {
   answer,

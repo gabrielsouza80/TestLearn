@@ -1,4 +1,7 @@
-﻿import { it, expect, describe } from 'vitest';
+import { beforeAll } from 'vitest';
+import { prepareHistoricalBanks } from '../fixtures/banks';
+beforeAll(prepareHistoricalBanks);
+import { it, expect, describe } from 'vitest';
 import { questions } from '../../src/data/questions';
 import {
   auditedQuestions,
@@ -6,7 +9,7 @@ import {
   blueprintArchivedQuestions,
   coverageArchivedQuestions,
   bilingualArchivedQuestions,
-} from '../../src/data/bank-history';
+} from '../fixtures/banks';
 import { blueprintQuestions } from '../../src/data/blueprint-questions';
 import {
   selectPracticeExam,

@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { coverageArchivedQuestions } from '../../src/data/bank-history';
+import { coverageArchivedQuestions } from '../fixtures/banks';
 import {
   answer,
   createSession,
@@ -44,7 +44,7 @@ test('new current study exposes explicit confirmation testing in EN/PT and retai
   ).toHaveCount(0);
   await page
     .getByRole('radio', {
-      name: 'Locating and repairing the cause',
+      name: 'Diagnosing the defect that caused the failure and repairing the faulty code',
       exact: true,
     })
     .check();
@@ -60,7 +60,7 @@ test('new current study exposes explicit confirmation testing in EN/PT and retai
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.6');
+  expect(saved.contentRevision).toBe('2026-10-27.7');
   expect(saved.answers).toEqual({ 'tl-003': ['o1'] });
   await page.reload();
   await page.getByLabel('Idioma', { exact: true }).selectOption('pt');

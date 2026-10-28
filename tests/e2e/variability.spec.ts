@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
-import { bilingualArchivedQuestions } from '../../src/data/bank-history';
+import { bilingualArchivedQuestions } from '../fixtures/banks';
 import {
   createSession,
   answer,

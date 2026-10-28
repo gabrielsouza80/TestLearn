@@ -1,3 +1,6 @@
+import { beforeAll } from 'vitest';
+import { prepareHistoricalBanks } from '../fixtures/banks';
+beforeAll(prepareHistoricalBanks);
 import { describe, it, expect } from 'vitest';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
@@ -8,7 +11,7 @@ import {
   legacyQuestions,
   auditedQuestions,
   blueprintArchivedQuestions,
-} from '../../src/data/bank-history';
+} from '../fixtures/banks';
 import reviews from '../../src/data/bilingual-review.json';
 import {
   CONTENT_REVISION,
@@ -90,7 +93,7 @@ describe('controlled bilingual release .4 → .5', () => {
     ).toBe('fab0fbcb6b137f7885ddeddc8f07d2b15e38e8d385a2b00650a508a803fbd272');
   });
   it('creates current attempts while .4 keeps blueprint status and all original bilingual distinctions', () => {
-    expect(CONTENT_REVISION).toBe('2026-10-27.6');
+    expect(CONTENT_REVISION).toBe('2026-10-27.7');
     expect(
       createSession(currentQuestions, 'practice', 0, 1000, 42).contentRevision,
     ).toBe(CONTENT_REVISION);

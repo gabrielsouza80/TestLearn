@@ -1,8 +1,11 @@
+import { beforeAll } from 'vitest';
+import { prepareHistoricalBanks } from '../fixtures/banks';
+beforeAll(prepareHistoricalBanks);
 import { archivedExam } from '../fixtures/sessions';
 import { describe, it, expect } from 'vitest';
 import { questions } from '../../src/data/questions';
 import reviews from '../../src/data/academic-review.json' with { type: 'json' };
-import { legacyQuestions, auditedQuestions } from '../../src/data/bank-history';
+import { legacyQuestions, auditedQuestions } from '../fixtures/banks';
 import {
   CONTENT_REVISION,
   LEGACY_CONTENT_REVISION,

@@ -1,3 +1,6 @@
+import { beforeAll } from 'vitest';
+import { prepareHistoricalBanks } from '../fixtures/banks';
+beforeAll(prepareHistoricalBanks);
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
@@ -5,11 +8,12 @@ import { questions } from '../../src/data/questions';
 import { variabilityQuestions } from '../../src/data/variability-questions';
 import {
   bilingualArchivedQuestions,
+  variabilityArchivedQuestions,
   legacyQuestions,
   auditedQuestions,
   blueprintArchivedQuestions,
   coverageArchivedQuestions,
-} from '../../src/data/bank-history';
+} from '../fixtures/banks';
 import {
   CONTENT_REVISION,
   BILINGUAL_CONTENT_REVISION,
@@ -71,7 +75,10 @@ describe('phase 5A actual variability and historical boundaries', () => {
         .update(readFileSync('src/data/archive/questions-2026-10-27.5.json'))
         .digest('hex'),
     ).toBe('c57da2c300f58dd5714a8c54746b9e1cd404b8134347c3b13123e83b97823a79');
-    expect(questions.slice(0, 66)).toEqual(bilingualArchivedQuestions);
+    // The original expansion boundary is frozen in .6; .7 intentionally revises 39 items.
+    expect(variabilityArchivedQuestions.slice(0, 66)).toEqual(
+      bilingualArchivedQuestions,
+    );
     expect(questions).toHaveLength(82);
     expect(validateBank(questions)).toEqual([]);
     expect(mandatory(bilingualArchivedQuestions)).toEqual(
@@ -194,7 +201,7 @@ describe('phase 5A actual variability and historical boundaries', () => {
         expect(load().state.history[0]).toEqual(completed);
         expect(score(completed, []).correct).toBe(1);
       }
-      expect(CONTENT_REVISION).toBe('2026-10-27.6');
+      expect(CONTENT_REVISION).toBe('2026-10-27.7');
       expect(BILINGUAL_CONTENT_REVISION).toBe('2026-10-27.5');
     },
   );
