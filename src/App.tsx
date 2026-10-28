@@ -5,10 +5,11 @@ import {
   BLUEPRINT_CONTENT_REVISION,
   COVERAGE_CONTENT_REVISION,
   BILINGUAL_CONTENT_REVISION,
+  VARIABILITY_CONTENT_REVISION,
   isBlueprintRevision,
 } from './domain/revision';
 import { distinctViewed, repeatedViewed } from './domain/progress';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { questions } from './data/questions';
 import {
   answer,
@@ -23,7 +24,8 @@ import {
   type Session,
   type Question,
 } from './domain/engine';
-import { emptyState, load, save } from './storage/store';
+import { emptyState, load, loadAsync, save } from './storage/store';
+import { BankNotReadyError } from './data/bank-history';
 import { chapters, label, type Language, type Localized } from './i18n';
 import './styles.css';
 import EnglishLearning from './EnglishLearning';
@@ -95,7 +97,60 @@ function QuestionTable({
 }
 
 export default function App() {
-  const initial = useMemo(() => load(), []);
+  const [restoration, setRestoration] = useState<
+    | { status: 'ready'; initial: ReturnType<typeof load> }
+    | { status: 'loading' }
+    | { status: 'error' }
+  >(() => {
+    try {
+      return { status: 'ready', initial: load() };
+    } catch (error) {
+      if (error instanceof BankNotReadyError) return { status: 'loading' };
+      return { status: 'error' };
+    }
+  });
+  const needsRestore = restoration.status === 'loading';
+  useEffect(() => {
+    if (!needsRestore) return;
+    let cancelled = false;
+    void loadAsync()
+      .then((initial) => {
+        if (!cancelled) setRestoration({ status: 'ready', initial });
+      })
+      .catch(() => {
+        if (!cancelled) setRestoration({ status: 'error' });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [needsRestore]);
+  if (restoration.status === 'ready')
+    return <LearningApp initial={restoration.initial} />;
+  return (
+    <main>
+      <h1>TestLearn</h1>
+      {restoration.status === 'loading' ? (
+        <p role="status">
+          A carregar as perguntas da sessão guardada… / Loading saved session
+          questions…
+        </p>
+      ) : (
+        <div role="alert">
+          <p>
+            Não foi possível recuperar a sessão. Os dados guardados foram
+            preservados. / Could not restore the session. Saved data has been
+            preserved.
+          </p>
+          <button onClick={() => window.location.reload()}>
+            Recarregar e tentar novamente / Reload and retry
+          </button>
+        </div>
+      )}
+    </main>
+  );
+}
+
+function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
   const [state, setState] = useState(initial.state);
   const [warning, setWarning] = useState(initial.warning);
   const [language, setLanguage] = useState<Language>('pt');
@@ -502,7 +557,10 @@ export default function App() {
                         : displayedSession.contentRevision ===
                             BILINGUAL_CONTENT_REVISION
                           ? 'Esta tentativa usa o banco de 66 perguntas anterior à expansão de variedade. O conteúdo e a classificação originais foram preservados; o alinhamento estrutural mantém-se.'
-                          : 'Esta tentativa usa a revisão anterior ao gerador alinhado ao blueprint. O conteúdo, a distribuição e a classificação originais foram preservados; não se aplica a indicação de estrutura alinhada.',
+                          : displayedSession.contentRevision ===
+                              VARIABILITY_CONTENT_REVISION
+                            ? 'Esta tentativa usa a revisão .6, anterior à revisão de distratores. O texto, as alternativas e a classificação originais foram preservados; o alinhamento estrutural mantém-se.'
+                            : 'Esta tentativa usa a revisão anterior ao gerador alinhado ao blueprint. O conteúdo, a distribuição e a classificação originais foram preservados; não se aplica a indicação de estrutura alinhada.',
                   displayedSession.contentRevision === LEGACY_CONTENT_REVISION
                     ? 'This attempt uses the pre-audit bank, which contains known issues. Its original text and scoring were preserved; see the academic audit in the documentation.'
                     : displayedSession.contentRevision ===
@@ -514,7 +572,10 @@ export default function App() {
                         : displayedSession.contentRevision ===
                             BILINGUAL_CONTENT_REVISION
                           ? 'This attempt uses the 66-question bank before the variability expansion. Its original content and scoring were preserved; structural alignment remains valid.'
-                          : 'This attempt uses the revision before blueprint-aligned generation. Its original content, distribution and scoring were preserved; it is not labelled structurally aligned.',
+                          : displayedSession.contentRevision ===
+                              VARIABILITY_CONTENT_REVISION
+                            ? 'This attempt uses revision .6, before the distractor review. Its original text, options and scoring were preserved; structural alignment remains valid.'
+                            : 'This attempt uses the revision before blueprint-aligned generation. Its original content, distribution and scoring were preserved; it is not labelled structurally aligned.',
                 )}
               </p>
             )}
