@@ -1,5 +1,7 @@
 # Plano de alojamento e publicação — NÃO EXECUTAR SEM AUTORIZAÇÃO
 
+> Atualização: resultados e preparação atuais em [fase 9.3](phase9.3-release-gates.md). O detalhe abaixo conserva a evidência/contrato anterior; não representa uma nova validação remota ou manual.
+
 Não existe host/projeto de deployment/domínio configurado. A workflow quality é QA, sem deploy. Não criar automaticamente recursos Vercel/Netlify ou modificar infraestrutura de outro projeto. Vite preview é apenas servidor local de validação. Selecionar alojamento estático HTTPS que suporte headers, 404 correto e retenção dos assets antigos.
 
 ## Contrato técnico

@@ -1,8 +1,8 @@
 {
   "date": "2026-10-29",
   "contentRevision": "2026-10-27.9",
-  "gitHEAD": "9623e96239c75dadfd66b20cb8265980b6e2fbc7",
-  "workingTreeContainsPreservedUncommittedWork": true,
+  "gitHEAD": "f2e2ab93ee8660a623a44e5c42a7e3e08fde0bd2",
+  "workingTreeContainsPreservedUncommittedWork": false,
   "TECHNICAL_RELEASE_CANDIDATE_READY": "PASS",
   "PUBLICATION_AUTHORIZED": "NO",
   "PUBLIC_BETA_READY": "BLOCKED",
@@ -10,7 +10,7 @@
   "gates": {
     "functionalCorrectness": {
       "status": "PASS",
-      "tests": "147 unit/integration + 86 E2E + 8 artifact guard"
+      "tests": "194 unit/integration + 268 E2E + 8 artifact guard"
     },
     "contentIntegrity": {
       "status": "PASS",
@@ -29,7 +29,8 @@
       "local": "PASS",
       "remoteHost": "NOT_TESTED",
       "npmAuditVulnerabilities": 0,
-      "limitation": "Client keys and scores are not tamper-proof; audit is not a full security certification"
+      "limitation": "Client keys and scores are not tamper-proof; audit is not a full security certification",
+      "npmAuditEvidence": "Inherited Phase 9 npm audit, not rerun in Phase 9.3; dependency set unchanged"
     },
     "privacy": {
       "status": "OWNER_ACTION_REQUIRED",
@@ -38,30 +39,76 @@
     },
     "accessibility": {
       "automatedAndKeyboard": "PASS",
+      "reflowAndText200Percent": "PASS",
       "fullWCAG22AA": "NOT_TESTED",
-      "screenReaderAndActualZoom": "NOT_TESTED"
+      "screenReaderAndActualZoom": "NOT_TESTED",
+      "actualZoomProbe": "Control+= left viewport 1280 and DPR 1 unchanged; not accepted as native zoom evidence"
     },
     "browserCompatibility": {
       "Chromium": "PASS",
-      "Firefox": "NOT_TESTED",
-      "WebKit": "NOT_TESTED",
+      "Firefox": "PASS",
+      "WebKit": "PASS",
       "physicalDevices": "NOT_TESTED",
-      "engine": "156.0.8078.4"
+      "engines": {
+        "Chromium": "156.0.8078.4",
+        "Firefox": "157.0",
+        "WebKit": "27.2"
+      },
+      "limitation": "WebKit on Windows and mobile Chromium emulation do not prove physical Safari/iPhone compatibility"
     },
     "performance": {
       "status": "PASS",
-      "baselineJS": 614765,
-      "currentJS": 629032,
-      "baselineGzip": 188116,
-      "currentGzip": 193417,
-      "deltaJS": 14267,
-      "deltaGzip": 5301,
-      "totalJS": 1830839,
-      "zeroEagerHistoricalArchives": true
+      "baselineJS": 671699,
+      "currentJS": 685059,
+      "baselineGzip": 202402,
+      "currentGzip": 206901,
+      "deltaJS": 13360,
+      "deltaGzip": 4499,
+      "totalJS": 1886866,
+      "zeroEagerHistoricalArchives": true,
+      "syntheticHistoryCosts": [
+        {
+          "count": 100,
+          "storageBytes": 292429,
+          "backupBytes": 301584,
+          "exportMs": 82.4354000000003,
+          "parseMs": 45.03200000000015,
+          "planMs": 21.635999999999513
+        },
+        {
+          "count": 500,
+          "storageBytes": 1462429,
+          "backupBytes": 1507984,
+          "exportMs": 103.24200000000019,
+          "parseMs": 120.54159999999956,
+          "planMs": 55.488500000000386
+        }
+      ],
+      "localRuntime": [
+        {
+          "syntheticCompletedSessions": 0,
+          "startupMs": 317.8020999999999,
+          "historyMs": null,
+          "downloadMs": null,
+          "importPreviewMs": null,
+          "historicalRequests": 0
+        },
+        {
+          "syntheticCompletedSessions": 500,
+          "startupMs": 581.4621999999999,
+          "historyMs": 297.2410999999993,
+          "downloadMs": 192.98919999999998,
+          "importPreviewMs": 620.3602000000001,
+          "historicalRequests": 0
+        }
+      ],
+      "limitation": "Small local desktop sample; no physical-device benchmark or storage fsync guarantee",
+      "largeHistoryCorrection": "Compute previous-visit set once; do not tick inactive/practice pages; no scoring or visit-count semantic change",
+      "scope": "Local synthetic desktop measurements only"
     },
     "deploymentReadiness": {
       "status": "OWNER_ACTION_REQUIRED",
-      "host": null,
+      "host": "Vercel Hobby intended, no project linked or created",
       "domain": null,
       "assetRetentionRemote": "NOT_TESTED",
       "HTTPSRemote": "NOT_TESTED",
@@ -84,24 +131,27 @@
     }
   },
   "qa": {
-    "artifact": 0,
-    "build": 0,
     "typecheck": 0,
-    "unit": 0,
     "lint": 0,
+    "format": 0,
+    "unit": 0,
+    "build": 0,
     "e2e": 0,
-    "unitIntegration": 147,
-    "unitFiles": 18,
-    "playwright": 86,
-    "workers": 8,
+    "artifact": 0,
+    "artifactTests": 0,
+    "unitIntegration": 194,
+    "unitFiles": 22,
+    "playwright": 268,
+    "projects": 4,
+    "casesPerProject": 67,
+    "workers": 2,
     "localRetries": 0,
+    "skipped": 0,
     "artifactGuardTests": 8,
     "blueprintSeeds": 1000,
-    "unitDurationSeconds": 19.4,
-    "e2eDuration": "1.5m",
-    "format": 0,
-    "diffcheck": 0,
-    "finalScopeLint": 0
+    "unitDurationSeconds": 27.4,
+    "e2eDuration": "4.9m",
+    "diffcheck": 0
   },
   "P0": [
     {
@@ -122,11 +172,16 @@
   ],
   "P1": [],
   "P2": [
-    "Existing >500kB warning",
-    "Firefox/WebKit and real devices untested",
-    "Full manual accessibility/actual zoom untested",
-    "500-session and modest-device long-run performance unbenchmarked",
-    "Human academic review and real pilot absent; not a calibrated assessment"
+    "Existing >500kB entry warning",
+    "Physical devices and full OS/browser matrix untested",
+    "Native zoom, manual screen reader and full WCAG audit untested",
+    "One editing tab per origin; Web Locks/secure context required",
+    "Browser quota/erasure and physical disk durability are not guaranteed; backup is manual",
+    "500 completed sessions are a hard cap without silent trimming",
+    "Large backup validation is synchronous; modest-device load still unbenchmarked",
+    "Editable JSON is not authentic assessment evidence",
+    "Human academic approval, real pilot and psychometric calibration remain pending",
+    "Eight-worker matrix exhausted machine memory; full four-project suite passed with two workers"
   ],
   "artifact": {
     "files": [
@@ -134,19 +189,19 @@
         "path": ".vite/manifest.json",
         "bytes": 2551,
         "gzip": 394,
-        "sha256": "41414662139ef1764e0e3d131aeb66cbade21612be58d442691e395c59b7d844"
+        "sha256": "fb35c85ce33c61fdf462fa40719ef9c52a9cdef1c10b4d69ec420732d2edbd22"
       },
       {
-        "path": "assets/index-D19U4eNe.css",
-        "bytes": 13854,
-        "gzip": 3624,
-        "sha256": "1a441495b7d6f7ec88df2b5afdc3720333c6ac449bb1434d04c52d0d73d022d1"
+        "path": "assets/index-D5jJ_XjO.js",
+        "bytes": 685059,
+        "gzip": 206901,
+        "sha256": "b466fddbc80a0c7dce084d4e7519d359d3d5977f92e28fbf29483bc012a2860b"
       },
       {
-        "path": "assets/index-DKtbpw9f.js",
-        "bytes": 629032,
-        "gzip": 193417,
-        "sha256": "1aa3f7f07403fbdbc5b6977c4b22ad8957c888fb6b9fc1d9fab9418e22d4bf32"
+        "path": "assets/index-m2GK7qDs.css",
+        "bytes": 16186,
+        "gzip": 4169,
+        "sha256": "d8d199c2e66ec4b715166c43743e198d878fa0919c648c64c804088003c169ab"
       },
       {
         "path": "assets/questions-2026-10-27.1-W7yLFLHs.js",
@@ -205,8 +260,8 @@
       {
         "path": "index.html",
         "bytes": 686,
-        "gzip": 414,
-        "sha256": "16fbd1010f04c3515bf3b7cd15f4e3011fdc9ecd975bde117e67cd8f959ee26f"
+        "gzip": 420,
+        "sha256": "7b60c36ed4e04351f2ad88143118051d549a8369ad761ac49c8bfd3258914f3c"
       },
       {
         "path": "robots.txt",
@@ -216,20 +271,20 @@
       }
     ],
     "initialJS": {
-      "path": "assets/index-DKtbpw9f.js",
-      "bytes": 629032,
-      "gzip": 193417,
-      "sha256": "1aa3f7f07403fbdbc5b6977c4b22ad8957c888fb6b9fc1d9fab9418e22d4bf32"
+      "path": "assets/index-D5jJ_XjO.js",
+      "bytes": 685059,
+      "gzip": 206901,
+      "sha256": "b466fddbc80a0c7dce084d4e7519d359d3d5977f92e28fbf29483bc012a2860b"
     },
     "css": [
       {
-        "path": "assets/index-D19U4eNe.css",
-        "bytes": 13854,
-        "gzip": 3624,
-        "sha256": "1a441495b7d6f7ec88df2b5afdc3720333c6ac449bb1434d04c52d0d73d022d1"
+        "path": "assets/index-m2GK7qDs.css",
+        "bytes": 16186,
+        "gzip": 4169,
+        "sha256": "d8d199c2e66ec4b715166c43743e198d878fa0919c648c64c804088003c169ab"
       }
     ],
-    "totalJS": 1830839,
+    "totalJS": 1886866,
     "archiveChunks": 8,
     "privateAssets": 0,
     "sourceMaps": 0
@@ -238,23 +293,143 @@
   "phase8MaterialsIntact": true,
   "unexpectedCodeChanges": false,
   "intermediateFailures": [
-    "Initial artifact audit caught old HTML title: corrected beta/noindex metadata and added explicit E2E assertions",
-    "First full E2E:83 pass/3 fail; one stale immediate LocalStorage read after async write, two duplicate table region labels; fixed polling actual storage and unique question labels, kept all assertions",
-    "First performance script failed due to corrupted accented selector; fixed role/prefix selector and repeated; noisy concurrent measurement retained separately, followed by isolated/alternating final measurements",
-    "Final receipt initially read PowerShell UTF-16LE artifact JSON as UTF-8; added BOM-aware decoding and repeated receipt generation. No runtime or content changes."
+    "Testing Library role queries incorrectly used Playwright exact option; corrected before targeted execution",
+    "Lint detected one unused Question type import after extraction; removed",
+    "Targeted E2E 9/14: native details made unnamed group selectors ambiguous and reload preceded async save; named answer groups and polled real storage; next run 14/14",
+    "First full E2E 98/100: old exact K2 label lacked the new Compreender title; assertion updated to full visible text",
+    "Second full E2E 99/100: legacy test reloaded before existing asynchronous save; checked real persisted answer/history before reload; third full run 100/100",
+    "First local measurement CSS zoom=4 probe overflowed without viewport media-query changes; retained log, replaced with explicit 640/320 reflow viewports; actual zoom remains untested",
+    "Final 500-session probe exposed repeated prefix-set construction and unconditional idle timer rerenders; fixed both surgically, preserved counts and added 500-session E2E to every project",
+    "Text-resize probe found header/skip-link/navigation overflow; fixed wrapping/minimum tracks, measured 14.4 to 28.8px at 1280/640/320 without page overflow",
+    "First isolated axe script required an explicit browser context; fixed tooling. One later probe pointed at the old measurement bundle; repeated against current dist",
+    "Final clean performance removed screenshot/diagnostic overhead from the download timing interval",
+    "Final regression after these corrections passed 194 unit/integration and 268 E2E; earlier 193/264 checkpoint preserved separately"
   ],
   "ownerNextActions": [
-    "Review actual identity/contact/host processing/rights and approve final public wording",
-    "Choose static HTTPS host and verify security headers, old hashed assets across deploy and rollback, 404 and logs policy",
-    "Review preserved working tree, authorize exact source commit and artifact; repeat proportional QA for final legal/copy changes",
-    "Only then give explicit publication authorization; no deployment performed here"
+    "Execute documented manual screen-reader and native 200/400 percent browser zoom checklist",
+    "Confirm real operator/contact, rights/disclosures and Hobby non-commercial eligibility; document host request processing and logs",
+    "Only with new authorization, create isolated TestLearn disposable remote experiment and verify alias assets, retention, HTTPS/headers/cache and rollback",
+    "Review the committed source and exact build for hosting; publication still requires separate authorization",
+    "PUBLICATION_AUTHORIZED remains NO; no remote action is inferred from local technical PASS"
   ],
-  "scopeEvidence": "tmp/phase9/integrity.json",
+  "scopeEvidence": "tmp/phase93/integrity.json",
   "buildDistributionRule": "Only validated dist; no repository-root publication",
   "versionControlHandoff": {
-    "codeCommit": "94d278ccf6d497c3fcf2f9649f11f71898580020",
-    "authorization": "User explicitly authorized commits and push to main after the local assessment",
-    "assessmentGitFields": "Pre-commit snapshot; retained as historical evidence",
+    "baselineCommit": "e42f4533398e346b2c156b5063581fd1c27e2d2e",
+    "validatedCodeCommit": "f2e2ab93ee8660a623a44e5c42a7e3e08fde0bd2",
+    "authorization": "Owner explicitly authorized several commits on main and push on 2026-10-29 after the completed local assessment",
+    "qaEvidence": "Same validated runtime and tests; only version-control handoff documentation changed after final QA",
     "deploymentAuthorization": "NO"
-  }
+  },
+  "previousPhase9Assessment": {
+    "report": "release-readiness-report.md (historical phase 9 section)",
+    "TECHNICAL_RELEASE_CANDIDATE_READY": "PASS",
+    "qa": {
+      "artifact": 0,
+      "build": 0,
+      "typecheck": 0,
+      "unit": 0,
+      "lint": 0,
+      "e2e": 0,
+      "unitIntegration": 147,
+      "unitFiles": 18,
+      "playwright": 86,
+      "workers": 8,
+      "localRetries": 0,
+      "artifactGuardTests": 8,
+      "blueprintSeeds": 1000,
+      "unitDurationSeconds": 19.4,
+      "e2eDuration": "1.5m",
+      "format": 0,
+      "diffcheck": 0,
+      "finalScopeLint": 0
+    },
+    "initialJS": {
+      "path": "assets/index-DKtbpw9f.js",
+      "bytes": 629032,
+      "gzip": 193417,
+      "sha256": "1aa3f7f07403fbdbc5b6977c4b22ad8957c888fb6b9fc1d9fab9418e22d4bf32"
+    }
+  },
+  "phase92": {
+    "status": "PASS",
+    "requiresNewFullRegression": false,
+    "contentRevision": "2026-10-27.9",
+    "report": "phase9.2-educational-ux.md",
+    "sourceScope": "Uncommitted Phase 9.2 working tree based on gitHEAD; no authorization to commit/push/deploy",
+    "objectiveCatalog": 64,
+    "documentedCurrentQuestionOrigins": 90,
+    "citedSectionsLocated": 90,
+    "englishSyllabus": "4.0.1",
+    "portugueseSyllabus": "4.0 / PT v1.0",
+    "explicitPortugueseLocalizations": [
+      "FL-1.4.1",
+      "FL-2.1.1",
+      "FL-3.1.1",
+      "FL-3.2.1"
+    ],
+    "humanApproval": "PENDING"
+  },
+  "phase93": {
+    "status": "PASS",
+    "requiresFullRegression": false,
+    "contentRevision": "2026-10-27.9",
+    "report": "phase9.3-release-gates.md",
+    "gates": {
+      "DATA_DURABILITY": "PASS",
+      "BACKUP_EXPORT": "PASS",
+      "BACKUP_IMPORT": "PASS",
+      "HISTORICAL_COMPATIBILITY": "PASS",
+      "CROSS_BROWSER_SUPPORT": "PASS",
+      "ACCESSIBILITY": "NOT_TESTED",
+      "VERCEL_CONFIG_READY": "PASS",
+      "REMOTE_ASSET_RETENTION": "NOT_TESTED",
+      "OWNER_PRIVACY_AND_CONTACT": "OWNER_ACTION_REQUIRED",
+      "ACADEMIC_HUMAN_APPROVAL": "OWNER_ACTION_REQUIRED",
+      "PUBLICATION_AUTHORIZED": "BLOCKED"
+    },
+    "durabilityBoundary": "Synchronous browser-storage acceptance under an exclusive origin lease, before UI commit; no physical disk or erased-data recovery guarantee",
+    "backupSchema": 1,
+    "sessionSchema": 1,
+    "maxBackupBytes": 8388608,
+    "maxCompletedHistory": 500,
+    "silentHistoryTruncation": false,
+    "automaticMigration": false,
+    "publicationAuthorized": "NO",
+    "vercelDocumentationQueries": 2,
+    "vercelProjectAccountReads": false,
+    "vercelRemoteMutations": false,
+    "kavtrisAccess": false,
+    "scope": "Validated Phase 9.2/9.3 implementation now committed after explicit owner authorization for several commits and push to main; no deployment authorized"
+  },
+  "previousPhase92Assessment": {
+    "report": "phase9.2-educational-ux.md",
+    "TECHNICAL_RELEASE_CANDIDATE_READY": "PASS",
+    "qa": {
+      "typecheck": 0,
+      "lint": 0,
+      "format": 0,
+      "unit": 0,
+      "build": 0,
+      "e2e": 0,
+      "artifact": 0,
+      "artifactTests": 0,
+      "unitIntegration": 165,
+      "unitFiles": 20,
+      "playwright": 100,
+      "workers": 8,
+      "localRetries": 0,
+      "artifactGuardTests": 8,
+      "blueprintSeeds": 1000,
+      "unitDurationSeconds": 16.86,
+      "e2eDuration": "1.0m"
+    },
+    "initialJS": {
+      "path": "assets/index-B-PPW3hC.js",
+      "bytes": 671699,
+      "gzip": 202402,
+      "sha256": "65a3e782f27140f2a289ae95364ac6b72cc071567e12a1ecf8c409dff841fb3f"
+    }
+  },
+  "assessmentBaselineCommit": "e42f4533398e346b2c156b5063581fd1c27e2d2e"
 }

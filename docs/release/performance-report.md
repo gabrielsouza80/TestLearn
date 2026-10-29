@@ -1,5 +1,9 @@
 # Desempenho — artefacto final
 
+> Atualização: resultados e preparação atuais em [fase 9.3](phase9.3-release-gates.md). O detalhe abaixo conserva a evidência/contrato anterior; não representa uma nova validação remota ou manual.
+
+> Medição histórica da fase 9. A comparação da fase 9.2, com o catálogo e revisão educativos, está em [Fase 9.2](phase9.2-educational-ux.md) e no JSON de release.
+
 29-10-2026. Chromium 156.0.8078.4, Node v24.19.0; AMD Ryzen Z1 Extreme, 16 CPUs lógicos; sem throttling. Build real e grafo observados; evidência local tmp/phase9/performance.json. Não é benchmark de dispositivo móvel físico.
 
 | Medida       | Baseline reconstruída |                 Final |                     Diferença |

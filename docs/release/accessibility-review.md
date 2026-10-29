@@ -1,5 +1,7 @@
 # Acessibilidade — âmbito e evidência
 
+> Atualização: resultados e preparação atuais em [fase 9.3](phase9.3-release-gates.md). O detalhe abaixo conserva a evidência/contrato anterior; não representa uma nova validação remota ou manual.
+
 Revisão local sobre Chromium, com axe e percursos de teclado automatizados/observados pelo agente. Não houve avaliação humana com leitor de ecrã, certificação WCAG ou auditoria integral WCAG 2.2 AA.
 
 Verificados: PT-PT por defeito, lang en ao mudar idioma, spans EN/PT no modo bilingue e blocos públicos com lang correto; títulos e foco ao navegar; nomes acessíveis de radios/checkboxes, cardinalidade e desmarcação; foco visível; diálogo com foco inicial, Escape, trap e regresso; sem depender só de cor para selecionadas/marcadas; estrutura de tabelas/caption/th; áreas de tabela focáveis com nomes distintos por ID e deslocação horizontal; contraste dos ecrãs exercitados sem violações axe; informação pública acessível no rodapé.

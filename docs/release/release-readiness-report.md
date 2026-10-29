@@ -1,5 +1,7 @@
 # Decisão de release — fase 9
 
+> Registo histórico da fase 9. A validação posterior e os números atuais estão em [Fase 9.3](phase9.3-release-gates.md), com a [Fase 9.2](phase9.2-educational-ux.md) preservada e `release-readiness.json`. A autorização anterior de commits/push foi executada antes da fase 9.2; nesta fase não houve commit, push ou deploy.
+
 29-10-2026. **TECHNICAL_RELEASE_CANDIDATE_READY = PASS** no âmbito técnico local exercitado. **PUBLICATION_AUTHORIZED = NO**. **PUBLIC_BETA_READY = BLOCKED** por ações externas P0 listadas no checklist. **ACADEMICALLY_VALIDATED_RELEASE = BLOCKED**, sem revisão humana recebida. Não houve deploy, push, commit, instalação ou ligação de domínio.
 
 ## Resultados reais
