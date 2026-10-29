@@ -97,7 +97,7 @@ test('production CSP actually blocks inline script execution', async ({
   );
   expect(await page.locator('body').getAttribute('data-executed')).toBeNull();
 });
-test('a second tab cannot overwrite newer progress and reload recovers the latest flags and answer', async ({
+test('an exclusive editing tab preserves progress while another is read-only and can restore after ownership ends', async ({
   page,
   context,
 }) => {
@@ -105,47 +105,55 @@ test('a second tab cannot overwrite newer progress and reload recovers the lates
   await page
     .getByRole('button', { name: 'Iniciar simulação', exact: true })
     .click();
-  await expect(page.getByRole('group')).toBeVisible();
+  const first = page.getByRole('group', {
+    name: /^(?:Selecione|Select) [12] /,
+  });
+  await expect(first).toBeVisible();
   const other = await context.newPage();
   await other.clock.setFixedTime(new Date(now));
   await other.goto('/');
-  await expect(other.getByRole('group')).toBeVisible();
-  const original = await other.evaluate(
-    () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
-  );
-  const q = questions.find((q) => q.id === original.questionIds[0])!;
-  await other
+  await expect(other.getByText(/Outro separador está a editar/)).toBeVisible();
+  const original = await page.evaluate(
+      () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
+    ),
+    q = questions.find((q) => q.id === original.questionIds[0])!;
+  await expect(
+    other.getByRole(q.required === 1 ? 'radio' : 'checkbox').first(),
+  ).toBeDisabled();
+  await page
     .getByRole(q.required === 1 ? 'radio' : 'checkbox', {
       name: q.options[0].text.pt,
       exact: true,
     })
     .check();
-  await expect(page.getByRole('alert')).toContainText('noutro separador');
-  await expect(page.getByRole('radio')).toHaveCount(0);
-  await expect(page.getByRole('checkbox')).toHaveCount(0);
-  await other
+  await page
     .getByRole('button', { name: 'Marcar para rever', exact: true })
     .click();
-  const raw = await other.evaluate(() => localStorage.getItem('testlearn.v1'));
+  await expect(other.getByRole('alert')).toContainText('noutro separador');
+  const raw = await page.evaluate(() => localStorage.getItem('testlearn.v1'));
   expect(JSON.parse(raw!).active.answers[q.id]).toEqual([q.options[0].id]);
   expect(JSON.parse(raw!).active.flagged).toEqual([q.id]);
-  await page
+  await page.close();
+  await other
     .getByRole('button', {
       name: 'Recarregar o progresso guardado',
       exact: true,
     })
     .click();
   await expect(
-    page.getByRole(q.required === 1 ? 'radio' : 'checkbox', {
+    other.getByRole(q.required === 1 ? 'radio' : 'checkbox', {
       name: q.options[0].text.pt,
       exact: true,
     }),
   ).toBeChecked();
-  expect(await page.evaluate(() => localStorage.getItem('testlearn.v1'))).toBe(
+  await expect(
+    other.getByRole('button', { name: 'Retirar marcação', exact: true }),
+  ).toBeEnabled();
+  expect(await other.evaluate(() => localStorage.getItem('testlearn.v1'))).toBe(
     raw,
   );
-  await other.close();
 });
+
 test('a missing deployed archive preserves raw data and a real retry restores its original content', async ({
   page,
 }) => {
@@ -208,7 +216,12 @@ test('quota failure stays usable and leaves unrelated origin data intact', async
   await expect(page.getByRole('alert')).toContainText(
     'Não foi possível guardar',
   );
-  await expect(page.getByRole('group')).toBeVisible();
+  await expect(
+    page.getByRole('group', { name: /^(?:Selecione|Select) [12] / }),
+  ).toHaveCount(0);
+  expect(
+    await page.evaluate(() => localStorage.getItem('testlearn.v1')),
+  ).toBeNull();
   expect(await page.evaluate(() => localStorage.getItem('unrelated'))).toBe(
     'keep',
   );
@@ -263,7 +276,9 @@ test('reset cancellation preserves progress and explicit confirmation affects on
   await page
     .getByRole('button', { name: 'Iniciar simulação', exact: true })
     .click();
-  await expect(page.getByRole('group')).toBeVisible();
+  await expect(
+    page.getByRole('group', { name: /^(?:Selecione|Select) [12] / }),
+  ).toBeVisible();
   await expect
     .poll(() => page.evaluate(() => localStorage.getItem('testlearn.v1')))
     .not.toBeNull();

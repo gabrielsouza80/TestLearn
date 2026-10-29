@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "FL-1.1.1",
+    "chapter": 1,
+    "section": "1.1",
+    "level": "K1",
+    "description": {
+      "en": "Identify typical test objectives",
+      "pt": "Identificar objetivos típicos dos testes"
+    },
+    "topic": {
+      "en": "What is Testing?",
+      "pt": "O que são Testes?"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Identificar objetivos típicos dos testes"
+  },
+  {
+    "id": "FL-1.1.2",
+    "chapter": 1,
+    "section": "1.1",
+    "level": "K2",
+    "description": {
+      "en": "Differentiate testing from debugging",
+      "pt": "Diferenciar o teste do debugging"
+    },
+    "topic": {
+      "en": "What is Testing?",
+      "pt": "O que são Testes?"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Diferenciar o teste do debugging"
+  },
+  {
+    "id": "FL-1.2.1",
+    "chapter": 1,
+    "section": "1.2",
+    "level": "K2",
+    "description": {
+      "en": "Exemplify why testing is necessary",
+      "pt": "Exemplificar os motivos pelos quais os testes são necessários"
+    },
+    "topic": {
+      "en": "Why is Testing Necessary?",
+      "pt": "Porque Precisamos de Testes?"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Exemplificar os motivos pelos quais os testes são necessários"
+  },
+  {
+    "id": "FL-1.2.2",
+    "chapter": 1,
+    "section": "1.2",
+    "level": "K1",
+    "description": {
+      "en": "Recall the relation between testing and quality assurance",
+      "pt": "Recordar a relação entre teste e garantia de qualidade"
+    },
+    "topic": {
+      "en": "Why is Testing Necessary?",
+      "pt": "Porque Precisamos de Testes?"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar a relação entre teste e garantia de qualidade"
+  },
+  {
+    "id": "FL-1.2.3",
+    "chapter": 1,
+    "section": "1.2",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish between root cause, error, defect, and failure",
+      "pt": "Distinguir entre causa raiz, erro, defeito e falha"
+    },
+    "topic": {
+      "en": "Why is Testing Necessary?",
+      "pt": "Porque Precisamos de Testes?"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir entre causa raiz, erro, defeito e falha"
+  },
+  {
+    "id": "FL-1.3.1",
+    "chapter": 1,
+    "section": "1.3",
+    "level": "K2",
+    "description": {
+      "en": "Explain the seven testing principles",
+      "pt": "Explicar os sete princípios dos testes"
+    },
+    "topic": {
+      "en": "Testing Principles",
+      "pt": "Princípios dos Testes"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar os sete princípios dos testes"
+  },
+  {
+    "id": "FL-1.4.1",
+    "chapter": 1,
+    "section": "1.4",
+    "level": "K2",
+    "description": {
+      "en": "Explain the different test activities and related tasks",
+      "pt": "Explicar as diferentes atividades de teste e as tarefas relacionadas"
+    },
+    "topic": {
+      "en": "Test Activities, Testware and Test Roles",
+      "pt": "Atividades de Teste, Testware e Funções de Teste"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "localized-4.0.1",
+    "ptOriginal": "Resumir as diversas atividades e tarefas de teste",
+    "localizationNote": "Alinhamento do verbo e âmbito com EN 4.0.1: Explain, não Summarize."
+  },
+  {
+    "id": "FL-1.4.2",
+    "chapter": 1,
+    "section": "1.4",
+    "level": "K2",
+    "description": {
+      "en": "Explain the impact of context on the test process",
+      "pt": "Explicar o impacto do contexto no processo de teste"
+    },
+    "topic": {
+      "en": "Test Activities, Testware and Test Roles",
+      "pt": "Atividades de Teste, Testware e Funções de Teste"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o impacto do contexto no processo de teste"
+  },
+  {
+    "id": "FL-1.4.3",
+    "chapter": 1,
+    "section": "1.4",
+    "level": "K2",
+    "description": {
+      "en": "Differentiate the testware that supports the test activities",
+      "pt": "Diferenciar o testware que suporta as atividades de teste"
+    },
+    "topic": {
+      "en": "Test Activities, Testware and Test Roles",
+      "pt": "Atividades de Teste, Testware e Funções de Teste"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Diferenciar o testware que suporta as atividades de teste"
+  },
+  {
+    "id": "FL-1.4.4",
+    "chapter": 1,
+    "section": "1.4",
+    "level": "K2",
+    "description": {
+      "en": "Explain the value of maintaining traceability",
+      "pt": "Explicar o valor de manter a rastreabilidade"
+    },
+    "topic": {
+      "en": "Test Activities, Testware and Test Roles",
+      "pt": "Atividades de Teste, Testware e Funções de Teste"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o valor de manter a rastreabilidade"
+  },
+  {
+    "id": "FL-1.4.5",
+    "chapter": 1,
+    "section": "1.4",
+    "level": "K2",
+    "description": {
+      "en": "Compare the different roles in testing",
+      "pt": "Comparar as várias funções nos testes"
+    },
+    "topic": {
+      "en": "Test Activities, Testware and Test Roles",
+      "pt": "Atividades de Teste, Testware e Funções de Teste"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Comparar as várias funções nos testes"
+  },
+  {
+    "id": "FL-1.5.1",
+    "chapter": 1,
+    "section": "1.5",
+    "level": "K2",
+    "description": {
+      "en": "Give examples of the generic skills required for testing",
+      "pt": "Dar exemplos das competências genéricas necessárias para os testes"
+    },
+    "topic": {
+      "en": "Essential Skills and Good Practices in Testing",
+      "pt": "Competências Essenciais e Boas Práticas nos Testes"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Dar exemplos das competências genéricas necessárias para os testes"
+  },
+  {
+    "id": "FL-1.5.2",
+    "chapter": 1,
+    "section": "1.5",
+    "level": "K1",
+    "description": {
+      "en": "Recall the advantages of the whole team approach",
+      "pt": "Recordar as vantagens do Whole Team Approach"
+    },
+    "topic": {
+      "en": "Essential Skills and Good Practices in Testing",
+      "pt": "Competências Essenciais e Boas Práticas nos Testes"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar as vantagens do Whole Team Approach"
+  },
+  {
+    "id": "FL-1.5.3",
+    "chapter": 1,
+    "section": "1.5",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish the benefits and drawbacks of independence of testing",
+      "pt": "Distinguir as vantagens e desvantagens da independência do teste"
+    },
+    "topic": {
+      "en": "Essential Skills and Good Practices in Testing",
+      "pt": "Competências Essenciais e Boas Práticas nos Testes"
+    },
+    "pages": {
+      "en": 14,
+      "pt": 15
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir as vantagens e desvantagens da independência do teste"
+  },
+  {
+    "id": "FL-2.1.1",
+    "chapter": 2,
+    "section": "2.1",
+    "level": "K2",
+    "description": {
+      "en": "Explain the impact of the chosen software development lifecycle on testing",
+      "pt": "Explicar o impacto do ciclo de vida de desenvolvimento de software escolhido nos testes"
+    },
+    "topic": {
+      "en": "Testing in the Context of a Software Development Lifecycle",
+      "pt": "Testes no Contexto dos Ciclos de Vida de Desenvolvimento de Software"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "localized-4.0.1",
+    "ptOriginal": "Explicar o impacto do ciclo de vida de desenvolvimento de software nos testes",
+    "localizationNote": "Explicitação de chosen presente em EN 4.0.1."
+  },
+  {
+    "id": "FL-2.1.2",
+    "chapter": 2,
+    "section": "2.1",
+    "level": "K1",
+    "description": {
+      "en": "Recall good testing practices that apply to all software development lifecycles",
+      "pt": "Recordar boas práticas de teste que se aplicam a todos os ciclos de vida de desenvolvimento de software"
+    },
+    "topic": {
+      "en": "Testing in the Context of a Software Development Lifecycle",
+      "pt": "Testes no Contexto dos Ciclos de Vida de Desenvolvimento de Software"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar boas práticas de teste que se aplicam a todos os ciclos de vida de desenvolvimento de software"
+  },
+  {
+    "id": "FL-2.1.3",
+    "chapter": 2,
+    "section": "2.1",
+    "level": "K1",
+    "description": {
+      "en": "Recall the examples of test-first approaches to development",
+      "pt": "Recordar os exemplos de abordagens test-first no desenvolvimento"
+    },
+    "topic": {
+      "en": "Testing in the Context of a Software Development Lifecycle",
+      "pt": "Testes no Contexto dos Ciclos de Vida de Desenvolvimento de Software"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar os exemplos de abordagens test-first no desenvolvimento"
+  },
+  {
+    "id": "FL-2.1.4",
+    "chapter": 2,
+    "section": "2.1",
+    "level": "K2",
+    "description": {
+      "en": "Summarize how DevOps might have an impact on testing",
+      "pt": "Resumir como o DevOps pode ter um impacto nos testes"
+    },
+    "topic": {
+      "en": "Testing in the Context of a Software Development Lifecycle",
+      "pt": "Testes no Contexto dos Ciclos de Vida de Desenvolvimento de Software"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Resumir como o DevOps pode ter um impacto nos testes"
+  },
+  {
+    "id": "FL-2.1.5",
+    "chapter": 2,
+    "section": "2.1",
+    "level": "K2",
+    "description": {
+      "en": "Explain shift left",
+      "pt": "Explicar a abordagem shift-left"
+    },
+    "topic": {
+      "en": "Testing in the Context of a Software Development Lifecycle",
+      "pt": "Testes no Contexto dos Ciclos de Vida de Desenvolvimento de Software"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar a abordagem shift-left"
+  },
+  {
+    "id": "FL-2.1.6",
+    "chapter": 2,
+    "section": "2.1",
+    "level": "K2",
+    "description": {
+      "en": "Explain how retrospectives can be used as a mechanism for process improvement",
+      "pt": "Explicar como utilizar retrospetivas como mecanismo de melhoria de processos"
+    },
+    "topic": {
+      "en": "Testing in the Context of a Software Development Lifecycle",
+      "pt": "Testes no Contexto dos Ciclos de Vida de Desenvolvimento de Software"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar como utilizar retrospetivas como mecanismo de melhoria de processos"
+  },
+  {
+    "id": "FL-2.2.1",
+    "chapter": 2,
+    "section": "2.2",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish the different test levels",
+      "pt": "Distinguir os vários níveis de teste"
+    },
+    "topic": {
+      "en": "Test Levels and Test Types",
+      "pt": "Níveis de Teste e Tipos de Teste"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir os vários níveis de teste"
+  },
+  {
+    "id": "FL-2.2.2",
+    "chapter": 2,
+    "section": "2.2",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish the different test types",
+      "pt": "Distinguir os vários tipos de teste"
+    },
+    "topic": {
+      "en": "Test Levels and Test Types",
+      "pt": "Níveis de Teste e Tipos de Teste"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir os vários tipos de teste"
+  },
+  {
+    "id": "FL-2.2.3",
+    "chapter": 2,
+    "section": "2.2",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish confirmation testing from regression testing",
+      "pt": "Distinguir o teste de confirmação do teste de regressão"
+    },
+    "topic": {
+      "en": "Test Levels and Test Types",
+      "pt": "Níveis de Teste e Tipos de Teste"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir o teste de confirmação do teste de regressão"
+  },
+  {
+    "id": "FL-2.3.1",
+    "chapter": 2,
+    "section": "2.3",
+    "level": "K2",
+    "description": {
+      "en": "Summarize maintenance testing and its triggers",
+      "pt": "Resumir os testes de manutenção e os fatores que os desencadeiam"
+    },
+    "topic": {
+      "en": "Maintenance Testing",
+      "pt": "Testes de Manutenção"
+    },
+    "pages": {
+      "en": 24,
+      "pt": 26
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Resumir os testes de manutenção e os fatores que os desencadeiam"
+  },
+  {
+    "id": "FL-3.1.1",
+    "chapter": 3,
+    "section": "3.1",
+    "level": "K1",
+    "description": {
+      "en": "Recognize types of work products that can be examined by static testing",
+      "pt": "Reconhecer tipos de produtos de trabalho que podem ser examinados por testes estáticos"
+    },
+    "topic": {
+      "en": "Static Testing Basics",
+      "pt": "Conceitos Básicos dos Testes Estáticos"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "localized-4.0.1",
+    "ptOriginal": "Reconhecer tipos de produtos que podem ser examinados através das diferentes técnicas de teste estático",
+    "localizationNote": "Alinhamento com work products e static testing na redação EN 4.0.1."
+  },
+  {
+    "id": "FL-3.1.2",
+    "chapter": 3,
+    "section": "3.1",
+    "level": "K2",
+    "description": {
+      "en": "Explain the value of static testing",
+      "pt": "Explicar o valor dos testes estáticos"
+    },
+    "topic": {
+      "en": "Static Testing Basics",
+      "pt": "Conceitos Básicos dos Testes Estáticos"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o valor dos testes estáticos"
+  },
+  {
+    "id": "FL-3.1.3",
+    "chapter": 3,
+    "section": "3.1",
+    "level": "K2",
+    "description": {
+      "en": "Compare and contrast static testing and dynamic testing",
+      "pt": "Comparar e diferenciar entre testes estáticos e testes dinâmicos"
+    },
+    "topic": {
+      "en": "Static Testing Basics",
+      "pt": "Conceitos Básicos dos Testes Estáticos"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Comparar e diferenciar entre testes estáticos e testes dinâmicos"
+  },
+  {
+    "id": "FL-3.2.1",
+    "chapter": 3,
+    "section": "3.2",
+    "level": "K1",
+    "description": {
+      "en": "Identify the benefits of early and frequent stakeholder feedback",
+      "pt": "Identificar as vantagens do feedback antecipado e frequente dos stakeholders"
+    },
+    "topic": {
+      "en": "Feedback and Review Process",
+      "pt": "Feedback e Processo de Revisão"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "localized-4.0.1",
+    "ptOriginal": "Identificar as vantagens do feedback antecipado e frequente aos stakeholders",
+    "localizationNote": "Preserva o sentido do feedback dos stakeholders na versão EN; o PT 4.0 usa aos stakeholders."
+  },
+  {
+    "id": "FL-3.2.2",
+    "chapter": 3,
+    "section": "3.2",
+    "level": "K2",
+    "description": {
+      "en": "Summarize the activities of the review process",
+      "pt": "Resumir as atividades do processo de revisão"
+    },
+    "topic": {
+      "en": "Feedback and Review Process",
+      "pt": "Feedback e Processo de Revisão"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Resumir as atividades do processo de revisão"
+  },
+  {
+    "id": "FL-3.2.3",
+    "chapter": 3,
+    "section": "3.2",
+    "level": "K1",
+    "description": {
+      "en": "Recall which responsibilities are assigned to the principal roles when performing reviews",
+      "pt": "Recordar as responsabilidades que estão atribuídas às funções principais durante as revisões"
+    },
+    "topic": {
+      "en": "Feedback and Review Process",
+      "pt": "Feedback e Processo de Revisão"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar as responsabilidades que estão atribuídas às funções principais durante as revisões"
+  },
+  {
+    "id": "FL-3.2.4",
+    "chapter": 3,
+    "section": "3.2",
+    "level": "K2",
+    "description": {
+      "en": "Compare and contrast the different review types",
+      "pt": "Comparar e contrastar os diferentes tipos de revisão"
+    },
+    "topic": {
+      "en": "Feedback and Review Process",
+      "pt": "Feedback e Processo de Revisão"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Comparar e contrastar os diferentes tipos de revisão"
+  },
+  {
+    "id": "FL-3.2.5",
+    "chapter": 3,
+    "section": "3.2",
+    "level": "K1",
+    "description": {
+      "en": "Recall the factors that contribute to a successful review",
+      "pt": "Recordar os fatores que contribuem para uma revisão bem-sucedida"
+    },
+    "topic": {
+      "en": "Feedback and Review Process",
+      "pt": "Feedback e Processo de Revisão"
+    },
+    "pages": {
+      "en": 32,
+      "pt": 35
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar os fatores que contribuem para uma revisão bem-sucedida"
+  },
+  {
+    "id": "FL-4.1.1",
+    "chapter": 4,
+    "section": "4.1",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish black-box test techniques, white-box test techniques and experience-based test techniques",
+      "pt": "Distinguir entre técnicas de teste caixa-preta, caixa-branca e baseadas na experiência"
+    },
+    "topic": {
+      "en": "Test Techniques Overview",
+      "pt": "Descrição Geral das Técnicas de Teste"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir entre técnicas de teste caixa-preta, caixa-branca e baseadas na experiência"
+  },
+  {
+    "id": "FL-4.2.1",
+    "chapter": 4,
+    "section": "4.2",
+    "level": "K3",
+    "description": {
+      "en": "Use equivalence partitioning to derive test cases",
+      "pt": "Utilizar o particionamento por equivalências para obter casos de teste"
+    },
+    "topic": {
+      "en": "Black-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-preta"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Utilizar o particionamento por equivalências para obter casos de teste"
+  },
+  {
+    "id": "FL-4.2.2",
+    "chapter": 4,
+    "section": "4.2",
+    "level": "K3",
+    "description": {
+      "en": "Use boundary value analysis to derive test cases",
+      "pt": "Utilizar a análise de valor fronteira para obter casos de teste"
+    },
+    "topic": {
+      "en": "Black-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-preta"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Utilizar a análise de valor fronteira para obter casos de teste"
+  },
+  {
+    "id": "FL-4.2.3",
+    "chapter": 4,
+    "section": "4.2",
+    "level": "K3",
+    "description": {
+      "en": "Use decision table testing to derive test cases",
+      "pt": "Utilizar teste de tabelas de decisão para obter casos de teste"
+    },
+    "topic": {
+      "en": "Black-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-preta"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Utilizar teste de tabelas de decisão para obter casos de teste"
+  },
+  {
+    "id": "FL-4.2.4",
+    "chapter": 4,
+    "section": "4.2",
+    "level": "K3",
+    "description": {
+      "en": "Use state transition testing to derive test cases",
+      "pt": "Utilizar teste de transição de estados para obter casos de teste"
+    },
+    "topic": {
+      "en": "Black-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-preta"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Utilizar teste de transição de estados para obter casos de teste"
+  },
+  {
+    "id": "FL-4.3.1",
+    "chapter": 4,
+    "section": "4.3",
+    "level": "K2",
+    "description": {
+      "en": "Explain statement testing",
+      "pt": "Explicar o teste de instruções"
+    },
+    "topic": {
+      "en": "White-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-branca"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o teste de instruções"
+  },
+  {
+    "id": "FL-4.3.2",
+    "chapter": 4,
+    "section": "4.3",
+    "level": "K2",
+    "description": {
+      "en": "Explain branch testing",
+      "pt": "Explicar o teste de ramos"
+    },
+    "topic": {
+      "en": "White-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-branca"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o teste de ramos"
+  },
+  {
+    "id": "FL-4.3.3",
+    "chapter": 4,
+    "section": "4.3",
+    "level": "K2",
+    "description": {
+      "en": "Explain the value of white-box testing",
+      "pt": "Explicar o valor dos testes caixa-branca"
+    },
+    "topic": {
+      "en": "White-box Test Techniques",
+      "pt": "Técnicas de Teste Caixa-branca"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o valor dos testes caixa-branca"
+  },
+  {
+    "id": "FL-4.4.1",
+    "chapter": 4,
+    "section": "4.4",
+    "level": "K2",
+    "description": {
+      "en": "Explain error guessing",
+      "pt": "Explicar a antecipação de erros"
+    },
+    "topic": {
+      "en": "Experience-based Test Techniques",
+      "pt": "Técnicas de Teste Baseadas na Experiência"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar a antecipação de erros"
+  },
+  {
+    "id": "FL-4.4.2",
+    "chapter": 4,
+    "section": "4.4",
+    "level": "K2",
+    "description": {
+      "en": "Explain exploratory testing",
+      "pt": "Explicar o teste exploratório"
+    },
+    "topic": {
+      "en": "Experience-based Test Techniques",
+      "pt": "Técnicas de Teste Baseadas na Experiência"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o teste exploratório"
+  },
+  {
+    "id": "FL-4.4.3",
+    "chapter": 4,
+    "section": "4.4",
+    "level": "K2",
+    "description": {
+      "en": "Explain checklist-based testing",
+      "pt": "Explicar o teste baseado em checklists"
+    },
+    "topic": {
+      "en": "Experience-based Test Techniques",
+      "pt": "Técnicas de Teste Baseadas na Experiência"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar o teste baseado em checklists"
+  },
+  {
+    "id": "FL-4.5.1",
+    "chapter": 4,
+    "section": "4.5",
+    "level": "K2",
+    "description": {
+      "en": "Explain how to write user stories in collaboration with developers and business representatives",
+      "pt": "Explicar como escrever user stories em colaboração com programadores e representantes do negócio"
+    },
+    "topic": {
+      "en": "Collaboration-based Test Approaches",
+      "pt": "Abordagens de Teste Baseadas na Colaboração"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar como escrever user stories em colaboração com programadores e representantes do negócio"
+  },
+  {
+    "id": "FL-4.5.2",
+    "chapter": 4,
+    "section": "4.5",
+    "level": "K2",
+    "description": {
+      "en": "Classify the different options for writing acceptance criteria",
+      "pt": "Classificar as diferentes opções para escrever critérios de aceitação"
+    },
+    "topic": {
+      "en": "Collaboration-based Test Approaches",
+      "pt": "Abordagens de Teste Baseadas na Colaboração"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Classificar as diferentes opções para escrever critérios de aceitação"
+  },
+  {
+    "id": "FL-4.5.3",
+    "chapter": 4,
+    "section": "4.5",
+    "level": "K3",
+    "description": {
+      "en": "Use acceptance test-driven development (ATDD) to derive test cases",
+      "pt": "Utilizar o desenvolvimento orientado para testes de aceitação (ATDD) para obter casos de teste"
+    },
+    "topic": {
+      "en": "Collaboration-based Test Approaches",
+      "pt": "Abordagens de Teste Baseadas na Colaboração"
+    },
+    "pages": {
+      "en": 38,
+      "pt": 41
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Utilizar o desenvolvimento orientado para testes de aceitação (ATDD) para obter casos de teste"
+  },
+  {
+    "id": "FL-5.1.1",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K2",
+    "description": {
+      "en": "Exemplify the purpose and content of a test plan",
+      "pt": "Exemplificar a finalidade e o conteúdo de um plano de testes"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Exemplificar a finalidade e o conteúdo de um plano de testes"
+  },
+  {
+    "id": "FL-5.1.2",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K1",
+    "description": {
+      "en": "Recognize how a tester adds value to iteration and release planning",
+      "pt": "Reconhecer como um testador acrescenta valor ao planeamento da iteração e planeamento da entrega"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Reconhecer como um testador acrescenta valor ao planeamento da iteração e planeamento da entrega"
+  },
+  {
+    "id": "FL-5.1.3",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K2",
+    "description": {
+      "en": "Compare and contrast entry criteria and exit criteria",
+      "pt": "Comparar e diferenciar entre critérios de entrada e critérios de saída"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Comparar e diferenciar entre critérios de entrada e critérios de saída"
+  },
+  {
+    "id": "FL-5.1.4",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K3",
+    "description": {
+      "en": "Use estimation techniques to calculate the required test effort",
+      "pt": "Utilizar técnicas de estimativa para calcular o esforço de teste necessário"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Utilizar técnicas de estimativa para calcular o esforço de teste necessário"
+  },
+  {
+    "id": "FL-5.1.5",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K3",
+    "description": {
+      "en": "Apply test case prioritization",
+      "pt": "Aplicar a priorização de casos de teste"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Aplicar a priorização de casos de teste"
+  },
+  {
+    "id": "FL-5.1.6",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K1",
+    "description": {
+      "en": "Recall the concepts of the test pyramid",
+      "pt": "Recordar os conceitos da pirâmide de testes"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar os conceitos da pirâmide de testes"
+  },
+  {
+    "id": "FL-5.1.7",
+    "chapter": 5,
+    "section": "5.1",
+    "level": "K2",
+    "description": {
+      "en": "Summarize the testing quadrants and their relationships with test levels and test types",
+      "pt": "Resumir os quadrantes de testes e as respetivas relações com os níveis de teste e os tipos de teste"
+    },
+    "topic": {
+      "en": "Test Planning",
+      "pt": "Planeamento de Testes"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Resumir os quadrantes de testes e as respetivas relações com os níveis de teste e os tipos de teste"
+  },
+  {
+    "id": "FL-5.2.1",
+    "chapter": 5,
+    "section": "5.2",
+    "level": "K1",
+    "description": {
+      "en": "Identify risk level by using risk likelihood and risk impact",
+      "pt": "Identificar o nível de risco utilizando a probabilidade do risco e o impacto do risco"
+    },
+    "topic": {
+      "en": "Risk Management",
+      "pt": "Gestão de Risco"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Identificar o nível de risco utilizando a probabilidade do risco e o impacto do risco"
+  },
+  {
+    "id": "FL-5.2.2",
+    "chapter": 5,
+    "section": "5.2",
+    "level": "K2",
+    "description": {
+      "en": "Distinguish between project risks and product risks",
+      "pt": "Distinguir entre riscos de projeto e riscos de produto"
+    },
+    "topic": {
+      "en": "Risk Management",
+      "pt": "Gestão de Risco"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Distinguir entre riscos de projeto e riscos de produto"
+  },
+  {
+    "id": "FL-5.2.3",
+    "chapter": 5,
+    "section": "5.2",
+    "level": "K2",
+    "description": {
+      "en": "Explain how product risk analysis may influence thoroughness and test scope",
+      "pt": "Explicar como a análise de risco de produto pode influenciar a profundidade e o âmbito dos testes"
+    },
+    "topic": {
+      "en": "Risk Management",
+      "pt": "Gestão de Risco"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar como a análise de risco de produto pode influenciar a profundidade e o âmbito dos testes"
+  },
+  {
+    "id": "FL-5.2.4",
+    "chapter": 5,
+    "section": "5.2",
+    "level": "K2",
+    "description": {
+      "en": "Explain what measures can be taken in response to analyzed product risks",
+      "pt": "Explicar as medidas que podem ser tomadas em resposta aos riscos de produto analisados"
+    },
+    "topic": {
+      "en": "Risk Management",
+      "pt": "Gestão de Risco"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar as medidas que podem ser tomadas em resposta aos riscos de produto analisados"
+  },
+  {
+    "id": "FL-5.3.1",
+    "chapter": 5,
+    "section": "5.3",
+    "level": "K1",
+    "description": {
+      "en": "Recall metrics used for testing",
+      "pt": "Recordar métricas utilizadas para testes"
+    },
+    "topic": {
+      "en": "Test Monitoring, Test Control and Test Completion",
+      "pt": "Monitorização do Teste, Controlo de Teste e Conclusão do Teste"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar métricas utilizadas para testes"
+  },
+  {
+    "id": "FL-5.3.2",
+    "chapter": 5,
+    "section": "5.3",
+    "level": "K2",
+    "description": {
+      "en": "Summarize the purposes, content, and audiences for test reports",
+      "pt": "Resumir as finalidades, conteúdos e público-alvo para relatórios de testes"
+    },
+    "topic": {
+      "en": "Test Monitoring, Test Control and Test Completion",
+      "pt": "Monitorização do Teste, Controlo de Teste e Conclusão do Teste"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Resumir as finalidades, conteúdos e público-alvo para relatórios de testes"
+  },
+  {
+    "id": "FL-5.3.3",
+    "chapter": 5,
+    "section": "5.3",
+    "level": "K2",
+    "description": {
+      "en": "Exemplify how to communicate the status of testing",
+      "pt": "Exemplificar como comunicar o estado dos testes"
+    },
+    "topic": {
+      "en": "Test Monitoring, Test Control and Test Completion",
+      "pt": "Monitorização do Teste, Controlo de Teste e Conclusão do Teste"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Exemplificar como comunicar o estado dos testes"
+  },
+  {
+    "id": "FL-5.4.1",
+    "chapter": 5,
+    "section": "5.4",
+    "level": "K2",
+    "description": {
+      "en": "Summarize how configuration management supports testing",
+      "pt": "Resumir como a gestão de configurações suporta os testes"
+    },
+    "topic": {
+      "en": "Configuration Management",
+      "pt": "Gestão de Configurações"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Resumir como a gestão de configurações suporta os testes"
+  },
+  {
+    "id": "FL-5.5.1",
+    "chapter": 5,
+    "section": "5.5",
+    "level": "K3",
+    "description": {
+      "en": "Prepare a defect report",
+      "pt": "Elaborar um relatório de defeitos"
+    },
+    "topic": {
+      "en": "Defect Management",
+      "pt": "Gestão de Defeitos"
+    },
+    "pages": {
+      "en": 47,
+      "pt": 52
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Elaborar um relatório de defeitos"
+  },
+  {
+    "id": "FL-6.1.1",
+    "chapter": 6,
+    "section": "6.1",
+    "level": "K2",
+    "description": {
+      "en": "Explain how different types of test tools support testing",
+      "pt": "Explicar como as diferentes ferramentas de teste suportam os testes"
+    },
+    "topic": {
+      "en": "Tool Support for Testing",
+      "pt": "Ferramentas de Suporte aos Testes"
+    },
+    "pages": {
+      "en": 58,
+      "pt": 64
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Explicar como as diferentes ferramentas de teste suportam os testes"
+  },
+  {
+    "id": "FL-6.2.1",
+    "chapter": 6,
+    "section": "6.2",
+    "level": "K1",
+    "description": {
+      "en": "Recall the benefits and risks of test automation",
+      "pt": "Recordar as vantagens e os riscos da automação de testes"
+    },
+    "topic": {
+      "en": "Benefits and Risks of Test Automation",
+      "pt": "Vantagens e Riscos da Automação de Testes"
+    },
+    "pages": {
+      "en": 58,
+      "pt": 64
+    },
+    "ptWording": "official-4.0-PT-v1.0",
+    "ptOriginal": "Recordar as vantagens e os riscos da automação de testes"
+  }
+]

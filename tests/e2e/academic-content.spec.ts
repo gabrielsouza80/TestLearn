@@ -149,6 +149,17 @@ test('legacy resume and completed review preserve the actual original question a
     page.getByRole('heading', { name: ordered[0].text.pt, exact: true }),
   ).toBeVisible();
   await page.getByRole('radio', { name: '5 horas', exact: true }).check();
+  // Web Locks serialize saves asynchronously; reload only after the real write.
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          JSON.parse(localStorage.getItem('testlearn.v1')!).active.answers[
+            'tl-036'
+          ],
+      ),
+    )
+    .toEqual(['o1']);
   await page.reload();
   await expect(
     page.getByRole('radio', { name: '5 horas', exact: true }),
@@ -162,6 +173,16 @@ test('legacy resume and completed review preserve the actual original question a
   await expect(
     page.getByRole('heading', { name: '1 / 40', exact: true }),
   ).toBeVisible();
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          JSON.parse(localStorage.getItem('testlearn.v1')!).history[0]?.answers[
+            'tl-036'
+          ],
+      ),
+    )
+    .toEqual(['o1']);
   await page.reload();
   await page.getByRole('button', { name: 'Progresso', exact: true }).click();
   await page.getByRole('button', { name: 'Rever', exact: true }).click();

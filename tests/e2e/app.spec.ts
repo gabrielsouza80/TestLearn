@@ -153,7 +153,7 @@ test('complete all 40 with 26 correct and verify exact score and incorrect revie
     page.getByRole('heading', { name: '26 / 40', exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByText('Practice threshold reached', { exact: true }),
+    page.getByText('Passed the practice exam', { exact: true }),
   ).toBeVisible();
   await page.getByLabel('Show', { exact: true }).selectOption('incorrect');
   await expect(page.locator('.review-question')).toHaveCount(14);

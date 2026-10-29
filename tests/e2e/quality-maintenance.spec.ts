@@ -52,14 +52,22 @@ test('current exam shows four revised options, retains shuffled identities acros
   expect(saved.questionIds).toHaveLength(40);
   expect(saved.questionIds[0]).toBe(first.id);
   expect(
-    (await page.getByRole('group').locator('label').allTextContents()).map(
-      (t) => t.trim(),
-    ),
+    (
+      await page
+        .getByRole('group', { name: /^(?:Selecione|Select) [12] / })
+        .locator('label .option-text')
+        .allTextContents()
+    ).map((t) => t.trim()),
   ).toEqual(
     saved.optionOrder[first.id].map(
       (id: string) => first.options.find((o) => o.id === id)!.text.pt,
     ),
   );
+  await expect(
+    page
+      .getByRole('group', { name: /^(?:Selecione|Select) [12] / })
+      .locator('.option-letter'),
+  ).toHaveText(['A.', 'B.', 'C.', 'D.']);
   await page
     .getByRole('radio', {
       name: first.options.find((o) => o.id === 'o4')!.text.pt,

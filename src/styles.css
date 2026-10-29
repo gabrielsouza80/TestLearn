@@ -99,19 +99,23 @@ small {
 .skip {
   position: absolute;
   left: 1rem;
-  top: -100px;
+  top: 0;
+  transform: translateY(-120%);
+  max-width: calc(100% - 2rem);
   padding: 1rem;
   background: var(--paper);
   z-index: 10;
 }
 .skip:focus {
   top: 1rem;
+  transform: none;
 }
 .header {
-  height: 100px;
+  min-height: 100px;
   background: var(--paper);
   border-bottom: 1px solid var(--line);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0 4%;
@@ -126,6 +130,7 @@ small {
   font-size: 1.6rem;
   font-weight: 750;
   letter-spacing: -0.065em;
+  max-width: 100%;
 }
 .brand-icon {
   height: 42px;
@@ -159,6 +164,7 @@ small {
   gap: 0.7rem;
   font-size: 0.8rem;
   font-weight: 600;
+  max-width: 100%;
 }
 select,
 input[type='number'] {
@@ -174,6 +180,7 @@ input[type='number'] {
 .language select {
   width: auto;
   min-width: 126px;
+  max-width: 100%;
 }
 .layout {
   display: grid;
@@ -831,8 +838,8 @@ footer {
 }
 @media (max-width: 700px) {
   .header {
-    height: 80px;
-    padding: 0 5%;
+    min-height: 80px;
+    padding: 0.5rem 5%;
   }
   .brand {
     font-size: 1.4rem;
@@ -854,7 +861,7 @@ footer {
   }
   .sidebar {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.25rem;
     padding: 0.7rem 4%;
     border-right: 0;
@@ -868,6 +875,8 @@ footer {
   }
   .nav-item {
     font-size: 0.65rem;
+    min-width: 0;
+    overflow-wrap: anywhere;
     padding: 0.5rem 0.25rem;
     display: flex;
     flex-direction: column;
@@ -1041,5 +1050,159 @@ footer {
   }
   .beta-badge {
     font-size: 0.6rem;
+  }
+}
+
+/* Educational review: text and icons carry status independently of colour. */
+.session-workspace {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.save-status {
+  font-size: 0.85rem;
+}
+.backup-file {
+  display: block;
+  margin-top: 1rem;
+}
+.progress-backup {
+  overflow-wrap: anywhere;
+}
+.backup-file input {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.5rem;
+}
+.progress-backup .dialog {
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+}
+.option-letter {
+  font-weight: 750;
+  min-width: 1.5em;
+  flex-shrink: 0;
+}
+.learning-help,
+.question-reference {
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+.learning-help summary,
+.question-reference summary {
+  padding: 0.4rem 0;
+  min-height: 32px;
+}
+.learning-help dl > div {
+  margin: 0.75rem 0;
+}
+.learning-help dd {
+  margin-top: 0.25rem;
+}
+.objective-description p {
+  margin: 0.65rem 0;
+}
+.filter-grid select {
+  min-width: 0;
+  max-width: 100%;
+}
+.filter-grid optgroup {
+  font-weight: 650;
+}
+.review-options {
+  list-style: none;
+  padding: 0;
+}
+.review-options > li {
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  padding: 0.9rem;
+  border-radius: 4px;
+  background: var(--paper);
+}
+.review-options p {
+  margin: 0.35rem 0;
+}
+.review-options > .review-option-correct {
+  border-left-color: #17603e;
+}
+.review-options > .review-option-wrong {
+  border-left-color: #9b2929;
+}
+.review-options > .review-option-neutral {
+  border-left-color: #69737a;
+}
+.feedback-incorrect {
+  border-left-color: #9b2929;
+  background: #fff5f2;
+}
+.feedback-unanswered {
+  border-left-color: #69737a;
+  background: #f1f3f3;
+}
+.option-state {
+  font-weight: 650;
+}
+.review-question {
+  overflow-wrap: anywhere;
+}
+.review-question.review-correct {
+  border-top: 4px solid #17603e;
+}
+.review-question.review-incorrect {
+  border-top: 4px solid #9b2929;
+}
+.review-question.review-unanswered {
+  border-top: 4px solid #69737a;
+}
+.question-status {
+  font-size: 0.95rem;
+}
+.result-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin: 1rem 0;
+}
+.result-counts dt {
+  font-size: 0.85rem;
+}
+.result-counts dd {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.result-banner.result-failed {
+  border-top-color: #9b2929;
+  background: #fff2ef;
+}
+.result-banner.result-neutral {
+  border-top-color: #536370;
+  background: #edf1f2;
+}
+.result-banner button {
+  margin: 0.4rem 0.4rem 0.4rem 0;
+}
+.practice-outcome {
+  display: block;
+  font-size: 1.15rem;
+}
+.review-jump {
+  display: block;
+  max-width: 36rem;
+  margin: 1rem 0;
+}
+.review-jump select {
+  margin-top: 0.4rem;
+}
+@media (max-width: 700px) {
+  .result-counts {
+    gap: 1rem;
+  }
+  .result-banner {
+    align-items: stretch;
+  }
+  .review-options > li {
+    padding: 0.7rem;
   }
 }

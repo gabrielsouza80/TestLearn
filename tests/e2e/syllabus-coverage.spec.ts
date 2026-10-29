@@ -24,7 +24,9 @@ test('a newly covered LO is selectable, keeps its semantic answer after shufflin
   await page
     .getByRole('button', { name: 'Iniciar prática', exact: true })
     .click();
-  await expect(page.getByText('FL-4.3.3 · K2', { exact: true })).toBeVisible();
+  await expect(
+    page.getByText('FL-4.3.3 · K2 — Compreender', { exact: true }),
+  ).toBeVisible();
   await page.getByLabel('Idioma', { exact: true }).selectOption('en');
   await page
     .getByRole('radio', {

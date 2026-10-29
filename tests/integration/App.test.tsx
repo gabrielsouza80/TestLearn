@@ -16,6 +16,9 @@ describe('learning workflows', () => {
   it('shows real empty statistics, bilingual controls and a usable exam entry', async () => {
     const user = userEvent.setup();
     render(<App />);
+    await screen.findByText('Pronto para guardar neste navegador.', {
+      exact: true,
+    });
     expect(
       screen.getByRole('heading', { name: 'O seu espaço de aprendizagem' }),
     ).toBeVisible();
@@ -59,7 +62,7 @@ describe('learning workflows', () => {
     expect(
       screen.queryByRole('region', { name: 'Explicação' }),
     ).not.toBeInTheDocument();
-    view.unmount();
+    await act(async () => view.unmount());
     render(<App />);
     expect(
       screen.getByRole('radio', { name: q.options[1].text.pt }),
@@ -155,7 +158,9 @@ describe('learning workflows', () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date('2026-10-27T10:00:00Z'));
     seed(createSession(examQuestions, 'exam', 60, Date.now() - 3600001, 42));
-    render(<App />);
+    await act(async () => {
+      render(<App />);
+    });
     await act(async () => {
       vi.advanceTimersByTime(1001);
     });
@@ -168,7 +173,7 @@ describe('learning workflows', () => {
     ).toHaveLength(1);
   });
 
-  it('keeps a corrupt saved value intact until the user starts a new session', () => {
+  it('keeps a corrupt saved value intact and blocks silent replacement', () => {
     localStorage.setItem('testlearn.v1', 'broken');
     render(<App />);
     expect(screen.getByRole('alert')).toBeVisible();
@@ -189,7 +194,7 @@ describe('learning workflows', () => {
     await user.click(
       screen.getByRole('button', { name: 'Confirmar resposta' }),
     );
-    view.unmount();
+    await act(async () => view.unmount());
     render(<App />);
     expect(screen.getByText('Resposta correta')).toBeVisible();
     expect(

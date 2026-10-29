@@ -11,80 +11,107 @@ beforeEach(() => {
   localStorage.clear();
   vi.restoreAllMocks();
 });
-describe('release persistence writer isolation', () => {
-  it('serializes this page writes without confusing its own progress with an external update', async () => {
+describe('synchronous writes under an exclusive page lease', () => {
+  it('persists each state before save returns, without a promise or effect queue', async () => {
     const writer = createStateWriter(null);
+    expect(await writer.acquire()).toBe('saved');
     const first = {
       ...emptyState(),
       active: createSession([questions[0]], 'practice', 0, 1000, 42),
     };
     const second = {
       ...first,
-      active: { ...first.active!, flagged: [questions[0].id] },
+      active: { ...first.active, flagged: [questions[0].id] },
     };
-    expect(
-      await Promise.all([writer.save(first), writer.save(second)]),
-    ).toEqual(['saved', 'saved']);
+    expect(writer.save(first)).toBe('saved');
+    expect(load().state).toEqual(first);
+    expect(writer.save(second)).toBe('saved');
     expect(load().state).toEqual(second);
     expect(writer.isCurrent()).toBe(true);
+    writer.release();
   });
-  it('refuses stale writes and all later queued writes after another tab changes the raw snapshot', async () => {
+  it('fails closed before acquiring a lease, and after releasing it', async () => {
     const writer = createStateWriter(null);
-    const raw = JSON.stringify({
-      ...emptyState(),
-      active: createSession([questions[1]], 'practice', 0, 1000, 42),
-    });
+    expect(writer.save(emptyState())).toBe('busy');
+    expect(localStorage.getItem('testlearn.v1')).toBeNull();
+    await writer.acquire();
+    writer.release();
+    expect(writer.save(emptyState())).toBe('busy');
+  });
+  it('prevents simultaneous writers; a fresh page may acquire after the owner releases', async () => {
+    const first = createStateWriter(null),
+      second = createStateWriter(null);
+    expect(await first.acquire()).toBe('saved');
+    expect(await second.acquire()).toBe('busy');
+    expect(first.save(emptyState())).toBe('saved');
+    expect(second.save(emptyState())).toBe('busy');
+    first.release();
+    await Promise.resolve();
+    await Promise.resolve();
+    const fresh = createStateWriter(readStoredValue());
+    expect(await fresh.acquire()).toBe('saved');
+    fresh.release();
+  });
+  it('refuses unexpected raw changes and every later write without replacing newer data', async () => {
+    const writer = createStateWriter(null);
+    await writer.acquire();
+    const raw = '{"preserve":true}';
     localStorage.setItem('testlearn.v1', raw);
     expect(writer.isCurrent()).toBe(false);
-    expect(await writer.save(emptyState())).toBe('conflict');
-    expect(await writer.save(emptyState())).toBe('conflict');
-    expect(localStorage.getItem('testlearn.v1')).toBe(raw);
+    expect(writer.save(emptyState())).toBe('conflict');
+    expect(writer.save(emptyState())).toBe('conflict');
+    expect(readStoredValue()).toBe(raw);
+    writer.release();
   });
-  it('uses the origin Web Lock for the check and write when available', async () => {
-    const request = vi.fn(async (_name: string, task: () => unknown) => task());
-    vi.stubGlobal('navigator', { locks: { request } });
-    try {
-      expect(await createStateWriter(null).save(emptyState())).toBe('saved');
-      expect(request).toHaveBeenCalledWith(
-        'testlearn-progress',
-        expect.any(Function),
-      );
-    } finally {
-      vi.unstubAllGlobals();
-    }
-  });
-  it('reports blocked/quota storage and never clears unrelated keys', async () => {
+  it('reports storage quota and preserves previous progress and unrelated keys', async () => {
     localStorage.setItem('unrelated', 'keep');
     const writer = createStateWriter(null);
+    await writer.acquire();
     vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
       throw new DOMException('full', 'QuotaExceededError');
     });
-    expect(await writer.save(emptyState())).toBe('unavailable');
+    expect(writer.save(emptyState())).toBe('unavailable');
+    expect(readStoredValue()).toBeNull();
     expect(localStorage.getItem('unrelated')).toBe('keep');
-    expect(localStorage.getItem('testlearn.v1')).toBeNull();
+    writer.release();
   });
-  it('does not replace an unknown record after an unreadable initial store becomes readable', async () => {
+  it('does not overwrite unseen progress when initial reads were unavailable', async () => {
     const writer = createStateWriter(undefined);
     localStorage.setItem('testlearn.v1', '{"preserve":true}');
-    expect(await writer.save(emptyState())).toBe('conflict');
+    expect(await writer.acquire()).toBe('conflict');
+    expect(writer.save(emptyState())).toBe('busy');
     expect(readStoredValue()).toBe('{"preserve":true}');
+    writer.release();
   });
-  it('ignores untrusted prototype properties without pollution or overwriting the raw record', () => {
+  it('never writes if a later read fails', async () => {
+    const writer = createStateWriter(null);
+    await writer.acquire();
+    const set = vi.spyOn(Storage.prototype, 'setItem');
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('blocked', 'SecurityError');
+    });
+    expect(writer.save(emptyState())).toBe('unavailable');
+    expect(set).not.toHaveBeenCalled();
+    writer.release();
+  });
+  it('does not trust prototype properties or replace the original record when loading', () => {
     const raw =
       '{"version":1,"active":null,"history":[],"__proto__":{"polluted":true}}';
     localStorage.setItem('testlearn.v1', raw);
     load();
     expect(({} as { polluted?: boolean }).polluted).toBeUndefined();
-    expect(localStorage.getItem('testlearn.v1')).toBe(raw);
+    expect(readStoredValue()).toBe(raw);
   });
-});
-
-it('never overwrites unseen progress when reads fail even if the browser would permit writes', async () => {
-  const writer = createStateWriter(undefined);
-  const set = vi.spyOn(Storage.prototype, 'setItem');
-  vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
-    throw new DOMException('blocked', 'SecurityError');
+  it('fails closed when Web Locks rejects or is unsupported', async () => {
+    vi.stubGlobal('navigator', {
+      locks: { request: () => Promise.reject(new Error('lock failure')) },
+    });
+    try {
+      expect(await createStateWriter(null).acquire()).toBe('unavailable');
+      vi.stubGlobal('navigator', {});
+      expect(await createStateWriter(null).acquire()).toBe('unavailable');
+    } finally {
+      vi.unstubAllGlobals();
+    }
   });
-  expect(await writer.save(emptyState())).toBe('unavailable');
-  expect(set).not.toHaveBeenCalled();
 });

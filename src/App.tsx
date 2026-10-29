@@ -1,3 +1,15 @@
+import Text from './learning/Text';
+import QuestionTable from './learning/QuestionTable';
+import AnswerReview from './learning/AnswerReview';
+import ResultReview from './learning/ResultReview';
+import ProgressBackup from './learning/ProgressBackup';
+import { ObjectiveHelp, CognitiveLevelHelp } from './learning/ObjectiveHelp';
+import { objectivesById, cognitiveLevels } from './reference/objectives';
+import {
+  updatePracticeFilters,
+  filterGroups,
+  historyDescriptions,
+} from './learning/filters';
 import { topicLabel } from './topic-labels';
 import {
   CONTENT_REVISION,
@@ -24,7 +36,6 @@ import {
   sessionQuestions,
   selectQuestions,
   type Session,
-  type Question,
 } from './domain/engine';
 import {
   emptyState,
@@ -32,13 +43,14 @@ import {
   loadAsync,
   readStoredValue,
   createStateWriter,
+  type State,
 } from './storage/store';
 import PublicInformation, {
   publicTitles,
   type InformationPage,
 } from './PublicInformation';
 import { BankNotReadyError } from './data/bank-history';
-import { chapters, label, type Language, type Localized } from './i18n';
+import { chapters, label, type Language } from './i18n';
 import './styles.css';
 import EnglishLearning from './EnglishLearning';
 import {
@@ -54,72 +66,6 @@ type Page =
   | 'english'
   | 'result'
   | InformationPage;
-function Text({ value, language }: { value: Localized; language: Language }) {
-  return language === 'both' ? (
-    <>
-      <span lang="en">{value.en}</span>{' '}
-      <span className="translation" lang="pt-PT">
-        {value.pt || 'Tradução indisponível'}
-      </span>
-    </>
-  ) : (
-    <>
-      {value[language] ||
-        (language === 'pt'
-          ? 'Tradução indisponível'
-          : 'Translation unavailable')}
-    </>
-  );
-}
-function QuestionTable({
-  table,
-  language,
-  questionId,
-}: {
-  questionId: string;
-  table: Question['table'];
-  language: Language;
-}) {
-  if (!table) return null;
-  return (
-    <div
-      className="table-scroll"
-      role="region"
-      tabIndex={0}
-      aria-label={`${questionId}: ${label(language, 'Dados da tabela; deslocação horizontal se necessária', 'Table data; scroll horizontally if needed')}`}
-    >
-      <table>
-        <caption>
-          {label(language, 'Dados da questão', 'Question data')}
-        </caption>
-        <thead>
-          <tr>
-            {table.headers.map((cell, index) => (
-              <th key={index} scope="col">
-                {cell}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {table.rows.map((row, index) => (
-            <tr key={index}>
-              {row.map((cell, i) =>
-                i === 0 ? (
-                  <th key={i} scope="row">
-                    {cell}
-                  </th>
-                ) : (
-                  <td key={i}>{cell}</td>
-                ),
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
 
 export default function App() {
   const [restoration, setRestoration] = useState<
@@ -197,6 +143,11 @@ function LearningApp({
   const [writer] = useState(() => createStateWriter(initialRaw));
   const [storageConflict, setStorageConflict] = useState(false);
   const [state, setState] = useState(initial.state);
+  const stateRef = useRef(state);
+  const [leaseReady, setLeaseReady] = useState(false);
+  const [saveStatus, setSaveStatus] = useState('pending');
+  const [recoveryRequired, setRecoveryRequired] = useState(!!initial.warning);
+  const canWrite = leaseReady && !recoveryRequired;
   const [warning, setWarning] = useState(initial.warning);
   const [language, setLanguage] = useState<Language>('pt');
   const [page, setPage] = useState<Page>(
@@ -212,7 +163,6 @@ function LearningApp({
   const [historyFilter, setHistoryFilter] = useState('all');
   const [minutes, setMinutes] = useState(60);
 
-  const [reviewFilter, setReviewFilter] = useState('all');
   const [confirmSubmit, setConfirmSubmit] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
   const [error, setError] = useState('');
@@ -222,22 +172,52 @@ function LearningApp({
     document.documentElement.lang = language === 'en' ? 'en' : 'pt-PT';
   }, [language]);
   useEffect(() => {
-    if (state === initial.state) return;
     let cancelled = false;
-    void writer.save(state).then((status) => {
-      if (cancelled) return;
-      if (status === 'conflict') setStorageConflict(true);
-      else
-        setWarning(
-          status === 'saved'
-            ? null
-            : 'Não foi possível guardar neste dispositivo. / Unable to save on this device.',
-        );
-    });
+    const acquire = () => {
+      setLeaseReady(false);
+      setSaveStatus('pending');
+      void writer.acquire().then((status) => {
+        if (cancelled) return;
+        setLeaseReady(status === 'saved');
+        setSaveStatus(status === 'saved' ? 'ready' : status);
+        if (status === 'conflict') setStorageConflict(true);
+      });
+    };
+    const hide = () => {
+      writer.release();
+      setLeaseReady(false);
+    };
+    const show = (event: PageTransitionEvent) => {
+      if (event.persisted) acquire();
+    };
+    acquire();
+    window.addEventListener('pagehide', hide);
+    window.addEventListener('pageshow', show);
     return () => {
       cancelled = true;
+      writer.release();
+      window.removeEventListener('pagehide', hide);
+      window.removeEventListener('pageshow', show);
     };
-  }, [state, initial.state, writer]);
+  }, [writer]);
+  const commit = useCallback(
+    (next: State, allowRecovery = false) => {
+      if (!leaseReady || (recoveryRequired && !allowRecovery)) return false;
+      const status = writer.save(next);
+      if (status === 'conflict') setStorageConflict(true);
+      setSaveStatus(status === 'saved' ? 'saved' : 'failed');
+      if (status !== 'saved') {
+        setWarning('WRITE_FAILED');
+        return false;
+      }
+      stateRef.current = next;
+      setState(next);
+      setWarning(null);
+      setRecoveryRequired(false);
+      return true;
+    },
+    [writer, leaseReady, recoveryRequired],
+  );
   useEffect(() => {
     const check = (event: StorageEvent) => {
       if (
@@ -282,20 +262,27 @@ function LearningApp({
       previousFocus?.focus();
     };
   }, [confirmSubmit, confirmReset]);
-  const complete = useCallback((session: Session) => {
-    const completed = finish(session);
-    setState((previous) => ({
-      ...previous,
-      active: null,
-      history: previous.history.some((item) => item.id === completed.id)
-        ? previous.history
-        : [...previous.history, completed],
-    }));
-    setViewed(completed);
-    setPage('result');
-    setConfirmSubmit(false);
-  }, []);
+  const complete = useCallback(
+    (session: Session) => {
+      const previous = stateRef.current;
+      if (previous.active?.id !== session.id) return;
+      const completed = finish(previous.active);
+      if (
+        !commit({
+          ...previous,
+          active: null,
+          history: [...previous.history, completed],
+        })
+      )
+        return;
+      setViewed(completed);
+      setPage('result');
+      setConfirmSubmit(false);
+    },
+    [commit],
+  );
   useEffect(() => {
+    if (!state.active?.deadline) return;
     function tick() {
       const time = Date.now();
       setNow(time);
@@ -336,6 +323,15 @@ function LearningApp({
         : historyFilter === 'unseen'
           ? questions.filter((q) => !seen.has(q.id)).map((q) => q.id)
           : undefined;
+  const filters = { chapter, topic, lo, level };
+  const groups = filterGroups(questions, filters);
+  function changeFilters(change: Partial<typeof filters>) {
+    const next = updatePracticeFilters(filters, change, questions);
+    setChapter(next.chapter);
+    setTopic(next.topic);
+    setLo(next.lo);
+    setLevel(next.level);
+  }
   const eligible = questions.filter(
     (q) =>
       (!chapter || q.chapter === Number(chapter)) &&
@@ -347,7 +343,7 @@ function LearningApp({
   function start(mode: 'exam' | 'practice') {
     if (state.active) {
       setPage('session');
-      return;
+      return true;
     }
     try {
       const selected =
@@ -375,10 +371,12 @@ function LearningApp({
         ...session,
         visitedIds: [...new Set([...session.visitedIds, viewedId])],
       };
-      setState((previous) => ({ ...previous, active: updated }));
+      if (!commit({ ...stateRef.current, active: updated })) return false;
 
       setError('');
+      setNow(Date.now());
       setPage('session');
+      return true;
     } catch (error) {
       setError(
         error instanceof BlueprintSelectionError
@@ -391,6 +389,7 @@ function LearningApp({
               'There are not enough questions for this selection. Reduce the count or change filters.',
             ),
       );
+      return false;
     }
   }
   function updateSession(session: Session) {
@@ -399,7 +398,7 @@ function LearningApp({
       ...session,
       visitedIds: [...new Set([...session.visitedIds, viewedId])],
     };
-    setState((previous) => ({ ...previous, active: updated }));
+    commit({ ...stateRef.current, active: updated });
   }
   const active = state.active;
   const checked = active?.feedbackIds ?? [];
@@ -462,42 +461,13 @@ function LearningApp({
                 : t('Uma questão de cada vez', 'One question at a time');
   function feedback(q: (typeof questions)[number], ids: string[]) {
     return (
-      <section
-        className="feedback"
-        aria-label={
-          page === 'result'
-            ? t(
-                `Explicação da questão ${(viewed?.questionIds.indexOf(q.id) ?? -1) + 1}`,
-                `Explanation for question ${(viewed?.questionIds.indexOf(q.id) ?? -1) + 1}`,
-              )
-            : t('Explicação', 'Explanation')
-        }
-      >
-        <strong>
-          {isCorrect(q, ids)
-            ? t('Resposta correta', 'Correct answer')
-            : t('Reveja este conceito', 'Review this concept')}
-        </strong>
-        <p>
-          <Text value={q.explanation} language={language} />
-        </p>
-        <ul>
-          {q.options.map((option) => (
-            <li key={option.id}>
-              <strong>
-                {q.correct.includes(option.id) ? '✓ ' : ''}
-                <Text value={option.text} language={language} />
-              </strong>
-              <p>
-                <Text value={option.explanation} language={language} />
-              </p>
-            </li>
-          ))}
-        </ul>
-        <small>
-          {q.lo} · {q.level} · {topicLabel(q.topic, language)}
-        </small>
-      </section>
+      <AnswerReview
+        question={q}
+        selected={ids}
+        order={active!.optionOrder[q.id]}
+        language={language}
+        name={t('Explicação', 'Explanation')}
+      />
     );
   }
   if (storageConflict)
@@ -604,14 +574,44 @@ function LearningApp({
               {title}
             </h1>
           </div>
+          <p aria-live="polite" aria-atomic="true" className="save-status">
+            {saveStatus === 'pending'
+              ? t('A reservar acesso de escrita…', 'Reserving write access…')
+              : saveStatus === 'busy'
+                ? t(
+                    'Outro separador está a editar. Feche-o e recarregue esta página para editar. Nenhuma alteração foi aplicada aqui.',
+                    'Another tab is editing. Close it and reload this page to edit. No changes were applied here.',
+                  )
+                : saveStatus === 'unavailable'
+                  ? t(
+                      'A reserva segura de escrita está indisponível. A edição está bloqueada; tente um navegador atualizado em HTTPS.',
+                      'Safe write access is unavailable. Editing is blocked; try an updated browser over HTTPS.',
+                    )
+                  : saveStatus === 'saved'
+                    ? t('Guardado neste navegador.', 'Saved in this browser.')
+                    : saveStatus === 'failed'
+                      ? t(
+                          'Não guardado — a última alteração não foi aplicada.',
+                          'Not saved — the last change was not applied.',
+                        )
+                      : t(
+                          'Pronto para guardar neste navegador.',
+                          'Ready to save in this browser.',
+                        )}
+          </p>
           {warning && (
             <p role="alert" className="notice">
               {warning.startsWith('Saved data')
                 ? t(
-                    'Os dados guardados estão corrompidos, incompatíveis ou indisponíveis. Os dados originais foram preservados. Uma nova sessão irá substituí-los.',
-                    'Saved data is corrupted, incompatible or unavailable. The original data was preserved. Starting a new session will replace it.',
+                    'Os dados guardados estão corrompidos, incompatíveis ou indisponíveis. Os dados originais foram preservados. A edição está bloqueada. Exporte uma cópia válida quando possível ou use a eliminação explícita para recuperar.',
+                    'Saved data is corrupted, incompatible or unavailable. The original data was preserved. Editing is blocked. Export a valid copy when possible or use explicit reset to recover.',
                   )
-                : warning}
+                : warning === 'WRITE_FAILED'
+                  ? t(
+                      'Não foi possível guardar. A alteração não foi aplicada; os dados anteriores foram preservados. Exporte o progresso e verifique o espaço disponível (máximo de 500 sessões concluídas).',
+                      'Unable to save. The change was not applied; previous data was preserved. Export progress and check available storage (maximum 500 completed sessions).',
+                    )
+                  : warning}
             </p>
           )}
           <p className="draft-note">
@@ -766,9 +766,7 @@ function LearningApp({
                   <button
                     key={index}
                     onClick={() => {
-                      setChapter(String(index + 1));
-                      setTopic('');
-                      setLo('');
+                      changeFilters({ chapter: String(index + 1) });
                       setPage('practice');
                     }}
                   >
@@ -838,7 +836,7 @@ function LearningApp({
                   </label>
                   <button
                     className="primary"
-                    disabled={questions.length < 40}
+                    disabled={questions.length < 40 || !canWrite}
                     onClick={() => start('exam')}
                   >
                     {t('Iniciar simulação', 'Start simulation')}
@@ -850,6 +848,12 @@ function LearningApp({
           {page === 'practice' && (
             <section className="panel">
               <h2>{t('Escolha o seu foco', 'Choose your focus')}</h2>
+              <p>
+                {t(
+                  'Comece pelo capítulo e depois escolha o tópico ou objetivo. Alterar o contexto limpa filtros incompatíveis; as opções seguem a ordem do syllabus.',
+                  'Start with a chapter, then choose a topic or objective. Changing context clears incompatible filters; options follow syllabus order.',
+                )}
+              </p>
               <p>
                 {t(
                   'Prática por tópico: sem quotas de exame. Não constitui uma simulação alinhada ao blueprint.',
@@ -875,9 +879,7 @@ function LearningApp({
                       aria-label={t('Capítulo', 'Chapter')}
                       value={chapter}
                       onChange={(event) => {
-                        setChapter(event.target.value);
-                        setTopic('');
-                        setLo('');
+                        changeFilters({ chapter: event.target.value });
                       }}
                     >
                       <option value="">{t('Todos', 'All')}</option>
@@ -893,21 +895,22 @@ function LearningApp({
                     <select
                       aria-label={t('Tópico', 'Topic')}
                       value={topic}
-                      onChange={(event) => setTopic(event.target.value)}
+                      onChange={(event) =>
+                        changeFilters({ topic: event.target.value })
+                      }
                     >
                       <option value="">{t('Todos', 'All')}</option>
-                      {[
-                        ...new Set(
-                          questions
-                            .filter(
-                              (q) => !chapter || q.chapter === Number(chapter),
-                            )
-                            .map((q) => q.topic),
-                        ),
-                      ].map((item) => (
-                        <option key={item} value={item}>
-                          {topicLabel(item, language)}
-                        </option>
+                      {groups.map((group) => (
+                        <optgroup
+                          key={group.chapter}
+                          label={`${group.chapter}. ${label(language, chapters[group.chapter - 1].pt, chapters[group.chapter - 1].en)}`}
+                        >
+                          {group.topics.map((item) => (
+                            <option key={item} value={item}>
+                              {topicLabel(item, language)}
+                            </option>
+                          ))}
+                        </optgroup>
                       ))}
                     </select>
                   </label>
@@ -919,19 +922,27 @@ function LearningApp({
                         'Learning objective',
                       )}
                       value={lo}
-                      onChange={(event) => setLo(event.target.value)}
+                      onChange={(event) =>
+                        changeFilters({ lo: event.target.value })
+                      }
                     >
                       <option value="">{t('Todos', 'All')}</option>
-                      {[
-                        ...new Set(
-                          questions
-                            .filter(
-                              (q) => !chapter || q.chapter === Number(chapter),
-                            )
-                            .map((q) => q.lo),
-                        ),
-                      ].map((item) => (
-                        <option key={item}>{item}</option>
+                      {groups.map((group) => (
+                        <optgroup
+                          key={group.chapter}
+                          label={`${group.chapter}. ${label(language, chapters[group.chapter - 1].pt, chapters[group.chapter - 1].en)}`}
+                        >
+                          {group.objectives.map((item) => (
+                            <option key={item} value={item}>
+                              {item} —{' '}
+                              {label(
+                                language,
+                                objectivesById[item].description.pt,
+                                objectivesById[item].description.en,
+                              )}
+                            </option>
+                          ))}
+                        </optgroup>
                       ))}
                     </select>
                   </label>
@@ -940,11 +951,24 @@ function LearningApp({
                     <select
                       aria-label={t('Nível cognitivo', 'Cognitive level')}
                       value={level}
-                      onChange={(event) => setLevel(event.target.value)}
+                      onChange={(event) =>
+                        changeFilters({ level: event.target.value })
+                      }
                     >
                       <option value="">{t('Todos', 'All')}</option>
                       {['K1', 'K2', 'K3'].map((item) => (
-                        <option key={item}>{item}</option>
+                        <option key={item} value={item}>
+                          {item} —{' '}
+                          {label(
+                            language,
+                            cognitiveLevels[
+                              item as keyof typeof cognitiveLevels
+                            ].title.pt,
+                            cognitiveLevels[
+                              item as keyof typeof cognitiveLevels
+                            ].title.en,
+                          )}
+                        </option>
                       ))}
                     </select>
                   </label>
@@ -955,6 +979,7 @@ function LearningApp({
                         'Histórico das questões',
                         'Question history',
                       )}
+                      aria-describedby="history-filter-help"
                       value={historyFilter}
                       onChange={(event) => setHistoryFilter(event.target.value)}
                     >
@@ -985,13 +1010,23 @@ function LearningApp({
                       )}
                       type="number"
                       min="1"
-                      max={questions.length || 1}
+                      max={eligible.length || 1}
+                      aria-describedby="question-count-help"
                       value={count}
                       onChange={(event) => setCount(Number(event.target.value))}
                       required
                     />
                   </label>
                 </div>
+                <p id="history-filter-help">
+                  {label(
+                    language,
+                    historyDescriptions[historyFilter].pt,
+                    historyDescriptions[historyFilter].en,
+                  )}
+                </p>
+                {lo && <ObjectiveHelp lo={lo} language={language} />}
+                <CognitiveLevelHelp language={language} />
                 <p aria-live="polite">
                   {eligible.length}{' '}
                   {t(
@@ -999,12 +1034,36 @@ function LearningApp({
                     'questions available with these filters.',
                   )}
                 </p>
+                <p id="question-count-help">
+                  {!eligible.length
+                    ? t(
+                        'Nenhuma questão corresponde aos filtros. Altere a seleção ou o histórico.',
+                        'No questions match these filters. Change the selection or history.',
+                      )
+                    : t(
+                        `Escolha entre 1 e ${eligible.length} questões.`,
+                        `Choose between 1 and ${eligible.length} questions.`,
+                      )}
+                </p>
+                {eligible.length > 0 &&
+                  (!Number.isInteger(count) ||
+                    count < 1 ||
+                    count > eligible.length) && (
+                    <p className="notice">
+                      {t(
+                        'A quantidade pedida não é válida para esta seleção. Ajuste o número de questões.',
+                        'The requested count is not valid for this selection. Adjust the number of questions.',
+                      )}
+                    </p>
+                  )}
                 <button
                   className="primary"
                   disabled={
-                    !Number.isInteger(count) ||
-                    count < 1 ||
-                    count > eligible.length
+                    !active &&
+                    (!canWrite ||
+                      !Number.isInteger(count) ||
+                      count < 1 ||
+                      count > eligible.length)
                   }
                 >
                   {active
@@ -1061,317 +1120,253 @@ function LearningApp({
                         )}
                   </p>
                 )}
-              <div className="exam-layout">
-                <section className="question panel">
-                  <div className="question-meta">
-                    <span>
-                      {t('Questão', 'Question')} {active.index + 1} /{' '}
-                      {active.questionIds.length}
-                    </span>
-                    <span>
-                      {current.lo} · {current.level}
-                    </span>
-                  </div>
-                  <h2>
-                    <Text value={current.text} language={language} />
-                  </h2>
-                  <QuestionTable
-                    questionId={current.id}
-                    table={current.table}
-                    language={language}
-                  />
-                  <fieldset
-                    className="options"
-                    disabled={checked.includes(current.id)}
-                  >
-                    <legend>
-                      {t(
-                        `Selecione ${current.required} ${current.required === 1 ? 'resposta' : 'respostas'}.`,
-                        `Select ${current.required} ${current.required === 1 ? 'answer' : 'answers'}.`,
-                      )}
-                    </legend>
-                    {(
-                      active.optionOrder[current.id] ??
-                      current.options.map((option) => option.id)
-                    ).map((id) => {
-                      const option = current.options.find(
-                        (item) => item.id === id,
-                      )!;
-                      const selected = (
-                        active.answers[current.id] ?? []
-                      ).includes(id);
-                      return (
-                        <label
-                          className={selected ? 'option selected' : 'option'}
-                          key={id}
+              <fieldset className="session-workspace" disabled={!canWrite}>
+                <div className="exam-layout">
+                  <section className="question panel">
+                    <div className="question-meta">
+                      <span>
+                        {t('Questão', 'Question')} {active.index + 1} /{' '}
+                        {active.questionIds.length}
+                      </span>
+                      <span>
+                        {active.mode === 'practice' && <>{current.lo} · </>}
+                        {current.level} —{' '}
+                        {label(
+                          language,
+                          cognitiveLevels[current.level].title.pt,
+                          cognitiveLevels[current.level].title.en,
+                        )}
+                      </span>
+                    </div>
+                    <CognitiveLevelHelp language={language} />
+                    {active.mode === 'practice' && (
+                      <ObjectiveHelp lo={current.lo} language={language} />
+                    )}
+                    <h2>
+                      <Text value={current.text} language={language} />
+                    </h2>
+                    <QuestionTable
+                      questionId={current.id}
+                      table={current.table}
+                      language={language}
+                    />
+                    <fieldset
+                      className="options"
+                      disabled={checked.includes(current.id)}
+                    >
+                      <legend>
+                        {t(
+                          `Selecione ${current.required} ${current.required === 1 ? 'resposta' : 'respostas'}.`,
+                          `Select ${current.required} ${current.required === 1 ? 'answer' : 'answers'}.`,
+                        )}
+                      </legend>
+                      {(
+                        active.optionOrder[current.id] ??
+                        current.options.map((option) => option.id)
+                      ).map((id, optionIndex) => {
+                        const option = current.options.find(
+                          (item) => item.id === id,
+                        )!;
+                        const selected = (
+                          active.answers[current.id] ?? []
+                        ).includes(id);
+                        return (
+                          <label
+                            className={selected ? 'option selected' : 'option'}
+                            key={id}
+                          >
+                            <input
+                              type={
+                                current.required === 1 ? 'radio' : 'checkbox'
+                              }
+                              name={current.id}
+                              aria-describedby={`${current.id}-${id}-letter`}
+                              checked={selected}
+                              disabled={
+                                !selected &&
+                                current.required > 1 &&
+                                (active.answers[current.id] ?? []).length >=
+                                  current.required
+                              }
+                              onChange={() => {
+                                const old = active.answers[current.id] ?? [];
+                                const ids =
+                                  current.required === 1
+                                    ? [id]
+                                    : selected
+                                      ? old.filter((item) => item !== id)
+                                      : [...old, id];
+                                updateSession(answer(active, current.id, ids));
+                              }}
+                            />
+                            <span id={`${current.id}-${id}-letter`} hidden>
+                              {t(
+                                `Opção ${String.fromCharCode(65 + optionIndex)}`,
+                                `Option ${String.fromCharCode(65 + optionIndex)}`,
+                              )}
+                            </span>
+                            <span className="option-letter" aria-hidden="true">
+                              {String.fromCharCode(65 + optionIndex)}.
+                            </span>
+                            <span className="option-text">
+                              <Text value={option.text} language={language} />
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </fieldset>
+                    {active.mode === 'practice' &&
+                      !checked.includes(current.id) && (
+                        <button
+                          className="primary"
+                          disabled={
+                            (active.answers[current.id] ?? []).length !==
+                            current.required
+                          }
+                          onClick={() =>
+                            updateSession({
+                              ...active,
+                              feedbackIds: [...checked, current.id],
+                            })
+                          }
                         >
-                          <input
-                            type={current.required === 1 ? 'radio' : 'checkbox'}
-                            name={current.id}
-                            checked={selected}
-                            disabled={
-                              !selected &&
-                              current.required > 1 &&
-                              (active.answers[current.id] ?? []).length >=
-                                current.required
-                            }
-                            onChange={() => {
-                              const old = active.answers[current.id] ?? [];
-                              const ids =
-                                current.required === 1
-                                  ? [id]
-                                  : selected
-                                    ? old.filter((item) => item !== id)
-                                    : [...old, id];
-                              updateSession(answer(active, current.id, ids));
-                            }}
-                          />
-                          <span>
-                            <Text value={option.text} language={language} />
-                          </span>
-                        </label>
-                      );
-                    })}
-                  </fieldset>
-                  {active.mode === 'practice' &&
-                    !checked.includes(current.id) && (
+                          {t('Confirmar resposta', 'Check answer')}
+                        </button>
+                      )}
+                    {active.mode === 'practice' &&
+                      checked.includes(current.id) &&
+                      feedback(current, active.answers[current.id] ?? [])}
+                    <div className="question-actions">
                       <button
-                        className="primary"
-                        disabled={
-                          (active.answers[current.id] ?? []).length !==
-                          current.required
-                        }
                         onClick={() =>
                           updateSession({
                             ...active,
-                            feedbackIds: [...checked, current.id],
+                            flagged: active.flagged.includes(current.id)
+                              ? active.flagged.filter((id) => id !== current.id)
+                              : [...active.flagged, current.id],
                           })
                         }
+                        aria-pressed={active.flagged.includes(current.id)}
                       >
-                        {t('Confirmar resposta', 'Check answer')}
+                        {active.flagged.includes(current.id)
+                          ? t('Retirar marcação', 'Remove flag')
+                          : t('Marcar para rever', 'Flag for review')}
                       </button>
-                    )}
-                  {active.mode === 'practice' &&
-                    checked.includes(current.id) &&
-                    feedback(current, active.answers[current.id] ?? [])}
-                  <div className="question-actions">
-                    <button
-                      onClick={() =>
-                        updateSession({
-                          ...active,
-                          flagged: active.flagged.includes(current.id)
-                            ? active.flagged.filter((id) => id !== current.id)
-                            : [...active.flagged, current.id],
-                        })
-                      }
-                      aria-pressed={active.flagged.includes(current.id)}
-                    >
-                      {active.flagged.includes(current.id)
-                        ? t('Retirar marcação', 'Remove flag')
-                        : t('Marcar para rever', 'Flag for review')}
-                    </button>
-                    <div>
-                      <button
-                        disabled={active.index === 0}
-                        onClick={() =>
-                          updateSession({
-                            ...recordTime(active),
-                            index: active.index - 1,
-                          })
-                        }
-                      >
-                        {t('Anterior', 'Previous')}
-                      </button>
-                      <button
-                        disabled={
-                          active.index === active.questionIds.length - 1
-                        }
-                        onClick={() =>
-                          updateSession({
-                            ...recordTime(active),
-                            index: active.index + 1,
-                          })
-                        }
-                      >
-                        {t('Seguinte', 'Next')}
-                      </button>
+                      <div>
+                        <button
+                          disabled={active.index === 0}
+                          onClick={() =>
+                            updateSession({
+                              ...recordTime(active),
+                              index: active.index - 1,
+                            })
+                          }
+                        >
+                          {t('Anterior', 'Previous')}
+                        </button>
+                        <button
+                          disabled={
+                            active.index === active.questionIds.length - 1
+                          }
+                          onClick={() =>
+                            updateSession({
+                              ...recordTime(active),
+                              index: active.index + 1,
+                            })
+                          }
+                        >
+                          {t('Seguinte', 'Next')}
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </section>
-                <aside className="navigator panel">
-                  <h2>{t('Navegador', 'Navigator')}</h2>
-                  <div className="question-grid">
-                    {active.questionIds.map((id, index) => (
-                      <button
-                        key={id}
-                        aria-label={`${t('Questão', 'Question')} ${index + 1}${(active.answers[id] ?? []).length ? t(', respondida', ', answered') : t(', sem resposta', ', unanswered')}${active.flagged.includes(id) ? t(', marcada', ', flagged') : ''}`}
-                        aria-current={
-                          index === active.index ? 'step' : undefined
-                        }
-                        className={`${(active.answers[id] ?? []).length ? 'answered' : ''} ${active.flagged.includes(id) ? 'flagged' : ''}`}
-                        onClick={() =>
-                          updateSession({ ...recordTime(active), index })
-                        }
-                      >
-                        {index + 1}
-                        {active.flagged.includes(id) && (
-                          <span aria-hidden="true">*</span>
-                        )}
-                      </button>
-                    ))}
-                  </div>
-                  <p className="legend">
-                    {t(
-                      'Verde: respondida · *: marcada · contorno: atual',
-                      'Green: answered · *: flagged · outline: current',
-                    )}
-                  </p>
-                  <p>
-                    {
-                      active.questionIds.filter(
-                        (id) => (active.answers[id] ?? []).length,
-                      ).length
-                    }{' '}
-                    / {active.questionIds.length} {t('respondidas', 'answered')}
-                  </p>
-                  <button
-                    className="primary"
-                    onClick={() => setConfirmSubmit(true)}
-                  >
-                    {t('Terminar sessão', 'Finish session')}
-                  </button>
-                  <small>
-                    {t(
-                      'A sessão é guardada neste dispositivo. Pode voltar mais tarde.',
-                      'Your session is saved on this device. You can come back later.',
-                    )}
-                  </small>
-                </aside>
-              </div>
+                  </section>
+                  <aside className="navigator panel">
+                    <h2>{t('Navegador', 'Navigator')}</h2>
+                    <div className="question-grid">
+                      {active.questionIds.map((id, index) => (
+                        <button
+                          key={id}
+                          aria-label={`${t('Questão', 'Question')} ${index + 1}${(active.answers[id] ?? []).length ? t(', respondida', ', answered') : t(', sem resposta', ', unanswered')}${active.flagged.includes(id) ? t(', marcada', ', flagged') : ''}`}
+                          aria-current={
+                            index === active.index ? 'step' : undefined
+                          }
+                          className={`${(active.answers[id] ?? []).length ? 'answered' : ''} ${active.flagged.includes(id) ? 'flagged' : ''}`}
+                          onClick={() =>
+                            updateSession({ ...recordTime(active), index })
+                          }
+                        >
+                          {index + 1}
+                          {active.flagged.includes(id) && (
+                            <span aria-hidden="true">*</span>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                    <p className="legend">
+                      {t(
+                        'Verde: respondida · *: marcada · contorno: atual',
+                        'Green: answered · *: flagged · outline: current',
+                      )}
+                    </p>
+                    <p>
+                      {
+                        active.questionIds.filter(
+                          (id) => (active.answers[id] ?? []).length,
+                        ).length
+                      }{' '}
+                      / {active.questionIds.length}{' '}
+                      {t('respondidas', 'answered')}
+                    </p>
+                    <button
+                      className="primary"
+                      onClick={() => setConfirmSubmit(true)}
+                    >
+                      {t('Terminar sessão', 'Finish session')}
+                    </button>
+                    <small>
+                      {t(
+                        'Só as alterações confirmadas como guardadas estão neste navegador. Um backup local permite transferi-las.',
+                        'Only changes confirmed as saved are in this browser. A local backup lets you transfer them.',
+                      )}
+                    </small>
+                  </aside>
+                </div>
+              </fieldset>
             </>
           )}
           {page === 'result' && viewed && (
-            <>
-              <section className="result-banner">
-                <div>
-                  <p>{t('SESSÃO CONCLUÍDA', 'SESSION COMPLETED')}</p>
-                  <h2>
-                    {score(viewed, questions).correct}{' '}
-                    <span>/ {viewed.questionIds.length}</span>
-                  </h2>
-                  <p>
-                    {score(viewed, questions).unanswered}{' '}
-                    {t('sem resposta', 'unanswered')} ·{' '}
-                    {Math.round(
-                      ((viewed.completedAt ?? viewed.startedAt) -
-                        viewed.startedAt) /
-                        60000,
-                    )}{' '}
-                    min
-                  </p>
-                  {viewed.mode === 'exam' && (
-                    <strong>
-                      {score(viewed, questions).passed
-                        ? t(
-                            'Limiar de prática atingido',
-                            'Practice threshold reached',
-                          )
-                        : t(
-                            'Limiar de prática não atingido',
-                            'Practice threshold not reached',
-                          )}
-                    </strong>
-                  )}
-                </div>
-                <div>
-                  <p>
-                    {t(
-                      'Cada erro mostra onde pode aprender.',
-                      'Every mistake shows where you can learn.',
-                    )}
-                  </p>
-                  <button
-                    className="primary"
-                    onClick={() => {
-                      setPage('practice');
-                      setViewed(null);
-                    }}
-                  >
-                    {t('Nova prática', 'New practice')}
-                  </button>
-                </div>
-              </section>
-              <div className="section-heading">
-                <h2>{t('Rever respostas', 'Review answers')}</h2>
-                <label>
-                  {t('Mostrar', 'Show')}
-                  <select
-                    aria-label={t('Mostrar', 'Show')}
-                    value={reviewFilter}
-                    onChange={(event) => setReviewFilter(event.target.value)}
-                  >
-                    <option value="all">{t('Todas', 'All')}</option>
-                    <option value="incorrect">
-                      {t('Erradas e sem resposta', 'Incorrect and unanswered')}
-                    </option>
-                    <option value="unanswered">
-                      {t('Sem resposta', 'Unanswered')}
-                    </option>
-                  </select>
-                </label>
-              </div>
-              {viewed.questionIds
-                .map((id) =>
-                  sessionQuestions(viewed, questions).find((q) => q.id === id),
-                )
-                .filter((q) => q !== undefined)
-                .filter(
-                  (q) =>
-                    reviewFilter === 'all' ||
-                    (reviewFilter === 'unanswered'
-                      ? !(viewed.answers[q.id] ?? []).length
-                      : !isCorrect(q, viewed.answers[q.id] ?? [])),
-                )
-                .map((q) => (
-                  <article className="panel review-question" key={q.id}>
-                    <p className="eyebrow">
-                      {q.lo} · {q.level}
-                    </p>
-                    <h3>
-                      <Text value={q.text} language={language} />
-                    </h3>
-                    <QuestionTable
-                      questionId={q.id}
-                      table={q.table}
-                      language={language}
-                    />
-                    <p>
-                      <strong>{t('A sua resposta: ', 'Your answer: ')}</strong>
-                      {(viewed.answers[q.id] ?? []).length
-                        ? (viewed.answers[q.id] ?? []).map((id) => {
-                            const option = q.options.find(
-                              (item) => item.id === id,
-                            );
-                            return (
-                              option && (
-                                <span key={id} className="chosen">
-                                  <Text
-                                    value={option.text}
-                                    language={language}
-                                  />
-                                </span>
-                              )
-                            );
-                          })
-                        : t('Sem resposta', 'Unanswered')}
-                    </p>
-                    {feedback(q, viewed.answers[q.id] ?? [])}
-                  </article>
-                ))}
-            </>
+            <ResultReview
+              key={viewed.id}
+              session={viewed}
+              bank={questions}
+              language={language}
+              hasActive={!!active}
+              canCreateExam={canWrite}
+              onPractice={() => {
+                setPage('practice');
+                setViewed(null);
+              }}
+              onExam={() => {
+                if (start('exam')) setViewed(null);
+              }}
+            />
           )}
           {page === 'history' && (
             <>
+              <ProgressBackup
+                state={state}
+                language={language}
+                canImport={canWrite}
+                canExport={!recoveryRequired}
+                isCurrent={writer.isCurrent}
+                onApply={(next, expected) => {
+                  if (stateRef.current !== expected) return 'changed';
+                  if (!commit(next)) return 'write';
+                  setViewed(null);
+                  setPage(next.active ? 'session' : 'history');
+                  return 'saved';
+                }}
+              />
               <section className="panel">
                 <h2>
                   {t('O que o seu percurso mostra', 'What your history shows')}
@@ -1443,7 +1438,6 @@ function LearningApp({
                           <button
                             onClick={() => {
                               setViewed(session);
-                              setReviewFilter('all');
                               setPage('result');
                             }}
                           >
@@ -1563,7 +1557,7 @@ function LearningApp({
               <button
                 className="primary"
                 onClick={() => {
-                  setState(emptyState());
+                  if (!commit(emptyState(), true)) return;
                   setViewed(null);
                   setConfirmReset(false);
                   setPage('dashboard');

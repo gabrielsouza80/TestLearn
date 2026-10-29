@@ -1,4 +1,5 @@
-﻿import type { Language, Localized } from './i18n';
+import { CognitiveLevelHelp } from './learning/ObjectiveHelp';
+import type { Language, Localized } from './i18n';
 export const publicTitles = {
   about: { pt: 'Sobre o TestLearn', en: 'About TestLearn' },
   privacy: { pt: 'Privacidade', en: 'Privacy' },
@@ -27,6 +28,7 @@ const content: Record<InformationPage, { pt: string[]; en: string[] }> = {
       'O idioma escolhido e o seed de seleção não são guardados explicitamente. Os tempos por questão podem incluir inatividade e não medem atenção. Dados manipulados no navegador podem alterar resultados.',
       'O código da aplicação não envia respostas ou resultados a um servidor e não inclui analytics, cookies de aplicação, fontes remotas ou scripts de terceiros. Pedidos ao servidor de alojamento para carregar o site e os arquivos históricos são necessários; o fornecedor pode processar endereços IP, datas e registos técnicos. Fornecedor, finalidade e retenção desses registos ainda exigem confirmação antes da publicação.',
       'Pode apagar o progresso em Progresso → Apagar progresso, com confirmação. Isso afeta apenas os dados TestLearn nesta origem/navegador, não outros serviços. Limpar os dados do navegador também pode eliminá-los. Não existe recuperação ou cópia na cloud; mudar de domínio ou perfil não transfere o progresso.',
+      'Em Progresso pode exportar um backup JSON local e importá-lo noutro navegador, com validação e confirmação. O ficheiro contém histórico de estudo e deve ser guardado em privado; não é enviado a serviços nem sincronizado automaticamente. A importação acrescenta só sessões novas sem conflito e preserva os registos locais. Um ficheiro editável não prova autenticidade nem certificação.',
       'O responsável e o canal público para pedidos de privacidade ainda não estão definidos nesta versão local em preparação. A publicação está bloqueada até essa informação ser completada e revista. Não envie dados pessoais nem todo o armazenamento do navegador para reportar um problema.',
     ],
     en: [
@@ -34,6 +36,7 @@ const content: Record<InformationPage, { pt: string[]; en: string[] }> = {
       'The chosen language and selection seed are not explicitly stored. Question timing may include inactivity and does not measure attention. Manipulated browser data can change results.',
       'Application code does not send answers or results to a server and includes no analytics, application cookies, remote fonts or third-party scripts. Requests to the host to load the site and historical archives are necessary; the provider may process IP addresses, dates and technical logs. Provider, purpose and log retention still need confirmation before publication.',
       'You can delete progress using Progress → Reset progress, with confirmation. This affects only TestLearn data for this browser/origin, not other services. Clearing browser data may also delete it. There is no cloud recovery or backup; changing domain or browser profile does not transfer progress.',
+      'In Progress you can export a local JSON backup and import it in another browser, with validation and confirmation. The file contains study history and should be kept private; it is not uploaded or automatically synchronized. Import adds only new sessions without conflicts and preserves local records. An editable file proves neither authenticity nor certification.',
       'The responsible operator and public privacy contact are not yet defined for this local release candidate. Publication is blocked until this information is completed and reviewed. Do not send personal information or your entire browser storage when reporting a problem.',
     ],
   },
@@ -56,16 +59,16 @@ const content: Record<InformationPage, { pt: string[]; en: string[] }> = {
       'Escolha Iniciar simulação para um exame de 40 perguntas. O modo normal dura 60 minutos; 75 minutos é uma opção de prática, não confirmação de elegibilidade oficial para tempo adicional. O relógio continua quando fecha ou recarrega a página e um exame expirado é terminado ao retomar.',
       'Cada pergunta indica quantas respostas selecionar. Nas perguntas de duas escolhas pode desmarcar uma opção para escolher outra. Só o conjunto exato vale um ponto; não há crédito parcial nem penalização por erro. O limiar de prática é 26/40, sem prever certificação.',
       'Use as marcações para rever perguntas, alterne PT-PT/EN e navegue antes de confirmar o fim. As soluções só aparecem após terminar o exame. Para estudar, escolha Praticar e filtre tópico, capítulo ou objetivo; esse modo não tem temporizador.',
-      'O progresso fica neste navegador. Se outro separador o alterar, esta página interrompe gravações e permite recarregar os dados guardados. Se um arquivo histórico falhar, mantenha os dados e tente recarregar com ligação disponível; nunca são substituídos pelas perguntas atuais. Fechar/recarregar pode perder alterações que ainda não foram guardadas.',
-      'Se surgir um erro de armazenamento, mantenha a página aberta: as respostas podem continuar só em memória. Registos incompatíveis são preservados até iniciar novo progresso ou confirmar a eliminação. Não limpe os dados para tentar resolver um erro de carregamento.',
+      'Um único separador pode editar de cada vez. Feche o separador que está a editar e recarregue o outro para transferir o acesso. Cada alteração só é aplicada depois da gravação síncrona confirmada; o estado mostra se está guardada ou se foi recusada. Se um arquivo histórico falhar, mantenha os dados e tente novamente: nunca são substituídos pelas perguntas atuais.',
+      'Se surgir um erro de armazenamento, a última alteração não é aplicada e o progresso anterior mantém-se. Exporte uma cópia e verifique o espaço disponível; o limite é 500 sessões concluídas, sem eliminação automática das mais antigas. Registos incompatíveis ficam bloqueados até recuperação ou eliminação explícita. Não limpe dados para resolver um erro de carregamento. A edição requer um navegador atualizado com reserva segura de escrita e HTTPS (ou localhost durante desenvolvimento).',
       'Ainda não existe canal público de suporte nesta preparação local. Antes de publicar, o responsável deve disponibilizar um contacto real. Para um futuro relato, anote revisão do conteúdo, ID da pergunta, idioma, navegador, passos e mensagem; omita dados pessoais, respostas de terceiros e o LocalStorage completo.',
     ],
     en: [
       'Choose Start simulation for a 40-question exam. Normal time is 60 minutes; 75 minutes is a practice option, not confirmation of official extra-time eligibility. The timer continues while the page is closed or reloaded, and an expired exam is finished when resumed.',
       'Each question states how many answers to select. For two-answer questions, deselect an option to choose another. Only the exact set earns one point; no partial credit or penalty for mistakes. The practice threshold is 26/40 and does not predict certification.',
       'Flag questions for review, switch PT-PT/EN and navigate before confirming completion. Solutions appear only after finishing an exam. To study, choose Practice and filter by topic, chapter or objective; that mode has no timer.',
-      'Progress stays in this browser. If another tab changes it, this page stops saving and offers to reload stored progress. If a historical archive fails, keep the data and reload with a working connection; it is never replaced by the current questions. Closing/reloading may lose changes not yet saved.',
-      'If a storage error appears, keep the page open: responses may exist only in memory. Incompatible records are preserved until new progress is started or deletion confirmed. Do not clear data to fix a loading failure.',
+      'Only one tab can edit at a time. Close the editing tab and reload the other to transfer access. Each change is applied only after a confirmed synchronous write; the status shows whether it was saved or rejected. If a historical archive fails, keep the data and retry: it is never replaced with current questions.',
+      'If a storage error appears, the last change is not applied and previous progress is retained. Export a copy and check available storage; the limit is 500 completed sessions, without automatically deleting the oldest. Incompatible records stay blocked until recovery or explicit reset. Do not clear data to fix a loading failure. Editing requires an updated browser with safe write access and HTTPS (or localhost during development).',
       'There is no public support channel for this local preparation yet. The operator must provide a real contact before publishing. For a future report, note content revision, question ID, language, browser, steps and message; omit personal information, other people’s responses and the complete LocalStorage.',
     ],
   },
@@ -83,6 +86,7 @@ export default function PublicInformation({
       : ([language] as ('pt' | 'en')[]);
   return (
     <section className="panel public-information">
+      {page === 'help' && <CognitiveLevelHelp language={language} />}
       {languages.map((lang) => (
         <div key={lang} lang={lang === 'pt' ? 'pt-PT' : 'en'}>
           {language === 'both' && <h2>{publicTitles[page][lang]}</h2>}

@@ -68,17 +68,22 @@ it('rejects stale content revisions and completed active sessions', () => {
     expect(load().warning).toBeTruthy();
   }
 });
-it('retains the most recent 500 attempts without blocking future saves', () => {
+it('rejects exceeding 500 attempts without silently removing the oldest history', () => {
   const s = finish(createSession(examQuestions, 'exam', 60, 1000), 2000);
   const history = Array.from({ length: 501 }, (_, i) => ({
     ...s,
     id: String(i),
   }));
-  expect(save({ version: 1, active: null, history })).toBe(true);
+  expect(
+    save({ version: 1, active: null, history: history.slice(0, 500) }),
+  ).toBe(true);
+  const before = localStorage.getItem('testlearn.v1');
+  expect(save({ version: 1, active: null, history })).toBe(false);
+  expect(localStorage.getItem('testlearn.v1')).toBe(before);
   const restored = load().state.history;
   expect(restored).toHaveLength(500);
-  expect(restored[0].id).toBe('1');
-  expect(restored[499].id).toBe('500');
+  expect(restored[0].id).toBe('0');
+  expect(restored[499].id).toBe('499');
 });
 
 it('round-trips an unconstrained 82-question study session without applying the exam size limit', () => {

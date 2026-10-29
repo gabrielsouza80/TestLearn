@@ -146,8 +146,8 @@ export function load(): { state: State; warning: string | null } {
   }
 }
 function serializeState(state: State): string {
-  const valid = schema.parse({ ...state, history: state.history.slice(-500) });
-  return JSON.stringify({ ...valid, history: valid.history.slice(-500) });
+  const valid = schema.parse(state);
+  return JSON.stringify(valid);
 }
 export function save(state: State): boolean {
   try {
@@ -166,47 +166,82 @@ export function readStoredValue(): string | null | undefined {
   }
 }
 
-/** One page writer, with no merge or migration of another page's progress. */
+export type WriteStatus = 'saved' | 'conflict' | 'unavailable' | 'busy';
+/** A page owns one origin lock; writes under that lease are synchronous. */
 export function createStateWriter(initialRaw: string | null | undefined) {
   let expected = initialRaw;
   let conflicted = false;
-  let queue: Promise<unknown> = Promise.resolve();
+  let owned = false;
+  let generation = 0;
+  let releaseLock: (() => void) | undefined;
   const matches = (raw: string | null | undefined) => {
-    if (raw === undefined) return true; // report storage failure on save
+    if (raw === undefined) return true;
     if (raw !== expected && !(expected === undefined && raw === null))
       conflicted = true;
     return !conflicted;
   };
-  const isCurrent = () => matches(readStoredValue());
-  function write(state: State): 'saved' | 'conflict' | 'unavailable' {
-    const before = readStoredValue();
-    if (before === undefined) return 'unavailable';
-    if (!matches(before)) return 'conflict';
-    try {
-      const raw = serializeState(state);
-      localStorage.setItem('testlearn.v1', raw);
-      expected = raw;
-      return 'saved';
-    } catch {
-      return 'unavailable';
-    }
-  }
+  const release = () => {
+    generation++;
+    owned = false;
+    releaseLock?.();
+    releaseLock = undefined;
+  };
   return {
-    isCurrent,
-    save(state: State): Promise<'saved' | 'conflict' | 'unavailable'> {
-      const task = queue
-        .then(async () => {
-          // Web Locks serializes participating tabs. Older engines still check
-          // the exact stored value and are documented for single-tab use.
-          if (typeof navigator !== 'undefined' && navigator.locks)
-            return navigator.locks.request('testlearn-progress', () =>
-              write(state),
-            );
-          return write(state);
-        })
-        .catch(() => 'unavailable' as const);
-      queue = task;
-      return task;
+    isCurrent: () => matches(readStoredValue()),
+    release,
+    acquire(): Promise<WriteStatus> {
+      if (owned) return Promise.resolve('saved');
+      const token = ++generation;
+      return new Promise((resolve) => {
+        if (typeof navigator === 'undefined' || !navigator.locks) {
+          resolve('unavailable');
+          return;
+        }
+        try {
+          void navigator.locks
+            .request(
+              'testlearn-progress',
+              { mode: 'exclusive', ifAvailable: true },
+              async (lock) => {
+                if (token !== generation) {
+                  resolve('unavailable');
+                  return;
+                }
+                if (!lock) {
+                  resolve('busy');
+                  return;
+                }
+                if (!matches(readStoredValue())) {
+                  resolve('conflict');
+                  return;
+                }
+                owned = true;
+                const held = new Promise<void>((done) => {
+                  releaseLock = done;
+                });
+                resolve('saved');
+                await held;
+              },
+            )
+            .catch(() => resolve('unavailable'));
+        } catch {
+          resolve('unavailable');
+        }
+      });
+    },
+    save(state: State): WriteStatus {
+      if (!owned) return 'busy';
+      const before = readStoredValue();
+      if (before === undefined) return 'unavailable';
+      if (!matches(before)) return 'conflict';
+      try {
+        const raw = serializeState(state);
+        localStorage.setItem('testlearn.v1', raw);
+        expected = raw;
+        return 'saved';
+      } catch {
+        return 'unavailable';
+      }
     },
   };
 }
@@ -274,3 +309,7 @@ export async function loadAsync(): Promise<{
     };
   return { state: parsed.data, warning: null };
 }
+
+// Strict backup validation layers additional checks over the existing storage contract.
+export const portableSessionSchema = sessionBaseSchema.strict();
+export const stateSchema = schema;

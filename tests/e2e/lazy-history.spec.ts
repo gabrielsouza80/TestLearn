@@ -38,7 +38,9 @@ test('fresh dashboard and new examination request no historical chunks', async (
   await page
     .getByRole('button', { name: 'Iniciar simulação', exact: true })
     .click();
-  await expect(page.getByRole('group')).toBeVisible();
+  await expect(
+    page.getByRole('group', { name: /^(?:Selecione|Select) [12] / }),
+  ).toBeVisible();
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
