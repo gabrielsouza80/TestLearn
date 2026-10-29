@@ -156,3 +156,6 @@ test-results/
 # Local copyrighted reference documents and audit extraction tools
 /docs/Certified Tester Foundation Level (CTFL) v4.0/
 /tmp/
+
+# Local Vercel project links (no project is created by this configuration)
+.vercel/
