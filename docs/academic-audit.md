@@ -1,10 +1,12 @@
-> Revisão atual **2026-10-27.7**: [Fase 5B — revisão de distratores](#fase-5b--revisão-final-6--7). Registos anteriores preservados como histórico.
+> Revisão atual **2026-10-27.9**: [Fase 7 — avaliação avançada](#fase-7--avaliação-avançada-8--9). A fase 6C foi aceite antes da expansão.
 
-> Revisão atual **2026-10-27.6**: [Fase 5A — variedade e K3](#fase-5a--variedade-e-k3), no fim. Os registos anteriores são históricos.
+> Registo histórico **2026-10-27.7**: [Fase 5B — revisão de distratores](#fase-5b--revisão-final-6--7). Registos anteriores preservados como histórico.
+
+> Registo histórico **2026-10-27.6**: [Fase 5A — variedade e K3](#fase-5a--variedade-e-k3), no fim. Os registos anteriores são históricos.
 
 ﻿# Auditoria académica e PT-PT — TestLearn
 
-> Revisão atual **2026-10-27.5**: ver a [manutenção da fase 4.1](#fase-41--correções-bilingues-controladas), no fim. Os registos das fases anteriores são históricos.
+> Registo histórico **2026-10-27.5**: ver a [manutenção da fase 4.1](#fase-41--correções-bilingues-controladas), no fim. Os registos das fases anteriores são históricos.
 
 > O registo individual das 40 perguntas iniciais corresponde à fase 2. A fase 4 está registada no fim deste documento: **66 perguntas e cobertura nominal dos 64 LO**, com aprovação humana pendente. A fase 3 acrescentou sete perguntas e um gerador alinhado: ver o [relatório de validação do blueprint](blueprint-validation.md) e a atualização no fim deste documento. As conclusões históricas de distribuição não descrevem os novos exames.
 
@@ -1971,3 +1973,96 @@ Novo **o4 PT-PT:** Obter, com apoio de ferramentas, métricas de cobertura difí
 ### Validação de software da fase 5B
 
 Resultados de comandos, compatibilidade e bundle: ver a secção Fase 5B de [blueprint-validation.md](blueprint-validation.md). A revisão académica acima é separada de validação de software, aprovação humana e calibração psicométrica. Os testes não provam qualidade académica. Nenhuma aprovação humana/ISTQB/PSTQB foi atribuída.
+
+## Fase 6C — correções terminológicas controladas
+
+Baseline executável confirmada `.7`: 82 perguntas, 328 alternativas, 64 LO, 29 grupos; capítulos 16/12/8/21/21/4 e K1/K2/K3 18/47/17. O schema já aceita cinco alternativas; a interface itera os IDs, limita seleção pela cardinalidade, permite desmarcar e usa controlos nativos. A pontuação exige o conjunto exato, sem crédito parcial. Não se alterou o motor para esta fase. Os arquivos .1–.6 e os quatro ficheiros da exportação 6A mantêm-se intactos.
+
+A `.7` foi arquivada antes de editar: `src/data/archive/questions-2026-10-27.7.json`, SHA-256 **970ef782fbf61bdd92889ceea1fc8474064eec377058c01ec1198b927c0c4fef**. Revisão intermédia `.8`, só três objetos alterados; restantes 79 profundamente iguais à `.7`, todas as chaves/IDs/cardinalidades/LO/K preservadas. Metadados incrementam uma versão só nos três itens, com PENDING humano. Os registos anteriores de auditoria são históricos.
+
+### Fase 6C — tl-030
+
+Alternativa o3 PT: «Números semelhantes de testes em todos os níveis» → «Um número igual de testes em cada nível». EN «Equal numbers of tests at each level» preservado. Chave o1, LO FL-5.1.6/K1. Disposição: corrigida divergência lexical equal/similar, sem mudar a interpretação do distrator. Fonte técnica EN 4.0.1 §5.1.6 pp.50–51.
+
+### Fase 6C — tl-069
+
+Enunciado PT: «desenvolvimento orientado pelo comportamento» → «desenvolvimento orientado para comportamento». Termo verificado no syllabus PSTQB CTFL 4.0 v1.0, §2.1.3, PDF p.28 (também p.27/82). Chave o3; LO FL-2.1.3/K1. Inglês, alternativas, explicações e significado preservados. Fonte técnica EN 4.0.1 §2.1.3 p.26. Disposição: terminologia alinhada.
+
+### Fase 6C — tl-071
+
+Enunciado PT: «cobertura Each Choice» → «cobertura de Cada Escolha (Each Choice)». Verificado no syllabus PSTQB CTFL 4.0 v1.0 §4.2.1, PDF p.43. Chave o2; LO FL-4.2.1/K3. Valores, partições, independência dos campos e hipótese de ausência de mascaramento preservados. Fonte técnica EN 4.0.1 §4.2.1 pp.39–40. Disposição: terminologia alinhada.
+
+### Aceitação da fase 6C
+
+**PHASE_6C_GATE = PASS**, registado antes de iniciar a fase 7 em `tmp/phase6c-gate.json`. Comparação independente da execução com a cópia .7 mais as três alterações permitidas: igualdade exata; 1 000 seeds com os mesmos IDs selecionados que .7 e todos os 29 grupos válidos. TypeScript: exit 0. Vitest: **125/125**, 15 ficheiros, exit 0. E2E específicos: **4/4**, desktop/mobile Chromium, exit 0 (15,3 s). Recuperação de exame .7 na interface conserva texto PT antigo, campos e resultado; testes de persistência cobrem exame/prática e não usam chaves atuais como fallback. Sem migração. Revisão assistida por IA e QA de software não representam aprovação humana.
+
+## Fase 7 — avaliação avançada (.8 → .9)
+
+Data: **28-10-2026**. Baseline executável conferida: .7, 82 perguntas, 328 alternativas, 64 LO, K1/K2/K3=18/47/17; capítulos=16/12/8/21/21/4. Git inicialmente limpo em `9623e96239c75dadfd66b20cb8265980b6e2fbc7`. O gate da fase 6C foi concluído em **2026-10-28T22:53:35.945Z**, antes de aceitar ou integrar os novos itens. Arquivo intermediário .8: SHA-256 `d24f50e91af42eac9fc52896db9b2f856a0530536ab770882ac15e292f1f119e`. A comparação profunda mantém os 82 objetos da .8 integralmente iguais na .9; todas as chaves da .7 continuam iguais.
+
+Resultado: **90 perguntas originais, 364 alternativas, 64 LO**; K1/K2/K3=**18/50/22**, capítulos=**16/13/9/24/24/4**. Acrescentaram-se três K2 de seleção múltipla e cinco K3. Todas têm versão 1, revisão editorial por IA PASS, tradução revista por IA e `humanApproval: PENDING`. Não houve conversão de perguntas existentes. As fontes abaixo referem páginas físicas do PDF inglês **CTFL Syllabus v4.0.1** efetivamente consultadas; as tabelas da aplicação são dados originais.
+
+| ID     | LO / K        | Resposta por ID | Alternativas / escolhas | Secção; páginas    |
+| ------ | ------------- | --------------- | ----------------------- | ------------------ |
+| tl-083 | FL-3.2.4 / K2 | o2, o4          | 5 / 2                   | 3.2.4; 36–37       |
+| tl-084 | FL-2.2.2 / K2 | o1, o4          | 5 / 2                   | 2.2.2; 29–30       |
+| tl-085 | FL-5.2.4 / K2 | o2, o5          | 5 / 2                   | 5.2.3–5.2.4; 52–53 |
+| tl-086 | FL-4.2.2 / K3 | o1              | 4 / 1                   | 4.2.2; 40          |
+| tl-087 | FL-4.2.3 / K3 | o2              | 4 / 1                   | 4.2.3; 41          |
+| tl-088 | FL-4.2.4 / K3 | o3              | 4 / 1                   | 4.2.4; 41–42       |
+| tl-089 | FL-5.1.4 / K3 | o4              | 5 / 1                   | 5.1.4; 49–50       |
+| tl-090 | FL-5.5.1 / K3 | o2              | 4 / 1                   | 5.5; 56–57         |
+
+Os quatro itens de cinco alternativas são **083/084/085/089**. Há agora quatro perguntas de duas respostas: a 001 original (quatro alternativas) e as novas 083/084/085. Todas exigem o conjunto exato; nenhum crédito parcial. A indicação TWO/DUAS é explícita. O schema, renderização, scoring e shuffle existentes já suportavam cinco alternativas: não se alteraram estes algoritmos nem se impôs quota por formato.
+
+### Método de contestação e limites
+
+Foram geradas apresentações EN e PT separadas, com permutações determinísticas diferentes e sem chaves nem justificações visíveis; as respostas foram registadas antes de as comparar com os IDs. Resultados: 8/8 conjuntos compatíveis em cada idioma. **O agente autor já conhecia as chaves: esta passagem adversarial do mesmo agente não é revisão cega genuinamente independente.** A enumeração algorítmica e a segunda forma de cálculo fornecem confirmação técnica adicional, sem substituir aprovação humana. Evidência local: `tmp/phase7-blind-final.txt`, `tmp/phase7-academic-challenge.json`, `tmp/phase7-mathematical-evidence.json`. As provas reproduzíveis estão em `tests/fixtures/advanced-solvers.ts` e `tests/unit/advanced-assessment.test.ts`.
+
+Conferiram-se todas as alternativas e justificações nos dois idiomas. Valores, unidades, nomes de estados, condições, cardinalidades, tabelas e direção esperado/obtido foram comparados. A comparação automática de números detetou inicialmente uma ordem textual diferente mas equivalente no precondicionamento de 090; alinhou-se a redação antes da aceitação. Não se presumiu que igualdade numérica prova equivalência semântica.
+
+As amostras oficiais A v1.7 p.9, B v1.7 p.15, C v1.6 p.6 e D v1.5 p.12 foram usadas apenas para observar formato, leitura e escolhas múltiplas; Rules v1.2 p.6 permite melhor(es) resposta(s). Isto não estabelece uma quota obrigatória de seleção múltipla. Nenhum enunciado oficial foi copiado ou ligeiramente parafraseado. Os oito cenários foram comparados com os 82 anteriores para evitar simples substituição de números ou nomes.
+
+### Fase 7 — tl-083
+
+**PASS por IA; K2.** É necessário distinguir duas atividades profissionais pela finalidade e pelos papéis: aprendizagem conduzida pelo autor → walkthrough; pares qualificados, moderação e consenso → revisão técnica. o1 atribui ao autor papéis incompatíveis numa inspeção; o3 troca quem conduz o walkthrough; o5 impõe às revisões técnicas a formalidade/métricas de inspeção. Não basta identificar uma palavra isolada para justificar as duas escolhas. Diferencia-se dos itens antigos por combinar duas etapas e contestar papéis/processo. Limitação: as expressões autor/moderação/consenso continuam pistas conceptuais legítimas; a dificuldade ainda não foi medida.
+
+### Fase 7 — tl-084
+
+**PASS por IA; K2.** A mesma operação de inventário permite distinguir o resultado funcional (o1) do limite de desempenho, percentil 95 até 300 ms com 200 utilizadores (o4). o2 confunde operação partilhada com qualidade funcional; o3 deduz um nível de integração apenas da concorrência; o5 deduz caixa-branca da interface API. O candidato deve classificar critérios diferentes sem confundir tipos e níveis de teste. O domínio do critério temporal pode tornar uma escolha mais fácil; não se promoveu artificialmente a K3.
+
+### Fase 7 — tl-085
+
+**PASS por IA; K2.** A análise inicial de risco de faturação já está concluída. Executar a resposta de mitigação às mudanças de relógio (o2) e monitorizar/adaptar a resposta (o5) são controlo; listar, estimar e agrupar riscos (o1/o3/o4) pertencem à análise. Retirou-se a repetição de “initial” nas incorretas para reduzir pistas por eliminação. Distingue atividades próximas num mesmo contexto, sem inventar nova regra de risco.
+
+### Fase 7 — tl-086
+
+**PASS por IA; K3.** O problema limita expressamente o âmbito às fronteiras internas de quatro partições inteiras contíguas; não exige os extremos do domínio. A enumeração dos valores fronteira dos dois lados e vizinhos gera `{3,4,5,6,10,11,12,13,19,20,21,22}`. Subtraindo os oito já executados, faltam **5,11,13,21**, exclusivamente o1. o2 aplica apenas dois valores e omite 13; o3 inclui extremos fora do âmbito e deixa lacunas; o4 repete 20 e omite 21. Exige calcular cobertura residual, em vez de reconhecer uma única fronteira. A restrição de âmbito pode ser ignorada por leitura apressada; o texto explicita-a nos dois idiomas.
+
+### Fase 7 — tl-087
+
+**PASS por IA; K3.** As oito atribuições booleanas têm exatamente uma regra aplicável: sem sobreposição nem lacuna. Os cinco testes cobrem R1/R4/R1/R4/R2, logo **3/4=75%** das regras viáveis. Só o caso **(T,F,F)** acrescenta R3: o2. o1 confunde cinco execuções com cinco de oito combinações (62,5%); o3 confunde valores de condições com cobertura de regras; o4 declara 75% mas repete R2. O don't-care é necessário para interpretar quais casos pertencem à mesma regra; há uma análise de cobertura residual, não só contagem de colunas.
+
+### Fase 7 — tl-088
+
+**PASS por IA; K3.** O modelo define todas as seis combinações estado/evento, incluindo duas inválidas; cada teste começa em Locked e termina no primeiro evento inválido. Os testes existentes cobrem quatro transições válidas. Faltam **Locked/revoke** e **Open/grant**. o3 cobre ambas, em testes separados, sem continuar depois de um inválido. o1 cobre só transições já válidas; o2 cobre apenas um dos inválidos; o4 tenta continuar após o primeiro inválido. Ao contrário da 073 anterior, não é uma volta mínima apenas por transições válidas: exige respeitar isolamento de testes inválidos e reconstruir cobertura.
+
+### Fase 7 — tl-089
+
+**PASS por IA; K3.** Aplicar `(a+4m+b)/6` a preparação/A/B dá **3/6/4 horas-pessoa**. A repetição de B após ambas as atividades iniciais vale **50%×4=2**; setup fixo **2** é contado uma vez. Esforço total **3+6+4+2+2=17**, o4. Segunda via: somar estimativas a/m/b → **7/12/23**, ponderar →13, acrescentar2+2 →17. o1=13 confunde duração com esforço ao paralelizar; o2=15 omite repetição; o3=18 usa média simples em A; o5=20 repete ambas as atividades. A preparação, repetição seletiva e distinção esforço/duração diferenciam o raciocínio da 076 aditiva anterior. A fórmula continua CTFL; não é um problema de escalonamento avançado.
+
+### Fase 7 — tl-090
+
+**PASS por IA; K3.** O candidato recebe um relatório incompleto e enganador, ambiente QA/inventory-3.8.1, papel stock-clerk, SKU-4 com stock20, criação de rascunho T-91/quantidade2 e uma confirmação. A regra dá esperado **18/Confirmed**, mas observou-se **20/Draft/HTTP409**. A correção o2 mantém pré-condições, passos, referências req-b7/shot-b7 e causa não estabelecida. o1 inverte esperado/obtido; o3 inventa duplo clique; o4 afirma deadlock não demonstrado. Antes da aceitação acrescentaram-se os dados iniciais a todos os patches, e retirou-se do enunciado a identificação explícita dos erros do rascunho. Isto exige aplicar a evidência à reparação de campos, além do reconhecimento simples de 038/078. **Limitação:** continua resposta fechada; não demonstra capacidade de redigir livremente um relatório completo. O patch correto é mais comprido; poderá permitir alguma eliminação por completude.
+
+### Integridade, execução e limitações
+
+As revisões .1–.8 continuam disponíveis por importação dinâmica, sem migração de sessões. Os seis arquivos preexistentes, motor, schema, seletor, tabela de grupos, configuração Playwright, package/lock e quatro artefactos de revisão 6A mantêm os hashes iniciais. Criou-se também snapshot completo .9, SHA-256 `89a0d7b2483afbbd279f7a1d9ac707d1ce9b4e049225be88a59c0dd30cd42bb2`; não é importado pelo runtime enquanto a revisão é atual.
+
+Os resultados finais de QA, frequências, desempenho e falhas intermédias estão centralizados na [validação das fases 6C/7](blueprint-validation.md#fases-6c7--validação-final), evitando duplicação de números. O PASS editorial é uma hipótese de qualidade apoiada por revisão por IA, não aprovação humana, equivalência de dificuldade, endosso ISTQB/PSTQB ou calibração psicométrica. Próximo passo: revisão independente humana dos oito itens e das três correções, seguida de piloto para dificuldade, discriminação e eficiência dos distratores.
+
+## Fase 8A/8B — preparação independente, sem alteração académica
+
+Em 29-10-2026 foi preparada a revisão externa da **.9**, a partir do banco executável de **90 perguntas / 364 alternativas / 64 LO**, sem alterar qualquer objeto ou estado de aprovação. Os documentos cegos e confidenciais estão separados em `tmp/phase8-academic-review`; instruções e CSV incluem os 90 itens em NOT_REVIEWED. A releitura verificou todos os textos, opções, explicações e dez tabelas; hashes e proveniência constam do manifesto e recibos locais. O documento cego não acrescenta chaves, IDs internos de opções, LO/K ou conclusões anteriores.
+
+O protocolo de piloto, decisão voluntária, formulários, schema e análise local estão em `tmp/phase8-candidate-pilot`, com ferramentas em `tmp/phase8-tools`. Não houve participação ou revisão humana inventada. **REVIEW_PACKAGE_READY / PILOT_READY** descrevem a preparação; revisão humana, participantes reais, aprovação académica e calibração continuam **PENDING**. Sem .10, telemetria, backend ou alterações de produção. Detalhes, limitações e próximos passos: `tmp/phase8-readiness.md`.

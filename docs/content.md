@@ -1,4 +1,4 @@
-﻿# Conteúdo, referências e regras
+# Conteúdo, referências e regras
 
 Na fase 1 não existiam PDFs no projeto e foram consultadas páginas oficiais públicas. Na fase 2 foram encontrados 18 PDFs em `docs/Certified Tester Foundation Level (CTFL) v4.0`. O [inventário, versões, páginas efetivamente consultadas e auditoria individual](academic-audit.md) constituem o registo atual. Os PDFs e extrações estão excluídos do Git e não são distribuídos na aplicação.
 
@@ -15,27 +15,27 @@ Na fase 2 foram consultados, por amostragem, os exames oficiais A–D e respetiv
 
 ## Banco atual e exames selecionados
 
-O banco tem **82 questões originais** e cobre nominalmente **todos os 64 LO examináveis** do syllabus 4.0.1. A fase 4 acrescentou tl-048–tl-066, uma por cada um dos 19 LO anteriormente sem pergunta; os 47 itens anteriores foram preservados nessa fase. A manutenção .5 aplica apenas cinco correções bilingues, descritas na [auditoria da fase 4.1](academic-audit.md#fase-41--correções-bilingues-controladas). Todas as 82 perguntas e traduções têm revisão por IA e **aprovação humana pendente**, sem calibração psicométrica. A lista de fontes, IDs, LO, níveis, chaves e revisão de todas as alternativas está na [auditoria académica](academic-audit.md#fase-4--cobertura-completa-do-syllabus).
+O banco tem **90 questões originais** e cobre nominalmente **todos os 64 LO examináveis** do syllabus 4.0.1. A fase 4 acrescentou tl-048–tl-066, uma por cada um dos 19 LO anteriormente sem pergunta; os 47 itens anteriores foram preservados nessa fase. A manutenção .5 aplica apenas cinco correções bilingues, descritas na [auditoria da fase 4.1](academic-audit.md#fase-41--correções-bilingues-controladas). Todas as 90 perguntas e traduções têm revisão por IA e **aprovação humana pendente**, sem calibração psicométrica. A lista de fontes, IDs, LO, níveis, chaves e revisão de todas as alternativas está na [auditoria académica](academic-audit.md#fase-4--cobertura-completa-do-syllabus).
 
 | Capítulo |  Banco | LO cobertos | Cada exame |
 | -------- | -----: | ----------: | ---------: |
 | 1        |     16 |          14 |          8 |
-| 2        |     12 |          10 |          6 |
-| 3        |      8 |           8 |          4 |
-| 4        |     21 |          14 |         11 |
-| 5        |     21 |          16 |          9 |
+| 2        |     13 |          10 |          6 |
+| 3        |      9 |           8 |          4 |
+| 4        |     24 |          14 |         11 |
+| 5        |     24 |          16 |          9 |
 | 6        |      4 |           2 |          2 |
-| Total    | **82** |      **64** |     **40** |
+| Total    | **90** |      **64** |     **40** |
 
-O banco tem K1=18/K2=47/K3=17. Cada exame mantém **40 perguntas**, **K1=8/K2=24/K3=8**, capítulos **8/6/4/11/9/2** e as quotas/diversidade dos **29 grupos** v1.19. Sem repetição de IDs nem preenchimento silencioso de grupos em falta. Cobrir 64 LO no banco não exige nem permite incluí-los todos numa tentativa de 40. As novas perguntas elegíveis participam no seletor existente. O estudo por tópico não tem quotas e suporta as 82 perguntas, incluindo retoma para além da posição 40.
+O banco tem K1=18/K2=50/K3=22. Cada exame mantém **40 perguntas**, **K1=8/K2=24/K3=8**, capítulos **8/6/4/11/9/2** e as quotas/diversidade dos **29 grupos** v1.19. Sem repetição de IDs nem preenchimento silencioso de grupos em falta. Cobrir 64 LO no banco não exige nem permite incluí-los todos numa tentativa de 40. As novas perguntas elegíveis participam no seletor existente. O estudo por tópico não tem quotas e suporta as 90 perguntas, incluindo retoma para além da posição 40.
 
 Regras mantidas: 40 pontos, limiar 26, 60/75 minutos; sem penalização por erro nem crédito parcial em seleção múltipla. tl-046/tl-047 são BVA de três valores; apenas um candidato FL-4.2.2 entra em cada exame devido à diversidade exigida, mas ambos podem ser estudados. Fontes e resultados exatos da verificação de 1 000 seeds e regressão estão na [atualização do blueprint](blueprint-validation.md#fase-5a--variedade-quantificada).
 
-Revisão atual **2026-10-27.6**. As revisões .1, .2, .3, .4 e .5 continuam a resolver conteúdo e pontuação originais, sem alterar a revisão das sessões guardadas. Os cinco arquivos são protegidos por hashes de regressão; a prática histórica .3 mantém 47 perguntas. Exames .3, .4 e .5 conservam o rótulo de alinhamento estrutural; .1/.2 mantêm os avisos históricos.
+Revisão atual **2026-10-27.9**. As revisões .1–.8 mantêm conteúdo, ordem, respostas, tempos e pontuação originais, sem migração de tentativas. Os arquivos são protegidos por SHA-256; a prática histórica .3 mantém 47 perguntas. A fase 6C corrigiu apenas três itens e produziu .8; a fase 7 acrescentou tl-083–tl-090, preservando integralmente os 82 objetos da .8. A [auditoria atual](academic-audit.md#fase-7--avaliação-avançada-8--9) regista fontes, cálculos, traduções e limitações.
 
-As 19 adições da fase 4 e as 16 da fase 5A têm quatro alternativas com justificação individual; as perguntas antigas mantêm em geral três. Uma pergunta por LO é cobertura nominal, não variedade suficiente ou domínio de todos os aspetos de cada LO. Persistem distratores introdutórios e possíveis pistas de comprimento. **Software validado, revisão por IA, aprovação humana e calibração de dificuldade são estados separados.** Não há endosso oficial nem garantia de dificuldade equivalente. Os relatórios das fases 2/3 permanecem como evidência histórica.
+Há 86 perguntas de quatro alternativas e quatro de cinco (083/084/085/089). As perguntas 001/083/084/085 exigem exatamente duas respostas, sem crédito parcial; não há quota obrigatória de formato. As restantes exigem uma resposta. Não há ID individual obrigatório em todos os simulados; as [frequências e verificação atual](blueprint-validation.md#fases-6c7--validação-final) quantificam a variedade. Cobertura nominal de 64 LO não demonstra domínio de todos os aspetos nem dificuldade equivalente à certificação.
 
-A fase 5A acrescentou **tl-067–tl-082**, uma alternativa para cada um dos 16 IDs antes obrigatórios, incluindo sete K3. Os 66 itens da .5 ficaram intactos. Não há agora ID obrigatório individualmente; a variedade e as frequências estão no [relatório atual](blueprint-validation.md#fase-5a--variedade-quantificada). As 39 perguntas antigas de três alternativas mantêm-se para a fase 5B.
+**Software validado, revisão por IA, aprovação humana e calibração de dificuldade são estados separados.** A aprovação humana continua PENDING em todos os itens. Não há endosso oficial nem calibração psicométrica. Os relatórios anteriores permanecem como histórico.
 
 ## Contribuir ou importar conteúdo
 

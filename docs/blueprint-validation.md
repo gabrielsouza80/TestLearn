@@ -1,8 +1,10 @@
-> Revisão atual **2026-10-27.6**: [validação da fase 5A](#fase-5a--variedade-quantificada), no fim. Os resultados anteriores são históricos.
+> Revisão atual **2026-10-27.9**: [validação final das fases 6C/7](#fases-6c7--validação-final). As secções anteriores são evidência histórica.
+
+> Registo histórico **2026-10-27.6**: [validação da fase 5A](#fase-5a--variedade-quantificada), no fim. Os resultados anteriores são históricos.
 
 # Validação do blueprint CTFL — fase 3
 
-> Revisão atual **2026-10-27.5**: [validação da fase 4.1](#fase-41--manutenção-bilingue), no fim. Os resultados das fases 3/4 abaixo são históricos.
+> Registo histórico **2026-10-27.5**: [validação da fase 4.1](#fase-41--manutenção-bilingue), no fim. Os resultados das fases 3/4 abaixo são históricos.
 
 > O corpo da fase 3 é um registo histórico do banco de 47 perguntas. A [atualização da fase 4](#fase-4--regressão-com-o-banco-completo), no fim, regista o banco de 66 perguntas e a validação atual.
 
@@ -598,3 +600,90 @@ A suite E2E completa anterior também passou 58/58 antes da última conferência
 Evidência local em `tmp/phase5b-*`: inventário/hashes do trabalho pré-existente, banco anterior, validação de três lotes (15/28/39 itens), apresentação sem chaves, resoluções registadas, contestação, métricas editoriais, comparação de 39/43 objetos e relatório de produção com grafo e rede. Os PDFs oficiais e extrações não foram incorporados no site ou nos novos arquivos. Não há push/deploy, novas dependências, alterações KAVTRIS ou limpeza destrutiva.
 
 Restam revisão académica humana independente, teste com candidatos e calibração de dificuldade/discriminação. As 43 perguntas fora do âmbito conservam também as suas limitações anteriores. Persistem algumas pistas de comprimento e exercícios simples, documentados por ID na auditoria. A contestação foi uma passagem separada do mesmo agente, não uma revisão independente entre fornecedores; o resultado PASS é limitado à avaliação por IA. Não se atribuiu aprovação humana nem equivalência/acreditação ISTQB/PSTQB.
+
+## Fases 6C/7 — validação final
+
+Data: **28-10-2026**. Sem alterações ao seletor, schema, scoring, shuffle, quotas, configuração Playwright ou dependências. Conferência local das tabelas oficiais v1.19, PDF pp.4–5 e nota 1: **29 grupos**, 40 perguntas, capítulos **8/6/4/11/9/2**, K1/K2/K3 **8/24/8**, diversidade de LO dentro de cada grupo. O teste usa um oracle transcrito independentemente do código de produção. A falta de candidatos obrigatórios continua a provocar falha explícita, sem preenchimento inválido.
+
+### Fase 6C — gate antes da expansão
+
+A .7 tinha 82 perguntas/328 alternativas/64 LO. Foram alterados apenas tl-030 (o3 PT: “Um número igual de testes em cada nível”), tl-069 (“orientado para comportamento”) e tl-071 (“cobertura de Cada Escolha (Each Choice)”), incluindo versão e registo editorial dos três. Os outros **79 objetos** ficaram profundamente iguais; **82/82 chaves** preservadas. Fontes e disposição de cada achado estão na [auditoria 6C](academic-audit.md#fase-6c--correções-terminológicas-controladas).
+
+**PHASE_6C_GATE = PASS**, registado em `tmp/phase6c-gate.json`, **2026-10-28T22:53:35.945Z**, antes de integrar as novas perguntas. TypeScript exit0, **125/125 testes unitários/integração**, **4/4 Playwright dirigidos** em desktop/mobile com dois workers, e **1.000 seeds** com os mesmos IDs selecionados na .7/.8. O gate conferiu os hashes preexistentes e a recuperação efetiva de .7 pelo resolvedor.
+
+SHA-256 do arquivo .7: `970ef782fbf61bdd92889ceea1fc8474064eec377058c01ec1198b927c0c4fef`.
+SHA-256 do arquivo .8 criado só após o gate: `d24f50e91af42eac9fc52896db9b2f856a0530536ab770882ac15e292f1f119e`.
+
+A primeira execução do script de gate falhou na leitura de um log PowerShell UTF-16LE como UTF-8; corrigiu-se a deteção de BOM e repetiu-se integralmente a verificação, que passou. Não se confundiu este erro da ferramenta com uma falha da aplicação.
+
+### Fase 7 — cobertura e variedade
+
+Final .9: **90 perguntas, 364 alternativas, 64 LO**, incluindo tl-083–tl-090. Capítulos do banco **16/13/9/24/24/4**, níveis **18/50/22**. Os 82 objetos da .8 continuam profundamente iguais; todas as chaves da .7 preservadas. As três novas perguntas de duas respostas e o item de estimativa com cinco alternativas participam pelo LO/K nas mesmas regras dos outros candidatos, sem quota artificial, viés de ID novo ou escolha forçada em produção.
+
+Em **1.000 seeds determinísticos (0–999)**, cada exame satisfaz os 29 grupos, os totais de capítulo/K, diversidade LO, unicidade e reprodutibilidade. Todos os 90 IDs foram selecionados pelo menos uma vez e omitidos pelo menos uma vez; **zero IDs obrigatórios individualmente**. A suite de variabilidade confirma também 1.000 conjuntos e ordens distintos e viabilidade ao remover cada ID individual. Frequências completas por ID: `tmp/phase7-integrity.json`.
+
+| Perguntas de duas respostas num exame | Seeds observados |
+| ------------------------------------- | ---------------: |
+| 0                                     |              240 |
+| 1                                     |              438 |
+| 2                                     |              249 |
+| 3                                     |               65 |
+| 4                                     |                8 |
+
+São frequências observadas, sem promessa estatística de uniformidade ou quota oficial de formato. O teste antigo que somava só o par original/alternativa foi atualizado para somar **todos** os candidatos do mesmo LO: alguns LO têm agora um terceiro item. Continua a exigir exatamente uma seleção desse LO por exame quando a tabela o exige; não se relaxou a quota. Para demonstrar construtivamente a seleção de uma alternativa, o fixture retém apenas essa candidata no respetivo LO. A seleção normal não tem este filtro.
+
+### Histórico e integridade
+
+Todos os arquivos .1–.8 continuam registados e carregados a pedido; não há fallback para texto atual nem migração silenciosa. Os testes exercitam arquivo indisponível, retry, validação, cache e preservação da string guardada. .7/.8 têm testes explícitos de exame e estudo completo, respostas, flags, posição, ordem de opções, datas/prazo e conclusão com pontuação original. Os testes E2E verificam o texto de 030 nas duas revisões e a preservação exata dos dados. Os novos formatos mantêm as identidades depois de shuffle, EN/PT e reload, cap de duas escolhas, desmarcação, teclado, explicações de todas as alternativas, pontuação exata e ausência de crédito parcial.
+
+Os hashes .1–.6 e dos quatro artefactos 6A permanecem iguais ao preflight. `.9` também foi congelada como snapshot completo (90 objetos): `89a0d7b2483afbbd279f7a1d9ac707d1ce9b4e049225be88a59c0dd30cd42bb2`. Os testes fixam os hashes .7/.8/.9. O snapshot .9 não é importado pelo runtime atual, para evitar duplicação da revisão ativa. Nenhum arquivo anterior foi recriado.
+
+### Desempenho de produção
+
+Medição real com Vite/Chromium local, sem limitação de CPU/rede, três contextos frios e três reloads por cenário; não é um benchmark controlado nem prova de desempenho em equipamentos modestos. Grafo dos módulos e Resource Timing em `tmp/phase7-performance.json`; a baseline .7 está em `tmp/phase5b-performance.json` e não foi sobrescrita.
+
+| Medida                                             | .7 anterior |    .9 final |          Diferença |
+| -------------------------------------------------- | ----------: | ----------: | -----------------: |
+| JS inicial minificado                              |   584.109 B |   614.765 B | +30.656 B (+5,25%) |
+| JS inicial gzip                                    |   177.959 B |   188.116 B | +10.157 B (+5,71%) |
+| Total JS gerado                                    | 1.301.319 B | 1.816.572 B |         +515.253 B |
+| Soma gzip dos chunks                               |   355.072 B |   488.852 B |         +133.780 B |
+| Arquivos no grafo inicial / pedidos no painel novo |       0 / 0 |       0 / 0 |         preservado |
+
+Os seis chunks antigos têm os mesmos nomes hash e tamanhos. Os novos chunks .7 e .8 pesam **242.294/242.303 B** minificados, **61.795/61.828 B** gzip; só é pedido o arquivo necessário ao histórico. O total emitido cresce sobretudo por estas duas cópias históricas, sem as carregar no painel novo. O snapshot .9 não aparece nos chunks.
+
+Médias locais de prontidão, frio/reload: painel novo .7 **254,9/52,8 ms**, .9 **236,2/46,3 ms**; exame histórico .8 **232,6/78,0 ms**, estudo .8 **259,3/91,4 ms**, painel com histórico .8 **284,4/80,5 ms**. Houve **um** pedido de arquivo por navegação histórica e nenhum no painel limpo. As medições variam com cache/carga e comparam algumas revisões diferentes; não permitem alegar melhoria nem ausência de regressão geral. O crescimento dos bytes é mensurável. Mantém-se o aviso Vite de chunk >500 kB, sem suprimir o limite nem introduzir otimizações fora do âmbito. Mantêm-se avisos de anotações PURE do Zod e NO_COLOR/FORCE_COLOR no runner, sem falha de build.
+
+### QA final e ocorrências intermédias
+
+| Comando / verificação                      | Resultado final                                                           | Exit code |
+| ------------------------------------------ | ------------------------------------------------------------------------- | --------: |
+| `npm run typecheck`                        | PASS                                                                      |         0 |
+| `npm run lint`                             | PASS                                                                      |         0 |
+| `npm run format:check`                     | PASS, após documentação final                                             |         0 |
+| `npm test`                                 | **139/139**, 16 ficheiros; 14,65 s Vitest                                 |         0 |
+| `npm run build`                            | PASS; Vite 2,48 s, `index-DsgzLD-J.js` coincide com a medição             |         0 |
+| `npm run test:e2e`                         | **72/72**, 8 workers, Chromium desktop/mobile, 44,9 s, sem retries locais |         0 |
+| `git diff --check`                         | Sem erros de whitespace                                                   |         0 |
+| Integridade por hashes / snapshot / chaves | PASS, .1–.9 / 82 chaves preservadas / prefixo .8 intacto                  |         0 |
+| Seeds / grupos / diversidade               | PASS, pelo menos 1.000 seeds por verificação                              |         0 |
+
+Logs locais `tmp/phase7-final-*`; relatório Vitest JSON em `tmp/phase7-final-unit.json`; integridade e frequências em `tmp/phase7-integrity.json`. Após os ajustes finais de fixtures E2E repetiram-se typecheck/lint/formatação, sem necessidade de repetir unidades ou build cujo código não mudou. O build é repetido também pelo webServer da suite E2E.
+
+A primeira suite unitária da fase 7 teve **123 PASS/3 FAIL**: uma expectativa ainda fixava 82 no resultado de prática e duas presumiam apenas dois candidatos por LO. Na segunda execução houve **138 PASS/1 FAIL**, causado por sombra de variável no novo filtro de fixture; corrigido para nome explícito. A execução final não omite estes testes. Os dez novos E2E tiveram inicialmente **6 PASS/4 FAIL**: o teste pressupunha persistência do idioma após reload, mas o produto existente reinicia em PT. Passou-se a confirmar a resposta em PT após reload e selecionar EN explicitamente, mantendo intacto o comportamento do produto. Repetição dirigida: **10/10 PASS**, 18,4 s, dois workers.
+
+A primeira suite Playwright completa teve **66 PASS/6 FAIL**: rótulo antigo 82, fixture a pedir 82 mas a esperar 90 e primeira pergunta fixada à 027. A segunda teve **68 PASS/4 FAIL**: um patch local tinha abortado por comparação de texto com acentos através de stdin, deixando dois ajustes por aplicar; não foi uma nova falha académica. Corrigiram-se o rótulo e o fixture com operações delimitadas, mantendo o teste de início real no ficheiro blueprint e usando um exame válido com a 027 à frente apenas no teste de manutenção. A terceira execução completa passou **72/72**, com os mesmos oito workers e timeouts. A prática passou a pedir 90, navegar à pergunta 90 e confirmar índice 89 após reload.
+
+A auditoria final por hashes também teve um erro inicial no script local (nome do campo de inventário `protectedFiles`); corrigido e repetido com sucesso. Estes erros de tooling/fixtures não alteraram arquivos históricos nem chaves académicas. Não foram alargados timeouts, introduzidos retries, reduzidos workers padrão ou enfraquecidas as quotas para obter PASS.
+
+Validação de software e blueprint é distinta da avaliação académica assistida por IA. A contestação EN/PT foi do mesmo agente autor e **não é revisão cega independente genuína**. Aprovação humana continua PENDING e calibração psicométrica ausente. O cenário 090 aprofunda a correção de relatório com evidência, mas continua a não avaliar redação livre. Próximo passo: revisão humana independente, depois piloto com candidatos; não publicar como medição calibrada de preparação.
+
+Âmbito final conferido: apenas documentação, três correções terminológicas, oito itens originais, arquivos .7/.8/.9, reconhecimento de revisões e testes/fixtures correspondentes. Sem push, deploy, commits, novas dependências, instalação, término de processos, alterações KAVTRIS ou limpeza destrutiva. As sessões reais do utilizador não foram abertas nem regravadas; os cenários de teste usam contextos isolados.
+
+## Fase 8A/8B — regressão da preparação local
+
+Em 29-10-2026 o banco executável .9 e os nove snapshots foram conferidos; SHA-256 .9 `89a0d7b2483afbbd279f7a1d9ac707d1ce9b4e049225be88a59c0dd30cd42bb2`. Pelo menos **1.000 seeds** mantêm os 29 grupos, 40 IDs únicos, quotas por capítulo/K, diversidade e determinismo. Todos os ficheiros preexistentes foram preservados; apenas se acrescentou este registo e a nota académica.
+
+Execuções desta fase: typecheck/lint/format:check/build exit0; **139/139** testes unitários/integração (19,15 s) e **72/72** Playwright (54,8 s), oito workers e sem retries locais. Separadamente, **45/45** testes locais de exportação/recolha/análise com fixtures sintéticos; não são participantes nem resultados de piloto. Dois erros intermédios de caminhos em scripts locais foram corrigidos e repetidos, sem falhas na regressão da aplicação.
+
+Bundle inalterado: **614.765 B JS inicial / 188.116 B gzip**, total JS 1.816.572 B; entrada index-DsgzLD-J.js. Uma visita limpa de produção registou zero pedidos externos, zero arquivos históricos e zero assets de revisão/piloto. Nenhuma pasta phase8 integra o grafo de produção. Mantêm-se os avisos existentes de tamanho do chunk/Zod/cores. Evidência completa e estados separados: `tmp/phase8-readiness.md`, `tmp/phase8-readiness.json` e `tmp/phase8-*.log`. Preparação READY; revisão humana e piloto real PENDING.

@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-29",
+  "contentRevision": "2026-10-27.9",
+  "gitHEAD": "9623e96239c75dadfd66b20cb8265980b6e2fbc7",
+  "workingTreeContainsPreservedUncommittedWork": true,
+  "TECHNICAL_RELEASE_CANDIDATE_READY": "PASS",
+  "PUBLICATION_AUTHORIZED": "NO",
+  "PUBLIC_BETA_READY": "BLOCKED",
+  "ACADEMICALLY_VALIDATED_RELEASE": "BLOCKED",
+  "gates": {
+    "functionalCorrectness": {
+      "status": "PASS",
+      "tests": "147 unit/integration + 86 E2E + 8 artifact guard"
+    },
+    "contentIntegrity": {
+      "status": "PASS",
+      "questions": 90,
+      "alternatives": 364,
+      "LO": 64,
+      "snapshotSHA256": "89a0d7b2483afbbd279f7a1d9ac707d1ce9b4e049225be88a59c0dd30cd42bb2"
+    },
+    "historicalIntegrity": {
+      "status": "PASS",
+      "revisions": ".1-.9",
+      "migration": false,
+      "fallbackToCurrent": false
+    },
+    "security": {
+      "local": "PASS",
+      "remoteHost": "NOT_TESTED",
+      "npmAuditVulnerabilities": 0,
+      "limitation": "Client keys and scores are not tamper-proof; audit is not a full security certification"
+    },
+    "privacy": {
+      "status": "OWNER_ACTION_REQUIRED",
+      "runtimeTrackingAdded": false,
+      "hostLogs": "NOT_TESTED"
+    },
+    "accessibility": {
+      "automatedAndKeyboard": "PASS",
+      "fullWCAG22AA": "NOT_TESTED",
+      "screenReaderAndActualZoom": "NOT_TESTED"
+    },
+    "browserCompatibility": {
+      "Chromium": "PASS",
+      "Firefox": "NOT_TESTED",
+      "WebKit": "NOT_TESTED",
+      "physicalDevices": "NOT_TESTED",
+      "engine": "156.0.8078.4"
+    },
+    "performance": {
+      "status": "PASS",
+      "baselineJS": 614765,
+      "currentJS": 629032,
+      "baselineGzip": 188116,
+      "currentGzip": 193417,
+      "deltaJS": 14267,
+      "deltaGzip": 5301,
+      "totalJS": 1830839,
+      "zeroEagerHistoricalArchives": true
+    },
+    "deploymentReadiness": {
+      "status": "OWNER_ACTION_REQUIRED",
+      "host": null,
+      "domain": null,
+      "assetRetentionRemote": "NOT_TESTED",
+      "HTTPSRemote": "NOT_TESTED",
+      "local404Retry": "PASS"
+    },
+    "publicLegalAndContact": {
+      "status": "OWNER_ACTION_REQUIRED",
+      "identity": null,
+      "contact": null,
+      "rightsAndNoticesReviewed": false
+    },
+    "academicValidation": {
+      "status": "OWNER_ACTION_REQUIRED",
+      "humanApproval": "PENDING",
+      "psychometrics": "NOT_TESTED"
+    },
+    "pilotValidation": {
+      "status": "NOT_TESTED",
+      "realParticipants": 0
+    }
+  },
+  "qa": {
+    "artifact": 0,
+    "build": 0,
+    "typecheck": 0,
+    "unit": 0,
+    "lint": 0,
+    "e2e": 0,
+    "unitIntegration": 147,
+    "unitFiles": 18,
+    "playwright": 86,
+    "workers": 8,
+    "localRetries": 0,
+    "artifactGuardTests": 8,
+    "blueprintSeeds": 1000,
+    "unitDurationSeconds": 19.4,
+    "e2eDuration": "1.5m",
+    "format": 0,
+    "diffcheck": 0,
+    "finalScopeLint": 0
+  },
+  "P0": [
+    {
+      "area": "owner/legal/contact/rights",
+      "status": "OWNER_ACTION_REQUIRED",
+      "technicalDefect": false
+    },
+    {
+      "area": "host HTTPS headers cache retention and rollback proof",
+      "status": "OWNER_ACTION_REQUIRED",
+      "technicalDefect": false
+    },
+    {
+      "area": "approved source/clean release snapshot and publication authorization",
+      "status": "OWNER_ACTION_REQUIRED",
+      "technicalDefect": false
+    }
+  ],
+  "P1": [],
+  "P2": [
+    "Existing >500kB warning",
+    "Firefox/WebKit and real devices untested",
+    "Full manual accessibility/actual zoom untested",
+    "500-session and modest-device long-run performance unbenchmarked",
+    "Human academic review and real pilot absent; not a calibrated assessment"
+  ],
+  "artifact": {
+    "files": [
+      {
+        "path": ".vite/manifest.json",
+        "bytes": 2551,
+        "gzip": 394,
+        "sha256": "41414662139ef1764e0e3d131aeb66cbade21612be58d442691e395c59b7d844"
+      },
+      {
+        "path": "assets/index-D19U4eNe.css",
+        "bytes": 13854,
+        "gzip": 3624,
+        "sha256": "1a441495b7d6f7ec88df2b5afdc3720333c6ac449bb1434d04c52d0d73d022d1"
+      },
+      {
+        "path": "assets/index-DKtbpw9f.js",
+        "bytes": 629032,
+        "gzip": 193417,
+        "sha256": "1aa3f7f07403fbdbc5b6977c4b22ad8957c888fb6b9fc1d9fab9418e22d4bf32"
+      },
+      {
+        "path": "assets/questions-2026-10-27.1-W7yLFLHs.js",
+        "bytes": 51782,
+        "gzip": 12545,
+        "sha256": "69adfae8b006a629236c0fcb0559b88a0dacc5d2f90ca4e42da13e9a756d72ec"
+      },
+      {
+        "path": "assets/questions-2026-10-27.2-D-tyE03s.js",
+        "bytes": 65758,
+        "gzip": 14708,
+        "sha256": "e2839ed36ca6273d4f8072ab62e3bda1a6687a70d926030514ae811ef4c0a17c"
+      },
+      {
+        "path": "assets/questions-2026-10-27.3-BEhMXjsZ.js",
+        "bytes": 87739,
+        "gzip": 20828,
+        "sha256": "65ef813a337922fc6de659ab4a0c03670d6da25e032d04d08b61188dda75df05"
+      },
+      {
+        "path": "assets/questions-2026-10-27.4-BAQ4Dpi_.js",
+        "bytes": 153173,
+        "gzip": 38265,
+        "sha256": "1686f7dd0efed601181f211ae9998f83299a72816d1af13b939ab9b4272e3508"
+      },
+      {
+        "path": "assets/questions-2026-10-27.5-CgwUPsDp.js",
+        "bytes": 153450,
+        "gzip": 38328,
+        "sha256": "ae655803c5bce318cec4a0420d740ab62758f4efc1aaa5be87681b678e595d22"
+      },
+      {
+        "path": "assets/questions-2026-10-27.6-BrE7YM3i.js",
+        "bytes": 205308,
+        "gzip": 52439,
+        "sha256": "eaf2bd5984a020500c7934334388e73c24d498d3c1dfa0102c006a11e95986fd"
+      },
+      {
+        "path": "assets/questions-2026-10-27.7-3UV0lmO3.js",
+        "bytes": 242294,
+        "gzip": 61795,
+        "sha256": "ebfc17e35aac7fc0e92ab79eb262e65e6a0413877b0c52c3636421151fc95e8a"
+      },
+      {
+        "path": "assets/questions-2026-10-27.8-71jBULRe.js",
+        "bytes": 242303,
+        "gzip": 61828,
+        "sha256": "c1892d154e00e07f53b32ea2d39b91033b170607235453de57d194dae0521e99"
+      },
+      {
+        "path": "favicon.svg",
+        "bytes": 249,
+        "gzip": 206,
+        "sha256": "dde5cce8d7d2603649550a900f1966918a00bbf82c01bb5d7e555fde8d1fcfb6"
+      },
+      {
+        "path": "index.html",
+        "bytes": 686,
+        "gzip": 414,
+        "sha256": "16fbd1010f04c3515bf3b7cd15f4e3011fdc9ecd975bde117e67cd8f959ee26f"
+      },
+      {
+        "path": "robots.txt",
+        "bytes": 30,
+        "gzip": 50,
+        "sha256": "9fe5b2c66383db36542d53281f23cadaad51b999ba0bff353987dc97d541c785"
+      }
+    ],
+    "initialJS": {
+      "path": "assets/index-DKtbpw9f.js",
+      "bytes": 629032,
+      "gzip": 193417,
+      "sha256": "1aa3f7f07403fbdbc5b6977c4b22ad8957c888fb6b9fc1d9fab9418e22d4bf32"
+    },
+    "css": [
+      {
+        "path": "assets/index-D19U4eNe.css",
+        "bytes": 13854,
+        "gzip": 3624,
+        "sha256": "1a441495b7d6f7ec88df2b5afdc3720333c6ac449bb1434d04c52d0d73d022d1"
+      }
+    ],
+    "totalJS": 1830839,
+    "archiveChunks": 8,
+    "privateAssets": 0,
+    "sourceMaps": 0
+  },
+  "privateModulesInClientGraph": [],
+  "phase8MaterialsIntact": true,
+  "unexpectedCodeChanges": false,
+  "intermediateFailures": [
+    "Initial artifact audit caught old HTML title: corrected beta/noindex metadata and added explicit E2E assertions",
+    "First full E2E:83 pass/3 fail; one stale immediate LocalStorage read after async write, two duplicate table region labels; fixed polling actual storage and unique question labels, kept all assertions",
+    "First performance script failed due to corrupted accented selector; fixed role/prefix selector and repeated; noisy concurrent measurement retained separately, followed by isolated/alternating final measurements",
+    "Final receipt initially read PowerShell UTF-16LE artifact JSON as UTF-8; added BOM-aware decoding and repeated receipt generation. No runtime or content changes."
+  ],
+  "ownerNextActions": [
+    "Review actual identity/contact/host processing/rights and approve final public wording",
+    "Choose static HTTPS host and verify security headers, old hashed assets across deploy and rollback, 404 and logs policy",
+    "Review preserved working tree, authorize exact source commit and artifact; repeat proportional QA for final legal/copy changes",
+    "Only then give explicit publication authorization; no deployment performed here"
+  ],
+  "scopeEvidence": "tmp/phase9/integrity.json",
+  "buildDistributionRule": "Only validated dist; no repository-root publication",
+  "versionControlHandoff": {
+    "codeCommit": "94d278ccf6d497c3fcf2f9649f11f71898580020",
+    "authorization": "User explicitly authorized commits and push to main after the local assessment",
+    "assessmentGitFields": "Pre-commit snapshot; retained as historical evidence",
+    "deploymentAuthorization": "NO"
+  }
+}
