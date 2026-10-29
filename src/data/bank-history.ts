@@ -13,6 +13,10 @@ const archiveLoaders = {
     import('./archive/questions-2026-10-27.5.json').then((m) => m.default),
   '2026-10-27.6': () =>
     import('./archive/questions-2026-10-27.6.json').then((m) => m.default),
+  '2026-10-27.7': () =>
+    import('./archive/questions-2026-10-27.7.json').then((m) => m.default),
+  '2026-10-27.8': () =>
+    import('./archive/questions-2026-10-27.8.json').then((m) => m.default),
 };
 type ArchiveRevision = keyof typeof archiveLoaders;
 type Loaders = Record<ArchiveRevision, () => Promise<unknown>>;

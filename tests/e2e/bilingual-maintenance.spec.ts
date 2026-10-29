@@ -60,7 +60,7 @@ test('new current study exposes explicit confirmation testing in EN/PT and retai
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.7');
+  expect(saved.contentRevision).toBe('2026-10-27.9');
   expect(saved.answers).toEqual({ 'tl-003': ['o1'] });
   await page.reload();
   await page.getByLabel('Idioma', { exact: true }).selectOption('pt');

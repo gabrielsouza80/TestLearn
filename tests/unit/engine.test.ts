@@ -16,7 +16,7 @@ import {
 
 describe('question integrity', () => {
   it('validates original metadata, unique IDs and full chapter coverage', () => {
-    expect(questions).toHaveLength(82);
+    expect(questions).toHaveLength(90);
     expect(validateBank(questions)).toEqual([]);
     expect(new Set(questions.map((q) => q.chapter))).toEqual(
       new Set([1, 2, 3, 4, 5, 6]),

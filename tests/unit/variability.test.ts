@@ -1,4 +1,4 @@
-import { beforeAll } from 'vitest';
+﻿import { beforeAll } from 'vitest';
 import { prepareHistoricalBanks } from '../fixtures/banks';
 beforeAll(prepareHistoricalBanks);
 import { describe, it, expect } from 'vitest';
@@ -79,7 +79,7 @@ describe('phase 5A actual variability and historical boundaries', () => {
     expect(variabilityArchivedQuestions.slice(0, 66)).toEqual(
       bilingualArchivedQuestions,
     );
-    expect(questions).toHaveLength(82);
+    expect(questions).toHaveLength(90);
     expect(validateBank(questions)).toEqual([]);
     expect(mandatory(bilingualArchivedQuestions)).toEqual(
       pairs.map((p) => p[0]),
@@ -110,7 +110,7 @@ describe('phase 5A actual variability and historical boundaries', () => {
   it('constructively selects each new alternative while omitting its old mandatory ID, and can omit every individual ID without breaking quotas', () => {
     for (const [old, id] of pairs) {
       const exam = selectPracticeExam(
-        questions.filter((q) => q.id !== old),
+        questions.filter((item) => item.lo !== q(id).lo || item.id === id),
         42,
       );
       expect(auditBlueprint(exam).compliant).toBe(true);
@@ -157,8 +157,12 @@ describe('phase 5A actual variability and historical boundaries', () => {
       expect(count).toBeGreaterThan(0);
       expect(count).toBeLessThan(1000);
     }
-    for (const [old, id] of pairs)
-      expect(counts.get(old)! + counts.get(id)!).toBe(1000);
+    for (const [, id] of pairs)
+      expect(
+        questions
+          .filter((item) => item.lo === q(id).lo)
+          .reduce((sum, item) => sum + counts.get(item.id)!, 0),
+      ).toBe(1000);
   }, 15000);
   it.each([
     ['2026-10-27.1', legacyQuestions],
@@ -201,7 +205,7 @@ describe('phase 5A actual variability and historical boundaries', () => {
         expect(load().state.history[0]).toEqual(completed);
         expect(score(completed, []).correct).toBe(1);
       }
-      expect(CONTENT_REVISION).toBe('2026-10-27.7');
+      expect(CONTENT_REVISION).toBe('2026-10-27.9');
       expect(BILINGUAL_CONTENT_REVISION).toBe('2026-10-27.5');
     },
   );

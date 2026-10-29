@@ -1,4 +1,6 @@
 import { variabilityQuestions } from './variability-questions';
+import { advancedQuestions } from './advanced-questions';
+import terminologyReviews from './terminology-review.json' with { type: 'json' };
 import { syllabusQuestions } from './syllabus-questions';
 import bilingualReviews from './bilingual-review.json' with { type: 'json' };
 import { blueprintQuestions } from './blueprint-questions';
@@ -1214,7 +1216,7 @@ export const questions: Question[] = [
       ],
       [
         'Equal numbers of tests at each level',
-        'Números semelhantes de testes em todos os níveis',
+        'Um número igual de testes em cada nível',
       ],
       [
         'Many integration tests, fewer component and end-to-end tests',
@@ -1763,3 +1765,23 @@ for (const id of qualityRevisionIds) {
     },
   };
 }
+
+// Phase 6C: only confirmed bilingual terminology findings; retain earlier records.
+for (const review of terminologyReviews) {
+  const index = questions.findIndex((q) => q.id === review.id);
+  const item = questions[index];
+  if (!item?.academicReview || item.version !== review.previousVersion)
+    throw new Error(`Incompatible terminology review: ${review.id}`);
+  questions[index] = {
+    ...item,
+    version: review.version,
+    academicReview: {
+      ...item.academicReview,
+      reviewedAt: review.reviewedAt,
+      report: review.report,
+    },
+  };
+}
+
+// Phase 7: add reviewed candidates; every Phase 6C object remains unchanged.
+questions.push(...advancedQuestions);

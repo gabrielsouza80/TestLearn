@@ -5,11 +5,15 @@ export const BLUEPRINT_CONTENT_REVISION = '2026-10-27.3';
 export const COVERAGE_CONTENT_REVISION = '2026-10-27.4';
 export const BILINGUAL_CONTENT_REVISION = '2026-10-27.5';
 export const VARIABILITY_CONTENT_REVISION = '2026-10-27.6';
-export const CONTENT_REVISION = '2026-10-27.7';
+export const QUALITY_CONTENT_REVISION = '2026-10-27.7';
+export const TERMINOLOGY_CONTENT_REVISION = '2026-10-27.8';
+export const CONTENT_REVISION = '2026-10-27.9';
 // These revisions were generated under the verified LO-group blueprint.
 export const isBlueprintRevision = (revision: string): boolean =>
   revision === BLUEPRINT_CONTENT_REVISION ||
   revision === COVERAGE_CONTENT_REVISION ||
   revision === BILINGUAL_CONTENT_REVISION ||
   revision === VARIABILITY_CONTENT_REVISION ||
+  revision === QUALITY_CONTENT_REVISION ||
+  revision === TERMINOLOGY_CONTENT_REVISION ||
   revision === CONTENT_REVISION;

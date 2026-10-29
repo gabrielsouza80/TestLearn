@@ -1,0 +1,29 @@
+[
+  {
+    "id": "tl-030",
+    "previousVersion": 2,
+    "version": 3,
+    "reviewedAt": "2026-10-28",
+    "report": "docs/academic-audit.md#fase-6c--tl-030",
+    "finding": "Equal é igual, não semelhante; o3 PT passa a Um número igual de testes em cada nível. Chave preservada.",
+    "source": "EN CTFL 4.0.1 §5.1.6 pp.50–51; equivalência lexical EN/PT"
+  },
+  {
+    "id": "tl-069",
+    "previousVersion": 1,
+    "version": 2,
+    "reviewedAt": "2026-10-28",
+    "report": "docs/academic-audit.md#fase-6c--tl-069",
+    "finding": "PT do enunciado: desenvolvimento orientado para comportamento (BDD), conforme PSTQB. Inglês, opções e chave preservados.",
+    "source": "PT CTFL 4.0 v1.0 §2.1.3 p.28; EN 4.0.1 p.26"
+  },
+  {
+    "id": "tl-071",
+    "previousVersion": 1,
+    "version": 2,
+    "reviewedAt": "2026-10-28",
+    "report": "docs/academic-audit.md#fase-6c--tl-071",
+    "finding": "PT do enunciado: cobertura de Cada Escolha (Each Choice). Partições, valores, hipóteses e chave preservados.",
+    "source": "PT CTFL 4.0 v1.0 §4.2.1 p.43; EN 4.0.1 pp.39–40"
+  }
+]

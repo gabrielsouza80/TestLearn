@@ -52,19 +52,19 @@ describe('full syllabus coverage, distinct from academic approval', () => {
         covered.every((q) => q.level === level && q.chapter === Number(lo[3])),
       ).toBe(true);
     }
-    expect(questions).toHaveLength(82);
+    expect(questions).toHaveLength(90);
     expect(validateBank(questions)).toEqual([]);
-    expect(new Set(questions.map((q) => q.id)).size).toBe(82);
+    expect(new Set(questions.map((q) => q.id)).size).toBe(90);
     expect(
       ['K1', 'K2', 'K3'].map(
         (k) => questions.filter((q) => q.level === k).length,
       ),
-    ).toEqual([18, 47, 17]);
+    ).toEqual([18, 50, 22]);
     expect(
       [1, 2, 3, 4, 5, 6].map(
         (ch) => questions.filter((q) => q.chapter === ch).length,
       ),
-    ).toEqual([16, 12, 8, 21, 21, 4]);
+    ).toEqual([16, 13, 9, 24, 24, 4]);
   });
   it('closes precisely the previous 19 gaps without replacing any of the original 47 items', () => {
     expect(coverageArchivedQuestions.slice(0, 47)).toEqual(
@@ -120,7 +120,7 @@ describe('full syllabus coverage, distinct from academic approval', () => {
     }
     expect(questions.every((q) => q.humanApproval === 'PENDING')).toBe(true);
   });
-  it('preserves keys when all 82 practice items are shuffled, rejects partial/extra multi-answers, and restores the final item', () => {
+  it('preserves keys when all 90 practice items are shuffled, rejects partial/extra multi-answers, and restores the final item', () => {
     let study = createSession(questions, 'practice', 0, 1000, 733);
     for (const q of questions) {
       const order = study.optionOrder[q.id];
@@ -150,8 +150,8 @@ describe('full syllabus coverage, distinct from academic approval', () => {
     expect(load().state.active).toEqual(study);
     const completed = finish(study, 3000);
     expect(score(completed, questions)).toEqual({
-      correct: 82,
-      total: 82,
+      correct: 90,
+      total: 90,
       unanswered: 0,
       passed: null,
     });
@@ -195,7 +195,7 @@ describe('full syllabus coverage, distinct from academic approval', () => {
       expect(load().state.history[0]).toEqual(completed);
       expect(score(completed, altered).correct).toBe(1);
     }
-    expect(CONTENT_REVISION).toBe('2026-10-27.7');
+    expect(CONTENT_REVISION).toBe('2026-10-27.9');
   });
   it('rejects missing/whitespace explanations and wrong answer cardinalities instead of hiding content errors', () => {
     const q = syllabusQuestions[0];

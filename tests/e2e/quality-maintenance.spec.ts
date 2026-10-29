@@ -15,7 +15,7 @@ const archive = /\/assets\/questions-2026-10-27\.6-[^/]+\.js$/;
 test.beforeEach(async ({ page }) => {
   await page.clock.setFixedTime(new Date(now));
 });
-test('current .7 exam shows four revised options, retains shuffled identities across languages and reviews every rationale', async ({
+test('current exam shows four revised options, retains shuffled identities across languages and reviews every rationale', async ({
   page,
 }) => {
   const first = questions.find((q) => q.id === 'tl-027')!;
@@ -25,9 +25,22 @@ test('current .7 exam shows four revised options, retains shuffled identities ac
       archives.push(r.url());
   });
   await page.goto('/');
-  await page
-    .getByRole('button', { name: 'Iniciar simulação', exact: true })
-    .click();
+  // Use a valid exam fixture with the maintenance target first. Production
+  // start is covered in blueprint.spec; its first ID changes with the pool.
+  let bank = selectPracticeExam(questions, 0);
+  for (let seed = 1; !bank.some((q) => q.id === first.id) && seed < 100; seed++)
+    bank = selectPracticeExam(questions, seed);
+  expect(bank.some((q) => q.id === first.id)).toBe(true);
+  bank = [first, ...bank.filter((q) => q.id !== first.id)];
+  await page.evaluate(
+    (s) =>
+      localStorage.setItem(
+        'testlearn.v1',
+        JSON.stringify({ version: 1, active: s, history: [] }),
+      ),
+    createSession(bank, 'exam', 60, now, 42),
+  );
+  await page.reload();
   await expect(
     page.getByRole('heading', { name: first.text.pt, exact: true }),
   ).toBeVisible();
@@ -35,7 +48,7 @@ test('current .7 exam shows four revised options, retains shuffled identities ac
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.7');
+  expect(saved.contentRevision).toBe('2026-10-27.9');
   expect(saved.questionIds).toHaveLength(40);
   expect(saved.questionIds[0]).toBe(first.id);
   expect(
@@ -129,7 +142,7 @@ test('current study scores the new distractor as incorrect and preserves bilingu
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.7');
+  expect(saved.contentRevision).toBe('2026-10-27.9');
   expect(saved.answers[revised.id]).toEqual(['o4']);
   await expect(
     page.getByRole('region', { name: 'Explicação', exact: true }),

@@ -146,7 +146,7 @@ export const variabilityQuestions: Question[] = [
     [26],
     [
       'A team wants examples of expected behaviour to drive development. Which description characterises behaviour-driven development (BDD) in the syllabus?',
-      'Uma equipa pretende que exemplos do comportamento esperado orientem o desenvolvimento. Que descrição caracteriza o desenvolvimento orientado pelo comportamento (BDD) no syllabus?',
+      'Uma equipa pretende que exemplos do comportamento esperado orientem o desenvolvimento. Que descrição caracteriza o desenvolvimento orientado para comportamento (BDD) no syllabus?',
     ],
     [
       [
@@ -232,7 +232,7 @@ export const variabilityQuestions: Question[] = [
     [39, 40],
     [
       'An archive service classifies integer retention days into four partitions: below 2, 2–14, 15–45, above 45. Format partitions are PDF, CSV and any other format. Each field is evaluated independently, including invalid values; one invalid field does not mask the other. Existing tests are (7, PDF) and (30, CSV). Which minimum additional pair achieves Each Choice coverage of all seven partitions?',
-      'Um serviço de arquivo classifica dias de conservação inteiros em quatro partições: abaixo de 2, 2–14, 15–45 e acima de 45. As partições do formato são PDF, CSV e qualquer outro formato. Cada campo é avaliado independentemente, incluindo valores inválidos; um campo inválido não oculta o outro. Os testes existentes são (7, PDF) e (30, CSV). Que par adicional mínimo atinge cobertura Each Choice das sete partições?',
+      'Um serviço de arquivo classifica dias de conservação inteiros em quatro partições: abaixo de 2, 2–14, 15–45 e acima de 45. As partições do formato são PDF, CSV e qualquer outro formato. Cada campo é avaliado independentemente, incluindo valores inválidos; um campo inválido não oculta o outro. Os testes existentes são (7, PDF) e (30, CSV). Que par adicional mínimo atinge cobertura de Cada Escolha (Each Choice) das sete partições?',
     ],
     [
       [

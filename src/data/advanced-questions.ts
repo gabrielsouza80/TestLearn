@@ -1,0 +1,485 @@
+import type { Question } from '../domain/engine';
+type Pair = [string, string];
+type Choice = [string, string, string, string];
+const pair = ([en, pt]: Pair) => ({ en, pt });
+function original(
+  n: number,
+  lo: string,
+  level: Question['level'],
+  topic: string,
+  section: string,
+  pages: number[],
+  prompt: Pair,
+  choices: Choice[],
+  correct: string[],
+  explanation: Pair,
+  table?: Question['table'],
+): Question {
+  return {
+    id: `tl-${String(n).padStart(3, '0')}`,
+    chapter: Number(lo[3]),
+    lo,
+    level,
+    topic,
+    type: correct.length > 1 ? 'multiple' : table ? 'table' : 'scenario',
+    required: correct.length,
+    text: pair(prompt),
+    options: choices.map(([en, pt, reasonEn, reasonPt], index) => ({
+      id: `o${index + 1}`,
+      text: { en, pt },
+      explanation: { en: reasonEn, pt: reasonPt },
+    })),
+    correct,
+    explanation: pair(explanation),
+    ...(table ? { table } : {}),
+    origin: 'original',
+    syllabus: '4.0.1',
+    version: 1,
+    review: 'AI_REVIEWED',
+    translationReview: 'AI_REVIEWED',
+    humanApproval: 'PENDING',
+    examEligible: true,
+    tags: ['phase7-advanced'],
+    academicReview: {
+      method: 'AI_REVIEWED',
+      status: 'PASS',
+      reviewedAt: '2026-10-28',
+      section,
+      pages,
+      report: `docs/academic-audit.md#fase-7--tl-${String(n).padStart(3, '0')}`,
+    },
+  };
+}
+export const advancedQuestions: Question[] = [
+  original(
+    83,
+    'FL-3.2.4',
+    'K2',
+    'Review types',
+    '3.2.4',
+    [36, 37],
+    [
+      'A team plans two reviews of a migration design. First, the author will lead participants through the document to build shared understanding. Next, technically qualified peers will seek agreement on interface choices in a moderated meeting. Select TWO statements consistent with the CTFL review types.',
+      'Uma equipa planeia duas revisões de uma conceção de migração. Primeiro, o autor orientará os participantes pelo documento para criar uma compreensão partilhada. Depois, pares tecnicamente qualificados procurarão consenso sobre escolhas de interfaces numa reunião moderada. Selecione DUAS afirmações coerentes com os tipos de revisão CTFL.',
+    ],
+    [
+      [
+        'An inspection fits the first step because its author can act as both review leader and scribe.',
+        'Uma inspeção adequa-se à primeira etapa porque o autor pode atuar como líder de revisão e redator.',
+        'In an inspection the author cannot act as review leader or scribe. This assignment contradicts the defined roles.',
+        'Numa inspeção, o autor não pode atuar como líder de revisão nem redator. Esta atribuição contraria os papéis definidos.',
+      ],
+      [
+        'An author-led walkthrough can support the shared-learning purpose of the first step.',
+        'Um walkthrough conduzido pelo autor pode apoiar a aprendizagem partilhada pretendida na primeira etapa.',
+        'Walkthroughs are led by the author and can educate participants and build understanding of the work product.',
+        'Os walkthroughs são conduzidos pelo autor e podem formar os participantes e criar compreensão do produto de trabalho.',
+      ],
+      [
+        'The moderated second step is a walkthrough because a moderator, rather than the author, leads it.',
+        'A segunda etapa moderada é um walkthrough porque é conduzida por um moderador, em vez do autor.',
+        'Author leadership characterizes a walkthrough. Technically qualified reviewers seeking consensus under a moderator characterize a technical review.',
+        'A condução pelo autor caracteriza um walkthrough. Revisores tecnicamente qualificados que procuram consenso com um moderador caracterizam uma revisão técnica.',
+      ],
+      [
+        'A technical review fits the second step with qualified reviewers, moderation and a consensus objective.',
+        'Uma revisão técnica adequa-se à segunda etapa, com revisores qualificados, moderação e um objetivo de consenso.',
+        'A technical review is led by a moderator and performed by technically qualified reviewers; gaining consensus is one of its objectives.',
+        'Uma revisão técnica é conduzida por um moderador e realizada por revisores tecnicamente qualificados; obter consenso é um dos seus objetivos.',
+      ],
+      [
+        'To pursue consensus in the second step, a technical review must use the full inspection process and collect its improvement metrics.',
+        'Para procurar consenso na segunda etapa, uma revisão técnica tem de seguir todo o processo de inspeção e recolher as suas métricas de melhoria.',
+        'A technical review can seek consensus without becoming an inspection. The full generic process and required improvement metrics characterize inspection, not every technical review.',
+        'Uma revisão técnica pode procurar consenso sem se tornar uma inspeção. O processo genérico completo e as métricas de melhoria exigidas caracterizam a inspeção, não todas as revisões técnicas.',
+      ],
+    ],
+    ['o2', 'o4'],
+    [
+      'The first purpose matches an author-led walkthrough; the second matches a moderated technical review for qualified peers seeking consensus. Inspection role restrictions and formality must not be transferred to other types.',
+      'A primeira finalidade corresponde a um walkthrough conduzido pelo autor; a segunda corresponde a uma revisão técnica moderada, com pares qualificados a procurar consenso. As restrições de papéis e formalidade da inspeção não devem ser transferidas para outros tipos.',
+    ],
+  ),
+  original(
+    84,
+    'FL-2.2.2',
+    'K2',
+    'Functional and non-functional testing',
+    '2.2.2',
+    [29, 30],
+    [
+      'For a warehouse service, requirements specify the stock quantity returned for a valid barcode and a 95th-percentile response latency of at most 300 ms with 200 concurrent users. Tests use API calls derived from these requirements, not code structure. Select TWO correct classifications.',
+      'Para um serviço de armazém, os requisitos especificam a quantidade em stock devolvida para um código de barras válido e uma latência de resposta no percentil 95 de, no máximo, 300 ms com 200 utilizadores concorrentes. Os testes usam chamadas à API derivadas destes requisitos, não da estrutura do código. Selecione DUAS classificações corretas.',
+    ],
+    [
+      [
+        'Checking the returned stock quantity targets functional correctness.',
+        'Verificar a quantidade em stock devolvida visa a correção funcional.',
+        'The assertion checks what the service does: returning the specified stock value for the input.',
+        'A asserção verifica o que o serviço faz: devolver o valor de stock especificado para a entrada.',
+      ],
+      [
+        'Checking latency is functional testing because it executes the same stock query.',
+        'Verificar a latência é teste funcional porque executa a mesma consulta de stock.',
+        'A non-functional test can reuse a functional operation while assessing a performance constraint rather than its functional output.',
+        'Um teste não funcional pode reutilizar uma operação funcional enquanto avalia uma restrição de desempenho, em vez do resultado funcional.',
+      ],
+      [
+        'The concurrent users make the test level system integration, irrespective of the systems involved.',
+        'Os utilizadores concorrentes tornam o nível de teste integração de sistemas, independentemente dos sistemas envolvidos.',
+        'Concurrency is a load characteristic, not evidence of interfaces with external systems. Test level depends on the object and scope.',
+        'A concorrência é uma característica de carga, não evidência de interfaces com sistemas externos. O nível de teste depende do objeto e do âmbito.',
+      ],
+      [
+        'Checking the latency limit targets the non-functional characteristic performance efficiency.',
+        'Verificar o limite de latência visa a característica não funcional eficiência de desempenho.',
+        'The time constraint describes how well the service performs its function. It is a non-functional quality constraint.',
+        'A restrição temporal descreve quão bem o serviço realiza a função. É uma restrição de qualidade não funcional.',
+      ],
+      [
+        'Using an API makes both tests white-box, even when their basis is the requirements.',
+        'Usar uma API torna ambos os testes de caixa-branca, mesmo quando a sua base são os requisitos.',
+        'The derivation basis, not the interface used to execute a test, distinguishes specification-based from structure-based testing.',
+        'A base de derivação, e não a interface usada para executar um teste, distingue testes baseados na especificação de testes baseados na estrutura.',
+      ],
+    ],
+    ['o1', 'o4'],
+    [
+      'The output assertion is functional; the latency assertion is non-functional. They can exercise the same operation. API access and concurrency do not by themselves determine a white-box basis or a system-integration test level.',
+      'A asserção sobre o resultado é funcional; a asserção sobre a latência é não funcional. Ambas podem exercitar a mesma operação. O acesso pela API e a concorrência, por si só, não determinam uma base de caixa-branca nem o nível de integração de sistemas.',
+    ],
+  ),
+  original(
+    85,
+    'FL-5.2.4',
+    'K2',
+    'Product risk control',
+    '5.2.3–5.2.4',
+    [52, 53],
+    [
+      'A smart-meter project has completed initial identification and assessment of billing risks; the register already contains likelihood and impact ratings. Select TWO proposed actions that perform product risk control rather than repeat that initial analysis.',
+      'Um projeto de contadores inteligentes concluiu a identificação e avaliação iniciais dos riscos de faturação; o registo já contém classificações de probabilidade e impacto. Selecione DUAS ações propostas que realizam controlo do risco de produto, em vez de repetir essa análise inicial.',
+    ],
+    [
+      [
+        'List potential billing-risk events before evaluating their significance.',
+        'Listar potenciais eventos de risco de faturação antes de avaliar a sua importância.',
+        'Creating the initial risk list is risk identification, part of risk analysis, not execution or monitoring of a response.',
+        'Criar a lista inicial de riscos é identificação do risco, parte da análise, não execução nem monitorização de uma resposta.',
+      ],
+      [
+        'Execute clock-change tests selected to mitigate the assessed billing risk.',
+        'Executar testes de mudança da hora selecionados para mitigar o risco de faturação avaliado.',
+        'Executing a planned testing response to reduce an assessed risk is risk mitigation, which is part of product risk control.',
+        'Executar uma resposta de teste planeada para reduzir um risco avaliado é mitigação do risco, que faz parte do controlo do risco de produto.',
+      ],
+      [
+        'Estimate likelihood and impact to rank the billing risks.',
+        'Estimar a probabilidade e o impacto para ordenar os riscos de faturação.',
+        'Initial likelihood and impact assessment belongs to risk analysis. It precedes choosing and implementing a control response.',
+        'A avaliação inicial de probabilidade e impacto pertence à análise do risco. Precede a escolha e implementação de uma resposta de controlo.',
+      ],
+      [
+        'Group the assessed billing risks by quality characteristic before selecting treatments.',
+        'Agrupar os riscos de faturação avaliados por característica de qualidade antes de selecionar tratamentos.',
+        'Categorization in the initial assessment supports risk analysis; it does not itself implement or monitor a treatment.',
+        'A categorização na avaliação inicial apoia a análise do risco; por si só, não implementa nem monitoriza um tratamento.',
+      ],
+      [
+        'Check whether mitigation is effective and revise the response when emerging risks require it.',
+        'Verificar se a mitigação é eficaz e rever a resposta quando os riscos emergentes o exigirem.',
+        'Risk monitoring checks effectiveness, improves information about risk and identifies emerging risks so the response can be adapted.',
+        'A monitorização do risco verifica a eficácia, melhora a informação sobre o risco e identifica riscos emergentes para permitir adaptar a resposta.',
+      ],
+    ],
+    ['o2', 'o5'],
+    [
+      'Product risk control combines mitigation and monitoring. Running the selected clock-change tests implements mitigation; checking effectiveness and adapting the response performs monitoring/control. The other activities describe initial identification or assessment.',
+      'O controlo do risco de produto combina mitigação e monitorização. Executar os testes de mudança da hora selecionados implementa a mitigação; verificar a eficácia e adaptar a resposta realiza monitorização/controlo. As outras atividades descrevem identificação ou avaliação iniciais.',
+    ],
+  ),
+  original(
+    86,
+    'FL-4.2.2',
+    'K3',
+    'Boundary coverage gaps',
+    '4.2.2',
+    [40],
+    [
+      'An integer quota has domain 0–30 inclusive and the four partitions below. Scope is restricted to internal boundaries between adjacent partitions; domain endpoints are not coverage targets. Use 3-value BVA: each internal boundary value and both integer neighbours are coverage items, including both sides of each partition change. Existing tests are 3, 4, 6, 10, 12, 19, 20, 22. Which minimum additional set completes the scoped coverage?',
+      'Uma quota inteira tem domínio 0–30 inclusive e as quatro partições abaixo. O âmbito restringe-se às fronteiras internas entre partições adjacentes; os extremos do domínio não são alvos de cobertura. Usar BVA de 3 valores: cada valor de fronteira interna e ambos os vizinhos inteiros são itens de cobertura, incluindo ambos os lados de cada mudança de partição. Os testes existentes são 3, 4, 6, 10, 12, 19, 20, 22. Que conjunto adicional mínimo completa a cobertura definida?',
+    ],
+    [
+      [
+        '5, 11, 13, 21',
+        '5, 11, 13, 21',
+        'These are precisely the four missing distinct items from the three internal boundary neighbourhoods.',
+        'Estes são precisamente os quatro itens distintos em falta nas vizinhanças das três fronteiras internas.',
+      ],
+      [
+        '5, 11, 21',
+        '5, 11, 21',
+        'This covers the missing 2-value boundary items but omits 13, a neighbour required by 3-value BVA.',
+        'Isto cobre os itens de fronteira de 2 valores em falta, mas omite 13, um vizinho exigido pela BVA de 3 valores.',
+      ],
+      [
+        '0, 5, 21, 30',
+        '0, 5, 21, 30',
+        '0 and 30 are outside the scoped coverage targets. This set still omits the required internal items 11 and 13.',
+        '0 e 30 ficam fora dos alvos de cobertura definidos. Este conjunto continua a omitir os itens internos exigidos 11 e 13.',
+      ],
+      [
+        '5, 11, 13, 20',
+        '5, 11, 13, 20',
+        '20 was already exercised; repeating it does not cover the missing boundary value 21.',
+        '20 já foi exercitado; repeti-lo não cobre o valor de fronteira em falta 21.',
+      ],
+    ],
+    ['o1'],
+    [
+      'Internal boundary pairs are 4/5, 11/12 and 20/21. Their 3-value neighbourhood unions are {3,4,5,6}, {10,11,12,13} and {19,20,21,22}: 12 items. Eight distinct items were exercised. The missing set is {5,11,13,21}; all four are necessary.',
+      'Os pares de fronteira internos são 4/5, 11/12 e 20/21. As uniões das vizinhanças de 3 valores são {3,4,5,6}, {10,11,12,13} e {19,20,21,22}: 12 itens. Foram exercitados oito itens distintos. O conjunto em falta é {5,11,13,21}; os quatro são necessários.',
+    ],
+    {
+      headers: ['Tier / Nível', 'Integer interval / Intervalo inteiro'],
+      rows: [
+        ['L0', '0–4'],
+        ['L1', '5–11'],
+        ['L2', '12–20'],
+        ['L3', '21–30'],
+      ],
+    },
+  ),
+  original(
+    87,
+    'FL-4.2.3',
+    'K3',
+    'Minimized decision-rule coverage',
+    '4.2.3',
+    [41],
+    [
+      'A delivery gateway uses the complete decision table below. S means sender trusted, Q means within quota and R means retry allowed. T/F are true/false and – is irrelevant; each column is a feasible rule. Executed (S,Q,R) cases are (T,T,F), (F,T,F), (T,T,T), (F,F,T), (T,F,T). Measuring coverage by distinct feasible columns, which answer gives the current coverage and one additional case that completes it?',
+      'Um gateway de entrega usa a tabela de decisão completa abaixo. S significa remetente de confiança, Q significa dentro da quota e R significa repetição permitida. T/F são verdadeiro/falso e – é irrelevante; cada coluna é uma regra viável. Os casos (S,Q,R) executados são (T,T,F), (F,T,F), (T,T,T), (F,F,T), (T,F,T). Medindo a cobertura por colunas viáveis distintas, que resposta indica a cobertura atual e um caso adicional que a completa?',
+    ],
+    [
+      [
+        '62.5%; (T,F,F)',
+        '62.5%; (T,F,F)',
+        'Five executed combinations out of eight possible combinations give 62.5%, but the requested criterion counts distinct table columns, not raw combinations.',
+        'Cinco combinações executadas em oito possíveis dão 62.5%, mas o critério solicitado conta colunas distintas da tabela, não combinações individuais.',
+      ],
+      [
+        '75%; (T,F,F)',
+        '75%; (T,F,F)',
+        'R1, R2 and R4 are covered; (T,F,F) exercises the missing R3. Three of four columns means 75%.',
+        'R1, R2 e R4 estão cobertas; (T,F,F) exercita a R3 em falta. Três de quatro colunas correspondem a 75%.',
+      ],
+      [
+        '100%; no additional case',
+        '100%; nenhum caso adicional',
+        'Exercising true and false for each condition does not establish rule coverage. The combination for R3 remains untested.',
+        'Exercitar verdadeiro e falso em cada condição não demonstra cobertura de regras. A combinação de R3 continua por testar.',
+      ],
+      [
+        '75%; (T,F,T)',
+        '75%; (T,F,T)',
+        'The percentage is correct, but (T,F,T) repeats R2 rather than covering R3.',
+        'A percentagem está correta, mas (T,F,T) repete R2 em vez de cobrir R3.',
+      ],
+    ],
+    ['o2'],
+    [
+      'The first and third cases map to R1; the second and fourth map to R4; the fifth maps to R2. Therefore 3/4=75%. R3 requires a trusted sender outside quota with no retry: (T,F,F). The four columns partition all eight input combinations without overlap.',
+      'O primeiro e o terceiro casos correspondem a R1; o segundo e o quarto, a R4; o quinto, a R2. Portanto, 3/4=75%. R3 exige um remetente de confiança fora da quota e sem repetição: (T,F,F). As quatro colunas repartem as oito combinações de entrada sem sobreposição.',
+    ],
+    {
+      headers: ['Condition / action · Condição / ação', 'R1', 'R2', 'R3', 'R4'],
+      rows: [
+        ['S', 'T', 'T', 'T', 'F'],
+        ['Q', 'T', 'F', 'F', '–'],
+        ['R', '–', 'T', 'F', '–'],
+        ['Send / Enviar', 'X', '', '', ''],
+        ['Queue / Colocar em fila', '', 'X', '', ''],
+        ['Reject quota / Rejeitar por quota', '', '', 'X', ''],
+        ['Reject sender / Rejeitar remetente', '', '', '', 'X'],
+      ],
+    },
+  ),
+  original(
+    88,
+    'FL-4.2.4',
+    'K3',
+    'Valid and invalid transition coverage',
+    '4.2.4',
+    [41, 42],
+    [
+      'A lock controller starts each test in Locked. The complete state table gives the next state; INVALID means a rejected event that leaves the state unchanged. A test must stop at its first invalid event and may attempt at most one invalid transition. Existing tests are grant, revoke, revoke and grant, revoke, grant; each starts in Locked. Which pair of additional tests achieves 100% all-transitions coverage of the six state/event pairs?',
+      'Um controlador de bloqueio começa cada teste em Locked. A tabela de estados completa indica o estado seguinte; INVALID significa um evento rejeitado que mantém o estado. Um teste tem de terminar no primeiro evento inválido e pode tentar no máximo uma transição inválida. Os testes existentes são grant, revoke, revoke e grant, revoke, grant; cada um começa em Locked. Que par de testes adicionais atinge 100% de cobertura de todas as transições dos seis pares estado/evento?',
+    ],
+    [
+      [
+        'X: grant; Y: grant, revoke, grant',
+        'X: grant; Y: grant, revoke, grant',
+        'Both cases use valid transitions, which are already covered; neither attempts the two invalid pairs.',
+        'Ambos os casos usam transições válidas, já cobertas; nenhum tenta os dois pares inválidos.',
+      ],
+      [
+        'X: revoke; Y: grant, revoke, revoke',
+        'X: revoke; Y: grant, revoke, revoke',
+        'X covers Locked/revoke, but Y repeats valid transitions and never attempts Open/grant.',
+        'X cobre Locked/revoke, mas Y repete transições válidas e nunca tenta Open/grant.',
+      ],
+      [
+        'X: revoke; Y: grant, grant',
+        'X: revoke; Y: grant, grant',
+        'X attempts Locked/revoke; Y reaches Open then attempts Open/grant. Each test stops at its single invalid event, adding both missing pairs.',
+        'X tenta Locked/revoke; Y chega a Open e depois tenta Open/grant. Cada teste termina no seu único evento inválido, acrescentando ambos os pares em falta.',
+      ],
+      [
+        'X: revoke, grant, grant; Y: grant, revoke',
+        'X: revoke, grant, grant; Y: grant, revoke',
+        'X continues after the first invalid event in Locked, violating the stopping rule and risking masking. The stated test policy does not permit this sequence.',
+        'X continua após o primeiro evento inválido em Locked, violando a regra de paragem e arriscando mascaramento. A política de teste indicada não permite esta sequência.',
+      ],
+    ],
+    ['o3'],
+    [
+      'The existing tests cover Locked/grant, Open/revoke, Suspended/revoke and Suspended/grant: all four valid pairs. The uncovered pairs are Locked/revoke and Open/grant. They require separate tests under the one-invalid-event rule; revoke and grant,grant cover them.',
+      'Os testes existentes cobrem Locked/grant, Open/revoke, Suspended/revoke e Suspended/grant: os quatro pares válidos. Os pares não cobertos são Locked/revoke e Open/grant. Exigem testes separados segundo a regra de um evento inválido; revoke e grant,grant cobrem-nos.',
+    ],
+    {
+      headers: ['State / Estado', 'grant', 'revoke'],
+      rows: [
+        ['Locked', 'Open', 'INVALID'],
+        ['Open', 'INVALID', 'Suspended'],
+        ['Suspended', 'Open', 'Locked'],
+      ],
+    },
+  ),
+  original(
+    89,
+    'FL-5.1.4',
+    'K3',
+    'Effort with selective re-execution',
+    '5.1.4',
+    [49, 50],
+    [
+      'Estimate person-effort, not elapsed duration. Apply (a + 4m + b) / 6 to each table row, in person-hours. Preparation occurs once. Initial executions A and B may overlap using different testers. After both finish, one repeat of B takes 50% of its weighted execution effort; preparation and A are not repeated. A separate fixed setup of 2 person-hours is excluded from all rows and occurs once. What is the total effort including the repeat and setup?',
+      'Estimar esforço em pessoas-hora, não duração decorrida. Aplicar (a + 4m + b) / 6 a cada linha da tabela, em pessoas-hora. A preparação ocorre uma vez. As execuções iniciais A e B podem sobrepor-se usando testadores diferentes. Depois de ambas terminarem, uma repetição de B exige 50% do seu esforço de execução ponderado; a preparação e A não se repetem. Uma configuração fixa separada de 2 pessoas-hora está excluída de todas as linhas e ocorre uma vez. Qual é o esforço total incluindo repetição e configuração?',
+    ],
+    [
+      [
+        '13 person-hours',
+        '13 pessoas-hora',
+        "This can arise by using the longer parallel execution instead of summing both testers' effort. Parallelism reduces possible elapsed duration, not total person-effort.",
+        'Isto pode resultar de usar a execução paralela mais longa em vez de somar o esforço dos dois testadores. O paralelismo reduz a possível duração decorrida, não o esforço total em pessoas-hora.',
+      ],
+      [
+        '15 person-hours',
+        '15 pessoas-hora',
+        'This sums preparation, both initial executions and setup, but omits the repeat of B.',
+        'Isto soma a preparação, ambas as execuções iniciais e a configuração, mas omite a repetição de B.',
+      ],
+      [
+        '18 person-hours',
+        '18 pessoas-hora',
+        'Using an unweighted mean makes A equal 7 instead of 6; it produces 18 after adding the other required work.',
+        'Usar uma média não ponderada torna A igual a 7 em vez de 6; produz 18 após acrescentar o restante trabalho exigido.',
+      ],
+      [
+        '17 person-hours',
+        '17 pessoas-hora',
+        'Weighted preparation=3, A=6 and B=4. Repeat B=2 and fixed setup=2, giving 3+6+4+2+2=17.',
+        'Preparação ponderada=3, A=6 e B=4. A repetição de B=2 e a configuração fixa=2, dando 3+6+4+2+2=17.',
+      ],
+      [
+        '20 person-hours',
+        '20 pessoas-hora',
+        'This adds a repeat worth 50% of both executions, 5, rather than 50% of B alone, 2.',
+        'Isto acrescenta uma repetição de 50% de ambas as execuções, 5, em vez de 50% apenas de B, 2.',
+      ],
+    ],
+    ['o4'],
+    [
+      'Preparation: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Only B repeats: 0.5×4=2. Add the separate setup once: 3+6+4+2+2=17 person-hours. Concurrent execution does not remove effort.',
+      'Preparação: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Só B se repete: 0.5×4=2. Acrescentar a configuração separada uma vez: 3+6+4+2+2=17 pessoas-hora. A execução concorrente não elimina esforço.',
+    ],
+    {
+      headers: ['Activity / Atividade', 'a', 'm', 'b'],
+      rows: [
+        ['Preparation / Preparação', '2', '3', '4'],
+        ['A', '3', '5', '13'],
+        ['B', '2', '4', '6'],
+      ],
+    },
+  ),
+  original(
+    90,
+    'FL-5.5.1',
+    'K3',
+    'Repairing an evidence-based defect report',
+    '5.5',
+    [56, 57],
+    [
+      'Evidence below is from an isolated test with a synthetic transfer. A colleague drafts: QA / inventory-3.8.1; steps: "Confirm transfer"; expected: stock 20, Confirmed; actual: stock 18, Draft, HTTP 409; diagnosis: "database deadlock confirmed"; evidence: none attached. Keep the environment/build fields. Which replacement for the other fields prepares an accurate reproducible report supported by the evidence?',
+      'A evidência abaixo provém de um teste isolado com uma transferência sintética. Um colega redige: QA / inventory-3.8.1; passos: "Confirmar transferência"; esperado: stock 20, Confirmed; obtido: stock 18, Draft, HTTP 409; diagnóstico: "bloqueio mútuo na base de dados confirmado"; evidência: nenhum anexo. Manter os campos de ambiente/versão. Que substituição dos restantes campos prepara um relatório exato e reproduzível sustentado pela evidência?',
+    ],
+    [
+      [
+        'Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm once; expected: 20, Confirmed; actual: 18, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.',
+        'Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 20, Confirmed; obtido: 18, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida.',
+        'This retains the reversed quantities. Starting at 20, a successful transfer of 2 should leave 18; the observed stock remains 20.',
+        'Isto mantém as quantidades invertidas. Partindo de 20, uma transferência bem-sucedida de 2 deve deixar 18; o stock observado mantém-se em 20.',
+      ],
+      [
+        'Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm once; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.',
+        'Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida.',
+        'This restores the preconditions/data/step, derives the expected quantity correctly, preserves actual observations and cites the available evidence without asserting a cause.',
+        'Isto repõe pré-condições/dados/passo, deriva corretamente a quantidade esperada, preserva as observações obtidas e cita a evidência disponível sem afirmar uma causa.',
+      ],
+      [
+        'Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm twice; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.',
+        'Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar duas vezes; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida.',
+        'The observed test pressed Confirm once. Adding a second press changes the reproduction procedure rather than documenting the evidence.',
+        'O teste observado premiu Confirmar uma vez. Acrescentar uma segunda pressão altera o procedimento de reprodução em vez de documentar a evidência.',
+      ],
+      [
+        'Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm once; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; database deadlock confirmed.',
+        'Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; bloqueio mútuo na base de dados confirmado.',
+        'The HTTP error and unchanged stock do not establish a database deadlock. A hypothesis must not be presented as a confirmed cause without supporting evidence.',
+        'O erro HTTP e o stock inalterado não demonstram um bloqueio mútuo na base de dados. Uma hipótese não deve ser apresentada como causa confirmada sem evidência que a suporte.',
+      ],
+    ],
+    ['o2'],
+    [
+      'Keep the verified QA/build fields. Record role stock-clerk, initial SKU-4 stock 20, creation of draft T-91 quantity 2 and one Confirm action. The agreed stock change is 20−2=18 with status Confirmed; the actual observation is stock 20, Draft and HTTP 409. Attach req-b7 and shot-b7; the cause remains unestablished. Selecting a repair applies report preparation rules, but does not replace independently writing a report.',
+      'Manter os campos QA/versão verificados. Registar o papel stock-clerk, SKU-4 com stock inicial 20, criação do rascunho T-91 com quantidade 2 e uma ação Confirmar. A alteração de stock acordada é 20−2=18 com estado Confirmed; a observação obtida é stock 20, Draft e HTTP 409. Anexar req-b7 e shot-b7; a causa continua não estabelecida. Selecionar uma correção aplica regras de preparação de relatórios, mas não substitui escrever um relatório de forma autónoma.',
+    ],
+    {
+      headers: [
+        'Evidence / Evidência',
+        'Observed or agreed data / Dados observados ou acordados',
+      ],
+      rows: [
+        ['Environment/build / Ambiente/versão', 'QA / inventory-3.8.1'],
+        [
+          'Precondition / Pré-condição',
+          'stock-clerk; SKU-4 stock 20; no T-91 / T-91 inexistente',
+        ],
+        [
+          'Input/action / Entrada/ação',
+          'create draft T-91, SKU-4, quantity 2; Confirm once / criar rascunho T-91, SKU-4, quantidade 2; Confirmar uma vez',
+        ],
+        [
+          'Agreed / Acordado',
+          'reduce stock by quantity and set Confirmed / reduzir stock pela quantidade e definir Confirmed',
+        ],
+        ['Actual / Obtido', 'stock 20; Draft; HTTP 409'],
+        [
+          'Available / Disponível',
+          'req-b7: one POST, HTTP 409 / um POST, HTTP 409; shot-b7: not confirmed / não confirmado',
+        ],
+      ],
+    },
+  ),
+];

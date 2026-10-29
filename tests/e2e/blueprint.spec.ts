@@ -19,12 +19,23 @@ test('UI starts a structurally aligned independent simulation and safely restore
     }),
   ).toBeVisible();
   await expect(
-    page.getByText('82 questões originais', { exact: false }),
+    page.getByText('90 questões originais', { exact: false }),
   ).toBeVisible();
   await page.getByLabel('Duração', { exact: true }).selectOption('75');
   await page
     .getByRole('button', { name: 'Iniciar simulação', exact: true })
     .click();
+  // Origin Web Lock persistence is asynchronous. Wait for the actual saved
+  // examination, not a fixed delay or just the rendered question controls.
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          JSON.parse(localStorage.getItem('testlearn.v1') ?? 'null')?.active
+            ?.questionIds.length,
+      ),
+    )
+    .toBe(40);
   const state = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
@@ -166,29 +177,29 @@ test('the audited previous revision resumes unchanged and is not relabelled as a
   expect(stored.questionIds).toEqual(attempt.questionIds);
 });
 
-test('topic practice can include all 82 questions and restore a question beyond the exam limit', async ({
+test('topic practice can include all 90 questions and restore a question beyond the exam limit', async ({
   page,
 }) => {
   await page.clock.setFixedTime(new Date(now));
   await page.goto('/');
   await page.getByRole('button', { name: 'Praticar', exact: true }).click();
-  await page.getByLabel('Número de questões', { exact: true }).fill('82');
+  await page.getByLabel('Número de questões', { exact: true }).fill('90');
   await page
     .getByRole('button', { name: 'Iniciar prática', exact: true })
     .click();
-  await expect(page.getByText('Questão 1 / 82', { exact: true })).toBeVisible();
+  await expect(page.getByText('Questão 1 / 90', { exact: true })).toBeVisible();
   await page
-    .getByRole('button', { name: 'Questão 82, sem resposta', exact: true })
+    .getByRole('button', { name: 'Questão 90, sem resposta', exact: true })
     .click();
   await page.reload();
   await expect(
-    page.getByText('Questão 82 / 82', { exact: true }),
+    page.getByText('Questão 90 / 90', { exact: true }),
   ).toBeVisible();
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.questionIds).toHaveLength(82);
-  expect(saved.index).toBe(81);
+  expect(saved.questionIds).toHaveLength(90);
+  expect(saved.index).toBe(89);
   expect(saved.deadline).toBeNull();
   expect(saved.mode).toBe('practice');
 });

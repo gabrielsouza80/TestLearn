@@ -1,7 +1,8 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { questions } from '../../src/data/questions';
+// Pin the Phase 5B content contract to its immutable published revision.
+import { qualityArchivedQuestions as questions } from '../fixtures/banks';
 import {
   variabilityArchivedQuestions as frozen,
   prepareHistoricalBanks,
@@ -82,7 +83,7 @@ describe('phase 5B controlled academic maintenance', () => {
     }
     expect(questions.every((q) => q.options.length === 4)).toBe(true);
     expect(validateBank(questions)).toEqual([]);
-    expect(CONTENT_REVISION).toBe('2026-10-27.7');
+    expect(CONTENT_REVISION).toBe('2026-10-27.9');
     expect(VARIABILITY_CONTENT_REVISION).toBe('2026-10-27.6');
     expect(isBlueprintRevision(VARIABILITY_CONTENT_REVISION)).toBe(true);
   });

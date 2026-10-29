@@ -6,6 +6,8 @@ import {
   COVERAGE_CONTENT_REVISION,
   BILINGUAL_CONTENT_REVISION,
   VARIABILITY_CONTENT_REVISION,
+  QUALITY_CONTENT_REVISION,
+  TERMINOLOGY_CONTENT_REVISION,
   isBlueprintRevision,
 } from './domain/revision';
 import { distinctViewed, repeatedViewed } from './domain/progress';
@@ -560,7 +562,13 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
                           : displayedSession.contentRevision ===
                               VARIABILITY_CONTENT_REVISION
                             ? 'Esta tentativa usa a revisão .6, anterior à revisão de distratores. O texto, as alternativas e a classificação originais foram preservados; o alinhamento estrutural mantém-se.'
-                            : 'Esta tentativa usa a revisão anterior ao gerador alinhado ao blueprint. O conteúdo, a distribuição e a classificação originais foram preservados; não se aplica a indicação de estrutura alinhada.',
+                            : displayedSession.contentRevision ===
+                                QUALITY_CONTENT_REVISION
+                              ? 'Esta tentativa usa a revisão .7, anterior às correções terminológicas. O texto e a classificação originais foram preservados; o alinhamento estrutural mantém-se.'
+                              : displayedSession.contentRevision ===
+                                  TERMINOLOGY_CONTENT_REVISION
+                                ? 'Esta tentativa usa o banco de 82 perguntas da revisão .8, anterior à expansão avançada. O texto, as alternativas e a classificação originais foram preservados; o alinhamento estrutural mantém-se.'
+                                : 'Esta tentativa usa a revisão anterior ao gerador alinhado ao blueprint. O conteúdo, a distribuição e a classificação originais foram preservados; não se aplica a indicação de estrutura alinhada.',
                   displayedSession.contentRevision === LEGACY_CONTENT_REVISION
                     ? 'This attempt uses the pre-audit bank, which contains known issues. Its original text and scoring were preserved; see the academic audit in the documentation.'
                     : displayedSession.contentRevision ===
@@ -575,7 +583,13 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
                           : displayedSession.contentRevision ===
                               VARIABILITY_CONTENT_REVISION
                             ? 'This attempt uses revision .6, before the distractor review. Its original text, options and scoring were preserved; structural alignment remains valid.'
-                            : 'This attempt uses the revision before blueprint-aligned generation. Its original content, distribution and scoring were preserved; it is not labelled structurally aligned.',
+                            : displayedSession.contentRevision ===
+                                QUALITY_CONTENT_REVISION
+                              ? 'This attempt uses revision .7, before the terminology corrections. Its original text and scoring were preserved; structural alignment remains valid.'
+                              : displayedSession.contentRevision ===
+                                  TERMINOLOGY_CONTENT_REVISION
+                                ? 'This attempt uses the 82-question bank from revision .8, before the advanced expansion. Its original text, options and scoring were preserved; structural alignment remains valid.'
+                                : 'This attempt uses the revision before blueprint-aligned generation. Its original content, distribution and scoring were preserved; it is not labelled structurally aligned.',
                 )}
               </p>
             )}

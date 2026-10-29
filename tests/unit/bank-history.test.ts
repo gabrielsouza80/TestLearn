@@ -13,6 +13,8 @@ import {
   coverageArchivedQuestions,
   bilingualArchivedQuestions,
   variabilityArchivedQuestions,
+  qualityArchivedQuestions,
+  terminologyArchivedQuestions,
 } from '../fixtures/banks';
 const banks = {
   '2026-10-27.1': legacyQuestions,
@@ -21,6 +23,8 @@ const banks = {
   '2026-10-27.4': coverageArchivedQuestions,
   '2026-10-27.5': bilingualArchivedQuestions,
   '2026-10-27.6': variabilityArchivedQuestions,
+  '2026-10-27.7': qualityArchivedQuestions,
+  '2026-10-27.8': terminologyArchivedQuestions,
 };
 function fixtures() {
   return {
@@ -30,6 +34,8 @@ function fixtures() {
     '2026-10-27.4': vi.fn(async () => banks['2026-10-27.4']),
     '2026-10-27.5': vi.fn(async () => banks['2026-10-27.5']),
     '2026-10-27.6': vi.fn(async () => banks['2026-10-27.6']),
+    '2026-10-27.7': vi.fn(async () => banks['2026-10-27.7']),
+    '2026-10-27.8': vi.fn(async () => banks['2026-10-27.8']),
   };
 }
 describe('on-demand immutable revisions', () => {
@@ -65,7 +71,7 @@ describe('on-demand immutable revisions', () => {
   it('denies unknown revisions without invoking loaders or substituting current questions', async () => {
     const loaders = fixtures();
     const registry = createQuestionBankRegistry(loaders);
-    for (const revision of ['2026-10-27.8', '__proto__', 'toString', '']) {
+    for (const revision of ['2099-01-01.1', '__proto__', 'toString', '']) {
       expect(() => registry.getQuestionBank(revision, questions)).toThrow(
         'Unsupported',
       );

@@ -144,7 +144,7 @@ describe('official CTFL blueprint v1.19 (structural only)', () => {
     );
   });
   it('keeps all excess-group questions usable for unconstrained topic practice', () => {
-    expect(questions).toHaveLength(82);
+    expect(questions).toHaveLength(90);
     expect(coverageArchivedQuestions.slice(0, 40)).toEqual(auditedQuestions);
     expect(
       createSession(questions.slice(0, 40), 'practice', 0).questionIds,
