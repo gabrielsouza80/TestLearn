@@ -145,20 +145,70 @@ export function load(): { state: State; warning: string | null } {
     };
   }
 }
+function serializeState(state: State): string {
+  const valid = schema.parse({ ...state, history: state.history.slice(-500) });
+  return JSON.stringify({ ...valid, history: valid.history.slice(-500) });
+}
 export function save(state: State): boolean {
   try {
-    const valid = schema.parse({
-      ...state,
-      history: state.history.slice(-500),
-    });
-    localStorage.setItem(
-      'testlearn.v1',
-      JSON.stringify({ ...valid, history: valid.history.slice(-500) }),
-    );
+    localStorage.setItem('testlearn.v1', serializeState(state));
     return true;
   } catch {
     return false;
   }
+}
+
+export function readStoredValue(): string | null | undefined {
+  try {
+    return localStorage.getItem('testlearn.v1');
+  } catch {
+    return undefined;
+  }
+}
+
+/** One page writer, with no merge or migration of another page's progress. */
+export function createStateWriter(initialRaw: string | null | undefined) {
+  let expected = initialRaw;
+  let conflicted = false;
+  let queue: Promise<unknown> = Promise.resolve();
+  const matches = (raw: string | null | undefined) => {
+    if (raw === undefined) return true; // report storage failure on save
+    if (raw !== expected && !(expected === undefined && raw === null))
+      conflicted = true;
+    return !conflicted;
+  };
+  const isCurrent = () => matches(readStoredValue());
+  function write(state: State): 'saved' | 'conflict' | 'unavailable' {
+    const before = readStoredValue();
+    if (before === undefined) return 'unavailable';
+    if (!matches(before)) return 'conflict';
+    try {
+      const raw = serializeState(state);
+      localStorage.setItem('testlearn.v1', raw);
+      expected = raw;
+      return 'saved';
+    } catch {
+      return 'unavailable';
+    }
+  }
+  return {
+    isCurrent,
+    save(state: State): Promise<'saved' | 'conflict' | 'unavailable'> {
+      const task = queue
+        .then(async () => {
+          // Web Locks serializes participating tabs. Older engines still check
+          // the exact stored value and are documented for single-tab use.
+          if (typeof navigator !== 'undefined' && navigator.locks)
+            return navigator.locks.request('testlearn-progress', () =>
+              write(state),
+            );
+          return write(state);
+        })
+        .catch(() => 'unavailable' as const);
+      queue = task;
+      return task;
+    },
+  };
 }
 
 // Parse the envelope before requesting a revision; unsupported versions never import.

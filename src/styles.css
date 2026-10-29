@@ -1003,3 +1003,43 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* Release information follows the existing layout, without an onboarding layer. */
+.beta-badge {
+  font-size: 0.68rem;
+  letter-spacing: normal;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  white-space: nowrap;
+}
+.public-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.public-links button {
+  font-size: 0.8rem;
+  padding: 0.45rem 0.65rem;
+}
+.public-information {
+  max-width: 80ch;
+  overflow-wrap: anywhere;
+}
+footer {
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .brand {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+  }
+  .brand-caption {
+    display: none;
+  }
+  .beta-badge {
+    font-size: 0.6rem;
+  }
+}

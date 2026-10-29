@@ -12,6 +12,7 @@ export default ts.config(
       'tmp/**',
     ],
   },
+  { files: ['scripts/**/*.mjs'], languageOptions: { globals: globals.node } },
   js.configs.recommended,
   ...ts.configs.recommended,
   {

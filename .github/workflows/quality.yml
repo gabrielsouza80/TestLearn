@@ -17,6 +17,8 @@ jobs:
       - run: npm run format:check
       - run: npm test
       - run: npm run build
+      - run: node scripts/check-release.mjs
+      - run: node --test scripts/check-release.test.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4

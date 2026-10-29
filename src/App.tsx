@@ -26,7 +26,17 @@ import {
   type Session,
   type Question,
 } from './domain/engine';
-import { emptyState, load, loadAsync, save } from './storage/store';
+import {
+  emptyState,
+  load,
+  loadAsync,
+  readStoredValue,
+  createStateWriter,
+} from './storage/store';
+import PublicInformation, {
+  publicTitles,
+  type InformationPage,
+} from './PublicInformation';
 import { BankNotReadyError } from './data/bank-history';
 import { chapters, label, type Language, type Localized } from './i18n';
 import './styles.css';
@@ -37,7 +47,13 @@ import {
 } from './domain/blueprint';
 
 type Page =
-  'dashboard' | 'practice' | 'session' | 'history' | 'english' | 'result';
+  | 'dashboard'
+  | 'practice'
+  | 'session'
+  | 'history'
+  | 'english'
+  | 'result'
+  | InformationPage;
 function Text({ value, language }: { value: Localized; language: Language }) {
   return language === 'both' ? (
     <>
@@ -58,13 +74,20 @@ function Text({ value, language }: { value: Localized; language: Language }) {
 function QuestionTable({
   table,
   language,
+  questionId,
 }: {
+  questionId: string;
   table: Question['table'];
   language: Language;
 }) {
   if (!table) return null;
   return (
-    <div className="table-scroll">
+    <div
+      className="table-scroll"
+      role="region"
+      tabIndex={0}
+      aria-label={`${questionId}: ${label(language, 'Dados da tabela; deslocação horizontal se necessária', 'Table data; scroll horizontally if needed')}`}
+    >
       <table>
         <caption>
           {label(language, 'Dados da questão', 'Question data')}
@@ -100,12 +123,17 @@ function QuestionTable({
 
 export default function App() {
   const [restoration, setRestoration] = useState<
-    | { status: 'ready'; initial: ReturnType<typeof load> }
+    | {
+        status: 'ready';
+        initial: ReturnType<typeof load>;
+        initialRaw: string | null | undefined;
+      }
     | { status: 'loading' }
     | { status: 'error' }
   >(() => {
     try {
-      return { status: 'ready', initial: load() };
+      const initialRaw = readStoredValue();
+      return { status: 'ready', initial: load(), initialRaw };
     } catch (error) {
       if (error instanceof BankNotReadyError) return { status: 'loading' };
       return { status: 'error' };
@@ -115,9 +143,11 @@ export default function App() {
   useEffect(() => {
     if (!needsRestore) return;
     let cancelled = false;
+    const initialRaw = readStoredValue();
     void loadAsync()
       .then((initial) => {
-        if (!cancelled) setRestoration({ status: 'ready', initial });
+        if (!cancelled)
+          setRestoration({ status: 'ready', initial, initialRaw });
       })
       .catch(() => {
         if (!cancelled) setRestoration({ status: 'error' });
@@ -127,7 +157,12 @@ export default function App() {
     };
   }, [needsRestore]);
   if (restoration.status === 'ready')
-    return <LearningApp initial={restoration.initial} />;
+    return (
+      <LearningApp
+        initial={restoration.initial}
+        initialRaw={restoration.initialRaw}
+      />
+    );
   return (
     <main>
       <h1>TestLearn</h1>
@@ -152,7 +187,15 @@ export default function App() {
   );
 }
 
-function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
+function LearningApp({
+  initial,
+  initialRaw,
+}: {
+  initial: ReturnType<typeof load>;
+  initialRaw: string | null | undefined;
+}) {
+  const [writer] = useState(() => createStateWriter(initialRaw));
+  const [storageConflict, setStorageConflict] = useState(false);
   const [state, setState] = useState(initial.state);
   const [warning, setWarning] = useState(initial.warning);
   const [language, setLanguage] = useState<Language>('pt');
@@ -179,20 +222,33 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
     document.documentElement.lang = language === 'en' ? 'en' : 'pt-PT';
   }, [language]);
   useEffect(() => {
-    if (state !== initial.state) {
-      const persisted = save(state);
-      const timer = window.setTimeout(
-        () =>
-          setWarning(
-            persisted
-              ? null
-              : 'Não foi possível guardar neste dispositivo. / Unable to save on this device.',
-          ),
-        0,
-      );
-      return () => clearTimeout(timer);
-    }
-  }, [state, initial.state]);
+    if (state === initial.state) return;
+    let cancelled = false;
+    void writer.save(state).then((status) => {
+      if (cancelled) return;
+      if (status === 'conflict') setStorageConflict(true);
+      else
+        setWarning(
+          status === 'saved'
+            ? null
+            : 'Não foi possível guardar neste dispositivo. / Unable to save on this device.',
+        );
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [state, initial.state, writer]);
+  useEffect(() => {
+    const check = (event: StorageEvent) => {
+      if (
+        (event.key === 'testlearn.v1' || event.key === null) &&
+        !writer.isCurrent()
+      )
+        setStorageConflict(true);
+    };
+    window.addEventListener('storage', check);
+    return () => window.removeEventListener('storage', check);
+  }, [writer]);
 
   useEffect(() => {
     heading.current?.focus();
@@ -391,17 +447,19 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
     .filter((item) => item.attempts)
     .sort((a, b) => a.correct / a.attempts - b.correct / b.attempts);
   const title =
-    page === 'dashboard'
-      ? t('O seu espaço de aprendizagem', 'Your learning workspace')
-      : page === 'practice'
-        ? t('Praticar com intenção', 'Practice with purpose')
-        : page === 'history'
-          ? t('O seu percurso', 'Your learning history')
-          : page === 'english'
-            ? t('Inglês para trabalhar em QA', 'English for working in QA')
-            : page === 'result'
-              ? t('Resultados e revisão', 'Results and review')
-              : t('Uma questão de cada vez', 'One question at a time');
+    page in publicTitles
+      ? publicTitles[page as InformationPage][language === 'en' ? 'en' : 'pt']
+      : page === 'dashboard'
+        ? t('O seu espaço de aprendizagem', 'Your learning workspace')
+        : page === 'practice'
+          ? t('Praticar com intenção', 'Practice with purpose')
+          : page === 'history'
+            ? t('O seu percurso', 'Your learning history')
+            : page === 'english'
+              ? t('Inglês para trabalhar em QA', 'English for working in QA')
+              : page === 'result'
+                ? t('Resultados e revisão', 'Results and review')
+                : t('Uma questão de cada vez', 'One question at a time');
   function feedback(q: (typeof questions)[number], ids: string[]) {
     return (
       <section
@@ -442,6 +500,23 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
       </section>
     );
   }
+  if (storageConflict)
+    return (
+      <main>
+        <h1>TestLearn — Public Beta</h1>
+        <div role="alert">
+          <p>
+            {t(
+              'O progresso foi alterado noutro separador. Esta página parou de guardar para preservar esses dados. Alterações ainda não guardadas nesta página não serão recuperadas ao recarregar. Use apenas um separador.',
+              'Progress changed in another tab. This page stopped saving to preserve that data. Unsaved changes on this page will not be recovered after reloading. Use one tab at a time.',
+            )}
+          </p>
+          <button onClick={() => window.location.reload()}>
+            {t('Recarregar o progresso guardado', 'Reload saved progress')}
+          </button>
+        </div>
+      </main>
+    );
   return (
     <div className="app">
       <a className="skip" href="#main">
@@ -460,6 +535,7 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
             T<span>✓</span>
           </span>
           TestLearn
+          <span className="beta-badge">Public Beta</span>
           <span className="brand-caption">LEARN. PRACTICE. IMPROVE.</span>
         </a>
         <label className="language">
@@ -480,7 +556,7 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
           className="sidebar"
           aria-label={t('Navegação principal', 'Main navigation')}
         >
-          <span className="nav-label">CTFL 4.0</span>
+          <span className="nav-label">CTFL 4.0.1</span>
           {(['dashboard', 'practice', 'history', 'english'] as const).map(
             (item, index) => (
               <button
@@ -540,8 +616,8 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
           )}
           <p className="draft-note">
             {t(
-              'Material independente e provisório. Questões e traduções revistas por IA; aprovação humana pendente. Não é um exame oficial nem uma previsão de certificação.',
-              'Independent provisional material. Questions and translations reviewed by AI; human approval pending. This is not an official examination or a certification prediction.',
+              'Material independente e provisório. Questões e traduções revistas por IA; aprovação humana pendente. Sem calibração psicométrica. Não é um exame oficial nem uma previsão de certificação.',
+              'Independent provisional material. Questions and translations reviewed by AI; human approval pending. No psychometric calibration. This is not an official examination or a certification prediction.',
             )}
           </p>
           {displayedSession &&
@@ -954,7 +1030,11 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
                         )
                     : t('Prática orientada', 'Guided practice')}
                 </span>
-                <strong>
+                <strong
+                  role="timer"
+                  aria-live="off"
+                  aria-label={t('Tempo restante', 'Time remaining')}
+                >
                   {active.deadline
                     ? `${Math.floor(Math.max(0, remaining(active, now)) / 60000)
                         .toString()
@@ -966,6 +1046,21 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
                     : t('Sem limite de tempo', 'Untimed')}
                 </strong>
               </div>
+              {active.deadline &&
+                remaining(active, now) > 0 &&
+                remaining(active, now) <= 300000 && (
+                  <p role="status" className="notice">
+                    {remaining(active, now) <= 60000
+                      ? t(
+                          'Resta um minuto ou menos. O exame termina automaticamente no prazo.',
+                          'One minute or less remains. The exam finishes automatically at the deadline.',
+                        )
+                      : t(
+                          'Restam cinco minutos ou menos.',
+                          'Five minutes or less remain.',
+                        )}
+                  </p>
+                )}
               <div className="exam-layout">
                 <section className="question panel">
                   <div className="question-meta">
@@ -980,7 +1075,11 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
                   <h2>
                     <Text value={current.text} language={language} />
                   </h2>
-                  <QuestionTable table={current.table} language={language} />
+                  <QuestionTable
+                    questionId={current.id}
+                    table={current.table}
+                    language={language}
+                  />
                   <fieldset
                     className="options"
                     disabled={checked.includes(current.id)}
@@ -1241,7 +1340,11 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
                     <h3>
                       <Text value={q.text} language={language} />
                     </h3>
-                    <QuestionTable table={q.table} language={language} />
+                    <QuestionTable
+                      questionId={q.id}
+                      table={q.table}
+                      language={language}
+                    />
                     <p>
                       <strong>{t('A sua resposta: ', 'Your answer: ')}</strong>
                       {(viewed.answers[q.id] ?? []).length
@@ -1371,10 +1474,30 @@ function LearningApp({ initial }: { initial: ReturnType<typeof load> }) {
               </section>
             </>
           )}
+          {page in publicTitles && (
+            <PublicInformation
+              page={page as InformationPage}
+              language={language}
+            />
+          )}
           {page === 'english' && <EnglishLearning language={language} />}
         </main>
       </div>
       <footer>
+        <nav
+          className="public-links"
+          aria-label={t('Informação pública', 'Public information')}
+        >
+          {(Object.keys(publicTitles) as InformationPage[]).map((item) => (
+            <button
+              key={item}
+              onClick={() => setPage(item)}
+              aria-current={page === item ? 'page' : undefined}
+            >
+              {publicTitles[item][language === 'en' ? 'en' : 'pt']}
+            </button>
+          ))}
+        </nav>
         TestLearn ·{' '}
         {t(
           'Aprendizagem independente. Sem afiliação ou aprovação do ISTQB®.',
