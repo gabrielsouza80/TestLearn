@@ -53,7 +53,9 @@ test('anonymous beta has bilingual public information, strict headers, no tracki
   await expect(page.locator('main')).toContainText(
     'Only the exact set earns one point',
   );
-  await expect(page.locator('main')).toContainText('Support and privacy contact: testlearn808005@gmail.com');
+  await expect(page.locator('main')).toContainText(
+    'Support and privacy contact: testlearn808005@gmail.com',
+  );
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   expect(
     requests.every((url) => new URL(url).origin === new URL(page.url()).origin),
