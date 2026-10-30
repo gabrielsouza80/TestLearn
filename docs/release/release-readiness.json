@@ -1,7 +1,7 @@
 {
   "date": "2026-10-30",
   "contentRevision": "2026-10-27.9",
-  "gitHEAD": "3b206f7ac9d7b45a9ddd01c9c0bfc2151a9b0196",
+  "gitHEAD": "e015ddb5982aca74c2e9ae12f723f9fd438caaaa",
   "workingTreeContainsPreservedUncommittedWork": false,
   "TECHNICAL_RELEASE_CANDIDATE_READY": "PASS",
   "PUBLICATION_AUTHORIZED": "NO",
@@ -10,9 +10,9 @@
   "gates": {
     "functionalCorrectness": {
       "status": "PASS",
-      "tests": "223 unit/integration + 352 E2E + 8 artifact guard",
+      "tests": "226 unit/integration + 364 E2E + 8 artifact guard",
       "command": "npm run test:e2e -- --workers=1 --shard=N/4 --reporter=list,json (N=1..4)",
-      "scope": "Four sequential shards; all 352 unique IDs matched against the full discovery list, no missing/skipped/duplicate cases or changed assertions"
+      "scope": "Full discovery list matched to all 364 unique passing cases, no omissions/skips/retries/flaky/duplicate cases; final source fixed before all four clean shards"
     },
     "contentIntegrity": {
       "status": "PASS",
@@ -44,7 +44,7 @@
       "reflowAndText200Percent": "PASS",
       "fullWCAG22AA": "NOT_TESTED",
       "screenReaderAndActualZoom": "NOT_TESTED",
-      "scope": "New dashboard, progress and practice: root font 200%, 1280/640/320 reflow and axe; four-project keyboard/mobile regressions",
+      "scope": "Nine isolated axe scans plus full four-project regression; semantic statuses, review focus/filter behavior, multiple-answer explanation visibility, 320px review with text 200%, existing dashboard/progress/practice reflow",
       "actualZoomProbe": "Not rerun in 9.4; previous Control+= did not establish native browser zoom"
     },
     "browserCompatibility": {
@@ -61,17 +61,20 @@
     },
     "performance": {
       "status": "PASS",
-      "scope": "Production asset inventory only; runtime benchmark not rerun for the writer correction",
-      "baselinePhase": "9.4",
-      "baselineJS": 695149,
-      "currentJS": 697181,
-      "baselineGzip": 210344,
-      "currentGzip": 210969,
-      "deltaJS": 2032,
-      "deltaGzip": 625,
-      "totalJS": 1898988,
+      "scope": "Production artifact guard and equivalent saved 40-question review at 1280x900 in sequential production builds; five warm opens per version",
+      "baselinePhase": "Writer correction, b228c29",
+      "baselineJS": 697181,
+      "currentJS": 702001,
+      "baselineGzip": 210969,
+      "currentGzip": 212404,
+      "deltaJS": 4820,
+      "deltaGzip": 1435,
+      "totalJS": 1903808,
+      "cssBytes": 31083,
+      "cssGzip": 6631,
       "zeroEagerHistoricalArchives": true,
-      "runtimeBenchmark": "NOT_TESTED"
+      "runtimeBenchmark": "LOCAL_COMPARISON_ONLY",
+      "evidence": "tmp/visual-polish/performance-accessibility.json"
     },
     "deploymentReadiness": {
       "status": "OWNER_ACTION_REQUIRED",
@@ -106,11 +109,12 @@
     "e2e": 0,
     "artifact": 0,
     "artifactTests": 0,
-    "unitIntegration": 223,
-    "unitFiles": 24,
-    "playwright": 352,
+    "diffcheck": 0,
+    "unitIntegration": 226,
+    "unitFiles": 25,
+    "playwright": 364,
     "projects": 4,
-    "casesPerProject": 88,
+    "casesPerProject": 91,
     "workers": 1,
     "shards": 4,
     "configuredWorkersUnchanged": 2,
@@ -118,10 +122,7 @@
     "skipped": 0,
     "artifactGuardTests": 8,
     "blueprintSeeds": 1000,
-    "unitDurationSeconds": 26.66,
-    "e2eDuration": "15.1m sequential shards",
-    "diffcheck": 0,
-    "additionalHistoricalReadinessRetest": 16
+    "e2eDurationMs": 992542.591
   },
   "P0": [
     {
@@ -160,20 +161,20 @@
       {
         "path": ".vite/manifest.json",
         "bytes": 2551,
-        "gzip": 395,
-        "sha256": "046de6eb81af350848ef99909a5cfbe66e2bb751a4593b3555e0f876bd4ea20b"
+        "gzip": 394,
+        "sha256": "abfb0415e31716a242f54071a9b4374a1a5a05a2da68f1a13386c3325f401894"
       },
       {
-        "path": "assets/index-Doy_IUsz.js",
-        "bytes": 697181,
-        "gzip": 210969,
-        "sha256": "eefb2cc3ce4e3eda903af0e95b49b6b1dbce3ec977fe734982b3c30e6897b21d"
+        "path": "assets/index-CFv3SkJ7.css",
+        "bytes": 31083,
+        "gzip": 6631,
+        "sha256": "f714c6e9e72199b3a182698c8c66806acca61630ff4c79945c18a2915e6f8951"
       },
       {
-        "path": "assets/index-z6zkAqPB.css",
-        "bytes": 17545,
-        "gzip": 4387,
-        "sha256": "7bb3e97b2c913444da59d25b3b3823b6b584cb120091e9f2dc9a3b47310e42ec"
+        "path": "assets/index-CowTQ3-G.js",
+        "bytes": 702001,
+        "gzip": 212404,
+        "sha256": "b73e8ac133bf165b8c8b8f7300eb0aa34aa40d3385d47708657f04a1a77ab20d"
       },
       {
         "path": "assets/questions-2026-10-27.1-W7yLFLHs.js",
@@ -232,8 +233,8 @@
       {
         "path": "index.html",
         "bytes": 686,
-        "gzip": 418,
-        "sha256": "669af6b99d08307ee978c359ae875887bcc8a5c4a989f0b7d6f45de78afe0f3c"
+        "gzip": 417,
+        "sha256": "7ef5dd6f8b7703ce4ab25cbf735fe88c111b32b6f75ead931eff3f891067c3d8"
       },
       {
         "path": "robots.txt",
@@ -243,20 +244,20 @@
       }
     ],
     "initialJS": {
-      "path": "assets/index-Doy_IUsz.js",
-      "bytes": 697181,
-      "gzip": 210969,
-      "sha256": "eefb2cc3ce4e3eda903af0e95b49b6b1dbce3ec977fe734982b3c30e6897b21d"
+      "path": "assets/index-CowTQ3-G.js",
+      "bytes": 702001,
+      "gzip": 212404,
+      "sha256": "b73e8ac133bf165b8c8b8f7300eb0aa34aa40d3385d47708657f04a1a77ab20d"
     },
     "css": [
       {
-        "path": "assets/index-z6zkAqPB.css",
-        "bytes": 17545,
-        "gzip": 4387,
-        "sha256": "7bb3e97b2c913444da59d25b3b3823b6b584cb120091e9f2dc9a3b47310e42ec"
+        "path": "assets/index-CFv3SkJ7.css",
+        "bytes": 31083,
+        "gzip": 6631,
+        "sha256": "f714c6e9e72199b3a182698c8c66806acca61630ff4c79945c18a2915e6f8951"
       }
     ],
-    "totalJS": 1898988,
+    "totalJS": 1903808,
     "archiveChunks": 8,
     "privateAssets": 0,
     "sourceMaps": 0
@@ -275,7 +276,8 @@
     "Text-resize probe found header/skip-link/navigation overflow; fixed wrapping/minimum tracks, measured 14.4 to 28.8px at 1280/640/320 without page overflow",
     "First isolated axe script required an explicit browser context; fixed tooling. One later probe pointed at the old measurement bundle; repeated against current dist",
     "Final clean performance removed screenshot/diagnostic overhead from the download timing interval",
-    "Final regression after these corrections passed 194 unit/integration and 268 E2E; earlier 193/264 checkpoint preserved separately"
+    "Final regression after these corrections passed 194 unit/integration and 268 E2E; earlier 193/264 checkpoint preserved separately",
+    "Visual polish: initial Chromium 86/91. Three heading-order failures fixed with contextual semantic levels, one focus-test precondition fixed, one Vite readiness timeout before navigation. Affected 5/5 retest and all 364 final matrix cases passed with zero retries; initial logs retained."
   ],
   "ownerNextActions": [
     "Execute documented manual screen-reader and native 200/400 percent browser zoom checklist against Phase 9.4, recording browser/version and outcomes",
@@ -284,7 +286,7 @@
     "Review the committed source and exact build for hosting; publication still requires separate authorization",
     "PUBLICATION_AUTHORIZED remains NO; no remote action is inferred from local technical PASS"
   ],
-  "scopeEvidence": "tmp/writer-fix/integrity.json",
+  "scopeEvidence": "tmp/visual-polish/integrity.json",
   "buildDistributionRule": "Only validated dist; no repository-root publication",
   "versionControlHandoff": {
     "baselineCommit": "e42f4533398e346b2c156b5063581fd1c27e2d2e",
@@ -574,5 +576,112 @@
     },
     "performanceEvidence": "tmp/phase94/performance.json"
   },
-  "writerCorrectionBaselineCommit": "19089a821e295f72aef47f565819f4825f20bcd4"
+  "writerCorrectionBaselineCommit": "19089a821e295f72aef47f565819f4825f20bcd4",
+  "visualPolish": {
+    "status": "PASS",
+    "report": "final-visual-polish.md",
+    "baselineCommit": "b228c29c58689676f7cfe8dc7662cd9680f07bb3",
+    "academicRevisionUnchanged": "2026-10-27.9",
+    "qa": {
+      "typecheck": 0,
+      "lint": 0,
+      "format": 0,
+      "unit": 0,
+      "build": 0,
+      "e2e": 0,
+      "artifact": 0,
+      "artifactTests": 0,
+      "diffcheck": 0,
+      "unitIntegration": 226,
+      "unitFiles": 25,
+      "playwright": 364,
+      "projects": 4,
+      "casesPerProject": 91,
+      "workers": 1,
+      "shards": 4,
+      "configuredWorkersUnchanged": 2,
+      "localRetries": 0,
+      "skipped": 0,
+      "artifactGuardTests": 8,
+      "blueprintSeeds": 1000,
+      "e2eDurationMs": 992542.591
+    },
+    "integrity": "tmp/visual-polish/integrity.json",
+    "callbackIntegrity": "tmp/visual-polish/callback-integrity.json",
+    "e2eEvidence": "tmp/visual-polish/e2e-clean-summary.json",
+    "visualEvaluation": "PASS, delegated same-provider evaluation; not independent cross-provider or human approval",
+    "contrastEvidence": "tmp/visual-polish/performance-accessibility.json",
+    "beforeAfterReview": [
+      {
+        "label": "before",
+        "domNodes": 2734,
+        "articles": 40,
+        "scrollHeight": 46704,
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "reviewOpenMs": [
+          172.39840000000004, 128.96699999999987, 106.68409999999994,
+          129.13929999999982, 120.45010000000002
+        ],
+        "medianReviewOpenMs": 128.96699999999987
+      },
+      {
+        "label": "after",
+        "domNodes": 292,
+        "articles": 1,
+        "scrollHeight": 2610,
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "reviewOpenMs": [
+          132.71849999999995, 87.00950000000012, 83.30510000000004,
+          76.28380000000016, 75.6845000000003
+        ],
+        "medianReviewOpenMs": 83.30510000000004
+      }
+    ],
+    "academicAndHistoryChanged": false,
+    "sessionMigration": false,
+    "writerMechanismChanged": false,
+    "backupSchemaChanged": false,
+    "humanApproval": "PENDING",
+    "commit": false,
+    "push": false,
+    "deploy": false,
+    "remoteOperations": 0,
+    "remainingP0": "Existing external owner/legal/hosting/publication gates; no new local P0 defect identified",
+    "remainingP1": [],
+    "remainingP2": [
+      "Existing >500kB entry warning and larger CSS",
+      "Manual screen reader, native zoom, physical devices and psychometric/human review remain unvalidated",
+      "Initial isolated Vite fixture readiness timeout before navigation; exact transient cause not established; affected retest and complete final matrix passed without retry or timeout changes"
+    ],
+    "initialRun": {
+      "chromiumPassed": 86,
+      "chromiumFailed": 5,
+      "causes": [
+        "Three axe heading-order failures fixed with contextual h3/h4",
+        "One test focus precondition fixed",
+        "One Vite readiness timeout retained in evidence"
+      ],
+      "affectedRetest": 5,
+      "affectedRetestPassed": 5
+    },
+    "gates": {
+      "PUBLICATION_AUTHORIZED": "NO",
+      "PUBLIC_BETA_READY": "BLOCKED"
+    },
+    "versionControlHandoff": {
+      "authorization": "Owner subsequently requested several commits on main and push to main on 2026-10-30",
+      "implementationCommit": "f38695f628ddaafb23ee8805516a1b9d255a5f8a",
+      "testCommit": "e015ddb5982aca74c2e9ae12f723f9fd438caaaa",
+      "qaEvidence": "Production and test files match the final validation receipt: 226 unit/integration, 364 E2E, 8 artifact guard, 1000 seeds. This handoff updates documentation only.",
+      "scope": "Original visualPolish commit/push/deploy flags describe the completed validation boundary before this later authorization.",
+      "deploymentAuthorization": "NO",
+      "publicationAuthorization": "NO"
+    }
+  }
 }
