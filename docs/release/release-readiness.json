@@ -1,9 +1,9 @@
 {
   "date": "2026-10-30",
   "contentRevision": "2026-10-27.9",
-  "gitHEAD": "e015ddb5982aca74c2e9ae12f723f9fd438caaaa",
-  "workingTreeContainsPreservedUncommittedWork": false,
-  "TECHNICAL_RELEASE_CANDIDATE_READY": "PASS",
+  "gitHEAD": "53d3bf38656e29a2d8f20001904f8132a153a76b",
+  "workingTreeContainsPreservedUncommittedWork": true,
+  "TECHNICAL_RELEASE_CANDIDATE_READY": "BLOCKED_REMOTE_P1",
   "PUBLICATION_AUTHORIZED": "NO",
   "PUBLIC_BETA_READY": "BLOCKED",
   "ACADEMICALLY_VALIDATED_RELEASE": "BLOCKED",
@@ -29,7 +29,7 @@
     },
     "security": {
       "local": "PASS",
-      "remoteHost": "NOT_TESTED",
+      "remoteHost": "CONTAINED_PAUSED_NOT_VALIDATED_PREVIEW",
       "npmAuditVulnerabilities": 0,
       "limitation": "Client keys and scores are not tamper-proof; audit is not a full security certification",
       "npmAuditEvidence": "Inherited Phase 9 npm audit, not rerun in Phase 9.4; dependency set unchanged"
@@ -77,12 +77,16 @@
       "evidence": "tmp/visual-polish/performance-accessibility.json"
     },
     "deploymentReadiness": {
-      "status": "OWNER_ACTION_REQUIRED",
-      "host": "Vercel Hobby intended, no project linked or created",
-      "domain": null,
+      "status": "FAILED_SECURITY_P1",
+      "host": "Vercel Hobby, existing testlearn-lab project",
+      "projectId": "prj_lFdRrkxQt2yqEpfzurOA00WJJX69",
+      "teamId": "team_YNKbyfPSXwYEw0XveEc3TXRp",
+      "requestedEnvironment": "preview",
+      "actualEnvironment": "production",
+      "authentication": "Preview protection enabled but did not cover actual Production deployment",
+      "containment": "VERIFIED_PAUSED",
       "assetRetentionRemote": "NOT_TESTED",
-      "HTTPSRemote": "NOT_TESTED",
-      "local404Retry": "PASS"
+      "rollback": "NOT_TESTED"
     },
     "publicLegalAndContact": {
       "status": "OWNER_ACTION_REQUIRED",
@@ -141,7 +145,15 @@
       "technicalDefect": false
     }
   ],
-  "P1": [],
+  "P1": [
+    {
+      "id": "phase10b-unexpected-production-public-html",
+      "area": "First deployment classified Production despite explicit Preview target; anonymous HTTP200 matched approved app HTML",
+      "status": "CONTAINED_NOT_RESOLVED",
+      "technicalDefect": true,
+      "deploymentId": "dpl_G4CHr8zB5wFwRwBNB4Tkdzw5qYJ8"
+    }
+  ],
   "P2": [
     "Existing >500kB entry warning",
     "Physical devices and full OS/browser matrix untested",
@@ -683,5 +695,73 @@
       "deploymentAuthorization": "NO",
       "publicationAuthorization": "NO"
     }
+  },
+  "phase10b": {
+    "status": "FAILED_SECURITY_P1",
+    "report": "phase10b-first-protected-preview.md",
+    "sourceCommit": "53d3bf38656e29a2d8f20001904f8132a153a76b",
+    "sourceFingerprint": "643f39e8486271f679225c89a7f30c2e94e28d3b7fe8a5b094130deb6602f462",
+    "sourceCleanBeforeDeployment": true,
+    "account": "Testlearn",
+    "teamId": "team_YNKbyfPSXwYEw0XveEc3TXRp",
+    "projectId": "prj_lFdRrkxQt2yqEpfzurOA00WJJX69",
+    "plan": "hobby",
+    "cliVersion": "59.3.0",
+    "prebuilt": true,
+    "requestedTarget": "preview",
+    "actualTarget": "production",
+    "deploymentId": "dpl_G4CHr8zB5wFwRwBNB4Tkdzw5qYJ8",
+    "url": "https://testlearn-n3etp7yxh-testlearn808005-9164.vercel.app",
+    "aliases": [
+      "testlearn-lab.vercel.app",
+      "testlearn-lab-testlearn808005-9164.vercel.app"
+    ],
+    "attempts": 1,
+    "secondDeployment": false,
+    "uploadFileCount": 16,
+    "publicFiles": 14,
+    "payloadSHA256": "30b34e209c37bf79349e6f3f08e086c80ae99c11db8d45896e6e25df7795bd2a",
+    "staticFilesEqualApproved": true,
+    "localQA": {
+      "unit": 226,
+      "unitFiles": 25,
+      "artifactTests": 8,
+      "seeds": 1000,
+      "playwright": 364,
+      "retries": 0,
+      "skipped": 0,
+      "byProject": {
+        "chromium": 91,
+        "firefox": 91,
+        "webkit": 91,
+        "mobile": 91
+      },
+      "durationMs": 1084494.349
+    },
+    "academicAndHistoricalIntegrity": "PASS, unchanged .9, 90 questions, 364 options, 64 LO, 29 groups, archives .1-.9",
+    "anonymousHTML": "FAIL: HTTP200, exact approved index.html SHA256",
+    "remoteFunctionalSmoke": "NOT_EXECUTED_AFTER_P1",
+    "containment": {
+      "status": "VERIFIED_PAUSED",
+      "confirmedByOwner": true,
+      "verifiedAt": "2026-10-30T14:11:11.972Z",
+      "anonymousRequests": 18,
+      "allStatus": 503,
+      "allError": "DEPLOYMENT_PAUSED",
+      "applicationStillPublic": false,
+      "evidence": "tmp/phase10b/containment-verified.json",
+      "releaseBlocking": true
+    },
+    "retention": "NOT_TESTED",
+    "rollback": "NOT_TESTED",
+    "privateReportsOrEnvOrProfilesUploaded": false,
+    "authenticationBypassCreated": false,
+    "paidServicesActivated": false,
+    "humanApproval": "PENDING",
+    "commit": false,
+    "push": false,
+    "kavtrisModified": false,
+    "publicationAuthorized": "NO",
+    "publicBetaReady": "BLOCKED"
   }
 }
