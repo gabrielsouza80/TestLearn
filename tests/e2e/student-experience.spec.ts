@@ -297,6 +297,11 @@ test('unopened questions are blank, repeats remain distinct and one answer canno
       { exact: true },
     ),
   ).toBeVisible();
+  const progressDetails = page.locator('details').filter({
+    has: page.locator('.progress-counts'),
+  });
+  await progressDetails.locator('summary').click();
+  await expect(page.locator('.progress-counts')).toBeVisible();
   await expect(page.locator('.progress-counts')).toContainText('39');
   await expect(page.locator('.study-priorities')).toHaveCount(0);
   await expect(page.locator('.chapter-progress')).toHaveCount(6);

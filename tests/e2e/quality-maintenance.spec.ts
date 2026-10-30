@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { questions } from '../../src/data/questions';
+import {
+  reviewQuestion,
+  revealRationales,
+} from '../fixtures/review-navigation';
 import { variabilityArchivedQuestions as frozen } from '../fixtures/banks';
 import {
   createSession,
@@ -228,20 +232,21 @@ test('.6 exam restores exactly three old options, original fields and scoring, a
   await expect(
     page.getByRole('heading', { name: '1 / 40', exact: true }),
   ).toBeVisible();
+  await reviewQuestion(page, session.index + 1);
   const region = page.getByRole('region', {
     name: `Explicação da questão ${session.index + 1}`,
     exact: true,
   });
-  for (const o of old.options)
-    await expect(region).toContainText(o.explanation.pt);
+  await revealRationales(region, old, 'pt');
   await page.getByLabel('Idioma', { exact: true }).selectOption('en');
-  for (const o of old.options)
-    await expect(
-      page.getByRole('region', {
-        name: `Explanation for question ${session.index + 1}`,
-        exact: true,
-      }),
-    ).toContainText(o.explanation.en);
+  await revealRationales(
+    page.getByRole('region', {
+      name: `Explanation for question ${session.index + 1}`,
+      exact: true,
+    }),
+    old,
+    'en',
+  );
   expect(
     await page.evaluate(
       () => JSON.parse(localStorage.getItem('testlearn.v1')!).history[0],

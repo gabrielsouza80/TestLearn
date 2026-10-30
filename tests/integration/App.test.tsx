@@ -102,6 +102,12 @@ describe('learning workflows', () => {
     expect(
       screen.getByRole('region', { name: 'Explicação da questão 1' }),
     ).toBeVisible();
+    expect(document.querySelectorAll('.review-question')).toHaveLength(1);
+    await user.click(
+      within(
+        screen.getByRole('navigation', { name: 'Navegação da revisão' }),
+      ).getByRole('button', { name: /^Questão 2\b/ }),
+    );
     expect(
       screen.getByRole('region', { name: 'Explicação da questão 2' }),
     ).toBeVisible();

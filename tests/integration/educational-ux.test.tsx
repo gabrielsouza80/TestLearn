@@ -75,7 +75,7 @@ it('reports absent provenance and references honestly instead of substituting cu
     />,
   );
   await user.click(
-    screen.getByText('About this question — origin and reference', {
+    screen.getByText('Question origin and reference', {
       exact: true,
     }),
   );
@@ -113,9 +113,23 @@ it('renders all option identities and statuses, retains original numbering under
   render(<App />);
   await reviewOnlyHistory(user);
   expect(screen.getByRole('heading', { name: '1 / 3' })).toBeVisible();
-  expect(document.querySelectorAll('.review-correct')).toHaveLength(1);
-  expect(document.querySelectorAll('.review-incorrect')).toHaveLength(1);
-  expect(document.querySelectorAll('.review-unanswered')).toHaveLength(1);
+  const navigation = screen.getByRole('navigation', {
+    name: 'Navegação da revisão',
+  });
+  expect(
+    within(navigation).getByRole('button', { name: /^Questão 1\b.*Correta/i }),
+  ).toBeVisible();
+  expect(
+    within(navigation).getByRole('button', {
+      name: /^Questão 2\b.*Incorreta/i,
+    }),
+  ).toBeVisible();
+  expect(
+    within(navigation).getByRole('button', {
+      name: /^Questão 3\b.*Sem resposta/i,
+    }),
+  ).toBeVisible();
+  expect(document.querySelectorAll('.review-question')).toHaveLength(1);
   const first = document.querySelector('[data-question-id="tl-089"]')!;
   expect(
     Array.from(first.querySelectorAll('.option-letter')).map(
@@ -144,7 +158,9 @@ it('renders all option identities and statuses, retains original numbering under
       { exact: true },
     ),
   ).toBeVisible();
-  await user.selectOptions(screen.getByLabelText('Ir para questão'), 'tl-083');
+  await user.click(
+    within(navigation).getByRole('button', { name: /^Questão 2\b/ }),
+  );
   expect(screen.getByRole('heading', { name: bank[1].text.pt })).toHaveFocus();
   await user.selectOptions(screen.getByLabelText('Mostrar'), 'unanswered');
   expect(
@@ -185,7 +201,7 @@ it('keeps question-specific learning objectives and references out of an active 
   render(<App />);
   expect(screen.queryByText(/Conhecer o objetivo/)).not.toBeInTheDocument();
   expect(
-    screen.queryByText('Sobre esta questão — origem e referência', {
+    screen.queryByText('Origem e referência da pergunta', {
       exact: true,
     }),
   ).not.toBeInTheDocument();

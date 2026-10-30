@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { coverageArchivedQuestions } from '../fixtures/banks';
+import { reviewQuestion } from '../fixtures/review-navigation';
 import {
   answer,
   createSession,
@@ -156,6 +157,7 @@ for (const mode of ['exam', 'practice'] as const) {
     await expect(
       page.getByRole('heading', { name: `1 / ${bank.length}`, exact: true }),
     ).toBeVisible();
+    await reviewQuestion(page, bank.indexOf(q) + 1);
     await expect(
       page.getByRole('region', {
         name: `Explanation for question ${bank.indexOf(q) + 1}`,
@@ -172,6 +174,7 @@ for (const mode of ['exam', 'practice'] as const) {
     await expect(
       page.getByRole('heading', { name: `1 / ${bank.length}`, exact: true }),
     ).toBeVisible();
+    await reviewQuestion(page, bank.indexOf(q) + 1);
     await expect(
       page.getByRole('region', {
         name: `Explicação da questão ${bank.indexOf(q) + 1}`,

@@ -1,4 +1,9 @@
 import { test, expect, type Page } from '@playwright/test';
+import {
+  reviewNavigation,
+  reviewNumbers,
+  reviewQuestion,
+} from '../fixtures/review-navigation';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
 import {
@@ -168,9 +173,23 @@ test('five-option letters survive language and reload, and mixed multiple-answer
   await expect(
     page.getByRole('heading', { name: '1 / 3', exact: true }),
   ).toBeVisible();
-  await expect(page.locator('.review-correct')).toHaveCount(1);
-  await expect(page.locator('.review-incorrect')).toHaveCount(1);
-  await expect(page.locator('.review-unanswered')).toHaveCount(1);
+  await expect(reviewNumbers(page)).toHaveCount(3);
+  await expect(
+    reviewNavigation(page).getByRole('button', {
+      name: /^Question 1\b.*Correct/i,
+    }),
+  ).toBeVisible();
+  await expect(
+    reviewNavigation(page).getByRole('button', {
+      name: /^Question 2\b.*Incorrect/i,
+    }),
+  ).toBeVisible();
+  await expect(
+    reviewNavigation(page).getByRole('button', {
+      name: /^Question 3\b.*Unanswered/i,
+    }),
+  ).toBeVisible();
+  await expect(page.locator('.review-question')).toHaveCount(1);
   const card = page.locator('[data-question-id="tl-089"]');
   await expect(card.locator('.review-options .option-letter')).toHaveText([
     'A.',
@@ -184,7 +203,7 @@ test('five-option letters survive language and reload, and mixed multiple-answer
   );
   await expect(card).toContainText('Your answer: B');
   await card
-    .getByText('About this question — origin and reference', { exact: true })
+    .getByText('Question origin and reference', { exact: true })
     .click();
   await expect(card).toContainText(
     'Original TestLearn question — AI-assisted creation and review.',
@@ -216,9 +235,7 @@ test('five-option letters survive language and reload, and mixed multiple-answer
       exact: true,
     }),
   ).toBeVisible();
-  await page
-    .getByLabel('Go to question', { exact: true })
-    .selectOption('tl-083');
+  await reviewQuestion(page, 2);
   await expect(
     page.getByRole('heading', { name: bank[1].text.en, exact: true }),
   ).toBeFocused();
@@ -341,7 +358,8 @@ for (const correct of [26, 25])
       'No questions in this category',
     );
     await page.getByLabel('Show', { exact: true }).selectOption('correct');
-    await expect(page.locator('.review-question')).toHaveCount(correct);
+    await expect(reviewNumbers(page)).toHaveCount(correct);
+    await expect(page.locator('.review-question')).toHaveCount(1);
     await page
       .getByRole('button', { name: 'New practice exam', exact: true })
       .click();
@@ -390,5 +408,9 @@ for (const kind of ['early', 'expired'])
     await page
       .getByLabel('Mostrar', { exact: true })
       .selectOption('unanswered');
-    await expect(page.locator('.review-question')).toHaveCount(40);
+    await expect(reviewNumbers(page)).toHaveCount(40);
+    await expect(page.locator('.review-question')).toHaveCount(1);
+    await expect(reviewNumbers(page).last()).toHaveAccessibleName(
+      /^Questão 40\b.*Sem resposta/i,
+    );
   });

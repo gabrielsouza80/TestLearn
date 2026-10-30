@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import { mkdtemp } from 'node:fs/promises';
+import { showEditingOptions } from '../fixtures/review-navigation';
 import path from 'node:path';
 import { fork, type ChildProcess } from 'node:child_process';
 import { questions } from '../../src/data/questions';
@@ -12,11 +13,13 @@ const retry = (page: Page) =>
     name: 'Tentar obter acesso de escrita',
     exact: true,
   });
-const release = (page: Page) =>
-  page.getByRole('button', {
+const release = async (page: Page) => {
+  await showEditingOptions(page);
+  return page.getByRole('button', {
     name: 'Libertar edição neste separador',
     exact: true,
   });
+};
 function fixtureEvent(child: ChildProcess, event: string) {
   return new Promise<{ port?: number }>((resolve, reject) => {
     const cleanup = () => {
@@ -184,7 +187,7 @@ test('explicit read-only handover preserves selections and requires reload if th
   await other.goto('/');
   await expect(retry(other)).toBeEnabled();
   const before = await raw(page);
-  await release(page).click();
+  await (await release(page)).click();
   await expect(page.getByRole('radio').first()).toBeDisabled();
   await expect(page.locator('.save-status')).toContainText('Modo de consulta');
   await expect.poll(() => held(other)).toBe(0);
@@ -355,7 +358,7 @@ test('real browser shutdown and relaunch of the same synthetic profile restores 
   try {
     const p = await profile.newPage();
     await p.goto(baseURL!);
-    await expect(release(p)).toBeEnabled();
+    await expect(await release(p)).toBeEnabled();
     expect(await raw(p)).toBe(saved);
     expect(await held(p)).toBe(1);
     await expect(
@@ -397,7 +400,7 @@ test('development StrictMode, actual Fast Refresh and dev-server restart retain 
         exact: true,
       }),
     ).toBeChecked();
-    await expect(release(page)).toBeEnabled();
+    await expect(await release(page)).toBeEnabled();
     let saved = await raw(page);
     const applied = page.waitForEvent('console', {
       predicate: (message) =>
@@ -407,7 +410,7 @@ test('development StrictMode, actual Fast Refresh and dev-server restart retain 
     dev.send({ action: 'hmr' });
     await hmr;
     await applied;
-    await expect(release(page)).toBeEnabled();
+    await expect(await release(page)).toBeEnabled();
     expect(await raw(page)).toBe(saved);
     expect(await held(page)).toBe(1);
     await page
@@ -425,7 +428,7 @@ test('development StrictMode, actual Fast Refresh and dev-server restart retain 
     dev.send({ action: 'restart' });
     await restarted;
     await reload;
-    await expect(release(page)).toBeEnabled();
+    await expect(await release(page)).toBeEnabled();
     expect(await raw(page)).toBe(saved);
     await expect(
       page.getByRole(item.required === 1 ? 'radio' : 'checkbox', {

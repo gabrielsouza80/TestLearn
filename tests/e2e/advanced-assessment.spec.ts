@@ -1,5 +1,9 @@
 ﻿import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import {
+  reviewQuestion,
+  revealRationales,
+} from '../fixtures/review-navigation';
 import { questions } from '../../src/data/questions';
 import {
   terminologyArchivedQuestions,
@@ -93,12 +97,12 @@ test('five-option multiple exam enforces cardinality with keyboard, resumes IDs 
   await expect(
     page.getByRole('heading', { name: '1 / 40', exact: true }),
   ).toBeVisible();
+  await reviewQuestion(page, session.index + 1);
   const region = page.getByRole('region', {
     name: `Explanation for question ${session.index + 1}`,
     exact: true,
   });
-  for (const o of item.options)
-    await expect(region).toContainText(o.explanation.en);
+  await revealRationales(region, item, 'en');
 });
 test('wrong pair receives zero and feedback includes every alternative in both languages', async ({
   page,

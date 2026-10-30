@@ -1,4 +1,5 @@
 import { examQuestions } from '../fixtures/sessions';
+import { reviewNumbers } from '../fixtures/review-navigation';
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
@@ -118,7 +119,11 @@ test('answers survive navigation, flags and reload; incomplete submission warns;
   );
   await finishAttempt(page);
   await page.getByLabel('Show', { exact: true }).selectOption('unanswered');
-  await expect(page.locator('.review-question')).toHaveCount(39);
+  await expect(reviewNumbers(page)).toHaveCount(39);
+  await expect(page.locator('.review-question')).toHaveCount(1);
+  await expect(reviewNumbers(page).first()).toHaveAccessibleName(
+    /^Question 2\b.*Unanswered/i,
+  );
   await page.getByRole('button', { name: 'Overview', exact: true }).click();
   await page
     .getByRole('button', { name: 'Take a CTFL practice exam', exact: true })
@@ -159,7 +164,11 @@ test('complete all 40 with 26 correct and verify exact score and incorrect revie
     page.getByText('Passed the practice exam', { exact: true }),
   ).toBeVisible();
   await page.getByLabel('Show', { exact: true }).selectOption('incorrect');
-  await expect(page.locator('.review-question')).toHaveCount(14);
+  await expect(reviewNumbers(page)).toHaveCount(14);
+  await expect(page.locator('.review-question')).toHaveCount(1);
+  await expect(reviewNumbers(page).first()).toHaveAccessibleName(
+    /^Question 27\b.*Incorrect/i,
+  );
   const stored = await page.evaluate(() =>
     JSON.parse(localStorage.getItem('testlearn.v1')!),
   );
