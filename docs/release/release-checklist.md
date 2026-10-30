@@ -1,6 +1,6 @@
 # Checklist de lançamento e ações do responsável
 
-O candidato é local. Nenhuma linha abaixo constitui autorização de publicar. Não avançar com P0 pendente; qualquer exceção P1 exige decisão explícita com impacto documentado.
+Este documento preserva o checklist da fase local pré-publicação; as tarefas abaixo foram levantadas antes da Beta pública e não são o estado operativo atual. Consulte [o estado de Production e o procedimento de release](current-production-state.md). Uma atualização posterior necessita de revisão própria, evidência técnica e decisão explícita.
 
 ## Evidência técnica a anexar
 
@@ -12,16 +12,16 @@ O candidato é local. Nenhuma linha abaixo constitui autorização de publicar. 
 - [x] Artefactos privados fora de dist; guard verificado e acrescentado à workflow de QA, sem deployment.
 - [x] Rollback com retenção das URLs antigas e sem apagar LocalStorage está documentado.
 
-## P0 externos — OWNER_ACTION_REQUIRED antes de publicar
+## P0 identificados antes do primeiro lançamento — registo histórico
 
-- [ ] **Responsável/titular real:** [OWNER_REQUIRED, preencher apenas aqui até revisão].
-- [ ] **Contacto público operacional e procedimento de privacidade/erros:** [OWNER_REQUIRED]. Não há email ou canal inventado na aplicação.
-- [ ] **Host/domínio/origem final:** [OWNER_REQUIRED]. Confirmar ausência de analytics/cookies injetados pelo fornecedor, logs, categorias/finalidades/fundamento/retenção/acesso/localização e condições contratuais aplicáveis.
-- [ ] **Texto público final:** rever privacidade/termos com o responsável e apoio jurídico quando necessário; substituir a informação de preparação, sem publicar placeholders ou promessas não verificadas.
+- [x] **Identificação pública:** Gabriel Souza (não equivale a certificação de conformidade jurídica).
+- [x] **Contacto público:** testlearn808005@gmail.com, presente na aplicação PT-PT e EN.
+- [x] **Host/domínio/origem:** Vercel; https://testlearn-ctfl.vercel.app/. Continua por rever a informação jurídica e operacional de logs, prazos de retenção, localização e contratos aplicáveis.
+- [ ] **Revisão jurídica final:** as páginas públicas já incluem operador e contacto, mas o responsável deve validar privacidade, bases legais, direitos e eventuais obrigações com apoio adequado; evitar promessas não verificadas.
 - [ ] **Direitos/titularidade/licença de uso:** confirmar autorização de distribuição do conteúdo/código/assets e limites do uso pessoal gratuito. Originalidade declarada não substitui revisão de direitos.
 - [ ] **HTTPS/headers/404/cache/retention:** confirmar o contrato do host e demonstrar que um asset antigo ainda carrega após novo deploy e após rollback. Não confiar apenas no TTL.
 - [ ] **Source e artefacto identificados:** rever trabalho não commitado, autorizar commit/identificador exato e inventário; não publicar a raiz.
-- [ ] **Autorização explícita de publicação:** responsável aprova source SHA, artefacto, host e avisos finais. Até aí PUBLICATION_AUTHORIZED=NO e PUBLIC_BETA_READY=BLOCKED.
+- [x] **Primeira autorização de publicação:** a Beta pública inicial foi expressamente autorizada pelo proprietário. **Não confere aprovação automática para futuras versões**; cada promoção deve cumprir o procedimento atual.
 
 ## P1
 
@@ -30,7 +30,7 @@ Nenhum defeito técnico P1 confirmado ficou por corrigir no âmbito exercitado. 
 ## P2 / limites divulgados
 
 - Bundle inicial continua acima do aviso Vite de 500 kB; não foi mascarado.
-- Firefox/WebKit e equipamentos físicos não testados; não anunciar compatibilidade validada nesses browsers.
+- Firefox e WebKit estão abrangidos pelo CI E2E; equipamentos físicos, Safari em iPhone, leitor de ecrã e zoom real não foram validados integralmente.
 - Revisão completa com leitor de ecrã/zoom real e WCAG integral por fazer, sem alegar conformidade AA.
 - Revisão académica humana e piloto real pendentes, e ausência de calibração; não bloqueiam automaticamente uma beta bem identificada, mas impedem ACADEMICALLY_VALIDATED_RELEASE.
 - Perfil de histórico com 500 sessões e dispositivos modestos ainda não foi objeto de benchmark de longo prazo.
