@@ -1,4 +1,4 @@
-﻿import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 import { questions } from '../../src/data/questions';
 import { createSession } from '../../src/domain/engine';
 const bank = ['tl-089', 'tl-083'].map((id) =>
@@ -74,7 +74,9 @@ test('one page holds the write lease; another cannot write and becomes editable 
   await seed(page);
   const other = await context.newPage();
   await other.goto('/');
-  await expect(other.getByText(/Outro separador está a editar/)).toBeVisible();
+  await expect(other.locator('.save-status')).toContainText(
+    'Outro separador ou contexto tem a reserva de escrita',
+  );
   await expect(other.getByRole('radio').first()).toBeDisabled();
   const raw = await page.evaluate(() => localStorage.getItem('testlearn.v1'));
   expect(await other.evaluate(() => localStorage.getItem('testlearn.v1'))).toBe(
@@ -138,7 +140,7 @@ for (const unavailable of ['missing', 'reject'] as const)
       page.getByText(/A reserva segura de escrita está indisponível/),
     ).toBeVisible();
     await expect(
-      page.getByRole('button', { name: 'Iniciar simulação', exact: true }),
+      page.getByRole('button', { name: 'Fazer simulado CTFL', exact: true }),
     ).toBeDisabled();
     expect(
       await page.evaluate(() => localStorage.getItem('testlearn.v1')),

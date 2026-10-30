@@ -1,4 +1,4 @@
-﻿import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
 import {
@@ -368,6 +368,7 @@ for (const kind of ['early', 'expired'])
         kind === 'expired' ? now - 3600001 : now,
         42,
       );
+    delete s.completionReason; // Actual pre-extension record: no inferred historical cause.
     await restore(page, s);
     if (kind === 'early') await end(page);
     await expect(

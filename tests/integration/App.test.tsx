@@ -23,7 +23,7 @@ describe('learning workflows', () => {
       screen.getByRole('heading', { name: 'O seu espaço de aprendizagem' }),
     ).toBeVisible();
     expect(
-      screen.getByRole('button', { name: 'Iniciar simulação' }),
+      screen.getByRole('button', { name: 'Fazer simulado CTFL' }),
     ).toBeEnabled();
     await user.click(screen.getByRole('button', { name: 'Progresso' }));
     expect(screen.getByText(/Ainda não concluiu nenhuma sessão/)).toBeVisible();

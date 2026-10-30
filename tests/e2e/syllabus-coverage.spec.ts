@@ -114,7 +114,7 @@ for (const mode of ['exam', 'practice'] as const) {
     ).toBeVisible();
     if (mode === 'exam')
       await expect(
-        page.getByText('Simulação alinhada ao blueprint', { exact: true }),
+        page.getByText('Simulado segundo a estrutura CTFL', { exact: true }),
       ).toBeVisible();
     const recovered = await page.evaluate(
       () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,

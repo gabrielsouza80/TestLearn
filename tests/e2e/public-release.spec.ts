@@ -1,4 +1,4 @@
-﻿import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
 import { createSession } from '../../src/domain/engine';
@@ -29,7 +29,7 @@ test('anonymous beta has bilingual public information, strict headers, no tracki
   expect(response!.headers()['x-content-type-options']).toBe('nosniff');
   expect(response!.headers()['referrer-policy']).toBe('no-referrer');
   expect(response!.headers()['x-robots-tag']).toBe('noindex, nofollow');
-  await expect(page.getByText('Public Beta', { exact: true })).toBeVisible();
+  await expect(page.getByText('Beta pública', { exact: true })).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'pt-PT');
   await page.getByRole('button', { name: 'Privacidade', exact: true }).click();
   await expect(
@@ -103,7 +103,7 @@ test('an exclusive editing tab preserves progress while another is read-only and
 }) => {
   await page.goto('/');
   await page
-    .getByRole('button', { name: 'Iniciar simulação', exact: true })
+    .getByRole('button', { name: 'Fazer simulado CTFL', exact: true })
     .click();
   const first = page.getByRole('group', {
     name: /^(?:Selecione|Select) [12] /,
@@ -112,7 +112,9 @@ test('an exclusive editing tab preserves progress while another is read-only and
   const other = await context.newPage();
   await other.clock.setFixedTime(new Date(now));
   await other.goto('/');
-  await expect(other.getByText(/Outro separador está a editar/)).toBeVisible();
+  await expect(other.locator('.save-status')).toContainText(
+    'Outro separador ou contexto tem a reserva de escrita',
+  );
   const original = await page.evaluate(
       () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
     ),
@@ -211,7 +213,7 @@ test('quota failure stays usable and leaves unrelated origin data intact', async
   await page.goto('/');
   await page.evaluate(() => localStorage.setItem('unrelated', 'keep'));
   await page
-    .getByRole('button', { name: 'Iniciar simulação', exact: true })
+    .getByRole('button', { name: 'Fazer simulado CTFL', exact: true })
     .click();
   await expect(page.getByRole('alert')).toContainText(
     'Não foi possível guardar',
@@ -274,7 +276,7 @@ test('reset cancellation preserves progress and explicit confirmation affects on
   await page.goto('/');
   await page.evaluate(() => localStorage.setItem('unrelated', 'keep'));
   await page
-    .getByRole('button', { name: 'Iniciar simulação', exact: true })
+    .getByRole('button', { name: 'Fazer simulado CTFL', exact: true })
     .click();
   await expect(
     page.getByRole('group', { name: /^(?:Selecione|Select) [12] / }),

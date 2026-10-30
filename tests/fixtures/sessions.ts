@@ -20,8 +20,16 @@ export function archivedExam(
   seed = 42,
   minutes = 60,
 ): Session {
+  const { completionReason, ...legacy } = createSession(
+    bank,
+    'practice',
+    0,
+    now,
+    seed,
+  );
+  void completionReason;
   return {
-    ...createSession(bank, 'practice', 0, now, seed),
+    ...legacy,
     mode: 'exam',
     contentRevision: revision,
     deadline: now + minutes * 60000,

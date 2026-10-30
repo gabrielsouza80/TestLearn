@@ -14,7 +14,7 @@ async function open(page: Page) {
 async function start(page: Page) {
   await open(page);
   await page
-    .getByRole('button', { name: 'Start simulation', exact: true })
+    .getByRole('button', { name: 'Take a CTFL practice exam', exact: true })
     .click();
 }
 async function active(page: Page) {
@@ -56,7 +56,10 @@ test('dashboard, bilingual study, keyboard and mobile layout', async ({
   ).toBeVisible();
   await page.getByLabel('Language').selectOption('both');
   await expect(
-    page.getByRole('heading', { name: 'Inglês para trabalhar em QA' }),
+    page.getByRole('heading', {
+      name: 'Inglês para QA — Vocabulário e entrevistas',
+      exact: true,
+    }),
   ).toBeVisible();
   expect(
     await page.evaluate(
@@ -118,7 +121,7 @@ test('answers survive navigation, flags and reload; incomplete submission warns;
   await expect(page.locator('.review-question')).toHaveCount(39);
   await page.getByRole('button', { name: 'Overview', exact: true }).click();
   await page
-    .getByRole('button', { name: 'Start simulation', exact: true })
+    .getByRole('button', { name: 'Take a CTFL practice exam', exact: true })
     .click();
   expect((await active(page)).id).not.toBe(saved.id);
   expect((await active(page)).answers).toEqual({});

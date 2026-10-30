@@ -26,6 +26,7 @@ function fixture(): State {
     answers: { [old.id]: old.correct },
     flagged: [old.id],
   };
+  delete historical.completionReason; // This fixture represents a pre-extension attempt.
   return {
     version: 1,
     active: answer(

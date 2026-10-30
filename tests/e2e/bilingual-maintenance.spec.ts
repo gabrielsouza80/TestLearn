@@ -145,7 +145,7 @@ for (const mode of ['exam', 'practice'] as const) {
     ).toHaveCount(0);
     if (mode === 'exam')
       await expect(
-        page.getByText('Blueprint-aligned simulation', { exact: true }),
+        page.getByText('CTFL exam-structure simulation', { exact: true }),
       ).toBeVisible();
     await page
       .getByRole('button', { name: 'Finish session', exact: true })

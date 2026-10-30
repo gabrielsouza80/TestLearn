@@ -1,4 +1,4 @@
-﻿import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { questions } from '../../src/data/questions';
 import { auditedQuestions } from '../fixtures/banks';
@@ -14,19 +14,21 @@ test('UI starts a structurally aligned independent simulation and safely restore
   await page.goto('/');
   await expect(
     page.getByRole('heading', {
-      name: 'Simulação alinhada ao blueprint',
+      name: 'Treinar um exame completo',
       exact: true,
     }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('region', { name: 'Estatísticas de aprendizagem' }),
   ).toBeVisible();
   await expect(
     page.getByText('90 questões originais', { exact: false }),
   ).toBeVisible();
   await page.getByLabel('Duração', { exact: true }).selectOption('75');
   await page
-    .getByRole('button', { name: 'Iniciar simulação', exact: true })
+    .getByRole('button', { name: 'Fazer simulado CTFL', exact: true })
     .click();
-  // Origin Web Lock persistence is asynchronous. Wait for the actual saved
-  // examination, not a fixed delay or just the rendered question controls.
+  // Verify the actual durable examination in storage, not just visible controls.
   await expect
     .poll(() =>
       page.evaluate(
@@ -55,7 +57,7 @@ test('UI starts a structurally aligned independent simulation and safely restore
     ).toBe(Math.min(count, los.length));
   }
   await expect(
-    page.getByText('Simulação alinhada ao blueprint', { exact: true }),
+    page.getByText('Simulado segundo a estrutura CTFL', { exact: true }),
   ).toBeVisible();
   await page.reload();
   const restored = await page.evaluate(

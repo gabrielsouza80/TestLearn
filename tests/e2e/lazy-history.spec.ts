@@ -36,7 +36,7 @@ test('fresh dashboard and new examination request no historical chunks', async (
     }),
   ).toBeVisible();
   await page
-    .getByRole('button', { name: 'Iniciar simulação', exact: true })
+    .getByRole('button', { name: 'Fazer simulado CTFL', exact: true })
     .click();
   await expect(
     page.getByRole('group', { name: /^(?:Selecione|Select) [12] / }),

@@ -1,4 +1,4 @@
-﻿import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { it, expect, vi } from 'vitest';
 vi.mock('../../src/data/questions', async (importOriginal) => {
@@ -13,7 +13,7 @@ import App from '../../src/App';
 it('explains a missing mandatory group without creating an exam, and keeps topic study usable', async () => {
   const user = userEvent.setup();
   render(<App />);
-  await user.click(screen.getByRole('button', { name: 'Iniciar simulação' }));
+  await user.click(screen.getByRole('button', { name: 'Fazer simulado CTFL' }));
   expect(screen.getByRole('alert')).toHaveTextContent(
     'falta cobertura elegível no grupo 1-k1-whole-team',
   );

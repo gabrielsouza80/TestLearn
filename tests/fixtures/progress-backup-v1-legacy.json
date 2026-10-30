@@ -1,0 +1,54 @@
+{
+  "format": "testlearn-backup",
+  "version": 1,
+  "exportedAt": "2026-10-29T12:00:00.000Z",
+  "source": { "app": "TestLearn", "contentRevision": "2026-10-27.9" },
+  "state": {
+    "version": 1,
+    "active": {
+      "version": 1,
+      "contentRevision": "2026-10-27.9",
+      "id": "legacy-backup-active",
+      "mode": "practice",
+      "questionIds": ["tl-083"],
+      "visitedIds": ["tl-083"],
+      "optionOrder": { "tl-083": ["o3", "o4", "o5", "o1", "o2"] },
+      "answers": { "tl-083": ["o2"] },
+      "flagged": [],
+      "index": 0,
+      "startedAt": 1793275200000,
+      "deadline": null,
+      "completedAt": null,
+      "responseMs": { "tl-083": 0 },
+      "lastInteractionAt": 1793275200000
+    },
+    "history": [
+      {
+        "version": 1,
+        "contentRevision": "2026-10-27.9",
+        "id": "legacy-backup-completed",
+        "mode": "practice",
+        "questionIds": ["tl-089"],
+        "visitedIds": ["tl-089"],
+        "optionOrder": { "tl-089": ["o3", "o4", "o5", "o1", "o2"] },
+        "answers": { "tl-089": ["o4"] },
+        "flagged": [],
+        "index": 0,
+        "startedAt": 1793275180000,
+        "deadline": null,
+        "completedAt": 1793275195000,
+        "responseMs": { "tl-089": 15000 },
+        "lastInteractionAt": 1793275195000
+      }
+    ]
+  },
+  "results": [
+    {
+      "sessionId": "legacy-backup-completed",
+      "correct": 1,
+      "total": 1,
+      "unanswered": 0,
+      "passed": null
+    }
+  ]
+}

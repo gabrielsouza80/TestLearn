@@ -205,7 +205,14 @@ describe('answer and score presentation without changing scoring or records', ()
     expect(model.rows.map((r) => r.number)).toEqual(
       Array.from({ length: 40 }, (_, i) => i + 1),
     );
-    expect('completionReason' in model).toBe(false);
+    expect(model.completionReason).toBe('submitted-early');
+    const legacy = { ...session };
+    delete legacy.completionReason;
+    const before = JSON.stringify(legacy);
+    expect(resultPresentation(legacy, questions).completionReason).toBe(
+      'unknown',
+    );
+    expect(JSON.stringify(legacy)).toBe(before);
   });
   it('does not declare topic practice passed, even with 90 correct answers', () => {
     let s = createSession(questions, 'practice', 0, 1000, 42);

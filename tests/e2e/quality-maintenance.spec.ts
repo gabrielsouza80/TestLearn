@@ -180,6 +180,11 @@ test('.6 exam restores exactly three old options, original fields and scoring, a
     flagged: [old.id],
   };
   await page.goto('/');
+  // Finish the empty document's initialization before seeding and reloading.
+  // Otherwise WebKit may start one restore in each document and count both requests.
+  await expect(
+    page.getByRole('button', { name: 'Fazer simulado CTFL', exact: true }),
+  ).toBeEnabled();
   const archives: string[] = [];
   page.on('request', (r) => {
     if (r.url().includes('/assets/questions-2026-10-27.'))

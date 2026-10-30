@@ -12,6 +12,102 @@ beforeEach(() => {
   vi.restoreAllMocks();
 });
 describe('synchronous writes under an exclusive page lease', () => {
+  it('serializes cancelled effect acquisition before the next StrictMode setup', async () => {
+    const writer = createStateWriter(null);
+    const cancelled = writer.acquire();
+    writer.release();
+    const current = writer.acquire();
+    expect(await cancelled).toBe('unavailable');
+    expect(await current).toBe('saved');
+    expect((await navigator.locks.query()).held).toHaveLength(1);
+    expect(writer.save(emptyState())).toBe('saved');
+    writer.release();
+  });
+  it('waits for the browser request to settle when releasing and immediately reacquiring', async () => {
+    const writer = createStateWriter(null);
+    expect(await writer.acquire()).toBe('saved');
+    writer.release();
+    expect(await writer.acquire()).toBe('saved');
+    expect(writer.save(emptyState())).toBe('saved');
+    writer.release();
+  });
+  it('shares one pending acquisition across concurrent callers', async () => {
+    const request = vi.spyOn(navigator.locks, 'request');
+    const writer = createStateWriter(null);
+    const first = writer.acquire(),
+      second = writer.acquire();
+    expect(first).toBe(second);
+    expect(await first).toBe('saved');
+    expect(await second).toBe('saved');
+    expect(request).toHaveBeenCalledTimes(1);
+    writer.release();
+  });
+  it('does not leak cancelled requests over multiple lifecycle cleanups', async () => {
+    const writer = createStateWriter(null);
+    const first = writer.acquire();
+    writer.release();
+    const second = writer.acquire();
+    writer.release();
+    const third = writer.acquire();
+    expect(await Promise.all([first, second, third])).toEqual([
+      'unavailable',
+      'unavailable',
+      'saved',
+    ]);
+    expect((await navigator.locks.query()).held).toHaveLength(1);
+    writer.release();
+    expect(await writer.acquire()).toBe('saved');
+    writer.release();
+  });
+  it('retries the same busy writer only after the real owner releases', async () => {
+    const first = createStateWriter(null),
+      second = createStateWriter(null);
+    expect(await first.acquire()).toBe('saved');
+    expect(await second.acquire()).toBe('busy');
+    expect(await second.acquire()).toBe('busy');
+    first.release();
+    await expect
+      .poll(async () => (await navigator.locks.query()).held?.length)
+      .toBe(0);
+    expect(await second.acquire()).toBe('saved');
+    expect(localStorage.getItem('testlearn.v1')).toBeNull();
+    second.release();
+  });
+  it('cannot own writing when storage is unreadable, and may safely retry after recovery', async () => {
+    const writer = createStateWriter(null);
+    const read = vi
+      .spyOn(Storage.prototype, 'getItem')
+      .mockImplementation(() => {
+        throw new DOMException('blocked', 'SecurityError');
+      });
+    expect(await writer.acquire()).toBe('unavailable');
+    expect(writer.save(emptyState())).toBe('busy');
+    read.mockRestore();
+    expect(await writer.acquire()).toBe('saved');
+    expect(localStorage.getItem('testlearn.v1')).toBeNull();
+    writer.release();
+  });
+  it('does not resynchronize a stale snapshot when retrying after another writer saved', async () => {
+    const first = createStateWriter(null),
+      second = createStateWriter(null);
+    await first.acquire();
+    expect(await second.acquire()).toBe('busy');
+    expect(first.save(emptyState())).toBe('saved');
+    const raw = readStoredValue();
+    first.release();
+    await expect
+      .poll(async () => (await navigator.locks.query()).held?.length)
+      .toBe(0);
+    expect(await second.acquire()).toBe('conflict');
+    expect(
+      second.save({
+        ...emptyState(),
+        active: createSession([questions[0]], 'practice', 0, 1000, 42),
+      }),
+    ).toBe('busy');
+    expect(readStoredValue()).toBe(raw);
+    second.release();
+  });
   it('persists each state before save returns, without a promise or effect queue', async () => {
     const writer = createStateWriter(null);
     expect(await writer.acquire()).toBe('saved');
