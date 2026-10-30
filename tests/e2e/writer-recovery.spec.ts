@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import { mkdtemp } from 'node:fs/promises';
+import { mkdir, mkdtemp } from 'node:fs/promises';
 import { showEditingOptions } from '../fixtures/review-navigation';
 import path from 'node:path';
 import { fork, type ChildProcess } from 'node:child_process';
@@ -335,6 +335,7 @@ test('real browser shutdown and relaunch of the same synthetic profile restores 
   baseURL,
 }) => {
   test.setTimeout(60000); // Two actual browser process launches, not an assertion timeout change.
+  await mkdir(path.resolve('tmp/writer-fix'), { recursive: true });
   const directory = await mkdtemp(path.resolve('tmp/writer-fix/profile-'));
   const type = browser.browserType();
   let profile = await type.launchPersistentContext(directory);
