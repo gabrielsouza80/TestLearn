@@ -1,4 +1,6 @@
-# Checklist de lançamento e ações do responsável
+# Checklist de lançamento e ações do responsável — registo histórico
+
+> **Estado em 30-10-2026:** o TestLearn está em beta pública no domínio `testlearn-ctfl.vercel.app`, com Gabriel Souza como responsável e `testlearn808005@gmail.com` como contacto. As caixas abaixo refletem os bloqueios **na altura do pré-lançamento** e não devem ser assinaladas retroativamente. Algumas revisões jurídicas, académicas e de continuidade ainda permanecem pendentes. Consultar [Fase 10G](phase10g-public-beta-operations.md) para as operações atuais.
 
 O candidato é local. Nenhuma linha abaixo constitui autorização de publicar. Não avançar com P0 pendente; qualquer exceção P1 exige decisão explícita com impacto documentado.
 
