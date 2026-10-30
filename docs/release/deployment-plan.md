@@ -1,4 +1,6 @@
-# Plano de alojamento e publicação — NÃO EXECUTAR SEM AUTORIZAÇÃO
+# Plano de alojamento e publicação — registo histórico
+
+> **Estado atual:** este plano foi redigido antes da primeira publicação. As afirmações abaixo sobre ausência de host e autorização descrevem o estado histórico, não o TestLearn atualmente online. A referência operacional é [Fase 10G — Operações da beta pública](phase10g-public-beta-operations.md).
 
 > Atualização: resultados e preparação atuais em [fase 9.3](phase9.3-release-gates.md). O detalhe abaixo conserva a evidência/contrato anterior; não representa uma nova validação remota ou manual.
 
