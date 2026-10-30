@@ -94,7 +94,10 @@ export default function DashboardPaths({
         className="learning-paths"
         aria-label={t('Escolha como estudar', 'Choose how to study')}
       >
-        <article className="panel">
+        <article className="panel learning-path study-path">
+          <span className="path-label">
+            {t('ESTUDAR E COMPREENDER', 'LEARN AND UNDERSTAND')}
+          </span>
           <h2>{t('Aprender por capítulo', 'Learn by chapter')}</h2>
           <p>
             {t(
@@ -102,16 +105,27 @@ export default function DashboardPaths({
               'Focused, untimed practice with explanations after each answer. It does not use full-exam quotas.',
             )}
           </p>
-          <button className="primary" onClick={onStudy}>
-            {t('Estudar por capítulo', 'Study by chapter')}
-          </button>
+          <div className="path-controls">
+            <button className="primary" onClick={onStudy}>
+              {t('Estudar por capítulo', 'Study by chapter')}
+            </button>
+            <span className="path-hint">
+              {t(
+                'Ao seu ritmo · feedback imediato',
+                'At your pace · immediate feedback',
+              )}
+            </span>
+          </div>
         </article>
-        <article className="panel">
+        <article className="panel learning-path exam-path">
+          <span className="path-label">
+            {t('TREINAR A ESTRUTURA DO EXAME', 'PRACTISE THE EXAM STRUCTURE')}
+          </span>
           <h2>{t('Treinar um exame completo', 'Practise a full exam')}</h2>
           <p>
             {t(
-              '40 perguntas distribuídas pelos seis capítulos, de acordo com a estrutura de referência do CTFL. Duração padrão: 60 minutos. Limiar de referência: 26/40.',
-              '40 questions across six chapters, following the CTFL reference exam structure. Standard duration: 60 minutes. Reference threshold: 26/40.',
+              '40 perguntas · seis capítulos · 60 minutos padrão · referência 26/40. Segue a estrutura de referência do CTFL.',
+              '40 questions · six chapters · 60 standard minutes · 26/40 reference threshold. Follows the CTFL reference exam structure.',
             )}
           </p>
           <p>
@@ -120,24 +134,26 @@ export default function DashboardPaths({
               'Independent simulation, neither official nor calibrated; it does not predict certification.',
             )}
           </p>
-          <label>
-            {t('Duração', 'Duration')}
-            <select
-              aria-label={t('Duração', 'Duration')}
-              value={minutes}
-              onChange={(e) => onMinutes(Number(e.target.value))}
+          <div className="path-controls">
+            <label>
+              {t('Duração', 'Duration')}
+              <select
+                aria-label={t('Duração', 'Duration')}
+                value={minutes}
+                onChange={(e) => onMinutes(Number(e.target.value))}
+              >
+                <option value={60}>60 min</option>
+                <option value={75}>75 min</option>
+              </select>
+            </label>
+            <button
+              className="primary"
+              disabled={!canCreate || !!active}
+              onClick={onExam}
             >
-              <option value={60}>60 min</option>
-              <option value={75}>75 min</option>
-            </select>
-          </label>
-          <button
-            className="primary"
-            disabled={!canCreate || !!active}
-            onClick={onExam}
-          >
-            {t('Fazer simulado CTFL', 'Take a CTFL practice exam')}
-          </button>
+              {t('Fazer simulado CTFL', 'Take a CTFL practice exam')}
+            </button>
+          </div>
           <small>
             {active
               ? t(

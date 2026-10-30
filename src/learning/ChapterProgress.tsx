@@ -16,9 +16,12 @@ export default function ChapterProgress({
 }) {
   const t = (pt: string, en: string) => label(language, pt, en);
   return (
-    <section className="panel" aria-labelledby="chapter-progress-title">
+    <section
+      className="panel chapter-overview"
+      aria-labelledby="chapter-progress-title"
+    >
       <h2 id="chapter-progress-title">
-        {t('O estudo por capítulo', 'Study by chapter')}
+        {t('Progresso por capítulo', 'Chapter progress')}
       </h2>
       <p>
         {t(
@@ -60,7 +63,7 @@ export default function ChapterProgress({
           ))}
         </ul>
       )}
-      <details>
+      <details className="learning-help">
         <summary>
           {t('Como interpretar estes dados', 'How to interpret these figures')}
         </summary>
@@ -79,7 +82,10 @@ export default function ChapterProgress({
       </details>
       <div className="chapter-progress-grid">
         {model.chapters.map((c) => (
-          <article className="chapter-progress" key={c.chapter}>
+          <article
+            className={`chapter-progress chapter-accent-${c.chapter}`}
+            key={c.chapter}
+          >
             <h3>
               {c.chapter}.{' '}
               {label(

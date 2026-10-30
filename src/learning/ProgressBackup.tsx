@@ -152,25 +152,31 @@ export default function ProgressBackup({
           'The file contains study history: keep it private and store it securely. It can be edited; it is not evidence of certification.',
         )}
       </p>
-      <button onClick={download} disabled={!canExport}>
-        {t('Exportar progresso', 'Export progress')}
-      </button>
-      <label className="backup-file">
-        {t(
-          'Importar progresso — ficheiro JSON (máximo 8 MiB)',
-          'Import progress — JSON file (maximum 8 MiB)',
-        )}
-        <input
-          type="file"
-          ref={fileInput}
-          accept=".json,application/json"
-          disabled={!canImport || busy}
-          onChange={(event) => {
-            void inspect(event.target.files?.[0]);
-            event.target.value = '';
-          }}
-        />
-      </label>
+      <div className="backup-actions">
+        <button
+          className="backup-export"
+          onClick={download}
+          disabled={!canExport}
+        >
+          {t('Exportar progresso', 'Export progress')}
+        </button>
+        <label className="backup-file">
+          {t(
+            'Importar progresso — ficheiro JSON (máximo 8 MiB)',
+            'Import progress — JSON file (maximum 8 MiB)',
+          )}
+          <input
+            type="file"
+            ref={fileInput}
+            accept=".json,application/json"
+            disabled={!canImport || busy}
+            onChange={(event) => {
+              void inspect(event.target.files?.[0]);
+              event.target.value = '';
+            }}
+          />
+        </label>
+      </div>
       <p aria-live="polite" aria-atomic="true">
         {busy
           ? t('A validar o backup…', 'Validating backup…')

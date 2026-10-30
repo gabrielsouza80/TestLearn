@@ -9,13 +9,16 @@ export default function AnswerReview({
   order,
   language,
   name,
+  headingLevel = 3,
 }: {
   question: Question;
   selected: string[];
   order: string[];
   language: Language;
   name: string;
+  headingLevel?: 3 | 4;
 }) {
+  const Heading = headingLevel === 3 ? 'h3' : 'h4';
   const status = answerStatus(question, selected),
     options = presentedOptions(question, order);
   const selectedLetters = options
@@ -28,14 +31,17 @@ export default function AnswerReview({
       .join(', ');
   return (
     <section className={`feedback feedback-${status}`} aria-label={name}>
-      <strong>
+      <strong className="feedback-status">
+        <span aria-hidden="true">
+          {status === 'correct' ? '✓ ' : status === 'incorrect' ? '✗ ' : '— '}
+        </span>
         {status === 'correct'
           ? label(language, 'Resposta correta', 'Correct answer')
           : status === 'incorrect'
             ? label(language, 'Resposta incorreta', 'Incorrect answer')
             : label(language, 'Sem resposta', 'Unanswered')}
       </strong>
-      <p>
+      <p className="answer-sets">
         <strong>{label(language, 'A sua resposta:', 'Your answer:')}</strong>{' '}
         {selectedLetters || label(language, 'Sem resposta', 'Unanswered')} ·{' '}
         <strong>
@@ -52,9 +58,14 @@ export default function AnswerReview({
           )}
         </p>
       )}
-      <p>
-        <Text value={question.explanation} language={language} />
-      </p>
+      <div className="learning-takeaway">
+        <Heading>
+          {label(language, 'Ideia principal', 'Key learning point')}
+        </Heading>
+        <p>
+          <Text value={question.explanation} language={language} />
+        </p>
+      </div>
       <ul className="review-options">
         {options.map(({ letter, option }) => {
           const chosen = selected.includes(option.id),
@@ -63,6 +74,7 @@ export default function AnswerReview({
             <li
               key={option.id}
               data-option-id={option.id}
+              data-selected={chosen ? 'true' : 'false'}
               className={
                 right
                   ? 'review-option-correct'

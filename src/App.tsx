@@ -562,68 +562,83 @@ function LearningApp({
               {title}
             </h1>
           </div>
-          <p aria-live="polite" aria-atomic="true" className="save-status">
-            {saveStatus === 'pending'
-              ? t('A reservar acesso de escrita…', 'Reserving write access…')
-              : saveStatus === 'busy'
-                ? t(
-                    'Outro separador ou contexto tem a reserva de escrita. Pode consultar sem editar. Iniciar sessões, responder e importar progresso estão bloqueados aqui. Liberte a edição na outra página ou feche-a e tente novamente.',
-                    'Another tab or context holds write access. You can browse without editing. Starting sessions, answering and importing progress are blocked here. Release editing in the other page or close it, then retry.',
-                  )
-                : saveStatus === 'unavailable'
+          <div className="writer-status-row" data-write-status={saveStatus}>
+            <p
+              aria-live="polite"
+              aria-atomic="true"
+              className={`save-status${['busy', 'unavailable', 'readonly', 'failed'].includes(saveStatus) ? ' save-status-attention' : ''}`}
+            >
+              {saveStatus === 'pending'
+                ? t('A reservar acesso de escrita…', 'Reserving write access…')
+                : saveStatus === 'busy'
                   ? t(
-                      'A reserva segura de escrita está indisponível. A edição está bloqueada; tente um navegador atualizado em HTTPS.',
-                      'Safe write access is unavailable. Editing is blocked; try an updated browser over HTTPS.',
+                      'Outro separador ou contexto tem a reserva de escrita. Pode consultar sem editar. Iniciar sessões, responder e importar progresso estão bloqueados aqui. Liberte a edição na outra página ou feche-a e tente novamente.',
+                      'Another tab or context holds write access. You can browse without editing. Starting sessions, answering and importing progress are blocked here. Release editing in the other page or close it, then retry.',
                     )
-                  : saveStatus === 'readonly'
+                  : saveStatus === 'unavailable'
                     ? t(
-                        'Modo de consulta. A edição foi libertada neste separador; obter acesso novamente não altera os dados guardados.',
-                        'Read-only mode. Editing was released in this tab; requesting access again does not change saved data.',
+                        'A reserva segura de escrita está indisponível. A edição está bloqueada; tente um navegador atualizado em HTTPS.',
+                        'Safe write access is unavailable. Editing is blocked; try an updated browser over HTTPS.',
                       )
-                    : saveStatus === 'saved'
-                      ? t('Guardado neste navegador.', 'Saved in this browser.')
-                      : saveStatus === 'failed'
+                    : saveStatus === 'readonly'
+                      ? t(
+                          'Modo de consulta. A edição foi libertada neste separador; obter acesso novamente não altera os dados guardados.',
+                          'Read-only mode. Editing was released in this tab; requesting access again does not change saved data.',
+                        )
+                      : saveStatus === 'saved'
                         ? t(
-                            'Não guardado — a última alteração não foi aplicada.',
-                            'Not saved — the last change was not applied.',
+                            'Guardado neste navegador.',
+                            'Saved in this browser.',
                           )
-                        : t(
-                            'Pronto para guardar neste navegador.',
-                            'Ready to save in this browser.',
-                          )}
-          </p>
-          <div className="actions">
-            {leaseReady ? (
-              <button
-                onClick={() => {
-                  writer.release();
-                  setLeaseReady(false);
-                  setSaveStatus('readonly');
-                  setEditRequest(null);
-                }}
-              >
-                {t(
-                  'Libertar edição neste separador',
-                  'Release editing in this tab',
-                )}
-              </button>
-            ) : saveStatus !== 'pending' ? (
-              <button
-                onClick={() => {
-                  setSaveStatus('pending');
-                  setEditRequest((request) =>
-                    request === null ? 0 : request + 1,
-                  );
-                }}
-              >
-                {t('Tentar obter acesso de escrita', 'Retry write access')}
-              </button>
-            ) : null}
-            {recoveryRequired && (
-              <button onClick={() => window.location.reload()}>
-                {t('Recarregar o progresso guardado', 'Reload saved progress')}
-              </button>
-            )}
+                        : saveStatus === 'failed'
+                          ? t(
+                              'Não guardado — a última alteração não foi aplicada.',
+                              'Not saved — the last change was not applied.',
+                            )
+                          : t(
+                              'Pronto para guardar neste navegador.',
+                              'Ready to save in this browser.',
+                            )}
+            </p>
+            <div className="writer-actions">
+              {leaseReady ? (
+                <details className="writer-settings">
+                  <summary>{t('Opções de edição', 'Editing options')}</summary>
+                  <button
+                    onClick={() => {
+                      writer.release();
+                      setLeaseReady(false);
+                      setSaveStatus('readonly');
+                      setEditRequest(null);
+                    }}
+                  >
+                    {t(
+                      'Libertar edição neste separador',
+                      'Release editing in this tab',
+                    )}
+                  </button>
+                </details>
+              ) : saveStatus !== 'pending' ? (
+                <button
+                  onClick={() => {
+                    setSaveStatus('pending');
+                    setEditRequest((request) =>
+                      request === null ? 0 : request + 1,
+                    );
+                  }}
+                >
+                  {t('Tentar obter acesso de escrita', 'Retry write access')}
+                </button>
+              ) : null}
+              {recoveryRequired && (
+                <button onClick={() => window.location.reload()}>
+                  {t(
+                    'Recarregar o progresso guardado',
+                    'Reload saved progress',
+                  )}
+                </button>
+              )}
+            </div>
           </div>
           {warning && (
             <p role="alert" className="notice">
@@ -1244,6 +1259,14 @@ function LearningApp({
                           }
                         >
                           {index + 1}
+                          {!!(active.answers[id] ?? []).length && (
+                            <span
+                              className="answered-marker"
+                              aria-hidden="true"
+                            >
+                              ●
+                            </span>
+                          )}
                           {active.flagged.includes(id) && (
                             <span aria-hidden="true">*</span>
                           )}
@@ -1252,8 +1275,8 @@ function LearningApp({
                     </div>
                     <p className="legend">
                       {t(
-                        'Verde: respondida · *: marcada · contorno: atual',
-                        'Green: answered · *: flagged · outline: current',
+                        '●: respondida (não indica correção) · *: marcada · contorno: atual',
+                        '●: answered (not correctness) · *: flagged · outline: current',
                       )}
                     </p>
                     <p>
@@ -1301,6 +1324,114 @@ function LearningApp({
           )}
           {page === 'history' && (
             <>
+              <section className="panel progress-overview">
+                <h2>
+                  {t('O que o seu percurso mostra', 'What your history shows')}
+                </h2>
+                <p>
+                  {t(
+                    'Apenas sessões concluídas. As respostas de prática repetida também entram nestas contagens; a sessão em curso fica de fora.',
+                    'Completed sessions only. Repeated-practice responses also enter these counts; your active session is excluded.',
+                  )}
+                </p>
+                <dl className="progress-summary">
+                  <div>
+                    <dt>{t('Sessões concluídas', 'Completed sessions')}</dt>
+                    <dd>{progress.completed}</dd>
+                  </div>
+                  <div>
+                    <dt>{t('Perguntas respondidas', 'Questions answered')}</dt>
+                    <dd>{progress.answered}</dd>
+                  </div>
+                  <div>
+                    <dt>{t('Respostas corretas', 'Correct responses')}</dt>
+                    <dd>{progress.correct}</dd>
+                  </div>
+                </dl>
+                {!state.history.length ? (
+                  <p>
+                    {t(
+                      'Ainda não concluiu nenhuma sessão. Comece pela prática para criar o seu primeiro registo.',
+                      'You have not completed a session yet. Start practising to create your first record.',
+                    )}
+                  </p>
+                ) : (
+                  <>
+                    <details className="progress-details">
+                      <summary>
+                        {t(
+                          'Ver contagens e limites',
+                          'View counts and limitations',
+                        )}
+                      </summary>
+                      <p>
+                        {seen.size}{' '}
+                        {t(
+                          'questões distintas vistas. Os resultados de questões repetidas não equivalem ao desempenho em questões novas.',
+                          'distinct questions seen. Results on repeated questions are not equivalent to performance on new questions.',
+                        )}
+                      </p>
+                      <p>
+                        {t(
+                          'Sessões concluídas apenas; a sessão em curso não entra nestas métricas. IDs vistos em revisões diferentes contam uma vez. Visita registada não mede atenção.',
+                          'Completed sessions only; the active session is excluded from these metrics. IDs viewed in different revisions count once. A recorded visit does not measure attention.',
+                        )}
+                      </p>
+                      <dl className="progress-counts">
+                        <div>
+                          <dt>
+                            {t('Corretas / respostas', 'Correct / responses')}
+                          </dt>
+                          <dd>
+                            {progress.correct} / {progress.answered}
+                          </dd>
+                        </div>
+                        <div>
+                          <dt>
+                            {t('Respostas incorretas', 'Incorrect responses')}
+                          </dt>
+                          <dd>{progress.incorrect}</dd>
+                        </div>
+                        <div>
+                          <dt>
+                            {t(
+                              'Sem resposta, incluindo não abertas',
+                              'Unanswered, including unopened',
+                            )}
+                          </dt>
+                          <dd>{progress.unanswered}</dd>
+                        </div>
+                        <div>
+                          <dt>
+                            {t(
+                              'Primeiras exposições registadas (IDs)',
+                              'First recorded exposures (IDs)',
+                            )}
+                          </dt>
+                          <dd>{progress.firstExposure}</dd>
+                        </div>
+                        <div>
+                          <dt>
+                            {t(
+                              'Visitas repetidas, além da primeira',
+                              'Repeat visits beyond the first',
+                            )}
+                          </dt>
+                          <dd>{progress.repeatedVisits}</dd>
+                        </div>
+                      </dl>
+                    </details>
+                  </>
+                )}
+              </section>
+              <ChapterProgress
+                model={progress}
+                language={language}
+                onPractice={(chapter) => {
+                  changeFilters({ chapter: String(chapter) });
+                  setPage('practice');
+                }}
+              />
               <ProgressBackup
                 state={state}
                 language={language}
@@ -1315,126 +1446,47 @@ function LearningApp({
                   return 'saved';
                 }}
               />
-              <section className="panel">
-                <h2>
-                  {t('O que o seu percurso mostra', 'What your history shows')}
-                </h2>
-                {!state.history.length ? (
-                  <p>
-                    {t(
-                      'Ainda não concluiu nenhuma sessão. Comece pela prática para criar o seu primeiro registo.',
-                      'You have not completed a session yet. Start practising to create your first record.',
-                    )}
-                  </p>
-                ) : (
-                  <>
-                    <p>
-                      {seen.size}{' '}
-                      {t(
-                        'questões distintas vistas. Os resultados de questões repetidas não equivalem ao desempenho em questões novas.',
-                        'distinct questions seen. Results on repeated questions are not equivalent to performance on new questions.',
-                      )}
-                    </p>
-                    <p>
-                      {t(
-                        'Sessões concluídas apenas; a sessão em curso não entra nestas métricas. IDs vistos em revisões diferentes contam uma vez. Visita registada não mede atenção.',
-                        'Completed sessions only; the active session is excluded from these metrics. IDs viewed in different revisions count once. A recorded visit does not measure attention.',
-                      )}
-                    </p>
-                    <dl className="progress-counts">
-                      <div>
-                        <dt>
-                          {t('Corretas / respostas', 'Correct / responses')}
-                        </dt>
-                        <dd>
-                          {progress.correct} / {progress.answered}
-                        </dd>
-                      </div>
-                      <div>
-                        <dt>
-                          {t('Respostas incorretas', 'Incorrect responses')}
-                        </dt>
-                        <dd>{progress.incorrect}</dd>
-                      </div>
-                      <div>
-                        <dt>
-                          {t(
-                            'Sem resposta, incluindo não abertas',
-                            'Unanswered, including unopened',
-                          )}
-                        </dt>
-                        <dd>{progress.unanswered}</dd>
-                      </div>
-                      <div>
-                        <dt>
-                          {t(
-                            'Primeiras exposições registadas (IDs)',
-                            'First recorded exposures (IDs)',
-                          )}
-                        </dt>
-                        <dd>{progress.firstExposure}</dd>
-                      </div>
-                      <div>
-                        <dt>
-                          {t(
-                            'Visitas repetidas, além da primeira',
-                            'Repeat visits beyond the first',
-                          )}
-                        </dt>
-                        <dd>{progress.repeatedVisits}</dd>
-                      </div>
-                    </dl>
-                    <ul className="history-list">
-                      {[...state.history].reverse().map((session) => (
-                        <li key={session.id}>
-                          <div>
-                            <strong>
-                              {new Date(
-                                session.completedAt ?? session.startedAt,
-                              ).toLocaleString(
-                                language === 'en' ? 'en-GB' : 'pt-PT',
-                              )}
-                            </strong>
-                            <p>
-                              {score(session, questions).correct}/
-                              {session.questionIds.length} ·{' '}
-                              {session.mode === 'exam'
-                                ? isBlueprintRevision(session.contentRevision)
-                                  ? t(
-                                      'Simulação alinhada',
-                                      'Aligned simulation',
-                                    )
-                                  : t(
-                                      'Simulação anterior',
-                                      'Earlier simulation',
-                                    )
-                                : t('Prática', 'Practice')}{' '}
-                              · {new Set(session.visitedIds).size}{' '}
-                              {t('visitas registadas', 'recorded visits')}
-                            </p>
-                          </div>
-                          <button
-                            onClick={() => {
-                              setViewed(session);
-                              setPage('result');
-                            }}
-                          >
-                            {t('Rever', 'Review')}
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-              </section>
-              <ChapterProgress
-                model={progress}
-                language={language}
-                onPractice={(chapter) => {
-                  changeFilters({ chapter: String(chapter) });
-                  setPage('practice');
-                }}
-              />
+              {!!state.history.length && (
+                <section className="panel session-history">
+                  <h3 className="history-heading">
+                    {t('Histórico de sessões', 'Session history')}
+                  </h3>
+                  <ul className="history-list">
+                    {[...state.history].reverse().map((session) => (
+                      <li key={session.id}>
+                        <div>
+                          <strong>
+                            {new Date(
+                              session.completedAt ?? session.startedAt,
+                            ).toLocaleString(
+                              language === 'en' ? 'en-GB' : 'pt-PT',
+                            )}
+                          </strong>
+                          <p>
+                            {score(session, questions).correct}/
+                            {session.questionIds.length} ·{' '}
+                            {session.mode === 'exam'
+                              ? isBlueprintRevision(session.contentRevision)
+                                ? t('Simulação alinhada', 'Aligned simulation')
+                                : t('Simulação anterior', 'Earlier simulation')
+                              : t('Prática', 'Practice')}{' '}
+                            · {new Set(session.visitedIds).size}{' '}
+                            {t('visitas registadas', 'recorded visits')}
+                          </p>
+                        </div>
+                        <button
+                          onClick={() => {
+                            setViewed(session);
+                            setPage('result');
+                          }}
+                        >
+                          {t('Rever', 'Review')}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
               <section className="panel reset">
                 <h2>
                   {t(

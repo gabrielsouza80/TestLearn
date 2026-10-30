@@ -119,8 +119,8 @@ export function QuestionReference({
       <summary>
         {label(
           language,
-          'Sobre esta questão — origem e referência',
-          'About this question — origin and reference',
+          'Origem e referência da pergunta',
+          'Question origin and reference',
         )}
       </summary>
       <p>

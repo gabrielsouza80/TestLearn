@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { label, type Language } from '../i18n';
 import type { Question, Session } from '../domain/engine';
 import {
@@ -33,7 +33,10 @@ export default function ResultReview({
   canCreateExam: boolean;
 }) {
   const model = resultPresentation(session, bank),
-    [filter, setFilter] = useState('all');
+    [filter, setFilter] = useState('all'),
+    [currentId, setCurrentId] = useState(session.questionIds[0]);
+  const questionHeading = useRef<HTMLHeadingElement>(null);
+  const focusRequested = useRef(false);
   const counts = {
     all: model.total,
     correct: model.correct,
@@ -43,19 +46,49 @@ export default function ResultReview({
   const visible = model.rows.filter(
     (row) => filter === 'all' || row.status === filter,
   );
+  const selectedRow =
+    visible.find((row) => row.question.id === currentId) ?? visible[0];
+  const currentIndex = visible.findIndex((row) => row === selectedRow);
+  const q = selectedRow?.question;
+  const number = selectedRow?.number;
+  const status = selectedRow?.status;
+  const currentQuestionId = selectedRow?.question.id;
+  const previousQuestionId = visible[currentIndex - 1]?.question.id;
+  const nextQuestionId = visible[currentIndex + 1]?.question.id;
+  useEffect(() => {
+    if (!focusRequested.current) return;
+    focusRequested.current = false;
+    questionHeading.current?.focus();
+    questionHeading.current?.scrollIntoView?.({ block: 'start' });
+  }, [currentQuestionId]);
   const go = (id: string) => {
-    const target = document.getElementById(`review-title-${id}`);
-    target?.focus();
-    target?.scrollIntoView?.({ block: 'start' });
+    if (id === currentQuestionId) {
+      questionHeading.current?.focus();
+      questionHeading.current?.scrollIntoView?.({ block: 'start' });
+      return;
+    }
+    focusRequested.current = true;
+    setCurrentId(id);
   };
   const t = (pt: string, en: string) => label(language, pt, en);
   return (
     <>
       <section
-        className={`result-banner result-${model.practicePassed === null ? 'neutral' : model.practicePassed ? 'passed' : 'failed'}`}
+        className={`result-banner result-${model.practicePassed === null ? 'neutral' : model.practicePassed ? 'passed' : 'failed'}${model.completionReason === 'submitted-early' ? ' result-early' : ''}`}
         aria-label={t('Resumo dos resultados', 'Result summary')}
       >
-        <div>
+        {model.completionReason === 'submitted-early' && (
+          <div className="completion-alert">
+            <strong>{t('Submissão antecipada', 'Early submission')}</strong>
+            <p>
+              {t(
+                `Terminou com ${model.unanswered} perguntas sem resposta. A pontuação inclui essas perguntas e não representa uma avaliação completa da sua preparação.`,
+                `You stopped with ${model.unanswered} unanswered questions. The score includes them and is not a complete assessment of your readiness.`,
+              )}
+            </p>
+          </div>
+        )}
+        <div className="result-score">
           <p>
             {session.mode === 'exam'
               ? t('SIMULAÇÃO CONCLUÍDA', 'EXAM SIMULATION COMPLETED')
@@ -137,7 +170,8 @@ export default function ResultReview({
                     )}
           </p>
         </div>
-        <div>
+        <div className="result-next">
+          <h3>{t('O próximo passo', 'Your next step')}</h3>
           <p>
             {t(
               'As perguntas sem resposta não pontuam. Este é um resultado de prática independente, não um certificado ou uma previsão de aprovação oficial.',
@@ -176,7 +210,19 @@ export default function ResultReview({
           <select
             aria-label={t('Mostrar', 'Show')}
             value={filter}
-            onChange={(event) => setFilter(event.target.value)}
+            onChange={(event) => {
+              focusRequested.current = false;
+              const nextFilter = event.target.value;
+              const nextRows = model.rows.filter(
+                (row) => nextFilter === 'all' || row.status === nextFilter,
+              );
+              setFilter(nextFilter);
+              setCurrentId((id) =>
+                nextRows.some((row) => row.question.id === id)
+                  ? id
+                  : (nextRows[0]?.question.id ?? ''),
+              );
+            }}
           >
             {(['all', 'correct', 'incorrect', 'unanswered'] as const).map(
               (status) => (
@@ -192,24 +238,54 @@ export default function ResultReview({
         </label>
       </div>
       {!!visible.length && (
-        <label className="review-jump">
-          {t('Ir para questão', 'Go to question')}
-          <select
-            aria-label={t('Ir para questão', 'Go to question')}
-            value=""
-            onChange={(event) => go(event.target.value)}
-          >
-            <option value="">
-              {t('Escolher questão…', 'Choose a question…')}
-            </option>
+        <nav
+          id="review-navigation"
+          className="review-navigation panel"
+          aria-label={t('Navegação da revisão', 'Review navigation')}
+          tabIndex={-1}
+        >
+          <p className="review-navigation-intro">
+            {t(
+              'Escolha uma pergunta para rever. A numeração original mantém-se nos filtros.',
+              'Choose a question to review. Filters preserve original question numbers.',
+            )}
+          </p>
+          <div className="review-number-grid">
             {visible.map((row) => (
-              <option value={row.question.id} key={row.question.id}>
-                {t('Questão', 'Question')} {row.number} ·{' '}
-                {statusLabel(row.status, language)} · {row.question.lo}
-              </option>
+              <button
+                key={row.question.id}
+                className={`review-number review-number-${row.status}`}
+                aria-label={`${t('Questão', 'Question')} ${row.number} — ${statusLabel(row.status, language)}`}
+                aria-current={row === selectedRow ? 'true' : undefined}
+                onClick={() => go(row.question.id)}
+              >
+                <span>{row.number}</span>
+                <span className="review-number-icon" aria-hidden="true">
+                  {row.status === 'correct'
+                    ? '✓'
+                    : row.status === 'incorrect'
+                      ? '✗'
+                      : '—'}
+                </span>
+              </button>
             ))}
-          </select>
-        </label>
+          </div>
+          <p className="review-legend">
+            <span className="legend-correct">✓ {t('Correta', 'Correct')}</span>
+            <span className="legend-incorrect">
+              ✗ {t('Incorreta', 'Incorrect')}
+            </span>
+            <span className="legend-unanswered">
+              — {t('Sem resposta', 'Unanswered')}
+            </span>
+            <span>
+              {t(
+                'Contorno duplo: pergunta atual',
+                'Double outline: current question',
+              )}
+            </span>
+          </p>
+        </nav>
       )}
       {!visible.length && (
         <p role="status" className="notice">
@@ -219,7 +295,7 @@ export default function ResultReview({
           )}
         </p>
       )}
-      {visible.map(({ question: q, number, status }) => (
+      {q && status && (
         <article
           className={`panel review-question review-${status}`}
           key={q.id}
@@ -241,7 +317,7 @@ export default function ResultReview({
               {statusLabel(status, language)}
             </strong>
           </p>
-          <h3 id={`review-title-${q.id}`} tabIndex={-1}>
+          <h3 ref={questionHeading} id={`review-title-${q.id}`} tabIndex={-1}>
             <Text value={q.text} language={language} />
           </h3>
           <QuestionTable
@@ -250,6 +326,7 @@ export default function ResultReview({
             language={language}
           />
           <AnswerReview
+            headingLevel={4}
             question={q}
             selected={session.answers[q.id] ?? []}
             order={session.optionOrder[q.id]}
@@ -259,8 +336,29 @@ export default function ResultReview({
               `Explanation for question ${number}`,
             )}
           />
+          <div className="review-sequence">
+            <button
+              disabled={currentIndex === 0}
+              onClick={() => {
+                if (previousQuestionId) go(previousQuestionId);
+              }}
+            >
+              {t('← Pergunta anterior', '← Previous question')}
+            </button>
+            <a href="#review-navigation">
+              {t('Voltar à navegação', 'Back to navigation')}
+            </a>
+            <button
+              disabled={currentIndex === visible.length - 1}
+              onClick={() => {
+                if (nextQuestionId) go(nextQuestionId);
+              }}
+            >
+              {t('Pergunta seguinte →', 'Next question →')}
+            </button>
+          </div>
         </article>
-      ))}
+      )}
     </>
   );
 }
