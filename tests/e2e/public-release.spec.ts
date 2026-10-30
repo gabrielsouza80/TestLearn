@@ -36,13 +36,17 @@ test('anonymous beta has bilingual public information, strict headers, no tracki
     page.getByRole('heading', { name: 'Privacidade', exact: true }),
   ).toBeFocused();
   await expect(page.locator('main')).toContainText('testlearn.v1');
-  await expect(page.locator('main')).toContainText('O alojamento é prestado pela Vercel');
+  await expect(page.locator('main')).toContainText(
+    'O alojamento é prestado pela Vercel',
+  );
   await page.getByLabel('Idioma', { exact: true }).selectOption('en');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(
     page.getByRole('heading', { name: 'Privacy', exact: true }),
   ).toBeVisible();
-  await expect(page.locator('main')).toContainText('The website is hosted by Vercel');
+  await expect(page.locator('main')).toContainText(
+    'The website is hosted by Vercel',
+  );
   await page
     .getByRole('button', { name: 'Terms and limitations', exact: true })
     .click();
