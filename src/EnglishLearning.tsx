@@ -17,6 +17,12 @@ export default function EnglishLearning({ language }: { language: Language }) {
             'Read aloud and adapt examples to your experience. Original material; translations pending review.',
           )}
         </p>
+        <p>
+          {t(
+            'Recurso complementar de vocabulário e preparação de entrevistas. Não é um curso completo nem uma avaliação de fluência ou pronúncia.',
+            'A supplementary vocabulary and interview-preparation resource. It is not a complete course or an assessment of fluency or pronunciation.',
+          )}
+        </p>
         <dl className="vocabulary">
           {[
             [

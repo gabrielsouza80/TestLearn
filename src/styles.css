@@ -77,6 +77,7 @@ p {
   margin-top: 0;
 }
 h1 {
+  overflow-wrap: anywhere;
   font-size: clamp(1.8rem, 3vw, 2.55rem);
   line-height: 1.18;
   letter-spacing: -0.045em;
@@ -249,6 +250,9 @@ main {
 .page-heading {
   margin-bottom: 1.4rem;
 }
+.panel p {
+  overflow-wrap: anywhere;
+}
 .eyebrow,
 .section-number {
   font-size: 0.65rem;
@@ -319,12 +323,14 @@ main {
 }
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-bottom: 1px solid var(--line);
   padding: 1.6rem 0;
   margin-bottom: 2rem;
 }
 .stats article {
+  min-width: 0;
+  overflow-wrap: anywhere;
   padding: 0 1.5rem;
   border-right: 1px solid var(--line);
 }
@@ -391,6 +397,7 @@ main {
 .chapters button > span:nth-child(2) {
   flex: 1;
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 .chapter-number {
   font-size: 1.4rem;
@@ -1204,5 +1211,93 @@ footer {
   }
   .review-options > li {
     padding: 0.7rem;
+  }
+}
+.learning-paths,
+.chapter-progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.learning-paths .panel {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+.learning-paths h2 {
+  font-size: 1.3rem;
+}
+.learning-paths button {
+  margin-top: 0.8rem;
+  align-self: flex-start;
+  max-width: 100%;
+}
+.learning-paths small {
+  margin-top: 0.7rem;
+  color: var(--muted);
+}
+.learning-paths select {
+  max-width: 12rem;
+}
+.resume-session {
+  border-left: 4px solid var(--teal);
+}
+.chapter-progress {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+.chapter-progress h3 {
+  font-size: 1rem;
+}
+.chapter-progress dl > div {
+  margin: 0.7rem 0;
+}
+.chapter-progress dt {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.chapter-progress dd {
+  margin: 0;
+  font-weight: 650;
+}
+.chapter-progress small {
+  display: block;
+  margin: 0.5rem 0;
+}
+.chapter-progress button {
+  max-width: 100%;
+}
+.progress-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.progress-counts div {
+  max-width: 16rem;
+}
+.progress-counts dt {
+  font-size: 0.85rem;
+}
+.progress-counts dd {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+@media (max-width: 700px) {
+  .learning-paths,
+  .chapter-progress-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .stats {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+  .stats article {
+    padding: 0;
+    border-right: 0;
   }
 }

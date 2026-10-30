@@ -69,6 +69,7 @@ export function resultPresentation(session: Session, currentBank: Question[]) {
     practicePassed: alignedExam ? scored.passed : null,
     elapsedMs,
     limitMinutes,
+    completionReason: session.completionReason ?? 'unknown',
   };
 }
 export const durationText = (ms: number) =>

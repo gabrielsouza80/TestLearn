@@ -116,10 +116,25 @@ export default function ResultReview({
               ` · ${t('Limite', 'Limit')}: ${model.limitMinutes} min`}
           </p>
           <p>
-            {t(
-              'O motivo de conclusão não está registado nestas sessões.',
-              'The completion reason is not recorded for these sessions.',
-            )}
+            {model.completionReason === 'submitted'
+              ? t(
+                  'Conclusão explícita, sem perguntas em branco.',
+                  'Explicit submission with no blank questions.',
+                )
+              : model.completionReason === 'submitted-early'
+                ? t(
+                    'Conclusão antecipada, com perguntas sem resposta.',
+                    'Early submission with unanswered questions.',
+                  )
+                : model.completionReason === 'expired'
+                  ? t(
+                      'Conclusão por fim do tempo disponível.',
+                      'Completed because the time limit expired.',
+                    )
+                  : t(
+                      'O motivo de conclusão não está registado nestas sessões.',
+                      'The completion reason is not recorded for these sessions.',
+                    )}
           </p>
         </div>
         <div>

@@ -23,6 +23,8 @@ export interface Session {
   startedAt: number;
   deadline: number | null;
   completedAt: number | null;
+  /** Absent in legacy attempts; null marks a newly instrumented active attempt. */
+  completionReason?: 'submitted' | 'submitted-early' | 'expired' | null;
   responseMs: Record<string, number>;
   lastInteractionAt: number;
 }
@@ -110,6 +112,7 @@ export function createSession(
     startedAt: now,
     deadline: mode === 'exam' ? now + minutes * 60000 : null,
     completedAt: null,
+    completionReason: null,
     responseMs: {},
     lastInteractionAt: now,
   };
@@ -142,6 +145,16 @@ export function finish(s: Session, now = Date.now()): Session {
     : {
         ...recordTime(s, now),
         completedAt: Math.max(s.startedAt, Math.min(now, s.deadline ?? now)),
+        ...(s.completionReason === null
+          ? {
+              completionReason:
+                s.deadline !== null && now >= s.deadline
+                  ? ('expired' as const)
+                  : s.questionIds.some((id) => !(s.answers[id] ?? []).length)
+                    ? ('submitted-early' as const)
+                    : ('submitted' as const),
+            }
+          : {}),
       };
 }
 export function score(s: Session, bank: Question[]) {

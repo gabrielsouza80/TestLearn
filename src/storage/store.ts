@@ -45,6 +45,10 @@ const sessionBaseSchema = z.object({
   startedAt: timestamp,
   deadline: timestamp.nullable(),
   completedAt: timestamp.nullable(),
+  completionReason: z
+    .enum(['submitted', 'submitted-early', 'expired'])
+    .nullable()
+    .optional(),
   responseMs: z.record(z.string(), z.number().nonnegative()),
   lastInteractionAt: timestamp,
 });
@@ -78,6 +82,18 @@ export const sessionSchema = sessionBaseSchema.superRefine((s, ctx) => {
     Object.keys(s.responseMs).some((id) => !ids.has(id)) ||
     s.lastInteractionAt < s.startedAt ||
     (s.completedAt !== null && s.completedAt < s.startedAt) ||
+    (s.completionReason === null && s.completedAt !== null) ||
+    (s.completionReason !== undefined &&
+      s.completionReason !== null &&
+      (s.completedAt === null ||
+        (s.completionReason === 'expired' &&
+          (s.mode !== 'exam' ||
+            s.deadline === null ||
+            s.completedAt !== s.deadline)) ||
+        (s.completionReason === 'submitted' &&
+          s.questionIds.some((id) => !s.answers[id]?.length)) ||
+        (s.completionReason === 'submitted-early' &&
+          s.questionIds.every((id) => !!s.answers[id]?.length)))) ||
     (s.mode === 'exam' &&
       (s.questionIds.length !== 40 ||
         s.deadline === null ||
@@ -174,6 +190,9 @@ export function createStateWriter(initialRaw: string | null | undefined) {
   let owned = false;
   let generation = 0;
   let releaseLock: (() => void) | undefined;
+  let acquiring: Promise<WriteStatus> | undefined;
+  // Includes the browser's release acknowledgement, not just our release callback.
+  let requestFinished: Promise<void> = Promise.resolve();
   const matches = (raw: string | null | undefined) => {
     if (raw === undefined) return true;
     if (raw !== expected && !(expected === undefined && raw === null))
@@ -183,6 +202,7 @@ export function createStateWriter(initialRaw: string | null | undefined) {
   const release = () => {
     generation++;
     owned = false;
+    acquiring = undefined;
     releaseLock?.();
     releaseLock = undefined;
   };
@@ -191,43 +211,64 @@ export function createStateWriter(initialRaw: string | null | undefined) {
     release,
     acquire(): Promise<WriteStatus> {
       if (owned) return Promise.resolve('saved');
-      const token = ++generation;
-      return new Promise((resolve) => {
-        if (typeof navigator === 'undefined' || !navigator.locks) {
-          resolve('unavailable');
-          return;
-        }
-        try {
-          void navigator.locks
-            .request(
+      if (acquiring) return acquiring;
+      const token = generation;
+      let report!: (status: WriteStatus) => void;
+      const result = new Promise<WriteStatus>((resolve) => {
+        report = resolve;
+      });
+      acquiring = result;
+      requestFinished = requestFinished
+        .then(async () => {
+          if (token !== generation) {
+            report('unavailable');
+            return;
+          }
+          if (typeof navigator === 'undefined' || !navigator.locks) {
+            report('unavailable');
+            return;
+          }
+          try {
+            await navigator.locks.request(
               'testlearn-progress',
               { mode: 'exclusive', ifAvailable: true },
               async (lock) => {
                 if (token !== generation) {
-                  resolve('unavailable');
+                  report('unavailable');
                   return;
                 }
                 if (!lock) {
-                  resolve('busy');
+                  report('busy');
                   return;
                 }
-                if (!matches(readStoredValue())) {
-                  resolve('conflict');
+                const raw = readStoredValue();
+                if (raw === undefined) {
+                  report('unavailable');
+                  return;
+                }
+                if (!matches(raw)) {
+                  report('conflict');
                   return;
                 }
                 owned = true;
                 const held = new Promise<void>((done) => {
                   releaseLock = done;
                 });
-                resolve('saved');
+                report('saved');
                 await held;
               },
-            )
-            .catch(() => resolve('unavailable'));
-        } catch {
-          resolve('unavailable');
-        }
+            );
+          } catch {
+            report('unavailable');
+          }
+        })
+        .catch(() => {
+          report('unavailable');
+        });
+      void result.then(() => {
+        if (acquiring === result) acquiring = undefined;
       });
+      return result;
     },
     save(state: State): WriteStatus {
       if (!owned) return 'busy';

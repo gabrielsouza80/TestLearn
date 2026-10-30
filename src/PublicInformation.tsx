@@ -10,14 +10,14 @@ export type InformationPage = keyof typeof publicTitles;
 const content: Record<InformationPage, { pt: string[]; en: string[] }> = {
   about: {
     pt: [
-      'TestLearn — Public Beta é uma aplicação educativa independente e gratuita para estudar o CTFL (Certified Tester Foundation Level), segundo o syllabus 4.0.1, e praticar inglês para QA.',
-      'O banco tem 90 perguntas originais e cobre nominalmente os 64 objetivos examináveis. Cada simulação seleciona 40 perguntas segundo os grupos do blueprint. A prática permite estudar por tópico e consultar explicações.',
+      'TestLearn — Beta pública é uma aplicação educativa independente e gratuita para estudar o CTFL (Certified Tester Foundation Level), segundo o syllabus 4.0.1, e praticar inglês para QA.',
+      'O banco tem 90 perguntas originais e cobre nominalmente os 64 objetivos examináveis. Cada simulação seleciona 40 perguntas segundo a estrutura de referência do exame. A prática permite estudar por tópico e consultar explicações.',
       'As perguntas e traduções foram revistas por IA. A aprovação académica humana independente está pendente e não existe calibração psicométrica. Cobertura e quotas não demonstram dificuldade equivalente ao exame oficial.',
       'Não existe afiliação, acreditação ou aprovação pelo ISTQB® ou PSTQB. As pontuações são autoavaliação local, não certificados nem previsão de aprovação. As soluções estão no código do cliente; não se trata de um exame supervisionado ou inviolável.',
     ],
     en: [
       'TestLearn — Public Beta is a free independent educational application for studying CTFL (Certified Tester Foundation Level), based on syllabus 4.0.1, and practising English for QA.',
-      'The bank contains 90 original questions with nominal coverage of the 64 examinable objectives. Each simulation selects 40 questions using the blueprint groups. Topic practice provides explanations.',
+      'The bank contains 90 original questions with nominal coverage of the 64 examinable objectives. Each simulation selects 40 questions using the reference exam structure. Topic practice provides explanations.',
       'Questions and translations have been reviewed by AI. Independent human academic approval is pending and there is no psychometric calibration. Coverage and quotas do not establish official examination difficulty equivalence.',
       'There is no ISTQB® or PSTQB affiliation, accreditation or endorsement. Scores are local self-assessment, not certificates or predictions of success. Answers exist in the client code; this is not a supervised or tamper-proof examination.',
     ],
@@ -59,7 +59,7 @@ const content: Record<InformationPage, { pt: string[]; en: string[] }> = {
       'Escolha Iniciar simulação para um exame de 40 perguntas. O modo normal dura 60 minutos; 75 minutos é uma opção de prática, não confirmação de elegibilidade oficial para tempo adicional. O relógio continua quando fecha ou recarrega a página e um exame expirado é terminado ao retomar.',
       'Cada pergunta indica quantas respostas selecionar. Nas perguntas de duas escolhas pode desmarcar uma opção para escolher outra. Só o conjunto exato vale um ponto; não há crédito parcial nem penalização por erro. O limiar de prática é 26/40, sem prever certificação.',
       'Use as marcações para rever perguntas, alterne PT-PT/EN e navegue antes de confirmar o fim. As soluções só aparecem após terminar o exame. Para estudar, escolha Praticar e filtre tópico, capítulo ou objetivo; esse modo não tem temporizador.',
-      'Um único separador pode editar de cada vez. Feche o separador que está a editar e recarregue o outro para transferir o acesso. Cada alteração só é aplicada depois da gravação síncrona confirmada; o estado mostra se está guardada ou se foi recusada. Se um arquivo histórico falhar, mantenha os dados e tente novamente: nunca são substituídos pelas perguntas atuais.',
+      'Um único separador pode editar de cada vez. Para consultar sem reservar escrita, use «Libertar edição neste separador». Na outra página, use «Tentar obter acesso de escrita»; só será concedido se o navegador confirmar que está livre. Se o progresso tiver mudado, recarregue os dados guardados antes de editar. Não apague o armazenamento para resolver conflitos. Cada alteração só é aplicada depois da gravação síncrona confirmada; o estado mostra se está guardada ou se foi recusada. Se um arquivo histórico falhar, mantenha os dados e tente novamente: nunca são substituídos pelas perguntas atuais.',
       'Se surgir um erro de armazenamento, a última alteração não é aplicada e o progresso anterior mantém-se. Exporte uma cópia e verifique o espaço disponível; o limite é 500 sessões concluídas, sem eliminação automática das mais antigas. Registos incompatíveis ficam bloqueados até recuperação ou eliminação explícita. Não limpe dados para resolver um erro de carregamento. A edição requer um navegador atualizado com reserva segura de escrita e HTTPS (ou localhost durante desenvolvimento).',
       'Ainda não existe canal público de suporte nesta preparação local. Antes de publicar, o responsável deve disponibilizar um contacto real. Para um futuro relato, anote revisão do conteúdo, ID da pergunta, idioma, navegador, passos e mensagem; omita dados pessoais, respostas de terceiros e o LocalStorage completo.',
     ],
@@ -67,7 +67,7 @@ const content: Record<InformationPage, { pt: string[]; en: string[] }> = {
       'Choose Start simulation for a 40-question exam. Normal time is 60 minutes; 75 minutes is a practice option, not confirmation of official extra-time eligibility. The timer continues while the page is closed or reloaded, and an expired exam is finished when resumed.',
       'Each question states how many answers to select. For two-answer questions, deselect an option to choose another. Only the exact set earns one point; no partial credit or penalty for mistakes. The practice threshold is 26/40 and does not predict certification.',
       'Flag questions for review, switch PT-PT/EN and navigate before confirming completion. Solutions appear only after finishing an exam. To study, choose Practice and filter by topic, chapter or objective; that mode has no timer.',
-      'Only one tab can edit at a time. Close the editing tab and reload the other to transfer access. Each change is applied only after a confirmed synchronous write; the status shows whether it was saved or rejected. If a historical archive fails, keep the data and retry: it is never replaced with current questions.',
+      'Only one tab can edit at a time. To browse without holding write access, choose Release editing in this tab. On the other page choose Retry write access; it is granted only if the browser confirms availability. If progress changed, reload saved data before editing. Do not clear storage to resolve conflicts. Each change is applied only after a confirmed synchronous write; the status shows whether it was saved or rejected. If a historical archive fails, keep the data and retry: it is never replaced with current questions.',
       'If a storage error appears, the last change is not applied and previous progress is retained. Export a copy and check available storage; the limit is 500 completed sessions, without automatically deleting the oldest. Incompatible records stay blocked until recovery or explicit reset. Do not clear data to fix a loading failure. Editing requires an updated browser with safe write access and HTTPS (or localhost during development).',
       'There is no public support channel for this local preparation yet. The operator must provide a real contact before publishing. For a future report, note content revision, question ID, language, browser, steps and message; omit personal information, other people’s responses and the complete LocalStorage.',
     ],
@@ -90,6 +90,20 @@ export default function PublicInformation({
       {languages.map((lang) => (
         <div key={lang} lang={lang === 'pt' ? 'pt-PT' : 'en'}>
           {language === 'both' && <h2>{publicTitles[page][lang]}</h2>}
+          {page === 'help' && (
+            <details>
+              <summary>
+                {lang === 'pt'
+                  ? 'Estrutura do exame — detalhes técnicos'
+                  : 'Exam structure — technical details'}
+              </summary>
+              <p>
+                {lang === 'pt'
+                  ? 'Blueprint é a estrutura de referência do exame: as quotas por capítulo, nível cognitivo e grupo de objetivos de aprendizagem (LO). O gerador aplica 29 grupos verificados na tabela ISTQB Exam Structures & Rules v1.19. Esta conformidade estrutural não certifica o conteúdo nem a dificuldade das perguntas.'
+                  : 'Blueprint means the reference exam structure: quotas by chapter, cognitive level and learning-objective (LO) group. The generator applies 29 groups verified against ISTQB Exam Structures & Rules table v1.19. Structural compliance does not certify question content or difficulty.'}
+              </p>
+            </details>
+          )}
           {content[page][lang].map((text) => (
             <p key={text}>{text}</p>
           ))}

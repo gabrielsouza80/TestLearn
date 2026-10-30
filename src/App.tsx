@@ -2,6 +2,9 @@ import Text from './learning/Text';
 import QuestionTable from './learning/QuestionTable';
 import AnswerReview from './learning/AnswerReview';
 import ResultReview from './learning/ResultReview';
+import DashboardPaths from './learning/DashboardPaths';
+import ChapterProgress from './learning/ChapterProgress';
+import { learningProgress } from './domain/learning-progress';
 import ProgressBackup from './learning/ProgressBackup';
 import { ObjectiveHelp, CognitiveLevelHelp } from './learning/ObjectiveHelp';
 import { objectivesById, cognitiveLevels } from './reference/objectives';
@@ -22,8 +25,8 @@ import {
   TERMINOLOGY_CONTENT_REVISION,
   isBlueprintRevision,
 } from './domain/revision';
-import { distinctViewed, repeatedViewed } from './domain/progress';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { distinctViewed } from './domain/progress';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { questions } from './data/questions';
 import {
   answer,
@@ -145,6 +148,7 @@ function LearningApp({
   const [state, setState] = useState(initial.state);
   const stateRef = useRef(state);
   const [leaseReady, setLeaseReady] = useState(false);
+  const [editRequest, setEditRequest] = useState<number | null>(0);
   const [saveStatus, setSaveStatus] = useState('pending');
   const [recoveryRequired, setRecoveryRequired] = useState(!!initial.warning);
   const canWrite = leaseReady && !recoveryRequired;
@@ -172,6 +176,7 @@ function LearningApp({
     document.documentElement.lang = language === 'en' ? 'en' : 'pt-PT';
   }, [language]);
   useEffect(() => {
+    if (editRequest === null) return;
     let cancelled = false;
     const acquire = () => {
       setLeaseReady(false);
@@ -199,12 +204,16 @@ function LearningApp({
       window.removeEventListener('pagehide', hide);
       window.removeEventListener('pageshow', show);
     };
-  }, [writer]);
+  }, [writer, editRequest]);
   const commit = useCallback(
     (next: State, allowRecovery = false) => {
       if (!leaseReady || (recoveryRequired && !allowRecovery)) return false;
       const status = writer.save(next);
-      if (status === 'conflict') setStorageConflict(true);
+      if (status === 'conflict') {
+        writer.release();
+        setLeaseReady(false);
+        setStorageConflict(true);
+      }
       setSaveStatus(status === 'saved' ? 'saved' : 'failed');
       if (status !== 'saved') {
         setWarning('WRITE_FAILED');
@@ -223,8 +232,11 @@ function LearningApp({
       if (
         (event.key === 'testlearn.v1' || event.key === null) &&
         !writer.isCurrent()
-      )
+      ) {
+        writer.release();
+        setLeaseReady(false);
         setStorageConflict(true);
+      }
     };
     window.addEventListener('storage', check);
     return () => window.removeEventListener('storage', check);
@@ -412,39 +424,12 @@ function LearningApp({
         (q) => q.id === active.questionIds[active.index],
       )
     : undefined;
-  const totalCorrect = state.history.reduce(
-    (sum, session) => sum + score(session, questions).correct,
-    0,
+  const progress = useMemo(
+    () => learningProgress(state.history, questions),
+    [state.history],
   );
-  const totalAnswered = state.history.reduce(
-    (sum, session) =>
-      sum + session.questionIds.length - score(session, questions).unanswered,
-    0,
-  );
-  const weakness = chapters
-    .map((name, index) => {
-      const attempts = state.history.flatMap((session) =>
-        session.questionIds
-          .filter(
-            (id) =>
-              sessionQuestions(session, questions).find((q) => q.id === id)
-                ?.chapter ===
-              index + 1,
-          )
-          .map((id) => ({
-            q: sessionQuestions(session, questions).find((q) => q.id === id)!,
-            ids: session.answers[id] ?? [],
-          })),
-      );
-      return {
-        name,
-        index,
-        attempts: attempts.length,
-        correct: attempts.filter((item) => isCorrect(item.q, item.ids)).length,
-      };
-    })
-    .filter((item) => item.attempts)
-    .sort((a, b) => a.correct / a.attempts - b.correct / b.attempts);
+  const totalCorrect = progress.correct,
+    totalAnswered = progress.answered;
   const title =
     page in publicTitles
       ? publicTitles[page as InformationPage][language === 'en' ? 'en' : 'pt']
@@ -455,7 +440,10 @@ function LearningApp({
           : page === 'history'
             ? t('O seu percurso', 'Your learning history')
             : page === 'english'
-              ? t('Inglês para trabalhar em QA', 'English for working in QA')
+              ? t(
+                  'Inglês para QA — Vocabulário e entrevistas',
+                  'English for QA — Vocabulary and interviews',
+                )
               : page === 'result'
                 ? t('Resultados e revisão', 'Results and review')
                 : t('Uma questão de cada vez', 'One question at a time');
@@ -473,7 +461,7 @@ function LearningApp({
   if (storageConflict)
     return (
       <main>
-        <h1>TestLearn — Public Beta</h1>
+        <h1>{t('TestLearn — Beta pública', 'TestLearn — Public Beta')}</h1>
         <div role="alert">
           <p>
             {t(
@@ -505,7 +493,7 @@ function LearningApp({
             T<span>✓</span>
           </span>
           TestLearn
-          <span className="beta-badge">Public Beta</span>
+          <span className="beta-badge">{t('Beta pública', 'Public Beta')}</span>
           <span className="brand-caption">LEARN. PRACTICE. IMPROVE.</span>
         </a>
         <label className="language">
@@ -579,47 +567,92 @@ function LearningApp({
               ? t('A reservar acesso de escrita…', 'Reserving write access…')
               : saveStatus === 'busy'
                 ? t(
-                    'Outro separador está a editar. Feche-o e recarregue esta página para editar. Nenhuma alteração foi aplicada aqui.',
-                    'Another tab is editing. Close it and reload this page to edit. No changes were applied here.',
+                    'Outro separador ou contexto tem a reserva de escrita. Pode consultar sem editar. Iniciar sessões, responder e importar progresso estão bloqueados aqui. Liberte a edição na outra página ou feche-a e tente novamente.',
+                    'Another tab or context holds write access. You can browse without editing. Starting sessions, answering and importing progress are blocked here. Release editing in the other page or close it, then retry.',
                   )
                 : saveStatus === 'unavailable'
                   ? t(
                       'A reserva segura de escrita está indisponível. A edição está bloqueada; tente um navegador atualizado em HTTPS.',
                       'Safe write access is unavailable. Editing is blocked; try an updated browser over HTTPS.',
                     )
-                  : saveStatus === 'saved'
-                    ? t('Guardado neste navegador.', 'Saved in this browser.')
-                    : saveStatus === 'failed'
-                      ? t(
-                          'Não guardado — a última alteração não foi aplicada.',
-                          'Not saved — the last change was not applied.',
-                        )
-                      : t(
-                          'Pronto para guardar neste navegador.',
-                          'Ready to save in this browser.',
-                        )}
+                  : saveStatus === 'readonly'
+                    ? t(
+                        'Modo de consulta. A edição foi libertada neste separador; obter acesso novamente não altera os dados guardados.',
+                        'Read-only mode. Editing was released in this tab; requesting access again does not change saved data.',
+                      )
+                    : saveStatus === 'saved'
+                      ? t('Guardado neste navegador.', 'Saved in this browser.')
+                      : saveStatus === 'failed'
+                        ? t(
+                            'Não guardado — a última alteração não foi aplicada.',
+                            'Not saved — the last change was not applied.',
+                          )
+                        : t(
+                            'Pronto para guardar neste navegador.',
+                            'Ready to save in this browser.',
+                          )}
           </p>
+          <div className="actions">
+            {leaseReady ? (
+              <button
+                onClick={() => {
+                  writer.release();
+                  setLeaseReady(false);
+                  setSaveStatus('readonly');
+                  setEditRequest(null);
+                }}
+              >
+                {t(
+                  'Libertar edição neste separador',
+                  'Release editing in this tab',
+                )}
+              </button>
+            ) : saveStatus !== 'pending' ? (
+              <button
+                onClick={() => {
+                  setSaveStatus('pending');
+                  setEditRequest((request) =>
+                    request === null ? 0 : request + 1,
+                  );
+                }}
+              >
+                {t('Tentar obter acesso de escrita', 'Retry write access')}
+              </button>
+            ) : null}
+            {recoveryRequired && (
+              <button onClick={() => window.location.reload()}>
+                {t('Recarregar o progresso guardado', 'Reload saved progress')}
+              </button>
+            )}
+          </div>
           {warning && (
             <p role="alert" className="notice">
-              {warning.startsWith('Saved data')
+              {warning.startsWith('Saved data could not be read')
                 ? t(
-                    'Os dados guardados estão corrompidos, incompatíveis ou indisponíveis. Os dados originais foram preservados. A edição está bloqueada. Exporte uma cópia válida quando possível ou use a eliminação explícita para recuperar.',
-                    'Saved data is corrupted, incompatible or unavailable. The original data was preserved. Editing is blocked. Export a valid copy when possible or use explicit reset to recover.',
+                    'O armazenamento não pôde ser lido. A edição está bloqueada e nenhum dado foi removido. Verifique as permissões do navegador e recarregue o progresso guardado.',
+                    'Storage could not be read. Editing is blocked and no data was removed. Check browser permissions and reload saved progress.',
                   )
-                : warning === 'WRITE_FAILED'
+                : warning.startsWith('Saved data')
                   ? t(
-                      'Não foi possível guardar. A alteração não foi aplicada; os dados anteriores foram preservados. Exporte o progresso e verifique o espaço disponível (máximo de 500 sessões concluídas).',
-                      'Unable to save. The change was not applied; previous data was preserved. Export progress and check available storage (maximum 500 completed sessions).',
+                      'Os dados guardados estão corrompidos, incompatíveis ou indisponíveis. Os dados originais foram preservados. A edição está bloqueada. Exporte uma cópia válida quando possível ou use a eliminação explícita para recuperar.',
+                      'Saved data is corrupted, incompatible or unavailable. The original data was preserved. Editing is blocked. Export a valid copy when possible or use explicit reset to recover.',
                     )
-                  : warning}
+                  : warning === 'WRITE_FAILED'
+                    ? t(
+                        'Não foi possível guardar. A alteração não foi aplicada; os dados anteriores foram preservados. Exporte o progresso e verifique o espaço disponível (máximo de 500 sessões concluídas).',
+                        'Unable to save. The change was not applied; previous data was preserved. Export progress and check available storage (maximum 500 completed sessions).',
+                      )
+                    : warning}
             </p>
           )}
-          <p className="draft-note">
-            {t(
-              'Material independente e provisório. Questões e traduções revistas por IA; aprovação humana pendente. Sem calibração psicométrica. Não é um exame oficial nem uma previsão de certificação.',
-              'Independent provisional material. Questions and translations reviewed by AI; human approval pending. No psychometric calibration. This is not an official examination or a certification prediction.',
-            )}
-          </p>
+          {(page === 'dashboard' || page === 'practice') && (
+            <p className="draft-note">
+              {t(
+                'Beta independente. Conteúdo revisto por IA; aprovação humana e calibração pendentes. Consulte os termos e limites no rodapé.',
+                'Independent beta. AI-reviewed content; human approval and calibration pending. See terms and limitations in the footer.',
+              )}
+            </p>
+          )}
           {displayedSession &&
             displayedSession.contentRevision !== CONTENT_REVISION && (
               <p role="status" className="notice">
@@ -676,52 +709,24 @@ function LearningApp({
           )}
           {page === 'dashboard' && (
             <>
-              <section className="welcome">
-                <div>
-                  <span className="section-number">
-                    01 / {t('COMEÇAR', 'GET STARTED')}
-                  </span>
-                  <h2>
-                    {state.history.length
-                      ? t(
-                          'Continue a construir confiança.',
-                          'Keep building confidence.',
-                        )
-                      : t(
-                          'O próximo passo começa aqui.',
-                          'Your next step starts here.',
-                        )}
-                  </h2>
-                  <p>
-                    {t(
-                      'Compreenda os fundamentos dos testes de software, pratique ao seu ritmo e aprenda com cada resposta.',
-                      'Understand the fundamentals of software testing, practise at your own pace and learn from every answer.',
-                    )}
-                  </p>
-                  <button
-                    className="primary"
-                    onClick={() =>
-                      state.active ? setPage('session') : setPage('practice')
-                    }
-                  >
-                    {state.active
-                      ? t('Retomar sessão', 'Resume session')
-                      : t('Começar a praticar', 'Start practising')}{' '}
-                    <span aria-hidden="true">→</span>
-                  </button>
-                </div>
-                <aside>
-                  <strong>
-                    CTFL <span>4.0</span>
-                  </strong>
-                  <p>
-                    {questions.length}{' '}
-                    {t('questões originais', 'original questions')}
-                    <br />
-                    {t('6 capítulos · PT + EN', '6 chapters · PT + EN')}
-                  </p>
-                </aside>
-              </section>
+              <DashboardPaths
+                active={state.active}
+                now={now}
+                language={language}
+                minutes={minutes}
+                onMinutes={setMinutes}
+                onStudy={() => setPage('practice')}
+                onExam={() => start('exam')}
+                onResume={() => setPage('session')}
+                canCreate={canWrite && questions.length >= 40}
+              />
+              <p>
+                {questions.length}{' '}
+                {t(
+                  'questões originais · seis capítulos · PT-PT e EN',
+                  'original questions · six chapters · PT-PT and EN',
+                )}
+              </p>
               <section
                 className="stats"
                 aria-label={t(
@@ -735,12 +740,12 @@ function LearningApp({
                 </article>
                 <article>
                   <span>
-                    {t('Questões distintas vistas', 'Distinct questions seen')}
+                    {t(
+                      'Questões com visita registada',
+                      'Questions with a recorded visit',
+                    )}
                   </span>
-                  <strong>
-                    {seen.size}
-                    <small> / {questions.length}</small>
-                  </strong>
+                  <strong>{seen.size}</strong>
                 </article>
                 <article>
                   <span>
@@ -785,64 +790,6 @@ function LearningApp({
                   </button>
                 ))}
               </section>
-              <section className="exam-setup">
-                <div>
-                  <h2>
-                    {t(
-                      'Simulação alinhada ao blueprint',
-                      'Blueprint-aligned practice simulation',
-                    )}
-                  </h2>
-                  <p>
-                    {t(
-                      '40 questões · 26 pontos para aprovação · quotas por capítulo, K-level e grupo de LO verificadas na tabela v1.19.',
-                      '40 questions · 26 points to pass · chapter, K-level and LO-group quotas verified against table v1.19.',
-                    )}
-                  </p>
-                  <p>
-                    {t(
-                      'Simulação independente: alinhamento estrutural não significa exame oficial, dificuldade equivalente ou aprovação humana do conteúdo.',
-                      'Independent simulation: structural alignment does not mean an official examination, equivalent difficulty or human-approved content.',
-                    )}
-                  </p>
-                  <p>
-                    {t(
-                      'A opção de 75 minutos permite praticar com tempo adicional; a elegibilidade oficial é decidida pelo fornecedor do exame.',
-                      'The 75-minute option lets you practise with extra time; official eligibility is determined by the exam provider.',
-                    )}
-                  </p>
-                  {questions.length < 40 && (
-                    <p className="notice">
-                      {t(
-                        `Indisponível: existem ${questions.length} questões; são necessárias 40 distintas. Use o modo de prática.`,
-                        `Unavailable: ${questions.length} questions available; 40 distinct questions required. Use practice mode.`,
-                      )}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <label>
-                    {t('Duração', 'Duration')}
-                    <select
-                      aria-label={t('Duração', 'Duration')}
-                      value={minutes}
-                      onChange={(event) =>
-                        setMinutes(Number(event.target.value))
-                      }
-                    >
-                      <option value={60}>60 min</option>
-                      <option value={75}>75 min</option>
-                    </select>
-                  </label>
-                  <button
-                    className="primary"
-                    disabled={questions.length < 40 || !canWrite}
-                    onClick={() => start('exam')}
-                  >
-                    {t('Iniciar simulação', 'Start simulation')}
-                  </button>
-                </div>
-              </section>
             </>
           )}
           {page === 'practice' && (
@@ -856,8 +803,8 @@ function LearningApp({
               </p>
               <p>
                 {t(
-                  'Prática por tópico: sem quotas de exame. Não constitui uma simulação alinhada ao blueprint.',
-                  'Topic practice has no examination quotas. It is not a blueprint-aligned simulation.',
+                  'Prática por tópico: sem as quotas da estrutura de um exame completo.',
+                  'Topic practice does not follow the structure quotas of a full examination.',
                 )}
               </p>
               <p>
@@ -1080,8 +1027,8 @@ function LearningApp({
                   {active.mode === 'exam'
                     ? isBlueprintRevision(active.contentRevision)
                       ? t(
-                          'Simulação alinhada ao blueprint',
-                          'Blueprint-aligned simulation',
+                          'Simulado segundo a estrutura CTFL',
+                          'CTFL exam-structure simulation',
                         )
                       : t(
                           'Simulação anterior, sem alinhamento verificado',
@@ -1128,15 +1075,16 @@ function LearningApp({
                         {t('Questão', 'Question')} {active.index + 1} /{' '}
                         {active.questionIds.length}
                       </span>
-                      <span>
-                        {active.mode === 'practice' && <>{current.lo} · </>}
-                        {current.level} —{' '}
-                        {label(
-                          language,
-                          cognitiveLevels[current.level].title.pt,
-                          cognitiveLevels[current.level].title.en,
-                        )}
-                      </span>
+                      {active.mode === 'practice' && (
+                        <span>
+                          {current.lo} · {current.level} —{' '}
+                          {label(
+                            language,
+                            cognitiveLevels[current.level].title.pt,
+                            cognitiveLevels[current.level].title.en,
+                          )}
+                        </span>
+                      )}
                     </div>
                     <CognitiveLevelHelp language={language} />
                     {active.mode === 'practice' && (
@@ -1387,18 +1335,55 @@ function LearningApp({
                         'distinct questions seen. Results on repeated questions are not equivalent to performance on new questions.',
                       )}
                     </p>
-                    {weakness[0] && (
-                      <p>
-                        <strong>
-                          {t('Sugestão de estudo: ', 'Suggested focus: ')}
-                        </strong>
-                        {label(
-                          language,
-                          weakness[0].name.pt,
-                          weakness[0].name.en,
-                        )}
-                      </p>
-                    )}
+                    <p>
+                      {t(
+                        'Sessões concluídas apenas; a sessão em curso não entra nestas métricas. IDs vistos em revisões diferentes contam uma vez. Visita registada não mede atenção.',
+                        'Completed sessions only; the active session is excluded from these metrics. IDs viewed in different revisions count once. A recorded visit does not measure attention.',
+                      )}
+                    </p>
+                    <dl className="progress-counts">
+                      <div>
+                        <dt>
+                          {t('Corretas / respostas', 'Correct / responses')}
+                        </dt>
+                        <dd>
+                          {progress.correct} / {progress.answered}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>
+                          {t('Respostas incorretas', 'Incorrect responses')}
+                        </dt>
+                        <dd>{progress.incorrect}</dd>
+                      </div>
+                      <div>
+                        <dt>
+                          {t(
+                            'Sem resposta, incluindo não abertas',
+                            'Unanswered, including unopened',
+                          )}
+                        </dt>
+                        <dd>{progress.unanswered}</dd>
+                      </div>
+                      <div>
+                        <dt>
+                          {t(
+                            'Primeiras exposições registadas (IDs)',
+                            'First recorded exposures (IDs)',
+                          )}
+                        </dt>
+                        <dd>{progress.firstExposure}</dd>
+                      </div>
+                      <div>
+                        <dt>
+                          {t(
+                            'Visitas repetidas, além da primeira',
+                            'Repeat visits beyond the first',
+                          )}
+                        </dt>
+                        <dd>{progress.repeatedVisits}</dd>
+                      </div>
+                    </dl>
                     <ul className="history-list">
                       {[...state.history].reverse().map((session) => (
                         <li key={session.id}>
@@ -1424,15 +1409,8 @@ function LearningApp({
                                       'Earlier simulation',
                                     )
                                 : t('Prática', 'Practice')}{' '}
-                              ·{' '}
-                              {repeatedViewed(
-                                session,
-                                state.history.slice(
-                                  0,
-                                  state.history.indexOf(session),
-                                ),
-                              )}{' '}
-                              {t('repetidas', 'repeated')}
+                              · {new Set(session.visitedIds).size}{' '}
+                              {t('visitas registadas', 'recorded visits')}
                             </p>
                           </div>
                           <button
@@ -1449,6 +1427,14 @@ function LearningApp({
                   </>
                 )}
               </section>
+              <ChapterProgress
+                model={progress}
+                language={language}
+                onPractice={(chapter) => {
+                  changeFilters({ chapter: String(chapter) });
+                  setPage('practice');
+                }}
+              />
               <section className="panel reset">
                 <h2>
                   {t(
