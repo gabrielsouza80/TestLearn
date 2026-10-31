@@ -63,14 +63,20 @@ test('retained files cannot be removed from the build', (t) => {
 test('modified retained files fail the content hash check', (t) => {
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
-  fs.writeFileSync(path.join(data.root, data.name), 'export const old = false;');
+  fs.writeFileSync(
+    path.join(data.root, data.name),
+    'export const old = false;',
+  );
   assert.throws(() => checkRetainedAssets(data.root, data.catalogPath));
 });
 
 test('an unexpected entrypoint is rejected', (t) => {
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
-  fs.writeFileSync(path.join(data.root, 'assets/index-surprise.js'), 'export {};');
+  fs.writeFileSync(
+    path.join(data.root, 'assets/index-surprise.js'),
+    'export {};',
+  );
   assert.throws(() => checkRetainedAssets(data.root, data.catalogPath));
 });
 
@@ -83,7 +89,10 @@ test('catalog prevents unsafe paths and unsorted entries', (t) => {
 });
 
 test('published catalog entries are immutable and append-only', () => {
-  const old = { schemaVersion: 1, assets: [{ path: 'assets/index-old.js', sha256: 'a' }] };
+  const old = {
+    schemaVersion: 1,
+    assets: [{ path: 'assets/index-old.js', sha256: 'a' }],
+  };
   const added = {
     schemaVersion: 1,
     assets: [...old.assets, { path: 'assets/index-new.js', sha256: 'b' }],

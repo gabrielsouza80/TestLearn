@@ -10,19 +10,25 @@ const ARCHIVE = /^assets\/questions-2026-10-27\.([1-8])-[A-Za-z0-9_-]+\.js$/;
 
 export function identifyProductionAssets(html, entryJs) {
   const scripts = [
-    ...html.matchAll(/<script\b[^>]*\bsrc=["']\.\/(assets\/index-[A-Za-z0-9_-]+\.js)["'][^>]*>/g),
+    ...html.matchAll(
+      /<script\b[^>]*\bsrc=["']\.\/(assets\/index-[A-Za-z0-9_-]+\.js)["'][^>]*>/g,
+    ),
   ].map((match) => match[1]);
   assert.equal(scripts.length, 1, 'Expected exactly one production entrypoint');
   assert.match(scripts[0], INDEX_JS);
 
   const css = [
-    ...html.matchAll(/<link\b[^>]*\bhref=["']\.\/(assets\/index-[A-Za-z0-9_-]+\.css)["'][^>]*>/g),
+    ...html.matchAll(
+      /<link\b[^>]*\bhref=["']\.\/(assets\/index-[A-Za-z0-9_-]+\.css)["'][^>]*>/g,
+    ),
   ].map((match) => match[1]);
   assert(css.length > 0, 'Production CSS missing');
   for (const name of css) assert.match(name, INDEX_CSS);
 
   const historical = new Map();
-  for (const match of entryJs.matchAll(/questions-2026-10-27\.([1-8])-[A-Za-z0-9_-]+\.js/g)) {
+  for (const match of entryJs.matchAll(
+    /questions-2026-10-27\.([1-8])-[A-Za-z0-9_-]+\.js/g,
+  )) {
     const name = 'assets/' + match[0];
     assert.match(name, ARCHIVE);
     const chapter = Number(match[1]);
@@ -76,13 +82,11 @@ export async function checkLiveAssetRetention({
     const localFile = path.join(root, asset);
     assert(fs.existsSync(localFile), 'Previous asset not retained: ' + asset);
     const local = fs.readFileSync(localFile);
-    const published = asset === entryPath
-      ? Buffer.from(entryJs, 'utf8')
-      : await get('/' + asset);
-    assert(
-      local.equals(published),
-      'Published asset bytes changed: ' + asset,
-    );
+    const published =
+      asset === entryPath
+        ? Buffer.from(entryJs, 'utf8')
+        : await get('/' + asset);
+    assert(local.equals(published), 'Published asset bytes changed: ' + asset);
     comparedBytes += published.length;
   }
   return { origin, checkedPaths: paths, comparedBytes };

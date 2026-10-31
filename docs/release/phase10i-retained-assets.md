@@ -12,8 +12,8 @@ A Vercel mantém deployments imutáveis, mas o alias Production aponta apenas pa
 
 A pasta `public/assets/` do Vite copia ficheiros para a saída estática com nomes e bytes preservados. Os entrypoints publicados anteriores ficam ali, num **inventário append-only** em `config/retained-assets.json`, com SHA-256, commit e deployment de origem. Os dois ficheiros iniciais são:
 
-| Asset antigo | SHA-256 |
-| --- | --- |
+| Asset antigo               | SHA-256                                                            |
+| -------------------------- | ------------------------------------------------------------------ |
 | `assets/index-CTbPgljy.js` | `6def132bdf263f78c2b48798f917bc82e80ba05bd8b04b04689a79c0020629b1` |
 | `assets/index-DB06V4Gu.js` | `250eddc57ea8a0fe2c1722669a2826cc5222e76a9b89a30b65e41c1cd33d6b65` |
 

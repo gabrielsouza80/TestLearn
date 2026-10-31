@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { readRetainedCatalog, assertAppendOnly } from './check-retained-assets.mjs';
+import {
+  readRetainedCatalog,
+  assertAppendOnly,
+} from './check-retained-assets.mjs';
 
 export function checkCatalogAppendOnly(
   eventName = process.env.GITHUB_EVENT_NAME,
@@ -16,11 +19,10 @@ export function checkCatalogAppendOnly(
   let previous = { schemaVersion: 1, assets: [] };
   try {
     previous = JSON.parse(
-      execFileSync(
-        'git',
-        ['show', 'origin/main:config/retained-assets.json'],
-        { encoding: 'utf8', stdio: 'pipe' },
-      ),
+      execFileSync('git', ['show', 'origin/main:config/retained-assets.json'], {
+        encoding: 'utf8',
+        stdio: 'pipe',
+      }),
     );
   } catch (error) {
     const exists = execFileSync(

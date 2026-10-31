@@ -52,10 +52,12 @@ test('fails closed if current production JS is missing from candidate', async (t
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
   fs.rmSync(path.join(data.root, 'assets/index-old.js'));
-  await assert.rejects(checkLiveAssetRetention({
-    root: data.root,
-    fetchImpl: data.fetchImpl,
-  }));
+  await assert.rejects(
+    checkLiveAssetRetention({
+      root: data.root,
+      fetchImpl: data.fetchImpl,
+    }),
+  );
 });
 
 test('detects altered bytes in an archived question chunk', async (t) => {
@@ -65,22 +67,21 @@ test('detects altered bytes in an archived question chunk', async (t) => {
     path.join(data.root, 'assets/questions-2026-10-27.5-old.js'),
     'modified',
   );
-  await assert.rejects(checkLiveAssetRetention({
-    root: data.root,
-    fetchImpl: data.fetchImpl,
-  }));
+  await assert.rejects(
+    checkLiveAssetRetention({
+      root: data.root,
+      fetchImpl: data.fetchImpl,
+    }),
+  );
 });
 
 test('rejects missing historical chapter references', () => {
   const data = fixture();
   try {
-    const js = data.files.get('/assets/index-old.js').replace(
-      './questions-2026-10-27.8-old.js',
-      '',
-    );
-    assert.throws(() =>
-      identifyProductionAssets(data.files.get('/'), js),
-    );
+    const js = data.files
+      .get('/assets/index-old.js')
+      .replace('./questions-2026-10-27.8-old.js', '');
+    assert.throws(() => identifyProductionAssets(data.files.get('/'), js));
   } finally {
     fs.rmSync(data.root, { recursive: true, force: true });
   }
@@ -89,19 +90,23 @@ test('rejects missing historical chapter references', () => {
 test('rejects unexpected production origins', async (t) => {
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
-  await assert.rejects(checkLiveAssetRetention({
-    root: data.root,
-    origin: 'https://example.com',
-    fetchImpl: data.fetchImpl,
-  }));
+  await assert.rejects(
+    checkLiveAssetRetention({
+      root: data.root,
+      origin: 'https://example.com',
+      fetchImpl: data.fetchImpl,
+    }),
+  );
 });
 
 test('returns an error on remote 404, never a false PASS', async (t) => {
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
   data.files.delete('/assets/index-old.css');
-  await assert.rejects(checkLiveAssetRetention({
-    root: data.root,
-    fetchImpl: data.fetchImpl,
-  }));
+  await assert.rejects(
+    checkLiveAssetRetention({
+      root: data.root,
+      fetchImpl: data.fetchImpl,
+    }),
+  );
 });
