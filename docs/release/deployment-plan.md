@@ -1,6 +1,6 @@
-# Plano de alojamento e publicação — NÃO EXECUTAR SEM AUTORIZAÇÃO
+# Plano histórico de alojamento — anterior à Beta pública
 
-> Atualização: resultados e preparação atuais em [fase 9.3](phase9.3-release-gates.md). O detalhe abaixo conserva a evidência/contrato anterior; não representa uma nova validação remota ou manual.
+> **Documento histórico:** este plano foi elaborado antes da publicação e inclui afirmações que deixaram de ser atuais. O projeto já está alojado na Vercel. Para decisões de 0.1.1, consulte [current-production-state.md](current-production-state.md). Os procedimentos antigos abaixo são preservados como evidência, não instruções executáveis.
 
 Não existe host/projeto de deployment/domínio configurado. A workflow quality é QA, sem deploy. Não criar automaticamente recursos Vercel/Netlify ou modificar infraestrutura de outro projeto. Vite preview é apenas servidor local de validação. Selecionar alojamento estático HTTPS que suporte headers, 404 correto e retenção dos assets antigos.
 
