@@ -17,7 +17,12 @@ it('prepares only the guarded static build, without rewrites, environment sharin
   expect(configuration.framework).toBe('vite');
   expect(configuration.installCommand).toBe('npm ci');
   expect(configuration.buildCommand).toBe(
-    'npm run build && node scripts/check-release.mjs',
+    [
+      'npm run build',
+      'node scripts/check-release.mjs',
+      'node scripts/check-retained-assets.mjs',
+      'node scripts/check-live-asset-retention.mjs',
+    ].join(' && '),
   );
   expect(JSON.parse(readFileSync('package.json', 'utf8')).engines.node).toBe(
     '24.x',

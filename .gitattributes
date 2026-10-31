@@ -1,2 +1,3 @@
 * text=auto eol=lf
 src/data/archive/*.json text eol=lf
+public/assets/** -text
