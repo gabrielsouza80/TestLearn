@@ -13,8 +13,8 @@ export default function EnglishLearning({ language }: { language: Language }) {
         </h2>
         <p>
           {t(
-            'Leia em voz alta e adapte os exemplos à sua experiência. Material original; traduções pendentes de revisão.',
-            'Read aloud and adapt examples to your experience. Original material; translations pending review.',
+            'Leia em voz alta e adapte os exemplos à sua experiência. Material original; traduções pendentes de revisão humana.',
+            'Read aloud and adapt examples to your experience. Original material; translations pending human review.',
           )}
         </p>
         <p>
