@@ -1,6 +1,6 @@
 # TestLearn — estado de Production e releases
 
-> Estado observado em 30 de outubro de 2026. Este documento atualiza o estado operativo dos planos históricos anteriores à publicação. Não constitui certificação jurídica ou académica.
+> Estado reconfirmado em 31 de outubro de 2026, na auditoria 10G. Este documento atualiza o estado operativo dos planos históricos anteriores à publicação. Não constitui certificação jurídica ou académica.
 
 ## Serviço público
 
@@ -8,22 +8,24 @@
 - Código: https://github.com/gabrielsouza80/TestLearn
 - Alojamento: Vercel, projeto `testlearn`, plano Hobby, independente de KAVTRIS.
 - A Production tem domínio público; os Previews e URLs de deployment individuais permanecem protegidos por autenticação Vercel.
-- Baseline público verificado: commit `48624cba2929b1a31aa9b82ec4d38d2d322d4c70`.
-- Pipeline do baseline: **226 testes unitários e 364 testes E2E aprovados**, além de typecheck, lint, Prettier, build e guard de release.
+- Production verificada: commit `abf15ed5376e8b34a86fc4f873a65694b7705e34`, deployment `dpl_G9Wsax2WV1Cz9KWN2U5mENeYdGkp`, associado ao domínio público pela API.
+- CI desse commit: `verify` aprovado, run `41152055646`. É evidência remota dessa revisão, não validação de alterações locais posteriores. Resultados atuais e limitações: [auditoria 10G](phase10g-production-validation.md).
 - Banco académico: 90 questões, revisão `2026-10-27.9`; não é alterado pela 0.1.1.
 - Responsável público: Gabriel Souza. Contacto: testlearn808005@gmail.com.
 
 `READY` na Vercel valida o build, não a qualidade do conteúdo nem a execução do GitHub Actions. Uma página acessível na sessão do proprietário não demonstra, isoladamente, acesso anónimo.
 
-## Bloqueio atual de release
+## Gate de release reconfirmado
 
-Em 30 de outubro, a branch `main` estava **sem proteção**. A Vercel constrói Production assim que chegam commits à `main`, mesmo que a workflow `Quality` ainda não tenha terminado. **A workflow, sozinha, não é um gate de publicação.**
+O relato inicial de 30 de outubro identificava `main` sem proteção. A consulta de 31 de outubro confirma agora PR obrigatório, check `verify` da aplicação GitHub Actions obrigatório, branch atualizada, regras aplicadas a administradores e force push/eliminação desativados. Não existem rulesets adicionais; a proteção é a regra de branch. Nenhuma definição remota foi alterada nesta auditoria.
 
-Não fazer merge do PR 0.1.1 nem push direto em `main` até a proteção ser configurada e verificada. O conector GitHub atual não tem permissão para configurar essas regras; o proprietário precisa de atuar na interface.
+No PR #4, `verify` terminou às 00:46:48 UTC antes do merge às 00:47:20; as árvores Git do head aprovado e do commit integrado são iguais. A Vercel atribuiu o domínio às 00:48:16, antes de o novo `verify` pós-merge terminar às 00:55:40. Assim, a proteção pré-merge existe, mas não se deve afirmar que a Vercel espera pelo CI pós-merge. A workflow isolada continua sem constituir um gate de publicação. Não foram testados pushes ou merges deliberadamente inválidos.
 
-## Configuração obrigatória — GitHub
+Manter PR validado e autorização explícita antes de cada merge, pois a Vercel publica automaticamente a `main`. A PR #6 propõe retenção dos assets e continua separada desta auditoria; não fazer merge ou promover deployments sem autorização. Eventuais Deployment Checks ou alterações de promoção na Vercel precisam de proposta e aprovação próprias.
 
-Abrir https://github.com/gabrielsouza80/TestLearn/settings/branches e aplicar uma regra à branch exata `main`:
+## Configuração obrigatória — GitHub (já observada)
+
+Preservar a regra da branch exata `main`, consultável em https://github.com/gabrielsouza80/TestLearn/settings/branches:
 
 1. **Require a pull request before merging**, sem exigir uma aprovação externa impossível para o único mantenedor.
 2. **Require status checks to pass before merging**. Selecionar o check **`verify`** da workflow **Quality**, após estar visível no PR.
@@ -44,7 +46,7 @@ As opções exatas dependem do plano e das permissões do GitHub. **Não declara
 
 ## Limites e testes pendentes
 
-- Falta demonstrar remotamente a continuidade **A → B** de uma sessão sintética com novo deployment, incluindo URLs de chunks anteriores e rollback compatível. Os E2E locais não provam retenção remota.
+- O ensaio local isolado **A → B** da 10G preservou sessão, deadline, respostas, ordem, índice, histórico e resultados. Não publicou versões. A disponibilidade remota do JS de A falha: `/assets/index-CTbPgljy.js` devolve 404 no domínio atual; JS de B, CSS e oito arquivos históricos devolvem 200. A correção proposta está na PR #6/issue #5. Não declarar retenção ou rollback PASS apenas porque os dados da sessão sobrevivem.
 - Alterações de `src/storage`, do esquema `testlearn.v1` ou do conteúdo/revisões académicas requerem ensaio A → B antes da promoção.
 - A aprovação académica humana das 90 perguntas, tradução e calibração ainda estão pendentes. Não são perguntas oficiais ISTQB/PSTQB.
 - Privacidade, bases legais, retenção de logs Vercel, direitos de conteúdo e obrigações jurídicas precisam de revisão do responsável.

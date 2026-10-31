@@ -188,6 +188,9 @@ test('preview conservatively skips exact-ID conflicts and an imported active ses
   await choose(page, Buffer.from(wireBackup(incoming)));
   const dialog = page.getByRole('alertdialog');
   await expect(dialog.locator('dd')).toHaveText(['3', '1', '0', '2', '0']);
+  await expect(
+    dialog.getByRole('button', { name: 'Cancelar', exact: true }),
+  ).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(
     dialog.getByRole('button', { name: 'Confirmar importação', exact: true }),
