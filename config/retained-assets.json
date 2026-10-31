@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "path": "assets/index-CTbPgljy.js",
+      "sha256": "6def132bdf263f78c2b48798f917bc82e80ba05bd8b04b04689a79c0020629b1",
+      "sourceCommit": "58ec1f04d3971ce8ff3fc46730f1bdd8e54f5c68",
+      "sourceDeployment": "dpl_H4Bf43SsFRitzZ4yCRwA5E58KZ1X"
+    },
+    {
+      "path": "assets/index-DB06V4Gu.js",
+      "sha256": "250eddc57ea8a0fe2c1722669a2826cc5222e76a9b89a30b65e41c1cd33d6b65",
+      "sourceCommit": "abf15ed5376e8b34a86fc4f873a65694b7705e34",
+      "sourceDeployment": "dpl_G9Wsax2WV1Cz9KWN2U5mENeYdGkp"
+    }
+  ]
+}
