@@ -53,3 +53,7 @@ As opções exatas dependem do plano e das permissões do GitHub. **Não declara
 - O projeto antigo do incidente permanece isolado e não deve ser reativado.
 
 Consultar também [rollback-plan.md](rollback-plan.md) e [privacy-and-data-inventory.md](privacy-and-data-inventory.md).
+
+## Atualização operacional — 31 de outubro de 2026
+
+A proteção da `main` foi ativada, com Pull Request obrigatório e check `verify` aprovado antes de integrar. O teste remoto A→B (ver #3) confirmou, por relato do utilizador, a continuidade da sessão sintética após recarregar; os oito chunks históricos responderam 200, mas o JavaScript principal antigo respondeu 404 no domínio público (P1 #5). A correção proposta na [Fase 10I](phase10i-retained-assets.md) preserva bundles anteriores no build e verifica as referências da Production antes de publicar; enquanto não for integrada e validada, é apenas um candidato, não uma correção certificada.
