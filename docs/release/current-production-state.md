@@ -59,3 +59,7 @@ Consultar também [rollback-plan.md](rollback-plan.md) e [privacy-and-data-inven
 ## Atualização operacional — 31 de outubro de 2026
 
 A proteção da `main` foi ativada, com Pull Request obrigatório e check `verify` aprovado antes de integrar. O teste remoto A→B (ver #3) confirmou, por relato do utilizador, a continuidade da sessão sintética após recarregar; os oito chunks históricos responderam 200, mas o JavaScript principal antigo respondeu 404 no domínio público (P1 #5). A correção proposta na [Fase 10I](phase10i-retained-assets.md) preserva bundles anteriores no build e verifica as referências da Production antes de publicar; enquanto não for integrada e validada, é apenas um candidato, não uma correção certificada.
+
+## Gate de continuidade e programa 10G–10L
+
+A auditoria 10G foi efetuada, mas a fase continua **BLOCKED** enquanto os critérios de release não forem satisfeitos. A [revisão de continuidade/PR #6](phase10g-continuity-gate.md) distingue produção, commit local não publicado, candidata e evidências novas. O [plano mestre e checklist](../superpowers/plans/2026-10-31-testlearn-10g-10l.md) define dependências e preparação local permitida. Estes documentos não autorizam merge, push, deploy ou alterações remotas, nem aprovam academicamente o banco.
