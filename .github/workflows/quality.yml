@@ -1,9 +1,16 @@
 name: Quality
 on:
   push:
-    branches: [main]
+    branches: [main, develop]
   pull_request:
+    branches: [main, develop]
+    types: [opened, synchronize, reopened, edited]
   workflow_dispatch:
+    inputs:
+      retention_base_sha:
+        description: Exact first-parent SHA of the selected commit for append-only comparison
+        required: true
+        type: string
 permissions:
   contents: read
 concurrency:

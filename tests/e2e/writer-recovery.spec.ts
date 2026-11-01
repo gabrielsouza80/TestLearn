@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
-import { mkdir, mkdtemp } from 'node:fs/promises';
+import { mkdtemp } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { showEditingOptions } from '../fixtures/review-navigation';
 import path from 'node:path';
 import { fork, type ChildProcess } from 'node:child_process';
@@ -335,8 +336,10 @@ test('real browser shutdown and relaunch of the same synthetic profile restores 
   baseURL,
 }) => {
   test.setTimeout(60000); // Two actual browser process launches, not an assertion timeout change.
-  await mkdir(path.resolve('tmp/writer-fix'), { recursive: true });
-  const directory = await mkdtemp(path.resolve('tmp/writer-fix/profile-'));
+  // Keep native browser locks outside the source tree watched by Vite.
+  const directory = await mkdtemp(
+    path.join(tmpdir(), 'testlearn-writer-profile-'),
+  );
   const type = browser.browserType();
   let profile = await type.launchPersistentContext(directory);
   let saved: string | null = null;

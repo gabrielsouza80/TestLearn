@@ -10,10 +10,17 @@ const ASSET_PATH =
 const INDEX_PATH = /^assets\/index-[A-Za-z0-9_-]+\.(?:js|css)$/;
 
 export function readRetainedCatalog(file = RETAINED_PATH) {
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  return parseRetainedCatalog(fs.readFileSync(file, 'utf8'));
+}
+
+export function parseRetainedCatalog(content) {
+  const data = JSON.parse(content);
   assert.equal(data.schemaVersion, 1, 'Unknown retained-assets schema');
   assert(Array.isArray(data.assets), 'Missing retained assets');
-  assert(data.assets.length > 0 && data.assets.length <= 250);
+  assert(
+    data.assets.length > 0 && data.assets.length <= 250,
+    'Retained asset count must be between 1 and 250',
+  );
   const paths = new Set();
   let previous = '';
   for (const item of data.assets) {
@@ -21,7 +28,11 @@ export function readRetainedCatalog(file = RETAINED_PATH) {
     assert.match(item.path, ASSET_PATH, 'Unsafe retained asset path');
     assert(item.path > previous, 'Retained paths must be sorted and unique');
     assert(!paths.has(item.path));
-    assert.match(item.sha256, /^[a-f0-9]{64}$/);
+    assert.match(
+      item.sha256,
+      /^[a-f0-9]{64}$/,
+      'Invalid retained asset SHA-256',
+    );
     assert.match(item.sourceCommit, /^[a-f0-9]{40}$/);
     if (item.sourceDeployment !== undefined)
       assert.match(item.sourceDeployment, /^dpl_[A-Za-z0-9]+$/);
