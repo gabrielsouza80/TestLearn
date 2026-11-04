@@ -1,0 +1,914 @@
+{
+  "schemaVersion": 1,
+  "pilotId": "advanced-interpretation-v1",
+  "baselineCommit": "dc94e6b1800ff345f387a30d8c5c7f16d84a761d",
+  "purpose": "Documentation-only bilingual original CTFL interpretation candidates; not an official exam or runtime bank.",
+  "humanApprovedCount": 0,
+  "publicationPolicy": "All items excluded from runtime/publication and pending documented human review.",
+  "questions": [
+    {
+      "id": "exp-ai-001",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-1.3.1",
+      "cognitiveLevel": "K2",
+      "interpretationDifficulty": "I1",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "1.3",
+        "pdfPages": [18]
+      },
+      "timeTargetSeconds": {
+        "total": 90,
+        "reading": 40,
+        "selection": 50,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Ler primeiro o pedido; marcar mentalmente a cobertura em falta e a cobertura a preservar. Rejeitar soluções que só aumentem frequência ou eliminem proteção.",
+      "criticalWording": [
+        {
+          "en": "absent from the test data",
+          "pt": "ausente dos dados de teste"
+        },
+        {
+          "en": "retain useful protection",
+          "pt": "manter a proteção útil"
+        }
+      ],
+      "prompt": {
+        "en": "A bicycle-rental team runs the same automated regression suite nightly. It still detects faults when old price rules are accidentally changed. Recently, customers reported failures when a rental crosses midnight, a situation absent from the test data. The manager can fund a small improvement this week and wants to retain useful protection for existing behavior. Which proposal best addresses the new failures while preserving that protection?",
+        "pt": "Uma equipa de aluguer de bicicletas executa todas as noites a mesma bateria de regressão automatizada. Esta ainda deteta defeitos quando regras de preços antigas são alteradas por engano. Recentemente, clientes reportaram falhas quando o aluguer atravessa a meia-noite, situação ausente dos dados de teste. O responsável pode financiar uma pequena melhoria esta semana e quer manter a proteção útil do comportamento existente. Que proposta responde melhor às novas falhas preservando essa proteção?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "Run the unchanged suite twice nightly to increase the number of observations.",
+            "pt": "Executar a bateria inalterada duas vezes por noite para aumentar o número de observações."
+          },
+          "explanation": {
+            "en": "More runs may shorten detection delay, but do not add the missing midnight scenario.",
+            "pt": "Mais execuções podem reduzir o atraso de deteção, mas não acrescentam o cenário de meia-noite em falta."
+          },
+          "misconceptionTag": "frequency-for-coverage"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "Replace the old suite with midnight tests because repeated regression tests no longer have value.",
+            "pt": "Substituir a bateria antiga por testes de meia-noite porque testes de regressão repetidos já não têm valor."
+          },
+          "explanation": {
+            "en": "The scenario states that the suite still detects regressions; discarding it loses useful coverage.",
+            "pt": "O cenário indica que a bateria ainda deteta regressões; eliminá-la perde cobertura útil."
+          },
+          "misconceptionTag": "discard-useful-regression"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "Review the missing scenarios and add or vary test data while retaining useful regression checks.",
+            "pt": "Rever os cenários em falta e acrescentar ou variar dados de teste, mantendo verificações de regressão úteis."
+          },
+          "explanation": {
+            "en": "Tests can wear out for detecting new defects; extending scenarios addresses that limitation without abandoning useful regression checks.",
+            "pt": "Os testes podem perder eficácia na deteção de novos defeitos; ampliar cenários responde a essa limitação sem abandonar regressão útil."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "Keep the cases and data unchanged but alternate their execution order as the coverage improvement.",
+            "pt": "Manter casos e dados inalterados, alternando a sua ordem de execução como melhoria da cobertura."
+          },
+          "explanation": {
+            "en": "Order changes can expose dependencies, but do not introduce the expressly absent midnight data.",
+            "pt": "Mudar a ordem pode revelar dependências, mas não introduz os dados de meia-noite expressamente ausentes."
+          },
+          "misconceptionTag": "order-for-new-scenario"
+        }
+      ],
+      "correct": ["p3"],
+      "workedSolution": "Separar duas afirmações: a regressão antiga ainda é útil; a meia-noite não é exercitada. A solução deve satisfazer ambas. Só p3 o faz sem inferir que repetição deixou de ter qualquer valor.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-002",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-2.2.3",
+      "cognitiveLevel": "K2",
+      "interpretationDifficulty": "I1",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "2.2.3",
+        "pdfPages": [30, 31]
+      },
+      "timeTargetSeconds": {
+        "total": 90,
+        "reading": 40,
+        "selection": 50,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Numerar mentalmente as duas ações e dizer o objetivo de cada uma antes de comparar as alternativas; verificar a ordem na resposta.",
+      "criticalWording": [
+        {
+          "en": "in that order",
+          "pt": "por essa ordem"
+        },
+        {
+          "en": "whose implementation was not edited",
+          "pt": "cuja implementação não foi editada"
+        }
+      ],
+      "prompt": {
+        "en": "A library portal displayed the wrong renewal date for a particular loan. After a fix, the tester repeats the exact steps that previously reproduced the failure. Next, the tester checks reservation and cancellation flows whose implementation was not edited, because they share date-calculation code with renewals. The test report must name the purpose of each set of checks, in that order. Which description is correct?",
+        "pt": "Um portal de biblioteca apresentava uma data de renovação errada para um empréstimo específico. Após a correção, o testador repete os passos exatos que antes reproduziam a falha. Depois verifica os fluxos de reserva e cancelamento cuja implementação não foi editada, porque partilham código de cálculo de datas com as renovações. O relatório deve indicar o objetivo de cada conjunto de verificações, por essa ordem. Qual é a descrição correta?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "Regression first, then confirmation, because the second set checks code related to the fix.",
+            "pt": "Primeiro regressão e depois confirmação, porque o segundo conjunto verifica código relacionado com a correção."
+          },
+          "explanation": {
+            "en": "Related code does not make the second set confirmation; its objective is detecting adverse effects. The first set verifies the original fix.",
+            "pt": "Código relacionado não torna o segundo conjunto confirmação; o objetivo é detetar efeitos adversos. O primeiro conjunto verifica a correção original."
+          },
+          "misconceptionTag": "reverse-confirmation-regression"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "Confirmation first, then regression, because the objectives are verifying the original fix and detecting adverse effects.",
+            "pt": "Primeiro confirmação e depois regressão, porque os objetivos são verificar a correção original e detetar efeitos adversos."
+          },
+          "explanation": {
+            "en": "The first checks whether the original failure was removed; the second checks consequences of the change on other behavior.",
+            "pt": "A primeira verifica se a falha original foi removida; a segunda verifica consequências da alteração noutro comportamento."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "Confirmation for both, because all checks take place after a defect correction.",
+            "pt": "Confirmação em ambos, porque todas as verificações ocorrem após a correção de um defeito."
+          },
+          "explanation": {
+            "en": "Timing after a fix is shared; the objectives distinguish the checks.",
+            "pt": "O momento após a correção é comum; os objetivos distinguem as verificações."
+          },
+          "misconceptionTag": "classify-by-timing"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "Regression for both, because both sets execute previously implemented functionality.",
+            "pt": "Regressão em ambos, porque ambos os conjuntos executam funcionalidade já implementada."
+          },
+          "explanation": {
+            "en": "Existing functionality alone does not determine the purpose; the first set explicitly verifies the original defect correction.",
+            "pt": "Funcionalidade existente não determina, por si só, o objetivo; o primeiro conjunto verifica expressamente a correção do defeito original."
+          },
+          "misconceptionTag": "classify-by-code-age"
+        }
+      ],
+      "correct": ["p2"],
+      "workedSolution": "Classificar pelo objetivo, não pela data nem pelo ficheiro editado. Repetir a falha original verifica a correção; reservas/cancelamentos procuram efeitos adversos de código partilhado. Não se pressupõe que código não editado esteja não afetado.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-003",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-3.2.3",
+      "cognitiveLevel": "K1",
+      "interpretationDifficulty": "I1",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "3.2.3",
+        "pdfPages": [36]
+      },
+      "timeTargetSeconds": {
+        "total": 75,
+        "reading": 35,
+        "selection": 40,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Extrair os verbos mediar/gerir tempo/permitir participação. Associar a função específica antes de ler títulos hierárquicos nas alternativas.",
+      "criticalWording": [
+        {
+          "en": "specific responsibility",
+          "pt": "responsabilidade específica"
+        },
+        {
+          "en": "one person holds several roles",
+          "pt": "uma pessoa acumular várias funções"
+        }
+      ],
+      "prompt": {
+        "en": "During a review of a ferry-booking specification, two reviewers disagree about a cancellation rule and repeatedly interrupt one another. Resources and participants were arranged before the meeting. The immediate task is to keep the discussion constructive, manage the remaining meeting time and ensure that everyone can contribute safely. Which review role has this specific responsibility, regardless of whether one person holds several roles?",
+        "pt": "Durante uma revisão de uma especificação de reservas de ferry, dois revisores discordam sobre uma regra de cancelamento e interrompem-se repetidamente. Os recursos e participantes foram organizados antes da reunião. A tarefa imediata é manter a discussão construtiva, gerir o tempo restante da reunião e assegurar que todos podem contribuir num ambiente seguro. Que função de revisão tem esta responsabilidade específica, independentemente de uma pessoa acumular várias funções?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "Review leader, because overall responsibility assigns that role every meeting-facilitation task.",
+            "pt": "Líder da revisão, porque a responsabilidade global lhe atribui todas as tarefas de facilitação da reunião."
+          },
+          "explanation": {
+            "en": "Overall organization is the review leader responsibility; the question asks for the specific facilitation role. One person may hold both.",
+            "pt": "A organização global pertence ao líder; a pergunta procura a função específica de facilitação. Uma pessoa pode acumular ambas."
+          },
+          "misconceptionTag": "overall-vs-specific-role"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "Scribe, because recording disagreement includes deciding how participants should speak.",
+            "pt": "Relator, porque registar discordâncias inclui decidir como os participantes devem falar."
+          },
+          "explanation": {
+            "en": "The scribe records review information and anomalies; safe facilitation is the moderator responsibility.",
+            "pt": "O relator regista informação e anomalias; a facilitação segura pertence ao moderador."
+          },
+          "misconceptionTag": "recording-vs-facilitation"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "Author, because owning the specification makes the author responsible for mediating every review.",
+            "pt": "Autor, porque ser responsável pela especificação torna o autor responsável por mediar todas as revisões."
+          },
+          "explanation": {
+            "en": "The author creates and fixes the work product; that does not assign all reviews to the author as moderator.",
+            "pt": "O autor cria e corrige o produto; isso não lhe atribui a moderação de todas as revisões."
+          },
+          "misconceptionTag": "authorship-vs-moderation"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "Moderator, because effective meetings, mediation, time management and a safe discussion are part of that role.",
+            "pt": "Moderador, porque reuniões eficazes, mediação, gestão do tempo e discussão segura fazem parte dessa função."
+          },
+          "explanation": {
+            "en": "These are the moderator responsibilities described by the syllabus; the question asks about a role, not a particular person.",
+            "pt": "Estas são responsabilidades do moderador descritas no syllabus; pergunta-se por uma função, não por uma pessoa específica."
+          },
+          "misconceptionTag": null
+        }
+      ],
+      "correct": ["p4"],
+      "workedSolution": "A palavra específica impede confundir responsabilidade global com facilitação. A possibilidade de acumular funções não altera a responsabilidade definida de moderador.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-004",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-4.2.2",
+      "cognitiveLevel": "K3",
+      "interpretationDifficulty": "I2",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "4.2.2",
+        "pdfPages": [40]
+      },
+      "timeTargetSeconds": {
+        "total": 150,
+        "reading": 55,
+        "selection": 95,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Anotar o domínio inteiro e as fronteiras antes de olhar para as opções; construir o conjunto completo e só depois retirar o já testado.",
+      "criticalWording": [
+        {
+          "en": "integer",
+          "pt": "inteira"
+        },
+        {
+          "en": "inclusive",
+          "pt": "inclusive"
+        },
+        {
+          "en": "already tested 6 and 18",
+          "pt": "já testou 6 e 18"
+        }
+      ],
+      "prompt": {
+        "en": "A parcel kiosk accepts an integer reservation length from 6 to 18 hours inclusive and rejects all other integers. There are three ordered equivalence partitions: below the accepted interval, inside it and above it. The team has already tested 6 and 18. It wants full 2-value boundary value analysis coverage of the boundaries between these three partitions, adding the smallest possible set. Which two additional values are required?",
+        "pt": "Um quiosque de encomendas aceita uma duração inteira de reserva entre 6 e 18 horas, inclusive, e rejeita todos os outros inteiros. Existem três partições de equivalência ordenadas: abaixo do intervalo aceite, dentro dele e acima dele. A equipa já testou 6 e 18. Pretende cobertura completa de análise de valor fronteira de 2 valores nas fronteiras entre estas três partições, acrescentando o menor conjunto possível. Que dois valores adicionais são necessários?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "5 and 19.",
+            "pt": "5 e 19."
+          },
+          "explanation": {
+            "en": "The adjacent boundary pairs are 5/6 and 18/19; 6 and 18 are already covered, leaving 5 and 19.",
+            "pt": "Os pares adjacentes são 5/6 e 18/19; 6 e 18 já estão cobertos, faltando 5 e 19."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "7 and 17.",
+            "pt": "7 e 17."
+          },
+          "explanation": {
+            "en": "Both are inside the valid partition, so the adjacent invalid boundary values remain missing.",
+            "pt": "Ambos estão na partição válida; continuam em falta os valores fronteira inválidos adjacentes."
+          },
+          "misconceptionTag": "inside-neighbor-only"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "5 and 17.",
+            "pt": "5 e 17."
+          },
+          "explanation": {
+            "en": "The lower invalid boundary is added, but 19 at the upper transition remains missing.",
+            "pt": "Acrescenta a fronteira inválida inferior, mas continua a faltar 19 na transição superior."
+          },
+          "misconceptionTag": "miss-upper-boundary"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "7 and 19.",
+            "pt": "7 e 19."
+          },
+          "explanation": {
+            "en": "The upper invalid boundary is added, but 5 at the lower transition remains missing.",
+            "pt": "Acrescenta a fronteira inválida superior, mas continua a faltar 5 na transição inferior."
+          },
+          "misconceptionTag": "miss-lower-boundary"
+        }
+      ],
+      "correct": ["p1"],
+      "workedSolution": "Partições x<=5, 6<=x<=18, x>=19. Itens de cobertura de dois valores={5,6,18,19}. Retirar já testados {6,18}: faltam {5,19}. Nenhuma outra opção cobre simultaneamente ambas as fronteiras.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-005",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-4.2.3",
+      "cognitiveLevel": "K3",
+      "interpretationDifficulty": "I2",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "4.2.3",
+        "pdfPages": [41]
+      },
+      "timeTargetSeconds": {
+        "total": 150,
+        "reading": 60,
+        "selection": 90,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Desenhar quatro colunas TT/TF/FT/FF e marcar as já executadas. Conferir o denominador da cobertura, evitando confundir regras com resultados.",
+      "criticalWording": [
+        {
+          "en": "all four combinations are feasible",
+          "pt": "as quatro combinações são exequíveis"
+        },
+        {
+          "en": "non-minimized",
+          "pt": "não minimizada"
+        }
+      ],
+      "prompt": {
+        "en": "A museum gives a digital receipt if and only if an email address is provided and the visitor consents to electronic delivery. The two Boolean conditions are independent: all four combinations are feasible. A non-minimized decision table therefore has one rule per combination. Tests have covered email=yes/consent=yes and email=no/consent=no. The team now requires 100% feasible-rule coverage, not merely observing each resulting action once. What is the smallest set of additional tests?",
+        "pt": "Um museu fornece um recibo digital se e só se existe um endereço de email e o visitante consente na entrega eletrónica. As duas condições booleanas são independentes: as quatro combinações são exequíveis. Uma tabela de decisão não minimizada tem, por isso, uma regra por combinação. Foram testadas email=sim/consentimento=sim e email=não/consentimento=não. A equipa exige agora 100% de cobertura de regras exequíveis, e não apenas observar cada ação resultante uma vez. Qual é o menor conjunto de testes adicionais?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "No additional tests, because receipt and no-receipt outcomes have both occurred.",
+            "pt": "Nenhum teste adicional, porque já ocorreram os resultados com recibo e sem recibo."
+          },
+          "explanation": {
+            "en": "Outcome coverage is not coverage of all four feasible columns in the stated table.",
+            "pt": "Cobertura dos resultados não é cobertura das quatro colunas exequíveis da tabela indicada."
+          },
+          "misconceptionTag": "outcome-for-rule-coverage"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "Only email=yes/consent=no, because it adds the rejection for missing consent.",
+            "pt": "Apenas email=sim/consentimento=não, porque acrescenta a rejeição por falta de consentimento."
+          },
+          "explanation": {
+            "en": "This leaves the feasible no-email/consent=yes column untested.",
+            "pt": "Deixa por testar a coluna exequível sem email/com consentimento."
+          },
+          "misconceptionTag": "one-mixed-rule-only"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "Both email=yes/consent=no and email=no/consent=yes.",
+            "pt": "Email=sim/consentimento=não e email=não/consentimento=sim."
+          },
+          "explanation": {
+            "en": "These are the two uncovered feasible columns; together with the existing tests they cover four out of four.",
+            "pt": "São as duas colunas exequíveis ainda não cobertas; com os testes existentes cobrem quatro em quatro."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "Only email=no/consent=yes, because the other mixed combination has the same no-receipt action.",
+            "pt": "Apenas email=não/consentimento=sim, porque a outra combinação mista tem a mesma ação sem recibo."
+          },
+          "explanation": {
+            "en": "The table is expressly non-minimized; equal actions do not remove required feasible-rule coverage.",
+            "pt": "A tabela é expressamente não minimizada; ações iguais não eliminam a cobertura de regras exequíveis exigida."
+          },
+          "misconceptionTag": "merge-actions-without-changing-criterion"
+        }
+      ],
+      "correct": ["p3"],
+      "workedSolution": "Regras originais TT->recibo, TF->sem recibo, FT->sem recibo, FF->sem recibo. Cobertas TT,FF:2/4. Faltam TF,FT: é preciso acrescentar dois testes. Não se minimiza a tabela durante a resposta.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-006",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-4.2.4",
+      "cognitiveLevel": "K3",
+      "interpretationDifficulty": "I2",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "4.2.4",
+        "pdfPages": [41, 42]
+      },
+      "timeTargetSeconds": {
+        "total": 180,
+        "reading": 65,
+        "selection": 115,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Fixar estado inicial, riscar transições já cobertas e simular cada evento sequencialmente. Não reutilizar implicitamente o estado final de outro teste.",
+      "criticalWording": [
+        {
+          "en": "Every test starts in Open",
+          "pt": "Cada teste começa em Aberto"
+        },
+        {
+          "en": "valid-transition coverage",
+          "pt": "cobertura de transições válidas"
+        }
+      ],
+      "prompt": {
+        "en": "A repair ticket has states Open, Assigned and Closed. The only valid transitions are Open--assign-->Assigned, Assigned--finish-->Closed and Closed--reopen-->Open. Every test starts in Open. Invalid events are rejected and leave the state unchanged. A completed test used assign, finish. The next objective is 100% valid-transition coverage; no invalid-transition coverage is requested. Which shortest additional event sequence reaches that objective?",
+        "pt": "Um pedido de reparação tem os estados Aberto, Atribuído e Fechado. As únicas transições válidas são Aberto--atribuir-->Atribuído, Atribuído--concluir-->Fechado e Fechado--reabrir-->Aberto. Cada teste começa em Aberto. Eventos inválidos são rejeitados e mantêm o estado. Um teste concluído usou atribuir, concluir. O objetivo seguinte é 100% de cobertura de transições válidas; não se pede cobertura de transições inválidas. Que sequência adicional mais curta permite atingir esse objetivo?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "reopen.",
+            "pt": "reabrir."
+          },
+          "explanation": {
+            "en": "Starting in Open, reopen is invalid; it does not traverse Closed to Open.",
+            "pt": "Começando em Aberto, reabrir é inválido; não percorre Fechado para Aberto."
+          },
+          "misconceptionTag": "forget-initial-state"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "assign, finish.",
+            "pt": "atribuir, concluir."
+          },
+          "explanation": {
+            "en": "This repeats the two transitions already covered and never exercises reopening.",
+            "pt": "Repete as duas transições já cobertas e nunca exercita a reabertura."
+          },
+          "misconceptionTag": "states-for-transitions"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "assign, reopen.",
+            "pt": "atribuir, reabrir."
+          },
+          "explanation": {
+            "en": "After assign the state is Assigned; reopen is valid only in Closed.",
+            "pt": "Após atribuir o estado é Atribuído; reabrir só é válido em Fechado."
+          },
+          "misconceptionTag": "ignore-source-state"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "assign, finish, reopen.",
+            "pt": "atribuir, concluir, reabrir."
+          },
+          "explanation": {
+            "en": "The first two events reach Closed from the required initial state; reopen then covers the missing transition. No shorter path reaches and leaves Closed.",
+            "pt": "Os dois primeiros eventos chegam a Fechado a partir do estado inicial exigido; reabrir cobre a transição em falta. Nenhum caminho mais curto chega e sai de Fechado."
+          },
+          "misconceptionTag": null
+        }
+      ],
+      "correct": ["p4"],
+      "workedSolution": "Cobertura existente={Aberto->Atribuído,Atribuído->Fechado}. Falta Fechado->Aberto. Um teste novo não continua do estado final do anterior: começa em Aberto, logo requer dois eventos de preparação mais reabrir. Só p4 percorre a transição em falta.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-007",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-4.3.2",
+      "cognitiveLevel": "K2",
+      "interpretationDifficulty": "I2",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "4.3.2",
+        "pdfPages": [42, 43]
+      },
+      "timeTargetSeconds": {
+        "total": 120,
+        "reading": 50,
+        "selection": 70,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Separar aquilo que o relatório mediu da conclusão proposta. Procurar a direção da implicação: ramos totais implicam instruções totais, não o inverso.",
+      "criticalWording": [
+        {
+          "en": "only with a true outcome",
+          "pt": "só foi observada com resultado verdadeiro"
+        },
+        {
+          "en": "based solely on that report",
+          "pt": "baseada apenas nesse relatório"
+        }
+      ],
+      "prompt": {
+        "en": "A team tests a discount function. Its report shows that every executable statement ran at least once, but a conditional decision was observed only with a true outcome. A reviewer proposes a release claim based solely on that report. No further information about path coverage or defect detection is available. Which claim is justified by the evidence without treating statement coverage as a guarantee about the remaining logic?",
+        "pt": "Uma equipa testa uma função de descontos. O relatório mostra que todas as instruções executáveis foram executadas pelo menos uma vez, mas uma decisão condicional só foi observada com resultado verdadeiro. Um revisor propõe uma afirmação de release baseada apenas nesse relatório. Não existe informação adicional sobre cobertura de caminhos ou deteção de defeitos. Que afirmação é sustentada pela evidência sem tratar a cobertura de instruções como garantia sobre a restante lógica?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "Full branch coverage follows, because executing each statement necessarily executes every decision outcome.",
+            "pt": "A cobertura total de ramos decorre daí, porque executar cada instrução executa necessariamente todos os resultados de decisão."
+          },
+          "explanation": {
+            "en": "Statement coverage does not imply branch coverage; the false outcome is expressly unexercised.",
+            "pt": "Cobertura de instruções não implica cobertura de ramos; o resultado falso não foi exercitado."
+          },
+          "misconceptionTag": "statement-implies-branch"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "Full statement coverage was achieved, but full branch coverage was not demonstrated and the unexercised false outcome prevents it here.",
+            "pt": "Foi obtida cobertura total de instruções, mas não foi demonstrada cobertura total de ramos e o resultado falso não exercitado impede-a neste caso."
+          },
+          "explanation": {
+            "en": "The metrics measure different coverage items. The evidence supports the statement metric while identifying a missing conditional branch.",
+            "pt": "As métricas medem itens de cobertura distintos. A evidência suporta a métrica de instruções e identifica um ramo condicional em falta."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "Full branch coverage is unnecessary because statement coverage proves no data-dependent defects remain.",
+            "pt": "A cobertura total de ramos é desnecessária porque a cobertura de instruções prova que não restam defeitos dependentes dos dados."
+          },
+          "explanation": {
+            "en": "Executing statements does not ensure revealing all faults; data-dependent defects may remain.",
+            "pt": "Executar instruções não assegura revelar todos os defeitos; podem restar defeitos dependentes dos dados."
+          },
+          "misconceptionTag": "coverage-proves-correctness"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "The report demonstrates all-path coverage, although it cannot demonstrate full branch coverage.",
+            "pt": "O relatório demonstra cobertura de todos os caminhos, embora não possa demonstrar cobertura total de ramos."
+          },
+          "explanation": {
+            "en": "A missed conditional outcome contradicts all-path coverage; no such evidence was supplied.",
+            "pt": "Um resultado condicional não exercitado contradiz cobertura de todos os caminhos; essa evidência não foi fornecida."
+          },
+          "misconceptionTag": "statement-for-path-coverage"
+        }
+      ],
+      "correct": ["p2"],
+      "workedSolution": "Uma decisão com um ramo não executado basta para refutar cobertura total de ramos. Não calcular uma percentagem sem o número total de ramos. Não elevar LO K2 a K3 só por acrescentar um cenário.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-008",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-5.1.4",
+      "cognitiveLevel": "K3",
+      "interpretationDifficulty": "I3",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "5.1.4",
+        "pdfPages": [49, 50]
+      },
+      "timeTargetSeconds": {
+        "total": 180,
+        "reading": 70,
+        "selection": 110,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Sublinhar a grandeza pedida e as unidades; atribuir os valores à fórmula, calcular antes de consultar as alternativas e rejeitar pressupostos de recursos não dados.",
+      "criticalWording": [
+        {
+          "en": "central weighted effort",
+          "pt": "esforço central ponderado"
+        },
+        {
+          "en": "no staffing or parallelism assumptions",
+          "pt": "não foram acordados pressupostos de pessoal ou paralelismo"
+        }
+      ],
+      "prompt": {
+        "en": "A team estimates the effort to test a train-ticket refund change. Three experts agree on an optimistic effort of 4 person-hours, a most likely effort of 7 person-hours and a pessimistic effort of 16 person-hours. Work may be shared, but no staffing or parallelism assumptions have been agreed. The report asks only for the central weighted effort using E=(a+4m+b)/6, not a calendar duration or a guaranteed maximum. Which value should be reported?",
+        "pt": "Uma equipa estima o esforço de teste de uma alteração a reembolsos de bilhetes de comboio. Três especialistas acordam um esforço otimista de 4 pessoas-hora, mais provável de 7 pessoas-hora e pessimista de 16 pessoas-hora. O trabalho pode ser partilhado, mas não foram acordados pressupostos de pessoal ou paralelismo. O relatório pede apenas o esforço central ponderado por E=(a+4m+b)/6, não a duração de calendário nem um máximo garantido. Que valor deve ser reportado?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "8 person-hours of estimated effort.",
+            "pt": "8 pessoas-hora de esforço estimado."
+          },
+          "explanation": {
+            "en": "(4+4×7+16)/6=48/6=8. This is an effort estimate; no elapsed-time conversion is justified.",
+            "pt": "(4+4×7+16)/6=48/6=8. É uma estimativa de esforço; não se justifica conversão para duração."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "9 person-hours of estimated effort.",
+            "pt": "9 pessoas-hora de esforço estimado."
+          },
+          "explanation": {
+            "en": "9 is the unweighted average (4+7+16)/3, not the required weighted estimate.",
+            "pt": "9 é a média não ponderada (4+7+16)/3, não a estimativa ponderada exigida."
+          },
+          "misconceptionTag": "unweighted-mean"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "4 calendar hours because two people can split the weighted effort equally.",
+            "pt": "4 horas de calendário porque duas pessoas podem dividir igualmente o esforço ponderado."
+          },
+          "explanation": {
+            "en": "No allocation of two people or perfect parallelism was agreed; this invents staffing and changes the requested quantity.",
+            "pt": "Não foi acordada a afetação de duas pessoas nem paralelismo perfeito; inventa recursos e altera a grandeza pedida."
+          },
+          "misconceptionTag": "effort-for-elapsed-time"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "16 person-hours as the guaranteed upper bound of the testing work.",
+            "pt": "16 pessoas-hora como limite superior garantido do trabalho de teste."
+          },
+          "explanation": {
+            "en": "The pessimistic input is neither the weighted central estimate nor a guarantee that it cannot be exceeded.",
+            "pt": "O valor pessimista não é a estimativa central ponderada nem uma garantia de que não será excedido."
+          },
+          "misconceptionTag": "estimate-as-guarantee"
+        }
+      ],
+      "correct": ["p1"],
+      "workedSolution": "Associar a=4,m=7,b=16; numerador=4+28+16=48; dividir por6 ->8 pessoas-hora. A média simples seria9. A quantidade é esforço, não horas decorridas; não assumir recursos adicionais.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-009",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-5.1.5",
+      "cognitiveLevel": "K3",
+      "interpretationDifficulty": "I3",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "5.1.5",
+        "pdfPages": [50]
+      },
+      "timeTargetSeconds": {
+        "total": 180,
+        "reading": 70,
+        "selection": 110,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Separar prioridade e dependência em duas listas. Reconstruir o conjunto executável depois de cada escolha, sem escolher o teste global de maior risco quando está bloqueado.",
+      "criticalWording": [
+        {
+          "en": "among those ready at each step",
+          "pt": "a cada passo, o teste de maior risco entre os disponíveis"
+        },
+        {
+          "en": "not to minimize the time until P starts",
+          "pt": "e não minimizar o tempo até começar P"
+        }
+      ],
+      "prompt": {
+        "en": "Four tests share one execution slot and have equal duration. Risk priorities are P, Q, R, S from highest to lowest. P requires S to have completed; Q requires R to have completed; R and S are initially ready. The agreed scheduling policy is to choose the highest-risk test among those ready at each step, not to minimize the time until P starts. There are no other resource constraints. Which complete order follows this policy?",
+        "pt": "Quatro testes partilham um único posto de execução e têm duração igual. As prioridades de risco são P, Q, R, S, da maior para a menor. P exige que S tenha terminado; Q exige que R tenha terminado; R e S estão inicialmente disponíveis. A política de escalonamento acordada é escolher, a cada passo, o teste de maior risco entre os disponíveis, e não minimizar o tempo até começar P. Não há outras restrições de recursos. Que ordem completa segue esta política?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "S, P, R, Q.",
+            "pt": "S, P, R, Q."
+          },
+          "explanation": {
+            "en": "This respects dependencies but first chooses S when higher-risk R is ready; it implements the excluded aim of enabling P earliest.",
+            "pt": "Respeita dependências, mas escolhe primeiro S quando R de maior risco está disponível; segue o objetivo excluído de antecipar P."
+          },
+          "misconceptionTag": "global-priority-over-ready-policy"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "R, S, P, Q.",
+            "pt": "R, S, P, Q."
+          },
+          "explanation": {
+            "en": "After R finishes, Q becomes ready and outranks S, so the second choice violates the policy.",
+            "pt": "Após terminar R, Q fica disponível e tem prioridade superior a S; a segunda escolha viola a política."
+          },
+          "misconceptionTag": "fail-to-recompute-ready-set"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "P, Q, R, S.",
+            "pt": "P, Q, R, S."
+          },
+          "explanation": {
+            "en": "This lists risk priorities without respecting either dependency.",
+            "pt": "Lista prioridades de risco sem respeitar nenhuma das duas dependências."
+          },
+          "misconceptionTag": "ignore-dependencies"
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "R, Q, S, P.",
+            "pt": "R, Q, S, P."
+          },
+          "explanation": {
+            "en": "Initially R outranks ready S; then Q becomes ready and outranks S; S then enables P. All choices follow the stated policy.",
+            "pt": "Inicialmente R tem prioridade sobre S disponível; depois Q fica disponível e tem prioridade sobre S; por fim S permite P. Todas as escolhas seguem a política."
+          },
+          "misconceptionTag": null
+        }
+      ],
+      "correct": ["p4"],
+      "workedSolution": "Ready inicial={R,S}->R. Depois={Q,S}->Q. Depois={S}->S. Depois={P}->P. Verificar prontidão novamente a cada passo. Uma ordem topológica válida não basta para cumprir a política adicional.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    },
+    {
+      "id": "exp-ai-010",
+      "revision": "pilot-v1",
+      "origin": "original: authored by Codex for this pilot; no examination item copied",
+      "examEligible": false,
+      "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+      "humanDecision": null,
+      "learningObjective": "FL-5.2.3",
+      "cognitiveLevel": "K2",
+      "interpretationDifficulty": "I3",
+      "reference": {
+        "sourceId": "SYL-EN",
+        "section": "5.2.3",
+        "pdfPages": [52, 53]
+      },
+      "timeTargetSeconds": {
+        "total": 150,
+        "reading": 65,
+        "selection": 85,
+        "calibration": "editorial target, not measured learner data or official per-item limit"
+      },
+      "readingStrategy": "Calcular os níveis separadamente e depois ler toda a conclusão, incluindo a justificação. Uma prioridade correta não torna verdadeira uma garantia acrescentada.",
+      "criticalWording": [
+        {
+          "en": "likelihood multiplied by impact",
+          "pt": "probabilidade multiplicada pelo impacto"
+        },
+        {
+          "en": "acknowledging residual risk",
+          "pt": "reconhecendo o risco residual"
+        }
+      ],
+      "prompt": {
+        "en": "A clinic compares two product risks before planning its remaining tests. For a booking display fault the agreed likelihood is 0.40 and the financial impact is 200 units. For a payment duplication fault the agreed likelihood is 0.10 and the impact is 2000 units. The team explicitly uses likelihood multiplied by impact on this common scale and can add one risk-focused testing block. No regulation mandates equal testing effort. Which planning conclusion best follows from the analysis?",
+        "pt": "Uma clínica compara dois riscos de produto antes de planear os testes restantes. Para uma falha de apresentação de reservas, a probabilidade acordada é 0,40 e o impacto financeiro é 200 unidades. Para uma falha de duplicação de pagamentos, a probabilidade acordada é 0,10 e o impacto é 2000 unidades. A equipa usa explicitamente probabilidade multiplicada pelo impacto nesta escala comum e pode acrescentar um bloco de teste focado no risco. Nenhum regulamento exige esforço igual. Que conclusão de planeamento decorre melhor da análise?"
+      },
+      "options": [
+        {
+          "id": "p1",
+          "text": {
+            "en": "Favor booking display testing because its higher likelihood necessarily makes its risk level higher.",
+            "pt": "Favorecer os testes da apresentação de reservas porque a probabilidade superior torna necessariamente maior o nível de risco."
+          },
+          "explanation": {
+            "en": "The stated model includes impact; 0.40×200=80 is lower than 0.10×2000=200.",
+            "pt": "O modelo indicado inclui impacto; 0,40×200=80 é inferior a 0,10×2000=200."
+          },
+          "misconceptionTag": "probability-alone"
+        },
+        {
+          "id": "p2",
+          "text": {
+            "en": "Allocate equal depth to both because low-likelihood risks should not influence scope.",
+            "pt": "Atribuir a mesma profundidade a ambos porque riscos de baixa probabilidade não devem influenciar o âmbito."
+          },
+          "explanation": {
+            "en": "Risk analysis informs scope and thoroughness using both factors; no equal-effort constraint exists here.",
+            "pt": "A análise de risco informa âmbito e profundidade com ambos os fatores; não existe aqui restrição de esforço igual."
+          },
+          "misconceptionTag": "equal-effort-without-risk"
+        },
+        {
+          "id": "p3",
+          "text": {
+            "en": "Favor deeper payment-duplication testing because its assessed risk level is higher, while acknowledging residual risk.",
+            "pt": "Favorecer testes mais profundos da duplicação de pagamentos porque o nível de risco avaliado é superior, reconhecendo o risco residual."
+          },
+          "explanation": {
+            "en": "Payment duplication has level 200 against 80; prioritizing depth on it follows the agreed model without claiming elimination of risk.",
+            "pt": "A duplicação tem nível 200 contra 80; priorizar a profundidade nesse risco segue o modelo acordado sem afirmar eliminação do risco."
+          },
+          "misconceptionTag": null
+        },
+        {
+          "id": "p4",
+          "text": {
+            "en": "Favor payment-duplication testing because its higher impact means successful tests will eliminate that risk.",
+            "pt": "Favorecer os testes da duplicação de pagamentos porque o impacto superior significa que testes bem-sucedidos eliminarão esse risco."
+          },
+          "explanation": {
+            "en": "The direction of priority is plausible but the justification promises elimination. Passing tests does not prove the risk is gone.",
+            "pt": "A prioridade é plausível, mas a justificação promete eliminação. Testes aprovados não provam o desaparecimento do risco."
+          },
+          "misconceptionTag": "correct-direction-false-guarantee"
+        }
+      ],
+      "correct": ["p3"],
+      "workedSolution": "Comparar 80 e200 na mesma escala;200 é maior apesar da probabilidade inferior. O LO K2 é a consequência no planeamento: profundidade/âmbito, não só multiplicar. p4 chega à mesma prioridade com conclusão de garantia não suportada.",
+      "aiReview": "Single-answer rationale checked against cited concept and explicit scenario constraints. Human CTFL/content/translation/difficulty review still required."
+    }
+  ]
+}
