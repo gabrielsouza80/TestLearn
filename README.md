@@ -29,6 +29,10 @@ npm run test:e2e
 
 Os E2E fazem um build e iniciam um preview exclusivo em `127.0.0.1:4174`; essa porta deve estar livre. Não reutilizam o servidor de desenvolvimento. As revisões históricas são carregadas apenas quando necessárias para recuperar sessões ou calcular as suas métricas; uma falha preserva o progresso e oferece recarregamento para tentar novamente. Medições e limites estão na [validação da fase 5C](docs/blueprint-validation.md#fase-5c--carregamento-histórico-e-estabilidade-e2e-28-10-2026).
 
+## Workflow de desenvolvimento
+
+Trabalhar diretamente em `develop`, preferencialmente no workspace existente `C:/TestLearn/tmp/develop-workspace`; PRs para essa branch são opcionais. Quality corre após pushes normais e as falhas devem ser resolvidas. A política desejada bloqueia force push e eliminação, sem exigir check prévio ou bypass; a proteção de `develop` ainda aguarda configuração manual. `main` não recebe desenvolvimento direto: exige PR, `verify` aprovado e autorização explícita de publicação. Consultar a [política e os passos manuais](docs/release/develop-ci-protection.md). A PR #7 permanece a candidata designada do P1; esta documentação não autoriza commit, push ou release.
+
 ## Utilização
 
 - **Praticar:** filtrar capítulo, tema, objetivo de aprendizagem, nível cognitivo, quantidade e histórico. Confirmar cada resposta para ver explicações de todas as alternativas.
