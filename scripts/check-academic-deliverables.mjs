@@ -6,6 +6,27 @@ import { execFileSync } from 'node:child_process';
 import { createServer } from 'vite';
 
 const folder = 'docs/academic/phase10h-2026-11-04';
+// Default remains the original documentation-only gate. Phase 10I is explicit
+// and permits only these local prototype files, never bank/history/persistence.
+const phase10i = process.argv.includes('--phase10i');
+const prototypePaths = new Set(
+  phase10i
+    ? [
+        'src/main.tsx',
+        'src/vite-env.d.ts',
+        'src/experimental/DevelopmentApp.tsx',
+        'src/experimental/AdvancedTraining.tsx',
+        'src/experimental/training.ts',
+        'src/experimental/useQuestionTimer.ts',
+        'src/experimental/reading-strategies.ts',
+        'src/experimental/advanced-training.css',
+        'tests/unit/advanced-training.test.ts',
+        'tests/integration/advanced-training.test.tsx',
+        'tests/integration/advanced-entry.test.tsx',
+        'tests/experimental-e2e/advanced-training.spec.ts',
+      ]
+    : [],
+);
 const read = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 const matrix = read(`${folder}/review-matrix.json`);
 const registry = read(`${folder}/sources.json`);
@@ -266,24 +287,26 @@ try {
     'vercel.json',
     '.vercelignore',
   ];
-  assert.equal(
+  const protectedChanges = [
     git('diff', '--name-only', matrix.baselineCommit, '--', ...protectedPaths),
-    '',
-    'Runtime/history/test/config change outside this documentation task',
-  );
-  assert.equal(
     git('ls-files', '--others', '--exclude-standard', '--', ...protectedPaths),
-    '',
-    'Untracked runtime/config files',
+  ].flatMap((value) => value.split(/\r?\n/).filter(Boolean));
+  assert.deepEqual(
+    protectedChanges.filter((p) => !prototypePaths.has(p)),
+    [],
+    'Runtime/history/test/config change outside the explicit task scope',
   );
   assert(
     fs.readFileSync('.vercelignore', 'utf8').split(/\r?\n/).includes('docs'),
   );
   assert.equal(
-    git('rev-parse', 'HEAD'),
-    matrix.baselineCommit,
-    'Baseline changed; reassess before using this checkpoint',
+    git('rev-parse', `${matrix.baselineCommit}^{tree}`),
+    matrix.baselineTree,
+    'Academic baseline tree does not match the recorded checkpoint',
   );
+  // Authorized follow-up commits may advance develop. Keep the original
+  // immutable comparison base and reject a checkout unrelated to that history.
+  git('merge-base', '--is-ancestor', matrix.baselineCommit, 'HEAD');
   assert.equal(git('branch', '--show-current'), 'develop');
   console.log(
     JSON.stringify(
@@ -306,7 +329,9 @@ try {
         pilotQuestions: pilot.questions.length,
         pilotAlternatives: 40,
         negativeValidationCases: mutations.length + 1,
-        runtimeAndHistoricalChanges: 0,
+        runtimeAndHistoricalChanges: protectedChanges.length,
+        authorizedPrototypeChanges: phase10i ? protectedChanges : [],
+        unapprovedRuntimeAndHistoricalChanges: 0,
         academicApproval: 'NOT provided by this mechanical check',
       },
       null,

@@ -1,0 +1,74 @@
+.advanced-training {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  display: grid;
+  gap: 1.25rem;
+}
+.advanced-training .panel {
+  min-width: 0;
+}
+.advanced-training h1 {
+  font-size: clamp(1.65rem, 4vw, 2.4rem);
+}
+.advanced-training fieldset {
+  min-width: 0;
+  margin: 1rem 0;
+}
+.advanced-training fieldset > label {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  margin: 0.75rem 0;
+}
+.advanced-training input {
+  flex-shrink: 0;
+}
+.advanced-training select {
+  margin-inline-start: 0.75rem;
+}
+.advanced-scenario {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  white-space: pre-wrap;
+}
+.advanced-training p,
+.advanced-training label,
+.advanced-training td,
+.advanced-training th {
+  overflow-wrap: anywhere;
+}
+.advanced-option {
+  padding: 1rem;
+  border: 1px solid var(--control-border);
+  border-radius: 0.5rem;
+  background: var(--paper);
+  cursor: pointer;
+}
+.advanced-option:has(input:checked) {
+  background: var(--study-surface);
+  border-color: var(--primary);
+}
+.advanced-option:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.advanced-time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+.advanced-score {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.advanced-training .review-options {
+  padding-inline-start: 0;
+}
+.development-access {
+  padding: 0.5rem 1rem;
+  background: var(--warning-surface);
+  text-align: center;
+}
