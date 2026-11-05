@@ -13,6 +13,12 @@ const prototypePaths = new Set(
   phase10i
     ? [
         'src/main.tsx',
+        'src/experimental/main.tsx',
+        '.vercelignore',
+        '.github/workflows/quality.yml',
+        'package.json',
+        'vite.config.ts',
+        'tsconfig.production.json',
         'src/vite-env.d.ts',
         'src/experimental/DevelopmentApp.tsx',
         'src/experimental/AdvancedTraining.tsx',
@@ -284,6 +290,7 @@ try {
     'package.json',
     'package-lock.json',
     'vite.config.ts',
+    'tsconfig.production.json',
     'vercel.json',
     '.vercelignore',
   ];

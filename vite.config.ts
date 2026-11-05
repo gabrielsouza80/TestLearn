@@ -6,7 +6,19 @@ export default defineConfig({
   appType: 'mpa',
   build: { sourcemap: false, manifest: true },
   preview: { headers: securityHeaders },
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'development-training-entry',
+      apply: 'serve',
+      transformIndexHtml(html) {
+        return html.replace(
+          'src="/src/main.tsx"',
+          'src="/src/experimental/main.tsx"',
+        );
+      },
+    },
+  ],
   test: {
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],

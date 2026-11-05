@@ -35,7 +35,7 @@ jobs:
       - run: npm run build
       - run: node scripts/check-release.mjs
       - run: node scripts/check-retained-assets.mjs
-      - run: node --test scripts/check-release.test.mjs scripts/check-retained-assets.test.mjs scripts/check-live-asset-retention.test.mjs scripts/check-retained-append-only.test.mjs
+      - run: node --test scripts/check-release.test.mjs scripts/check-retained-assets.test.mjs scripts/check-live-asset-retention.test.mjs scripts/check-retained-append-only.test.mjs scripts/check-advanced-isolation.test.mjs scripts/check-vercel-build.test.mjs
       - run: node scripts/check-retained-append-only.mjs
       - run: node scripts/check-live-asset-retention.mjs
       - run: npx playwright install --with-deps chromium firefox webkit

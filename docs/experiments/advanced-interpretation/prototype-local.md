@@ -1,5 +1,7 @@
 # Phase 10I — local Advanced Interpretation Training prototype
 
+Preview parity correction (05-11-2026): the production entry no longer imports the development tree. Vite selects a separate experimental entry only while serving locally; production type-checking uses tsconfig.production.json, and the full development typecheck remains intact. See [the parity correction record](../../release/phase10i-preview-build-parity.md). The original lazy-entry description below is historical; the local navigation and training behavior are unchanged.
+
 Status: usable development-only prototype, on develop. Phase 10G remains BLOCKED. No commit, push, merge, deployment, PR or production change. The published bank remains 90 questions at revision 2026-10-27.9; all keys/IDs/historical archives are preserved. Academic review is 90/90 by AI, with zero human approvals and two NEEDS_FIX items (tl-011/tl-090).
 
 Subsequent authorization: the user requested committing all completed work and pushing develop. The six academic deliverables were committed separately as `4ba26eb`; the prototype follows in its own commit. Earlier no-commit/HEAD statements below describe the implementation checkpoint. The checker now accepts descendant commits while verifying the original academic baseline tree and preserving its file/hash guards. This Git authorization does not approve academic content or unblock Phase 10G, merge, production or deployment.
