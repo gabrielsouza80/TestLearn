@@ -1,5 +1,13 @@
 # TestLearn — estado de Production e releases
 
+## Estado atual — 05 de novembro de 2026
+
+**Fase 10G tecnicamente encerrada, com limitações documentadas e aceites.** Production/main: `6b378758602119f402d76e49abe5c6430d99b47f`, deployment `dpl_3XxiEew9BgbUpXdt7a7KdEv34Fr3` READY, associado ao domínio público. Quality pós-merge [42061010519](https://github.com/gabrielsouza80/TestLearn/actions/runs/42061010519) concluiu com SUCCESS no mesmo SHA. A e B respondem agora HTTP 200 com bytes retidos corretos. Ensaio complementar: 6/6 cenários sintéticos PASS; **a observação original perdida não foi recuperada**.
+
+O [fecho técnico 10G](phase10g-technical-closure.md) contém a evidência, o efeito automático sobre PR #6/issue #5, as limitações e a recuperação sem apagar progresso. Não há rollback instantâneo certificado, nem aprovação académica ou WCAG integral. Production mantém o banco `.9`. As correções académicas `.10` estão apenas no workspace de desenvolvimento, pendentes de revisão humana e de uma futura autorização de release. Nenhuma publicação foi feita nesta tarefa.
+
+**As secções seguintes são o checkpoint histórico anterior à publicação de 05-11.** Conservam a cronologia e os procedimentos; os SHAs, estados BLOCKED/draft, PR #6 aberta e A=404 abaixo não descrevem a Production atual. Para o estado atual prevalecem esta atualização e o fecho técnico ligado acima.
+
 ## Política operacional — 04 de novembro de 2026
 
 Desenvolvimento normal diretamente em `develop`, sem feature branches por rotina; PRs para `develop` são opcionais. A [política e configuração manual](develop-ci-protection.md) substitui a proposta anterior de PR/verify obrigatórios nessa branch. Quality executa após pushes em `develop`; falhas devem ser resolvidas, mas não há requisito de check prévio para aceitar um push normal. Bloquear force push e eliminação é a política desejada; a consulta atual ainda encontra `develop` sem proteção e sem rulesets. Nenhuma definição remota foi aplicada por esta documentação.
