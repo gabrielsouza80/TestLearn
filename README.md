@@ -62,6 +62,10 @@ Optou-se por CSS simples e LocalStorage pelo tamanho reduzido dos dados. Não h�
 
 Consulte a [validação do blueprint, cobertura completa e resultados da regressão](docs/blueprint-validation.md), a [auditoria académica por pergunta e fontes locais](docs/academic-audit.md), as [regras e contribuição de conteúdo](docs/content.md) e o [relatório histórico da implementação inicial](docs/implementation.md).
 
+## Retenção de assets entre publicações
+
+O histórico de ficheiros JS/CSS com hash deve continuar acessível na origem pública após alterações do site. A fase 10I mantém um inventário append-only de bundles anteriores (`config/retained-assets.json`) e cópias binárias em `public/assets/`, verificadas por SHA-256. O build consulta o domínio Production para confirmar que os assets que estão atualmente publicados também existem, byte a byte, no candidato. Esta verificação falha de forma fechada em vez de aceitar um novo deploy que elimine os ficheiros antigos. Consulte [o procedimento de retenção e as limitações](docs/release/phase10i-retained-assets.md). Não alterar os bundles minificados preservados, mesmo para os formatar.
+
 ## Candidato de lançamento
 
 A [decisão histórica de pré-lançamento](docs/release/release-readiness-report.md) separava qualidade técnica de autorização. A versão Beta foi entretanto publicada no domínio indicado acima; o estado operativo atual está em [docs/release/current-production-state.md](docs/release/current-production-state.md). Gabriel Souza é o responsável público e testlearn808005@gmail.com o contacto. Mantêm-se pendentes a revisão humana académica, a revisão completa dos direitos e uma avaliação jurídica específica da política de privacidade e do tratamento operacional do alojamento. Aprovação académica humana e calibração psicométrica continuam pendentes; não se promete equivalência ao exame oficial.
