@@ -9,6 +9,7 @@ import {
   VARIABILITY_CONTENT_REVISION,
   QUALITY_CONTENT_REVISION,
   TERMINOLOGY_CONTENT_REVISION,
+  ADVANCED_CONTENT_REVISION,
   isBlueprintRevision,
 } from '../domain/revision';
 import { auditBlueprint } from '../domain/blueprint-audit';
@@ -32,6 +33,7 @@ const sessionBaseSchema = z.object({
     VARIABILITY_CONTENT_REVISION,
     QUALITY_CONTENT_REVISION,
     TERMINOLOGY_CONTENT_REVISION,
+    ADVANCED_CONTENT_REVISION,
   ]),
   id: z.string().min(1),
   mode: z.enum(['exam', 'practice']),

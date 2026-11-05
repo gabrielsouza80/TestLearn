@@ -1,4 +1,4 @@
-﻿import { beforeAll } from 'vitest';
+import { beforeAll } from 'vitest';
 import { prepareHistoricalBanks } from '../fixtures/banks';
 beforeAll(prepareHistoricalBanks);
 import { describe, it, expect } from 'vitest';
@@ -205,7 +205,7 @@ describe('phase 5A actual variability and historical boundaries', () => {
         expect(load().state.history[0]).toEqual(completed);
         expect(score(completed, []).correct).toBe(1);
       }
-      expect(CONTENT_REVISION).toBe('2026-10-27.9');
+      expect(CONTENT_REVISION).toBe('2026-10-27.10');
       expect(BILINGUAL_CONTENT_REVISION).toBe('2026-10-27.5');
     },
   );

@@ -1,7 +1,7 @@
 ﻿import { beforeAll, describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { questions } from '../../src/data/questions';
+import { advancedArchivedQuestions as questions } from '../fixtures/banks';
 import { advancedQuestions } from '../../src/data/advanced-questions';
 import {
   terminologyArchivedQuestions,

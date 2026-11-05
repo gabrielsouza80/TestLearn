@@ -114,7 +114,7 @@ describe('portable progress format', () => {
     [
       'unsupported revision',
       (b) => {
-        b.state.history[0].contentRevision = '2026-10-27.10';
+        b.state.history[0].contentRevision = '2099-01-01.999';
       },
     ],
     [

@@ -44,7 +44,7 @@ test('fresh dashboard and new examination request no historical chunks', async (
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.9');
+  expect(saved.contentRevision).toBe('2026-10-27.10');
   expect(saved.questionIds).toHaveLength(40);
   const current = questions.find(
     (question) => question.id === saved.questionIds[saved.index],

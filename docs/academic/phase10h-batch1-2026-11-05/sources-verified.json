@@ -1,0 +1,26 @@
+{
+  "checkedOn": "2026-11-05",
+  "method": "Official references checked; download limitations recorded per source; relevant text extracted; selected pages visually inspected",
+  "sources": [
+    {
+      "language": "EN",
+      "version": "4.0.1",
+      "officialURL": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pdfPageCount": 78,
+      "pagesConsulted": [24, 30, 31, 47, 56, 57],
+      "freshOfficialDownloadMatchesLocal": null,
+      "downloadEvidence": "Fresh Python download HTTP 403; official PDF read through web tool; local bytes match the earlier official download in tmp/academic-10h/official-syllabus.pdf"
+    },
+    {
+      "language": "PT",
+      "version": "4.0 / translation 1.0",
+      "officialURL": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pdfPageCount": 85,
+      "pagesConsulted": [26, 33, 52, 62, 63],
+      "freshOfficialDownloadMatchesLocal": true,
+      "downloadEvidence": "Fresh official download matches local bytes"
+    }
+  ]
+}

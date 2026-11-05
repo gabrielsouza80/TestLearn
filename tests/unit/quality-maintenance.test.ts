@@ -83,7 +83,7 @@ describe('phase 5B controlled academic maintenance', () => {
     }
     expect(questions.every((q) => q.options.length === 4)).toBe(true);
     expect(validateBank(questions)).toEqual([]);
-    expect(CONTENT_REVISION).toBe('2026-10-27.9');
+    expect(CONTENT_REVISION).toBe('2026-10-27.10');
     expect(VARIABILITY_CONTENT_REVISION).toBe('2026-10-27.6');
     expect(isBlueprintRevision(VARIABILITY_CONTENT_REVISION)).toBe(true);
   });

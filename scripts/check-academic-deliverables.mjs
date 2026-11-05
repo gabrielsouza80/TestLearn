@@ -9,6 +9,32 @@ const folder = 'docs/academic/phase10h-2026-11-04';
 // Default remains the original documentation-only gate. Phase 10I is explicit
 // and permits only these local prototype files, never bank/history/persistence.
 const phase10i = process.argv.includes('--phase10i');
+const batch2 = process.argv.includes('--phase10h-batch2');
+const batch1 = process.argv.includes('--phase10h-batch1') || batch2;
+const batchPaths = new Set([
+  'src/data/academic-batch1.ts',
+  'src/data/questions.ts',
+  'src/data/bank-history.ts',
+  'src/domain/revision.ts',
+  'src/storage/store.ts',
+  'tests/fixtures/banks.ts',
+  'tests/unit/academic-batch1.test.ts',
+  'tests/unit/advanced-assessment.test.ts',
+  'tests/unit/bank-history.test.ts',
+  'tests/unit/backup.test.ts',
+  'tests/unit/bilingual-maintenance.test.ts',
+  'tests/unit/quality-maintenance.test.ts',
+  'tests/unit/syllabus-coverage.test.ts',
+  'tests/unit/variability.test.ts',
+  'tests/e2e/academic-batch1.spec.ts',
+  'tests/e2e/bilingual-maintenance.spec.ts',
+  'tests/e2e/quality-maintenance.spec.ts',
+  'tests/e2e/lazy-history.spec.ts',
+]);
+if (batch2) {
+  batchPaths.add('tests/unit/academic-batch2.test.ts');
+  batchPaths.add('tests/e2e/academic-batch2.spec.ts');
+}
 const prototypePaths = new Set(
   phase10i
     ? [
@@ -218,6 +244,61 @@ function validateMatrix(data, bank) {
   assert.equal(reviewed, data.reviewedCount);
 }
 
+function validateBatch2(data, bank, owner) {
+  const ids = [
+    'tl-008',
+    'tl-020',
+    'tl-021',
+    'tl-035',
+    'tl-038',
+    'tl-063',
+    'tl-064',
+    'tl-072',
+  ];
+  assert.equal(data.humanApprovedCount, 0);
+  assert.equal(data.contentRevision, '2026-10-27.10');
+  assert.deepEqual(
+    data.decisions.map((r) => r.questionId),
+    ids,
+  );
+  for (const row of data.decisions) {
+    const q = bank.find((q) => q.id === row.questionId);
+    assert(q);
+    assert.equal(row.beforeSHA256, hash(q));
+    assert.equal(row.afterSHA256, hash(q));
+    assert.equal(row.learningObjective, q.lo);
+    assert.equal(row.cognitiveLevel, objectives.get(q.lo).level);
+    assert.deepEqual(row.independentSolution.answer, q.correct);
+    assert.deepEqual(row.existingKey, q.correct);
+    assert.deepEqual(row.proposedKey, q.correct);
+    assert.equal(row.contentChanged, false);
+    assert.equal(row.humanApproval, 'PENDING');
+    assert.equal(row.ownerDecision, null);
+    assert.equal(
+      row.decision,
+      q.id === 'tl-038' ? 'BLOCKED_HUMAN_DECISION' : 'ACCEPT_AS_IS',
+    );
+    text(row.justification);
+    text(row.cognitiveLevelAnalysis);
+  }
+  assert.equal(owner.decision, 'OWNER_ACCEPTED');
+  assert.equal(owner.independentHumanSMEReviewVerified, false);
+  assert.equal(owner.reviewerProfessionalCertificationAsserted, false);
+  assert.equal(owner.deploymentAuthorization, false);
+  assert.equal(owner.remaining88Approval, false);
+  assert.deepEqual(
+    owner.questions.map((q) => q.questionId),
+    ['tl-011', 'tl-090'],
+  );
+  for (const accepted of owner.questions) {
+    const q = bank.find((q) => q.id === accepted.questionId);
+    assert.equal(accepted.acceptedCanonicalSHA256, hash(q));
+    assert.deepEqual(accepted.acceptedAnswerKey, q.correct);
+    assert.equal(accepted.independentAcademicApproval, 'PENDING');
+    assert.equal(q.humanApproval, 'PENDING');
+  }
+}
+
 const server = await createServer({
   configFile: false,
   optimizeDeps: { noDiscovery: true, include: [] },
@@ -242,8 +323,89 @@ try {
     364,
   );
   assert.equal(new Set(questions.map((q) => q.lo)).size, 64);
-  validateMatrix(matrix, questions);
+  const published = batch1
+    ? read('src/data/archive/questions-2026-10-27.9.json')
+    : questions;
+  validateMatrix(matrix, published);
+  if (batch1) {
+    const records = read(
+      'docs/academic/phase10h-batch1-2026-11-05/records.json',
+    );
+    assert.equal(
+      records.baselineCommit,
+      'c551cca958add939fee9a7b0e82d0734f5a2aa32',
+    );
+    assert.equal(records.currentRevision, '2026-10-27.10');
+    assert.equal(records.humanApprovedCount, 0);
+    assert.deepEqual(
+      records.corrections.map((r) => r.questionId),
+      ['tl-011', 'tl-090'],
+    );
+    for (const [i, q] of questions.entries()) {
+      const old = published[i];
+      const record = records.corrections.find((r) => r.questionId === q.id);
+      assert.deepEqual(
+        q.correct,
+        old.correct,
+        `${q.id}: published key changed`,
+      );
+      if (!record) {
+        assert.equal(hash(q), hash(old), `${q.id}: unrelated item changed`);
+        continue;
+      }
+      assert.equal(record.previousSHA256, hash(old));
+      assert.equal(record.correctedSHA256, hash(q));
+      assert.deepEqual(record.keyBefore, old.correct);
+      assert.deepEqual(record.keyAfter, old.correct);
+      assert.equal(record.humanDecision, null);
+      assert.equal(record.status, 'AI_CORRECTED_PENDING_HUMAN');
+      assert.equal(q.humanApproval, 'PENDING');
+      assert.equal(q.version, old.version + 1);
+      assert.equal(q.lo, old.lo);
+      assert.equal(q.level, old.level);
+    }
+    for (let n = 1; n <= 9; n++) {
+      const file = `src/data/archive/questions-2026-10-27.${n}.json`;
+      const original = execFileSync('git', [
+        'show',
+        `${records.baselineCommit}:${file}`,
+      ]);
+      assert(
+        fs.readFileSync(file).equals(original),
+        `Historical bytes changed: ${file}`,
+      );
+    }
+  }
   validatePilot(pilot, questions);
+  let batch2NegativeCases = 0;
+  if (batch2) {
+    const data = read('docs/academic/phase10h-batch2-2026-11-05/records.json');
+    const owner = read(
+      'docs/academic/phase10h-batch1-2026-11-05/owner-acceptance-2026-11-05.json',
+    );
+    validateBatch2(data, questions, owner);
+    const corruptions = [
+      (d) => {
+        d.decisions[0].humanApproval = 'HUMAN_APPROVED';
+      },
+      (d) => {
+        d.decisions[0].proposedKey = ['o4'];
+      },
+      (_d, o) => {
+        o.independentHumanSMEReviewVerified = true;
+      },
+      (_d, o) => {
+        o.remaining88Approval = true;
+      },
+    ];
+    for (const corrupt of corruptions) {
+      const brokenData = structuredClone(data),
+        brokenOwner = structuredClone(owner);
+      corrupt(brokenData, brokenOwner);
+      assert.throws(() => validateBatch2(brokenData, questions, brokenOwner));
+      batch2NegativeCases++;
+    }
+  }
 
   // Check the checker: these corruptions must not produce a false structural PASS.
   const mutations = [
@@ -279,7 +441,7 @@ try {
   }
   const brokenMatrix = structuredClone(matrix);
   brokenMatrix.questions[0].currentCorrectAnswer = ['o2'];
-  assert.throws(() => validateMatrix(brokenMatrix, questions));
+  assert.throws(() => validateMatrix(brokenMatrix, published));
 
   const protectedPaths = [
     'src',
@@ -295,11 +457,21 @@ try {
     '.vercelignore',
   ];
   const protectedChanges = [
-    git('diff', '--name-only', matrix.baselineCommit, '--', ...protectedPaths),
+    git(
+      'diff',
+      '--name-only',
+      batch1
+        ? 'c551cca958add939fee9a7b0e82d0734f5a2aa32'
+        : matrix.baselineCommit,
+      '--',
+      ...protectedPaths,
+    ),
     git('ls-files', '--others', '--exclude-standard', '--', ...protectedPaths),
   ].flatMap((value) => value.split(/\r?\n/).filter(Boolean));
   assert.deepEqual(
-    protectedChanges.filter((p) => !prototypePaths.has(p)),
+    protectedChanges.filter(
+      (p) => !(batch1 ? batchPaths : prototypePaths).has(p),
+    ),
     [],
     'Runtime/history/test/config change outside the explicit task scope',
   );
@@ -335,9 +507,15 @@ try {
         ),
         pilotQuestions: pilot.questions.length,
         pilotAlternatives: 40,
-        negativeValidationCases: mutations.length + 1,
+        negativeValidationCases: mutations.length + 1 + batch2NegativeCases,
         runtimeAndHistoricalChanges: protectedChanges.length,
         authorizedPrototypeChanges: phase10i ? protectedChanges : [],
+        batch1: batch1
+          ? 'Two corrections applied in develop; human approval pending; .9 preserved'
+          : null,
+        batch2: batch2
+          ? '7 ACCEPT_AS_IS; tl-038 BLOCKED_HUMAN_DECISION for K3 adequacy; no content changes'
+          : null,
         unapprovedRuntimeAndHistoricalChanges: 0,
         academicApproval: 'NOT provided by this mechanical check',
       },

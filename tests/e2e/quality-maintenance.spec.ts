@@ -52,7 +52,7 @@ test('current exam shows four revised options, retains shuffled identities acros
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.9');
+  expect(saved.contentRevision).toBe('2026-10-27.10');
   expect(saved.questionIds).toHaveLength(40);
   expect(saved.questionIds[0]).toBe(first.id);
   expect(
@@ -154,7 +154,7 @@ test('current study scores the new distractor as incorrect and preserves bilingu
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem('testlearn.v1')!).active,
   );
-  expect(saved.contentRevision).toBe('2026-10-27.9');
+  expect(saved.contentRevision).toBe('2026-10-27.10');
   expect(saved.answers[revised.id]).toEqual(['o4']);
   await expect(
     page.getByRole('region', { name: 'Explicação', exact: true }),

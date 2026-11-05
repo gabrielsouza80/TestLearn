@@ -1,4 +1,4 @@
-﻿import { test } from 'node:test';
+import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -20,7 +20,7 @@ function fixture(extra) {
     '<title>Public Beta</title><meta name="robots" content="noindex, nofollow">',
   );
   fs.writeFileSync(path.join(root, 'assets/index-test.js'), 'export {};');
-  for (let n = 1; n <= 8; n++) {
+  for (let n = 1; n <= 9; n++) {
     const key = `src/data/archive/questions-2026-10-27.${n}.json`,
       file = `assets/questions-2026-10-27.${n}-test.js`;
     manifest['index.html'].dynamicImports.push(key);
@@ -37,8 +37,8 @@ function fixture(extra) {
   }
   return root;
 }
-test('allows only the declared static beta artifact with all eight lazy archives', () => {
-  assert.equal(inspectRelease(fixture()).archiveChunks, 8);
+test('allows only the declared static beta artifact with all nine lazy archives', () => {
+  assert.equal(inspectRelease(fixture()).archiveChunks, 9);
 });
 for (const name of [
   'private.md',
@@ -63,4 +63,10 @@ test('rejects a missing historic chunk even if the entry still declares it', () 
     JSON.stringify(manifest),
   );
   assert.throws(() => inspectRelease(root));
+});
+
+test('rejects omission of the newly archived published .9 bank', () => {
+  const root = fixture();
+  fs.unlinkSync(path.join(root, 'assets/questions-2026-10-27.9-test.js'));
+  assert.throws(() => inspectRelease(root), /Archive .9 asset missing/);
 });

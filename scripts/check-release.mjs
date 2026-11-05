@@ -1,4 +1,4 @@
-﻿import fs from 'node:fs';
+import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
@@ -19,7 +19,7 @@ export function inspectRelease(root = 'dist') {
     ['index.html', 'favicon.svg', 'robots.txt', '.vite/manifest.json'].includes(
       p,
     ) ||
-    /^assets\/(?:index|questions-2026-10-27\.[1-8])-[A-Za-z0-9_-]+\.(?:js|css)$/.test(
+    /^assets\/(?:index|questions-2026-10-27\.[1-9])-[A-Za-z0-9_-]+\.(?:js|css)$/.test(
       p,
     );
   for (const p of files) {
@@ -33,10 +33,10 @@ export function inspectRelease(root = 'dist') {
   assert(entry?.isEntry);
   assert.equal(
     (entry.dynamicImports ?? []).length,
-    8,
+    9,
     'All supported archives must stay lazy',
   );
-  for (let n = 1; n <= 8; n++) {
+  for (let n = 1; n <= 9; n++) {
     const key = `src/data/archive/questions-2026-10-27.${n}.json`;
     assert(entry.dynamicImports.includes(key), `Archive .${n} not lazy`);
     assert(files.includes(manifest[key]?.file), `Archive .${n} asset missing`);
@@ -58,7 +58,7 @@ export function inspectRelease(root = 'dist') {
       sha256: hash(p),
     };
   });
-  assert(files.filter((p) => /questions-.*\.js$/.test(p)).length === 8);
+  assert(files.filter((p) => /questions-.*\.js$/.test(p)).length === 9);
   return {
     files: stats,
     initialJS: stats.find((x) => x.path === entry.file),
@@ -66,7 +66,7 @@ export function inspectRelease(root = 'dist') {
     totalJS: stats
       .filter((x) => x.path.endsWith('.js'))
       .reduce((n, x) => n + x.bytes, 0),
-    archiveChunks: 8,
+    archiveChunks: 9,
     privateAssets: 0,
     sourceMaps: 0,
   };

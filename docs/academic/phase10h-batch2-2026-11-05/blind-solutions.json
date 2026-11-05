@@ -1,0 +1,37 @@
+{
+  "method": "AI reasoning from shuffled statements/options/tables, before inspecting stored keys or explanations in this execution; not an independent human review",
+  "solutions": {
+    "tl-008": {
+      "answer": ["o1"],
+      "reason": "A tester with a different perspective can challenge assumptions and detect different defects. Isolation, loss of shared quality responsibility and reduced domain expertise are not benefits."
+    },
+    "tl-020": {
+      "answer": ["o1"],
+      "reason": "All executable statements exercised means 100% statement coverage. A true-only run of if(x>0) y=1; print(y) executes all statements but misses the false outcome. Neither all paths nor correctness follows."
+    },
+    "tl-021": {
+      "answer": ["o1"],
+      "reason": "The stated denominator is precisely two branches. One exercised divided by two equals 50%; no program-wide percentage is implied."
+    },
+    "tl-035": {
+      "answer": ["o1"],
+      "reason": "Versioned build, testware and data preserve the observed configuration. Latest-data/latest-build substitutions or omission of test versions weaken reproducibility; this supports rather than guarantees reproducing a failure."
+    },
+    "tl-038": {
+      "answer": ["o1"],
+      "reason": "Preserve QA/build82, authorised user, INV-7/25, Save, expected201+ID, observed500+noinvoice, and r17. o2 reverses results; o3 changes environment/build; o4 asserts an unsupported deadlock cause. These are reproduction fields rather than every field in a full defect report."
+    },
+    "tl-063": {
+      "answer": ["o1"],
+      "reason": "Risk level depends on likelihood and impact together. Quantitative multiplication is an available method, not a universal rule for ordinal labels; test counts or either factor alone do not define the level."
+    },
+    "tl-064": {
+      "answer": ["o3"],
+      "reason": "Product risk control includes monitoring mitigation effectiveness and residual/new risks, particularly with a technology change. Scheduling alone cannot close risk; counts cannot replace assessment; emailing results alone does not transfer responsibility."
+    },
+    "tl-072": {
+      "answer": ["o1"],
+      "reason": "Existing R1/R3 leave R2=(T,T,F) and R4=(F,any,any). Only o1 covers both. o2 repeatsR1+R4, o3 repeatsR3+R2, o4 coversR4twice; each wrong option reaches only3of4 rules. The four minimized columns collectively partition all8 Boolean combinations."
+    }
+  }
+}

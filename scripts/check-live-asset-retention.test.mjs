@@ -163,7 +163,7 @@ test('login HTML returned as entrypoint JS cannot pass byte verification', async
   data.files.set('/assets/index-old.js', '<html>Sign in</html>');
   await assert.rejects(
     checkLiveAssetRetention({ root: data.root, fetchImpl: data.fetchImpl }),
-    /All eight historical archives required/,
+    /Expected eight or nine historical archives/,
   );
 });
 
@@ -184,5 +184,21 @@ test('modified published entrypoint bytes are rejected', async (t) => {
   await assert.rejects(
     checkLiveAssetRetention({ root: data.root, fetchImpl: data.fetchImpl }),
     /Published asset bytes changed/,
+  );
+});
+
+test('recognizes nine complete archives while rejecting a gap in the new set', (t) => {
+  const data = fixture();
+  t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
+  const js =
+    data.files.get('/assets/index-old.js') + ',./questions-2026-10-27.9-new.js';
+  assert.equal(identifyProductionAssets(data.files.get('/'), js).length, 11);
+  assert.throws(
+    () =>
+      identifyProductionAssets(
+        data.files.get('/'),
+        js.replace('./questions-2026-10-27.8-old.js', ''),
+      ),
+    /archive .8 missing/,
   );
 });

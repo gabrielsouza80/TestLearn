@@ -15,6 +15,7 @@ import {
   variabilityArchivedQuestions,
   qualityArchivedQuestions,
   terminologyArchivedQuestions,
+  advancedArchivedQuestions,
 } from '../fixtures/banks';
 const banks = {
   '2026-10-27.1': legacyQuestions,
@@ -25,6 +26,7 @@ const banks = {
   '2026-10-27.6': variabilityArchivedQuestions,
   '2026-10-27.7': qualityArchivedQuestions,
   '2026-10-27.8': terminologyArchivedQuestions,
+  '2026-10-27.9': advancedArchivedQuestions,
 };
 function fixtures() {
   return {
@@ -36,6 +38,7 @@ function fixtures() {
     '2026-10-27.6': vi.fn(async () => banks['2026-10-27.6']),
     '2026-10-27.7': vi.fn(async () => banks['2026-10-27.7']),
     '2026-10-27.8': vi.fn(async () => banks['2026-10-27.8']),
+    '2026-10-27.9': vi.fn(async () => banks['2026-10-27.9']),
   };
 }
 describe('on-demand immutable revisions', () => {

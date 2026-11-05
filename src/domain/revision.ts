@@ -7,7 +7,8 @@ export const BILINGUAL_CONTENT_REVISION = '2026-10-27.5';
 export const VARIABILITY_CONTENT_REVISION = '2026-10-27.6';
 export const QUALITY_CONTENT_REVISION = '2026-10-27.7';
 export const TERMINOLOGY_CONTENT_REVISION = '2026-10-27.8';
-export const CONTENT_REVISION = '2026-10-27.9';
+export const ADVANCED_CONTENT_REVISION = '2026-10-27.9';
+export const CONTENT_REVISION = '2026-10-27.10';
 // These revisions were generated under the verified LO-group blueprint.
 export const isBlueprintRevision = (revision: string): boolean =>
   revision === BLUEPRINT_CONTENT_REVISION ||
@@ -16,4 +17,5 @@ export const isBlueprintRevision = (revision: string): boolean =>
   revision === VARIABILITY_CONTENT_REVISION ||
   revision === QUALITY_CONTENT_REVISION ||
   revision === TERMINOLOGY_CONTENT_REVISION ||
+  revision === ADVANCED_CONTENT_REVISION ||
   revision === CONTENT_REVISION;

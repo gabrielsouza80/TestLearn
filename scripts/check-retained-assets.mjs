@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const RETAINED_PATH = 'config/retained-assets.json';
 const ASSET_PATH =
-  /^assets\/(?:index-[A-Za-z0-9_-]+\.(?:js|css)|questions-2026-10-27\.[1-8]-[A-Za-z0-9_-]+\.js)$/;
+  /^assets\/(?:index-[A-Za-z0-9_-]+\.(?:js|css)|questions-2026-10-27\.[1-9]-[A-Za-z0-9_-]+\.js)$/;
 const INDEX_PATH = /^assets\/index-[A-Za-z0-9_-]+\.(?:js|css)$/;
 
 export function readRetainedCatalog(file = RETAINED_PATH) {

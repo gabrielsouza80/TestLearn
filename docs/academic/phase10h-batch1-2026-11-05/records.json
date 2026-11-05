@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "c551cca958add939fee9a7b0e82d0734f5a2aa32",
+  "previousRevision": "2026-10-27.9",
+  "currentRevision": "2026-10-27.10",
+  "reviewer": "Codex (AI; independent human approval pending)",
+  "reviewedOn": "2026-11-05",
+  "humanApprovedCount": 0,
+  "corrections": [
+    {
+      "questionId": "tl-011",
+      "previousVersion": 2,
+      "version": 3,
+      "previousSHA256": "a2213c90fdca17ebd289978f394ce5afc48612b9e45e20d309d04aaccf64ad35",
+      "correctedSHA256": "c2abfddc606a1a3dfdd54c025cdf64abc92c3147f0a2859706436d0cce01a974",
+      "keyBefore": ["o1"],
+      "keyAfter": ["o1"],
+      "learningObjective": "FL-2.2.3",
+      "cognitiveLevel": "K2",
+      "status": "AI_CORRECTED_PENDING_HUMAN",
+      "humanDecision": null,
+      "developmentOnly": true
+    },
+    {
+      "questionId": "tl-090",
+      "previousVersion": 1,
+      "version": 2,
+      "previousSHA256": "4cd336bf348f4c4611885be1c95f7fca8ea947a56c2bf356600a68ec5912ff1c",
+      "correctedSHA256": "3984959d5f7172efc45e23db788abe3834a1b711ae54058b88e8070b2c0d74b7",
+      "keyBefore": ["o2"],
+      "keyAfter": ["o2"],
+      "learningObjective": "FL-5.5.1",
+      "cognitiveLevel": "K3",
+      "status": "AI_CORRECTED_PENDING_HUMAN",
+      "humanDecision": null,
+      "developmentOnly": true
+    }
+  ]
+}

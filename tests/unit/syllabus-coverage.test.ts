@@ -195,7 +195,7 @@ describe('full syllabus coverage, distinct from academic approval', () => {
       expect(load().state.history[0]).toEqual(completed);
       expect(score(completed, altered).correct).toBe(1);
     }
-    expect(CONTENT_REVISION).toBe('2026-10-27.9');
+    expect(CONTENT_REVISION).toBe('2026-10-27.10');
   });
   it('rejects missing/whitespace explanations and wrong answer cardinalities instead of hiding content errors', () => {
     const q = syllabusQuestions[0];

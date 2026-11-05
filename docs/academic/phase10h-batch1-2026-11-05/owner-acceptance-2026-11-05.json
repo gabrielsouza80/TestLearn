@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-11-05",
+  "decision": "OWNER_ACCEPTED",
+  "decisionMaker": "Gabriel",
+  "role": "TestLearn product owner",
+  "authority": "Explicit instruction in the Batch 2 user request",
+  "scope": "Reviewed Batch 1 corrections, existing answer keys and documented explanations only",
+  "independentAssessmentReportedByOwner": true,
+  "independentHumanSMEReviewVerified": false,
+  "reviewerProfessionalCertificationAsserted": false,
+  "academicApproval": "PENDING",
+  "deploymentAuthorization": false,
+  "remaining88Approval": false,
+  "reviewedPackageSHA256": "3830254c65518d296342bbbe3ced3b147a8e7e330a95fddbbd88f56f02bd4b2a",
+  "questions": [
+    {
+      "questionId": "tl-011",
+      "acceptedCanonicalSHA256": "c2abfddc606a1a3dfdd54c025cdf64abc92c3147f0a2859706436d0cce01a974",
+      "acceptedVersion": 3,
+      "acceptedAnswerKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-090",
+      "acceptedCanonicalSHA256": "3984959d5f7172efc45e23db788abe3834a1b711ae54058b88e8070b2c0d74b7",
+      "acceptedVersion": 2,
+      "acceptedAnswerKey": ["o2"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    }
+  ],
+  "optionalFutureImprovement": {
+    "questionId": "tl-090",
+    "description": "Separate presentation of preconditions from reproduction steps for readability. Do not change the accepted wording in this task.",
+    "implemented": false
+  }
+}

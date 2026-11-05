@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const PUBLIC_ORIGIN = 'https://testlearn-ctfl.vercel.app';
 const INDEX_JS = /^assets\/index-[A-Za-z0-9_-]+\.js$/;
 const INDEX_CSS = /^assets\/index-[A-Za-z0-9_-]+\.css$/;
-const ARCHIVE = /^assets\/questions-2026-10-27\.([1-8])-[A-Za-z0-9_-]+\.js$/;
+const ARCHIVE = /^assets\/questions-2026-10-27\.([1-9])-[A-Za-z0-9_-]+\.js$/;
 
 export function identifyProductionAssets(html, entryJs) {
   const scripts = [
@@ -27,7 +27,7 @@ export function identifyProductionAssets(html, entryJs) {
 
   const historical = new Map();
   for (const match of entryJs.matchAll(
-    /questions-2026-10-27\.([1-8])-[A-Za-z0-9_-]+\.js/g,
+    /questions-2026-10-27\.([1-9])-[A-Za-z0-9_-]+\.js/g,
   )) {
     const name = 'assets/' + match[0];
     assert.match(name, ARCHIVE);
@@ -38,7 +38,16 @@ export function identifyProductionAssets(html, entryJs) {
     );
     historical.set(chapter, name);
   }
-  assert.equal(historical.size, 8, 'All eight historical archives required');
+  // Published .9 has eight archives; a future .10 publication has nine.
+  // Require a complete contiguous set, never accept a missing middle revision.
+  const last = Math.max(...historical.keys());
+  assert(
+    last === 8 || last === 9,
+    'Expected eight or nine historical archives',
+  );
+  for (let revision = 1; revision <= last; revision++)
+    assert(historical.has(revision), `Historical archive .${revision} missing`);
+  assert.equal(historical.size, last);
   return [
     ...new Set([
       scripts[0],

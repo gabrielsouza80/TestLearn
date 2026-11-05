@@ -1,5 +1,6 @@
 import { variabilityQuestions } from './variability-questions';
 import { advancedQuestions } from './advanced-questions';
+import { applyAcademicBatch1 } from './academic-batch1';
 import terminologyReviews from './terminology-review.json' with { type: 'json' };
 import { syllabusQuestions } from './syllabus-questions';
 import bilingualReviews from './bilingual-review.json' with { type: 'json' };
@@ -1785,3 +1786,7 @@ for (const review of terminologyReviews) {
 
 // Phase 7: add reviewed candidates; every Phase 6C object remains unchanged.
 questions.push(...advancedQuestions);
+
+// New attempts use the corrected revision; archived attempts keep original text.
+for (let index = 0; index < questions.length; index++)
+  questions[index] = applyAcademicBatch1(questions[index]);
