@@ -1,0 +1,7 @@
+{
+  "command": "node scripts/check-live-asset-retention.mjs",
+  "phase": "before copying the authenticated CSS into public/assets and rebuilding",
+  "exitCode": 1,
+  "output": "Previous asset not retained: assets/index-CFv3SkJ7.css",
+  "timestampLimitation": "Exact tool-call UTC was not recorded; executed during this 2026-11-08 audit before GREEN checks. No timestamp inferred."
+}

@@ -1,0 +1,6 @@
+{
+  "startUTC": "2026-11-08T13:38:05.904Z",
+  "endUTC": "2026-11-08T13:38:07.224Z",
+  "command": "node node_modules/eslint/bin/eslint.js scripts/check-live-asset-retention.test.mjs",
+  "exitCode": 0
+}

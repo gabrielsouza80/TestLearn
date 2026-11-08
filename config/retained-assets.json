@@ -2,6 +2,12 @@
   "schemaVersion": 1,
   "assets": [
     {
+      "path": "assets/index-CFv3SkJ7.css",
+      "sha256": "f714c6e9e72199b3a182698c8c66806acca61630ff4c79945c18a2915e6f8951",
+      "sourceCommit": "6b378758602119f402d76e49abe5c6430d99b47f",
+      "sourceDeployment": "dpl_3XxiEew9BgbUpXdt7a7KdEv34Fr3"
+    },
+    {
       "path": "assets/index-CTbPgljy.js",
       "sha256": "6def132bdf263f78c2b48798f917bc82e80ba05bd8b04b04689a79c0020629b1",
       "sourceCommit": "58ec1f04d3971ce8ff3fc46730f1bdd8e54f5c68",

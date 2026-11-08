@@ -1,0 +1,6 @@
+{
+  "startUTC": "2026-11-08T13:38:05.639Z",
+  "endUTC": "2026-11-08T13:38:05.903Z",
+  "command": "node node_modules/prettier/bin/prettier.cjs --check scripts/check-live-asset-retention.test.mjs config/retained-assets.json",
+  "exitCode": 0
+}

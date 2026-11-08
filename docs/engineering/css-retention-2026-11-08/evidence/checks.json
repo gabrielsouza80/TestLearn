@@ -1,0 +1,51 @@
+[
+  {
+    "name": "retention-tests",
+    "command": "node --test scripts/check-live-asset-retention.test.mjs scripts/check-retained-assets.test.mjs scripts/check-retained-append-only.test.mjs scripts/check-release.test.mjs",
+    "startUTC": "2026-11-08T13:36:19.287Z",
+    "endUTC": "2026-11-08T13:37:27.562Z",
+    "exitCode": 0
+  },
+  {
+    "name": "production-typescript",
+    "command": "node node_modules/typescript/bin/tsc --project tsconfig.production.json",
+    "startUTC": "2026-11-08T13:37:27.566Z",
+    "endUTC": "2026-11-08T13:37:30.621Z",
+    "exitCode": 0
+  },
+  {
+    "name": "production-vite",
+    "command": "node node_modules/vite/bin/vite.js build",
+    "startUTC": "2026-11-08T13:37:30.621Z",
+    "endUTC": "2026-11-08T13:37:34.682Z",
+    "exitCode": 0
+  },
+  {
+    "name": "release",
+    "command": "node scripts/check-release.mjs",
+    "startUTC": "2026-11-08T13:37:34.682Z",
+    "endUTC": "2026-11-08T13:37:35.359Z",
+    "exitCode": 0
+  },
+  {
+    "name": "retained",
+    "command": "node scripts/check-retained-assets.mjs",
+    "startUTC": "2026-11-08T13:37:35.360Z",
+    "endUTC": "2026-11-08T13:37:35.471Z",
+    "exitCode": 0
+  },
+  {
+    "name": "live",
+    "command": "node scripts/check-live-asset-retention.mjs",
+    "startUTC": "2026-11-08T13:37:35.472Z",
+    "endUTC": "2026-11-08T13:37:37.778Z",
+    "exitCode": 0
+  },
+  {
+    "name": "format",
+    "command": "node node_modules/prettier/bin/prettier.cjs --check config/retained-assets.json scripts/check-live-asset-retention.test.mjs",
+    "startUTC": "2026-11-08T13:37:37.779Z",
+    "endUTC": "2026-11-08T13:37:38.099Z",
+    "exitCode": 1
+  }
+]

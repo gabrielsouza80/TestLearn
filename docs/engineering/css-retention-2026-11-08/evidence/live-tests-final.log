@@ -1,0 +1,23 @@
+✔ live verifier checks published JS, CSS and eight archived chunks (42.165ms)
+✔ fails closed if published CSS is missing from candidate (19.4001ms)
+✔ rejects published CSS retained under its name with altered bytes (12.3188ms)
+✔ fails closed if current production JS is missing from candidate (11.9042ms)
+✔ detects altered bytes in an archived question chunk (12.9757ms)
+✔ rejects missing historical chapter references (8.8751ms)
+✔ rejects unexpected production origins (9.8591ms)
+✔ returns an error on remote 404, never a false PASS (10.6516ms)
+✔ network failure is propagated without a successful result (11.4697ms)
+✔ timeout is propagated and requests explicitly refuse redirects (10.0757ms)
+✔ authentication redirect is rejected rather than skipped (11.9076ms)
+✔ login HTML returned as entrypoint JS cannot pass byte verification (10.884ms)
+✔ missing entrypoint reference fails without attempting arbitrary URLs (10.2726ms)
+✔ modified published entrypoint bytes are rejected (9.6303ms)
+✔ recognizes nine complete archives while rejecting a gap in the new set (10.3762ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 325.811

@@ -1,0 +1,136 @@
+{
+  "files": [
+    {
+      "path": ".vite/manifest.json",
+      "bytes": 2843,
+      "gzip": 417,
+      "sha256": "a49eb15bdefa8afecde4ee22b20f89183ed2c1ac39344f1ec3394d15f76a5a5a"
+    },
+    {
+      "path": "assets/index-CFv3SkJ7.css",
+      "bytes": 31083,
+      "gzip": 6631,
+      "sha256": "f714c6e9e72199b3a182698c8c66806acca61630ff4c79945c18a2915e6f8951"
+    },
+    {
+      "path": "assets/index-CTbPgljy.js",
+      "bytes": 702764,
+      "gzip": 212661,
+      "sha256": "6def132bdf263f78c2b48798f917bc82e80ba05bd8b04b04689a79c0020629b1"
+    },
+    {
+      "path": "assets/index-DB06V4Gu.js",
+      "bytes": 702777,
+      "gzip": 212672,
+      "sha256": "250eddc57ea8a0fe2c1722669a2826cc5222e76a9b89a30b65e41c1cd33d6b65"
+    },
+    {
+      "path": "assets/index-DdPRCxY1.css",
+      "bytes": 31314,
+      "gzip": 6674,
+      "sha256": "874993256fb60322e28869d877d3d09f23a9ec1d79a53f21eba32ee7f7caa2d0"
+    },
+    {
+      "path": "assets/index-DfzEcH_l.js",
+      "bytes": 708095,
+      "gzip": 214595,
+      "sha256": "8328e85d55b6d40beb81fdf8d9af5402030cc04c108ab5616571ef838b2e2ecf"
+    },
+    {
+      "path": "assets/questions-2026-10-27.1-W7yLFLHs.js",
+      "bytes": 51782,
+      "gzip": 12545,
+      "sha256": "69adfae8b006a629236c0fcb0559b88a0dacc5d2f90ca4e42da13e9a756d72ec"
+    },
+    {
+      "path": "assets/questions-2026-10-27.2-D-tyE03s.js",
+      "bytes": 65758,
+      "gzip": 14708,
+      "sha256": "e2839ed36ca6273d4f8072ab62e3bda1a6687a70d926030514ae811ef4c0a17c"
+    },
+    {
+      "path": "assets/questions-2026-10-27.3-BEhMXjsZ.js",
+      "bytes": 87739,
+      "gzip": 20828,
+      "sha256": "65ef813a337922fc6de659ab4a0c03670d6da25e032d04d08b61188dda75df05"
+    },
+    {
+      "path": "assets/questions-2026-10-27.4-BAQ4Dpi_.js",
+      "bytes": 153173,
+      "gzip": 38265,
+      "sha256": "1686f7dd0efed601181f211ae9998f83299a72816d1af13b939ab9b4272e3508"
+    },
+    {
+      "path": "assets/questions-2026-10-27.5-CgwUPsDp.js",
+      "bytes": 153450,
+      "gzip": 38328,
+      "sha256": "ae655803c5bce318cec4a0420d740ab62758f4efc1aaa5be87681b678e595d22"
+    },
+    {
+      "path": "assets/questions-2026-10-27.6-BrE7YM3i.js",
+      "bytes": 205308,
+      "gzip": 52439,
+      "sha256": "eaf2bd5984a020500c7934334388e73c24d498d3c1dfa0102c006a11e95986fd"
+    },
+    {
+      "path": "assets/questions-2026-10-27.7-3UV0lmO3.js",
+      "bytes": 242294,
+      "gzip": 61795,
+      "sha256": "ebfc17e35aac7fc0e92ab79eb262e65e6a0413877b0c52c3636421151fc95e8a"
+    },
+    {
+      "path": "assets/questions-2026-10-27.8-71jBULRe.js",
+      "bytes": 242303,
+      "gzip": 61828,
+      "sha256": "c1892d154e00e07f53b32ea2d39b91033b170607235453de57d194dae0521e99"
+    },
+    {
+      "path": "assets/questions-2026-10-27.9-WmfHJdNH.js",
+      "bytes": 275727,
+      "gzip": 71302,
+      "sha256": "f3120458642608e62ac326c3ccca7faacb71d65dc7fe7339a1328a6f06748c97"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 248,
+      "gzip": 202,
+      "sha256": "0d2aadde84cb02155931b64c47b1f29da6690144b3b056be05702d6630d5168a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 686,
+      "gzip": 416,
+      "sha256": "de9b3b074fc0c1317921b1b57720ea881b149c3b570dae33fbd27cb48d0b742b"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 29,
+      "gzip": 49,
+      "sha256": "2b826f11dd8c8236d6086bd043c4b751f7203a8c458bf5a02ca3211e4aae85f2"
+    }
+  ],
+  "initialJS": {
+    "path": "assets/index-DfzEcH_l.js",
+    "bytes": 708095,
+    "gzip": 214595,
+    "sha256": "8328e85d55b6d40beb81fdf8d9af5402030cc04c108ab5616571ef838b2e2ecf"
+  },
+  "css": [
+    {
+      "path": "assets/index-CFv3SkJ7.css",
+      "bytes": 31083,
+      "gzip": 6631,
+      "sha256": "f714c6e9e72199b3a182698c8c66806acca61630ff4c79945c18a2915e6f8951"
+    },
+    {
+      "path": "assets/index-DdPRCxY1.css",
+      "bytes": 31314,
+      "gzip": 6674,
+      "sha256": "874993256fb60322e28869d877d3d09f23a9ec1d79a53f21eba32ee7f7caa2d0"
+    }
+  ],
+  "totalJS": 3591170,
+  "archiveChunks": 9,
+  "privateAssets": 0,
+  "sourceMaps": 0
+}

@@ -1,0 +1,6 @@
+{
+  "startUTC": "2026-11-08T13:38:05.201Z",
+  "endUTC": "2026-11-08T13:38:05.635Z",
+  "command": "node --test scripts/check-live-asset-retention.test.mjs",
+  "exitCode": 0
+}

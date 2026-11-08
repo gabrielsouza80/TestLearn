@@ -1,0 +1,41 @@
+{
+  "atUTC": "2026-11-08T13:32:50.671Z",
+  "failed": {
+    "id": "dpl_8bEadprHRRJCXWFN9z4YDNTcctw2",
+    "sha": "6d7d1ac66f18909cfb7ce3a89932fb4c8855822f",
+    "state": "ERROR",
+    "target": null,
+    "error": "Command \"npm run build && node scripts/check-release.mjs && node scripts/check-retained-assets.mjs && node scripts/check-live-asset-retention.mjs\" exited with 1",
+    "url": "testlearn-9ykvpbu0a-testlearn808005-9164.vercel.app"
+  },
+  "project": {
+    "id": "prj_lE5DcKsY473SnniV0CXXMC1aBx3w",
+    "productionBranch": "main",
+    "ssoProtection": {
+      "deploymentType": "prod_deployment_urls_and_all_previews"
+    }
+  },
+  "production": {
+    "id": "dpl_3XxiEew9BgbUpXdt7a7KdEv34Fr3",
+    "sha": "6b378758602119f402d76e49abe5c6430d99b47f",
+    "state": "READY",
+    "target": "production",
+    "url": "testlearn-upy66crzb-testlearn808005-9164.vercel.app"
+  },
+  "index.html": {
+    "status": 200,
+    "bytes": 686,
+    "sha256": "0568a609d1a1a521df7330fa1470255e3519a480b6285345f92b1a8566e42e94",
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "etag": "\"594aada8513cd4233d00a9737c6ae3c8\""
+  },
+  "assets/index-CFv3SkJ7.css": {
+    "status": 200,
+    "bytes": 31083,
+    "sha256": "f714c6e9e72199b3a182698c8c66806acca61630ff4c79945c18a2915e6f8951",
+    "contentType": "text/css; charset=utf-8",
+    "cacheControl": "public, max-age=31536000, immutable",
+    "etag": "W/\"c0490b8aca1691262e59ead403662d52\""
+  }
+}

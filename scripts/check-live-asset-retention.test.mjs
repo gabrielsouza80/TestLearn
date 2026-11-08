@@ -48,6 +48,29 @@ test('live verifier checks published JS, CSS and eight archived chunks', async (
   assert.equal(result.checkedPaths.length, 10);
 });
 
+test('fails closed if published CSS is missing from candidate', async (t) => {
+  const data = fixture();
+  t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
+  fs.rmSync(path.join(data.root, 'assets/index-old.css'));
+  await assert.rejects(
+    checkLiveAssetRetention({ root: data.root, fetchImpl: data.fetchImpl }),
+    /Previous asset not retained: assets\/index-old\.css/,
+  );
+});
+
+test('rejects published CSS retained under its name with altered bytes', async (t) => {
+  const data = fixture();
+  t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
+  fs.appendFileSync(
+    path.join(data.root, 'assets/index-old.css'),
+    '/* changed */',
+  );
+  await assert.rejects(
+    checkLiveAssetRetention({ root: data.root, fetchImpl: data.fetchImpl }),
+    /Published asset bytes changed: assets\/index-old\.css/,
+  );
+});
+
 test('fails closed if current production JS is missing from candidate', async (t) => {
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
