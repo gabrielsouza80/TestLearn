@@ -1,0 +1,9 @@
+{
+  "files": 78,
+  "sizeBytes": 1003693,
+  "sha256": "2ca60dd77d8fc070cc7cf093e815e4cca1a22033176aa2aeafed8c2dd9a070b1",
+  "CRC": "PASS",
+  "manifestHashes": "PASS",
+  "secretPatternScan": "PASS",
+  "rawTracesExcluded": "Remain local in ignored test-result folders; no actual profiles or personal data copied"
+}

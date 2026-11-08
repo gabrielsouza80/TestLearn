@@ -544,6 +544,7 @@ main {
   font-weight: 400;
 }
 .options {
+  min-width: 0;
   padding: 0;
   border: 0;
   margin: 1.25rem 0;
@@ -579,6 +580,10 @@ main {
   width: 17px;
   height: 17px;
 }
+.option-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .options:disabled .option {
   cursor: default;
 }
@@ -592,10 +597,13 @@ main {
   flex-wrap: wrap;
 }
 .question-actions button {
+  max-width: 100%;
   font-size: 0.75rem;
 }
 .question-actions > div {
   display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .navigator {

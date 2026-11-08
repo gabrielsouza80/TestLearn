@@ -1,0 +1,309 @@
+{
+  "localReflow": "PASS",
+  "releaseReadiness": "BLOCKED",
+  "firstRemoteCommit": "d78dd703756ce5088865b8940386034dc3eeda22",
+  "passedChecks": {
+    "typecheck": {
+      "command": ["node", "node_modules/typescript/bin/tsc", "--noEmit"],
+      "startedUTC": "2026-11-08T12:57:49.403882+00:00",
+      "finishedUTC": "2026-11-08T12:58:02.415749+00:00",
+      "wallSeconds": 13.011,
+      "exitCode": 0
+    },
+    "lint": {
+      "command": ["node", "node_modules/eslint/bin/eslint.js", "."],
+      "startedUTC": "2026-11-08T12:58:49.228268+00:00",
+      "finishedUTC": "2026-11-08T12:58:57.810342+00:00",
+      "wallSeconds": 8.582,
+      "exitCode": 0
+    },
+    "production-typecheck": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--project",
+        "tsconfig.production.json"
+      ],
+      "startedUTC": "2026-11-08T12:59:04.976250+00:00",
+      "finishedUTC": "2026-11-08T12:59:08.193708+00:00",
+      "wallSeconds": 3.217,
+      "exitCode": 0
+    },
+    "build": {
+      "command": ["node", "node_modules/vite/bin/vite.js", "build"],
+      "startedUTC": "2026-11-08T12:59:09.407368+00:00",
+      "finishedUTC": "2026-11-08T12:59:13.013043+00:00",
+      "wallSeconds": 3.607,
+      "exitCode": 0
+    },
+    "vitest-full": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--maxWorkers=1",
+        "--no-file-parallelism"
+      ],
+      "startedUTC": "2026-11-08T12:59:14.290694+00:00",
+      "finishedUTC": "2026-11-08T13:00:45.593156+00:00",
+      "wallSeconds": 91.298,
+      "exitCode": 0
+    },
+    "e2e-green-complete": {
+      "command": [
+        "node",
+        "node_modules/@playwright/test/cli.js",
+        "test",
+        "tests/e2e/pedagogical-review-notice.spec.ts",
+        "tests/e2e/pedagogical-feedback-negative.spec.ts",
+        "tests/e2e/question-reflow.spec.ts",
+        "--workers=1",
+        "--reporter=list",
+        "--max-failures=1",
+        "--output=C:/TestLearn/tmp/checkpoint-reflow-20261108/green-complete-results"
+      ],
+      "startedUTC": "2026-11-08T12:55:19.213609+00:00",
+      "finishedUTC": "2026-11-08T12:56:55.758107+00:00",
+      "wallSeconds": 96.537,
+      "exitCode": 0
+    },
+    "e2e-existing-regression": {
+      "command": [
+        "node",
+        "node_modules/@playwright/test/cli.js",
+        "test",
+        "tests/e2e/app.spec.ts",
+        "tests/e2e/educational-ux.spec.ts",
+        "tests/e2e/progress-backup.spec.ts",
+        "--workers=1",
+        "--reporter=list",
+        "--max-failures=1",
+        "--output=C:/TestLearn/tmp/checkpoint-reflow-20261108/existing-regression-results"
+      ],
+      "startedUTC": "2026-11-08T13:01:05.568554+00:00",
+      "finishedUTC": "2026-11-08T13:05:30.872822+00:00",
+      "wallSeconds": 265.29,
+      "exitCode": 0
+    },
+    "guard-regressions": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/check-release.test.mjs",
+        "scripts/check-retained-assets.test.mjs",
+        "scripts/check-live-asset-retention.test.mjs",
+        "scripts/check-retained-append-only.test.mjs",
+        "scripts/check-advanced-isolation.test.mjs",
+        "scripts/check-vercel-build.test.mjs"
+      ],
+      "startedUTC": "2026-11-08T13:05:56.756265+00:00",
+      "finishedUTC": "2026-11-08T13:07:05.951147+00:00",
+      "wallSeconds": 69.191,
+      "exitCode": 0
+    },
+    "dimensions-after": {
+      "command": [
+        "node",
+        "C:/TestLearn/tmp/checkpoint-reflow-20261108/measure-after.cjs"
+      ],
+      "startedUTC": "2026-11-08T13:07:41.737504+00:00",
+      "finishedUTC": "2026-11-08T13:07:54.083197+00:00",
+      "wallSeconds": 12.344,
+      "exitCode": 0
+    },
+    "release": {
+      "command": ["node", "scripts/check-release.mjs"],
+      "startedUTC": "2026-11-08T13:08:16.956781+00:00",
+      "finishedUTC": "2026-11-08T13:08:17.577095+00:00",
+      "wallSeconds": 0.621,
+      "exitCode": 0
+    },
+    "retained": {
+      "command": ["node", "scripts/check-retained-assets.mjs"],
+      "startedUTC": "2026-11-08T13:08:18.758774+00:00",
+      "finishedUTC": "2026-11-08T13:08:18.854853+00:00",
+      "wallSeconds": 0.096,
+      "exitCode": 0
+    },
+    "isolation": {
+      "command": ["node", "scripts/check-advanced-isolation.mjs"],
+      "startedUTC": "2026-11-08T13:08:20.066001+00:00",
+      "finishedUTC": "2026-11-08T13:08:20.358630+00:00",
+      "wallSeconds": 0.292,
+      "exitCode": 0
+    },
+    "format-own-final": {
+      "command": [
+        "node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/styles.css",
+        "tests/e2e/question-reflow.spec.ts"
+      ],
+      "startedUTC": "2026-11-08T13:10:18.737148+00:00",
+      "finishedUTC": "2026-11-08T13:10:19.279222+00:00",
+      "wallSeconds": 0.542,
+      "exitCode": 0
+    }
+  },
+  "finalCounts": {
+    "unitIntegration": 282,
+    "e2eDirected": 16,
+    "e2eExisting": 100,
+    "nodeGuards": 91,
+    "finalSkipped": 0
+  },
+  "preservedFailures": {
+    "REDDesktop": 3,
+    "initialNewScreenshotFailure": 1,
+    "initialNewScreenshotNotRun": 5,
+    "formatChangedInitially": 1,
+    "legacyAcademic": 1,
+    "globalFormattingFinalFiles": 75,
+    "automaticPreview": "ERROR: Previous asset not retained assets/index-CFv3SkJ7.css"
+  },
+  "formatHistoricalPaths": [
+    "docs/academic/phase10h-batch12-2026-11-06/alternative-assessments.json",
+    "docs/academic/phase10h-batch12-2026-11-06/blind-projection.json",
+    "docs/academic/phase10h-batch12-2026-11-06/blind-solutions.json",
+    "docs/academic/phase10h-batch12-2026-11-06/decision-matrix.json",
+    "docs/academic/phase10h-batch12-2026-11-06/exact-comparisons.json",
+    "docs/academic/phase10h-batch12-2026-11-06/file-inventory.json",
+    "docs/academic/phase10h-batch12-2026-11-06/optional-candidates.json",
+    "docs/academic/phase10h-batch12-2026-11-06/README.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-016.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-018.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-031.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-034.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-039.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-042.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-043.md",
+    "docs/academic/phase10h-batch12-2026-11-06/reports/tl-045.md",
+    "docs/academic/phase10h-batch12-2026-11-06/sources.json",
+    "docs/academic/phase10h-batch12-2026-11-06/verification.md",
+    "docs/academic/phase10h-batch13-2026-11-06/alternative-assessments.json",
+    "docs/academic/phase10h-batch13-2026-11-06/blind-projection.json",
+    "docs/academic/phase10h-batch13-2026-11-06/blind-solutions.json",
+    "docs/academic/phase10h-batch13-2026-11-06/decision-matrix.json",
+    "docs/academic/phase10h-batch13-2026-11-06/exact-comparisons.json",
+    "docs/academic/phase10h-batch13-2026-11-06/file-inventory.json",
+    "docs/academic/phase10h-batch13-2026-11-06/optional-candidates.json",
+    "docs/academic/phase10h-batch13-2026-11-06/README.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-048.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-049.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-050.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-051.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-052.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-053.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-054.md",
+    "docs/academic/phase10h-batch13-2026-11-06/reports/tl-057.md",
+    "docs/academic/phase10h-batch13-2026-11-06/sources.json",
+    "docs/academic/phase10h-batch13-2026-11-06/STOP-FAILURE.json",
+    "docs/academic/phase10h-batch13-2026-11-06/verification.md",
+    "docs/academic/phase10h-batch14-2026-11-07/blind-projection.json",
+    "docs/academic/phase10h-batch14-2026-11-07/blind-solutions.json",
+    "docs/academic/phase10h-batch15-2026-11-07/blind-projection.json",
+    "docs/academic/phase10h-batch15-2026-11-07/blind-solutions.json",
+    "docs/academic/phase10h-batch16-2026-11-08/blind-projection.json",
+    "docs/academic/phase10h-batch16-2026-11-08/blind-solutions.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence-inventory.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/academic-legacy-scope.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/baseline-provenance.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/browser-diagnosis.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/causal-css-probes-properties.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/causal-css-probes.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/diagnosis.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/e2e-all-relevant.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/EVIDENCE-MANIFEST.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/FINAL-STATUS.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/format-global-check.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/four-e2e-after-selector.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/guard-regressions.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/integrity-final.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/preexisting-format-findings.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/STOP-FAILURE.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/tdd-red.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/typecheck.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/vitest-full.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/blueprint-isolated-1.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/blueprint-isolated-2.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/resource-measurement-limitation.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/STOP-E2E-FAILURE.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-diagnostic-map.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-green.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-red.json",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/vitest-full-sequential.json",
+    "docs/engineering/checkpoint-2026-11-08/push-safety.json",
+    "docs/engineering/checkpoint-2026-11-08/README.md",
+    "docs/engineering/checkpoint-2026-11-08/staged-check.json",
+    "docs/experiments/pedagogical-notice-recovery-2026-11-08.md",
+    "docs/experiments/pedagogical-notice-verification-2026-11-08.md"
+  ],
+  "pilot": "PLANNED_ONLY",
+  "phase10H": "OPEN; human academic approval PENDING",
+  "finalChecks": {
+    "final-scoped-format": {
+      "command": [
+        "node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/styles.css",
+        "tests/e2e/question-reflow.spec.ts",
+        "docs/engineering/reflow-2026-11-08"
+      ],
+      "startedUTC": "2026-11-08T13:14:19.387082+00:00",
+      "finishedUTC": "2026-11-08T13:14:20.033434+00:00",
+      "wallSeconds": 0.646,
+      "exitCode": 0
+    },
+    "final-diff": {
+      "command": ["git", "diff", "--check"],
+      "startedUTC": "2026-11-08T13:14:21.268923+00:00",
+      "finishedUTC": "2026-11-08T13:14:21.356859+00:00",
+      "wallSeconds": 0.089,
+      "exitCode": 0
+    }
+  },
+  "localOnlyTraceFiles": [
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\red-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\error-context.md",
+      "sha256": "18a59a5df50cc442a9c3cd6556e921c3f2e014af9135d9e1dca0a0ac46063b40",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\red-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\trace.zip",
+      "sha256": "ddad8a581fa65685767847b76f7393f76cec945a6c9de08d61e7ed45f5c8042e",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\red-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\error-context.md",
+      "sha256": "18a59a5df50cc442a9c3cd6556e921c3f2e014af9135d9e1dca0a0ac46063b40",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\red-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\trace.zip",
+      "sha256": "47424e51f9c3d9d16f6e2e51abe06960b7f379a37385565f8de0990926b10fdd",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\red-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\error-context.md",
+      "sha256": "8e2bd678b1c51fbfafa9f5c6e5fde862b0418d671263d800572709a654738a02",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\red-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\trace.zip",
+      "sha256": "4d2b3d40311d1373bb40a292383ff8c5c52c621a9bbec357ddcca22489709798",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\green-results\\question-reflow-question-r-7df4e-controls-and-feedback-in-pt-webkit\\error-context.md",
+      "sha256": "70fd3ed89c879f102eda1bdba1a3a70c7e9a5e16a7b023afd70d313f0208aadb",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\checkpoint-reflow-20261108\\green-results\\question-reflow-question-r-7df4e-controls-and-feedback-in-pt-webkit\\trace.zip",
+      "sha256": "fe1a2f20ce2ab631e7739231f360c0db28cb08fc994dbe1fa13a19a009543c9a",
+      "reason": "Raw temporary browser trace/context remains local; sanitized logs and selected screenshots are in evidence.zip"
+    }
+  ]
+}
