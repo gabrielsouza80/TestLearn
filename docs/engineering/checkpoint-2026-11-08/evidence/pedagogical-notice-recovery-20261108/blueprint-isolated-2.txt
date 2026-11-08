@@ -1,0 +1,11 @@
+
+ RUN  v4.1.12 C:/TestLearn/tmp/develop-workspace
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 15 skipped (16)
+   Start at  11:34:48
+   Duration  10.75s (transform 538ms, setup 326ms, import 1.35s, tests 7.93s, environment 905ms)
+
+
+STDERR

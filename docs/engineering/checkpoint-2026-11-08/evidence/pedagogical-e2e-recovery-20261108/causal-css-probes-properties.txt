@@ -1,0 +1,14 @@
+
+STDERR
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+345 !== 352
+
+    at C:\TestLearn\tmp\pedagogical-e2e-recovery-20261108\constraint-probes.cjs:21:92 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 345,
+  expected: 352,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

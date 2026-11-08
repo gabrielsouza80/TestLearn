@@ -1,0 +1,384 @@
+[
+  {
+    "questionId": "tl-088",
+    "original": {
+      "id": "tl-088",
+      "chapter": 4,
+      "lo": "FL-4.2.4",
+      "level": "K3",
+      "topic": "Valid and invalid transition coverage",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "A lock controller starts each test in Locked. The complete state table gives the next state; INVALID means a rejected event that leaves the state unchanged. A test must stop at its first invalid event and may attempt at most one invalid transition. Existing tests are grant, revoke, revoke and grant, revoke, grant; each starts in Locked. Which pair of additional tests achieves 100% all-transitions coverage of the six state/event pairs?",
+        "pt": "Um controlador de bloqueio começa cada teste em Locked. A tabela de estados completa indica o estado seguinte; INVALID significa um evento rejeitado que mantém o estado. Um teste tem de terminar no primeiro evento inválido e pode tentar no máximo uma transição inválida. Os testes existentes são grant, revoke, revoke e grant, revoke, grant; cada um começa em Locked. Que par de testes adicionais atinge 100% de cobertura de todas as transições dos seis pares estado/evento?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "X: grant; Y: grant, revoke, grant",
+            "pt": "X: grant; Y: grant, revoke, grant"
+          },
+          "explanation": {
+            "en": "Both cases use valid transitions, which are already covered; neither attempts the two invalid pairs.",
+            "pt": "Ambos os casos usam transições válidas, já cobertas; nenhum tenta os dois pares inválidos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "X: revoke; Y: grant, revoke, revoke",
+            "pt": "X: revoke; Y: grant, revoke, revoke"
+          },
+          "explanation": {
+            "en": "X covers Locked/revoke, but Y repeats valid transitions and never attempts Open/grant.",
+            "pt": "X cobre Locked/revoke, mas Y repete transições válidas e nunca tenta Open/grant."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "X: revoke; Y: grant, grant",
+            "pt": "X: revoke; Y: grant, grant"
+          },
+          "explanation": {
+            "en": "X attempts Locked/revoke; Y reaches Open then attempts Open/grant. Each test stops at its single invalid event, adding both missing pairs.",
+            "pt": "X tenta Locked/revoke; Y chega a Open e depois tenta Open/grant. Cada teste termina no seu único evento inválido, acrescentando ambos os pares em falta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "X: revoke, grant, grant; Y: grant, revoke",
+            "pt": "X: revoke, grant, grant; Y: grant, revoke"
+          },
+          "explanation": {
+            "en": "X continues after the first invalid event in Locked, violating the stopping rule and risking masking. The stated test policy does not permit this sequence.",
+            "pt": "X continua após o primeiro evento inválido em Locked, violando a regra de paragem e arriscando mascaramento. A política de teste indicada não permite esta sequência."
+          }
+        }
+      ],
+      "correct": ["o3"],
+      "explanation": {
+        "en": "The existing tests cover Locked/grant, Open/revoke, Suspended/revoke and Suspended/grant: all four valid pairs. The uncovered pairs are Locked/revoke and Open/grant. They require separate tests under the one-invalid-event rule; revoke and grant,grant cover them.",
+        "pt": "Os testes existentes cobrem Locked/grant, Open/revoke, Suspended/revoke e Suspended/grant: os quatro pares válidos. Os pares não cobertos são Locked/revoke e Open/grant. Exigem testes separados segundo a regra de um evento inválido; revoke e grant,grant cobrem-nos."
+      },
+      "table": {
+        "headers": ["State / Estado", "grant", "revoke"],
+        "rows": [
+          ["Locked", "Open", "INVALID"],
+          ["Open", "INVALID", "Suspended"],
+          ["Suspended", "Open", "Locked"]
+        ]
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.4",
+        "pages": [41, 42],
+        "report": "docs/academic-audit.md#fase-7--tl-088"
+      }
+    },
+    "proposed": {
+      "id": "tl-088",
+      "chapter": 4,
+      "lo": "FL-4.2.4",
+      "level": "K3",
+      "topic": "Valid and invalid transition coverage",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "A lock controller starts each test in Locked. The complete state table gives the next state; INVALID means a rejected event that leaves the state unchanged. A test must stop at its first invalid event and may attempt at most one invalid transition. Existing tests are grant, revoke, revoke and grant, revoke, grant; each starts in Locked. Which pair of additional tests achieves 100% all-transitions coverage of the six state/event pairs?",
+        "pt": "Um controlador de bloqueio começa cada teste em Locked. A tabela de estados completa indica o estado seguinte; INVALID significa um evento rejeitado que mantém o estado. Um teste tem de terminar no primeiro evento inválido e pode tentar no máximo uma transição inválida. Os testes existentes são grant, revoke, revoke e grant, revoke, grant; cada um começa em Locked. Que par de testes adicionais atinge 100% de cobertura de todas as transições dos seis pares estado/evento?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "X: grant; Y: grant, revoke, grant",
+            "pt": "X: grant; Y: grant, revoke, grant"
+          },
+          "explanation": {
+            "en": "Both cases use valid transitions, which are already covered; neither attempts the two invalid pairs.",
+            "pt": "Ambos os casos usam transições válidas, já cobertas; nenhum tenta os dois pares inválidos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "X: revoke; Y: grant, revoke, revoke",
+            "pt": "X: revoke; Y: grant, revoke, revoke"
+          },
+          "explanation": {
+            "en": "X covers Locked/revoke, but Y repeats valid transitions and never attempts Open/grant.",
+            "pt": "X cobre Locked/revoke, mas Y repete transições válidas e nunca tenta Open/grant."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "X: revoke; Y: grant, grant",
+            "pt": "X: revoke; Y: grant, grant"
+          },
+          "explanation": {
+            "en": "X attempts Locked/revoke; Y reaches Open then attempts Open/grant. Each test stops at its single invalid event, adding both missing pairs.",
+            "pt": "X tenta Locked/revoke; Y chega a Open e depois tenta Open/grant. Cada teste termina no seu único evento inválido, acrescentando ambos os pares em falta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "X: revoke, grant, grant; Y: grant, revoke",
+            "pt": "X: revoke, grant, grant; Y: grant, revoke"
+          },
+          "explanation": {
+            "en": "X continues after the first invalid event in Locked, violating the stopping rule and risking masking. The stated test policy does not permit this sequence.",
+            "pt": "X continua após o primeiro evento inválido em Locked, violando a regra de paragem e arriscando mascaramento. A política de teste indicada não permite esta sequência."
+          }
+        }
+      ],
+      "correct": ["o3"],
+      "explanation": {
+        "en": "The existing tests cover Locked/grant, Open/revoke, Suspended/revoke and Suspended/grant: all four valid pairs. The uncovered pairs are Locked/revoke and Open/grant. They require separate tests under the one-invalid-event rule; revoke and grant,grant cover them.",
+        "pt": "Os testes existentes cobrem Locked/grant, Open/revoke, Suspended/revoke e Suspended/grant: os quatro pares válidos. Os pares não cobertos são Locked/revoke e Open/grant. Exigem testes separados segundo a regra de um evento inválido; revoke e grant,grant cobrem-nos."
+      },
+      "table": {
+        "headers": ["State / Estado", "grant", "revoke"],
+        "rows": [
+          ["Locked", "Open", "INVALID"],
+          ["Open", "INVALID", "Suspended"],
+          ["Suspended", "Open", "Locked"]
+        ]
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.4",
+        "pages": [41, 42],
+        "report": "docs/academic-audit.md#fase-7--tl-088"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-089",
+    "original": {
+      "id": "tl-089",
+      "chapter": 5,
+      "lo": "FL-5.1.4",
+      "level": "K3",
+      "topic": "Effort with selective re-execution",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "Estimate person-effort, not elapsed duration. Apply (a + 4m + b) / 6 to each table row, in person-hours. Preparation occurs once. Initial executions A and B may overlap using different testers. After both finish, one repeat of B takes 50% of its weighted execution effort; preparation and A are not repeated. A separate fixed setup of 2 person-hours is excluded from all rows and occurs once. What is the total effort including the repeat and setup?",
+        "pt": "Estimar esforço em pessoas-hora, não duração decorrida. Aplicar (a + 4m + b) / 6 a cada linha da tabela, em pessoas-hora. A preparação ocorre uma vez. As execuções iniciais A e B podem sobrepor-se usando testadores diferentes. Depois de ambas terminarem, uma repetição de B exige 50% do seu esforço de execução ponderado; a preparação e A não se repetem. Uma configuração fixa separada de 2 pessoas-hora está excluída de todas as linhas e ocorre uma vez. Qual é o esforço total incluindo repetição e configuração?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "13 person-hours",
+            "pt": "13 pessoas-hora"
+          },
+          "explanation": {
+            "en": "This can arise by using the longer parallel execution instead of summing both testers' effort. Parallelism reduces possible elapsed duration, not total person-effort.",
+            "pt": "Isto pode resultar de usar a execução paralela mais longa em vez de somar o esforço dos dois testadores. O paralelismo reduz a possível duração decorrida, não o esforço total em pessoas-hora."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "15 person-hours",
+            "pt": "15 pessoas-hora"
+          },
+          "explanation": {
+            "en": "This sums preparation, both initial executions and setup, but omits the repeat of B.",
+            "pt": "Isto soma a preparação, ambas as execuções iniciais e a configuração, mas omite a repetição de B."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "18 person-hours",
+            "pt": "18 pessoas-hora"
+          },
+          "explanation": {
+            "en": "Using an unweighted mean makes A equal 7 instead of 6; it produces 18 after adding the other required work.",
+            "pt": "Usar uma média não ponderada torna A igual a 7 em vez de 6; produz 18 após acrescentar o restante trabalho exigido."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "17 person-hours",
+            "pt": "17 pessoas-hora"
+          },
+          "explanation": {
+            "en": "Weighted preparation=3, A=6 and B=4. Repeat B=2 and fixed setup=2, giving 3+6+4+2+2=17.",
+            "pt": "Preparação ponderada=3, A=6 e B=4. A repetição de B=2 e a configuração fixa=2, dando 3+6+4+2+2=17."
+          }
+        },
+        {
+          "id": "o5",
+          "text": {
+            "en": "20 person-hours",
+            "pt": "20 pessoas-hora"
+          },
+          "explanation": {
+            "en": "This adds a repeat worth 50% of both executions, 5, rather than 50% of B alone, 2.",
+            "pt": "Isto acrescenta uma repetição de 50% de ambas as execuções, 5, em vez de 50% apenas de B, 2."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "Preparation: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Only B repeats: 0.5×4=2. Add the separate setup once: 3+6+4+2+2=17 person-hours. Concurrent execution does not remove effort.",
+        "pt": "Preparação: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Só B se repete: 0.5×4=2. Acrescentar a configuração separada uma vez: 3+6+4+2+2=17 pessoas-hora. A execução concorrente não elimina esforço."
+      },
+      "table": {
+        "headers": ["Activity / Atividade", "a", "m", "b"],
+        "rows": [
+          ["Preparation / Preparação", "2", "3", "4"],
+          ["A", "3", "5", "13"],
+          ["B", "2", "4", "6"]
+        ]
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.4",
+        "pages": [49, 50],
+        "report": "docs/academic-audit.md#fase-7--tl-089"
+      }
+    },
+    "proposed": {
+      "id": "tl-089",
+      "chapter": 5,
+      "lo": "FL-5.1.4",
+      "level": "K3",
+      "topic": "Effort with selective re-execution",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "Estimate person-effort, not elapsed duration. Apply (a + 4m + b) / 6 to each table row, in person-hours. Preparation occurs once. Initial executions A and B may overlap using different testers. After both finish, one repeat of B takes 50% of its weighted execution effort; preparation and A are not repeated. A separate fixed setup of 2 person-hours is excluded from all rows and occurs once. What is the total effort including the repeat and setup?",
+        "pt": "Estimar esforço em pessoas-hora, não duração decorrida. Aplicar (a + 4m + b) / 6 a cada linha da tabela, em pessoas-hora. A preparação ocorre uma vez. As execuções iniciais A e B podem sobrepor-se usando testadores diferentes. Depois de ambas terminarem, uma repetição de B exige 50% do seu esforço de execução ponderado; a preparação e A não se repetem. Uma configuração fixa separada de 2 pessoas-hora está excluída de todas as linhas e ocorre uma vez. Qual é o esforço total incluindo repetição e configuração?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "13 person-hours",
+            "pt": "13 pessoas-hora"
+          },
+          "explanation": {
+            "en": "This can arise by using the longer parallel execution instead of summing both testers' effort. Parallelism reduces possible elapsed duration, not total person-effort.",
+            "pt": "Isto pode resultar de usar a execução paralela mais longa em vez de somar o esforço dos dois testadores. O paralelismo reduz a possível duração decorrida, não o esforço total em pessoas-hora."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "15 person-hours",
+            "pt": "15 pessoas-hora"
+          },
+          "explanation": {
+            "en": "This sums preparation, both initial executions and setup, but omits the repeat of B.",
+            "pt": "Isto soma a preparação, ambas as execuções iniciais e a configuração, mas omite a repetição de B."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "18 person-hours",
+            "pt": "18 pessoas-hora"
+          },
+          "explanation": {
+            "en": "Using an unweighted mean makes A equal 7 instead of 6; it produces 18 after adding the other required work.",
+            "pt": "Usar uma média não ponderada torna A igual a 7 em vez de 6; produz 18 após acrescentar o restante trabalho exigido."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "17 person-hours",
+            "pt": "17 pessoas-hora"
+          },
+          "explanation": {
+            "en": "Weighted preparation=3, A=6 and B=4. Repeat B=2 and fixed setup=2, giving 3+6+4+2+2=17.",
+            "pt": "Preparação ponderada=3, A=6 e B=4. A repetição de B=2 e a configuração fixa=2, dando 3+6+4+2+2=17."
+          }
+        },
+        {
+          "id": "o5",
+          "text": {
+            "en": "20 person-hours",
+            "pt": "20 pessoas-hora"
+          },
+          "explanation": {
+            "en": "This adds a repeat worth 50% of both executions, 5, rather than 50% of B alone, 2.",
+            "pt": "Isto acrescenta uma repetição de 50% de ambas as execuções, 5, em vez de 50% apenas de B, 2."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "Preparation: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Only B repeats: 0.5×4=2. Add the separate setup once: 3+6+4+2+2=17 person-hours. Concurrent execution does not remove effort.",
+        "pt": "Preparação: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Só B se repete: 0.5×4=2. Acrescentar a configuração separada uma vez: 3+6+4+2+2=17 pessoas-hora. A execução concorrente não elimina esforço."
+      },
+      "table": {
+        "headers": ["Activity / Atividade", "a", "m", "b"],
+        "rows": [
+          ["Preparation / Preparação", "2", "3", "4"],
+          ["A", "3", "5", "13"],
+          ["B", "2", "4", "6"]
+        ]
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.4",
+        "pages": [49, 50],
+        "report": "docs/academic-audit.md#fase-7--tl-089"
+      }
+    },
+    "changed": false
+  }
+]

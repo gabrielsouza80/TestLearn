@@ -1,0 +1,11 @@
+
+ RUN  v4.1.12 C:/TestLearn/tmp/develop-workspace
+
+
+ Test Files  35 passed (35)
+      Tests  282 passed (282)
+   Start at  11:35:34
+   Duration  93.45s (transform 1.53s, setup 8.12s, import 10.04s, tests 35.92s, environment 30.82s)
+
+
+STDERR

@@ -1,0 +1,46 @@
+{
+  "recordedOn": "2026-11-06",
+  "method": "AI reasoning from complete bilingual statements/tables and deterministically shuffled options, before inspecting stored keys/general or option explanations in this execution. This is not an independent human SME review; prior conversational knowledge cannot be excluded.",
+  "solutions": [
+    {
+      "questionId": "tl-025",
+      "answer": ["o1"],
+      "derivation": "The declared integer partitions are x<3, 3<=x<=8, x>8. Representatives 2,5,9 cover all three. Three values are necessary because these unary partitions are disjoint. o2 only covers valid, o3 misses valid, o4 misses above-range. No exhaustive Cartesian combination claim."
+    },
+    {
+      "questionId": "tl-026",
+      "answer": ["o1"],
+      "derivation": "Integer partition interfaces are 9/10 and 20/21. Two-value BVA across both sides requires {9,10,20,21}. o2 lacks rejected sides; o3 lacks21; o4 lacks9. No finite endpoints of the unbounded rejected partitions are invented."
+    },
+    {
+      "questionId": "tl-027",
+      "answer": ["o1"],
+      "derivation": "R1 has Member=T and Total>=50=T, so member yes/60 selects R1 and grants free delivery. o2 no/60 selectsR3; o3 yes/20 selectsR2; o4 no/20 selectsR4. The input derives a case; the expected result comes from the X in R1, not from the input alone."
+    },
+    {
+      "questionId": "tl-028",
+      "answer": ["o1"],
+      "derivation": "Start Draft, Submit reaches Pending and Pay reaches Paid. o2 Pay fails immediately; o3 second Submit fails at Pending; o4 reaches Paid then its final Pay is invalid. Evaluate the full sequence, not only its successful prefix."
+    },
+    {
+      "questionId": "tl-029",
+      "answer": ["o1"],
+      "derivation": "Agreed ATDD examples must yield (49,charge5) and (50,charge0). o2 gets49wrong, o3 gets50wrong, o4 reversesboth. 49 and50 are examples on opposite sides, not necessarily adjacent if cents are allowed, and do not establish complete BVA or all acceptance coverage."
+    },
+    {
+      "questionId": "tl-036",
+      "answer": ["o1"],
+      "derivation": "(2+4*5+14)/6=36/6=6 person-hours. o2 gives the unweighted mean7; o3 chooses the pessimistic14; o4 chooses most-likely5. The weighted central estimate is not an actual-effort guarantee, elapsed calendar time or confidence interval."
+    },
+    {
+      "questionId": "tl-037",
+      "answer": ["o1"],
+      "derivation": "Initially A is unavailable because it requires C. Available B outranks C, so runB, thenC, thenA. C,A,B satisfies dependencies but violates the explicit highest-risk-available-first rule at the first step; it could fit an alternative policy prioritizing early unblocking of A. A,B,C and B,A,C violate C-before-A."
+    },
+    {
+      "questionId": "tl-046",
+      "answer": ["o3"],
+      "derivation": "All finite partition boundary values are 4,5,12,13: invalid-below max4, valid min5/max12, invalid-above min13. Their three-value neighborhoods {3,4,5},{4,5,6},{11,12,13},{12,13,14} unite to {3,4,5,6,11,12,13,14}. o1 gives only two-value set; o2 six values omits3/14 and is insufficient for all partitions; o4 adds7 and is nonminimal. No outer domain endpoints exist."
+    }
+  ]
+}

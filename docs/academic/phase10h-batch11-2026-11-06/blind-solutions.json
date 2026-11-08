@@ -1,0 +1,115 @@
+{
+  "reviewerType": "AI",
+  "method": "Read PT/EN projection and deterministic hash-shuffled alternatives only; record all eight answers and every option rationale before reading published keys, stored explanations or prior triage. Procedural separation is not independent human review or proof of absence of prior model knowledge.",
+  "projectionSHA256": "b3cf2da4e3295eb4e01e23bfd0d9dd114899fadd7cc0304dbab11f907cf6e54d",
+  "publishedKeysConsultedBeforeRecording": false,
+  "publishedExplanationsConsultedBeforeRecording": false,
+  "solutions": [
+    {
+      "questionId": "tl-002",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "Melhorar o processo de revisão é prevenção e melhoria do processo. Executar um teste e reportar falhas avaliam o produto; rever código também avalia um produto de trabalho, não o processo de revisão. Mainly does not deny feedback from testing to QA.",
+      "optionAssessmentsEN": {
+        "o1": "Process improvement, not mere inspection of a particular product; matches primarily process-oriented QA.",
+        "o2": "Checkout execution is product-focused dynamic testing. It may inform QA indirectly, but that is not its primary direct objective.",
+        "o3": "Reporting a product failure provides product evaluation information, not process improvement by itself.",
+        "o4": "Source-code review is static testing of a work product; do not mistake a review instance for improving the review process."
+      },
+      "shuffledOrder": ["o2", "o1", "o3", "o4"]
+    },
+    {
+      "questionId": "tl-003",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "Diagnosticar e reparar o defeito é debugging. Comparar resultados durante um novo teste é execução de testes; confirmação verifica a correção; regressão verifica efeitos adversos. A diferença não depende de quem faz o trabalho.",
+      "optionAssessmentsEN": {
+        "o1": "The combined diagnosis and code repair characterises debugging, not merely revealing a failure.",
+        "o2": "Comparing actual and expected outcomes while executing a new test is testing in this scenario. Similar comparison can occur in debugging; the whole wording and contrast matter.",
+        "o3": "Confirmation after the fix is testing the fix, not repairing it.",
+        "o4": "Checking related flows for adverse effects is regression testing, not defect repair."
+      },
+      "shuffledOrder": ["o1", "o4", "o2", "o3"]
+    },
+    {
+      "questionId": "tl-004",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "A interpretação incorreta é erro humano; a fórmula incorreta introduzida no produto é defeito. Não se observou execução ou falha. Uma causa subjacente do processo não foi demonstrada.",
+      "optionAssessmentsEN": {
+        "o1": "The incorrect formula is the flaw in a work product, i.e. a defect.",
+        "o2": "The misunderstanding/human action is the error; everyday use of error for any wrong thing is not the ISTQB distinction.",
+        "o3": "No executed result or observable failure is stated; a defect need not fail under every condition.",
+        "o4": "A faulty formula could cause downstream incorrect behaviour, but that does not establish the underlying development-process root cause."
+      },
+      "shuffledOrder": ["o1", "o2", "o3", "o4"]
+    },
+    {
+      "questionId": "tl-005",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "As falhas relatadas estão fora dos cenários exercitados. Rever/adicionar testes e dados para essas lacunas mantendo regressão útil é a melhor resposta. A questão reconhece desgaste dos testes, não exige testes exaustivos ou garante ausência de defeitos.",
+      "optionAssessmentsEN": {
+        "o1": "Investigate missing scenarios and retain useful regression checks; directly targets the stated gap.",
+        "o2": "More frequency with unchanged scenarios does not address explicitly unexercised failure types. It can help intermittent failures in a different scenario.",
+        "o3": "Replacing the whole suite with only the newest failure sacrifices useful existing coverage; adding focused tests is different.",
+        "o4": "Reordering might expose order-dependent issues elsewhere, but no such dependency is given and it does not generally supply missing scenarios here."
+      },
+      "shuffledOrder": ["o4", "o2", "o1", "o3"]
+    },
+    {
+      "questionId": "tl-007",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "Rastreabilidade de requisito para testes apoia análise de impacto: encontrar condições/resultados que podem exigir revisão. Não calcula oráculos atualizados, não demonstra que testes continuam a passar e não depende de editar scripts.",
+      "optionAssessmentsEN": {
+        "o1": "Links locate potentially affected tests and support impact analysis. May need revision is a possibility, not every linked test must change.",
+        "o2": "A link is not a fresh execution result; previous passes do not prove continued success after requirements change.",
+        "o3": "Links point to the changed basis; they do not replace interpreting requirements to derive revised expected results.",
+        "o4": "A script can remain unedited and still be semantically out of date when its requirement changes."
+      },
+      "shuffledOrder": ["o4", "o1", "o3", "o2"]
+    },
+    {
+      "questionId": "tl-009",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "Análise de testes começa durante a atividade de desenvolvimento correspondente com rascunhos disponíveis. Não implica executar software inexistente ou aguardar implementação completa; níveis têm objetivos próprios e revisões não são substituídas por teste tardio.",
+      "optionAssessmentsEN": {
+        "o1": "Early corresponding test analysis using draft work products is a cross-lifecycle good practice, adapted to context.",
+        "o2": "Waiting for completed implementation postpones available test analysis unnecessarily; distinguish execution prerequisites.",
+        "o3": "Component and acceptance levels have different objectives, not identical objectives by general rule.",
+        "o4": "Later dynamic system tests do not replace early work-product reviews; techniques complement one another."
+      },
+      "shuffledOrder": ["o1", "o4", "o3", "o2"]
+    },
+    {
+      "questionId": "tl-010",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "O ciclo teste de componente primeiro, código para o satisfazer, refatorização de ambos identifica TDD. ATDD centra-se em aceitação; BDD no comportamento e linguagem compreensível; CI integra alterações e pode correr testes, mas não define este ciclo.",
+      "optionAssessmentsEN": {
+        "o1": "A repeated component-test/code/refactor cycle recognises TDD; no actual refactoring implementation is requested.",
+        "o2": "Acceptance-driven development derives tests from acceptance criteria, not the characteristic component-level cycle described. It can coexist with TDD.",
+        "o3": "Behaviour-driven development expresses desired behaviour collaboratively, often in natural-language scenarios; the specific component-test cycle is better matched by TDD.",
+        "o4": "Continuous integration integrates and verifies changes; it may run TDD tests but is not the described test-first coding cycle."
+      },
+      "shuffledOrder": ["o4", "o1", "o2", "o3"]
+    },
+    {
+      "questionId": "tl-012",
+      "recordedAt": "2026-11-06T16:05:50.466510+00:00",
+      "answer": ["o1"],
+      "reasonPT": "O foco são interações na interface de dois componentes dentro da mesma aplicação: integração de componentes. Não são sistemas externos nem componentes isolados nem validação de aceitação.",
+      "optionAssessmentsEN": {
+        "o1": "Testing the interface between internal modules targets component integration. System-level tests might traverse the interface, but the stated focus determines best fit.",
+        "o2": "Acceptance targets readiness and business/user needs, not primarily internal component interfaces.",
+        "o3": "The scenario explicitly confines both modules to one application, rather than interactions with external systems/services.",
+        "o4": "Isolation omits the actual interaction under test. Testing either module alone is a different focus."
+      },
+      "shuffledOrder": ["o3", "o1", "o4", "o2"]
+    }
+  ],
+  "ownerAccepted": false,
+  "humanApproved": false
+}

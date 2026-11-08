@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-002",
+    "lo": "FL-1.2.2",
+    "level": "K1",
+    "text": {
+      "en": "Which activity is primarily process-oriented quality assurance?",
+      "pt": "Que atividade de garantia da qualidade se centra principalmente no processo?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Executing a checkout test",
+          "pt": "Executar um teste de compra"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Improving the team review process",
+          "pt": "Melhorar o processo de revisão da equipa"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Reporting a product failure in a build",
+          "pt": "Reportar uma falha numa versão"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Reviewing the source code of the tax module",
+          "pt": "Rever o código-fonte do módulo fiscal"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-003",
+    "lo": "FL-1.1.2",
+    "level": "K2",
+    "text": {
+      "en": "Which activity belongs to debugging rather than testing?",
+      "pt": "Qual das seguintes atividades pertence ao debugging (depuração), em vez de aos testes?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Diagnosing the defect that caused the failure and repairing the faulty code",
+          "pt": "Diagnosticar o defeito que causou a falha e corrigir o código incorreto"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Checking related payment flows for adverse effects of the fix",
+          "pt": "Verificar fluxos de pagamento relacionados para detetar efeitos adversos da correção"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Compare the actual and expected results while executing a new test",
+          "pt": "Comparar os resultados obtidos e esperados durante a execução de um novo teste"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Running a confirmation test after the fix",
+          "pt": "Executar um teste de confirmação após a correção"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-004",
+    "lo": "FL-1.2.3",
+    "level": "K2",
+    "text": {
+      "en": "A programmer misunderstands a tax rule and writes the wrong formula. What is the wrong formula?",
+      "pt": "Um programador interpreta mal uma regra fiscal e escreve uma fórmula errada. O que é a fórmula errada?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "A defect",
+          "pt": "Um defeito"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "An error",
+          "pt": "Um erro"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "An observed failure",
+          "pt": "Uma falha observada"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "A root cause in the development process",
+          "pt": "Uma causa raiz no processo de desenvolvimento"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-005",
+    "lo": "FL-1.3.1",
+    "level": "K2",
+    "text": {
+      "en": "Repeated regression runs pass, but users report new failure types that the suite does not exercise. What is the best response to improve defect detection?",
+      "pt": "As execuções repetidas de regressão passam, mas os utilizadores reportam novos tipos de falha que a bateria não exercita. Qual é a melhor resposta para melhorar a deteção de defeitos?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Vary the execution order of existing tests while keeping their data unchanged",
+          "pt": "Variar a ordem de execução dos testes existentes, mantendo os seus dados inalterados"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Run the existing cases more frequently while keeping their data unchanged",
+          "pt": "Executar mais vezes os casos existentes, mantendo os seus dados de teste inalterados"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Review tests and data for missing scenarios, retaining useful regression checks",
+          "pt": "Rever testes e dados para cenários em falta, mantendo verificações de regressão úteis"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Replace the existing suite with cases for the most recently reported failure",
+          "pt": "Substituir a bateria existente por casos para a falha reportada mais recentemente"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-007",
+    "lo": "FL-1.4.4",
+    "level": "K2",
+    "text": {
+      "en": "A payment requirement changes. How do requirement-to-test links help?",
+      "pt": "Um requisito de pagamento muda. Como ajudam as ligações entre requisitos e testes?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Treat a linked test as unaffected when its script has not been edited",
+          "pt": "Considerar um teste ligado como não afetado quando o seu script não foi editado"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Identify the linked tests whose conditions or expected results may need revision",
+          "pt": "Identificar os testes ligados cujas condições ou resultados esperados podem precisar de revisão"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Obtain revised expected results from the links instead of the changed requirement",
+          "pt": "Obter resultados esperados atualizados das ligações em vez de consultar o requisito alterado"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Use the links as evidence that previously passed tests still pass after the change",
+          "pt": "Usar as ligações como evidência de que os testes anteriormente aprovados continuam a passar após a alteração"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-009",
+    "lo": "FL-2.1.2",
+    "level": "K1",
+    "text": {
+      "en": "Which practice applies across development lifecycles?",
+      "pt": "Que prática se aplica aos vários ciclos de desenvolvimento?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Start test analysis during related development work, using available draft work products",
+          "pt": "Iniciar a análise de teste durante o desenvolvimento relacionado, usando os produtos preliminares disponíveis"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Replace reviews of development work products with later system-test execution",
+          "pt": "Substituir revisões de produtos de desenvolvimento pela execução posterior de testes de sistema"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Give component and acceptance testing the same test objectives",
+          "pt": "Atribuir os mesmos objetivos de teste aos testes de componente e de aceitação"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Finish implementation before starting the corresponding test analysis",
+          "pt": "Concluir a implementação antes de iniciar a análise de teste correspondente"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-010",
+    "lo": "FL-2.1.3",
+    "level": "K1",
+    "text": {
+      "en": "Which approach directs coding through a repeated cycle of writing a component test, writing code to satisfy it, and refactoring the tests and code?",
+      "pt": "Que abordagem orienta a programação através de um ciclo repetido de escrever um teste de componente, escrever código que o satisfaça e refatorizar os testes e o código?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Continuous integration (CI)",
+          "pt": "Integração contínua (CI)"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Test-driven development (TDD)",
+          "pt": "Desenvolvimento orientado para testes (TDD)"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Acceptance test-driven development (ATDD)",
+          "pt": "Desenvolvimento orientado para testes de aceitação (ATDD)"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Behavior-driven development (BDD)",
+          "pt": "Desenvolvimento orientado para o comportamento (BDD)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-012",
+    "lo": "FL-2.2.1",
+    "level": "K2",
+    "text": {
+      "en": "A test focuses on the interface between a tax module and an invoice module within one application. Which level fits best?",
+      "pt": "Um teste centra-se na interface entre um módulo fiscal e um módulo de faturação da mesma aplicação. Qual é o nível mais adequado?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "System integration with external systems",
+          "pt": "Teste de integração de sistemas com sistemas externos"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Component integration testing",
+          "pt": "Teste de integração de componentes"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Component testing in isolation",
+          "pt": "Teste de componente isolado"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Acceptance testing",
+          "pt": "Teste de aceitação"
+        }
+      }
+    ]
+  }
+]

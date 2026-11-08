@@ -1,0 +1,159 @@
+
+Running 40 tests using 1 worker
+
+  ✓   1 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-008: published bilingual content, independently derived key and persisted result (1.4s)
+  ✓   2 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-020: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓   3 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-021: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓   4 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-035: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓   5 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-038: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓   6 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-063: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓   7 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-064: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓   8 [chromium] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-072: published bilingual content, independently derived key and persisted result (1.3s)
+  ✓   9 [chromium] › tests\e2e\pedagogical-feedback-negative.spec.ts:5:1 › incorrect feedback cannot satisfy the specific correct-feedback assertions (994ms)
+  ✘  10 [chromium] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (3.7s)
+  ✓  11 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-008: published bilingual content, independently derived key and persisted result (4.7s)
+  ✓  12 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-020: published bilingual content, independently derived key and persisted result (1.8s)
+  ✓  13 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-021: published bilingual content, independently derived key and persisted result (1.7s)
+  ✓  14 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-035: published bilingual content, independently derived key and persisted result (1.7s)
+  ✓  15 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-038: published bilingual content, independently derived key and persisted result (1.7s)
+  ✓  16 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-063: published bilingual content, independently derived key and persisted result (1.7s)
+  ✓  17 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-064: published bilingual content, independently derived key and persisted result (1.6s)
+  ✓  18 [firefox] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-072: published bilingual content, independently derived key and persisted result (1.9s)
+  ✓  19 [firefox] › tests\e2e\pedagogical-feedback-negative.spec.ts:5:1 › incorrect feedback cannot satisfy the specific correct-feedback assertions (1.3s)
+  ✘  20 [firefox] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (6.0s)
+  ✓  21 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-008: published bilingual content, independently derived key and persisted result (3.2s)
+  ✓  22 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-020: published bilingual content, independently derived key and persisted result (3.0s)
+  ✓  23 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-021: published bilingual content, independently derived key and persisted result (2.8s)
+  ✓  24 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-035: published bilingual content, independently derived key and persisted result (2.7s)
+  ✓  25 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-038: published bilingual content, independently derived key and persisted result (2.9s)
+  ✓  26 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-063: published bilingual content, independently derived key and persisted result (2.9s)
+  ✓  27 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-064: published bilingual content, independently derived key and persisted result (2.8s)
+  ✓  28 [webkit] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-072: published bilingual content, independently derived key and persisted result (3.0s)
+  ✓  29 [webkit] › tests\e2e\pedagogical-feedback-negative.spec.ts:5:1 › incorrect feedback cannot satisfy the specific correct-feedback assertions (2.3s)
+  ✘  30 [webkit] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (8.1s)
+  ✓  31 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-008: published bilingual content, independently derived key and persisted result (1.5s)
+  ✓  32 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-020: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓  33 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-021: published bilingual content, independently derived key and persisted result (1.1s)
+  ✓  34 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-035: published bilingual content, independently derived key and persisted result (1.2s)
+  ✓  35 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-038: published bilingual content, independently derived key and persisted result (1.1s)
+  ✓  36 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-063: published bilingual content, independently derived key and persisted result (1.1s)
+  ✓  37 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-064: published bilingual content, independently derived key and persisted result (1.1s)
+  ✓  38 [mobile] › tests\e2e\academic-batch2.spec.ts:16:3 › tl-072: published bilingual content, independently derived key and persisted result (1.3s)
+  ✓  39 [mobile] › tests\e2e\pedagogical-feedback-negative.spec.ts:5:1 › incorrect feedback cannot satisfy the specific correct-feedback assertions (1.0s)
+  ✓  40 [mobile] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (4.2s)
+
+
+  1) [chromium] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      85 |       () => document.documentElement.scrollWidth <= window.innerWidth,
+      86 |     ),
+    > 87 |   ).toBe(true);
+         |     ^
+      88 |   await page
+      89 |     .getByRole('note')
+      90 |     .screenshot({
+        at C:\TestLearn\tmp\develop-workspace\tests\e2e\pedagogical-review-notice.spec.ts:87:5
+
+    Error Context: ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [firefox] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      85 |       () => document.documentElement.scrollWidth <= window.innerWidth,
+      86 |     ),
+    > 87 |   ).toBe(true);
+         |     ^
+      88 |   await page
+      89 |     .getByRole('note')
+      90 |     .screenshot({
+        at C:\TestLearn\tmp\develop-workspace\tests\e2e\pedagogical-review-notice.spec.ts:87:5
+
+    Error Context: ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      85 |       () => document.documentElement.scrollWidth <= window.innerWidth,
+      86 |     ),
+    > 87 |   ).toBe(true);
+         |     ^
+      88 |   await page
+      89 |     .getByRole('note')
+      90 |     .screenshot({
+        at C:\TestLearn\tmp\develop-workspace\tests\e2e\pedagogical-review-notice.spec.ts:87:5
+
+    Error Context: ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\pedagogical-e2e-recovery-20261108\all-relevant-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+    [firefox] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+    [webkit] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+  37 passed (1.8m)
+
+STDERR
+[WebServer] (node:151296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] node_modules/zod/v4/core/regexes.js (74:0): A comment
+[WebServer] 
+[WebServer] "/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+[WebServer]  * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+[WebServer]  * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+[WebServer] 
+[WebServer] in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[WebServer] node_modules/zod/v4/core/util.js (400:0): A comment
+[WebServer] 
+[WebServer] "// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+[WebServer] 
+[WebServer] in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[WebServer] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:145968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:143072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:125852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:147392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:144700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

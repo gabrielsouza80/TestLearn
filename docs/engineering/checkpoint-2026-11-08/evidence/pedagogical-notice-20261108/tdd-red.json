@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "tests/integration/pedagogical-review-notice.test.tsx"
+  ],
+  "startedUTC": "2026-11-08T01:16:58.658051+00:00",
+  "finishedUTC": "2026-11-08T01:17:13.885362+00:00",
+  "exitCode": 1
+}

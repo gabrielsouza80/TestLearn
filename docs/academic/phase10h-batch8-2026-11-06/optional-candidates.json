@@ -1,0 +1,1297 @@
+[
+  {
+    "questionId": "tl-006",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "Analysis identifies what needs testing.",
+      "pt": "A análise identifica o que é necessário testar."
+    },
+    "candidateText": {
+      "en": "Test analysis examines requirements to identify testable features and test conditions: what to test. For example, a condition may be that an invalid date is rejected; test design then turns that condition into cases with specific inputs and expected results.",
+      "pt": "A análise de teste examina requisitos para identificar características testáveis e condições de teste: o que testar. Por exemplo, uma condição pode ser a rejeição de uma data inválida; a conceção transforma depois essa condição em casos com entradas concretas e resultados esperados."
+    },
+    "original": {
+      "id": "tl-006",
+      "chapter": 1,
+      "lo": "FL-1.4.1",
+      "level": "K2",
+      "topic": "Test activities",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester derives test conditions from requirements. Which activity is this?",
+        "pt": "Um testador deriva condições de teste a partir de requisitos. Que atividade é esta?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Test analysis",
+            "pt": "Análise de teste"
+          },
+          "explanation": {
+            "en": "Analysis identifies what needs testing.",
+            "pt": "A análise identifica o que é necessário testar."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Test execution",
+            "pt": "Execução de teste"
+          },
+          "explanation": {
+            "en": "Execution runs tests and compares results.",
+            "pt": "A execução realiza testes e compara resultados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Test completion",
+            "pt": "Conclusão do teste"
+          },
+          "explanation": {
+            "en": "Completion consolidates outcomes and assets.",
+            "pt": "A conclusão consolida resultados e recursos."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test design",
+            "pt": "Conceção de teste"
+          },
+          "explanation": {
+            "en": "Analysis defines what to test as test conditions. Design elaborates those conditions into test cases and determines how to test them.",
+            "pt": "A análise define o que testar através de condições de teste. A conceção desenvolve essas condições em casos de teste e determina como as testar."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Analysis identifies what needs testing.",
+        "pt": "A análise identifica o que é necessário testar."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "1.4.1",
+        "pages": [18, 19],
+        "report": "docs/academic-audit.md#fase-5b--tl-006"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-006",
+      "chapter": 1,
+      "lo": "FL-1.4.1",
+      "level": "K2",
+      "topic": "Test activities",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester derives test conditions from requirements. Which activity is this?",
+        "pt": "Um testador deriva condições de teste a partir de requisitos. Que atividade é esta?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Test analysis",
+            "pt": "Análise de teste"
+          },
+          "explanation": {
+            "en": "Analysis identifies what needs testing.",
+            "pt": "A análise identifica o que é necessário testar."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Test execution",
+            "pt": "Execução de teste"
+          },
+          "explanation": {
+            "en": "Execution runs tests and compares results.",
+            "pt": "A execução realiza testes e compara resultados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Test completion",
+            "pt": "Conclusão do teste"
+          },
+          "explanation": {
+            "en": "Completion consolidates outcomes and assets.",
+            "pt": "A conclusão consolida resultados e recursos."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test design",
+            "pt": "Conceção de teste"
+          },
+          "explanation": {
+            "en": "Analysis defines what to test as test conditions. Design elaborates those conditions into test cases and determines how to test them.",
+            "pt": "A análise define o que testar através de condições de teste. A conceção desenvolve essas condições em casos de teste e determina como as testar."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Test analysis examines requirements to identify testable features and test conditions: what to test. For example, a condition may be that an invalid date is rejected; test design then turns that condition into cases with specific inputs and expected results.",
+        "pt": "A análise de teste examina requisitos para identificar características testáveis e condições de teste: o que testar. Por exemplo, uma condição pode ser a rejeição de uma data inválida; a conceção transforma depois essa condição em casos com entradas concretas e resultados esperados."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "1.4.1",
+        "pages": [18, 19],
+        "report": "docs/academic-audit.md#fase-5b--tl-006"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c",
+    "candidateCanonicalSHA256": "aae36fd1488a3b50b89067d73c96f8b49ec89b9114fc0932e565dbebf5e3b6f2",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 4,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-013",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "Earlier evaluation gives earlier feedback.",
+      "pt": "A avaliação antecipada permite feedback mais cedo."
+    },
+    "candidateText": {
+      "en": "Reviewing acceptance criteria before implementation provides early feedback and can reveal ambiguities, gaps and inconsistencies. This illustrates shift left; it does not remove the need for testing later in the lifecycle.",
+      "pt": "Rever critérios de aceitação antes da implementação proporciona feedback antecipado e pode revelar ambiguidades, lacunas e inconsistências. Isto ilustra shift left; não elimina a necessidade de testar mais tarde no ciclo de vida."
+    },
+    "original": {
+      "id": "tl-013",
+      "chapter": 2,
+      "lo": "FL-2.1.5",
+      "level": "K2",
+      "topic": "Shift left",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Reviewing acceptance criteria before coding is an example of what?",
+        "pt": "Rever critérios de aceitação antes de programar é um exemplo de quê?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Shift left",
+            "pt": "Shift left"
+          },
+          "explanation": {
+            "en": "Earlier evaluation gives earlier feedback.",
+            "pt": "A avaliação antecipada permite feedback mais cedo."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Test execution",
+            "pt": "Execução de teste"
+          },
+          "explanation": {
+            "en": "Executing tests runs the test object and compares actual and expected results. Reviewing criteria before implementation is an earlier, static activity illustrating shift left.",
+            "pt": "A execução de teste executa o objeto de teste e compara os resultados obtidos e esperados. Rever critérios antes da implementação é uma atividade estática antecipada que ilustra shift left."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Regression testing",
+            "pt": "Teste de regressão"
+          },
+          "explanation": {
+            "en": "Regression testing checks adverse effects of changes. The described purpose is earlier feedback on acceptance criteria, not checking effects of a change.",
+            "pt": "O teste de regressão procura efeitos adversos de alterações. A finalidade descrita é obter feedback mais cedo sobre critérios de aceitação, não verificar efeitos de uma alteração."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test completion",
+            "pt": "Conclusão do teste"
+          },
+          "explanation": {
+            "en": "Completion consolidates results and test assets after test activities. Reviewing criteria before coding brings evaluation earlier in the lifecycle.",
+            "pt": "A conclusão consolida resultados e recursos de teste após as atividades de teste. Rever critérios antes da programação antecipa a avaliação no ciclo de vida."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Earlier evaluation gives earlier feedback.",
+        "pt": "A avaliação antecipada permite feedback mais cedo."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.1.5",
+        "pages": [27],
+        "report": "docs/academic-audit.md#fase-5b--tl-013"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-013",
+      "chapter": 2,
+      "lo": "FL-2.1.5",
+      "level": "K2",
+      "topic": "Shift left",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Reviewing acceptance criteria before coding is an example of what?",
+        "pt": "Rever critérios de aceitação antes de programar é um exemplo de quê?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Shift left",
+            "pt": "Shift left"
+          },
+          "explanation": {
+            "en": "Earlier evaluation gives earlier feedback.",
+            "pt": "A avaliação antecipada permite feedback mais cedo."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Test execution",
+            "pt": "Execução de teste"
+          },
+          "explanation": {
+            "en": "Executing tests runs the test object and compares actual and expected results. Reviewing criteria before implementation is an earlier, static activity illustrating shift left.",
+            "pt": "A execução de teste executa o objeto de teste e compara os resultados obtidos e esperados. Rever critérios antes da implementação é uma atividade estática antecipada que ilustra shift left."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Regression testing",
+            "pt": "Teste de regressão"
+          },
+          "explanation": {
+            "en": "Regression testing checks adverse effects of changes. The described purpose is earlier feedback on acceptance criteria, not checking effects of a change.",
+            "pt": "O teste de regressão procura efeitos adversos de alterações. A finalidade descrita é obter feedback mais cedo sobre critérios de aceitação, não verificar efeitos de uma alteração."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test completion",
+            "pt": "Conclusão do teste"
+          },
+          "explanation": {
+            "en": "Completion consolidates results and test assets after test activities. Reviewing criteria before coding brings evaluation earlier in the lifecycle.",
+            "pt": "A conclusão consolida resultados e recursos de teste após as atividades de teste. Rever critérios antes da programação antecipa a avaliação no ciclo de vida."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Reviewing acceptance criteria before implementation provides early feedback and can reveal ambiguities, gaps and inconsistencies. This illustrates shift left; it does not remove the need for testing later in the lifecycle.",
+        "pt": "Rever critérios de aceitação antes da implementação proporciona feedback antecipado e pode revelar ambiguidades, lacunas e inconsistências. Isto ilustra shift left; não elimina a necessidade de testar mais tarde no ciclo de vida."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.1.5",
+        "pages": [27],
+        "report": "docs/academic-audit.md#fase-5b--tl-013"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900",
+    "candidateCanonicalSHA256": "af315bc12f9b67b9f8bcbfd1f06de19d610412872300995052fd5d38ae1b0ea2",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 3,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-014",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "Environment migration is a maintenance-testing trigger.",
+      "pt": "A migração do ambiente é um motivo para testes de manutenção."
+    },
+    "candidateText": {
+      "en": "Migrating the operational environment is a maintenance-testing trigger. Evaluate the migration and possible regressions, with scope based on the change risk, system size and change size. Data-conversion checks apply when relevant, not automatically to every migration.",
+      "pt": "Migrar o ambiente operacional é um motivo para testes de manutenção. Avaliam-se a migração e possíveis regressões, com âmbito baseado no risco da alteração e nas dimensões do sistema e da alteração. As verificações de conversão de dados aplicam-se quando pertinentes, não automaticamente a todas as migrações."
+    },
+    "original": {
+      "id": "tl-014",
+      "chapter": 2,
+      "lo": "FL-2.3.1",
+      "level": "K2",
+      "topic": "Maintenance",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "An operational service moves to a new database engine. Why plan maintenance testing?",
+        "pt": "Um serviço em operação muda para outro motor de base de dados. Porquê planear testes de manutenção?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Migration can affect the data and existing behavior, even without application code changes",
+            "pt": "A migração pode afetar dados e comportamento existente, mesmo sem alterar o código da aplicação"
+          },
+          "explanation": {
+            "en": "Environment migration is a maintenance-testing trigger.",
+            "pt": "A migração do ambiente é um motivo para testes de manutenção."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Existing test results remain sufficient for the new environment because application features are unchanged",
+            "pt": "Os resultados anteriores continuam a ser suficientes para o novo ambiente porque as funcionalidades da aplicação não mudaram"
+          },
+          "explanation": {
+            "en": "Unchanged feature requirements do not establish that the application behaves correctly with a different database engine. Migration can introduce regressions.",
+            "pt": "Requisitos funcionais inalterados não demonstram que a aplicação se comporta corretamente com outro motor de base de dados. A migração pode introduzir regressões."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Maintenance testing concerns code changes rather than environment migrations",
+            "pt": "Os testes de manutenção dizem respeito a alterações de código, não a migrações de ambiente"
+          },
+          "explanation": {
+            "en": "Maintenance testing can be triggered by environment upgrades or migrations, not just source-code changes.",
+            "pt": "Os testes de manutenção podem ser desencadeados por atualizações ou migrações do ambiente, não apenas por alterações ao código-fonte."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Data-migration checks replace regression checks of the service behavior",
+            "pt": "As verificações da migração de dados substituem as verificações de regressão do comportamento do serviço"
+          },
+          "explanation": {
+            "en": "Data correctness matters, but the new engine can also affect existing application behavior. Maintenance testing includes evaluating the change and possible regressions.",
+            "pt": "A correção dos dados é importante, mas o novo motor também pode afetar o comportamento existente da aplicação. Os testes de manutenção incluem avaliar a alteração e possíveis regressões."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Environment migration is a maintenance-testing trigger.",
+        "pt": "A migração do ambiente é um motivo para testes de manutenção."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.3",
+        "pages": [31],
+        "report": "docs/academic-audit.md#fase-5b--tl-014"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-014",
+      "chapter": 2,
+      "lo": "FL-2.3.1",
+      "level": "K2",
+      "topic": "Maintenance",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "An operational service moves to a new database engine. Why plan maintenance testing?",
+        "pt": "Um serviço em operação muda para outro motor de base de dados. Porquê planear testes de manutenção?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Migration can affect the data and existing behavior, even without application code changes",
+            "pt": "A migração pode afetar dados e comportamento existente, mesmo sem alterar o código da aplicação"
+          },
+          "explanation": {
+            "en": "Environment migration is a maintenance-testing trigger.",
+            "pt": "A migração do ambiente é um motivo para testes de manutenção."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Existing test results remain sufficient for the new environment because application features are unchanged",
+            "pt": "Os resultados anteriores continuam a ser suficientes para o novo ambiente porque as funcionalidades da aplicação não mudaram"
+          },
+          "explanation": {
+            "en": "Unchanged feature requirements do not establish that the application behaves correctly with a different database engine. Migration can introduce regressions.",
+            "pt": "Requisitos funcionais inalterados não demonstram que a aplicação se comporta corretamente com outro motor de base de dados. A migração pode introduzir regressões."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Maintenance testing concerns code changes rather than environment migrations",
+            "pt": "Os testes de manutenção dizem respeito a alterações de código, não a migrações de ambiente"
+          },
+          "explanation": {
+            "en": "Maintenance testing can be triggered by environment upgrades or migrations, not just source-code changes.",
+            "pt": "Os testes de manutenção podem ser desencadeados por atualizações ou migrações do ambiente, não apenas por alterações ao código-fonte."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Data-migration checks replace regression checks of the service behavior",
+            "pt": "As verificações da migração de dados substituem as verificações de regressão do comportamento do serviço"
+          },
+          "explanation": {
+            "en": "Data correctness matters, but the new engine can also affect existing application behavior. Maintenance testing includes evaluating the change and possible regressions.",
+            "pt": "A correção dos dados é importante, mas o novo motor também pode afetar o comportamento existente da aplicação. Os testes de manutenção incluem avaliar a alteração e possíveis regressões."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Migrating the operational environment is a maintenance-testing trigger. Evaluate the migration and possible regressions, with scope based on the change risk, system size and change size. Data-conversion checks apply when relevant, not automatically to every migration.",
+        "pt": "Migrar o ambiente operacional é um motivo para testes de manutenção. Avaliam-se a migração e possíveis regressões, com âmbito baseado no risco da alteração e nas dimensões do sistema e da alteração. As verificações de conversão de dados aplicam-se quando pertinentes, não automaticamente a todas as migrações."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.3",
+        "pages": [31],
+        "report": "docs/academic-audit.md#fase-5b--tl-014"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27",
+    "candidateCanonicalSHA256": "2abd7949cfa5c32ede4ec58e8683a61eb36298803b8c8f0d6c4e9a6c39e62a5f",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 3,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-015",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["options", "o2", "text"],
+    "originalText": {
+      "en": "The checkout service's measured response latency",
+      "pt": "A latência de resposta medida no serviço de compras"
+    },
+    "candidateText": {
+      "en": "Measuring the checkout service's response latency",
+      "pt": "Medir a latência de resposta do serviço de compras"
+    },
+    "original": {
+      "id": "tl-015",
+      "chapter": 3,
+      "lo": "FL-3.1.1",
+      "level": "K1",
+      "topic": "Static work products",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Which item is directly examinable by reviewing its written content, without executing the application?",
+        "pt": "Que item pode ser examinado diretamente através da revisão do seu conteúdo escrito, sem executar a aplicação?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Documented requirements for checkout validation rules",
+            "pt": "Os requisitos escritos sobre regras de validação da compra"
+          },
+          "explanation": {
+            "en": "Requirements can be inspected directly.",
+            "pt": "Os requisitos podem ser inspecionados diretamente."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "The checkout service's measured response latency",
+            "pt": "A latência de resposta medida no serviço de compras"
+          },
+          "explanation": {
+            "en": "Measuring response latency requires execution under defined conditions; it is a dynamic evaluation rather than inspection of a document.",
+            "pt": "Medir a latência de resposta exige execução em condições definidas; é uma avaliação dinâmica, não a inspeção de um documento."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "The application's memory growth under concurrent load",
+            "pt": "O crescimento de memória da aplicação sob carga concorrente"
+          },
+          "explanation": {
+            "en": "Memory growth during a load test is observed while the application executes. A later review of a written report would be a different, static activity.",
+            "pt": "O crescimento da memória durante um teste de carga é observado com a aplicação em execução. Rever posteriormente um relatório escrito seria uma atividade diferente, estática."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "The observed checkout behavior after selecting Pay",
+            "pt": "O comportamento da compra observado após selecionar Pagar"
+          },
+          "explanation": {
+            "en": "Observing the behavior after an action requires executing the application. A requirement describing that behavior can instead be reviewed statically.",
+            "pt": "Observar o comportamento após uma ação exige executar a aplicação. Um requisito que descreva esse comportamento pode, em alternativa, ser revisto estaticamente."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Requirements can be inspected directly.",
+        "pt": "Os requisitos podem ser inspecionados diretamente."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.1.1",
+        "pages": [33],
+        "report": "docs/academic-audit.md#fase-5b--tl-015"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-015",
+      "chapter": 3,
+      "lo": "FL-3.1.1",
+      "level": "K1",
+      "topic": "Static work products",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Which item is directly examinable by reviewing its written content, without executing the application?",
+        "pt": "Que item pode ser examinado diretamente através da revisão do seu conteúdo escrito, sem executar a aplicação?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Documented requirements for checkout validation rules",
+            "pt": "Os requisitos escritos sobre regras de validação da compra"
+          },
+          "explanation": {
+            "en": "Requirements can be inspected directly.",
+            "pt": "Os requisitos podem ser inspecionados diretamente."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Measuring the checkout service's response latency",
+            "pt": "Medir a latência de resposta do serviço de compras"
+          },
+          "explanation": {
+            "en": "Measuring response latency requires execution under defined conditions; it is a dynamic evaluation rather than inspection of a document.",
+            "pt": "Medir a latência de resposta exige execução em condições definidas; é uma avaliação dinâmica, não a inspeção de um documento."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "The application's memory growth under concurrent load",
+            "pt": "O crescimento de memória da aplicação sob carga concorrente"
+          },
+          "explanation": {
+            "en": "Memory growth during a load test is observed while the application executes. A later review of a written report would be a different, static activity.",
+            "pt": "O crescimento da memória durante um teste de carga é observado com a aplicação em execução. Rever posteriormente um relatório escrito seria uma atividade diferente, estática."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "The observed checkout behavior after selecting Pay",
+            "pt": "O comportamento da compra observado após selecionar Pagar"
+          },
+          "explanation": {
+            "en": "Observing the behavior after an action requires executing the application. A requirement describing that behavior can instead be reviewed statically.",
+            "pt": "Observar o comportamento após uma ação exige executar a aplicação. Um requisito que descreva esse comportamento pode, em alternativa, ser revisto estaticamente."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Requirements can be inspected directly.",
+        "pt": "Os requisitos podem ser inspecionados diretamente."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.1.1",
+        "pages": [33],
+        "report": "docs/academic-audit.md#fase-5b--tl-015"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b",
+    "candidateCanonicalSHA256": "787393606718cd5dab47f26e210b6a48d70fb126d7e89c1bb0cd4f22a7123f51",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 3,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-017",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "Review can find flaws without execution; execution exposes failures.",
+      "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+    },
+    "candidateText": {
+      "en": "The review directly identifies a defect in the requirements. The incorrect displayed date is an observed failure whose cause requires further analysis. The scenario does not establish that the two findings share a cause, and executing tests does not guarantee finding a failure.",
+      "pt": "A revisão identifica diretamente um defeito nos requisitos. A data incorreta apresentada é uma falha observada cuja causa exige análise adicional. O cenário não demonstra que os dois achados tenham a mesma causa, e executar testes não garante encontrar uma falha."
+    },
+    "original": {
+      "id": "tl-017",
+      "chapter": 3,
+      "lo": "FL-3.1.3",
+      "level": "K2",
+      "topic": "Static versus dynamic",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Review finds contradictory date requirements; execution finds an incorrect date displayed. Which statement is accurate?",
+        "pt": "Uma revisão encontra requisitos contraditórios de datas; a execução encontra uma data incorreta apresentada. Qual afirmação é correta?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Static testing found a defect directly; dynamic testing observed a failure",
+            "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+          },
+          "explanation": {
+            "en": "Review can find flaws without execution; execution exposes failures.",
+            "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Static testing observed a failure; dynamic testing directly located the code defect",
+            "pt": "O teste estático observou uma falha; o dinâmico localizou diretamente o defeito no código"
+          },
+          "explanation": {
+            "en": "The mechanisms are reversed: a document review finds the inconsistency directly, while the wrong displayed date is an observed failure requiring further analysis to locate its cause.",
+            "pt": "Os mecanismos estão invertidos: a revisão do documento encontra diretamente a inconsistência, enquanto a data incorreta apresentada é uma falha observada que exige análise adicional para localizar a causa."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Both found failures because both results conflict with expectations",
+            "pt": "Ambos encontraram falhas porque ambos os resultados contrariam as expectativas"
+          },
+          "explanation": {
+            "en": "A failure is a deviation observed during execution. Contradictory written requirements are defects found without executing the application.",
+            "pt": "Uma falha é um desvio observado durante a execução. Requisitos escritos contraditórios são defeitos encontrados sem executar a aplicação."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Both directly found code defects because each result identifies the faulty statement",
+            "pt": "Ambos encontraram diretamente defeitos no código porque cada resultado identifica a instrução incorreta"
+          },
+          "explanation": {
+            "en": "The review found a requirements defect, not a code statement. The displayed failure alone does not identify which code statement caused it.",
+            "pt": "A revisão encontrou um defeito nos requisitos, não uma instrução de código. A falha apresentada, por si só, não identifica a instrução de código que a causou."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Review can find flaws without execution; execution exposes failures.",
+        "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.1.3",
+        "pages": [34],
+        "report": "docs/academic-audit.md#fase-5b--tl-017"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-017",
+      "chapter": 3,
+      "lo": "FL-3.1.3",
+      "level": "K2",
+      "topic": "Static versus dynamic",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Review finds contradictory date requirements; execution finds an incorrect date displayed. Which statement is accurate?",
+        "pt": "Uma revisão encontra requisitos contraditórios de datas; a execução encontra uma data incorreta apresentada. Qual afirmação é correta?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Static testing found a defect directly; dynamic testing observed a failure",
+            "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+          },
+          "explanation": {
+            "en": "Review can find flaws without execution; execution exposes failures.",
+            "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Static testing observed a failure; dynamic testing directly located the code defect",
+            "pt": "O teste estático observou uma falha; o dinâmico localizou diretamente o defeito no código"
+          },
+          "explanation": {
+            "en": "The mechanisms are reversed: a document review finds the inconsistency directly, while the wrong displayed date is an observed failure requiring further analysis to locate its cause.",
+            "pt": "Os mecanismos estão invertidos: a revisão do documento encontra diretamente a inconsistência, enquanto a data incorreta apresentada é uma falha observada que exige análise adicional para localizar a causa."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Both found failures because both results conflict with expectations",
+            "pt": "Ambos encontraram falhas porque ambos os resultados contrariam as expectativas"
+          },
+          "explanation": {
+            "en": "A failure is a deviation observed during execution. Contradictory written requirements are defects found without executing the application.",
+            "pt": "Uma falha é um desvio observado durante a execução. Requisitos escritos contraditórios são defeitos encontrados sem executar a aplicação."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Both directly found code defects because each result identifies the faulty statement",
+            "pt": "Ambos encontraram diretamente defeitos no código porque cada resultado identifica a instrução incorreta"
+          },
+          "explanation": {
+            "en": "The review found a requirements defect, not a code statement. The displayed failure alone does not identify which code statement caused it.",
+            "pt": "A revisão encontrou um defeito nos requisitos, não uma instrução de código. A falha apresentada, por si só, não identifica a instrução de código que a causou."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The review directly identifies a defect in the requirements. The incorrect displayed date is an observed failure whose cause requires further analysis. The scenario does not establish that the two findings share a cause, and executing tests does not guarantee finding a failure.",
+        "pt": "A revisão identifica diretamente um defeito nos requisitos. A data incorreta apresentada é uma falha observada cuja causa exige análise adicional. O cenário não demonstra que os dois achados tenham a mesma causa, e executar testes não garante encontrar uma falha."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.1.3",
+        "pages": [34],
+        "report": "docs/academic-audit.md#fase-5b--tl-017"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6",
+    "candidateCanonicalSHA256": "3bb4ea446697ebb4172b83e29d3f273987ffaff1647bad8c70d797d6de371ee3",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 3,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-019",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "The source is specified behaviour.",
+      "pt": "A origem é o comportamento especificado."
+    },
+    "candidateText": {
+      "en": "These tests are derived from specified behaviour independently of the implementation: black-box techniques. White-box techniques derive tests from internal structure, while experience-based techniques use tester knowledge and experience. Risk-based prioritization can be combined with these families.",
+      "pt": "Estes testes derivam do comportamento especificado, independentemente da implementação: técnicas de caixa-preta. As técnicas de caixa-branca derivam testes da estrutura interna, enquanto as baseadas na experiência usam o conhecimento e a experiência do testador. A priorização baseada no risco pode combinar-se com estas famílias."
+    },
+    "original": {
+      "id": "tl-019",
+      "chapter": 4,
+      "lo": "FL-4.1.1",
+      "level": "K2",
+      "topic": "Technique families",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Tests derived from externally specified behaviour, without using code structure, belong to which family?",
+        "pt": "Testes derivados do comportamento especificado externamente, sem usar a estrutura do código, pertencem a que família?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Black-box techniques",
+            "pt": "Técnicas de caixa-preta"
+          },
+          "explanation": {
+            "en": "The source is specified behaviour.",
+            "pt": "A origem é o comportamento especificado."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "White-box techniques",
+            "pt": "Técnicas de caixa-branca"
+          },
+          "explanation": {
+            "en": "White-box techniques use internal structure.",
+            "pt": "As técnicas de caixa-branca usam a estrutura interna."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Experience-based techniques",
+            "pt": "Técnicas baseadas na experiência"
+          },
+          "explanation": {
+            "en": "Experience-based techniques derive tests from tester knowledge and experience. The stated derivation basis is externally specified behavior, which identifies black-box techniques.",
+            "pt": "As técnicas baseadas na experiência derivam testes dos conhecimentos e da experiência do testador. A base de derivação indicada é o comportamento especificado externamente, o que identifica técnicas de caixa-preta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Risk-based testing",
+            "pt": "Teste baseado no risco"
+          },
+          "explanation": {
+            "en": "Risk-based testing guides scope, depth and priority using assessed risks. It is not the CTFL technique family identified by deriving tests from specified behavior without code structure.",
+            "pt": "O teste baseado no risco orienta o âmbito, a profundidade e a prioridade usando os riscos avaliados. Não é a família de técnicas CTFL identificada pela derivação de testes do comportamento especificado sem usar a estrutura do código."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The source is specified behaviour.",
+        "pt": "A origem é o comportamento especificado."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.1",
+        "pages": [39],
+        "report": "docs/academic-audit.md#fase-5b--tl-019"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-019",
+      "chapter": 4,
+      "lo": "FL-4.1.1",
+      "level": "K2",
+      "topic": "Technique families",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Tests derived from externally specified behaviour, without using code structure, belong to which family?",
+        "pt": "Testes derivados do comportamento especificado externamente, sem usar a estrutura do código, pertencem a que família?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Black-box techniques",
+            "pt": "Técnicas de caixa-preta"
+          },
+          "explanation": {
+            "en": "The source is specified behaviour.",
+            "pt": "A origem é o comportamento especificado."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "White-box techniques",
+            "pt": "Técnicas de caixa-branca"
+          },
+          "explanation": {
+            "en": "White-box techniques use internal structure.",
+            "pt": "As técnicas de caixa-branca usam a estrutura interna."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Experience-based techniques",
+            "pt": "Técnicas baseadas na experiência"
+          },
+          "explanation": {
+            "en": "Experience-based techniques derive tests from tester knowledge and experience. The stated derivation basis is externally specified behavior, which identifies black-box techniques.",
+            "pt": "As técnicas baseadas na experiência derivam testes dos conhecimentos e da experiência do testador. A base de derivação indicada é o comportamento especificado externamente, o que identifica técnicas de caixa-preta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Risk-based testing",
+            "pt": "Teste baseado no risco"
+          },
+          "explanation": {
+            "en": "Risk-based testing guides scope, depth and priority using assessed risks. It is not the CTFL technique family identified by deriving tests from specified behavior without code structure.",
+            "pt": "O teste baseado no risco orienta o âmbito, a profundidade e a prioridade usando os riscos avaliados. Não é a família de técnicas CTFL identificada pela derivação de testes do comportamento especificado sem usar a estrutura do código."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "These tests are derived from specified behaviour independently of the implementation: black-box techniques. White-box techniques derive tests from internal structure, while experience-based techniques use tester knowledge and experience. Risk-based prioritization can be combined with these families.",
+        "pt": "Estes testes derivam do comportamento especificado, independentemente da implementação: técnicas de caixa-preta. As técnicas de caixa-branca derivam testes da estrutura interna, enquanto as baseadas na experiência usam o conhecimento e a experiência do testador. A priorização baseada no risco pode combinar-se com estas famílias."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.1",
+        "pages": [39],
+        "report": "docs/academic-audit.md#fase-5b--tl-019"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100",
+    "candidateCanonicalSHA256": "7ec839bfad683be1d4d1b4da032f025c4cd25e8a1dac44057fda40c8295f3b3c",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 3,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-023",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "Learning, design and execution inform each other.",
+      "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+    },
+    "candidateText": {
+      "en": "In exploratory testing, learning and test design, execution and evaluation inform one another. Here a timebox and a charter with test objectives structure a session-based approach. Sessions are one way to organize exploratory testing, not a universal requirement.",
+      "pt": "No teste exploratório, a aprendizagem e a conceção, execução e avaliação de testes influenciam-se mutuamente. Aqui, uma duração delimitada e uma carta com objetivos de teste estruturam uma abordagem baseada em sessões. As sessões são uma forma de organizar o teste exploratório, não um requisito universal."
+    },
+    "original": {
+      "id": "tl-023",
+      "chapter": 4,
+      "lo": "FL-4.4.2",
+      "level": "K2",
+      "topic": "Exploratory testing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester learns about a new search feature while designing, executing and evaluating tests in a timeboxed session guided by a test charter. Which technique is most directly characterized by these combined activities?",
+        "pt": "Um testador aprende sobre uma nova funcionalidade de pesquisa enquanto concebe, executa e avalia testes numa sessão de duração definida, orientada por uma carta de testes. Que técnica é mais diretamente caracterizada por estas atividades combinadas?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Session-based exploratory testing",
+            "pt": "Teste exploratório baseado em sessões"
+          },
+          "explanation": {
+            "en": "Learning, design and execution inform each other.",
+            "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Replay of predefined test scripts without adapting them",
+            "pt": "Repetição de scripts de teste predefinidos sem os adaptar"
+          },
+          "explanation": {
+            "en": "The tester designs and adapts tests while learning. Fixed replay does not explain that simultaneous learning, design and execution.",
+            "pt": "O testador concebe e adapta testes enquanto aprende. Uma repetição fixa não explica essa aprendizagem, conceção e execução em simultâneo."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Error guessing",
+            "pt": "Antecipação de erros"
+          },
+          "explanation": {
+            "en": "Error guessing selects likely defect targets using experience of errors and failures. Here the defining behavior is simultaneous learning, design and execution guided by a charter; error guessing could support, but does not replace, that exploratory approach.",
+            "pt": "A antecipação de erros seleciona alvos prováveis de defeitos usando a experiência de erros e falhas. Aqui, o comportamento distintivo é a aprendizagem, a conceção e a execução simultâneas orientadas por uma carta de testes; a antecipação de erros pode apoiar, mas não substitui, essa abordagem exploratória."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Checklist-based testing",
+            "pt": "Teste baseado em checklists"
+          },
+          "explanation": {
+            "en": "Checklist-based testing derives tests from a list of test conditions. A charter sets session objectives; the scenario describes discovering and adapting tests during the session, not deriving them from checklist entries.",
+            "pt": "O teste baseado em checklists deriva testes de uma lista de condições de teste. Uma carta de testes define objetivos da sessão; o cenário descreve descobrir e adaptar testes durante a sessão, não derivá-los de entradas de uma checklist."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Learning, design and execution inform each other.",
+        "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 4,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.4.2",
+        "pages": [44],
+        "report": "docs/academic-audit.md#fase-5b--tl-023"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-023",
+      "chapter": 4,
+      "lo": "FL-4.4.2",
+      "level": "K2",
+      "topic": "Exploratory testing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester learns about a new search feature while designing, executing and evaluating tests in a timeboxed session guided by a test charter. Which technique is most directly characterized by these combined activities?",
+        "pt": "Um testador aprende sobre uma nova funcionalidade de pesquisa enquanto concebe, executa e avalia testes numa sessão de duração definida, orientada por uma carta de testes. Que técnica é mais diretamente caracterizada por estas atividades combinadas?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Session-based exploratory testing",
+            "pt": "Teste exploratório baseado em sessões"
+          },
+          "explanation": {
+            "en": "Learning, design and execution inform each other.",
+            "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Replay of predefined test scripts without adapting them",
+            "pt": "Repetição de scripts de teste predefinidos sem os adaptar"
+          },
+          "explanation": {
+            "en": "The tester designs and adapts tests while learning. Fixed replay does not explain that simultaneous learning, design and execution.",
+            "pt": "O testador concebe e adapta testes enquanto aprende. Uma repetição fixa não explica essa aprendizagem, conceção e execução em simultâneo."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Error guessing",
+            "pt": "Antecipação de erros"
+          },
+          "explanation": {
+            "en": "Error guessing selects likely defect targets using experience of errors and failures. Here the defining behavior is simultaneous learning, design and execution guided by a charter; error guessing could support, but does not replace, that exploratory approach.",
+            "pt": "A antecipação de erros seleciona alvos prováveis de defeitos usando a experiência de erros e falhas. Aqui, o comportamento distintivo é a aprendizagem, a conceção e a execução simultâneas orientadas por uma carta de testes; a antecipação de erros pode apoiar, mas não substitui, essa abordagem exploratória."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Checklist-based testing",
+            "pt": "Teste baseado em checklists"
+          },
+          "explanation": {
+            "en": "Checklist-based testing derives tests from a list of test conditions. A charter sets session objectives; the scenario describes discovering and adapting tests during the session, not deriving them from checklist entries.",
+            "pt": "O teste baseado em checklists deriva testes de uma lista de condições de teste. Uma carta de testes define objetivos da sessão; o cenário descreve descobrir e adaptar testes durante a sessão, não derivá-los de entradas de uma checklist."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "In exploratory testing, learning and test design, execution and evaluation inform one another. Here a timebox and a charter with test objectives structure a session-based approach. Sessions are one way to organize exploratory testing, not a universal requirement.",
+        "pt": "No teste exploratório, a aprendizagem e a conceção, execução e avaliação de testes influenciam-se mutuamente. Aqui, uma duração delimitada e uma carta com objetivos de teste estruturam uma abordagem baseada em sessões. As sessões são uma forma de organizar o teste exploratório, não um requisito universal."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 4,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.4.2",
+        "pages": [44],
+        "report": "docs/academic-audit.md#fase-5b--tl-023"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8",
+    "candidateCanonicalSHA256": "7e0f0395941f43ec5366369df906a8e02244c1075e56545dde8b3f93fb6de7de",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 5,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  }
+]

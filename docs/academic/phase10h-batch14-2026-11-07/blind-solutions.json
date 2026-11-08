@@ -1,0 +1,171 @@
+{
+  "reviewerType": "AI",
+  "method": "Independent solution from key-free PT/EN projection in deterministic shuffled order; stored before key/explanation reveal. Not human SME review.",
+  "publishedKeysConsultedBeforeRecording": false,
+  "publishedExplanationsConsultedBeforeRecording": false,
+  "ownerAccepted": false,
+  "humanApproved": false,
+  "projectionSHA256": "caeddcebbb5f943121429583804822e35bd1e096b5e929008e6dfdd2c0ded933",
+  "solutions": [
+    {
+      "questionId": "tl-058",
+      "answer": [
+        "o4"
+      ],
+      "reasonPT": "Objetivos claros, critérios de saída mensuráveis e tempo de preparação permitem orientar e avaliar a revisão do guia. A dimensão do pacote e o tipo de revisão devem depender do contexto; sacrificar preparação não é um fator de sucesso.",
+      "optionAssessmentsEN": {
+        "o1": "Allocating individual preparation time to the meeting removes the chance to inspect independently beforehand. Meeting together can help discussion, but replacing preparation is not the recognised success factor asked for.",
+        "o2": "Review type should suit the work product, objectives and context. Imposing a universal type specifically to avoid contextual decisions contradicts justified tailoring.",
+        "o3": "Combining all manuals may reduce session count, but a large review package increases cognitive load and is not an established success factor. Smaller manageable work products support effective attention.",
+        "o4": "Clear objectives, measurable completion criteria and enough preparation time support purposeful, assessable reviews. They do not guarantee every defect is found, and remain appropriate for a deployment guide."
+      },
+      "shuffledOrder": [
+        "o4",
+        "o3",
+        "o1",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-059",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "Os ramos medem a estrutura que existe no código, não o que falta implementar. Podem detetar defeitos de implementação apesar de uma especificação incompleta, mas cobertura estrutural completa não demonstra que o requisito omitido esteja satisfeito.",
+      "optionAssessmentsEN": {
+        "o1": "Structural coverage objectively measures exercised implemented code. A function absent from that structure may remain invisible to code-derived tests; may miss is a possibility, not a universal claim of impossibility.",
+        "o2": "All implemented branches can be exercised while required functionality is missing. Full structural coverage therefore cannot establish that every required function, including audit recording, exists.",
+        "o3": "An incomplete specification does not make code-derived tests useless for implementation defects. Their limited view of omissions is different from inability to expose faults in code that is present.",
+        "o4": "Branch coverage is not requirements coverage. Missing functionality adds no statements to the implemented-code denominator, so its omission does not necessarily reduce measured statement coverage."
+      },
+      "shuffledOrder": [
+        "o4",
+        "o3",
+        "o2",
+        "o1"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-060",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "Uma checklist de alto nível orienta o que verificar sem fixar todos os passos ou dados, permitindo exploração distinta e menor repetibilidade. A nova falha deve informar uma condição verificável, sem abandonar o instrumento nem congelar uma lista incompleta.",
+      "optionAssessmentsEN": {
+        "o1": "Identical execution steps can support scripted repeatability, but imposing them on every item changes the high-level guidance being described. It also does not explicitly incorporate the newly found severe defect.",
+        "o2": "Different examples do not make a high-level checklist incapable of useful consistency. Shared conditions can guide both testers even when their concrete data and sequences differ.",
+        "o3": "High-level checklists permit variation at the cost of exact repeatability. Adding a directly checkable condition informed by the new defect improves future coverage without pretending the technique prescribes identical scripts.",
+        "o4": "Exploratory charters may complement a checklist, but freezing it and relegating every future severe defect exclusively elsewhere prevents learning from the newly observed omission."
+      },
+      "shuffledOrder": [
+        "o4",
+        "o3",
+        "o2",
+        "o1"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-061",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "A story carece de condições de utilização e do propósito da alteração. A colaboração entre negócio, desenvolvimento e teste deve clarificar objetivo, valor, exemplos positivos e negativos e critérios testáveis antes da implementação, sem decidir regras de negócio unilateralmente.",
+      "optionAssessmentsEN": {
+        "o1": "Developer convenience does not determine the intended business rule. Recording the simplest chosen implementation as the expected result creates a self-confirming oracle without agreeing user needs.",
+        "o2": "Discussing the user goal and business value with permitted and forbidden examples builds shared understanding. Agreeing testable acceptance criteria addresses the missing boundaries before implementation.",
+        "o3": "Business representatives supply essential domain knowledge, but completing the story alone and prohibiting further discussion loses the combined perspectives requested in the scenario.",
+        "o4": "Implementation tasks describe how to build rather than why or when label changes are acceptable. Deferring acceptance criteria until demonstration leaves the identified ambiguity unresolved during implementation."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o2",
+        "o1",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-065",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "O tempo de resposta medido descreve um atributo de qualidade do produto. Casos executados indicam progresso; defeitos abertos agrupados por prioridade são métricas de defeitos; requisitos cobertos indicam cobertura, não uma medição direta de desempenho.",
+      "optionAssessmentsEN": {
+        "o1": "Executed planned test cases describe test execution progress. Their count alone is not a direct measurement of a product quality characteristic such as response time.",
+        "o2": "Measured service response time quantifies performance of the product and is a product quality metric. No threshold compliance or quality guarantee is implied by merely reporting the measured value.",
+        "o3": "Open high-priority defects are classified as defect metrics. Priority concerns urgency of addressing them and must not silently be substituted with severity or measured performance.",
+        "o4": "The proportion of specified requirements covered by tests is a coverage metric. Coverage provides useful evidence but does not directly measure the product response time or guarantee satisfaction."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o4",
+        "o1",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-066",
+      "answer": [
+        "o4"
+      ],
+      "reasonPT": "Os públicos têm necessidades e cadências diferentes. O dashboard atualizado e os alertas assíncronos disponibilizam bloqueios entre fusos horários; o resumo semanal sintetiza riscos para a direção. A ausência de um formato imposto permite adaptar os canais.",
+      "optionAssessmentsEN": {
+        "o1": "A weekly management summary may suit the steering group, but using it as the sole blocker notification delays the rapid operational visibility explicitly required by the distributed team.",
+        "o2": "A daily live call can supplement communication, but as the sole record without retained status it is unsuitable for asynchronous access across time zones and for weekly management synthesis.",
+        "o3": "An unfiltered execution log does not provide the concise risk interpretation requested by the steering group. Delegating all synthesis to that audience fails to tailor the information.",
+        "o4": "A current shared dashboard and asynchronous notifications support timely cross-time-zone access, while a concise weekly risk summary targets the steering group. The combination follows the distinct needs without requiring one universal channel."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o2",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-067",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "Cumprir todos os cálculos especificados não torna o produto útil quando o fluxo necessário aos utilizadores está incompleto. Validar o fecho mensal com eles e rever requisitos acordados responde à ausência de erros como falácia; as outras práticas não resolvem a omissão.",
+      "optionAssessmentsEN": {
+        "o1": "More calculation regression can increase confidence in already specified arithmetic, but it does not discover or agree the missing approval step that prevents the month-end workflow.",
+        "o2": "End-to-end validation with users tests whether the product meets actual needs, and revising agreed requirements addresses the omitted approval. Passing specified calculations alone is insufficient for usefulness.",
+        "o3": "Focusing on defect-prone modules is a reasonable defect-clustering strategy in other circumstances, but historic calculation defect counts do not address the omitted workflow requirement described.",
+        "o4": "Refreshing test data can address declining effectiveness of repetitive tests, but the demonstrated cause is a missing required workflow step, not evidence that old calculation data have worn out."
+      },
+      "shuffledOrder": [
+        "o1",
+        "o4",
+        "o3",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    },
+    {
+      "questionId": "tl-068",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "A análise pode começar quando a versão inicial do produto de trabalho está disponível, sem esperar pela conclusão do código. Esta prática aplica-se a diferentes modelos, com adaptação do momento concreto; níveis distintos mantêm objetivos próprios.",
+      "optionAssessmentsEN": {
+        "o1": "Starting analysis when the corresponding development work product is available supports early feedback across lifecycles. A draft specification is enough to start relevant analysis without waiting for executable code.",
+        "o2": "Component and acceptance testing address different objectives. Reusing identical objectives across these levels is not a general good practice, regardless of lifecycle.",
+        "o3": "Waiting for coding completion unnecessarily postpones analysis and review of a draft that is already available. Dynamic test readiness is not a prerequisite for analysing the specification.",
+        "o4": "The sequence of dynamic test execution does not determine when specification reviews should occur. Static analysis and reviews can use the available draft before executable components exist."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o4",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:11:48.676374+00:00"
+    }
+  ]
+}

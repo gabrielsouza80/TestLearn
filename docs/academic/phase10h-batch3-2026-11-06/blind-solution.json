@@ -1,0 +1,7 @@
+{
+  "recordedOn": "2026-11-06",
+  "questionId": "tl-078",
+  "method": "AI reasoning from shuffled bilingual statements/options before consulting the stored key or option/general explanations in this execution; no independent human review claimed",
+  "answer": ["o1"],
+  "reasoning": "Preserve staging/build r204, create L-42 offline, reconnect and Sync once, expected one server record, observed two, trace t42, and the explicitly observed successful repetition. o1 preserves all facts without a causal diagnosis. o2 swaps expected/observed quantities; o3 changes offline creation to online and omits reconnection; o4 changes r204 to r205 and asserts an unproven server race. Reproducibility is supported only for the stated repetition/context, not universal determinism. A trace reference documents evidence, not proof of root cause."
+}

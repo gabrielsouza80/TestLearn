@@ -1,0 +1,171 @@
+{
+  "reviewerType": "AI",
+  "method": "Read full PT/EN statement and hash-shuffled options without consulting stored keys, explanations or prior NONE triage; record all8 answers and32 option assessments before reveal. Procedural separation is not human review or proof against prior model knowledge.",
+  "projectionSHA256": "4d75fa2de268a8012da2f3e03192e4c896067298336ab2ecd3a0d580e3a049d4",
+  "publishedKeysConsultedBeforeRecording": false,
+  "publishedExplanationsConsultedBeforeRecording": false,
+  "solutions": [
+    {
+      "questionId": "tl-016",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "Facilitar a reunião e proteger a eficácia corresponde ao moderador. Redator regista; gestor decide/apoia recursos; líder organiza a revisão. Uma pessoa pode acumular funções, mas a função perguntada é a moderação habitual.",
+      "optionAssessmentsEN": {
+        "o1": "Moderating/facilitating the meeting and maintaining effectiveness is the moderator role. This is a role distinction, not an assertion that a different individual must occupy each role.",
+        "o2": "The scribe records anomalies, decisions and review information; recording alone is not facilitating the meeting. The same person might also act as moderator, but that is another role.",
+        "o3": "A manager sponsors or decides review-related scope/resources rather than normally facilitating the review meeting as that role. A manager who facilitates is acting in a facilitator role.",
+        "o4": "The review leader has overall responsibility for organizing the review. That wider organizing responsibility does not make it the most specific answer for meeting facilitation."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o4",
+        "o2"
+      ]
+    },
+    {
+      "questionId": "tl-018",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "O tipo mais formal, com papéis definidos e métricas recolhidas, é inspeção. Revisão técnica também pode usar moderador/métricas, mas isso não a torna o tipo mais formal. Walkthrough costuma ser conduzido pelo autor; informal não exige processo formal.",
+      "optionAssessmentsEN": {
+        "o1": "Inspection matches the most formal review type and its defined process, roles and metrics, rather than merely the presence of any meeting or checklist.",
+        "o2": "Technical reviews can be structured and may collect metrics, but the full most-formal requirement points to inspection, not every structured review.",
+        "o3": "A walkthrough can use a scribe and preparation and can be formalized locally; it is not the syllabus most-formal type. Its usual author-led character is a useful contrast.",
+        "o4": "An informal review does not follow a defined process or require a formally documented output. Local recording does not turn it into the most formal type."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o4",
+        "o2",
+        "o1"
+      ]
+    },
+    {
+      "questionId": "tl-031",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "Plano de testes reúne âmbito, recursos e abordagem acordada do projeto. Política dá direção geral; cronograma ordena execução mas não reúne tudo; relatório de conclusão avalia o trabalho já terminado.",
+      "optionAssessmentsEN": {
+        "o1": "A project-level test plan combines the agreed scope, resources and approach and guides the work; this is the complete need described.",
+        "o2": "A test policy supplies higher-level organizational direction. It can inform the project plan but is not the project-specific consolidation requested.",
+        "o3": "An execution schedule orders and times execution. It may be included in a plan, but does not by itself supply all agreed scope/resources/approach.",
+        "o4": "A completion report summarizes completed testing rather than being the prospective agreement governing the project work."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o4",
+        "o2"
+      ]
+    },
+    {
+      "questionId": "tl-034",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "Com probabilidade comparável, impacto muito maior implica maior risco de produto das transferências. Atribuir maior profundidade de testes responde ao risco. Notoriedade ou rapidez de verificação não substituem a análise de impacto e probabilidade; não se pede fórmula numérica nem só ordenar execuções.",
+      "optionAssessmentsEN": {
+        "o1": "Deeper transfer testing follows the higher assessed product risk when likelihoods are comparable and impact is much higher. No exact quantitative risk score is needed.",
+        "o2": "Visibility can matter to impact, but the scenario already states the assessed transfer impact is much higher. Immediate notice alone does not overturn that risk assessment.",
+        "o3": "Quick checks may be scheduled opportunistically, but speed of verification alone does not justify allocating risk-based depth away from transfers.",
+        "o4": "Equal or comparable likelihood is not equal risk when impact differs substantially; equal allocation ignores one explicitly assessed dimension."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o3",
+        "o1",
+        "o4"
+      ]
+    },
+    {
+      "questionId": "tl-039",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "A necessidade é dupla: gerar milhares de pedidos simultâneos e medir a latência nessa carga. Ferramenta de teste de carga responde às duas. Monitorização pode medir latência mas não gera por si a carga requerida; análise estática não executa a carga; gestão de testes organiza informação.",
+      "optionAssessmentsEN": {
+        "o1": "A load-testing tool is designed to generate concurrent load and collect timing/latency results under that load, meeting both required functions.",
+        "o2": "Static analysis inspects artifacts without executing the loaded system; it cannot supply the generated concurrent traffic and runtime latency measurement requested.",
+        "o3": "Application monitoring can observe latency and resources under existing traffic, but monitoring alone does not necessarily create thousands of simultaneous requests. A combined suite would need a load generator.",
+        "o4": "Test management records and coordinates testing work and results. Integrating with a load generator does not make management alone the tool that produces this load and measures it."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o2",
+        "o4",
+        "o1"
+      ]
+    },
+    {
+      "questionId": "tl-042",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "Identificar o que testar a partir dos requisitos, antes de casos e scripts, produz condições de teste priorizadas e rastreáveis. Casos detalham como verificar; scripts implementam; conclusão relata trabalho terminado. A ordenação por risco não converte condições num plano completo.",
+      "optionAssessmentsEN": {
+        "o1": "Prioritized test conditions express what needs testing during analysis and connect it to the requirements; this matches the explicitly stated stage.",
+        "o2": "Executable scripts are implementation work products, explicitly not written yet; the scenario has analysis rather than automation ready to run.",
+        "o3": "A completion report is produced at completion and summarizes results; no completed test campaign or archived results are stated.",
+        "o4": "Detailed cases with inputs and expected results are design work products and explicitly not yet written. Do not confuse a condition with a fully specified case."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o3",
+        "o1",
+        "o4"
+      ]
+    },
+    {
+      "questionId": "tl-043",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "Uma melhoria concreta deve ser acordada, ter responsabilidade de implementação e seguimento para avaliar efeito. Revisões de interface mais cedo com verificação na próxima iteração satisfazem isso. Arquivar sem seguimento, culpabilizar indivíduos ou excluir melhoria do processo não resolve o objetivo.",
+      "optionAssessmentsEN": {
+        "o1": "Archiving without follow-up preserves a note but does not implement or assess improvement of the recurring late-feedback problem.",
+        "o2": "Ranking individuals by missed defects shifts to blame and a weak metric, rather than addressing the identified recurring feedback-process issue. Accountability for actions is different.",
+        "o3": "Earlier interface reviews, assigned responsibility and a next-iteration outcome check translate the finding into a concrete inspectable improvement, without guaranteeing success.",
+        "o4": "Fixing current interface defects is useful, but excluding process change prevents the requested improvement of the recurring late-feedback pattern."
+      },
+      "shuffledOrder": [
+        "o1",
+        "o4",
+        "o3",
+        "o2"
+      ]
+    },
+    {
+      "questionId": "tl-045",
+      "recordedAt": "2026-11-06T16:44:10.746392+00:00",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "Durante a execução, a gestão precisa de progresso atual face ao plano, impedimentos, riscos e trabalho seguinte para ajustar recursos. O relatório de progresso completo fornece esse contexto; conclusão com critérios cumpridos contradiz o cenário; defeito único e totais sem riscos não bastam.",
+      "optionAssessmentsEN": {
+        "o1": "Declaring completion and all exit criteria met contradicts ongoing testing, blocked work and an untested high-risk area; no authorized early closure is stated.",
+        "o2": "One defect report can provide useful detail but cannot substitute the aggregated progress, plan deviations, impediments and risk information needed for resource control.",
+        "o3": "An informative progress report gives the reporting period, deviations, blockers, risk changes and next work, supporting an in-progress resource decision.",
+        "o4": "The label progress report is insufficient: activity totals stripped of deviations, blockers and risks omit precisely the decision-relevant information in the scenario."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o4",
+        "o2",
+        "o1"
+      ]
+    }
+  ],
+  "ownerAccepted": false,
+  "humanApproved": false
+}

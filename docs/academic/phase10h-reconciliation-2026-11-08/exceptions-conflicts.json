@@ -1,0 +1,70 @@
+[
+  {
+    "id": "R-01",
+    "type": "HISTORICAL_EVIDENCE_LIMITATION",
+    "items": ["tl-011", "tl-090"],
+    "finding": "Batch1 correction records contain keys and rationale, but no standalone pre-key blind solution/timestamp artifact. Independent answers remain null; no reconstructed timestamp or new blind review invented.",
+    "action": "Human review of exact accepted correction versions; not a bank integrity failure."
+  },
+  {
+    "id": "R-02",
+    "type": "COGNITIVE_CALIBRATION_PENDING",
+    "items": ["tl-038", "tl-078"],
+    "finding": "Batch2 blocks tl-038 for possible recognition rather than K3 application; Batch3 accepts tl-078 with limited scenario-based application and official multiple-choice comparisons. These judgments require consistent human calibration, not automatic transfer of either verdict.",
+    "action": "Keep tl-038 BLOCKED_HUMAN_DECISION and all others historical states; see dedicated assessment."
+  },
+  {
+    "id": "R-03",
+    "type": "APPROVAL_SNAPSHOT_CHRONOLOGY",
+    "items": [
+      "tl-008",
+      "tl-011",
+      "tl-020",
+      "tl-021",
+      "tl-035",
+      "tl-038",
+      "tl-063",
+      "tl-064",
+      "tl-072",
+      "tl-090"
+    ],
+    "finding": "Original matrices contain null owner decisions; subsequent append-only owner records accept exact hashes. This is chronology, not general human academic approval.",
+    "action": "Expose both original record and separately scoped acceptance."
+  },
+  {
+    "id": "R-04",
+    "type": "SOURCE_EDITION_LIMITATION",
+    "finding": "EN4.0.1 and PT4.0 translation1.0 differ; page offsets are not universal. All64LO/K pairs match both local editions. Existing per-question source/page records are retained; no assertion that every historical citation was visually verified now.",
+    "action": "Use exact edition and physical pages; human reviewer checks semantic interpretations."
+  },
+  {
+    "id": "R-05",
+    "type": "CURRENT_HELPER_FAILURE_RESOLVED",
+    "finding": "First exploratory helper named inspect.py shadowed Python standard-library inspect during PyMuPDF import; exit1 AttributeError. No guard, bank or continuity failure. Removed helper directory from import search before loading external PDF library; rerun exit0. No project/old helper modified.",
+    "action": "Record both outcomes; portable verifier uses only standard library and no PDF import."
+  },
+  {
+    "id": "R-06",
+    "type": "NEW_PREFLIGHT_METADATA_TYPING_CORRECTION",
+    "evidence": {
+      "field": "head",
+      "initialRecordedValue": "3fd0a85d95ecb79515833ee3cbe7869c58049",
+      "verifiedValue": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+      "note": "Initial helper literal omitted characters; Git assertion used the correct full SHA and passed. New metadata corrected directly from Git before any reconciliation guard. No historical file changed."
+    },
+    "finding": "New audit metadata initially contained a manually mistyped HEAD; actual Git assertion had used correct expected HEAD and passed. Corrected only the new metadata, preserving original string in correction record.",
+    "action": "Use actual verified Git HEAD; no Git state normalized."
+  },
+  {
+    "id": "R-07",
+    "type": "HISTORICAL_RECOVERY_PRESERVED",
+    "finding": "Batch12 false-positive routing failure and Batch13 readability failure, STOP records and recovery evidence remain unchanged. Successful recovery does not erase original FAIL.",
+    "action": "Prior package members preserved byte-for-byte."
+  },
+  {
+    "id": "R-08",
+    "type": "CURRENT_EXPORT_BUILDER_SCHEMA_ERROR",
+    "finding": "First dossier generation exited1 with KeyError acceptedAnswerKey before any dossier file was written. Batch1 acceptance uses acceptedAnswerKey; Batch2 uses acceptedKey. Added explicit per-batch schema handling, without changing source records or expectations.",
+    "action": "Preserve execution history; this was a generator error, not a bank integrity rejection."
+  }
+]

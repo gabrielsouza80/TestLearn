@@ -1,0 +1,2750 @@
+{
+  "schemaVersion": 1,
+  "scope": "Phase 10H Batch 9 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-06",
+  "reviewMethod": "AI_REVIEWED",
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-024",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-4.5.2",
+      "cognitiveLevel": "K2",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a",
+      "afterCanonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-024",
+        "answer": ["o1"],
+        "derivation": "The request explicitly requires initial context, trigger and observable expected outcome. Given an empty basket supplies context; when opened supplies the event; showing zero supplies the result. The zero rule ino3is valid rule-oriented acceptance wording but lacks an explicit action, so does not best satisfy this specific request. o2is a sum rule rather than the requested scenario; o4names a trigger and internal service call but not starting empty context or an observable expected total. Unique offered matcho1; no universal requirement that all acceptance criteria useGiven/When/Then."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "o1 explicita cesto vazio como contexto, abertura como ação/evento e apresentação de total zero como resultado observável. o2/o3 podem ser critérios válidos orientados a regras, mas não fornecem os três elementos explícitos pedidos. A unicidade depende desse requisito, não de tornar Given/When/Then obrigatório para qualquer critério.",
+          "en": "o1gives empty basket context, opening event and visible zero total. o2/o3can be valid rule-oriented criteria but lack the requested explicit three-part scenario. Uniqueness depends on that requirement, not universal mandatory Given/When/Then wording."
+        },
+        "translation": {
+          "pt": "Starting context/contexto inicial e triggering action/ação desencadeadora não foram trocados. When opened/quando é aberto refere o cesto em ambas as versões; não substitui o estado inicial vazio. Show a zero total/apresenta total zero é o mesmo resultado. O sujeito implícito de apresentar é o sistema/interface.",
+          "en": "Context and triggering action retain distinct roles. When opened refers to the basket in both languages, not its initial empty state. Showing zero is the same expected outcome; the implicit display actor is the system/interface."
+        },
+        "contrary": {
+          "pt": "o3 tem contexto e resultado e é uma regra legítima; falta a ação explícita, pelo que não é a melhor resposta ao pedido completo. Alguns cestos reais podem ter taxas, mas o exemplo define total zero e não pede uma regra universal de comércio. O4 inclui ação interna de implementação sem resultado esperado definido.",
+          "en": "o3has context/outcome and is a legitimate rule, but lacks the explicit action required here. Real baskets may have fees, but this stipulated example is not a universal commerce rule. o4supplies an internal implementation action without the required observable result."
+        },
+        "teaching": {
+          "pt": "FL-4.5.2/K2 distingue formatos de critérios; dificuldade baixa/média com o3 próximo. As justificações são corretas, embora uma expansão possa evitar que o aluno considere regras inerentemente inválidas. Não é derivação completa de uma suiteK3.",
+          "en": "FL-4.5.2/K2distinguishes acceptance-criterion formats; low/moderate difficulty with a close rule-oriented distractor. Rationales are correct, with optional teaching clarification that rules are not inherently invalid."
+        },
+        "risks": {
+          "pt": "LOW: extrapolar a preferência deste exemplo para uma obrigação universal de sintaxe ou presumir cobertura completa da user story. Nenhuma dessas conclusões é exigida.",
+          "en": "LOWrisk of universalizing this requested format or inferring complete story coverage; neither is required."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "CONTEXT_EVENT_OUTCOME",
+            "pt": "Correta: contém os três elementos, com total zero observável.",
+            "en": "Correct: all three elements are explicit with observable zero total."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "RULE_SUM",
+            "pt": "Regra de soma válida noutro pedido; não explicita evento e contexto concreto.",
+            "en": "A potentially valid sum rule in another request, not the explicit concrete event/context requested."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "RULE_EMPTY_BASKET",
+            "pt": "Regra válida com cesto vazio e total zero; falta o evento explícito.",
+            "en": "A valid empty-basket/zero-total rule, lacking the explicit trigger."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "IMPLEMENTATION_ACTION",
+            "pt": "Chamada ao serviço não fornece o contexto inicial nem o total esperado observável.",
+            "en": "A service call supplies neither initial state nor observable expected total."
+          }
+        },
+        "criticalPairs": [
+          ["starting context", "contexto inicial", "EQUIVALENT_CONTEXT"],
+          ["triggering action", "ação desencadeadora", "EQUIVALENT_TRIGGER"],
+          ["when opened", "quando é aberto", "EQUIVALENT_EVENT"],
+          ["zero total", "total zero", "EQUIVALENT_RESULT"]
+        ]
+      },
+      "references": {
+        "section": "4.5.2",
+        "EN": [38, 45, 46],
+        "PT": [41, 49, 50],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "06e0eb872079b41ffb2e08ec145d2919b39d3c48309b0ebb683f798757a360ad"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-024",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "The criterion describes a concrete context, event and observable outcome.",
+          "pt": "O critério descreve contexto, evento e resultado observável concretos."
+        },
+        "candidateText": {
+          "en": "The requested example explicitly links an empty-basket context, opening action and observable zero total. Rule-oriented criteria are also valid acceptance formats, but o2 and o3 do not express all three requested elements. This single example does not imply complete story coverage.",
+          "pt": "O exemplo pedido liga explicitamente o contexto de cesto vazio, a ação de abrir e o total zero observável. Os critérios orientados a regras também são formatos de aceitação válidos, mas o2 e o3 não exprimem todos os três elementos pedidos. Este exemplo isolado não implica cobertura completa da user story."
+        },
+        "original": {
+          "id": "tl-024",
+          "chapter": 4,
+          "lo": "FL-4.5.2",
+          "level": "K2",
+          "topic": "Acceptance criteria",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A team needs an acceptance example that explicitly states the starting context, triggering action and observable expected result. Which criterion best meets that need?",
+            "pt": "Uma equipa precisa de um exemplo de aceitação que explicite o contexto inicial, a ação desencadeadora e o resultado esperado observável. Que critério melhor satisfaz essa necessidade?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Given an empty basket, when opened, then show a zero total",
+                "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+              },
+              "explanation": {
+                "en": "The criterion describes a concrete context, event and observable outcome.",
+                "pt": "O critério descreve contexto, evento e resultado observável concretos."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "The basket total must equal the sum of its item prices.",
+                "pt": "O total do cesto deve ser igual à soma dos preços dos seus artigos."
+              },
+              "explanation": {
+                "en": "This is a rule-oriented criterion, not a Given/When/Then scenario.",
+                "pt": "Este é um critério orientado para regras, não um cenário Dado/Quando/Então."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "A basket with no items must have a total of zero.",
+                "pt": "Um cesto sem artigos deve ter um total igual a zero."
+              },
+              "explanation": {
+                "en": "This states a rule without the explicit context/event/outcome structure.",
+                "pt": "Isto apresenta uma regra sem a estrutura explícita de contexto, evento e resultado."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "When the basket opens, calculate its total by calling the pricing service",
+                "pt": "Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços"
+              },
+              "explanation": {
+                "en": "This describes an implementation action, but omits the starting basket state and the observable expected total. It is not a complete acceptance example of the requested form.",
+                "pt": "Isto descreve uma ação de implementação, mas omite o estado inicial do cesto e o total esperado observável. Não é um exemplo de aceitação completo no formato solicitado."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "The criterion describes a concrete context, event and observable outcome.",
+            "pt": "O critério descreve contexto, evento e resultado observável concretos."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "4.5.2",
+            "pages": [45, 46],
+            "report": "docs/academic-audit.md#fase-5b--tl-024"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-024",
+          "chapter": 4,
+          "lo": "FL-4.5.2",
+          "level": "K2",
+          "topic": "Acceptance criteria",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A team needs an acceptance example that explicitly states the starting context, triggering action and observable expected result. Which criterion best meets that need?",
+            "pt": "Uma equipa precisa de um exemplo de aceitação que explicite o contexto inicial, a ação desencadeadora e o resultado esperado observável. Que critério melhor satisfaz essa necessidade?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Given an empty basket, when opened, then show a zero total",
+                "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+              },
+              "explanation": {
+                "en": "The criterion describes a concrete context, event and observable outcome.",
+                "pt": "O critério descreve contexto, evento e resultado observável concretos."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "The basket total must equal the sum of its item prices.",
+                "pt": "O total do cesto deve ser igual à soma dos preços dos seus artigos."
+              },
+              "explanation": {
+                "en": "This is a rule-oriented criterion, not a Given/When/Then scenario.",
+                "pt": "Este é um critério orientado para regras, não um cenário Dado/Quando/Então."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "A basket with no items must have a total of zero.",
+                "pt": "Um cesto sem artigos deve ter um total igual a zero."
+              },
+              "explanation": {
+                "en": "This states a rule without the explicit context/event/outcome structure.",
+                "pt": "Isto apresenta uma regra sem a estrutura explícita de contexto, evento e resultado."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "When the basket opens, calculate its total by calling the pricing service",
+                "pt": "Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços"
+              },
+              "explanation": {
+                "en": "This describes an implementation action, but omits the starting basket state and the observable expected total. It is not a complete acceptance example of the requested form.",
+                "pt": "Isto descreve uma ação de implementação, mas omite o estado inicial do cesto e o total esperado observável. Não é um exemplo de aceitação completo no formato solicitado."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "The requested example explicitly links an empty-basket context, opening action and observable zero total. Rule-oriented criteria are also valid acceptance formats, but o2 and o3 do not express all three requested elements. This single example does not imply complete story coverage.",
+            "pt": "O exemplo pedido liga explicitamente o contexto de cesto vazio, a ação de abrir e o total zero observável. Os critérios orientados a regras também são formatos de aceitação válidos, mas o2 e o3 não exprimem todos os três elementos pedidos. Este exemplo isolado não implica cobertura completa da user story."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "4.5.2",
+            "pages": [45, 46],
+            "report": "docs/academic-audit.md#fase-5b--tl-024"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a",
+        "candidateCanonicalSHA256": "04d643e10f4de9a057f56466e5a9b6f32ac46addcb309857ff886f779167feb7",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 4,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-024",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a",
+        "learningObjective": "FL-4.5.2",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.5.2",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "4.5",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.5.2",
+          "pdfPages": [45, 46],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Given an empty basket, when opened, then show a zero total",
+              "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+            },
+            "explanation": {
+              "en": "The criterion describes a concrete context, event and observable outcome.",
+              "pt": "O critério descreve contexto, evento e resultado observável concretos."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The criterion describes a concrete context, event and observable outcome.",
+          "pt": "O critério descreve contexto, evento e resultado observável concretos."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "7e84e17c72e2607a396fc5be792bf2ea658c0c60b8ed6e64439ddb414e6c6b45",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.5.2",
+          "pages": [45, 46],
+          "report": "docs/academic-audit.md#fase-5b--tl-024"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.5.2",
+            "pdfPages": [45, 46]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.5.2",
+            "pdfPages": [49, 50]
+          }
+        ],
+        "correctAnswerJustification": "o1 explicita estado inicial (cesto vazio), evento (abrir) e resultado observável (total zero), classificável como orientado a cenários. FL-4.5.2/K2 adequado.",
+        "distractorAssessment": {
+          "o2": "Regra de soma pode ser critério válido, mas não explicita contexto e ação como solicitado.",
+          "o3": "Regra de cesto vazio fornece estado e resultado, mas não a ação desencadeadora explícita; não é critério inválido em geral.",
+          "o4": "Chamada ao serviço descreve implementação; falta estado inicial e valor observável esperado."
+        },
+        "wordingAndTranslationConcerns": "starting context/contexto inicial e triggering action/ação desencadeadora equivalentes; when opened/quando é aberto refere cesto nas duas línguas. Total zero é observável e equivalente.",
+        "potentialAmbiguity": "Não exigir palavras Given/When/Then para todo critério válido: syllabus admite regras e formatos próprios inequívocos. A unicidade depende do requisito de três elementos explícitos, não apenas da sintaxe.",
+        "difficultyAssessment": "Baixa a média; K2 distingue formatos, com o3 como distrator próximo.",
+        "proposedCorrection": {
+          "description": "Enriquecer explicação geral e o2/o3: critérios orientados a regras também são válidos; apenas não satisfazem aqui o pedido de contexto, ação e resultado explícitos. Negativos/outros estados podem ser necessários à user story, mas não são exigidos neste único exemplo.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-030",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-5.1.6",
+      "cognitiveLevel": "K1",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de",
+      "afterCanonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-030",
+        "answer": ["o1"],
+        "derivation": "A conventional test pyramid generally favours many small/isolated low-level tests and fewer large end-to-end tests. Generally preserves contextual variation, not a universal quota. o2inverts the pyramid; o3equal counts lack the pyramidal distribution; o4is integration-heavy rather than the conventional pyramid. Low-level describes granularity/scope, not low quality; small/large are not promised numeric sizes."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "A pirâmide geralmente favorece base larga de testes pequenos/isolados e menos testes grandes de ponta a ponta. o1 descreve a distribuição. o2 inverte-a, o3 iguala contagens e o4 concentra testes no meio. O modelo não fixa percentagens ou camadas universais.",
+          "en": "A pyramid generally favours many small/isolated tests below and fewer large end-to-end tests above. o1matches; o2inverts, o3equalizes counts and o4concentrates the middle. No universal percentages or layer count are fixed."
+        },
+        "translation": {
+          "pt": "Generally/geralmente preserva a qualificação. Low-level/baixo nível indica âmbito/granularidade, não baixa qualidade; small/large não é um limiar numérico. Há diferença lexical real em o2: isolated low-level tests vira testes pequenos e isolados, omitindo baixo nível e acrescentando pequenos. Não são sinónimos literais, mas ambas as opções mantêm a inversão muitosE2E/poucos testes da base.",
+          "en": "Generally remains qualified; low-level is scope/granularity, not low quality, and size is not a numeric threshold. o2has a real lexical difference: low-level becomes small in Portuguese. These are not literal synonyms, but both offered forms retain the inverse end-to-end-heavy distribution."
+        },
+        "contrary": {
+          "pt": "Uma estratégia contextual pode preferir muitos testes de integração ouE2E; isso não muda o que uma pirâmide geralmente representa. Níveis e nomes de camadas variam. A diferença PTde o2 não o torna a pirâmide correta nem afeta o1, já equivalente integralmente.",
+          "en": "Context-specific strategies may favour integration/E2Etests, without changing what a conventional pyramid generally depicts. Layers/names vary. o2’s PTscope difference does not make its inverted distribution correct or affect the fully equivalento1."
+        },
+        "teaching": {
+          "pt": "FL-5.1.6/K1 recorda o modelo; dificuldade baixa apropriada. Pequeno não significa necessariamente baixo nível em todos os contextos, embora se correlacionem na descrição convencional. Não usar o modelo para excluirE2E necessários.",
+          "en": "FL-5.1.6/K1recalls the model; appropriate low difficulty. Small and low-level are correlated in the conventional model, not universally interchangeable. NecessaryE2Etests are not excluded."
+        },
+        "risks": {
+          "pt": "LOW: sinonímia imprecisa no distrator o2 e leitura de baixo nível como qualidade. O resultado da questão continua inequívoco; alinhamento lexical é opcional.",
+          "en": "LOWlexical risk ino2and low-level/quality confusion; the answer remains unambiguous, with optional lexical alignment."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "PYRAMID_BASE",
+            "pt": "Correta: muitos testes pequenos de baixo nível, menosE2Egrandes, com qualificação geral.",
+            "en": "Correct: generally many small low-level tests and fewer largeE2Etests."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "INVERTED_PYRAMID",
+            "pt": "Inverte a proporção em ambas as línguas; PTtem substituição lexical descrita, sem tornar a opção correta.",
+            "en": "Inverted in both languages; acknowledged PTlexical substitution does not make it correct."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "EQUAL_COUNTS",
+            "pt": "Contagens iguais não representam a proporção piramidal, ainda que possam ocorrer num projeto específico.",
+            "en": "Equal counts do not depict the pyramid, even if a particular project has them."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "MIDDLE_HEAVY",
+            "pt": "Concentração de integração descreve outra distribuição, não a pirâmide geral pedida.",
+            "en": "Integration concentration describes another distribution, not the requested general pyramid."
+          }
+        },
+        "criticalPairs": [
+          [
+            "generally encouraged",
+            "geralmente incentivada",
+            "EQUIVALENT_QUALIFIER"
+          ],
+          [
+            "small low-level tests",
+            "testes pequenos de baixo nível",
+            "EQUIVALENT_GRANULARITY"
+          ],
+          [
+            "large end-to-end tests",
+            "testes grandes de ponta a ponta",
+            "EQUIVALENT_SCOPE"
+          ],
+          [
+            "fewer isolated low-level tests",
+            "menos testes pequenos e isolados",
+            "NONLITERAL_SCOPE_DIFFERENCE_NO_KEY_CHANGE"
+          ],
+          ["Equal numbers", "Um número igual", "EQUIVALENT_COUNT"]
+        ]
+      },
+      "references": {
+        "section": "5.1.6",
+        "EN": [47, 50, 51],
+        "PT": [52, 56],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "852484cb5266c49bdf3cf977f9243b2de5bfca6d5a9ea7e530dae630b27193c9"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "34e12241675c8679da153516d4b36cba5a5cc98be056d973518363627f3ba513"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-030",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["options", "o2", "text"],
+        "originalText": {
+          "en": "Many large end-to-end tests, fewer isolated low-level tests",
+          "pt": "Muitos testes grandes de ponta a ponta, menos testes pequenos e isolados"
+        },
+        "candidateText": {
+          "en": "Many large end-to-end tests, fewer isolated low-level tests",
+          "pt": "Muitos testes grandes de ponta a ponta, menos testes isolados de baixo nível"
+        },
+        "original": {
+          "id": "tl-030",
+          "chapter": 5,
+          "lo": "FL-5.1.6",
+          "level": "K1",
+          "topic": "Test pyramid",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Which distribution is generally encouraged by a test pyramid?",
+            "pt": "Que distribuição é geralmente incentivada pela pirâmide de testes?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Many small low-level tests, fewer large end-to-end tests",
+                "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+              },
+              "explanation": {
+                "en": "Smaller tests often give fast, focused feedback.",
+                "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Many large end-to-end tests, fewer isolated low-level tests",
+                "pt": "Muitos testes grandes de ponta a ponta, menos testes pequenos e isolados"
+              },
+              "explanation": {
+                "en": "This inverts the pyramid. Large end-to-end tests generally cost more time and provide less focused feedback than small isolated tests.",
+                "pt": "Isto inverte a pirâmide. Os testes grandes de ponta a ponta exigem geralmente mais tempo e dão feedback menos localizado do que os testes pequenos e isolados."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Equal numbers of tests at each level",
+                "pt": "Um número igual de testes em cada nível"
+              },
+              "explanation": {
+                "en": "A pyramid represents different proportions according to granularity, isolation and execution cost, not equal counts across levels.",
+                "pt": "Uma pirâmide representa proporções diferentes de acordo com a granularidade, o isolamento e o custo de execução, não contagens iguais entre níveis."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Many integration tests, fewer component and end-to-end tests",
+                "pt": "Muitos testes de integração, menos testes de componente e de ponta a ponta"
+              },
+              "explanation": {
+                "en": "A concentration in the middle is a different distribution. The pyramid generally has a broad base of small isolated tests and fewer larger tests above.",
+                "pt": "Uma concentração no meio corresponde a uma distribuição diferente. A pirâmide tem geralmente uma base larga de testes pequenos e isolados e menos testes maiores nos níveis superiores."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Smaller tests often give fast, focused feedback.",
+            "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "5.1.6",
+            "pages": [50, 51],
+            "report": "docs/academic-audit.md#fase-6c--tl-030"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-030",
+          "chapter": 5,
+          "lo": "FL-5.1.6",
+          "level": "K1",
+          "topic": "Test pyramid",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Which distribution is generally encouraged by a test pyramid?",
+            "pt": "Que distribuição é geralmente incentivada pela pirâmide de testes?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Many small low-level tests, fewer large end-to-end tests",
+                "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+              },
+              "explanation": {
+                "en": "Smaller tests often give fast, focused feedback.",
+                "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Many large end-to-end tests, fewer isolated low-level tests",
+                "pt": "Muitos testes grandes de ponta a ponta, menos testes isolados de baixo nível"
+              },
+              "explanation": {
+                "en": "This inverts the pyramid. Large end-to-end tests generally cost more time and provide less focused feedback than small isolated tests.",
+                "pt": "Isto inverte a pirâmide. Os testes grandes de ponta a ponta exigem geralmente mais tempo e dão feedback menos localizado do que os testes pequenos e isolados."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Equal numbers of tests at each level",
+                "pt": "Um número igual de testes em cada nível"
+              },
+              "explanation": {
+                "en": "A pyramid represents different proportions according to granularity, isolation and execution cost, not equal counts across levels.",
+                "pt": "Uma pirâmide representa proporções diferentes de acordo com a granularidade, o isolamento e o custo de execução, não contagens iguais entre níveis."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Many integration tests, fewer component and end-to-end tests",
+                "pt": "Muitos testes de integração, menos testes de componente e de ponta a ponta"
+              },
+              "explanation": {
+                "en": "A concentration in the middle is a different distribution. The pyramid generally has a broad base of small isolated tests and fewer larger tests above.",
+                "pt": "Uma concentração no meio corresponde a uma distribuição diferente. A pirâmide tem geralmente uma base larga de testes pequenos e isolados e menos testes maiores nos níveis superiores."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Smaller tests often give fast, focused feedback.",
+            "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "5.1.6",
+            "pages": [50, 51],
+            "report": "docs/academic-audit.md#fase-6c--tl-030"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de",
+        "candidateCanonicalSHA256": "7454755f82708a1f8d27ee0fda237615c192710215a6af16fa208e586f3b9bca",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 4,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-030",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de",
+        "learningObjective": "FL-5.1.6",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.1.6",
+        "cognitiveLevel": "K1",
+        "learningObjectiveSection": "5.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.1.6",
+          "pdfPages": [50, 51],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Many small low-level tests, fewer large end-to-end tests",
+              "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+            },
+            "explanation": {
+              "en": "Smaller tests often give fast, focused feedback.",
+              "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Smaller tests often give fast, focused feedback.",
+          "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "7a530f1c1ff3b44b3d9efcd4295ab71e8d84c8e0e7cf7b399bf6a7d32e302294",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "5.1.6",
+          "pages": [50, 51],
+          "report": "docs/academic-audit.md#fase-6c--tl-030"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.1.6",
+            "pdfPages": [47, 50, 51]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.1.6",
+            "pdfPages": [52, 56]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.1.6/K1: pirâmide tem base numerosa de testes pequenos/isolados e topo com menos testes ponta a ponta. o1 é a distribuição geral indicada.",
+        "distractorAssessment": {
+          "o2": "Inverte base e topo.",
+          "o3": "Números iguais não representam a proporção geral da pirâmide.",
+          "o4": "Concentração no meio não representa base larga de testes pequenos."
+        },
+        "wordingAndTranslationConcerns": "generally/geralmente evita regra universal; low-level/baixo nível não significa baixa qualidade. small/pequenos e large/grandes correspondem a granularidade/âmbito.",
+        "potentialAmbiguity": "Não fixa percentagens nem três camadas universais; nomes e número de camadas variam. Não usar pirâmide para excluir E2E necessários.",
+        "difficultyAssessment": "Baixa; K1.",
+        "proposedCorrection": {
+          "description": "Opcional: explicar proporções, isolamento e custo de execução; a explicação atual fala só em feedback, sem reconstituir a distribuição.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-032",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-5.1.3",
+      "cognitiveLevel": "K2",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86",
+      "afterCanonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-032",
+        "answer": ["o1"],
+        "derivation": "Available environment before system-testing start is an entry criterion; stakeholder residual-risk acceptance before declaring testing complete is an exit criterion in this scenario. o2reverses temporal roles; o3mislabels the completion condition; o4mislabels the start condition. Risk acceptance is a local stated completion requirement, not proof of absence of defects or a universal sufficient release gate."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Ambiente disponível antes de iniciar teste de sistema é critério de entrada. Aceitar risco residual antes de declarar testes concluídos é critério de saída definido pela equipa neste cenário. A ordem pedida determina o1.",
+          "en": "Environment availability before system-testing start is entry; residual-risk acceptance before declaring completion is this team’s exit condition. The requested order identifieso1."
+        },
+        "translation": {
+          "pt": "Before starts/antes de iniciar e before declaring complete/antes de declarar concluídos preservam o momento e finalidade. Stakeholder acceptance/aceitação pelos stakeholders preserva quem aceita o risco. Não se troca aceitação do risco por ausência de defeitos ou autorização automática de release.",
+          "en": "Before start and before declaring completion preserve timing/purpose. Stakeholder acceptance retains who accepts risk, without replacing it with defect absence or automatic release authorization."
+        },
+        "contrary": {
+          "pt": "Disponibilidade do ambiente poderia ser saída de uma tarefa de preparação, e aceitação de risco poderia preceder outra atividade. Aqui são explicitamente relacionadas ao início do teste e à sua conclusão. A classificação é contextual, não essência imutável da mesma condição.",
+          "en": "Environment availability could close a setup task, and risk acceptance could precede another activity. Here their roles explicitly concern test start/completion; classification is contextual."
+        },
+        "teaching": {
+          "pt": "FL-5.1.3/K2 compara critérios usando finalidades distintas. Dificuldade baixa; a frase geral é suficiente e o3/o4 explicitam as condições. Não é necessário acrescentar condições de release não dadas.",
+          "en": "FL-5.1.3/K2compares criteria by purpose; low difficulty. Existing rationales explain the conditions sufficiently without invented release requirements."
+        },
+        "risks": {
+          "pt": "LOW se se generalizar aceitação do risco como critério suficiente universal. O texto diz que a equipa exige esta condição, não que seja a única exigência de todo projeto.",
+          "en": "LOWrisk of universalizing risk acceptance as sufficient; this team requires it, without claiming it is every project’s sole gate."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "ENTRY_THEN_EXIT",
+            "pt": "Correta: início primeiro, conclusão depois.",
+            "en": "Correct: start condition first, completion condition second."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "REVERSED_ORDER",
+            "pt": "Inverte as finalidades explicitamente dadas.",
+            "en": "Reverses the expressly given purposes."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "BOTH_ENTRY",
+            "pt": "A segunda condição é declarada para conclusão, não início.",
+            "en": "Second condition concerns completion, not start."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "BOTH_EXIT",
+            "pt": "A primeira condiciona início de teste, não a sua conclusão.",
+            "en": "First condition gates test start, not completion."
+          }
+        },
+        "criticalPairs": [
+          [
+            "before system testing starts",
+            "antes de iniciar o teste de sistema",
+            "EQUIVALENT_ENTRY"
+          ],
+          [
+            "before declaring testing complete",
+            "antes de declarar os testes concluídos",
+            "EQUIVALENT_EXIT"
+          ],
+          [
+            "stakeholder acceptance of the residual risk",
+            "aceitação do risco residual pelos stakeholders",
+            "EQUIVALENT_ACTOR"
+          ],
+          [
+            "Entry criterion, then exit criterion",
+            "Critério de entrada, depois critério de saída",
+            "EQUIVALENT_ORDER"
+          ]
+        ]
+      },
+      "references": {
+        "section": "5.1.3",
+        "EN": [47, 49],
+        "PT": [52, 54],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "031607f7f54367db23946e6ba667f0526bd4c83668ffaa88d3370ddf28979205"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86"
+        }
+      ],
+      "optionalEditorialCandidate": null,
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-032",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86",
+        "learningObjective": "FL-5.1.3",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.1.3",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "5.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.1.3",
+          "pdfPages": [49],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Entry criterion, then exit criterion",
+              "pt": "Critério de entrada, depois critério de saída"
+            },
+            "explanation": {
+              "en": "Entry supports starting; exit supports deciding completion.",
+              "pt": "A entrada apoia o início; a saída apoia a decisão de conclusão."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Entry supports starting; exit supports deciding completion.",
+          "pt": "A entrada apoia o início; a saída apoia a decisão de conclusão."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "aaffbc85c0658c7b4684e7ed868716b84386af51ac80f9f2f65fc7a2605c13ec",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "5.1.3",
+          "pages": [49],
+          "report": "docs/academic-audit.md#fase-5b--tl-032"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.1.3",
+            "pdfPages": [47, 49]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.1.3",
+            "pdfPages": [52, 54]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.1.3/K2: disponibilidade antes de iniciar é entrada; condição acordada para declarar conclusão é saída. o1 preserva ordem.",
+        "distractorAssessment": {
+          "o2": "Inverte a ordem temporal/funcional.",
+          "o3": "Segunda condição é conclusão, não início, neste cenário.",
+          "o4": "Primeira condição é pré-condição de início, não conclusão."
+        },
+        "wordingAndTranslationConcerns": "before starts/antes de iniciar e before declaring complete/antes de declarar concluídos preservam propósito. Stakeholder acceptance/aceitação pelos stakeholders equivalente.",
+        "potentialAmbiguity": "Aceitar risco residual não prova produto sem defeitos. Não é critério universal suficiente de saída; o enunciado o estabelece como exigência da equipa.",
+        "difficultyAssessment": "Baixa; K2 na comparação contextual.",
+        "proposedCorrection": {
+          "description": "Opcional: explicar critérios de saída acordados e aceitação informada do risco; não concluir que aceitação sozinha garante cumprimento de todos os critérios.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-033",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-5.2.2",
+      "cognitiveLevel": "K2",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815",
+      "afterCanonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-033",
+        "answer": ["o1"],
+        "derivation": "The statement asks which possibility is a product risk. Incorrect tax in an invoice affects product functional correctness. Staff loss, late environment and supplier delay threaten project delivery/resources. The present-tense invoice example is scoped as a possible event, not a confirmed existing defect; invoice calculates is shorthand for invoicing functionality, not a physical paper calculating. Project risks can indirectly affect product quality without changing the primary classification of these offered examples."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Imposto incorreto numa fatura ameaça correção funcional do produto. Saída de testador e atrasos de ambiente/fornecedor ameaçam recursos, calendário e execução do projeto. O enunciado enquadra todos como possibilidades; não afirma defeito já observado.",
+          "en": "Incorrect invoice tax threatens product functional correctness; staff/environment/supplier issues threaten project resources/schedule. The statement frames possibilities, not an already demonstrated defect."
+        },
+        "translation": {
+          "pt": "Possibility/possibilidades mantém carácter potencial; product rather than project preserva contraste. Invoice/fatura é metonímia do sistema/função de faturação: não se atribui cálculo físico a papel. A mesma expressão abreviada existe nas duas línguas.",
+          "en": "Possibility preserves potential occurrence and product/project contrast. Invoice is shorthand for invoicing functionality, not physical paper calculating; the same shorthand appears in both languages."
+        },
+        "contrary": {
+          "pt": "Riscos de projeto podem prejudicar indiretamente a qualidade; defeitos de produto podem atrasar projetos. O critério é o alvo direto do exemplo. A opção de imposto não identifica uma taxa legal específica, pelo que não se inventa legislação nem cálculo fiscal.",
+          "en": "Project risks can indirectly harm quality and product defects can delay projects. Classification uses the direct target of each example; no legal tax rate or calculation is supplied or invented."
+        },
+        "teaching": {
+          "pt": "FL-5.2.2/K2 distingue categorias por exemplos; dificuldade baixa. A explicação breve liga erro de cálculo à qualidade funcional e as restantes ligam recursos/agenda à entrega. Reescrever a metonímia seria estilo, sem necessidade comprovada.",
+          "en": "FL-5.2.2/K2distinguishes categories by examples; low difficulty. Existing explanations adequately separate functional quality from project delivery. Rewriting the shorthand would be style without demonstrated need."
+        },
+        "risks": {
+          "pt": "LOW de leitura literal de fatura como agente ou de confundir possibilidade com falha confirmada. Contexto e contraste resolvem a resposta.",
+          "en": "LOWrisk of literal invoice-agent reading or treating possibility as a confirmed failure; context resolves the answer."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "PRODUCT_FUNCTIONAL_RISK",
+            "pt": "Correta: cálculo potencialmente incorreto afeta qualidade funcional do produto.",
+            "en": "Correct: potentially wrong calculation concerns product functional quality."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "PROJECT_STAFF_RISK",
+            "pt": "Disponibilidade de pessoas ameaça entrega e recursos.",
+            "en": "Staff availability threatens delivery/resources."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "PROJECT_ENVIRONMENT_DELAY",
+            "pt": "Atraso de ambiente ameaça o calendário; um defeito do ambiente seria outro enunciado.",
+            "en": "Environment delay threatens schedule; an environment defect would be another statement."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "PROJECT_SUPPLIER_DELAY",
+            "pt": "Atraso do fornecedor é risco de entrega/recursos, não cálculo funcional.",
+            "en": "Supplier delay threatens delivery/resources, not functional calculation."
+          }
+        },
+        "criticalPairs": [
+          [
+            "Which possibility",
+            "Qual das seguintes possibilidades",
+            "EQUIVALENT_POTENTIAL"
+          ],
+          [
+            "product risk rather than a project risk",
+            "risco de produto em vez de um risco de projeto",
+            "EQUIVALENT_CONTRAST"
+          ],
+          [
+            "An invoice calculates the wrong tax",
+            "Uma fatura calcula imposto incorreto",
+            "CONTEXTUAL_METONYMY"
+          ],
+          [
+            "A tester leaves the team",
+            "Um testador sai da equipa",
+            "EQUIVALENT_EVENT"
+          ]
+        ]
+      },
+      "references": {
+        "section": "5.2.2",
+        "EN": [47, 52],
+        "PT": [52, 57, 58],
+        "supporting": [
+          {
+            "section": "5.2.1",
+            "EN": [52],
+            "PT": [57]
+          }
+        ]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f90b86cf47556f4c028a2c30a94f7d760bef29f2b98d2740a35ffc765049d45b"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815"
+        }
+      ],
+      "optionalEditorialCandidate": null,
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-033",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815",
+        "learningObjective": "FL-5.2.2",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.2.2",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "5.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.2.2",
+          "pdfPages": [52],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "An invoice calculates the wrong tax",
+              "pt": "Uma fatura calcula imposto incorreto"
+            },
+            "explanation": {
+              "en": "Wrong tax threatens product quality.",
+              "pt": "Imposto incorreto ameaça a qualidade do produto."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Wrong tax threatens product quality.",
+          "pt": "Imposto incorreto ameaça a qualidade do produto."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "a19aa7fc1e0344bdadffc45b8d67ce69fbb81ff2debf34f9aad554e793f0e5f4",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "5.2.2",
+          "pages": [52],
+          "report": "docs/academic-audit.md#fase-5b--tl-033"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.2.2",
+            "pdfPages": [47, 52]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.2.2",
+            "pdfPages": [52, 57, 58]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.2.2/K2: possibilidade de cálculo fiscal incorreto ameaça qualidade funcional do produto; pessoal, ambiente tardio e fornecedor ameaçam execução do projeto.",
+        "distractorAssessment": {
+          "o2": "Saída de testador é risco de recursos humanos/projeto.",
+          "o3": "Ambiente tardio ameaça calendário/projeto.",
+          "o4": "Fornecedor atrasado é risco de fornecedor/projeto."
+        },
+        "wordingAndTranslationConcerns": "possibility/possibilidades enquadra opções como eventos potenciais, não defeitos já confirmados. Invoice/fatura é metonímia do sistema que calcula.",
+        "potentialAmbiguity": "Riscos de projeto podem indiretamente afetar qualidade; classificar pelo alvo direto, não negar efeitos secundários. A primeira opção é única nesse âmbito.",
+        "difficultyAssessment": "Baixa; K2 por classificação de quatro exemplos.",
+        "proposedCorrection": {
+          "description": "Opcional: trocar “uma fatura calcula” por “o sistema calcula o imposto de uma fatura incorretamente” em EN/PT para atribuir cálculo ao sistema; chave mantém-se.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-040",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-6.2.1",
+      "cognitiveLevel": "K1",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca",
+      "afterCanonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-040",
+        "answer": ["o1"],
+        "derivation": "Underestimating maintenance effort for automated scripts is a risk, unlike reduced repetitive work, greater repeatability and useful automated metrics, which are potential benefits. Maintenance effort itself is an expected cost; underestimating it creates planning/budget/sustainability risk. Benefits are not guaranteed, but alternative unforeseen costs do not reverse the requested risk-versus-benefit polarity."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "O risco é subestimar esforço de manutenção: planeamento/custo/sustentabilidade irreais. Reduzir repetição manual, melhorar repetibilidade e recolher métricas são benefícios potenciais. Ter um custo de manutenção previsto não é por si o risco descrito.",
+          "en": "The risk is underestimating maintenance effort and planning sustainable resources unrealistically. Reduced manual repetition, repeatability and metrics are potential benefits. An anticipated maintenance cost itself is not the stated risk."
+        },
+        "translation": {
+          "pt": "Risk rather than expected benefit/risco em vez de benefício esperado mantém polaridade. Underestimating/subestimar não significa apenas manter scripts. As justificações usam potencial/can/pode, evitando benefícios garantidos.",
+          "en": "Risk-versus-benefit polarity is preserved. Underestimating is not merely maintaining scripts, and rationales retain potential/can rather than guaranteeing benefits."
+        },
+        "contrary": {
+          "pt": "Automação pode falhar em produzir benefícios e aumentar custos; esses cenários não tornam as descrições positivas em o2/o3/o4 riscos por si só. Métricas de cobertura não garantem qualidade. A explicação geral é breve, mas os distratores já distinguem estimativas irreais.",
+          "en": "Automation can fail to deliver benefits or add costs; those unprovided scenarios do not invert the positive descriptions in the options. Coverage metrics do not guarantee quality. The brief summary is supplemented by accurate estimation contrasts."
+        },
+        "teaching": {
+          "pt": "FL-6.2.1/K1 recorda benefício versus risco, dificuldade baixa. Explicitar o erro de estimativa melhora a explicação geral sem alterar o conceito já correto.",
+          "en": "FL-6.2.1/K1recalls benefits versus risks; low difficulty. Explaining the estimation error strengthens the already correct short summary."
+        },
+        "risks": {
+          "pt": "LOW pedagógico: ler o resumo como se qualquer custo fosse o risco, omitindo “subestimar”. A própria alternativa e justificações impedem essa conclusão obrigatória.",
+          "en": "LOWteaching risk of equating any cost with risk and overlooking underestimation; the actual choice/rationales do not require that reading."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "UNDERESTIMATED_MAINTENANCE",
+            "pt": "Correta: estimativa insuficiente pode inviabilizar planeamento/manutenção realistas.",
+            "en": "Correct: insufficient estimation threatens realistic maintenance planning."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "LESS_REPETITION_BENEFIT",
+            "pt": "Reduzir trabalho repetitivo é benefício potencial, não o risco de estimativa.",
+            "en": "Reduced repetitive work is a potential benefit, not the estimation risk."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "REPEATABILITY_BENEFIT",
+            "pt": "Repetibilidade é benefício potencial; não elimina manutenção.",
+            "en": "Repeatability is a potential benefit, not an elimination of maintenance."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "MEASUREMENT_BENEFIT",
+            "pt": "Medições difíceis manualmente podem ser benefício, sem provar qualidade universal.",
+            "en": "Difficult-to-obtain manual measures can be a benefit without proving universal quality."
+          }
+        },
+        "criticalPairs": [
+          [
+            "risk rather than an expected benefit",
+            "risco em vez de benefício esperado",
+            "EQUIVALENT_POLARITY"
+          ],
+          ["Underestimating", "Subestimar", "EQUIVALENT_RISK_ACTION"],
+          [
+            "maintain automated test scripts",
+            "manter os scripts de teste automatizados",
+            "EQUIVALENT_OBJECT"
+          ],
+          ["repeatability", "repetibilidade", "EQUIVALENT_BENEFIT"]
+        ]
+      },
+      "references": {
+        "section": "6.2",
+        "EN": [58, 59, 60],
+        "PT": [64, 65, 66],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "821d33f3f4f0172f354d75746c0d126101afffcd2a55d3cb1d39b8811470cad2"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-040",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "Maintenance costs must be considered.",
+          "pt": "Os custos de manutenção têm de ser considerados."
+        },
+        "candidateText": {
+          "en": "Maintaining automated scripts requires planned effort. Underestimating that effort can make budgets and maintenance plans unrealistic; the risk is the inaccurate estimate, not the mere existence of maintenance costs.",
+          "pt": "Manter scripts automatizados exige esforço planeado. Subestimar esse esforço pode tornar orçamentos e planos de manutenção irrealistas; o risco é a estimativa imprecisa, não a mera existência de custos de manutenção."
+        },
+        "original": {
+          "id": "tl-040",
+          "chapter": 6,
+          "lo": "FL-6.2.1",
+          "level": "K1",
+          "topic": "Automation",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A team is planning test automation. Which issue should be recorded as a risk rather than an expected benefit?",
+            "pt": "Uma equipa está a planear a automação de testes. Que questão deve ser registada como risco em vez de benefício esperado?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Underestimating the effort to maintain automated test scripts",
+                "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+              },
+              "explanation": {
+                "en": "Maintenance costs must be considered.",
+                "pt": "Os custos de manutenção têm de ser considerados."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Reducing repetitive manual test execution effort",
+                "pt": "Reduzir o esforço de execução manual repetitiva de testes"
+              },
+              "explanation": {
+                "en": "Reducing repetitive manual work is a potential benefit of automation. The risk is failing to budget realistically for introduction and maintenance effort.",
+                "pt": "Reduzir trabalho manual repetitivo é um benefício potencial da automação. O risco é não prever realisticamente o esforço de introdução e manutenção."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Improving the repeatability of test execution",
+                "pt": "Melhorar a repetibilidade da execução de testes"
+              },
+              "explanation": {
+                "en": "Consistent, repeatable execution is a potential benefit. It does not eliminate the need to maintain scripts as the product changes.",
+                "pt": "Uma execução consistente e repetível é um benefício potencial. Não elimina a necessidade de manter os scripts à medida que o produto muda."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Obtaining tool-supported coverage metrics that would be difficult to collect by hand",
+                "pt": "Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente"
+              },
+              "explanation": {
+                "en": "Tool-supported measurement can be a benefit. Underestimating the effort needed to keep automated tests and tools useful is the risk identified here.",
+                "pt": "A medição apoiada por ferramentas pode ser um benefício. Subestimar o esforço necessário para manter úteis os testes automatizados e as ferramentas é o risco aqui identificado."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Maintenance costs must be considered.",
+            "pt": "Os custos de manutenção têm de ser considerados."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "6.2",
+            "pages": [59, 60],
+            "report": "docs/academic-audit.md#fase-5b--tl-040"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-040",
+          "chapter": 6,
+          "lo": "FL-6.2.1",
+          "level": "K1",
+          "topic": "Automation",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A team is planning test automation. Which issue should be recorded as a risk rather than an expected benefit?",
+            "pt": "Uma equipa está a planear a automação de testes. Que questão deve ser registada como risco em vez de benefício esperado?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Underestimating the effort to maintain automated test scripts",
+                "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+              },
+              "explanation": {
+                "en": "Maintenance costs must be considered.",
+                "pt": "Os custos de manutenção têm de ser considerados."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Reducing repetitive manual test execution effort",
+                "pt": "Reduzir o esforço de execução manual repetitiva de testes"
+              },
+              "explanation": {
+                "en": "Reducing repetitive manual work is a potential benefit of automation. The risk is failing to budget realistically for introduction and maintenance effort.",
+                "pt": "Reduzir trabalho manual repetitivo é um benefício potencial da automação. O risco é não prever realisticamente o esforço de introdução e manutenção."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Improving the repeatability of test execution",
+                "pt": "Melhorar a repetibilidade da execução de testes"
+              },
+              "explanation": {
+                "en": "Consistent, repeatable execution is a potential benefit. It does not eliminate the need to maintain scripts as the product changes.",
+                "pt": "Uma execução consistente e repetível é um benefício potencial. Não elimina a necessidade de manter os scripts à medida que o produto muda."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Obtaining tool-supported coverage metrics that would be difficult to collect by hand",
+                "pt": "Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente"
+              },
+              "explanation": {
+                "en": "Tool-supported measurement can be a benefit. Underestimating the effort needed to keep automated tests and tools useful is the risk identified here.",
+                "pt": "A medição apoiada por ferramentas pode ser um benefício. Subestimar o esforço necessário para manter úteis os testes automatizados e as ferramentas é o risco aqui identificado."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Maintaining automated scripts requires planned effort. Underestimating that effort can make budgets and maintenance plans unrealistic; the risk is the inaccurate estimate, not the mere existence of maintenance costs.",
+            "pt": "Manter scripts automatizados exige esforço planeado. Subestimar esse esforço pode tornar orçamentos e planos de manutenção irrealistas; o risco é a estimativa imprecisa, não a mera existência de custos de manutenção."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "6.2",
+            "pages": [59, 60],
+            "report": "docs/academic-audit.md#fase-5b--tl-040"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca",
+        "candidateCanonicalSHA256": "76ff4615135f5161c07645982cbda7cb6ced6bc8710ad616d612564af39262ee",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 4,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-040",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca",
+        "learningObjective": "FL-6.2.1",
+        "syllabusChapter": 6,
+        "syllabusSection": "6.2",
+        "cognitiveLevel": "K1",
+        "learningObjectiveSection": "6.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "6.2",
+          "pdfPages": [59, 60],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Underestimating the effort to maintain automated test scripts",
+              "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+            },
+            "explanation": {
+              "en": "Maintenance costs must be considered.",
+              "pt": "Os custos de manutenção têm de ser considerados."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Maintenance costs must be considered.",
+          "pt": "Os custos de manutenção têm de ser considerados."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "c69ed50e4b2d0c89b0aba2b3209531163382cb6262dc6d28676ab0965e3b3eb3",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "6.2",
+          "pages": [59, 60],
+          "report": "docs/academic-audit.md#fase-5b--tl-040"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "6.2",
+            "pdfPages": [58, 59, 60]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "6.2",
+            "pdfPages": [64, 65, 66]
+          }
+        ],
+        "correctAnswerJustification": "FL-6.2.1/K1: estimativa irrealista do esforço de manutenção é risco explícito; redução de repetição, repetibilidade e medições são benefícios potenciais.",
+        "distractorAssessment": {
+          "o2": "Menos execução manual repetitiva é benefício potencial.",
+          "o3": "Maior repetibilidade é benefício potencial, não dispensa manutenção.",
+          "o4": "Métricas difíceis manualmente são benefício potencial; não garantem correção."
+        },
+        "wordingAndTranslationConcerns": "risk rather than benefit/risco em vez de benefício preserva polaridade; underestimating/subestimar não se confunde com custo inevitável.",
+        "potentialAmbiguity": "Benefícios não são garantidos; medir mais cobertura não equivale a mais qualidade. Todas as explicações de distratores usam potencial, corretamente.",
+        "difficultyAssessment": "Baixa; K1.",
+        "proposedCorrection": {
+          "description": "Opcional: explicação geral deve dizer que subestimar manutenção pode tornar custos/esforço e sustentabilidade irreais, não apenas que custos existem.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-044",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-5.1.7",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701",
+      "afterCanonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701",
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "independentSolution": {
+        "questionId": "tl-044",
+        "answer": ["o4"],
+        "derivation": "Business representatives challenge a running dashboard against user workflow/needs: business-facing and product-critique, henceQ3. Q1is technology-facing team support;Q2business-facing team support rather than evaluating implemented product;Q4technology-facing critique. Working means operational, not proven correct;critique means reasoned evaluation, not gratuitous negativity. The four options’ quadrant number/axes must be checked against official model."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Necessidades/fluxos dos utilizadores dão eixo negócio; explorar e questionar o produto dá eixo avaliação crítica:Q3,o4. As quatro opções preservam número e combinação de eixos; cada distrator partilha nenhum ou um eixo com o caso.",
+          "en": "User needs/workflows establish business-facing; exploration challenging the product establishes critique:Q3,o4. All four options preserve quadrant numbers/axes; distractors match neither or only one of the required axes."
+        },
+        "translation": {
+          "pt": "Working/funcional significa operacional, não que todos os requisitos estão satisfeitos nem uma classificação automática de teste funcional. Critique/criticam significa avaliar comportamento face a expectativas; a PSTQB usa “critica o produto”, não negatividade gratuita. Business/technology e support/critique mantêm-se nas quatro alternativas.",
+          "en": "Working/funcional means operational, not proven correct or an automatic functional-test classification. Critique means evaluation against expectations, not gratuitous negativity; PSTQB uses that same model term. All four options preserve both axes."
+        },
+        "contrary": {
+          "pt": "Q2 também pode executar software já implementado; a existência de um painel operacional não basta paraQ3. Demonstrações podem guiar desenvolvimento. Aqui a finalidade expressa é explorar dificuldades e questionar necessidades, tornando avaliação crítica do produto o melhor eixo.",
+          "en": "Q2can execute implemented software; operational status alone does not identifyQ3. Demonstrations can guide development. Here the explicit purpose is exploring workflow difficulties and challenging needs, making product critique the best fit."
+        },
+        "teaching": {
+          "pt": "FL-5.1.7/K2: interpretar os dois eixos e relacionar atividade/tipo de teste; dificuldade média. Não classificar apenas pelo papel dos participantes ou por o produto existir. A explicação geral já invoca ambos os eixos.",
+          "en": "FL-5.1.7/K2interprets both axes and relates activity/type; moderate difficulty. Neither participant role nor product existence alone is decisive; the general explanation already uses both axes."
+        },
+        "risks": {
+          "pt": "LOW se a frase de o2 for isolada e se inferir que sóQ3 testa produto implementado. Não é isso que diz o conjunto; uma expansão pedagógica pode torná-lo explícito.",
+          "en": "LOWrisk if the o2rationale is isolated and read as excluding implemented software fromQ2. The full item does not assert that; optional clarification can make it explicit."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": false,
+            "concept": "Q1_TECH_SUPPORT",
+            "pt": "Tecnologia+apoio da equipa não corresponde a explorar necessidades do negócio.",
+            "en": "Technology/team support does not match exploring business needs."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "Q2_BUSINESS_SUPPORT",
+            "pt": "Acerta negócio, mas orientar desenvolvimento não é a finalidade crítica expressa.",
+            "en": "Business-facing matches, but guiding development is not the stated critique purpose."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "Q4_TECH_CRITIQUE",
+            "pt": "Acerta avaliação crítica, mas a perspetiva dada é de utilizador/negócio.",
+            "en": "Critique matches, but the given perspective is user/business-facing."
+          },
+          "o4": {
+            "supportsAnswer": true,
+            "concept": "Q3_BUSINESS_CRITIQUE",
+            "pt": "Correta: negócio+avaliação crítica, compatível com exploração/usabilidade.",
+            "en": "Correct: business-facing product critique, consistent with exploration/usability."
+          }
+        },
+        "criticalPairs": [
+          [
+            "working reporting dashboard",
+            "painel de relatórios funcional",
+            "CONTEXTUAL_OPERATIONAL"
+          ],
+          [
+            "challenge whether it meets their needs",
+            "questionar se satisfaz as suas necessidades",
+            "EQUIVALENT_EVALUATION"
+          ],
+          [
+            "business-facing tests",
+            "testes orientados para o negócio",
+            "EQUIVALENT_AXIS"
+          ],
+          [
+            "critique the product",
+            "criticam o produto",
+            "EQUIVALENT_MODEL_TERM"
+          ],
+          ["support the team", "suportam a equipa", "EQUIVALENT_AXIS"]
+        ]
+      },
+      "references": {
+        "section": "5.1.7",
+        "EN": [47, 51],
+        "PT": [52, 56, 57],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-044",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["options", "o2", "explanation"],
+        "originalText": {
+          "en": "Q2 examples guide development; this scenario critiques an existing working product through exploration.",
+          "pt": "Os exemplos de Q2 orientam o desenvolvimento; este cenário critica um produto já funcional através da exploração."
+        },
+        "candidateText": {
+          "en": "Q2 and Q3 can both involve running software. The distinction here is purpose: supporting development with business examples versus critically exploring workflows against user needs. The scenario describes the latter purpose, so Q3 fits better than Q2.",
+          "pt": "Q2 e Q3 podem ambos envolver software em execução. A distinção aqui é a finalidade: apoiar o desenvolvimento com exemplos de negócio ou explorar criticamente fluxos face às necessidades dos utilizadores. O cenário descreve a segunda finalidade, pelo que Q3 se adequa melhor do que Q2."
+        },
+        "original": {
+          "id": "tl-044",
+          "chapter": 5,
+          "lo": "FL-5.1.7",
+          "level": "K2",
+          "topic": "Testing quadrants",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Business representatives explore a working reporting dashboard to discover awkward user workflows and challenge whether it meets their needs. In the testing quadrants model, which quadrant best describes this activity?",
+            "pt": "Representantes do negócio exploram um painel de relatórios funcional para descobrir dificuldades nos fluxos dos utilizadores e questionar se satisfaz as suas necessidades. No modelo dos quadrantes de testes, que quadrante melhor descreve esta atividade?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Q1: technology-facing tests that support the team.",
+                "pt": "Q1: testes orientados para a tecnologia que suportam a equipa."
+              },
+              "explanation": {
+                "en": "Q1 includes component and component integration tests; the scenario evaluates user workflows from a business perspective.",
+                "pt": "Q1 inclui testes de componentes e de integração de componentes; o cenário avalia fluxos de utilizadores de uma perspetiva de negócio."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Q2: business-facing tests that support the team.",
+                "pt": "Q2: testes orientados para o negócio que suportam a equipa."
+              },
+              "explanation": {
+                "en": "Q2 examples guide development; this scenario critiques an existing working product through exploration.",
+                "pt": "Os exemplos de Q2 orientam o desenvolvimento; este cenário critica um produto já funcional através da exploração."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Q4: technology-facing tests that critique the product.",
+                "pt": "Q4: testes orientados para a tecnologia que criticam o produto."
+              },
+              "explanation": {
+                "en": "Although the product is being critiqued, the stated concerns are user workflows and business needs, not technology-facing quality evaluation.",
+                "pt": "Apesar de o produto ser criticado, as preocupações indicadas são os fluxos dos utilizadores e as necessidades do negócio, não uma avaliação orientada para a tecnologia."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Q3: business-facing tests that critique the product.",
+                "pt": "Q3: testes orientados para o negócio que criticam o produto."
+              },
+              "explanation": {
+                "en": "Q3 includes exploratory and usability testing from the user/business perspective, as described.",
+                "pt": "Q3 inclui testes exploratórios e de usabilidade da perspetiva do utilizador e do negócio, como no cenário descrito."
+              }
+            }
+          ],
+          "correct": ["o4"],
+          "explanation": {
+            "en": "The activity is business-facing and critiques the working product. These two axes identify Q3; the model does not classify every business-facing activity as Q2.",
+            "pt": "A atividade é orientada para o negócio e critica o produto funcional. Estes dois eixos identificam Q3; o modelo não classifica todas as atividades orientadas para o negócio como Q2."
+          },
+          "origin": "original",
+          "syllabus": "4.0.1",
+          "version": 1,
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "humanApproval": "PENDING",
+          "examEligible": true,
+          "tags": [],
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-27",
+            "section": "5.1.7",
+            "pages": [51],
+            "report": "docs/blueprint-validation.md#tl-044"
+          }
+        },
+        "candidate": {
+          "id": "tl-044",
+          "chapter": 5,
+          "lo": "FL-5.1.7",
+          "level": "K2",
+          "topic": "Testing quadrants",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Business representatives explore a working reporting dashboard to discover awkward user workflows and challenge whether it meets their needs. In the testing quadrants model, which quadrant best describes this activity?",
+            "pt": "Representantes do negócio exploram um painel de relatórios funcional para descobrir dificuldades nos fluxos dos utilizadores e questionar se satisfaz as suas necessidades. No modelo dos quadrantes de testes, que quadrante melhor descreve esta atividade?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Q1: technology-facing tests that support the team.",
+                "pt": "Q1: testes orientados para a tecnologia que suportam a equipa."
+              },
+              "explanation": {
+                "en": "Q1 includes component and component integration tests; the scenario evaluates user workflows from a business perspective.",
+                "pt": "Q1 inclui testes de componentes e de integração de componentes; o cenário avalia fluxos de utilizadores de uma perspetiva de negócio."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Q2: business-facing tests that support the team.",
+                "pt": "Q2: testes orientados para o negócio que suportam a equipa."
+              },
+              "explanation": {
+                "en": "Q2 and Q3 can both involve running software. The distinction here is purpose: supporting development with business examples versus critically exploring workflows against user needs. The scenario describes the latter purpose, so Q3 fits better than Q2.",
+                "pt": "Q2 e Q3 podem ambos envolver software em execução. A distinção aqui é a finalidade: apoiar o desenvolvimento com exemplos de negócio ou explorar criticamente fluxos face às necessidades dos utilizadores. O cenário descreve a segunda finalidade, pelo que Q3 se adequa melhor do que Q2."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Q4: technology-facing tests that critique the product.",
+                "pt": "Q4: testes orientados para a tecnologia que criticam o produto."
+              },
+              "explanation": {
+                "en": "Although the product is being critiqued, the stated concerns are user workflows and business needs, not technology-facing quality evaluation.",
+                "pt": "Apesar de o produto ser criticado, as preocupações indicadas são os fluxos dos utilizadores e as necessidades do negócio, não uma avaliação orientada para a tecnologia."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Q3: business-facing tests that critique the product.",
+                "pt": "Q3: testes orientados para o negócio que criticam o produto."
+              },
+              "explanation": {
+                "en": "Q3 includes exploratory and usability testing from the user/business perspective, as described.",
+                "pt": "Q3 inclui testes exploratórios e de usabilidade da perspetiva do utilizador e do negócio, como no cenário descrito."
+              }
+            }
+          ],
+          "correct": ["o4"],
+          "explanation": {
+            "en": "The activity is business-facing and critiques the working product. These two axes identify Q3; the model does not classify every business-facing activity as Q2.",
+            "pt": "A atividade é orientada para o negócio e critica o produto funcional. Estes dois eixos identificam Q3; o modelo não classifica todas as atividades orientadas para o negócio como Q2."
+          },
+          "origin": "original",
+          "syllabus": "4.0.1",
+          "version": 1,
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "humanApproval": "PENDING",
+          "examEligible": true,
+          "tags": [],
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-27",
+            "section": "5.1.7",
+            "pages": [51],
+            "report": "docs/blueprint-validation.md#tl-044"
+          }
+        },
+        "originalCanonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701",
+        "candidateCanonicalSHA256": "0c827f9b23667003788be254810e91a26c6554876043f233e8b02a8082ee78b4",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 2,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-044",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701",
+        "learningObjective": "FL-5.1.7",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.1.7",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "5.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.1.7",
+          "pdfPages": [51],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o4"],
+        "currentCorrectOptions": [
+          {
+            "id": "o4",
+            "text": {
+              "en": "Q3: business-facing tests that critique the product.",
+              "pt": "Q3: testes orientados para o negócio que criticam o produto."
+            },
+            "explanation": {
+              "en": "Q3 includes exploratory and usability testing from the user/business perspective, as described.",
+              "pt": "Q3 inclui testes exploratórios e de usabilidade da perspetiva do utilizador e do negócio, como no cenário descrito."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The activity is business-facing and critiques the working product. These two axes identify Q3; the model does not classify every business-facing activity as Q2.",
+          "pt": "A atividade é orientada para o negócio e critica o produto funcional. Estes dois eixos identificam Q3; o modelo não classifica todas as atividades orientadas para o negócio como Q2."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "15f18e99f9d7f73427ede8de561b11166cd77f2e329f52a0d2530c40352d3da3",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-27",
+          "section": "5.1.7",
+          "pages": [51],
+          "report": "docs/blueprint-validation.md#tl-044"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.1.7",
+            "pdfPages": [47, 51]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.1.7",
+            "pdfPages": [56, 57]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.1.7/K2: negócio/utilizador e crítica do produto funcional definem Q3; exploração/usabilidade corroboram o4.",
+        "distractorAssessment": {
+          "o1": "Q1 orienta tecnologia e suporte, não avaliação de fluxos pelo negócio.",
+          "o2": "Q2 também é negócio, mas orienta desenvolvimento; não descreve a crítica exploratória dada.",
+          "o3": "Q4 critica produto, mas a orientação é tecnológica, não usabilidade/necessidades aqui."
+        },
+        "wordingAndTranslationConcerns": "working/funcional significa operacional neste contexto, não apenas tipo funcional. critique/criticar significa avaliar contra expectativas; eixos são iguais nas opções EN/PT.",
+        "potentialAmbiguity": "Não classificar só por estar implementado: testes Q2 também podem executar produto. A combinação explícita de exploração de necessidades e eixos é determinante.",
+        "difficultyAssessment": "Média; K2 com distratores que partilham um eixo.",
+        "proposedCorrection": {
+          "description": "Opcional em o2: explicar que o propósito é guiar desenvolvimento versus avaliar criticamente necessidades, sem ensinar que todo teste de produto já funcional é Q3.",
+          "keyBefore": ["o4"],
+          "keyProposed": ["o4"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-055",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-3.1.2",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043",
+      "afterCanonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-055",
+        "answer": ["o1"],
+        "derivation": "Static review identifies conflicting retention rules and the owner resolves them before code/test derivation. This prevents those conflicting rules from being propagated in this stated case and reduces potential later rework; it does not guarantee every downstream artifact or outcome. o2invented runtime compliance evidence; o3invented executed regression results; o4claims either incompatible rule satisfies needs without evidence. Retention/conservação refers to keeping data for policy-defined periods, without inventing a legal retention duration."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "A revisão deteta regras incompatíveis; o product owner resolve-as antes de derivar código/testes. Essa sequência evita propagar a contradição concreta e reduz retrabalho potencial. Não se atribui correção automática ao ato de testar nem conformidade dinâmica a software ainda inexistente.",
+          "en": "Review detects incompatible rules; the owner resolves them before code/test derivation. This sequence avoids propagating this contradiction and reduces potential rework. Testing alone does not automatically correct it or establish runtime compliance."
+        },
+        "translation": {
+          "pt": "Retention/conservação refere manter dados segundo regras/períodos, não um mecanismo obrigatório de backup nem prazo legal inventado. Potential/potencial e later/posterior mantêm benefício não quantificado. Before implementation/antes da implementação e resolves/resolve preservam a ordem causal dada.",
+          "en": "Retention/conservação concerns keeping data under rules/periods, not mandatory backups or invented legal durations. Potential/later and the detection-resolution-before-derivation order remain equivalent."
+        },
+        "contrary": {
+          "pt": "A revisão isolada não garante remoção/propagação evitada; aqui a resolução é dada expressamente. Resultados esperados poderiam ser definidos depois a partir da especificação esclarecida, mas o3 fala em resultados de regressão, não oferece execuções nem é o principal valor observado. A explicação geral usa “pode” e distingue evidência dinâmica.",
+          "en": "Review alone does not guarantee removal/prevention; owner resolution is explicit here. Expected results may later be derived from clarified specifications, but o3does not supply executions and is not the main observed value. The summary correctly uses can and separates runtime evidence."
+        },
+        "teaching": {
+          "pt": "FL-3.1.2/K2 explica benefício por um caso concreto, dificuldade baixa/média. A explicação geral e o1 já ligam deteção antecipada à correção antes de trabalho derivado. Não há necessidade de expandir apenas para produzir uma alteração.",
+          "en": "FL-3.1.2/K2explains value in a concrete case; low/moderate difficulty. Existing explanations already link early detection to correction before downstream work, so no gratuitous expansion is needed."
+        },
+        "risks": {
+          "pt": "LOW de confundir encontrar com corrigir ou ler prevenção como garantia universal. O cenário e o resumo modal resolvem isso; nenhuma segunda resposta principal demonstrada.",
+          "en": "LOWrisk of conflating detection/correction or universalizing prevention; the scenario/modal summary resolve this without a second demonstrated best answer."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "EARLY_RESOLUTION_PREVENTS_PROPAGATION",
+            "pt": "Correta no cenário: deteção seguida da resolução impede propagar aquelas regras e reduz retrabalho potencial.",
+            "en": "Correct in context: detection followed by resolution avoids those conflicting rules propagating and reduces potential rework."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "RUNTIME_EVIDENCE",
+            "pt": "Revisão não executa implementação inexistente nem mede conformidade em execução.",
+            "en": "Review does not execute a nonexistent implementation or measure runtime compliance."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "REGRESSION_RESULTS",
+            "pt": "Esclarecer a base ajuda testes futuros; não fornece resultados de execução de regressão.",
+            "en": "Clarifying a basis supports future tests but does not supply regression execution results."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "EITHER_RULE_ACCEPTABLE",
+            "pt": "Documentação contraditória não prova que qualquer regra satisfaz os utilizadores; a resolução é necessária.",
+            "en": "Conflicting documentation does not prove either rule meets user needs; resolution is necessary."
+          }
+        },
+        "criticalPairs": [
+          [
+            "Before implementation",
+            "Antes da implementação",
+            "EQUIVALENT_TIMING"
+          ],
+          [
+            "resolves the conflict",
+            "resolve o conflito",
+            "EQUIVALENT_RESOLUTION"
+          ],
+          [
+            "retention rules",
+            "regras de conservação",
+            "EQUIVALENT_DATA_CONTEXT"
+          ],
+          [
+            "potential later rework",
+            "potencial retrabalho posterior",
+            "EQUIVALENT_QUALIFICATION"
+          ],
+          ["can detect defects", "pode detetar defeitos", "EQUIVALENT_MODALITY"]
+        ]
+      },
+      "references": {
+        "section": "3.1.2",
+        "EN": [32, 33, 34],
+        "PT": [35, 36, 37],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        }
+      ],
+      "optionalEditorialCandidate": null,
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-055",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043",
+        "learningObjective": "FL-3.1.2",
+        "syllabusChapter": 3,
+        "syllabusSection": "3.1.2",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "3.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "3.1.2",
+          "pdfPages": [33, 34],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "It prevents the conflicting rules from propagating into derived work products and reduces potential later rework.",
+              "pt": "Evita que as regras contraditórias se propaguem para os produtos de trabalho derivados e reduz o potencial retrabalho posterior."
+            },
+            "explanation": {
+              "en": "Early direct detection in the specification allows correction before downstream work is based on the defect.",
+              "pt": "A deteção direta e antecipada na especificação permite corrigir antes de o trabalho subsequente se basear no defeito."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Static testing can detect defects in non-executable work products and reduce the cost of downstream correction. It complements later dynamic evidence rather than producing it.",
+          "pt": "O teste estático pode detetar defeitos em produtos de trabalho não executáveis e reduzir o custo da correção posterior. Complementa a evidência dinâmica posterior em vez de a produzir."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "6e063aa20547943b22cf0a2de87fa6fe70fe50c5e66e33dd6635200a78bf6e8c",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-27",
+          "section": "3.1.2",
+          "pages": [33, 34],
+          "report": "docs/academic-audit.md#tl-055"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "3.1.2",
+            "pdfPages": [32, 33, 34]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "3.1.2",
+            "pdfPages": [35, 36, 37]
+          }
+        ],
+        "correctAnswerJustification": "FL-3.1.2/K2: detetar/resolver contradição antes do código reduz propagação e retrabalho; o1 expressa benefício plausível na situação dada.",
+        "distractorAssessment": {
+          "o2": "Sem implementação/execução não existe evidência dinâmica de conformidade.",
+          "o3": "Revisão clarifica oráculo, não produz resultados executados de regressão.",
+          "o4": "Documentação contraditória não torna ambas interpretações válidas."
+        },
+        "wordingAndTranslationConcerns": "potential/potencial e later/posterior mantêm benefício sem quantificação garantida. Retention/conservação é consistente no contexto de dados.",
+        "potentialAmbiguity": "A revisão encontra o defeito; a resolução pelo product owner permite prevenir propagação. Não atribuir remoção do defeito apenas ao ato de testar.",
+        "difficultyAssessment": "Baixa a média; K2, resultado da resolução já dado.",
+        "proposedCorrection": {
+          "description": "Opcional: explicitar “a deteção seguida da resolução” para distinguir contribuição dos testes da correção em si; a explicação atual já aponta essa sequência.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    },
+    {
+      "questionId": "tl-056",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-3.2.1",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9",
+      "afterCanonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9",
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "independentSolution": {
+        "questionId": "tl-056",
+        "answer": ["o3"],
+        "derivation": "Weekly feedback from intended warehouse users during workflow evolution can reveal misunderstood needs early and reduce rework risk. It neither makes later requirements changes unnecessary nor replaces acceptance criteria nor proves every staff member will accept final implementation. Weekly is this example’s frequency, not a universally required cadence. Picking versus broader preparação de encomendas has lexical scope difference but does not change the feedback principle."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Envolvimento semanal enquanto o fluxo evolui permite detetar mal-entendidos sobre necessidades cedo e reduzir risco de retrabalho:o3. Não congela requisitos, substitui critérios de aceitação ou garante aceitação final de todos.",
+          "en": "Weekly involvement while workflows evolve helps find misunderstood needs earlier and reduces rework risk:o3. It neither freezes requirements, replaces acceptance criteria nor guarantees everyone’s final acceptance."
+        },
+        "translation": {
+          "pt": "Each week/semanalmente e evolving/em evolução mantêm frequência e mudança. Picking workflow é mais estreito do que preparação de encomendas, que pode abranger outras operações; no cenário de armazém ambas identificam um fluxo dos utilizadores, sem afetar o benefício pedido. Short/pequenas demonstrações mantém brevidade contextual, não dimensão de produto.",
+          "en": "Each week/evolving preserve cadence/change. Picking is narrower than order preparation, but both identify a warehouse user workflow and preserve the feedback benefit. Short/pequenas demonstrations preserve contextual brevity rather than product size."
+        },
+        "contrary": {
+          "pt": "Demonstração pode executar software: esteLO está no capítulo de revisões, mas não se pede classificar toda demonstração como teste estático. Frequência semanal é exemplo, não norma universal. Mudanças futuras podem continuar necessárias; não é defeito do feedback.",
+          "en": "A demonstration may execute software: although theLOis in the review chapter, the item does not classify every demo as static testing. Weekly is an example, not a universal cadence; later changes remain possible."
+        },
+        "teaching": {
+          "pt": "FL-3.2.1/K1 recorda uma vantagem por exemplo, dificuldade baixa. Distratores absolutos facilitam eliminação mas são conceptualmente incorretos; não há motivo para redesenhar dificuldade nesta revisão.",
+          "en": "FL-3.2.1/K1recalls a benefit through an example; low difficulty. Absolute distractors are easy but conceptually wrong, without requiring redesign."
+        },
+        "risks": {
+          "pt": "LOW: tradução de picking é mais abrangente e um leitor pode extrapolar frequência/aceitação. Nenhuma dessas leituras altera o3, explicitamente qualificado como redução de risco.",
+          "en": "LOWscope/cadence extrapolation risk; none changes o3’s expressly qualified rework-risk reduction."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": false,
+            "concept": "FIXED_REQUIREMENTS",
+            "pt": "Feedback não torna desnecessária toda alteração futura.",
+            "en": "Feedback does not make all later requirement changes unnecessary."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "REPLACES_ACCEPTANCE_CRITERIA",
+            "pt": "Ter visto demonstrações não substitui critérios explícitos/testáveis.",
+            "en": "Having seen demos does not replace explicit testable criteria."
+          },
+          "o3": {
+            "supportsAnswer": true,
+            "concept": "EARLY_MISUNDERSTANDING_DISCOVERY",
+            "pt": "Correta: entendimento partilhado e adaptação antecipada reduzem risco de retrabalho.",
+            "en": "Correct: shared understanding/earlier adaptation reduce rework risk."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "UNIVERSAL_FUTURE_ACCEPTANCE",
+            "pt": "Amostras de feedback não provam aceitação por todos de uma implementação futura.",
+            "en": "Feedback samples do not prove everyone’s acceptance of a future implementation."
+          }
+        },
+        "criticalPairs": [
+          ["each week", "semanalmente", "EQUIVALENT_FREQUENCY"],
+          ["evolving", "em evolução", "EQUIVALENT_CHANGE"],
+          [
+            "picking workflow",
+            "fluxo de preparação de encomendas",
+            "CONTEXTUAL_BROADER_PT_SCOPE"
+          ],
+          [
+            "short demonstrations",
+            "pequenas demonstrações",
+            "CONTEXTUAL_BREVITY"
+          ],
+          [
+            "all warehouse staff",
+            "todos os trabalhadores do armazém",
+            "EQUIVALENT_ABSOLUTE"
+          ]
+        ]
+      },
+      "references": {
+        "section": "3.2.1",
+        "EN": [32, 35],
+        "PT": [35, 38],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        }
+      ],
+      "optionalEditorialCandidate": null,
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-056",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9",
+        "learningObjective": "FL-3.2.1",
+        "syllabusChapter": 3,
+        "syllabusSection": "3.2.1",
+        "cognitiveLevel": "K1",
+        "learningObjectiveSection": "3.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "3.2.1",
+          "pdfPages": [35],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o3"],
+        "currentCorrectOptions": [
+          {
+            "id": "o3",
+            "text": {
+              "en": "Earlier discovery of misunderstandings about user needs, reducing the risk of costly rework.",
+              "pt": "Descoberta mais cedo de equívocos sobre as necessidades dos utilizadores, reduzindo o risco de retrabalho dispendioso."
+            },
+            "explanation": {
+              "en": "Frequent feedback supports shared understanding and earlier adaptation to stakeholder needs.",
+              "pt": "O feedback frequente apoia o entendimento partilhado e a adaptação antecipada às necessidades dos stakeholders."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Early, repeated involvement helps prevent misunderstandings and allows changes to be understood sooner. It is not a guarantee of final acceptance or fixed requirements.",
+          "pt": "A participação antecipada e repetida ajuda a evitar equívocos e permite compreender as alterações mais cedo. Não é uma garantia de aceitação final ou de requisitos fixos."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "6a4f1a1ea88632a930cd399816249672200de6aaf5e945010b1d5bf7d95dd24c",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-27",
+          "section": "3.2.1",
+          "pages": [35],
+          "report": "docs/academic-audit.md#tl-056"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "3.2.1",
+            "pdfPages": [32, 35]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "3.2.1",
+            "pdfPages": [35, 38]
+          }
+        ],
+        "correctAnswerJustification": "FL-3.2.1/K1: feedback cedo/frequente reduz mal-entendidos e risco de retrabalho, o3; não garante aceitação nem requisitos imutáveis.",
+        "distractorAssessment": {
+          "o1": "Baseline não elimina necessidade de mudanças.",
+          "o2": "Demonstração não substitui condições de aceitação testáveis.",
+          "o4": "Participação parcial agora não comprova aceitação universal futura."
+        },
+        "wordingAndTranslationConcerns": "picking workflow/preparação de encomendas adequado ao armazém; weekly/semanalmente e evolving/em evolução preservam frequência/contexto.",
+        "potentialAmbiguity": "Demonstração pode envolver produto executável e não é necessariamente teste estático; LO é benefício de feedback e não pede classificação estático/dinâmico.",
+        "difficultyAssessment": "Baixa; K1, distratores absolutos facilitam eliminação.",
+        "proposedCorrection": {
+          "description": "Opcional: tornar distratores menos absolutos em futura revisão editorial, mantendo a distinção entre feedback e garantia de aceitação.",
+          "keyBefore": ["o3"],
+          "keyProposed": ["o3"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change",
+      "confirmedProblemSeverity": null,
+      "interpretationRiskSeverity": "LOW",
+      "styleOnlyPreferenceNotTreatedAsDefect": true
+    }
+  ]
+}

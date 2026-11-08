@@ -1,0 +1,64 @@
+[
+  {
+    "id": "SYL-EN",
+    "version": "4.0.1",
+    "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+    "pagesConsulted": [47, 56, 57],
+    "pageCount": 78,
+    "officialURL": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+    "localEvidence": "Existing PDF read again; not a new remote download claim"
+  },
+  {
+    "id": "SYL-PT",
+    "version": "4.0 translation 1.0",
+    "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+    "pagesConsulted": [52, 62, 63],
+    "pageCount": 85,
+    "officialURL": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+    "localEvidence": "Existing PDF read again; not a new remote download claim"
+  },
+  {
+    "id": "SAMPLE-B-QUESTIONS",
+    "version": "1.7",
+    "questionNumber": 38,
+    "officialURL": "https://tbok.istqb.org/api/exam-pdf/10/questions",
+    "sha256": null,
+    "pageCount": 21,
+    "pagesConsulted": [20],
+    "method": "Official PDF text and rationale read successfully through web tool; direct Python download returned HTTP 403; no fresh PDF byte hash claimed",
+    "visualLimit": "B log table image was not inspected; web screenshot returned cache miss. Comparison is of task/rationale, not an independent solution of the official log table."
+  },
+  {
+    "id": "SAMPLE-B-ANSWERS",
+    "version": "1.7",
+    "questionNumber": 38,
+    "officialURL": "https://tbok.istqb.org/api/exam-pdf/10/answers",
+    "sha256": null,
+    "pageCount": 37,
+    "pagesConsulted": [36],
+    "method": "Official PDF text and rationale read successfully through web tool; direct Python download returned HTTP 403; no fresh PDF byte hash claimed",
+    "visualLimit": "B log table image was not inspected; web screenshot returned cache miss. Comparison is of task/rationale, not an independent solution of the official log table."
+  },
+  {
+    "id": "SAMPLE-D-QUESTIONS",
+    "version": "1.5",
+    "questionNumber": 38,
+    "officialURL": "https://tbok.istqb.org/api/exam-pdf/12/questions",
+    "sha256": null,
+    "pageCount": 20,
+    "pagesConsulted": [19],
+    "method": "Official PDF text and rationale read successfully through web tool; direct Python download returned HTTP 403; no fresh PDF byte hash claimed",
+    "visualLimit": "B log table image was not inspected; web screenshot returned cache miss. Comparison is of task/rationale, not an independent solution of the official log table."
+  },
+  {
+    "id": "SAMPLE-D-ANSWERS",
+    "version": "1.5",
+    "questionNumber": 38,
+    "officialURL": "https://tbok.istqb.org/api/exam-pdf/12/answers",
+    "sha256": null,
+    "pageCount": 35,
+    "pagesConsulted": [33],
+    "method": "Official PDF text and rationale read successfully through web tool; direct Python download returned HTTP 403; no fresh PDF byte hash claimed",
+    "visualLimit": "B log table image was not inspected; web screenshot returned cache miss. Comparison is of task/rationale, not an independent solution of the official log table."
+  }
+]

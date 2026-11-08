@@ -1,0 +1,786 @@
+[
+  {
+    "questionId": "tl-058",
+    "optionId": "o1",
+    "text": {
+      "en": "Allocate the preparation time to the meeting instead, so everyone encounters the guide together.",
+      "pt": "Transferir o tempo de preparação para a reunião, para que todos contactem com o guia em conjunto."
+    },
+    "publishedExplanation": {
+      "en": "Adequate individual preparation supports effective review; replacing it with a first reading in the meeting undermines that factor.",
+      "pt": "Uma preparação individual adequada apoia uma revisão eficaz; substituí-la por uma primeira leitura na reunião prejudica esse fator."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Retirar a preparação individual e substituí-la por leitura na reunião prejudica o fator indicado; discutir em conjunto não torna essa substituição superior.",
+    "reviewEN": "Allocating individual preparation time to the meeting removes the chance to inspect independently beforehand. Meeting together can help discussion, but replacing preparation is not the recognised success factor asked for.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "3.2.5": {
+        "EN": [37],
+        "PT": [40]
+      },
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-058",
+    "optionId": "o2",
+    "text": {
+      "en": "Use the same review type for every work product to avoid context-dependent decisions.",
+      "pt": "Usar o mesmo tipo de revisão para todos os produtos de trabalho para evitar decisões dependentes do contexto."
+    },
+    "publishedExplanation": {
+      "en": "The review type should suit objectives, the work product, participants and context.",
+      "pt": "O tipo de revisão deve adequar-se aos objetivos, ao produto de trabalho, aos participantes e ao contexto."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Impor o mesmo tipo a todos os produtos elimina a adaptação a objetivos e contexto; a explicação publicada identifica corretamente os fatores de escolha.",
+    "reviewEN": "Review type should suit the work product, objectives and context. Imposing a universal type specifically to avoid contextual decisions contradicts justified tailoring.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "3.2.5": {
+        "EN": [37],
+        "PT": [40]
+      },
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-058",
+    "optionId": "o3",
+    "text": {
+      "en": "Combine all related manuals into one large review package to reduce the number of sessions.",
+      "pt": "Juntar todos os manuais relacionados num grande pacote de revisão para reduzir o número de sessões."
+    },
+    "publishedExplanation": {
+      "en": "Small chunks help reviewers maintain concentration; minimising session count is not the overriding success criterion.",
+      "pt": "Partes pequenas ajudam os revisores a manter a concentração; minimizar o número de sessões não é o critério de sucesso predominante."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Reduzir sessões juntando todos os manuais não assegura concentração; o princípio de partes pequenas justifica a rejeição sem inventar um tamanho máximo.",
+    "reviewEN": "Combining all manuals may reduce session count, but a large review package increases cognitive load and is not an established success factor. Smaller manageable work products support effective attention.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "3.2.5": {
+        "EN": [37],
+        "PT": [40]
+      },
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-058",
+    "optionId": "o4",
+    "text": {
+      "en": "Define clear objectives and measurable exit criteria, and provide adequate preparation time.",
+      "pt": "Definir objetivos claros e critérios de saída mensuráveis e disponibilizar tempo adequado para preparação."
+    },
+    "publishedExplanation": {
+      "en": "Clear goals, measurable exit criteria and sufficient preparation are explicit review success factors.",
+      "pt": "Objetivos claros, critérios de saída mensuráveis e preparação suficiente são fatores explícitos de sucesso das revisões."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Objetivos claros, critérios mensuráveis e preparação adequada reproduzem os fatores do syllabus; a explicação está correta sem prometer sucesso garantido.",
+    "reviewEN": "Clear objectives, measurable completion criteria and enough preparation time support purposeful, assessable reviews. They do not guarantee every defect is found, and remain appropriate for a deployment guide.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "3.2.5": {
+        "EN": [37],
+        "PT": [40]
+      },
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-059",
+    "optionId": "o1",
+    "text": {
+      "en": "It provides objective coverage of implemented structure, but may miss the omitted audit requirement.",
+      "pt": "Fornece cobertura objetiva da estrutura implementada, mas pode não detetar a omissão do requisito de auditoria."
+    },
+    "publishedExplanation": {
+      "en": "White-box testing uses implementation structure even with an incomplete specification; absent functionality may have no structure to cover.",
+      "pt": "O teste caixa-branca usa a estrutura da implementação mesmo com uma especificação incompleta; uma funcionalidade ausente pode não ter estrutura a cobrir."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: mede estrutura implementada sem garantir que deteta funcionalidade ausente; o qualificador pode é preservado na explicação dos dois idiomas.",
+    "reviewEN": "Structural coverage objectively measures exercised implemented code. A function absent from that structure may remain invisible to code-derived tests; may miss is a possibility, not a universal claim of impossibility.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.3.3": {
+        "EN": [43],
+        "PT": [47]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-059",
+    "optionId": "o2",
+    "text": {
+      "en": "Full branch coverage demonstrates that all required functions are present, including audit recording.",
+      "pt": "A cobertura total de ramos demonstra que todas as funções obrigatórias estão presentes, incluindo o registo de auditoria."
+    },
+    "publishedExplanation": {
+      "en": "Coverage refers to implemented branches, not proof that every requirement was implemented.",
+      "pt": "A cobertura refere-se aos ramos implementados, não à prova de que todos os requisitos foram implementados."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Cobertura total de ramos não demonstra implementação de todos os requisitos; a explicação separa corretamente estrutura existente de funcionalidade requerida.",
+    "reviewEN": "All implemented branches can be exercised while required functionality is missing. Full structural coverage therefore cannot establish that every required function, including audit recording, exists.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.3.3": {
+        "EN": [43],
+        "PT": [47]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-059",
+    "optionId": "o3",
+    "text": {
+      "en": "An incomplete specification makes code-derived tests unsuitable for detecting implementation defects.",
+      "pt": "Uma especificação incompleta torna os testes derivados do código inadequados para detetar defeitos de implementação."
+    },
+    "publishedExplanation": {
+      "en": "Using the implementation is a strength when specifications are incomplete; this does not eliminate the separate omission limitation.",
+      "pt": "Usar a implementação é uma vantagem quando as especificações estão incompletas; isso não elimina a limitação distinta relativa a omissões."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Uma especificação incompleta não impede detetar defeitos no código existente; a limitação de omissões não elimina a utilidade estrutural descrita.",
+    "reviewEN": "An incomplete specification does not make code-derived tests useless for implementation defects. Their limited view of omissions is different from inability to expose faults in code that is present.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.3.3": {
+        "EN": [43],
+        "PT": [47]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-059",
+    "optionId": "o4",
+    "text": {
+      "en": "The branch results measure requirements coverage, while the missing audit function reduces statement coverage.",
+      "pt": "Os resultados dos ramos medem a cobertura de requisitos, enquanto a função de auditoria ausente reduz a cobertura de instruções."
+    },
+    "publishedExplanation": {
+      "en": "Branch and statement coverage measure existing code structure; missing code is not an uncovered statement in that implementation.",
+      "pt": "A cobertura de ramos e de instruções mede a estrutura do código existente; código ausente não é uma instrução não coberta dessa implementação."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Ramos não medem requisitos e código inexistente não é uma instrução implementada descoberta como não coberta; a explicação responde às duas partes falsas.",
+    "reviewEN": "Branch coverage is not requirements coverage. Missing functionality adds no statements to the implemented-code denominator, so its omission does not necessarily reduce measured statement coverage.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.3.3": {
+        "EN": [43],
+        "PT": [47]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-060",
+    "optionId": "o1",
+    "text": {
+      "en": "Require identical execution steps for every item while continuing to describe the checklist as high-level guidance.",
+      "pt": "Exigir passos de execução idênticos para cada item, continuando a descrever a checklist como orientação de alto nível."
+    },
+    "publishedExplanation": {
+      "en": "Detailed identical procedures could increase repeatability, but are not inherent in a high-level checklist and do not address updating its conditions.",
+      "pt": "Procedimentos detalhados idênticos poderiam aumentar a repetibilidade, mas não são inerentes a uma checklist de alto nível nem tratam a atualização das suas condições."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Passos detalhados idênticos poderiam servir outro objetivo, mas contradizem a orientação de alto nível indicada e não incorporam a evidência do defeito novo.",
+    "reviewEN": "Identical execution steps can support scripted repeatability, but imposing them on every item changes the high-level guidance being described. It also does not explicitly incorporate the newly found severe defect.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.4.3": {
+        "EN": [44, 45],
+        "PT": [48, 49]
+      }
+    }
+  },
+  {
+    "questionId": "tl-060",
+    "optionId": "o2",
+    "text": {
+      "en": "Discard the checklist because different examples demonstrate that it cannot provide useful consistency.",
+      "pt": "Abandonar a checklist porque exemplos diferentes demonstram que não pode proporcionar consistência útil."
+    },
+    "publishedExplanation": {
+      "en": "High-level checklists can give consistent guidance while allowing variability and potentially broader coverage.",
+      "pt": "Checklists de alto nível podem orientar de forma consistente, permitindo variabilidade e uma cobertura potencialmente mais ampla."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Exemplos diferentes não eliminam consistência ao nível das condições comuns; a explicação corretamente admite cobertura potencialmente mais ampla.",
+    "reviewEN": "Different examples do not make a high-level checklist incapable of useful consistency. Shared conditions can guide both testers even when their concrete data and sequences differ.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.4.3": {
+        "EN": [44, 45],
+        "PT": [48, 49]
+      }
+    }
+  },
+  {
+    "questionId": "tl-060",
+    "optionId": "o3",
+    "text": {
+      "en": "Recognise the repeatability trade-off and update the checklist with a directly checkable condition informed by the defect.",
+      "pt": "Reconhecer o compromisso de repetibilidade e atualizar a checklist com uma condição diretamente verificável baseada no defeito."
+    },
+    "publishedExplanation": {
+      "en": "High-level items permit variation; defect analysis should inform regular updates without making the checklist unmanageably long.",
+      "pt": "Itens de alto nível permitem variação; a análise de defeitos deve orientar atualizações regulares sem tornar a checklist excessivamente longa."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: reconhece menor repetibilidade e atualiza uma condição verificável com base no defeito; não exige inventar o texto ou automatizar todos os itens.",
+    "reviewEN": "High-level checklists permit variation at the cost of exact repeatability. Adding a directly checkable condition informed by the new defect improves future coverage without pretending the technique prescribes identical scripts.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.4.3": {
+        "EN": [44, 45],
+        "PT": [48, 49]
+      }
+    }
+  },
+  {
+    "questionId": "tl-060",
+    "optionId": "o4",
+    "text": {
+      "en": "Keep the checklist unchanged and handle every future severe defect only through a separate exploratory charter.",
+      "pt": "Manter a checklist inalterada e tratar todos os futuros defeitos graves apenas através de uma carta de teste exploratório separada."
+    },
+    "publishedExplanation": {
+      "en": "Exploration may complement the checklist, but ignoring new defect evidence prevents the checklist from evolving.",
+      "pt": "A exploração pode complementar a checklist, mas ignorar nova evidência de defeitos impede a sua evolução."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Exploração pode complementar a checklist, mas mantê-la congelada e usar apenas outro instrumento para todos os defeitos futuros impede a sua evolução.",
+    "reviewEN": "Exploratory charters may complement a checklist, but freezing it and relegating every future severe defect exclusively elsewhere prevents learning from the newly observed omission.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.4.3": {
+        "EN": [44, 45],
+        "PT": [48, 49]
+      }
+    }
+  },
+  {
+    "questionId": "tl-061",
+    "optionId": "o1",
+    "text": {
+      "en": "Let developers select the simplest amendment rule and ask testers to document it as the expected result.",
+      "pt": "Deixar os programadores escolher a regra de alteração mais simples e pedir aos testadores que a documentem como resultado esperado."
+    },
+    "publishedExplanation": {
+      "en": "Implementation convenience alone does not establish business value or shared agreement on permitted behaviour.",
+      "pt": "A conveniência de implementação, por si só, não estabelece valor de negócio nem acordo partilhado sobre o comportamento permitido."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Conveniência da implementação não estabelece intenção de negócio; usar a regra técnica como oráculo sem acordo partilhado não resolve a ambiguidade.",
+    "reviewEN": "Developer convenience does not determine the intended business rule. Recording the simplest chosen implementation as the expected result creates a self-confirming oracle without agreeing user needs.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.5.1": {
+        "EN": [45],
+        "PT": [49]
+      },
+      "4.5.2": {
+        "EN": [45, 46],
+        "PT": [49, 50]
+      },
+      "2.2.3": {
+        "EN": [30],
+        "PT": [33]
+      }
+    }
+  },
+  {
+    "questionId": "tl-061",
+    "optionId": "o2",
+    "text": {
+      "en": "Discuss the user goal and business value, explore permitted and forbidden examples, and agree testable acceptance criteria.",
+      "pt": "Discutir o objetivo do utilizador e o valor de negócio, explorar exemplos permitidos e proibidos e acordar critérios de aceitação testáveis."
+    },
+    "publishedExplanation": {
+      "en": "Conversation across the three perspectives builds a shared story and confirmation criteria, helping expose unclear or missing rules.",
+      "pt": "A conversação entre as três perspetivas constrói uma story partilhada e critérios de confirmação, ajudando a revelar regras pouco claras ou em falta."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: reúne as três perspetivas para esclarecer valor e condições testáveis; confirmação refere-se aos critérios dos três C, não ao reteste de defeito.",
+    "reviewEN": "Discussing the user goal and business value with permitted and forbidden examples builds shared understanding. Agreeing testable acceptance criteria addresses the missing boundaries before implementation.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.5.1": {
+        "EN": [45],
+        "PT": [49]
+      },
+      "4.5.2": {
+        "EN": [45, 46],
+        "PT": [49, 50]
+      },
+      "2.2.3": {
+        "EN": [30],
+        "PT": [33]
+      }
+    }
+  },
+  {
+    "questionId": "tl-061",
+    "optionId": "o3",
+    "text": {
+      "en": "Ask the business representative to complete the story alone, then estimate it without further discussion.",
+      "pt": "Pedir ao representante do negócio que conclua a story sozinho e depois estimá-la sem mais discussão."
+    },
+    "publishedExplanation": {
+      "en": "Business input is essential, but collaborative authorship includes development and testing perspectives to establish shared understanding and testability.",
+      "pt": "O contributo do negócio é essencial, mas a autoria colaborativa inclui as perspetivas de desenvolvimento e teste para estabelecer entendimento partilhado e testabilidade."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O negócio aporta conhecimento essencial, mas concluir sozinho e impedir nova discussão não satisfaz a colaboração explícita pedida no enunciado.",
+    "reviewEN": "Business representatives supply essential domain knowledge, but completing the story alone and prohibiting further discussion loses the combined perspectives requested in the scenario.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.5.1": {
+        "EN": [45],
+        "PT": [49]
+      },
+      "4.5.2": {
+        "EN": [45, 46],
+        "PT": [49, 50]
+      },
+      "2.2.3": {
+        "EN": [30],
+        "PT": [33]
+      }
+    }
+  },
+  {
+    "questionId": "tl-061",
+    "optionId": "o4",
+    "text": {
+      "en": "Convert the draft into a detailed implementation task list and defer acceptance criteria until the first demonstration.",
+      "pt": "Converter o rascunho numa lista detalhada de tarefas de implementação e adiar os critérios de aceitação até à primeira demonstração."
+    },
+    "publishedExplanation": {
+      "en": "A task list does not resolve the missing business rules; confirmation should inform implementation rather than wait for it.",
+      "pt": "Uma lista de tarefas não resolve as regras de negócio em falta; a confirmação deve orientar a implementação em vez de esperar por ela."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Uma lista de tarefas não esclarece regras de negócio e adiar critérios até à demonstração mantém a ambiguidade durante a implementação inicial.",
+    "reviewEN": "Implementation tasks describe how to build rather than why or when label changes are acceptable. Deferring acceptance criteria until demonstration leaves the identified ambiguity unresolved during implementation.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "4.5.1": {
+        "EN": [45],
+        "PT": [49]
+      },
+      "4.5.2": {
+        "EN": [45, 46],
+        "PT": [49, 50]
+      },
+      "2.2.3": {
+        "EN": [30],
+        "PT": [33]
+      }
+    }
+  },
+  {
+    "questionId": "tl-065",
+    "optionId": "o1",
+    "text": {
+      "en": "Number of planned test cases that have been executed.",
+      "pt": "Número de casos de teste planeados que foram executados."
+    },
+    "publishedExplanation": {
+      "en": "This is a test progress metric.",
+      "pt": "Esta é uma métrica de progresso do teste."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O número de casos planeados executados é progresso de execução; a justificação curta identifica a categoria correta sem alegar uma medição de qualidade.",
+    "reviewEN": "Executed planned test cases describe test execution progress. Their count alone is not a direct measurement of a product quality characteristic such as response time.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.1": {
+        "EN": [54],
+        "PT": [60]
+      }
+    }
+  },
+  {
+    "questionId": "tl-065",
+    "optionId": "o2",
+    "text": {
+      "en": "Measured response time of the lending service.",
+      "pt": "Tempo de resposta medido do serviço de empréstimos."
+    },
+    "publishedExplanation": {
+      "en": "Response time measures a non-functional quality characteristic of the product.",
+      "pt": "O tempo de resposta mede uma característica de qualidade não funcional do produto."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: o tempo de resposta observado mede desempenho do produto, sem concluir que cumpre algum limiar ou que o produto está aprovado.",
+    "reviewEN": "Measured service response time quantifies performance of the product and is a product quality metric. No threshold compliance or quality guarantee is implied by merely reporting the measured value.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.1": {
+        "EN": [54],
+        "PT": [60]
+      }
+    }
+  },
+  {
+    "questionId": "tl-065",
+    "optionId": "o3",
+    "text": {
+      "en": "Number of high-priority defects that remain open.",
+      "pt": "Número de defeitos de prioridade elevada que permanecem abertos."
+    },
+    "publishedExplanation": {
+      "en": "This is a defect metric; it can inform quality decisions but is not the product quality metric requested in this classification.",
+      "pt": "Esta é uma métrica de defeitos; pode apoiar decisões sobre qualidade, mas não é a métrica de qualidade do produto pedida nesta classificação."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Defeitos abertos de prioridade elevada continuam métricas de defeitos; podem informar qualidade, mas prioridade não se confunde com severidade.",
+    "reviewEN": "Open high-priority defects are classified as defect metrics. Priority concerns urgency of addressing them and must not silently be substituted with severity or measured performance.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.1": {
+        "EN": [54],
+        "PT": [60]
+      }
+    }
+  },
+  {
+    "questionId": "tl-065",
+    "optionId": "o4",
+    "text": {
+      "en": "Percentage of specified lending requirements covered by tests.",
+      "pt": "Percentagem de requisitos de empréstimo especificados cobertos por testes."
+    },
+    "publishedExplanation": {
+      "en": "This is a coverage metric, not a direct measurement of a product quality characteristic.",
+      "pt": "Esta é uma métrica de cobertura, não uma medição direta de uma característica de qualidade do produto."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Requisitos especificados cobertos são uma métrica de cobertura; a justificação não confunde a existência de testes com satisfazer esses requisitos.",
+    "reviewEN": "The proportion of specified requirements covered by tests is a coverage metric. Coverage provides useful evidence but does not directly measure the product response time or guarantee satisfaction.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.1": {
+        "EN": [54],
+        "PT": [60]
+      }
+    }
+  },
+  {
+    "questionId": "tl-066",
+    "optionId": "o1",
+    "text": {
+      "en": "Send the weekly steering summary to everyone and use it as the team's only blocker notification.",
+      "pt": "Enviar o resumo semanal da direção a todos e usá-lo como única notificação de bloqueios da equipa."
+    },
+    "publishedExplanation": {
+      "en": "A weekly summary is too infrequent for the team's stated need for rapid visibility of blockers.",
+      "pt": "Um resumo semanal é demasiado pouco frequente para a necessidade indicada de visibilidade rápida dos bloqueios da equipa."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O resumo semanal satisfaz a direção, mas como única notificação da equipa atrasa a visibilidade rápida dos bloqueios explicitamente necessária.",
+    "reviewEN": "A weekly management summary may suit the steering group, but using it as the sole blocker notification delays the rapid operational visibility explicitly required by the distributed team.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.3": {
+        "EN": [55],
+        "PT": [61]
+      },
+      "5.3.2": {
+        "EN": [54, 55],
+        "PT": [60, 61]
+      }
+    }
+  },
+  {
+    "questionId": "tl-066",
+    "optionId": "o2",
+    "text": {
+      "en": "Use a daily live call as the sole record for both audiences, without retaining status information.",
+      "pt": "Usar uma chamada diária em direto como único registo para ambos os públicos, sem conservar informação de estado."
+    },
+    "publishedExplanation": {
+      "en": "A sole live channel does not accommodate the stated time-zone needs or provide the tailored weekly risk summary.",
+      "pt": "Um único canal em direto não responde às necessidades indicadas de fusos horários nem fornece o resumo semanal de riscos adaptado ao público."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Uma chamada pode ajudar, mas sendo único registo sem informação persistida não adapta acesso assíncrono nem síntese semanal entre fusos horários.",
+    "reviewEN": "A daily live call can supplement communication, but as the sole record without retained status it is unsuitable for asynchronous access across time zones and for weekly management synthesis.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.3": {
+        "EN": [55],
+        "PT": [61]
+      },
+      "5.3.2": {
+        "EN": [54, 55],
+        "PT": [60, 61]
+      }
+    }
+  },
+  {
+    "questionId": "tl-066",
+    "optionId": "o3",
+    "text": {
+      "en": "Give the steering group the unfiltered execution log and ask it to derive release risks independently.",
+      "pt": "Fornecer ao grupo de direção o registo de execução sem tratamento e pedir-lhe que derive os riscos da entrega de forma independente."
+    },
+    "publishedExplanation": {
+      "en": "An unfiltered technical log does not provide the requested audience-appropriate risk summary.",
+      "pt": "Um registo técnico sem tratamento não fornece o resumo de riscos pedido e adequado ao público."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O registo bruto não é o resumo conciso e adequado ao público de direção; exigir que esse público derive todos os riscos não satisfaz o pedido.",
+    "reviewEN": "An unfiltered execution log does not provide the concise risk interpretation requested by the steering group. Delegating all synthesis to that audience fails to tailor the information.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.3": {
+        "EN": [55],
+        "PT": [61]
+      },
+      "5.3.2": {
+        "EN": [54, 55],
+        "PT": [60, 61]
+      }
+    }
+  },
+  {
+    "questionId": "tl-066",
+    "optionId": "o4",
+    "text": {
+      "en": "Maintain an up-to-date shared dashboard with asynchronous blocker notifications, and provide a concise weekly risk summary for the steering group.",
+      "pt": "Manter um dashboard partilhado atualizado com notificações assíncronas de bloqueios e fornecer um resumo semanal conciso de riscos ao grupo de direção."
+    },
+    "publishedExplanation": {
+      "en": "Different stakeholders need different detail and frequency. Combining channels supports distributed teamwork and management decisions.",
+      "pt": "Stakeholders diferentes precisam de detalhe e frequência diferentes. Combinar canais apoia o trabalho distribuído e as decisões de gestão."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: combina visibilidade partilhada atualizada e notificações assíncronas com resumo semanal adaptado; não impõe um canal universal ou leitura instantânea.",
+    "reviewEN": "A current shared dashboard and asynchronous notifications support timely cross-time-zone access, while a concise weekly risk summary targets the steering group. The combination follows the distinct needs without requiring one universal channel.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "5.3.3": {
+        "EN": [55],
+        "PT": [61]
+      },
+      "5.3.2": {
+        "EN": [54, 55],
+        "PT": [60, 61]
+      }
+    }
+  },
+  {
+    "questionId": "tl-067",
+    "optionId": "o1",
+    "text": {
+      "en": "Expand calculation regression tests to increase confidence in the already specified rules.",
+      "pt": "Expandir a regressão dos cálculos para aumentar a confiança nas regras já especificadas."
+    },
+    "publishedExplanation": {
+      "en": "This strengthens verification but does not address the missing user workflow.",
+      "pt": "Isto reforça a verificação, mas não trata o fluxo de utilização em falta."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Mais regressão dos cálculos pode apoiar verificação, mas não descobre nem acorda a etapa de aprovação necessária ao fluxo de fecho mensal.",
+    "reviewEN": "More calculation regression can increase confidence in already specified arithmetic, but it does not discover or agree the missing approval step that prevents the month-end workflow.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "1.3": {
+        "EN": [17, 18],
+        "PT": [19]
+      }
+    }
+  },
+  {
+    "questionId": "tl-067",
+    "optionId": "o2",
+    "text": {
+      "en": "Validate the complete month-end workflow with users and revise the agreed requirements.",
+      "pt": "Validar o fluxo completo de fecho mensal com os utilizadores e rever os requisitos acordados."
+    },
+    "publishedExplanation": {
+      "en": "The absence-of-defects fallacy concerns satisfying specifications without satisfying actual user needs.",
+      "pt": "A falácia da ausência de defeitos diz respeito a cumprir especificações sem satisfazer as necessidades reais dos utilizadores."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: validar o fluxo com os utilizadores e rever requisitos trata a necessidade omitida; não autoriza ignorar a aprovação de negócio necessária.",
+    "reviewEN": "End-to-end validation with users tests whether the product meets actual needs, and revising agreed requirements addresses the omitted approval. Passing specified calculations alone is insufficient for usefulness.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "1.3": {
+        "EN": [17, 18],
+        "PT": [19]
+      }
+    }
+  },
+  {
+    "questionId": "tl-067",
+    "optionId": "o3",
+    "text": {
+      "en": "Concentrate testing on the calculation modules with the most historical defects.",
+      "pt": "Concentrar os testes nos módulos de cálculo com mais defeitos históricos."
+    },
+    "publishedExplanation": {
+      "en": "Defect clustering can guide effort, but the observed problem is missing business behaviour.",
+      "pt": "A concentração de defeitos pode orientar o esforço, mas o problema observado é comportamento de negócio em falta."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "A concentração de defeitos pode orientar esforço, mas o problema descrito é comportamento de negócio em falta e não maior incidência histórica nos cálculos.",
+    "reviewEN": "Focusing on defect-prone modules is a reasonable defect-clustering strategy in other circumstances, but historic calculation defect counts do not address the omitted workflow requirement described.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "1.3": {
+        "EN": [17, 18],
+        "PT": [19]
+      }
+    }
+  },
+  {
+    "questionId": "tl-067",
+    "optionId": "o4",
+    "text": {
+      "en": "Refresh the calculation test data to counter the declining effectiveness of repeated tests.",
+      "pt": "Renovar os dados de teste dos cálculos para contrariar a menor eficácia de testes repetidos."
+    },
+    "publishedExplanation": {
+      "en": "Tests wearing out is a different principle; changing calculation data does not establish workflow suitability.",
+      "pt": "O desgaste dos testes é um princípio diferente; mudar os dados dos cálculos não estabelece a adequação do fluxo."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Dados renovados podem combater desgaste de testes, mas aqui não foi demonstrado desgaste: o impedimento resulta da etapa necessária não especificada.",
+    "reviewEN": "Refreshing test data can address declining effectiveness of repetitive tests, but the demonstrated cause is a missing required workflow step, not evidence that old calculation data have worn out.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "1.3": {
+        "EN": [17, 18],
+        "PT": [19]
+      }
+    }
+  },
+  {
+    "questionId": "tl-068",
+    "optionId": "o1",
+    "text": {
+      "en": "Start test analysis when the corresponding development work product becomes available.",
+      "pt": "Iniciar a análise de teste quando o produto de trabalho de desenvolvimento correspondente estiver disponível."
+    },
+    "publishedExplanation": {
+      "en": "Early analysis and involvement in draft work products are good practices independent of the lifecycle model.",
+      "pt": "A análise antecipada e a participação nas versões iniciais dos produtos de trabalho são boas práticas independentes do modelo de ciclo de vida."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: a disponibilidade da versão inicial permite análise e revisão antecipadas, sem depender da conclusão de código executável ou de um modelo único.",
+    "reviewEN": "Starting analysis when the corresponding development work product is available supports early feedback across lifecycles. A draft specification is enough to start relevant analysis without waiting for executable code.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "2.1.2": {
+        "EN": [25, 26],
+        "PT": [27, 28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-068",
+    "optionId": "o2",
+    "text": {
+      "en": "Use the same test objectives for component testing and acceptance testing.",
+      "pt": "Usar os mesmos objetivos no teste de componentes e no teste de aceitação."
+    },
+    "publishedExplanation": {
+      "en": "Different test levels have specific objectives, helping avoid redundant activities.",
+      "pt": "Os níveis de teste diferentes têm objetivos específicos, ajudando a evitar atividades redundantes."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Os níveis de componentes e aceitação têm objetivos específicos e distintos; partilhar algumas preocupações não torna apropriado usar objetivos idênticos.",
+    "reviewEN": "Component and acceptance testing address different objectives. Reusing identical objectives across these levels is not a general good practice, regardless of lifecycle.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "2.1.2": {
+        "EN": [25, 26],
+        "PT": [27, 28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-068",
+    "optionId": "o3",
+    "text": {
+      "en": "Base review timing on completion of coding rather than availability of the draft.",
+      "pt": "Basear a calendarização da revisão na conclusão do código em vez da disponibilidade da versão inicial."
+    },
+    "publishedExplanation": {
+      "en": "Waiting for coding loses the benefit of reviewing the specification when it is first available.",
+      "pt": "Esperar pela conclusão do código perde a vantagem de rever a especificação quando fica disponível."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Esperar pela conclusão do código perde a oportunidade de feedback sobre a especificação disponível; não é condição para revisão estática inicial.",
+    "reviewEN": "Waiting for coding completion unnecessarily postpones analysis and review of a draft that is already available. Dynamic test readiness is not a prerequisite for analysing the specification.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "2.1.2": {
+        "EN": [25, 26],
+        "PT": [27, 28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-068",
+    "optionId": "o4",
+    "text": {
+      "en": "Apply the lifecycle's dynamic test sequence as the schedule for specification reviews.",
+      "pt": "Aplicar a sequência de testes dinâmicos do ciclo de vida como calendário das revisões da especificação."
+    },
+    "publishedExplanation": {
+      "en": "Static reviews can begin with drafts; their timing need not follow availability of executable software.",
+      "pt": "As revisões estáticas podem começar com versões iniciais; a sua calendarização não precisa de seguir a disponibilidade de software executável."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O calendário da execução dinâmica não determina o início de revisões de especificações; estas podem analisar esboços sem software executável.",
+    "reviewEN": "The sequence of dynamic test execution does not determine when specification reviews should occur. Static analysis and reviews can use the available draft before executable components exist.",
+    "publishedExplanationAssessmentPT": "Justificação publicada coerente com a alternativa neste cenário; as ressalvas e contraexemplos do relatório delimitam a leitura. Não se transforma possibilidade em garantia nem responsabilidade predominante em exclusividade.",
+    "references": {
+      "2.1.2": {
+        "EN": [25, 26],
+        "PT": [27, 28]
+      }
+    }
+  }
+]

@@ -1,0 +1,364 @@
+[
+  {
+    "questionId": "tl-022",
+    "original": {
+      "id": "tl-022",
+      "chapter": 4,
+      "lo": "FL-4.4.1",
+      "level": "K2",
+      "topic": "Error guessing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester selects date-parsing cases using personal knowledge of leap-day failures in similar products. Which technique best explains the basis for selecting these cases?",
+        "pt": "Um testador seleciona casos de interpretação de datas usando o seu conhecimento de falhas em dias bissextos em produtos semelhantes. Que técnica melhor explica a base de seleção destes casos?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Error guessing",
+            "pt": "Antecipação de erros"
+          },
+          "explanation": {
+            "en": "Prior experience guides likely defect targets.",
+            "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Statement testing",
+            "pt": "Teste de instruções"
+          },
+          "explanation": {
+            "en": "No code coverage criterion is given.",
+            "pt": "Não é indicado um critério de cobertura do código."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Exploratory testing",
+            "pt": "Teste exploratório"
+          },
+          "explanation": {
+            "en": "Exploratory testing combines learning, test design and execution. The described selection basis is knowledge of past failures, which specifically illustrates error guessing; the techniques can be combined in practice.",
+            "pt": "O teste exploratório combina aprendizagem, conceção e execução de testes. A base de seleção descrita é o conhecimento de falhas anteriores, o que ilustra especificamente a antecipação de erros; as técnicas podem ser combinadas na prática."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Boundary value analysis",
+            "pt": "Análise de valor fronteira"
+          },
+          "explanation": {
+            "en": "BVA derives cases from boundaries of ordered partitions. The scenario supplies past failure knowledge as the basis, not partition boundaries from which these cases were derived.",
+            "pt": "A BVA deriva casos das fronteiras de partições ordenadas. O cenário fornece conhecimento de falhas anteriores como base, não fronteiras de partições das quais tenham sido derivados estes casos."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Prior experience guides likely defect targets.",
+        "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.4.1",
+        "pages": [43, 44],
+        "report": "docs/academic-audit.md#fase-5b--tl-022"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-022",
+      "chapter": 4,
+      "lo": "FL-4.4.1",
+      "level": "K2",
+      "topic": "Error guessing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester selects date-parsing cases using personal knowledge of leap-day failures in similar products. Which technique best explains the basis for selecting these cases?",
+        "pt": "Um testador seleciona casos de interpretação de datas usando o seu conhecimento de falhas em dias bissextos em produtos semelhantes. Que técnica melhor explica a base de seleção destes casos?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Error guessing",
+            "pt": "Antecipação de erros"
+          },
+          "explanation": {
+            "en": "Prior experience guides likely defect targets.",
+            "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Statement testing",
+            "pt": "Teste de instruções"
+          },
+          "explanation": {
+            "en": "No code coverage criterion is given.",
+            "pt": "Não é indicado um critério de cobertura do código."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Exploratory testing",
+            "pt": "Teste exploratório"
+          },
+          "explanation": {
+            "en": "Exploratory testing combines learning, test design and execution. The described selection basis is knowledge of past failures, which specifically illustrates error guessing; the techniques can be combined in practice.",
+            "pt": "O teste exploratório combina aprendizagem, conceção e execução de testes. A base de seleção descrita é o conhecimento de falhas anteriores, o que ilustra especificamente a antecipação de erros; as técnicas podem ser combinadas na prática."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Boundary value analysis",
+            "pt": "Análise de valor fronteira"
+          },
+          "explanation": {
+            "en": "BVA derives cases from boundaries of ordered partitions. The scenario supplies past failure knowledge as the basis, not partition boundaries from which these cases were derived.",
+            "pt": "A BVA deriva casos das fronteiras de partições ordenadas. O cenário fornece conhecimento de falhas anteriores como base, não fronteiras de partições das quais tenham sido derivados estes casos."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Prior experience guides likely defect targets.",
+        "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.4.1",
+        "pages": [43, 44],
+        "report": "docs/academic-audit.md#fase-5b--tl-022"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false,
+    "optionalEditorialCandidate": {
+      "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+      "applied": false,
+      "requiresExplicitOwnerAuthorization": true,
+      "text": {
+        "pt": "Um testador seleciona casos de interpretação de datas usando o seu conhecimento de falhas no processamento de 29 de fevereiro em produtos semelhantes. Que técnica melhor explica a base de seleção destes casos?",
+        "en": "A tester selects date-parsing cases using personal knowledge of leap-day failures in similar products. Which technique best explains the basis for selecting these cases?"
+      },
+      "answerKeyImpact": "NONE",
+      "optionsAndExplanationsImpact": "NONE",
+      "currentVersionAndRevisionImpact": "NONE; documentation only",
+      "ifApprovedLater": "Only with explicit authorization: increment the changed item version, freeze current.10, introduce next content revision and extend historical/persistence/backup guards/tests; do not overwrite published history. No such work is done now.",
+      "regressionPlanIfAuthorized": [
+        "Pin unchanged90IDs/keys/LO/K/optionIDs and exact unaffected fields.",
+        "Assert approved PT wording and unchanged EN in rendered question and language switch.",
+        "Archive/reload current.10 and preserve older.1–.9; round-trip active/completed sessions and backups against their own bank.",
+        "Extend revision contracts and academic/release guards without weakening old checkpoints; run TypeScript/lint/build/unit and targeted Playwright for rendered text."
+      ]
+    }
+  },
+  {
+    "questionId": "tl-041",
+    "original": {
+      "id": "tl-041",
+      "chapter": 1,
+      "lo": "FL-1.5.2",
+      "level": "K1",
+      "topic": "Whole team approach",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A delivery team adopts the whole team approach. Which benefit is associated with this approach?",
+        "pt": "Uma equipa de desenvolvimento adota a whole team approach. Que vantagem está associada a esta abordagem?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Quality accountability is transferred entirely from developers to the testing role.",
+            "pt": "A responsabilidade pela qualidade é transferida integralmente dos programadores para a função de teste."
+          },
+          "explanation": {
+            "en": "Quality remains a responsibility shared by everyone, rather than being transferred to one role.",
+            "pt": "A qualidade continua a ser uma responsabilidade partilhada por todos, em vez de ser transferida para uma função."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Complementary skills and close collaboration help the team achieve its quality goals.",
+            "pt": "Competências complementares e colaboração próxima ajudam a equipa a alcançar os seus objetivos de qualidade."
+          },
+          "explanation": {
+            "en": "Sharing skills and collaborating across business, development and testing supports collective quality goals.",
+            "pt": "Partilhar competências e colaborar entre negócio, desenvolvimento e testes apoia os objetivos coletivos de qualidade."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Keeping testers outside team discussions preserves the main benefit of this approach.",
+            "pt": "Manter os testadores fora das discussões da equipa preserva a principal vantagem desta abordagem."
+          },
+          "explanation": {
+            "en": "The approach encourages collaboration, not isolation of testing from the team.",
+            "pt": "A abordagem incentiva a colaboração, não o isolamento dos testes em relação à equipa."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Testing starts only after developers have handed over all completed implementation work.",
+            "pt": "Os testes só começam depois de os programadores entregarem todo o trabalho de implementação concluído."
+          },
+          "explanation": {
+            "en": "This imposes a sequential handover; the whole team approach promotes cooperation throughout the work.",
+            "pt": "Isto impõe uma passagem de trabalho sequencial; a whole team approach promove a cooperação ao longo do trabalho."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "The whole team approach combines skills and shared responsibility. Tasks still require suitable skills and knowledge; context can require additional independence.",
+        "pt": "A whole team approach combina competências e responsabilidade partilhada. As tarefas continuam a exigir competências e conhecimentos adequados; o contexto pode exigir independência adicional."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "1.5.2",
+        "pages": [22],
+        "report": "docs/blueprint-validation.md#tl-041"
+      }
+    },
+    "proposed": {
+      "id": "tl-041",
+      "chapter": 1,
+      "lo": "FL-1.5.2",
+      "level": "K1",
+      "topic": "Whole team approach",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A delivery team adopts the whole team approach. Which benefit is associated with this approach?",
+        "pt": "Uma equipa de desenvolvimento adota a whole team approach. Que vantagem está associada a esta abordagem?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Quality accountability is transferred entirely from developers to the testing role.",
+            "pt": "A responsabilidade pela qualidade é transferida integralmente dos programadores para a função de teste."
+          },
+          "explanation": {
+            "en": "Quality remains a responsibility shared by everyone, rather than being transferred to one role.",
+            "pt": "A qualidade continua a ser uma responsabilidade partilhada por todos, em vez de ser transferida para uma função."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Complementary skills and close collaboration help the team achieve its quality goals.",
+            "pt": "Competências complementares e colaboração próxima ajudam a equipa a alcançar os seus objetivos de qualidade."
+          },
+          "explanation": {
+            "en": "Sharing skills and collaborating across business, development and testing supports collective quality goals.",
+            "pt": "Partilhar competências e colaborar entre negócio, desenvolvimento e testes apoia os objetivos coletivos de qualidade."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Keeping testers outside team discussions preserves the main benefit of this approach.",
+            "pt": "Manter os testadores fora das discussões da equipa preserva a principal vantagem desta abordagem."
+          },
+          "explanation": {
+            "en": "The approach encourages collaboration, not isolation of testing from the team.",
+            "pt": "A abordagem incentiva a colaboração, não o isolamento dos testes em relação à equipa."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Testing starts only after developers have handed over all completed implementation work.",
+            "pt": "Os testes só começam depois de os programadores entregarem todo o trabalho de implementação concluído."
+          },
+          "explanation": {
+            "en": "This imposes a sequential handover; the whole team approach promotes cooperation throughout the work.",
+            "pt": "Isto impõe uma passagem de trabalho sequencial; a whole team approach promove a cooperação ao longo do trabalho."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "The whole team approach combines skills and shared responsibility. Tasks still require suitable skills and knowledge; context can require additional independence.",
+        "pt": "A whole team approach combina competências e responsabilidade partilhada. As tarefas continuam a exigir competências e conhecimentos adequados; o contexto pode exigir independência adicional."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "1.5.2",
+        "pages": [22],
+        "report": "docs/blueprint-validation.md#tl-041"
+      }
+    },
+    "changed": false,
+    "optionalEditorialCandidate": {
+      "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+      "applied": false,
+      "requiresExplicitOwnerAuthorization": true,
+      "text": {
+        "pt": "Uma equipa responsável pela entrega adota a whole team approach (abordagem de toda a equipa). Que vantagem está associada a esta abordagem?",
+        "en": "A delivery team adopts the whole team approach. Which benefit is associated with this approach?"
+      },
+      "answerKeyImpact": "NONE",
+      "optionsAndExplanationsImpact": "NONE",
+      "currentVersionAndRevisionImpact": "NONE; documentation only",
+      "ifApprovedLater": "Only with explicit authorization: increment the changed item version, freeze current.10, introduce next content revision and extend historical/persistence/backup guards/tests; do not overwrite published history. No such work is done now.",
+      "regressionPlanIfAuthorized": [
+        "Pin unchanged90IDs/keys/LO/K/optionIDs and exact unaffected fields.",
+        "Assert approved PT wording and unchanged EN in rendered question and language switch.",
+        "Archive/reload current.10 and preserve older.1–.9; round-trip active/completed sessions and backups against their own bank.",
+        "Extend revision contracts and academic/release guards without weakening old checkpoints; run TypeScript/lint/build/unit and targeted Playwright for rendered text."
+      ]
+    }
+  }
+]

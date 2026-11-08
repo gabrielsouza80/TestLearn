@@ -1,0 +1,28 @@
+{
+  "consultedOn": "2026-11-06",
+  "pageConvention": "Physical PDF pages, one-based",
+  "limitations": {
+    "pt": "PT é tradução oficial v4.0/v1.0, não v4.0.1; PDFs locais identificados por hash e lidos novamente, URLs oficiais abertos na ferramenta web; sem afirmar download novo dos mesmos bytes. Sem exame humano SME ou calibração empírica.",
+    "en": "PT is official v4.0 translation v1.0, not v4.0.1; local PDFs were hashed/read again and official URLs opened through the web tool. No fresh identical-byte download, human SME review or empirical calibration is claimed."
+  },
+  "sources": [
+    {
+      "id": "SYL-EN",
+      "language": "EN",
+      "version": "4.0.1",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [38, 39, 40, 41, 42, 46, 47, 49, 50],
+      "officialURL": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf"
+    },
+    {
+      "id": "SYL-PT",
+      "language": "PT",
+      "version": "4.0 translation 1.0",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [41, 42, 43, 44, 45, 50, 51, 52, 54, 55, 56],
+      "officialURL": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf"
+    }
+  ]
+}

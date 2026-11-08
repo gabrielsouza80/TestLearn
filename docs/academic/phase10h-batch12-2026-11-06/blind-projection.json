@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-016",
+    "lo": "FL-3.2.3",
+    "level": "K1",
+    "text": {
+      "en": "Who normally facilitates a review meeting and helps keep it effective?",
+      "pt": "Quem normalmente facilita uma reunião de revisão e ajuda a mantê-la eficaz?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "The manager",
+          "pt": "O gestor"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "The moderator",
+          "pt": "O moderador"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "The review leader",
+          "pt": "O líder de revisão"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The scribe",
+          "pt": "O redator (anotador)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-018",
+    "lo": "FL-3.2.4",
+    "level": "K2",
+    "text": {
+      "en": "A team needs the most formal review type, with defined roles and collected metrics. Which fits?",
+      "pt": "Uma equipa precisa do tipo de revisão mais formal, com papéis definidos e métricas recolhidas. Qual é adequado?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Walkthrough",
+          "pt": "Walkthrough"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Informal review",
+          "pt": "Revisão informal"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Technical review",
+          "pt": "Revisão técnica"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Inspection",
+          "pt": "Inspeção"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-031",
+    "lo": "FL-5.1.1",
+    "level": "K2",
+    "text": {
+      "en": "A team needs a project-level document bringing together the agreed test scope, resources and approach. Which artifact addresses this need?",
+      "pt": "Uma equipa precisa de um documento ao nível do projeto que reúna o âmbito, os recursos e a abordagem de teste acordados. Que artefacto responde a esta necessidade?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Test execution schedule",
+          "pt": "Cronograma de execução de testes"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Test plan",
+          "pt": "Plano de testes"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Test completion report",
+          "pt": "Relatório de conclusão do teste"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Test policy",
+          "pt": "Política de testes"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-034",
+    "lo": "FL-5.2.3",
+    "level": "K2",
+    "text": {
+      "en": "Incorrect transfers and a cosmetic alignment issue have comparable estimated likelihood, but incorrect transfers have much higher impact. Which choice best bases test effort on the assessed product risk?",
+      "pt": "Transferências incorretas e um desalinhamento visual têm probabilidades estimadas comparáveis, mas as transferências incorretas têm impacto muito superior. Que escolha baseia melhor o esforço de teste no risco de produto avaliado?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Prioritize the visual issue because users notice it immediately",
+          "pt": "Dar prioridade ao problema visual porque os utilizadores o notam imediatamente"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Prioritize the visual issue because it is quicker to verify",
+          "pt": "Dar prioridade ao problema visual porque é mais rápido de verificar"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Allocate deeper testing to transfers, considering their likelihood and impact",
+          "pt": "Atribuir testes mais aprofundados às transferências, considerando a probabilidade e o impacto"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Treat comparable likelihood as comparable risk and split effort equally",
+          "pt": "Tratar probabilidades comparáveis como riscos comparáveis e dividir o esforço igualmente"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-039",
+    "lo": "FL-6.1.1",
+    "level": "K2",
+    "text": {
+      "en": "A team must generate thousands of simultaneous requests against a test environment and measure response latency under that generated load. Which tool fits best?",
+      "pt": "Uma equipa tem de gerar milhares de pedidos simultâneos contra um ambiente de teste e medir a latência de resposta sob essa carga gerada. Que ferramenta é mais adequada?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Application monitoring tool",
+          "pt": "Ferramenta de monitorização de aplicações"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Static analysis tool",
+          "pt": "Ferramenta de análise estática"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Test management tool",
+          "pt": "Ferramenta de gestão de testes"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Load testing tool",
+          "pt": "Ferramenta de teste de carga"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-042",
+    "lo": "FL-1.4.3",
+    "level": "K2",
+    "text": {
+      "en": "A tester analyses booking requirements and records what needs testing, ordered by risk. No test cases or scripts have been written yet. Which work product best represents the output of this analysis?",
+      "pt": "Um testador analisa requisitos de reservas e regista o que deve ser testado, ordenado por risco. Ainda não foram escritos casos de teste nem scripts. Que produto de trabalho melhor representa o resultado desta análise?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Executable automation scripts for the booking workflow.",
+          "pt": "Scripts de automação executáveis para o fluxo de reservas."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "A test completion report with archived results.",
+          "pt": "Um relatório de conclusão do teste com resultados arquivados."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Prioritised test conditions linked to the requirements.",
+          "pt": "Condições de teste priorizadas e ligadas aos requisitos."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Detailed test cases with input data and expected results.",
+          "pt": "Casos de teste detalhados com dados de entrada e resultados esperados."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-043",
+    "lo": "FL-2.1.6",
+    "level": "K2",
+    "text": {
+      "en": "At an iteration retrospective, the team identifies late interface feedback as a recurring problem. Which action best turns this finding into process improvement?",
+      "pt": "Numa retrospetiva de iteração, a equipa identifica o feedback tardio sobre interfaces como um problema recorrente. Que ação melhor transforma esta conclusão numa melhoria do processo?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Archive the suggestion without checking later whether anything changes.",
+          "pt": "Arquivar a sugestão sem verificar posteriormente se alguma coisa muda."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Restrict the discussion to fixing the current interface defects and exclude changes to the testing process.",
+          "pt": "Limitar a discussão à correção dos defeitos atuais das interfaces e excluir alterações ao processo de teste."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Agree on earlier interface reviews, assign responsibility, and check the outcome in the next iteration.",
+          "pt": "Acordar revisões de interfaces mais cedo, atribuir responsabilidades e verificar o resultado na iteração seguinte."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Use the retrospective to rank individual testers by the number of defects they missed.",
+          "pt": "Usar a retrospetiva para classificar individualmente os testadores pelo número de defeitos que não detetaram."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-045",
+    "lo": "FL-5.3.2",
+    "level": "K2",
+    "text": {
+      "en": "System testing is still in progress. Coverage is behind plan, an environment outage blocks work, and a high-risk area remains untested. Management must decide whether to adjust resources. Which report best supports this decision?",
+      "pt": "O teste de sistema ainda está em curso. A cobertura está abaixo do planeado, uma indisponibilidade do ambiente bloqueia o trabalho e uma área de risco elevado ainda não foi testada. A gestão tem de decidir se ajusta os recursos. Que relatório melhor apoia esta decisão?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "A progress report showing the reporting period, plan deviations, impediments, risk changes and planned next work.",
+          "pt": "Um relatório de progresso que apresenta o período reportado, os desvios do plano, os impedimentos, as alterações de risco e o trabalho seguinte planeado."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "A progress report listing individual activity totals without plan deviations, impediments or risk information.",
+          "pt": "Um relatório de progresso que lista totais de atividade individuais sem desvios do plano, impedimentos ou informação sobre riscos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "A defect report describing only one observed application failure.",
+          "pt": "Um relatório de defeito que descreve apenas uma falha observada na aplicação."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "A completion report declaring that the test level has ended and all exit criteria have been met.",
+          "pt": "Um relatório de conclusão que declara que o nível de teste terminou e todos os critérios de saída foram cumpridos."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1741 @@
+
+ RUN  v4.1.12 C:/TestLearn/tmp/develop-workspace
+
+ ❯ tests/integration/pedagogical-review-notice.test.tsx (2 tests | 2 failed) 1548ms
+   × shows the accessible notice in pt without revealing feedback or changing the session 919ms
+   × shows the accessible notice in en without revealing feedback or changing the session 586ms
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  01:16:59
+   Duration  14.02s (transform 922ms, setup 2.19s, import 4.82s, tests 1.55s, environment 5.12s)
+
+
+STDERR
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/pedagogical-review-notice.test.tsx > shows the accessible notice in pt without revealing feedback or changing the session
+TestingLibraryElementError: Unable to find an accessible element with the role "note" and name "Em revisão pedagógica"
+
+Here are the accessible roles:
+
+  link:
+
+  Name "Saltar para o conteúdo":
+  [36m<a[39m
+    [33mclass[39m=[32m"skip"[39m
+    [33mhref[39m=[32m"#main"[39m
+  [36m/>[39m
+
+  Name "TestLearnBeta públicaLEARN. PRACTICE. IMPROVE.":
+  [36m<a[39m
+    [33mclass[39m=[32m"brand"[39m
+    [33mhref[39m=[32m"#"[39m
+  [36m/>[39m
+
+  Name "Referência oficial ↗":
+  [36m<a[39m
+    [33mhref[39m=[32m"https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"[39m
+    [33mrel[39m=[32m"noreferrer"[39m
+    [33mtarget[39m=[32m"_blank"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  [36m<header[39m
+    [33mclass[39m=[32m"header"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  combobox:
+
+  Name "Idioma":
+  [36m<select[39m
+    [33maria-label[39m=[32m"Idioma"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  option:
+
+  Name "Português":
+  [36m<option[39m
+    [33mvalue[39m=[32m"pt"[39m
+  [36m/>[39m
+
+  Name "English":
+  [36m<option[39m
+    [33mvalue[39m=[32m"en"[39m
+  [36m/>[39m
+
+  Name "EN + PT":
+  [36m<option[39m
+    [33mvalue[39m=[32m"both"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  navigation:
+
+  Name "Navegação principal":
+  [36m<nav[39m
+    [33maria-label[39m=[32m"Navegação principal"[39m
+    [33mclass[39m=[32m"sidebar"[39m
+  [36m/>[39m
+
+  Name "Informação pública":
+  [36m<nav[39m
+    [33maria-label[39m=[32m"Informação pública"[39m
+    [33mclass[39m=[32m"public-links"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  button:
+
+  Name "Visão geral":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Praticar":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Progresso":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Inglês para QA":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Libertar edição neste separador":
+  [36m<button />[39m
+
+  Name "Confirmar resposta":
+  [36m<button[39m
+    [33mclass[39m=[32m"primary"[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Marcar para rever":
+  [36m<button[39m
+    [33maria-pressed[39m=[32m"false"[39m
+  [36m/>[39m
+
+  Name "Anterior":
+  [36m<button[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Seguinte":
+  [36m<button[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Questão 1, sem resposta":
+  [36m<button[39m
+    [33maria-current[39m=[32m"step"[39m
+    [33maria-label[39m=[32m"Questão 1, sem resposta"[39m
+    [33mclass[39m=[32m" "[39m
+  [36m/>[39m
+
+  Name "Terminar sessão":
+  [36m<button[39m
+    [33mclass[39m=[32m"primary"[39m
+  [36m/>[39m
+
+  Name "Sobre o TestLearn":
+  [36m<button />[39m
+
+  Name "Privacidade":
+  [36m<button />[39m
+
+  Name "Termos e limites":
+  [36m<button />[39m
+
+  Name "Ajuda e contacto":
+  [36m<button />[39m
+
+  --------------------------------------------------
+  strong:
+
+  Name "":
+  [36m<strong />[39m
+
+  Name "":
+  [36m<strong />[39m
+
+  Name "":
+  [36m<strong />[39m
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"eyebrow"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p[39m
+    [33maria-atomic[39m=[32m"true"[39m
+    [33maria-live[39m=[32m"polite"[39m
+    [33mclass[39m=[32m"save-status"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"legend"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p />[39m
+
+  --------------------------------------------------
+  main:
+
+  Name "":
+  [36m<main[39m
+    [33mid[39m=[32m"main"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  heading:
+
+  Name "Uma questão de cada vez":
+  [36m<h1[39m
+    [33mtabindex[39m=[32m"-1"[39m
+  [36m/>[39m
+
+  Name "No ambiente QA, versão 82: um utilizador de teste autorizado introduz a fatura sintética válida INV-7, com total 25, e seleciona Guardar. O requisito prevê HTTP 201 e um novo identificador de fatura; o resultado obtido é HTTP 500 e nenhuma fatura guardada. Está disponível o registo do pedido r17. Que relatório preparado regista corretamente a evidência para reprodução?":
+  [36m<h2 />[39m
+
+  Name "Navegador":
+  [36m<h2 />[39m
+
+  --------------------------------------------------
+  group:
+
+  Name "":
+  [36m<details[39m
+    [33mclass[39m=[32m"writer-settings"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<fieldset[39m
+    [33mclass[39m=[32m"session-workspace"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<details[39m
+    [33mclass[39m=[32m"learning-help"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<details[39m
+    [33mclass[39m=[32m"learning-help"[39m
+  [36m/>[39m
+
+  Name "Selecione 1 resposta.":
+  [36m<fieldset[39m
+    [33mclass[39m=[32m"options"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  timer:
+
+  Name "Tempo restante":
+  [36m<strong[39m
+    [33maria-label[39m=[32m"Tempo restante"[39m
+    [33maria-live[39m=[32m"off"[39m
+    [33mrole[39m=[32m"timer"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  term:
+
+  Name "":
+  [36m<dt />[39m
+
+  Name "":
+  [36m<dt />[39m
+
+  Name "":
+  [36m<dt />[39m
+
+  --------------------------------------------------
+  definition:
+
+  Name "":
+  [36m<dd />[39m
+
+  Name "":
+  [36m<dd />[39m
+
+  Name "":
+  [36m<dd />[39m
+
+  --------------------------------------------------
+  radio:
+
+  Name "Produção / versão 81; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; anexar r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o3-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  Name "QA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; causa confirmada: bloqueio mútuo na base de dados; anexar r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o4-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  Name "QA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; anexar r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o1-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  Name "QA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 500, sem fatura guardada; obtido: 201 e identificador; anexar r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o2-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  complementary:
+
+  Name "":
+  [36m<aside[39m
+    [33mclass[39m=[32m"navigator panel"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  contentinfo:
+
+  Name "":
+  [36m<footer />[39m
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"app"[39m
+    [36m>[39m
+      [36m<a[39m
+        [33mclass[39m=[32m"skip"[39m
+        [33mhref[39m=[32m"#main"[39m
+      [36m>[39m
+        [0mSaltar para o conteúdo[0m
+      [36m</a>[39m
+      [36m<header[39m
+        [33mclass[39m=[32m"header"[39m
+      [36m>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"brand"[39m
+          [33mhref[39m=[32m"#"[39m
+        [36m>[39m
+          [36m<span[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"brand-icon"[39m
+          [36m>[39m
+            [0mT[0m
+            [36m<span>[39m
+              [0m✓[0m
+            [36m</span>[39m
+          [36m</span>[39m
+          [0mTestLearn[0m
+          [36m<span[39m
+            [33mclass[39m=[32m"beta-badge"[39m
+          [36m>[39m
+            [0mBeta pública[0m
+          [36m</span>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"brand-caption"[39m
+          [36m>[39m
+            [0mLEARN. PRACTICE. IMPROVE.[0m
+          [36m</span>[39m
+        [36m</a>[39m
+        [36m<label[39m
+          [33mclass[39m=[32m"language"[39m
+        [36m>[39m
+          [0mIdioma[0m
+          [36m<select[39m
+            [33maria-label[39m=[32m"Idioma"[39m
+          [36m>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"pt"[39m
+            [36m>[39m
+              [0mPortuguês[0m
+            [36m</option>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"en"[39m
+            [36m>[39m
+              [0mEnglish[0m
+            [36m</option>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"both"[39m
+            [36m>[39m
+              [0mEN + PT[0m
+            [36m</option>[39m
+          [36m</select>[39m
+        [36m</label>[39m
+      [36m</header>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"layout"[39m
+      [36m>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Navegação principal"[39m
+          [33mclass[39m=[32m"sidebar"[39m
+        [36m>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"nav-label"[39m
+          [36m>[39m
+            [0mCTFL 4.0.1[0m
+          [36m</span>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0m◫[0m
+            [36m</span>[39m
+            [0mVisão geral[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0m↗[0m
+            [36m</span>[39m
+            [0mPraticar[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0m◷[0m
+            [36m</span>[39m
+            [0mProgresso[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0mAa[0m
+            [36m</span>[39m
+            [0mInglês para QA[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"sidebar-note"[39m
+          [36m>[39m
+            [36m<strong>[39m
+              [0mO conhecimento constrói-se.[0m
+            [36m</strong>[39m
+            [36m<p>[39m
+              [0mReserve alguns minutos. Aprenda um conceito. Volte amanhã.[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<small>[39m
+            [0mGratuito · Sem conta · Dados locais[0m
+          [36m</small>[39m
+        [36m</nav>[39m
+        [36m<main[39m
+          [33mid[39m=[32m"main"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"page-heading"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"eyebrow"[39m
+            [36m>[39m
+              [0mAPRENDER, UM PASSO DE CADA VEZ[0m
+            [36m</p>[39m
+            [36m<h1[39m
+              [33mtabindex[39m=[32m"-1"[39m
+            [36m>[39m
+              [0mUma questão de cada vez[0m
+            [36m</h1>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"writer-status-row"[39m
+            [33mdata-write-status[39m=[32m"ready"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33maria-atomic[39m=[32m"true"[39m
+              [33maria-live[39m=[32m"polite"[39m
+              [33mclass[39m=[32m"save-status"[39m
+            [36m>[39m
+              [0mPronto para guardar neste navegador.[0m
+            [36m</p>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"writer-actions"[39m
+            [36m>[39m
+              [36m<details[39m
+                [33mclass[39m=[32m"writer-settings"[39m
+              [36m>[39m
+                [36m<summary>[39m
+                  [0mOpções de edição[0m
+                [36m</summary>[39m
+                [36m<button>[39m
+                  [0mLibertar edição neste separador[0m
+                [36m</button>[39m
+              [36m</details>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"session-bar"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mPrática orientada[0m
+            [36m</span>[39m
+            [36m<strong[39m
+              [33maria-label[39m=[32m"Tempo restante"[39m
+              [33maria-live[39m=[32m"off"[39m
+              [33mrole[39m=[32m"timer"[39m
+            [36m>[39m
+              [0mSem limite de tempo[0m
+            [36m</strong>[39m
+          [36m</div>[39m
+          [36m<fieldset[39m
+            [33mclass[39m=[32m"session-workspace"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"exam-layout"[39m
+            [36m>[39m
+              [36m<section[39m
+                [33mclass[39m=[32m"question panel"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question-meta"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mQuestão[0m
+                    [0m [0m
+                    [0m1[0m
+                    [0m /[0m
+                    [0m [0m
+                    [0m1[0m
+                  [36m</span>[39m
+                  [36m<span>[39m
+                    [0mFL-5.5.1[0m
+                    [0m · [0m
+                    [0mK3[0m
+                    [0m —[0m
+                    [0m [0m
+                    [0mAplicar[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<details[39m
+                  [33mclass[39m=[32m"learning-help"[39m
+                [36m>[39m
+                  [36m<summary>[39m
+                    [0mK1, K2 e K3 — o que significam?[0m
+                  [36m</summary>[39m
+                  [36m<dl>[39m
+                    [36m<div>[39m
+                      [36m<dt>[39m
+                        [0mK1[0m
+                        [0m — [0m
+                        [0mRecordar[0m
+                      [36m</dt>[39m
+                      [36m<dd>[39m
+                        [0mIdentificar, reconhecer ou recordar conhecimento.[0m
+                      [36m</dd>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [36m<dt>[39m
+                        [0mK2[0m
+                        [0m — [0m
+                        [0mCompreender[0m
+                      [36m</dt>[39m
+                      [36m<dd>[39m
+                        [0mExplicar, classificar, comparar ou interpretar conceitos.[0m
+                      [36m</dd>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [36m<dt>[39m
+                        [0mK3[0m
+                        [0m — [0m
+                        [0mAplicar[0m
+                      [36m</dt>[39m
+                      [36m<dd>[39m
+                        [0mUtilizar técnicas ou conhecimento para resolver um problema. Não significa necessariamente uma pergunta mais difícil ou longa.[0m
+                      [36m</dd>[39m
+                    [36m</div>[39m
+                  [36m</dl>[39m
+                [36m</details>[39m
+                [36m<details[39m
+                  [33mclass[39m=[32m"learning-help"[39m
+                [36m>[39m
+                  [36m<summary>[39m
+                    [0mConhecer o objetivo FL-5.5.1[0m
+                  [36m</summary>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"objective-description"[39m
+                  [36m>[39m
+                    [36m<p>[39m
+                      [36m<strong>[39m
+                        [0mFL-5.5.1[0m
+                      [36m</strong>[39m
+                      [0m —[0m
+                      [0m [0m
+                      [0mElaborar um relatório de defeitos[0m
+                    [36m</p>[39m
+                    [36m<p>[39m
+                      [0mCapítulo[0m
+                      [0m [0m
+                      [0m5[0m
+                      [0m:[0m
+                      [0m [0m
+                      [0mGestão das atividades de teste[0m
+                      [0m · §[0m
+                      [0m5.5[0m
+                      [0m — [0m
+                      [0mGestão de Defeitos[0m
+                    [36m</p>[39m
+                    [36m<p>[39m
+                      [36m<strong>[39m
+                        [0mK3[0m
+                        [0m —[0m
+                        [0m [0m
+                        [0mAplicar[0m
+                      [36m</strong>[39m
+                      [0m:[0m
+                      [0m [0m
+                      [0mUtilizar técnicas ou conhecimento para resolver um problema. Não significa necessariamente uma pergunta mais difícil ou longa.[0m
+                    [36m</p>[39m
+                    [36m<small>[39m
+                      [0mDescrição EN: syllabus 4.0.1, PDF p.47. PT: redação do syllabus 4.0/PT v1.0, PDF p.52.[0m
+                    [36m</small>[39m
+                  [36m</div>[39m
+                [36m</details>[39m
+                [36m<h2>[39m
+                  [0mNo ambiente QA, versão 82: um utilizador de teste autorizado introduz a fatura sintética válida INV-7, com total 25, e seleciona Guardar. O requisito prevê HTTP 201 e um novo identificador de fatura; o resultado obtido é HTTP 500 e nenhuma fatura guardada. Está disponível o registo do pedido r17. Que relatório preparado regista corretamente a evidência para reprodução?[0m
+                [36m</h2>[39m
+                [36m<fieldset[39m
+                  [33mclass[39m=[32m"options"[39m
+                [36m>[39m
+                  [36m<legend>[39m
+                    [0mSelecione 1 resposta.[0m
+                  [36m</legend>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o3-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o3-letter"[39m
+                    [36m>[39m
+                      [0mOpção A[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mA[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mProdução / versão 81; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; anexar r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o4-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o4-letter"[39m
+                    [36m>[39m
+                      [0mOpção B[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mB[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mQA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; causa confirmada: bloqueio mútuo na base de dados; anexar r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o1-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o1-letter"[39m
+                    [36m>[39m
+                      [0mOpção C[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mC[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mQA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 201 e identificador; obtido: 500, sem fatura guardada; anexar r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o2-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o2-letter"[39m
+                    [36m>[39m
+                      [0mOpção D[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mD[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mQA / versão 82; utilizador autorizado; INV-7, total 25; selecionar Guardar; esperado: 500, sem fatura guardada; obtido: 201 e identificador; anexar r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                [36m</fieldset>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"primary"[39m
+                  [33mdisabled[39m=[32m""[39m
+                [36m>[39m
+                  [0mConfirmar resposta[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question-actions"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33maria-pressed[39m=[32m"false"[39m
+                  [36m>[39m
+                    [0mMarcar para rever[0m
+                  [36m</button>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mdisabled[39m=[32m""[39m
+                    [36m>[39m
+                      [0mAnterior[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mdisabled[39m=[32m""[39m
+                    [36m>[39m
+                      [0mSeguinte[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</section>[39m
+              [36m<aside[39m
+                [33mclass[39m=[32m"navigator panel"[39m
+              [36m>[39m
+                [36m<h2>[39m
+                  [0mNavegador[0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question-grid"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33maria-current[39m=[32m"step"[39m
+                    [33maria-label[39m=[32m"Questão 1, sem resposta"[39m
+                    [33mclass[39m=[32m" "[39m
+                  [36m>[39m
+                    [0m1[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"legend"[39m
+                [36m>[39m
+                  [0m●: respondida (não indica correção) · *: marcada · contorno: atual[0m
+                [36m</p>[39m
+                [36m<p>[39m
+                  [0m0[0m
+                  [0m [0m
+                  [0m/ [0m
+                  [0m1[0m
+                  [0m [0m
+                  [0mrespondidas[0m
+                [36m</p>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"primary"[39m
+                [36m>[39m
+                  [0mTerminar sessão[0m
+                [36m</button>[39m
+                [36m<small>[39m
+                  [0mSó as alterações confirmadas como guardadas estão neste navegador. Um backup local permite transferi-las.[0m
+                [36m</small>[39m
+              [36m</aside>[39m
+            [36m</div>[39m
+          [36m</fieldset>[39m
+        [36m</main>[39m
+      [36m</div>[39m
+      [36m<footer>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Informação pública"[39m
+          [33mclass[39m=[32m"public-links"[39m
+        [36m>[39m
+          [36m<button>[39m
+            [0mSobre o TestLearn[0m
+          [36m</button>[39m
+          [36m<button>[39m
+            [0mPrivacidade[0m
+          [36m</button>[39m
+          [36m<button>[39m
+            [0mTermos e limites[0m
+          [36m</button>[39m
+          [36m<button>[39m
+            [0mAjuda e contacto[0m
+          [36m</button>[39m
+        [36m</nav>[39m
+        [0mTestLearn ·[0m
+        [0m [0m
+        [0mAprendizagem independente. Sem afiliação ou aprovação do ISTQB®.[0m
+        [0m [0m
+        [36m<a[39m
+          [33mhref[39m=[32m"https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"[39m
+          [33mrel[39m=[32m"noreferrer"[39m
+          [33mtarget[39m=[32m"_blank"[39m
+        [36m>[39m
+          [0mReferência oficial[0m
+          [0m ↗[0m
+        [36m</a>[39m
+      [36m</footer>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ tests/integration/pedagogical-review-notice.test.tsx:23:25
+     21|   await screen.findByText('Pronto para guardar neste navegador.', { ex…
+     22|   await user.selectOptions(screen.getByLabelText('Idioma', { exact: tr…
+     23|   const notice = screen.getByRole('note', { name: title, exact: true }…
+       |                         ^
+     24|   expect(notice).toHaveAccessibleDescription(description);
+     25|   expect(within(notice).getByText(description, { exact: true })).toBeV…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/integration/pedagogical-review-notice.test.tsx > shows the accessible notice in en without revealing feedback or changing the session
+TestingLibraryElementError: Unable to find an accessible element with the role "note" and name "Under pedagogical review"
+
+Here are the accessible roles:
+
+  link:
+
+  Name "Skip to content":
+  [36m<a[39m
+    [33mclass[39m=[32m"skip"[39m
+    [33mhref[39m=[32m"#main"[39m
+  [36m/>[39m
+
+  Name "TestLearnPublic BetaLEARN. PRACTICE. IMPROVE.":
+  [36m<a[39m
+    [33mclass[39m=[32m"brand"[39m
+    [33mhref[39m=[32m"#"[39m
+  [36m/>[39m
+
+  Name "Official reference ↗":
+  [36m<a[39m
+    [33mhref[39m=[32m"https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"[39m
+    [33mrel[39m=[32m"noreferrer"[39m
+    [33mtarget[39m=[32m"_blank"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  banner:
+
+  Name "":
+  [36m<header[39m
+    [33mclass[39m=[32m"header"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  combobox:
+
+  Name "Language":
+  [36m<select[39m
+    [33maria-label[39m=[32m"Language"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  option:
+
+  Name "Português":
+  [36m<option[39m
+    [33mvalue[39m=[32m"pt"[39m
+  [36m/>[39m
+
+  Name "English":
+  [36m<option[39m
+    [33mvalue[39m=[32m"en"[39m
+  [36m/>[39m
+
+  Name "EN + PT":
+  [36m<option[39m
+    [33mvalue[39m=[32m"both"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  navigation:
+
+  Name "Main navigation":
+  [36m<nav[39m
+    [33maria-label[39m=[32m"Main navigation"[39m
+    [33mclass[39m=[32m"sidebar"[39m
+  [36m/>[39m
+
+  Name "Public information":
+  [36m<nav[39m
+    [33maria-label[39m=[32m"Public information"[39m
+    [33mclass[39m=[32m"public-links"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  button:
+
+  Name "Overview":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Practice":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Progress":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "English for QA":
+  [36m<button[39m
+    [33mclass[39m=[32m"nav-item"[39m
+  [36m/>[39m
+
+  Name "Release editing in this tab":
+  [36m<button />[39m
+
+  Name "Check answer":
+  [36m<button[39m
+    [33mclass[39m=[32m"primary"[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Flag for review":
+  [36m<button[39m
+    [33maria-pressed[39m=[32m"false"[39m
+  [36m/>[39m
+
+  Name "Previous":
+  [36m<button[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Next":
+  [36m<button[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Question 1, unanswered":
+  [36m<button[39m
+    [33maria-current[39m=[32m"step"[39m
+    [33maria-label[39m=[32m"Question 1, unanswered"[39m
+    [33mclass[39m=[32m" "[39m
+  [36m/>[39m
+
+  Name "Finish session":
+  [36m<button[39m
+    [33mclass[39m=[32m"primary"[39m
+  [36m/>[39m
+
+  Name "About TestLearn":
+  [36m<button />[39m
+
+  Name "Privacy":
+  [36m<button />[39m
+
+  Name "Terms and limitations":
+  [36m<button />[39m
+
+  Name "Help and contact":
+  [36m<button />[39m
+
+  --------------------------------------------------
+  strong:
+
+  Name "":
+  [36m<strong />[39m
+
+  Name "":
+  [36m<strong />[39m
+
+  Name "":
+  [36m<strong />[39m
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"eyebrow"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p[39m
+    [33maria-atomic[39m=[32m"true"[39m
+    [33maria-live[39m=[32m"polite"[39m
+    [33mclass[39m=[32m"save-status"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p />[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"legend"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p />[39m
+
+  --------------------------------------------------
+  main:
+
+  Name "":
+  [36m<main[39m
+    [33mid[39m=[32m"main"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  heading:
+
+  Name "One question at a time":
+  [36m<h1[39m
+    [33mtabindex[39m=[32m"-1"[39m
+  [36m/>[39m
+
+  Name "In QA, build 82: an authorised test user enters valid synthetic invoice INV-7 with total 25 and selects Save. The requirement expects HTTP 201 and a new invoice ID; the observed result is HTTP 500 and no saved invoice. Log request r17 is available. Which prepared report accurately records the evidence for reproduction?":
+  [36m<h2 />[39m
+
+  Name "Navigator":
+  [36m<h2 />[39m
+
+  --------------------------------------------------
+  group:
+
+  Name "":
+  [36m<details[39m
+    [33mclass[39m=[32m"writer-settings"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<fieldset[39m
+    [33mclass[39m=[32m"session-workspace"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<details[39m
+    [33mclass[39m=[32m"learning-help"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<details[39m
+    [33mclass[39m=[32m"learning-help"[39m
+  [36m/>[39m
+
+  Name "Select 1 answer.":
+  [36m<fieldset[39m
+    [33mclass[39m=[32m"options"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  timer:
+
+  Name "Time remaining":
+  [36m<strong[39m
+    [33maria-label[39m=[32m"Time remaining"[39m
+    [33maria-live[39m=[32m"off"[39m
+    [33mrole[39m=[32m"timer"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  term:
+
+  Name "":
+  [36m<dt />[39m
+
+  Name "":
+  [36m<dt />[39m
+
+  Name "":
+  [36m<dt />[39m
+
+  --------------------------------------------------
+  definition:
+
+  Name "":
+  [36m<dd />[39m
+
+  Name "":
+  [36m<dd />[39m
+
+  Name "":
+  [36m<dd />[39m
+
+  --------------------------------------------------
+  radio:
+
+  Name "Production / build 81; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; attach r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o3-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  Name "QA / build 82; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; confirmed cause: database deadlock; attach r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o4-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  Name "QA / build 82; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; attach r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o1-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  Name "QA / build 82; authorised user; INV-7, total 25; select Save; expected: 500, no saved invoice; actual: 201 and invoice ID; attach r17.":
+  [36m<input[39m
+    [33maria-describedby[39m=[32m"tl-038-o2-letter"[39m
+    [33mname[39m=[32m"tl-038"[39m
+    [33mtype[39m=[32m"radio"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  complementary:
+
+  Name "":
+  [36m<aside[39m
+    [33mclass[39m=[32m"navigator panel"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  contentinfo:
+
+  Name "":
+  [36m<footer />[39m
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"app"[39m
+    [36m>[39m
+      [36m<a[39m
+        [33mclass[39m=[32m"skip"[39m
+        [33mhref[39m=[32m"#main"[39m
+      [36m>[39m
+        [0mSkip to content[0m
+      [36m</a>[39m
+      [36m<header[39m
+        [33mclass[39m=[32m"header"[39m
+      [36m>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"brand"[39m
+          [33mhref[39m=[32m"#"[39m
+        [36m>[39m
+          [36m<span[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"brand-icon"[39m
+          [36m>[39m
+            [0mT[0m
+            [36m<span>[39m
+              [0m✓[0m
+            [36m</span>[39m
+          [36m</span>[39m
+          [0mTestLearn[0m
+          [36m<span[39m
+            [33mclass[39m=[32m"beta-badge"[39m
+          [36m>[39m
+            [0mPublic Beta[0m
+          [36m</span>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"brand-caption"[39m
+          [36m>[39m
+            [0mLEARN. PRACTICE. IMPROVE.[0m
+          [36m</span>[39m
+        [36m</a>[39m
+        [36m<label[39m
+          [33mclass[39m=[32m"language"[39m
+        [36m>[39m
+          [0mLanguage[0m
+          [36m<select[39m
+            [33maria-label[39m=[32m"Language"[39m
+          [36m>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"pt"[39m
+            [36m>[39m
+              [0mPortuguês[0m
+            [36m</option>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"en"[39m
+            [36m>[39m
+              [0mEnglish[0m
+            [36m</option>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"both"[39m
+            [36m>[39m
+              [0mEN + PT[0m
+            [36m</option>[39m
+          [36m</select>[39m
+        [36m</label>[39m
+      [36m</header>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"layout"[39m
+      [36m>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Main navigation"[39m
+          [33mclass[39m=[32m"sidebar"[39m
+        [36m>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"nav-label"[39m
+          [36m>[39m
+            [0mCTFL 4.0.1[0m
+          [36m</span>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0m◫[0m
+            [36m</span>[39m
+            [0mOverview[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0m↗[0m
+            [36m</span>[39m
+            [0mPractice[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0m◷[0m
+            [36m</span>[39m
+            [0mProgress[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"nav-item"[39m
+          [36m>[39m
+            [36m<span[39m
+              [33maria-hidden[39m=[32m"true"[39m
+            [36m>[39m
+              [0mAa[0m
+            [36m</span>[39m
+            [0mEnglish for QA[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"sidebar-note"[39m
+          [36m>[39m
+            [36m<strong>[39m
+              [0mKnowledge takes practice.[0m
+            [36m</strong>[39m
+            [36m<p>[39m
+              [0mTake a few minutes. Learn one concept. Come back tomorrow.[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<small>[39m
+            [0mFree · No account · Local data[0m
+          [36m</small>[39m
+        [36m</nav>[39m
+        [36m<main[39m
+          [33mid[39m=[32m"main"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"page-heading"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"eyebrow"[39m
+            [36m>[39m
+              [0mLEARN, ONE STEP AT A TIME[0m
+            [36m</p>[39m
+            [36m<h1[39m
+              [33mtabindex[39m=[32m"-1"[39m
+            [36m>[39m
+              [0mOne question at a time[0m
+            [36m</h1>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"writer-status-row"[39m
+            [33mdata-write-status[39m=[32m"ready"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33maria-atomic[39m=[32m"true"[39m
+              [33maria-live[39m=[32m"polite"[39m
+              [33mclass[39m=[32m"save-status"[39m
+            [36m>[39m
+              [0mReady to save in this browser.[0m
+            [36m</p>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"writer-actions"[39m
+            [36m>[39m
+              [36m<details[39m
+                [33mclass[39m=[32m"writer-settings"[39m
+              [36m>[39m
+                [36m<summary>[39m
+                  [0mEditing options[0m
+                [36m</summary>[39m
+                [36m<button>[39m
+                  [0mRelease editing in this tab[0m
+                [36m</button>[39m
+              [36m</details>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"session-bar"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mGuided practice[0m
+            [36m</span>[39m
+            [36m<strong[39m
+              [33maria-label[39m=[32m"Time remaining"[39m
+              [33maria-live[39m=[32m"off"[39m
+              [33mrole[39m=[32m"timer"[39m
+            [36m>[39m
+              [0mUntimed[0m
+            [36m</strong>[39m
+          [36m</div>[39m
+          [36m<fieldset[39m
+            [33mclass[39m=[32m"session-workspace"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"exam-layout"[39m
+            [36m>[39m
+              [36m<section[39m
+                [33mclass[39m=[32m"question panel"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question-meta"[39m
+                [36m>[39m
+                  [36m<span>[39m
+                    [0mQuestion[0m
+                    [0m [0m
+                    [0m1[0m
+                    [0m /[0m
+                    [0m [0m
+                    [0m1[0m
+                  [36m</span>[39m
+                  [36m<span>[39m
+                    [0mFL-5.5.1[0m
+                    [0m · [0m
+                    [0mK3[0m
+                    [0m —[0m
+                    [0m [0m
+                    [0mApply[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<details[39m
+                  [33mclass[39m=[32m"learning-help"[39m
+                [36m>[39m
+                  [36m<summary>[39m
+                    [0mK1, K2 and K3 — what do they mean?[0m
+                  [36m</summary>[39m
+                  [36m<dl>[39m
+                    [36m<div>[39m
+                      [36m<dt>[39m
+                        [0mK1[0m
+                        [0m — [0m
+                        [0mRemember[0m
+                      [36m</dt>[39m
+                      [36m<dd>[39m
+                        [0mIdentify, recognize or recall knowledge.[0m
+                      [36m</dd>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [36m<dt>[39m
+                        [0mK2[0m
+                        [0m — [0m
+                        [0mUnderstand[0m
+                      [36m</dt>[39m
+                      [36m<dd>[39m
+                        [0mExplain, classify, compare or interpret concepts.[0m
+                      [36m</dd>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [36m<dt>[39m
+                        [0mK3[0m
+                        [0m — [0m
+                        [0mApply[0m
+                      [36m</dt>[39m
+                      [36m<dd>[39m
+                        [0mUse techniques or knowledge to solve a problem. This does not necessarily mean a harder or longer question.[0m
+                      [36m</dd>[39m
+                    [36m</div>[39m
+                  [36m</dl>[39m
+                [36m</details>[39m
+                [36m<details[39m
+                  [33mclass[39m=[32m"learning-help"[39m
+                [36m>[39m
+                  [36m<summary>[39m
+                    [0mUnderstand objective FL-5.5.1[0m
+                  [36m</summary>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"objective-description"[39m
+                  [36m>[39m
+                    [36m<p>[39m
+                      [36m<strong>[39m
+                        [0mFL-5.5.1[0m
+                      [36m</strong>[39m
+                      [0m —[0m
+                      [0m [0m
+                      [0mPrepare a defect report[0m
+                    [36m</p>[39m
+                    [36m<p>[39m
+                      [0mChapter[0m
+                      [0m [0m
+                      [0m5[0m
+                      [0m:[0m
+                      [0m [0m
+                      [0mManaging test activities[0m
+                      [0m · §[0m
+                      [0m5.5[0m
+                      [0m — [0m
+                      [0mDefect Management[0m
+                    [36m</p>[39m
+                    [36m<p>[39m
+                      [36m<strong>[39m
+                        [0mK3[0m
+                        [0m —[0m
+                        [0m [0m
+                        [0mApply[0m
+                      [36m</strong>[39m
+                      [0m:[0m
+                      [0m [0m
+                      [0mUse techniques or knowledge to solve a problem. This does not necessarily mean a harder or longer question.[0m
+                    [36m</p>[39m
+                    [36m<small>[39m
+                      [0mEN wording: syllabus 4.0.1, PDF p.47. PT: wording from syllabus 4.0/PT v1.0, PDF p.52.[0m
+                    [36m</small>[39m
+                  [36m</div>[39m
+                [36m</details>[39m
+                [36m<h2>[39m
+                  [0mIn QA, build 82: an authorised test user enters valid synthetic invoice INV-7 with total 25 and selects Save. The requirement expects HTTP 201 and a new invoice ID; the observed result is HTTP 500 and no saved invoice. Log request r17 is available. Which prepared report accurately records the evidence for reproduction?[0m
+                [36m</h2>[39m
+                [36m<fieldset[39m
+                  [33mclass[39m=[32m"options"[39m
+                [36m>[39m
+                  [36m<legend>[39m
+                    [0mSelect 1 answer.[0m
+                  [36m</legend>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o3-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o3-letter"[39m
+                    [36m>[39m
+                      [0mOption A[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mA[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mProduction / build 81; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; attach r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o4-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o4-letter"[39m
+                    [36m>[39m
+                      [0mOption B[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mB[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mQA / build 82; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; confirmed cause: database deadlock; attach r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o1-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o1-letter"[39m
+                    [36m>[39m
+                      [0mOption C[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mC[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mQA / build 82; authorised user; INV-7, total 25; select Save; expected: 201 and invoice ID; actual: 500, no saved invoice; attach r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"option"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"tl-038-o2-letter"[39m
+                      [33mname[39m=[32m"tl-038"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mhidden[39m=[32m""[39m
+                      [33mid[39m=[32m"tl-038-o2-letter"[39m
+                    [36m>[39m
+                      [0mOption D[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"option-letter"[39m
+                    [36m>[39m
+                      [0mD[0m
+                      [0m.[0m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"option-text"[39m
+                    [36m>[39m
+                      [0mQA / build 82; authorised user; INV-7, total 25; select Save; expected: 500, no saved invoice; actual: 201 and invoice ID; attach r17.[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                [36m</fieldset>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"primary"[39m
+                  [33mdisabled[39m=[32m""[39m
+                [36m>[39m
+                  [0mCheck answer[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question-actions"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33maria-pressed[39m=[32m"false"[39m
+                  [36m>[39m
+                    [0mFlag for review[0m
+                  [36m</button>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mdisabled[39m=[32m""[39m
+                    [36m>[39m
+                      [0mPrevious[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mdisabled[39m=[32m""[39m
+                    [36m>[39m
+                      [0mNext[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</section>[39m
+              [36m<aside[39m
+                [33mclass[39m=[32m"navigator panel"[39m
+              [36m>[39m
+                [36m<h2>[39m
+                  [0mNavigator[0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question-grid"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33maria-current[39m=[32m"step"[39m
+                    [33maria-label[39m=[32m"Question 1, unanswered"[39m
+                    [33mclass[39m=[32m" "[39m
+                  [36m>[39m
+                    [0m1[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"legend"[39m
+                [36m>[39m
+                  [0m●: answered (not correctness) · *: flagged · outline: current[0m
+                [36m</p>[39m
+                [36m<p>[39m
+                  [0m0[0m
+                  [0m [0m
+                  [0m/ [0m
+                  [0m1[0m
+                  [0m [0m
+                  [0manswered[0m
+                [36m</p>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"primary"[39m
+                [36m>[39m
+                  [0mFinish session[0m
+                [36m</button>[39m
+                [36m<small>[39m
+                  [0mOnly changes confirmed as saved are in this browser. A local backup lets you transfer them.[0m
+                [36m</small>[39m
+              [36m</aside>[39m
+            [36m</div>[39m
+          [36m</fieldset>[39m
+        [36m</main>[39m
+      [36m</div>[39m
+      [36m<footer>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Public information"[39m
+          [33mclass[39m=[32m"public-links"[39m
+        [36m>[39m
+          [36m<button>[39m
+            [0mAbout TestLearn[0m
+          [36m</button>[39m
+          [36m<button>[39m
+            [0mPrivacy[0m
+          [36m</button>[39m
+          [36m<button>[39m
+            [0mTerms and limitations[0m
+          [36m</button>[39m
+          [36m<button>[39m
+            [0mHelp and contact[0m
+          [36m</button>[39m
+        [36m</nav>[39m
+        [0mTestLearn ·[0m
+        [0m [0m
+        [0mIndependent learning. No ISTQB® affiliation or endorsement.[0m
+        [0m [0m
+        [36m<a[39m
+          [33mhref[39m=[32m"https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"[39m
+          [33mrel[39m=[32m"noreferrer"[39m
+          [33mtarget[39m=[32m"_blank"[39m
+        [36m>[39m
+          [0mOfficial reference[0m
+          [0m ↗[0m
+        [36m</a>[39m
+      [36m</footer>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ tests/integration/pedagogical-review-notice.test.tsx:23:25
+     21|   await screen.findByText('Pronto para guardar neste navegador.', { ex…
+     22|   await user.selectOptions(screen.getByLabelText('Idioma', { exact: tr…
+     23|   const notice = screen.getByRole('note', { name: title, exact: true }…
+       |                         ^
+     24|   expect(notice).toHaveAccessibleDescription(description);
+     25|   expect(within(notice).getByText(description, { exact: true })).toBeV…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+

@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "scope": "Phase 10H Batch 7 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-06",
+  "reviewMethod": "AI_REVIEWED",
+  "humanApprovedCount": 0,
+  "ownerAcceptedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-022",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.4.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 3,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c",
+      "afterCanonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-022",
+        "answer": ["o1"],
+        "derivation": "The basis is the tester’s personal knowledge of failures in similar products, an experience-based selection rationale: error guessing. Statement testing requires code statements; no such basis is given. Exploratory testing emphasizes concurrent learning/design/execution, which is not described. Dates including29February could be used in boundary tests, but no ordered partitions, limits, precision or boundary-derived selection are given; date subject matter alone does not establish BVA. The Portuguese leap-day phrase is awkward/potentially less precise but does not remove the explicitly experiential selection basis. “O seu conhecimento” retains personal possession without requiring first-hand witnessing. Unique offered answero1."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "linguisticAssessment": "CONTEXTUALLY_EQUIVALENT_WITH_MINOR_LEXICAL_RISK",
+      "residualRiskSeverity": "LOW",
+      "analysis": {
+        "reason": {
+          "pt": "O fundamento explicitamente fornecido é conhecimento do testador sobre falhas em produtos semelhantes. Antecipação de erros explica essa base; não é necessário inventar partições, fronteiras ou observação simultânea durante exploração. A pergunta pede a técnica que melhor explica a seleção, não exclusividade de execução. Só o1 corresponde diretamente à evidência dada.",
+          "en": "The stated basis is the tester’s knowledge of failures in similar products. Error guessing explains that basis without inventing partitions, boundaries or simultaneous exploratory learning. The question asks what best explains selection, not an exclusive execution technique. Only o1 directly matches the evidence."
+        },
+        "scope": {
+          "pt": "§4.4.1 inclui conhecimento de falhas em aplicações semelhantes como fundamento da antecipação de erros. §4.4.2 caracteriza exploração pela conceção/execução/avaliação em simultâneo com aprendizagem; experiência também a favorece, mas a simples menção a conhecimento não demonstra esse processo. §4.2.2 exige fronteiras de partições ordenadas para derivação BVA. A data escolhida pode coincidir em técnicas distintas.",
+          "en": "Section4.4.1 includes knowledge of failures in similar applications as an error-guessing basis. Section4.4.2 characterizes exploration through concurrent design/execution/evaluation and learning. Knowledge alone does not establish that process. Section4.2.2 derives BVA from ordered partition boundaries; identical date inputs can arise through different techniques."
+        },
+        "translation": {
+          "pt": "“Personal knowledge” identifica o conhecimento do testador; “o seu conhecimento” preserva posse e papel na decisão. Nenhum texto exige que ele tenha presenciado pessoalmente as falhas: conhecimento adquirido por registos também é admissível. “Dias bissextos” pode ser entendido como os dias intercalares de29de fevereiro em anos diferentes; é menos natural/preciso do que nomear a data. Uma leitura vaga como quaisquer dias de anos bissextos é um risco possível, não significado imposto nem erro de resposta demonstrado. A base experiencial mantém-se mesmo sob essa leitura mais ampla.",
+          "en": "Personal knowledge and o seu conhecimento preserve whose knowledge guides selection, without requiring first-hand witnessing. Dias bissextos can denote leap days across years but is less idiomatic/precise than naming29February in the usual civil-calendar reading. Interpreting it loosely as days in leap years is a possible lexical risk, not a demonstrated changed answer. The experiential basis survives even that broader reading."
+        },
+        "difficulty": {
+          "pt": "FL-4.4.1/K2: interpretar e explicar por que a técnica corresponde ao fundamento do cenário. Não é K3, pois não se pede derivar casos/cobertura; dificuldade qualitativa baixa/média. Não há calibração empírica.",
+          "en": "FL-4.4.1/K2: interpret and explain the technique matching the scenario’s selection rationale. No K3case derivation/coverage calculation is required; qualitative low/moderate difficulty, without empirical calibration."
+        },
+        "optional": {
+          "pt": "Preferência editorial opcional: “falhas no processamento de 29 de fevereiro”, no contexto civil habitual implícito. Isto torna o referente mais explícito sem trocar a origem da seleção. “O seu conhecimento” deve manter-se; substituir por experiência direta/pessoal poderia restringir indevidamente como o conhecimento foi adquirido. O syllabus não determina uma data ou calendário: essa redação é proposta do revisor, não citação oficial.",
+          "en": "Optional clarity wording names failures processing29February in the usual implicit civil-calendar context. It clarifies the date without changing selection basis. Retain o seu conhecimento: direct personal experience would unnecessarily narrow how knowledge was obtained. The syllabus does not prescribe this date/calendar wording; it is reviewer interpretation."
+        },
+        "distractors": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "ERROR_GUESSING",
+            "pt": "Correta: conhecimento de falhas anteriores orienta alvos de defeitos prováveis. A explicação geral é breve mas correta.",
+            "en": "Correct: prior-failure knowledge directs likely defect targets. The short general explanation is accurate."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "STATEMENT_TESTING",
+            "pt": "Não há instruções de código nem critério de cobertura fornecido; a justificação não diz que testes de datas nunca exercitam código.",
+            "en": "No code statements or statement-coverage criterion are supplied; the rationale does not claim date tests never execute code."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "EXPLORATORY_TESTING",
+            "pt": "Aprendizagem/conceção/execução simultâneas não são descritas. A justificação reconhece corretamente que técnicas podem combinar-se; não transforma antecipação e exploração em categorias mutuamente exclusivas na prática.",
+            "en": "Concurrent learning/design/execution is not described. The rationale correctly permits combining techniques instead of claiming practical mutual exclusion."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "BOUNDARY_VALUE_ANALYSIS",
+            "pt": "29de fevereiro pode participar em BVA, mas o cenário não deriva casos de fronteiras. A justificação rejeita a base não fornecida, não a possibilidade da data em BVA.",
+            "en": "29February can appear in BVA, but these cases are not derived from boundaries in the scenario. The rationale rejects the unsupported basis, not the date’s possible use in BVA."
+          }
+        },
+        "criticalPairs": [
+          [
+            "personal knowledge",
+            "o seu conhecimento",
+            "CONTEXTUAL_EQUIVALENCE",
+            "Posse do conhecimento; não exige ter testemunhado falhas. / Ownership, not necessarily first-hand experience."
+          ],
+          [
+            "leap-day failures",
+            "falhas em dias bissextos",
+            "MINOR_LEXICAL_RISK",
+            "Leitura habitual29fevereiro; expressãoPTmenosidiomática. / Usual29February reading, less idiomatic PT."
+          ],
+          [
+            "in similar products",
+            "em produtos semelhantes",
+            "EQUIVALENT",
+            "Falhas noutros produtos dão a base experiencial. / Similar-product failures support experience-based selection."
+          ],
+          [
+            "basis for selecting these cases",
+            "base de seleção destes casos",
+            "EQUIVALENT",
+            "Critério de seleção, não exclusividade técnica. / Selection criterion, not technique exclusivity."
+          ],
+          [
+            "date-parsing cases",
+            "casos de interpretação de datas",
+            "CONTEXTUAL_EQUIVALENCE",
+            "Tema de processamento de datas; não deriva fronteiras por si só. / Date-processing subject matter is not itself boundary derivation."
+          ]
+        ],
+        "refs": {
+          "section": "4.4.1",
+          "EN": [38, 43, 44],
+          "PT": [41, 47, 48],
+          "supporting": [
+            {
+              "section": "4.4.2",
+              "EN": [44],
+              "PT": [48]
+            },
+            {
+              "section": "4.2.2",
+              "EN": [40],
+              "PT": [43, 44]
+            }
+          ]
+        },
+        "optionalPT": "Um testador seleciona casos de interpretação de datas usando o seu conhecimento de falhas no processamento de 29 de fevereiro em produtos semelhantes. Que técnica melhor explica a base de seleção destes casos?"
+      },
+      "references": {
+        "section": "4.4.1",
+        "EN": [38, 43, 44],
+        "PT": [41, 47, 48],
+        "supporting": [
+          {
+            "section": "4.4.2",
+            "EN": [44],
+            "PT": [48]
+          },
+          {
+            "section": "4.2.2",
+            "EN": [40],
+            "PT": [43, 44]
+          }
+        ]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7729e7ebc5e0ceff9648cbe7a3cbde2d17c9047eb4f852b091a329a2405a85b3"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "text": {
+          "pt": "Um testador seleciona casos de interpretação de datas usando o seu conhecimento de falhas no processamento de 29 de fevereiro em produtos semelhantes. Que técnica melhor explica a base de seleção destes casos?",
+          "en": "A tester selects date-parsing cases using personal knowledge of leap-day failures in similar products. Which technique best explains the basis for selecting these cases?"
+        },
+        "answerKeyImpact": "NONE",
+        "optionsAndExplanationsImpact": "NONE",
+        "currentVersionAndRevisionImpact": "NONE; documentation only",
+        "ifApprovedLater": "Only with explicit authorization: increment the changed item version, freeze current.10, introduce next content revision and extend historical/persistence/backup guards/tests; do not overwrite published history. No such work is done now.",
+        "regressionPlanIfAuthorized": [
+          "Pin unchanged90IDs/keys/LO/K/optionIDs and exact unaffected fields.",
+          "Assert approved PT wording and unchanged EN in rendered question and language switch.",
+          "Archive/reload current.10 and preserve older.1–.9; round-trip active/completed sessions and backups against their own bank.",
+          "Extend revision contracts and academic/release guards without weakening old checkpoints; run TypeScript/lint/build/unit and targeted Playwright for rendered text."
+        ]
+      },
+      "previousAIReviewRecord": {
+        "questionId": "tl-022",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c",
+        "learningObjective": "FL-4.4.1",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.4.1",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "4.4",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.4.1",
+          "pdfPages": [43, 44],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Error guessing",
+              "pt": "Antecipação de erros"
+            },
+            "explanation": {
+              "en": "Prior experience guides likely defect targets.",
+              "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Prior experience guides likely defect targets.",
+          "pt": "A experiência anterior orienta a procura de defeitos prováveis."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "f2275b905dbcf6e5abea8f58ddef2af0c00df7c0a4109d70bca1bb7bb3a928ff",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.4.1",
+          "pages": [43, 44],
+          "report": "docs/academic-audit.md#fase-5b--tl-022"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.4.1",
+            "pdfPages": [43, 44]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.4.1",
+            "pdfPages": [47, 48]
+          }
+        ],
+        "correctAnswerJustification": "Conhecimento pessoal de falhas em aplicações semelhantes fundamenta antecipação de erros; exemplo previsto em §4.4.1. FL-4.4.1/K2 correto.",
+        "distractorAssessment": {
+          "o2": "Não se fornecem instruções nem objetivo de cobertura estrutural.",
+          "o3": "Não se descreve aprendizagem/conceção/execução simultâneas; pode combinar-se com antecipação, mas não explica a base específica indicada.",
+          "o4": "Não são dadas partições ordenadas/fronteiras como fundamento; dia bissexto por si só não demonstra derivação por BVA."
+        },
+        "wordingAndTranslationConcerns": "personal knowledge/o seu conhecimento e similar products/produtos semelhantes equivalentes. “dias bissextos” é pouco idiomático para leap-day, mas no contexto de datas é entendível.",
+        "potentialAmbiguity": "Um caso de 29 de fevereiro pode também resultar de BVA ou exploração. A pergunta pede a base de seleção e fornece experiência, evitando exclusividade artificial.",
+        "difficultyAssessment": "Média; K2 com sobreposição real entre técnicas explicitamente resolvida pelo enunciado.",
+        "proposedCorrection": {
+          "description": "Melhoria terminológica opcional no PT: “falhas no processamento de 29 de fevereiro em produtos semelhantes”. Explicação pode ligar expressamente experiência de falhas semelhantes à antecipação de erros; não afirmar que BVA nunca abrange esta data.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Only new documentation; no question/runtime/version/history/persistence/approval change"
+    },
+    {
+      "questionId": "tl-041",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-1.5.2",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4",
+      "afterCanonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4",
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "independentSolution": {
+        "questionId": "tl-041",
+        "answer": ["o2"],
+        "derivation": "Whole-team approach benefits from complementary competencies and collaboration toward quality goals. It does not transfer all accountability to testers, exclude testers from discussion, or require a completed-development handover before testing. Thereforeo2 is uniquely defensible. Delivery team is broader than a programmers-only reading of equipa de desenvolvimento, but development team can also mean a cross-functional product team; the named approach and explicit team options favour the latter. Need inspect full explanations and official PT terminology before deciding whether this lexical scope risk is a confirmed defect or optional clarity improvement."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "linguisticAssessment": "CONTEXTUALLY_EQUIVALENT_WITH_MINOR_LEXICAL_RISK",
+      "residualRiskSeverity": "LOW",
+      "analysis": {
+        "reason": {
+          "pt": "o2 recorda uma vantagem do whole team approach: competências complementares e colaboração apoiam objetivos de qualidade. o1 transfere integralmente responsabilidade para testes; o3 exclui testadores; o4 impõe início tardio obrigatório após entrega de toda a implementação. Nenhuma dessas exclusões é vantagem da abordagem. As opções permitem uma única resposta defensável mesmo sem ler a explicação posterior.",
+          "en": "o2 recalls a whole-team benefit: complementary skills and collaboration support quality goals. o1transfers all quality accountability to testing; o3excludes testers; o4requires testing to wait for complete implementation handover. None is a benefit of the approach. Only o2is defensible from the statement/options before reading explanations."
+        },
+        "scope": {
+          "pt": "§1.5.2 relaciona competências adequadas, colaboração, objetivos de qualidade e responsabilidade partilhada, incluindo interação com negócio/programadores/testadores. Não exige que toda a pessoa faça qualquer tarefa sem competência nem elimina independência quando o contexto a exige. A explicação geral da questão já contém estas ressalvas.",
+          "en": "Section1.5.2 relates appropriate skills, collaboration and shared quality responsibility, including business/development/testing cooperation. It does not allow unqualified people to perform any task or eliminate context-required independence. The question’s general explanation already preserves those caveats."
+        },
+        "translation": {
+          "pt": "“Delivery team” não é equivalente literal a “equipa de desenvolvimento”. Esta última pode significar equipa multifuncional que desenvolve o produto, ou ser lida restritivamente como só programadores. O enunciado não diz “exclusivamente programadores”; o nome técnico e as opções favorecem a leitura colaborativa. A justificação de o2 explicita negócio, desenvolvimento e testes e a geral preserva competências/independência. Há risco lexical de estreitamento, não demonstração de que a resposta ou conceito completo foram invertidos.",
+          "en": "Delivery team and equipa de desenvolvimento are not literally identical. The latter can denote a cross-functional product-development team or be read narrowly as programmers only. No explicit programmers-only restriction is stated; the named approach/options support collaboration. o2’s rationale explicitly includes business/development/testing; general rationale preserves competence/independence. This is lexical-scope risk, not a demonstrated reversal of the answer or complete concept."
+        },
+        "difficulty": {
+          "pt": "FL-1.5.2/K1: recordar uma vantagem, sem aplicar um modelo K3. Dificuldade qualitativa baixa; distratores muito excludentes ajudam a unicidade, sem obrigar a aumentar dificuldade nesta revisão.",
+          "en": "FL-1.5.2/K1 recalls a benefit without a K3model application. Qualitatively low difficulty; strongly exclusionary distractors establish uniqueness, without requiring a difficulty increase in this review."
+        },
+        "optional": {
+          "pt": "A PSTQB mantém “Whole Team Approach” no título e no corpo: conservar inglês não é falha de alinhamento oficial. Uma glosa “abordagem de toda a equipa” pode ajudar leitores, mas é tradução explicativa do revisor, não termo oficial citado. “Equipa responsável pela entrega” evita a leitura só-programadores sem acrescentar pista explícita de multidisciplinaridade. “Equipa de entrega” é curta, mas pode evocar logística; “equipa multidisciplinar” é clara, porém acrescenta informação que aproxima da opção correta. A preferência proposta decorre de clareza contextual, não de literalidade automática.",
+          "en": "PSTQB retains Whole Team Approach as heading/body terminology; retaining English is not an official-alignment defect. A Portuguese gloss can aid readers but is reviewer wording, not an official quoted term. Equipa responsável pela entrega avoids a programmers-only reading without explicitly cueing multidisciplinarity. Equipa de entrega may suggest logistics; equipa multidisciplinar adds information close to the correct option. The preference is contextual clarity, not automatic literalism."
+        },
+        "distractors": {
+          "o1": {
+            "supportsAnswer": false,
+            "concept": "EXCLUSIVE_QUALITY_TRANSFER",
+            "pt": "“Integralmente” torna a transferência de responsabilidade exclusiva; contraria responsabilidade partilhada. Justificação mantém todos responsáveis, sem negar funções especializadas.",
+            "en": "Entirely makes quality accountability exclusive to testing, contradicting shared responsibility. The rationale preserves responsibility without abolishing specialist roles."
+          },
+          "o2": {
+            "supportsAnswer": true,
+            "concept": "COLLABORATION_SHARED_QUALITY",
+            "pt": "Correta: competências complementares/colaboração próxima apoiam objetivos. A justificação nomeia negócio, desenvolvimento e testes. Não exige que toda a pessoa possua todas as competências.",
+            "en": "Correct: complementary skills/close collaboration support goals; the rationale names business, development and testing without requiring every person to have every skill."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "TESTER_ISOLATION",
+            "pt": "Excluir testadores das discussões elimina cooperação, não a preserva; independente não equivale a isolado.",
+            "en": "Excluding testers from discussion defeats collaboration; independence is not synonymous with isolation."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "MANDATORY_LATE_HANDOVER",
+            "pt": "“Só” após “todo” o trabalho impõe passagem sequencial tardia como requisito. A abordagem promove cooperação ao longo do trabalho; não impede níveis de teste posteriores.",
+            "en": "Only after all implementation imposes a mandatory late sequential handover; the approach promotes cooperation throughout work, without banning later test levels."
+          }
+        },
+        "criticalPairs": [
+          [
+            "delivery team",
+            "equipa de desenvolvimento",
+            "MINOR_LEXICAL_RISK",
+            "Equipa multifuncional é possível; leitura só-programadores não é imposta. / Cross-functional reading remains possible; programmers-only is not imposed."
+          ],
+          [
+            "whole team approach",
+            "whole team approach",
+            "OFFICIAL_LOAN_TERM_RETAINED",
+            "A PSTQB conserva inglês; glosaPTéopcional. / PSTQB retains English; PT gloss optional."
+          ],
+          [
+            "Complementary skills and close collaboration",
+            "Competências complementares e colaboração próxima",
+            "EQUIVALENT",
+            "Benefício colaborativo preservado. / Collaborative benefit preserved."
+          ],
+          [
+            "entirely",
+            "integralmente",
+            "EQUIVALENT",
+            "Quantificador exclusivo tornao1incorreta. / Exclusive quantifier makeso1incorrect."
+          ],
+          [
+            "outside team discussions",
+            "fora das discussões da equipa",
+            "EQUIVALENT",
+            "Isolamentoo3preservado. / o3isolation preserved."
+          ],
+          [
+            "only after developers have handed over all",
+            "só começam depois de os programadores entregarem todo",
+            "EQUIVALENT",
+            "Só/depois/todo preservam restriçãoo4. / Only/after/all preserveo4restriction."
+          ],
+          [
+            "business, development and testing",
+            "negócio, desenvolvimento e testes",
+            "EQUIVALENT",
+            "Domínios na justificaçãoo2. / Domains ino2rationale."
+          ],
+          [
+            "responsibility shared by everyone",
+            "responsabilidade partilhada por todos",
+            "EQUIVALENT",
+            "Responsabilidade coletiva, não transferência exclusiva. / Collective responsibility, not exclusive transfer."
+          ]
+        ],
+        "refs": {
+          "section": "1.5.2",
+          "EN": [14, 22],
+          "PT": [15, 24],
+          "supporting": []
+        },
+        "optionalPT": "Uma equipa responsável pela entrega adota a whole team approach (abordagem de toda a equipa). Que vantagem está associada a esta abordagem?"
+      },
+      "references": {
+        "section": "1.5.2",
+        "EN": [14, 22],
+        "PT": [15, 24],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "text": {
+          "pt": "Uma equipa responsável pela entrega adota a whole team approach (abordagem de toda a equipa). Que vantagem está associada a esta abordagem?",
+          "en": "A delivery team adopts the whole team approach. Which benefit is associated with this approach?"
+        },
+        "answerKeyImpact": "NONE",
+        "optionsAndExplanationsImpact": "NONE",
+        "currentVersionAndRevisionImpact": "NONE; documentation only",
+        "ifApprovedLater": "Only with explicit authorization: increment the changed item version, freeze current.10, introduce next content revision and extend historical/persistence/backup guards/tests; do not overwrite published history. No such work is done now.",
+        "regressionPlanIfAuthorized": [
+          "Pin unchanged90IDs/keys/LO/K/optionIDs and exact unaffected fields.",
+          "Assert approved PT wording and unchanged EN in rendered question and language switch.",
+          "Archive/reload current.10 and preserve older.1–.9; round-trip active/completed sessions and backups against their own bank.",
+          "Extend revision contracts and academic/release guards without weakening old checkpoints; run TypeScript/lint/build/unit and targeted Playwright for rendered text."
+        ]
+      },
+      "previousAIReviewRecord": {
+        "questionId": "tl-041",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4",
+        "learningObjective": "FL-1.5.2",
+        "syllabusChapter": 1,
+        "syllabusSection": "1.5.2",
+        "cognitiveLevel": "K1",
+        "learningObjectiveSection": "1.5",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "1.5.2",
+          "pdfPages": [22],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o2"],
+        "currentCorrectOptions": [
+          {
+            "id": "o2",
+            "text": {
+              "en": "Complementary skills and close collaboration help the team achieve its quality goals.",
+              "pt": "Competências complementares e colaboração próxima ajudam a equipa a alcançar os seus objetivos de qualidade."
+            },
+            "explanation": {
+              "en": "Sharing skills and collaborating across business, development and testing supports collective quality goals.",
+              "pt": "Partilhar competências e colaborar entre negócio, desenvolvimento e testes apoia os objetivos coletivos de qualidade."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The whole team approach combines skills and shared responsibility. Tasks still require suitable skills and knowledge; context can require additional independence.",
+          "pt": "A whole team approach combina competências e responsabilidade partilhada. As tarefas continuam a exigir competências e conhecimentos adequados; o contexto pode exigir independência adicional."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "d32144e8b5459b962e13583610308726818d68d9ab91230ef6e3c8383c7b608b",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-27",
+          "section": "1.5.2",
+          "pages": [22],
+          "report": "docs/blueprint-validation.md#tl-041"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "1.5.2",
+            "pdfPages": [14, 22]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "1.5.2",
+            "pdfPages": [24]
+          }
+        ],
+        "correctAnswerJustification": "FL-1.5.2/K1: competências combinadas, colaboração e responsabilidade coletiva são vantagens da whole team approach; o2 corresponde, sem remover requisitos de competência/independência.",
+        "distractorAssessment": {
+          "o1": "Transferência integral da qualidade para testes contradiz responsabilidade de todos.",
+          "o3": "Excluir testadores das discussões contradiz colaboração.",
+          "o4": "Handover exclusivamente após toda implementação não caracteriza cooperação ao longo do trabalho."
+        },
+        "wordingAndTranslationConcerns": "delivery team/equipa de desenvolvimento é ligeiramente mais estreito no PT: pode sugerir só programadores, embora o resto explicite negócio/desenvolvimento/testes. Sem inversão da chave.",
+        "potentialAmbiguity": "Não significa que qualquer pessoa execute qualquer tarefa sem competência; explicação geral já ressalva competências e independência conforme contexto.",
+        "difficultyAssessment": "Baixa; K1 com distratores muito excludentes.",
+        "proposedCorrection": {
+          "description": "Opcional: PT “equipa de entrega” ou “equipa multidisciplinar” em vez de “equipa de desenvolvimento”, para não sugerir exclusão de negócio/testes.",
+          "keyBefore": ["o2"],
+          "keyProposed": ["o2"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Only new documentation; no question/runtime/version/history/persistence/approval change"
+    }
+  ]
+}

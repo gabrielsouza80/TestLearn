@@ -1,4 +1,5 @@
 import Text from './learning/Text';
+import PedagogicalReviewNotice from './learning/PedagogicalReviewNotice';
 import QuestionTable from './learning/QuestionTable';
 import AnswerReview from './learning/AnswerReview';
 import ResultReview from './learning/ResultReview';
@@ -1108,6 +1109,10 @@ function LearningApp({
                     <h2>
                       <Text value={current.text} language={language} />
                     </h2>
+                    <PedagogicalReviewNotice
+                      questionId={current.id}
+                      language={language}
+                    />
                     <QuestionTable
                       questionId={current.id}
                       table={current.table}

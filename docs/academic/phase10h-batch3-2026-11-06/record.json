@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-06",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "questionId": "tl-078",
+  "learningObjective": "FL-5.5.1",
+  "cognitiveLevel": "K3",
+  "questionVersion": 1,
+  "contentRevisionBefore": "2026-10-27.10",
+  "contentRevisionAfter": "2026-10-27.10",
+  "beforeCanonicalSHA256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800",
+  "afterCanonicalSHA256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800",
+  "decision": "ACCEPT_AS_IS",
+  "reviewMethod": "AI_REVIEWED",
+  "independentHumanSMEReviewVerified": false,
+  "humanApproval": "PENDING",
+  "ownerDecision": null,
+  "contentChanged": false,
+  "existingKey": ["o1"],
+  "proposedKey": ["o1"],
+  "independentSolution": {
+    "recordedOn": "2026-11-06",
+    "questionId": "tl-078",
+    "method": "AI reasoning from shuffled bilingual statements/options before consulting the stored key or option/general explanations in this execution; no independent human review claimed",
+    "answer": ["o1"],
+    "reasoning": "Preserve staging/build r204, create L-42 offline, reconnect and Sync once, expected one server record, observed two, trace t42, and the explicitly observed successful repetition. o1 preserves all facts without a causal diagnosis. o2 swaps expected/observed quantities; o3 changes offline creation to online and omits reconnection; o4 changes r204 to r205 and asserts an unproven server race. Reproducibility is supported only for the stated repetition/context, not universal determinism. A trace reference documents evidence, not proof of root cause."
+  },
+  "confirmedAcademicProblems": [],
+  "distractorAssessment": {
+    "o2": "Inverte esperado 1 e observado 2; contradiz a evidência.",
+    "o3": "Troca criação offline/reconexão por fluxo online; não preserva as condições observadas.",
+    "o4": "Troca r204 por r205 e afirma causa de race no servidor sem evidência causal. Mesmo isolando a tradução menos precisa, o build errado já torna a opção indefensável."
+  },
+  "hypothesisDecisions": {
+    "incompleteReport": "Não confirmado como defeito: o enunciado pede resumo e a explicação distingue relatório completo. Não inventar severidade, prioridade ou campos não fornecidos.",
+    "reproducibility": "Não confirmado como defeito: repetição explicitamente observada sustenta reproduzível no contexto descrito. Não constitui garantia universal.",
+    "traceDiagnosis": "Não confirmado como defeito: t42 é evidência referenciada, não diagnóstico; o4 é rejeitado precisamente por inventar causa."
+  },
+  "translationAssessment": "PT/EN preservam staging/pré-produção, r204, offline, reconexão, Sync uma vez e contagens 1/2. Concorrência no servidor é mais amplo que server race; a expressão ocorre só no diagnóstico não sustentado de o4, que também erra build. Melhor precisão terminológica é opcional, sem criar segunda resposta defensável.",
+  "educationalValue": "A explicação geral ensina separar factos/hipóteses e resumo/relatório completo; as quatro justificações explicam os erros concretos. Não promete que selecionar o resumo demonstra autoria independente de um relatório completo.",
+  "cognitiveAssessment": "Aplicação delimitada de princípios de reporte a evidências concretas, compatível com o formato K3 dos exemplos oficiais B/D. Exigência baixa a média para K3, sobretudo pela explicitação dos factos e pelos dois erros simultâneos de o4; avaliação qualitativa, não calibração empírica.",
+  "professionalTrainingLimit": "Um treino profissional mais profundo pode pedir construir um relatório completo a partir de evidências brutas. Isso é um exercício adicional, não condição para invalidar automaticamente esta questão de exame de escolha múltipla.",
+  "references": {
+    "syllabusEN": {
+      "version": "4.0.1",
+      "section": "5.5",
+      "pages": [47, 56, 57]
+    },
+    "syllabusPT": {
+      "version": "4.0 translation 1.0",
+      "section": "5.5",
+      "pages": [52, 62, 63]
+    }
+  },
+  "officialSampleComparison": [
+    {
+      "set": "B",
+      "version": "1.7",
+      "questionNumber": 38,
+      "questionsPDFPage": 20,
+      "answersPDFPage": 36,
+      "officialLO": "FL-5.5.1",
+      "officialKLevel": "K3",
+      "officialAnswer": "b",
+      "questionsURL": "https://tbok.istqb.org/api/exam-pdf/10/questions",
+      "answersURL": "https://tbok.istqb.org/api/exam-pdf/10/answers",
+      "comparison": "O exemplo oficial pede selecionar uma descrição útil da falha a partir de um log, não redigir o relatório inteiro. tl-078 também aplica critérios de reporte por seleção, mas fornece os factos de forma mais explícita e exige menos inferência de padrão. A classificação K3 do exemplo oficial refuta a exclusão automática de escolha múltipla; não certifica este item TestLearn.",
+      "limits": "Comparação do enunciado e rationale oficiais; não se afirma resolução independente da tabela gráfica do log.",
+      "inferenceDistinction": "B admite inferência qualificada de um padrão sustentado por resultados; em tl-078 uma referência de trace, sem dados causais fornecidos, não comprova a causa raiz afirmada como confirmada em o4. Não se proíbem todas as hipóteses."
+    },
+    {
+      "set": "D",
+      "version": "1.5",
+      "questionNumber": 38,
+      "questionsPDFPage": 19,
+      "answersPDFPage": 33,
+      "officialLO": "FL-5.5.1",
+      "officialKLevel": "K3",
+      "officialAnswer": "a",
+      "questionsURL": "https://tbok.istqb.org/api/exam-pdf/12/questions",
+      "answersURL": "https://tbok.istqb.org/api/exam-pdf/12/answers",
+      "comparison": "O exemplo oficial pede escolher a informação que melhor ajuda a reproduzir uma falha num relatório existente. tl-078 exige conservar dados, sequência, configuração e resultados, rejeitando um diagnóstico sem evidência. Ambos aplicam princípios de reporte num contexto delimitado sem exigir autoria livre; a exigência concreta e a dificuldade não são declaradas idênticas.",
+      "limits": "Analogia de tipo de tarefa, não equivalência psicométrica."
+    }
+  ],
+  "remainingHumanDecisions": [
+    "Aceitar/rejeitar academicamente esta recomendação por revisor humano; nenhum OWNER_ACCEPTED de tl-078 é inferido.",
+    "Calibrar dificuldade/discriminação empiricamente se necessário; melhorias opcionais não implementadas."
+  ],
+  "nextBatchStarted": false
+}

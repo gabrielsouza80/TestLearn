@@ -1,0 +1,14 @@
+{
+  "status": "MEASUREMENT_LIMITATION_IDENTIFIED",
+  "finding": "Sampled process-tree CPU sum is based on cumulative lifetime CPU and PID/parent matching, without creation-time validation or first-sample subtraction. It is not a reliable interval CPU measure.",
+  "demonstratedExample": {
+    "run": "build",
+    "reportedCPUSeconds": 269.312,
+    "wallSeconds": 4.539,
+    "logicalProcessors": 16,
+    "maximumPossibleHostCPUSecondsInInterval": 72.624
+  },
+  "effect": "Do not use process-tree CPU field in any causal conclusion. Historical logs remain unchanged. Host GetSystemTimes busy percentage, GlobalMemoryStatusEx available RAM and wall/test durations are separate measurements. Sampled process-tree memory is approximate and may suffer ancestry ambiguity.",
+  "rootCauseBoundary": "Cumulative accounting flaw is directly visible in helper source; PID reuse or stale parent identifiers could add unrelated processes, but that mechanism was not separately proved in the completed build.",
+  "action": "Preserve original logs, disclose limitation, rely on host-level resource counters and repeated unchanged-test outcomes. No application/test/guard changes made for this limitation."
+}

@@ -1,0 +1,321 @@
+[
+  {
+    "id": "tl-069",
+    "lo": "FL-2.1.3",
+    "level": "K1",
+    "text": {
+      "en": "A team wants examples of expected behaviour to drive development. Which description characterises behaviour-driven development (BDD) in the syllabus?",
+      "pt": "Uma equipa pretende que exemplos do comportamento esperado orientem o desenvolvimento. Que descrição caracteriza o desenvolvimento orientado para comportamento (BDD) no syllabus?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "The team expresses behaviour in shared natural-language examples that become executable tests.",
+          "pt": "A equipa expressa o comportamento em exemplos de linguagem natural partilhada que se tornam testes executáveis."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Testers design and evaluate tests while exploring the implemented feature in a timed session.",
+          "pt": "Os testadores concebem e avaliam testes enquanto exploram a funcionalidade implementada numa sessão com duração definida."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Developers write component tests first, then implement and refactor the corresponding code.",
+          "pt": "Os programadores escrevem primeiro testes de componentes e depois implementam e refatoram o código correspondente."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Reviewers examine the source code against a checklist before it enters the build pipeline.",
+          "pt": "Os revisores examinam o código-fonte com uma checklist antes da entrada no pipeline de compilação."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-070",
+    "lo": "FL-4.1.1",
+    "level": "K2",
+    "text": {
+      "en": "For a booking service, Ana derives tests from cancellation rules without reading code. Bruno derives tests from the service's control-flow branches. Carla designs tests using patterns from past booking incidents. Which classification matches Ana, Bruno and Carla, respectively?",
+      "pt": "Num serviço de reservas, Ana deriva testes de regras de cancelamento sem ler código. Bruno deriva testes dos ramos do fluxo de controlo do serviço. Carla concebe testes usando padrões de incidentes anteriores de reservas. Que classificação corresponde, respetivamente, a Ana, Bruno e Carla?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Black-box; experience-based; white-box.",
+          "pt": "Caixa-preta; baseada na experiência; caixa-branca."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Experience-based; white-box; black-box.",
+          "pt": "Baseada na experiência; caixa-branca; caixa-preta."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Black-box; white-box; experience-based.",
+          "pt": "Caixa-preta; caixa-branca; baseada na experiência."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "White-box; black-box; experience-based.",
+          "pt": "Caixa-branca; caixa-preta; baseada na experiência."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-075",
+    "lo": "FL-5.4.1",
+    "level": "K2",
+    "text": {
+      "en": "A failure was observed with application build r208, schema v12 and seed data set D6. A rerun with the same test script now passes, but the environment has been rebuilt. Which action best supports reproducing and comparing the original result?",
+      "pt": "Foi observada uma falha com a compilação r208 da aplicação, o esquema v12 e o conjunto de dados D6. Uma nova execução do mesmo script passa, mas o ambiente foi reconstruído. Que ação melhor apoia a reprodução e comparação do resultado original?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Restore the application build while keeping the current schema and regenerated seed data.",
+          "pt": "Restaurar a compilação da aplicação mantendo o esquema atual e os dados iniciais regenerados."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Compare the script names and accept the pass if they match the earlier test log.",
+          "pt": "Comparar os nomes dos scripts e aceitar a aprovação se coincidirem com o registo anterior."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Recover the recorded baseline of build, schema, data, scripts and environment configuration for the rerun.",
+          "pt": "Recuperar a base de referência registada da compilação, esquema, dados, scripts e configuração do ambiente para repetir o teste."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Use the newest versions of each item and attach the old failure log to the new pass.",
+          "pt": "Usar as versões mais recentes de cada item e anexar o registo da falha antiga à nova aprovação."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-079",
+    "lo": "FL-6.1.1",
+    "level": "K2",
+    "text": {
+      "en": "A team already records pass/fail results and requirements links. It now needs evidence of which internal branches were exercised by its tests to guide additional test design. Which tool capability most directly supplies the missing evidence?",
+      "pt": "Uma equipa já regista resultados de aprovação/falha e ligações aos requisitos. Precisa agora de evidência dos ramos internos exercitados pelos testes para orientar a conceção de testes adicionais. Que capacidade de ferramenta fornece mais diretamente a evidência em falta?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Static analysis reporting complexity and coding-rule violations.",
+          "pt": "Análise estática que reporta complexidade e violações de regras de código."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Test execution reporting the number of passed assertions.",
+          "pt": "Execução de testes que reporta o número de asserções aprovadas."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Test management reporting requirements linked to executed cases.",
+          "pt": "Gestão de testes que reporta requisitos ligados aos casos executados."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Coverage measurement associating executed tests with instrumented branches.",
+          "pt": "Medição de cobertura que associa os testes executados aos ramos instrumentados."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-080",
+    "lo": "FL-6.2.1",
+    "level": "K1",
+    "text": {
+      "en": "An automated test suite depends on a proprietary runner. Its vendor announces that platform support will end next year. Which recognised test automation risk does this illustrate?",
+      "pt": "Uma suite de testes automatizados depende de um executor proprietário. O fornecedor anuncia que o suporte da plataforma terminará no próximo ano. Que risco reconhecido da automação de testes ilustra esta situação?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Excessive effort spent manually comparing expected and actual outputs.",
+          "pt": "Esforço excessivo na comparação manual de resultados esperados e obtidos."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Inconsistent repetition of identical test data by people.",
+          "pt": "Repetição inconsistente de dados de teste idênticos por pessoas."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Limited access to execution statistics for management reporting.",
+          "pt": "Acesso limitado a estatísticas de execução para relatórios de gestão."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Dependency on a tool vendor and continuing platform compatibility.",
+          "pt": "Dependência de um fornecedor de ferramentas e da continuidade da compatibilidade com a plataforma."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-081",
+    "lo": "FL-1.5.2",
+    "level": "K1",
+    "text": {
+      "en": "A tester teaches a developer to execute and assess an acceptance check. When the tester is unavailable, that qualified developer performs the check and discusses the result with the business representative. Which advantage of the whole team approach is illustrated?",
+      "pt": "Um testador ensina um programador a executar e avaliar uma verificação de aceitação. Quando o testador está indisponível, esse programador qualificado executa a verificação e discute o resultado com o representante do negócio. Que vantagem da whole team approach é ilustrada?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Cross-skilled members can perform testing tasks and maintain shared responsibility for quality.",
+          "pt": "Membros com competências partilhadas podem executar tarefas de teste e manter responsabilidade conjunta pela qualidade."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "An external reviewer can challenge assumptions without sharing the author's perspective.",
+          "pt": "Um revisor externo pode questionar pressupostos sem partilhar a perspetiva do autor."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "An automated suite can repeat checks consistently while reducing manual execution effort.",
+          "pt": "Uma suite automatizada pode repetir verificações de forma consistente, reduzindo o esforço de execução manual."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "A versioned baseline can make test configurations reproducible when team members change.",
+          "pt": "Uma base de referência versionada pode tornar as configurações de teste reproduzíveis quando mudam os membros da equipa."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-082",
+    "lo": "FL-5.1.7",
+    "level": "K2",
+    "text": {
+      "en": "After implementing a service increment, engineers run concurrent requests against the integrated service to investigate resource exhaustion and response-time degradation before release. Which quadrant best represents this testing?",
+      "pt": "Após implementar um incremento de um serviço, os engenheiros executam pedidos concorrentes contra o serviço integrado para investigar esgotamento de recursos e degradação do tempo de resposta antes da entrega. Que quadrante melhor representa estes testes?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Q2: business-facing tests that support the team.",
+          "pt": "Q2: testes orientados para o negócio que apoiam a equipa."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Q4: technology-facing tests that critique the product.",
+          "pt": "Q4: testes orientados para a tecnologia que avaliam criticamente o produto."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Q1: technology-facing tests that support the team.",
+          "pt": "Q1: testes orientados para a tecnologia que apoiam a equipa."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Q3: business-facing tests that critique the product.",
+          "pt": "Q3: testes orientados para o negócio que avaliam criticamente o produto."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-083",
+    "lo": "FL-3.2.4",
+    "level": "K2",
+    "text": {
+      "en": "A team plans two reviews of a migration design. First, the author will lead participants through the document to build shared understanding. Next, technically qualified peers will seek agreement on interface choices in a moderated meeting. Select TWO statements consistent with the CTFL review types.",
+      "pt": "Uma equipa planeia duas revisões de uma conceção de migração. Primeiro, o autor orientará os participantes pelo documento para criar uma compreensão partilhada. Depois, pares tecnicamente qualificados procurarão consenso sobre escolhas de interfaces numa reunião moderada. Selecione DUAS afirmações coerentes com os tipos de revisão CTFL."
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "An author-led walkthrough can support the shared-learning purpose of the first step.",
+          "pt": "Um walkthrough conduzido pelo autor pode apoiar a aprendizagem partilhada pretendida na primeira etapa."
+        }
+      },
+      {
+        "id": "o5",
+        "text": {
+          "en": "To pursue consensus in the second step, a technical review must use the full inspection process and collect its improvement metrics.",
+          "pt": "Para procurar consenso na segunda etapa, uma revisão técnica tem de seguir todo o processo de inspeção e recolher as suas métricas de melhoria."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "The moderated second step is a walkthrough because a moderator, rather than the author, leads it.",
+          "pt": "A segunda etapa moderada é um walkthrough porque é conduzida por um moderador, em vez do autor."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "An inspection fits the first step because its author can act as both review leader and scribe.",
+          "pt": "Uma inspeção adequa-se à primeira etapa porque o autor pode atuar como líder de revisão e redator."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "A technical review fits the second step with qualified reviewers, moderation and a consensus objective.",
+          "pt": "Uma revisão técnica adequa-se à segunda etapa, com revisores qualificados, moderação e um objetivo de consenso."
+        }
+      }
+    ]
+  }
+]

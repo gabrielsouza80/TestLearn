@@ -1,0 +1,11 @@
+{
+  "exitCode": 2,
+  "cause": "Literal historical runner logs contain original trailing whitespace; preserved without rewriting",
+  "affectedFiles": [
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/e2e-all-relevant.txt",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/four-e2e-after-selector.txt",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/tdd-red.txt",
+    "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/vitest-full.txt"
+  ],
+  "decision": "WIP preservation checkpoint only; not a green release. No whitespace guard disabled."
+}

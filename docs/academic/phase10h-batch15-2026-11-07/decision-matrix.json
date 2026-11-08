@@ -1,0 +1,875 @@
+{
+  "scope": "Phase 10H Batch 15 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-07",
+  "dossierDateIdentifier": "2026-11-07 as requested; actual execution dates retained",
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-069",
+      "learningObjective": "FL-2.1.3",
+      "cognitiveLevel": "K1",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o3"],
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88",
+      "afterCanonicalSHA256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "2.1.3": {
+          "EN": [26],
+          "PT": [28]
+        }
+      },
+      "LOPages": {
+        "EN": [24],
+        "PT": [26]
+      },
+      "assessmentPT": "O BDD usa descrições compreensíveis de comportamento esperado em linguagem natural partilhada, ligadas a exemplos executáveis. O ciclo de testes de componentes, implementação e refatoração é TDD; revisão de código e exploração são outras práticas. A justificação geral publicada já rejeita geração automática infalível sem código de suporte.",
+      "counterEvidencePT": "BDD, ATDD e TDD podem coexistir e sobrepor-se; o item pergunta a descrição característica no syllabus, não exclusividade de técnicas. Linguagem natural arbitrária não se executa sozinha: são necessários acordo semântico e mecanismos de execução. A opção correta descreve essa ligação sem alegar conversão sem trabalho ou sem defeitos.",
+      "translationAssessmentPT": "Shared natural-language examples/exemplos de linguagem natural partilhada mantém comunicação e entendimento comum. Become executable/se tornam executáveis não diz que qualquer frase seja convertida infalivelmente. Test first/escrever primeiro em o1 distingue a ênfase em componentes; timed session/sessão com duração definida mantém o caráter exploratório do outro distrator.",
+      "pedagogyAssessmentPT": "K1: recordar a descrição de BDD entre exemplos de abordagens test-first. A comparação com TDD e exploração é direta e não exige derivar casos de teste. As quatro justificações e a explicação geral são coerentes e explicitam o limite da automatização, permitindo ao estudante não inferir magia na geração de testes.",
+      "editionDifferencePT": "EN página 26 diz que os testes devem depois ser traduzidos automaticamente para testes executáveis; PT página 28 usa uma formulação descritiva mais categórica. Ambas descrevem a ligação à execução, não um mecanismo infalível para toda frase natural. A ressalva publicada é compatível e impede a extrapolação.",
+      "criticalPairs": [
+        {
+          "en": "shared natural-language examples",
+          "pt": "exemplos de linguagem natural partilhada"
+        },
+        {
+          "en": "become executable tests",
+          "pt": "se tornam testes executáveis"
+        },
+        {
+          "en": "supporting code",
+          "pt": "código de suporte"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "380c1227f399c856a86b11bd06f830cec6f75025a82adae69b10aabd9a986f81",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "380c1227f399c856a86b11bd06f830cec6f75025a82adae69b10aabd9a986f81",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o3"],
+          "canonicalSHA256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o3"],
+          "canonicalSHA256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-070",
+      "learningObjective": "FL-4.1.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o4"],
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+      "afterCanonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "4.1": {
+          "EN": [39],
+          "PT": [42]
+        }
+      },
+      "LOPages": {
+        "EN": [38],
+        "PT": [41]
+      },
+      "assessmentPT": "A classificação depende da fonte de derivação: regras especificadas sem código para Ana, ramos internos para Bruno e padrões conhecidos de incidentes para Carla. A ordem correta é caixa-preta, caixa-branca e baseada na experiência. Execução manual ou automatizada não substitui estas famílias conceptuais.",
+      "counterEvidencePT": "Um testador pode combinar fontes ou conhecer o domínio, mas o cenário delimita explicitamente a base usada por cada pessoa. Possuir experiência não converte qualquer teste de requisitos em técnica baseada na experiência. Automatizar a execução não transforma regras externas em análise estrutural.",
+      "translationAssessmentPT": "Respectively/respetivamente preserva a ordem Ana, Bruno e Carla e a ordem das três categorias em todas as opções. Without reading code/sem ler código, control-flow branches/ramos do fluxo de controlo e past booking incidents/incidentes anteriores preservam as fontes de derivação. Não há troca de nomes, negação ou condição entre idiomas.",
+      "pedagogyAssessmentPT": "K2: distinguir famílias a partir de três exemplos de derivação, sem efetuar cálculo de cobertura ou desenhar testes K3. As opções são permutações plausíveis e cada justificação indica precisamente quais posições estão trocadas. A explicação geral distingue derivação de execução, eliminando uma confusão frequente.",
+      "editionDifferencePT": "EN secção 4.1 na página 39 e PT na página 42 distinguem comportamento especificado, estrutura interna e experiência. A ordem terminológica das alternativas foi comparada literalmente, sem depender da ordem de apresentação embaralhada. Ambas as edições sustentam a mesma classificação neste cenário.",
+      "criticalPairs": [
+        {
+          "en": "without reading code",
+          "pt": "sem ler código"
+        },
+        {
+          "en": "control-flow branches",
+          "pt": "ramos do fluxo de controlo"
+        },
+        {
+          "en": "respectively",
+          "pt": "respetivamente"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-075",
+      "learningObjective": "FL-5.4.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o3"],
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+      "afterCanonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "5.4": {
+          "EN": [56],
+          "PT": [62]
+        }
+      },
+      "LOPages": {
+        "EN": [47],
+        "PT": [52]
+      },
+      "assessmentPT": "Uma baseline regista versões e relações de itens relevantes, incluindo compilação r208, esquema v12, dados D6, scripts e ambiente. Recuperar esse conjunto permite comparar a observação original com significado. Repetir o mesmo script, ou o seu nome, não basta para controlar as outras variáveis alteradas.",
+      "counterEvidencePT": "Restaurar a baseline apoia reprodução, mas uma falha intermitente pode ainda depender de temporização, serviços externos ou concorrência não controlados. O enunciado diz melhor apoia, não garante. Regenerar dados só seria equivalente se a equivalência fosse demonstrada; o distrator não estabelece isso nem repõe o esquema.",
+      "translationAssessmentPT": "Best supports/melhor apoia mantém apoio sem garantia. Build/compilação refere a versão do artefacto, schema/esquema e seed data set/conjunto de dados mantêm r208, v12 e D6. Pass/aprovação significa resultado do teste neste contexto, não aceite humano académico. Recover the recorded baseline/recuperar a base de referência registada abrange relações e versões.",
+      "pedagogyAssessmentPT": "K2: resumir como controlo de versões e relações permite reconstituir configurações e comparar resultados. Não se pede efetuar rollback ou reconstruir um ambiente real. As explicações distinguem identidade por nome, restauração parcial, atualização indiscriminada e controlo do conjunto, sem invalidar uma falha antiga apenas por um novo PASS.",
+      "editionDifferencePT": "EN secção 5.4 na página 56 e PT na página 62 referem itens complexos, versões, relações e regresso à baseline anterior. PT usa linha de base e a questão usa base de referência: ambas designam baseline no contexto. Nenhuma das fontes fornece garantia de controlar toda dependência externa não registada.",
+      "criticalPairs": [
+        {
+          "en": "application build r208",
+          "pt": "compilação r208 da aplicação"
+        },
+        {
+          "en": "schema v12",
+          "pt": "esquema v12"
+        },
+        {
+          "en": "seed data set D6",
+          "pt": "conjunto de dados D6"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-079",
+      "learningObjective": "FL-6.1.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o4"],
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+      "afterCanonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "6.1": {
+          "EN": [59],
+          "PT": [65]
+        },
+        "4.3.2": {
+          "EN": [43],
+          "PT": [46, 47]
+        }
+      },
+      "LOPages": {
+        "EN": [58],
+        "PT": [64]
+      },
+      "assessmentPT": "A necessidade em falta é evidência dos ramos internos efetivamente exercitados. Associar execução a ramos instrumentados mede cobertura estrutural e ajuda a orientar novos testes. Requisitos ligados, contagem de asserções e complexidade estática têm utilidade, mas as capacidades descritas não respondem à mesma pergunta.",
+      "counterEvidencePT": "Uma ferramenta comercial pode reunir análise estática, execução, gestão e cobertura no mesmo produto. O item pede a capacidade mais direta, não uma categoria de marca mutuamente exclusiva. Análise estrutural pode identificar ramos existentes, mas os relatórios estáticos descritos não demonstram quais foram percorridos pelos testes executados.",
+      "translationAssessmentPT": "Internal branches/ramos internos e instrumented branches/ramos instrumentados mantêm o objeto estrutural. Most directly/mais diretamente distingue utilidade geral de fornecimento da evidência pedida. Passed assertions/asserções aprovadas e requirements linked/requisitos ligados continuam resultados e rastreabilidade, sem se tornarem cobertura de ramos.",
+      "pedagogyAssessmentPT": "K2: explicar que capacidade de ferramenta suporta uma necessidade concreta, distinguindo evidência estrutural, resultados e rastreabilidade. Não exige instrumentar código ou calcular cobertura. As justificações qualificam os resultados efetivamente descritos, evitando concluir que ferramentas multifunção nunca possam incluir outras capacidades.",
+      "editionDifferencePT": "EN secção 6.1, página 59, e PT página 65 incluem execução e medição de cobertura. A definição de cobertura de ramos em EN página 43 e PT páginas 46–47 sustenta a evidência pedida. A nomenclatura dos grupos é ampla em ambas; selecionar uma capacidade não cria exclusividade universal de ferramentas.",
+      "criticalPairs": [
+        {
+          "en": "internal branches",
+          "pt": "ramos internos"
+        },
+        {
+          "en": "passed assertions",
+          "pt": "asserções aprovadas"
+        },
+        {
+          "en": "instrumented branches",
+          "pt": "ramos instrumentados"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-080",
+      "learningObjective": "FL-6.2.1",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o2"],
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+      "afterCanonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "6.2": {
+          "EN": [59, 60],
+          "PT": [65, 66]
+        }
+      },
+      "LOPages": {
+        "EN": [58],
+        "PT": [64]
+      },
+      "assessmentPT": "O fim de suporte anunciado para o próximo ano evidencia dependência do fornecedor e compatibilidade continuada da plataforma. É um risco à continuidade futura de uma suite que pode continuar a funcionar hoje; não invalida automaticamente resultados atuais nem prova falta de estatísticas ou comparação manual excessiva.",
+      "counterEvidencePT": "O fim de suporte pode levar a migração, custos ou problemas futuros, mas não prova uma falha imediata de execução. O enunciado não fornece data de avaria ou proibição atual. Proprietário não significa necessariamente inadequado; o risco identificado é a dependência e a continuidade do suporte, não uma condenação de toda ferramenta proprietária.",
+      "translationAssessmentPT": "Will end next year/terminará no próximo ano preserva anúncio e horizonte futuro. Proprietary runner/executor proprietário mantém dependência tecnológica. Continuing platform compatibility/continuidade da compatibilidade distingue manter viabilidade de uma falha presente. Os outros distratores descrevem esforço manual, consistência e estatísticas, não este risco.",
+      "pedagogyAssessmentPT": "K1: recordar o risco de dependência do fornecedor e compatibilidade listado na secção 6.2. A explicação geral delimita explicitamente que o anúncio não torna inválidos os resultados atuais. As quatro opções contrastam benefícios potenciais e outra limitação de reporte sem introduzir requisitos de análise financeira ou migração técnica.",
+      "editionDifferencePT": "EN secção 6.2 inicia na página 59 e lista riscos na página 60; PT inicia na página 65 e continua na página 66. Ambas referem suporte do fornecedor e incompatibilidade com plataforma. As formulações diferem na edição, mas nenhuma obriga a concluir falha imediata a partir de um anúncio futuro.",
+      "criticalPairs": [
+        {
+          "en": "proprietary runner",
+          "pt": "executor proprietário"
+        },
+        {
+          "en": "end next year",
+          "pt": "terminará no próximo ano"
+        },
+        {
+          "en": "current test results are invalid",
+          "pt": "resultados atuais sejam inválidos"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-081",
+      "learningObjective": "FL-1.5.2",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o3"],
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+      "afterCanonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.5.2": {
+          "EN": [22],
+          "PT": [24]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "O programador recebeu conhecimento e é explicitamente qualificado para a tarefa. A partilha de competências permite continuidade da verificação e colaboração com negócio, mantendo responsabilidade conjunta pela qualidade. Isso não elimina a especialização nem implica que qualquer pessoa sem preparação possa executar qualquer tarefa.",
+      "counterEvidencePT": "Independência pode trazer benefícios noutro contexto, mas não houve revisor externo neste cenário. Automação e baselines também são úteis, porém não são os mecanismos descritos. A condição de competências adequadas é essencial; contextos críticos podem exigir independência, como a própria explicação geral reconhece.",
+      "translationAssessmentPT": "Qualified developer/programador qualificado e necessary skills/competências necessárias preservam a condição de capacidade. Cross-skilled members/membros com competências partilhadas é entendido com a formação explícita no enunciado, não como uniformidade de especialidades. Can/podem mantém possibilidade; shared responsibility/responsabilidade conjunta não transfere toda responsabilidade a uma só função.",
+      "pedagogyAssessmentPT": "K1: recordar a vantagem de colaboração e transferência de conhecimento na whole team approach, aplicada a uma verificação concreta simples. O empréstimo terminológico existe também na tradução oficial PT. As explicações separam independência, automação e configuração sem negar os seus benefícios próprios, e mantêm a qualificação necessária.",
+      "editionDifferencePT": "EN secção 1.5.2 na página 22 e PT na página 24 condicionam execução das tarefas a conhecimentos e competências e descrevem transferência de conhecimento. Ambas ressalvam contextos que requerem independência. Não há fundamento para remover especialização ou interpretar o termo inglês como defeito académico.",
+      "criticalPairs": [
+        {
+          "en": "qualified developer",
+          "pt": "programador qualificado"
+        },
+        {
+          "en": "necessary skills",
+          "pt": "competências necessárias"
+        },
+        {
+          "en": "shared responsibility for quality",
+          "pt": "responsabilidade conjunta pela qualidade"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-082",
+      "learningObjective": "FL-5.1.7",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "optionCount": 4,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+      "afterCanonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "5.1.7": {
+          "EN": [51],
+          "PT": [56, 57]
+        }
+      },
+      "LOPages": {
+        "EN": [47],
+        "PT": [52]
+      },
+      "assessmentPT": "Pedidos concorrentes ao serviço integrado investigam esgotamento de recursos e degradação de desempenho, ou seja, qualidades técnicas do produto. Nos dois eixos do modelo isto é orientação tecnológica e avaliação crítica do produto, Q4. O objetivo é determinante, não a profissão dos executantes ou apenas o momento após implementação.",
+      "counterEvidencePT": "Desempenho pode afetar valor de negócio e testes de integração podem apoiar desenvolvimento; isso não elimina a perspetiva técnica e finalidade de crítica dadas. Os quadrantes não formam uma cronologia rígida. Não se pede estimativa: estimar esforço pertence a outro LO; a questão efetivamente mede FL-5.1.7 e seus eixos.",
+      "translationAssessmentPT": "Critique/avaliam criticamente preserva comparação do comportamento com expectativas, não censura pessoal. Integrated service/serviço integrado não é necessariamente integração de componentes isolada de Q1. Concurrent requests/pedidos concorrentes mantém simultaneidade de carga sem inventar número de pedidos ou limiar. Resource exhaustion/esgotamento de recursos mantém a preocupação técnica.",
+      "pedagogyAssessmentPT": "K2: explicar a classificação em dois eixos e relacionar testes não funcionais com Q4. Não se executa cálculo de estimativa ou carga K3. As quatro justificações distinguem apoio da equipa de crítica do produto e perspetiva técnica de negócio; a explicação geral impede usar apenas ator ou momento como critério.",
+      "editionDifferencePT": "EN página 51 contém todos os quadrantes; PT começa a secção na página 56 e apresenta Q3/Q4 na página 57. Critique é explicado como medir comportamento face às expectativas. A hipótese de estimativas não descreve o texto real; nenhum objetivo ou terminologia precisa de mudança por essa hipótese.",
+      "criticalPairs": [
+        {
+          "en": "concurrent requests",
+          "pt": "pedidos concorrentes"
+        },
+        {
+          "en": "integrated service",
+          "pt": "serviço integrado"
+        },
+        {
+          "en": "critique the product",
+          "pt": "avaliam criticamente o produto"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-083",
+      "learningObjective": "FL-3.2.4",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 2,
+      "optionCount": 5,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o2", "o4"],
+      "existingKey": ["o2", "o4"],
+      "proposedKey": ["o2", "o4"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "f31d575236f2c92922a162f519a70646956cff3d2057c8a2628276d9b5af521d",
+      "afterCanonicalSHA256": "f31d575236f2c92922a162f519a70646956cff3d2057c8a2628276d9b5af521d",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "3.2.4": {
+          "EN": [36, 37],
+          "PT": [39, 40]
+        }
+      },
+      "LOPages": {
+        "EN": [32],
+        "PT": [35]
+      },
+      "assessmentPT": "O conjunto correto é o2 e o4, entre cinco alternativas: walkthrough conduzido pelo autor para aprendizagem e revisão técnica por pares qualificados sob moderação para consenso. A inspeção tem restrições de autor e processo completo que não se transferem automaticamente a toda revisão técnica. Nenhuma seleção parcial satisfaz o pedido DUAS/TWO.",
+      "counterEvidencePT": "Walkthroughs podem também procurar consenso e revisões técnicas podem educar participantes; só o objetivo não distingue todos os tipos. Aqui liderança, qualificação e moderação completam o contexto. Uma revisão técnica pode escolher mais formalidade, mas o5 impõe obrigatoriedade universal de processo e métricas de inspeção. A ordem de duas etapas é premissa deste plano, não regra para todos os projetos.",
+      "translationAssessmentPT": "Select TWO/Selecione DUAS preserva exatamente duas respostas; ambas as versões têm cinco alternativas. Author-led/conduzido pelo autor e moderated/moderada preservam condução e papéis. Can/pode em o2 e must/tem de em o5 são decisivos: possibilidade de aprendizagem não é obrigação de transformar revisão técnica em inspeção. Scribe/redator coincide com a terminologia PT dos papéis.",
+      "pedagogyAssessmentPT": "K2: comparar tipos por liderança, participantes e objetivos em duas situações. A quinta alternativa permite testar a confusão entre consenso e formalidade de inspeção; não se pode omiti-la para forçar quatro opções. O conjunto o2/o4 é único entre as afirmações e as explicações publicadas sustentam todas as cinco, sem reclamar aprovação humana.",
+      "editionDifferencePT": "A secção 3.2.4 cobre EN páginas 36–37 e PT páginas 39–40: walkthrough pelo autor, revisão técnica por qualificados com moderador e inspeção com processo completo e restrições de autor. O banco autenticado já contém cinco opções e required=2; a diferença com a premissa de quatro no pedido é estrutural documentada, não alteração de conteúdo.",
+      "criticalPairs": [
+        {
+          "en": "Select TWO",
+          "pt": "Selecione DUAS"
+        },
+        {
+          "en": "author-led walkthrough",
+          "pt": "walkthrough conduzido pelo autor"
+        },
+        {
+          "en": "must use the full inspection process",
+          "pt": "tem de seguir todo o processo de inspeção"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2", "o4"],
+          "canonicalSHA256": "f31d575236f2c92922a162f519a70646956cff3d2057c8a2628276d9b5af521d",
+          "equalCurrent": true
+        }
+      ]
+    }
+  ]
+}

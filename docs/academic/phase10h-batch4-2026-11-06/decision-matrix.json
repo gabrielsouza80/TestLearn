@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-06",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "scope": "Phase 10H Batch 4 only",
+  "reviewMethod": "AI_REVIEWED",
+  "humanApprovedCount": 0,
+  "ownerAcceptedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-025",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.1",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 2,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae",
+      "afterCanonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-025",
+        "answer": ["o1"],
+        "derivation": "The declared integer partitions are x<3, 3<=x<=8, x>8. Representatives 2,5,9 cover all three. Three values are necessary because these unary partitions are disjoint. o2 only covers valid, o3 misses valid, o4 misses above-range. No exhaustive Cartesian combination claim."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "As três partições são disjuntas num único parâmetro. 2 cobre abaixo de 3; 5 pertence a 3–8; 9 cobre acima de 8. São necessários pelo menos três representantes e o1 atinge esse mínimo. Não se pede produto cartesiano nem teste exaustivo.",
+          "en": "The three partitions are disjoint for one input. 2 covers below 3, 5 covers inclusive 3–8, and 9 covers above 8. At least three representatives are necessary and o1 achieves that bound. Cartesian combinations and exhaustive testing are not requested."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "3,5,8 pertencem todos à partição válida; faltam ambas as inválidas.",
+            "en": "3,5,8 all belong to the valid partition; both invalid partitions are missing."
+          },
+          "o3": {
+            "pt": "2,9 cobrem só as duas partições inválidas; falta um representante válido. Menor cardinalidade não basta para cobertura.",
+            "en": "2,9 cover only the invalid partitions; the valid one is absent. A smaller set is insufficient when it misses coverage."
+          },
+          "o4": {
+            "pt": "2 cobre abaixo; 3 e 5 repetem a válida; falta acima.",
+            "en": "2 covers below range; 3 and 5 repeat valid coverage; above range is absent."
+          }
+        },
+        "translation": {
+          "pt": "Inteira/integer e inclusive mantêm o domínio discreto e ambas as extremidades aceites. Conjunto mínimo/smallest set refere as mesmas três partições. Números e explicações concordam.",
+          "en": "Integer/inteira and inclusive preserve the discrete domain and both accepted endpoints. Smallest set/conjunto mínimo concerns the same three partitions; numbers and rationales agree."
+        },
+        "difficulty": {
+          "pt": "K3 baixo: aplica EP para selecionar dados e verificar cobertura mínima, não apenas recordar a definição. A escolha múltipla não demonstra conceção autónoma de um plano completo.",
+          "en": "Low K3 difficulty: apply EP to select data and establish minimal coverage, rather than merely recall a definition. Multiple choice does not demonstrate autonomous design of an entire test plan."
+        },
+        "optional": {
+          "pt": "Expandir a prova de minimalidade na explicação geral é opcional; o texto atual está correto.",
+          "en": "Expanding the minimality proof is optional; the existing explanation is correct."
+        }
+      },
+      "references": {
+        "section": "4.2.1",
+        "EN": [38, 39, 40],
+        "PT": [41, 42, 43]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "030a53552544af98f2fa00305c5889f6e425cd4765a4b394c3d1fdb124712e59"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-026",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.2",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 3,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a",
+      "afterCanonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-026",
+        "answer": ["o1"],
+        "derivation": "Integer partition interfaces are 9/10 and 20/21. Two-value BVA across both sides requires {9,10,20,21}. o2 lacks rejected sides; o3 lacks21; o4 lacks9. No finite endpoints of the unbounded rejected partitions are invented."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "O domínio é inteiro e rejeita todos os restantes inteiros. As interfaces são 9/10 e 20/21. BVA de 2 valores requer os lados adjacentes das duas interfaces: 9,10,20,21. Nenhuma extremidade externa finita é fornecida.",
+          "en": "The domain is integer and all other integers are rejected. Interfaces are 9/10 and 20/21. Two-value BVA requires adjacent sides at both interfaces: 9,10,20,21. No finite outer domain endpoints are specified."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "10,15,20 não exercitam os vizinhos inválidos 9 e 21; 15 é interior.",
+            "en": "10,15,20 omit adjacent invalid values 9 and 21; 15 is interior."
+          },
+          "o3": {
+            "pt": "19 está ainda na partição válida; 19/20 não cruza a interface superior e falta 21.",
+            "en": "19 is still valid; 19/20 does not cross the upper interface and 21 is missing."
+          },
+          "o4": {
+            "pt": "11 está ainda na partição válida; 10/11 não cruza a interface inferior e falta 9.",
+            "en": "11 is still valid; 10/11 does not cross the lower interface and 9 is missing."
+          }
+        },
+        "translation": {
+          "pt": "10–20 inclusive, todos os outros inteiros e 2 valores são explícitos nas duas línguas. A ordem dos números de cada alternativa é idêntica. Não se substitui a vizinhança inteira por decimais.",
+          "en": "Inclusive 10–20, rejection of all other integers and two-value scope are explicit in both languages. Every alternative has the same numbers in the same order; decimal neighbors are not substituted."
+        },
+        "difficulty": {
+          "pt": "K3 médio: aplicar fronteiras/vizinhos do lado correto, distinguindo limites da partição válida dos pares adjacentes.",
+          "en": "Moderate K3: apply boundaries and neighbors on the correct side, distinguishing valid endpoints from adjacent boundary pairs."
+        },
+        "optional": {
+          "pt": "Nenhuma correção necessária. Acrescentar um desenho seria apenas apoio pedagógico.",
+          "en": "No correction is necessary. A diagram would be an optional teaching aid."
+        }
+      },
+      "references": {
+        "section": "4.2.2",
+        "EN": [38, 40],
+        "PT": [41, 43, 44]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "cc029f84ab0a61b85f51dfec93e4c3dcc865bff68ef0706589632f778203be23"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-027",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.3",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 3,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3",
+      "afterCanonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-027",
+        "answer": ["o1"],
+        "derivation": "R1 has Member=T and Total>=50=T, so member yes/60 selects R1 and grants free delivery. o2 no/60 selectsR3; o3 yes/20 selectsR2; o4 no/20 selectsR4. The input derives a case; the expected result comes from the X in R1, not from the input alone."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "R1 exige membro e total ≥50; sim/60 satisfaz ambos e X concede entrega gratuita. A pergunta pede a entrada que deriva um caso de R1, não a representação completa de um caso nem cobertura de todas as regras.",
+          "en": "R1 requires membership and total ≥50; yes/60 satisfies both and X grants free delivery. The question asks for input deriving an R1 case, not a fully authored test case or coverage of every rule."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "Não/60 é F,T: corresponde a R3 e não concede entrega gratuita.",
+            "en": "No/60 is F,T: R3, without free delivery."
+          },
+          "o3": {
+            "pt": "Sim/20 é T,F: corresponde a R2 e não concede entrega gratuita.",
+            "en": "Yes/20 is T,F: R2, without free delivery."
+          },
+          "o4": {
+            "pt": "Não/20 é F,F: corresponde a R4 e não concede entrega gratuita.",
+            "en": "No/20 is F,F: R4, without free delivery."
+          }
+        },
+        "translation": {
+          "pt": "T/F/X são definidos nas duas línguas; T em PT é permitido por legenda explícita apesar do V usado na tradução do syllabus. ≥ não é >. Só R1 tem X, e os headers de condições/ação são bilingues.",
+          "en": "T/F/X are defined in both languages; explicit T in Portuguese is valid despite the syllabus translation using V. ≥ is not >. Only R1 has X and condition/action headers are bilingual."
+        },
+        "difficulty": {
+          "pt": "K3 baixo: aplicar duas condições a uma regra e derivar entrada/resultado; não exige construir autonomamente a tabela.",
+          "en": "Low K3: apply two conditions to a rule and derive input/outcome; autonomous table construction is not assessed."
+        },
+        "optional": {
+          "pt": "Uma legenda de célula vazia pode tornar a tabela mais autónoma, mas a tarefa R1 e a convenção oficial já a tornam decidível.",
+          "en": "A blank-cell legend could improve standalone readability, but R1 and the official convention already make the task decidable."
+        }
+      },
+      "references": {
+        "section": "4.2.3",
+        "EN": [38, 41],
+        "PT": [41, 44, 45]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "46598c0530cd8cdb9ab9327e548d707ce934ed9c483f9ff148d71a6e3aec7334"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-028",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.4",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 3,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f",
+      "afterCanonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-028",
+        "answer": ["o1"],
+        "derivation": "Start Draft, Submit reaches Pending and Pay reaches Paid. o2 Pay fails immediately; o3 second Submit fails at Pending; o4 reaches Paid then its final Pay is invalid. Evaluate the full sequence, not only its successful prefix."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "A partir de Draft/Rascunho, Submit/Submeter leva a Pending/Pendente e Pay/Pagar a Paid/Paga. Todos os eventos da sequência têm de ser válidos. Apenas o1 termina em Paga sem evento inválido.",
+          "en": "From Draft/Rascunho, Submit/Submeter reaches Pending/Pendente and Pay/Pagar reaches Paid/Paga. Every event in the sequence must be valid. Only o1 ends Paid without an invalid event."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "Pagar no estado inicial é inválido; não há transição inventada para o permitir.",
+            "en": "Pay is invalid initially; no transition may be invented to permit it."
+          },
+          "o3": {
+            "pt": "O segundo Submeter é inválido em Pendente; não chega a Paga.",
+            "en": "The second Submit is invalid in Pending and Paid is not reached."
+          },
+          "o4": {
+            "pt": "O terceiro evento Pagar é inválido em Paga. O prefixo válido não torna válida a sequência inteira.",
+            "en": "The third Pay is invalid in Paid. A valid prefix does not validate the entire sequence."
+          }
+        },
+        "translation": {
+          "pt": "O PT abrevia a origem de Submeter, mas o estado inicial e a invalidação das restantes combinações preservam o mesmo modelo. Paid/Paga e a ordem integral de cada sequência são equivalentes.",
+          "en": "Portuguese abbreviates the source of Submit, but the initial state and invalidity of all other combinations preserve the same model. Paid/Paga and each complete sequence order are equivalent."
+        },
+        "difficulty": {
+          "pt": "K3 baixo: executar mentalmente o modelo, incluindo o evento final inválido. Não basta localizar a palavra Paga no prefixo.",
+          "en": "Low K3: execute the state model, including a final invalid event. Finding Paid in a successful prefix is insufficient."
+        },
+        "optional": {
+          "pt": "Nenhuma mudança substantiva. Explicitar Draft na frase PT de Submeter é editorial, não altera a interpretação.",
+          "en": "No substantive change. Repeating Draft in the Portuguese Submit sentence would be editorial."
+        }
+      },
+      "references": {
+        "section": "4.2.4",
+        "EN": [38, 41, 42],
+        "PT": [41, 45]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6f57e170e0396fd8c50dd75d32686a0a28deca1932c822bec672626c0f584e8b"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-029",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.5.3",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 3,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230",
+      "afterCanonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-029",
+        "answer": ["o1"],
+        "derivation": "Agreed ATDD examples must yield (49,charge5) and (50,charge0). o2 gets49wrong, o3 gets50wrong, o4 reversesboth. 49 and50 are examples on opposite sides, not necessarily adjacent if cents are allowed, and do not establish complete BVA or all acceptance coverage."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "Os exemplos de aceitação derivados antes da implementação devem dar custo 5 para total 49 (<50) e custo 0 para total 50 (≥50). Só o1 preserva ambos. Isto é ATDD sobre a regra acordada, não uma promessa de cobertura total.",
+          "en": "Acceptance examples derived before implementation must yield cost 5 at total 49 (<50) and cost 0 at total 50 (≥50). Only o1 preserves both. This is ATDD from the agreed rule, not a promise of complete coverage."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "Torna gratuita a entrega a 49, contrariando a condição abaixo de 50.",
+            "en": "Makes delivery free at 49, contrary to the below-50 condition."
+          },
+          "o3": {
+            "pt": "Cobra 5 a 50, excluindo incorretamente o limiar inclusivo.",
+            "en": "Charges 5 at 50, incorrectly excluding the inclusive threshold."
+          },
+          "o4": {
+            "pt": "Inverte ambos os resultados esperados: 49 e 50.",
+            "en": "Reverses both expected outcomes at 49 and 50."
+          }
+        },
+        "translation": {
+          "pt": "Inferiores/below e pelo menos/at least preservam < e ≥; o limiar é do total e não do custo. Os exemplos Given/When/Then e Dado/Quando/Então preservam entrada, ação e resultado.",
+          "en": "Inferiores/below and pelo menos/at least preserve < and ≥; the threshold concerns the total, not delivery cost. Both example formats preserve input, action and expected outcome."
+        },
+        "difficulty": {
+          "pt": "K3 baixo a médio: aplicar critérios de aceitação a exemplos concretos; não prova redação autónoma de todos os testes da story.",
+          "en": "Low-to-moderate K3: apply acceptance criteria to concrete examples; not proof of independent authorship of every story test."
+        },
+        "optional": {
+          "pt": "Se forem permitidos cêntimos, 49 e 50 não são vizinhos imediatos. O enunciado só pede os dois lados e não BVA adjacente. Negativos e requisitos não funcionais continuam fora destes dois exemplos.",
+          "en": "If cents are allowed, 49 and 50 are not immediate neighbors. The question asks for both sides, not adjacent BVA. Negative scenarios and nonfunctional requirements remain outside these two examples."
+        }
+      },
+      "references": {
+        "section": "4.5.3",
+        "EN": [38, 46],
+        "PT": [41, 50, 51]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "e7a4830980fc75d66ad59383217447a40b4f73a028d561aedfc515eac665af9b"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-036",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-5.1.4",
+      "cognitiveLevel": "K3",
+      "chapter": 5,
+      "questionVersion": 3,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3",
+      "afterCanonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-036",
+        "answer": ["o1"],
+        "derivation": "(2+4*5+14)/6=36/6=6 person-hours. o2 gives the unweighted mean7; o3 chooses the pessimistic14; o4 chooses most-likely5. The weighted central estimate is not an actual-effort guarantee, elapsed calendar time or confidence interval."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "Aplicando a fórmula fornecida: (2+4×5+14)/6=36/6=6 pessoas-hora. Unicidade resulta do cálculo exato, não da posição da alternativa. O valor é uma estimativa central ponderada.",
+          "en": "Apply the provided formula: (2+4×5+14)/6=36/6=6 person-hours. Uniqueness follows from exact arithmetic, not option position. The result is a weighted central estimate."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "7 é a média aritmética não ponderada; ignora o peso 4 da mais provável.",
+            "en": "7 is the unweighted arithmetic mean and omits weight 4 on the most-likely value."
+          },
+          "o3": {
+            "pt": "14 é só a estimativa pessimista, não a combinação ponderada.",
+            "en": "14 is the pessimistic input alone, not the weighted combination."
+          },
+          "o4": {
+            "pt": "5 é só a estimativa mais provável; o cálculo ponderado dá 6.",
+            "en": "5 is the most-likely input alone; the weighted calculation gives 6."
+          }
+        },
+        "translation": {
+          "pt": "Respetivamente/respectively fixa 2 como otimista, 5 como mais provável e 14 como pessimista. ×, +, /6 e pessoas-hora/person-hours mantêm pesos, ordem e unidade.",
+          "en": "Respectively/respetivamente maps 2 to optimistic, 5 to most likely and 14 to pessimistic. ×, +, /6 and person-hours/pessoas-hora preserve weights, ordering and units."
+        },
+        "difficulty": {
+          "pt": "K3 baixo a médio: aplicar técnica e unidade a valores dados. A fórmula explícita reduz memorização, mas não elimina a aplicação aritmética.",
+          "en": "Low-to-moderate K3: apply the technique and units to supplied values. An explicit formula reduces memorization without eliminating arithmetic application."
+        },
+        "optional": {
+          "pt": "Não é garantia de esforço real nem duração de calendário; não foi pedido SD ou intervalo de confiança. Nenhuma alteração é necessária para responder ao que foi perguntado.",
+          "en": "Not a guarantee of actual effort or elapsed calendar duration; SD or a confidence interval was not requested. No change is necessary to answer the stated question."
+        }
+      },
+      "references": {
+        "section": "5.1.4",
+        "EN": [47, 49, 50],
+        "PT": [52, 54, 55]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "9f277fd56f1075fde103b18fb75eecd435de09538a8666a9cb5450b7a2abfd5e"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-037",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-5.1.5",
+      "cognitiveLevel": "K3",
+      "chapter": 5,
+      "questionVersion": 2,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1",
+      "afterCanonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-037",
+        "answer": ["o1"],
+        "derivation": "Initially A is unavailable because it requires C. Available B outranks C, so runB, thenC, thenA. C,A,B satisfies dependencies but violates the explicit highest-risk-available-first rule at the first step; it could fit an alternative policy prioritizing early unblocking of A. A,B,C and B,A,C violate C-before-A."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "A está bloqueado por C. Inicialmente B e C estão disponíveis; B tem maior prioridade de risco. Após B, C é executado e desbloqueia A. Portanto B,C,A.",
+          "en": "A is blocked by C. Initially B and C are available, and B has higher risk priority. After B, run C to enable A. Therefore B,C,A."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "Executa A antes do seu pré-requisito C.",
+            "en": "Runs A before prerequisite C."
+          },
+          "o3": {
+            "pt": "C,A,B respeita a dependência, mas começa por C quando B de maior risco está disponível. É defensável sob outra política de desbloquear A cedo, não a regra local pedida.",
+            "en": "C,A,B respects the dependency but starts C while higher-risk B is available. It could fit a different policy of enabling A early, not the specified local rule."
+          },
+          "o4": {
+            "pt": "B é correto primeiro, mas A continua bloqueado; C tem de preceder A.",
+            "en": "B is correct first but A remains blocked; C must precede A."
+          }
+        },
+        "translation": {
+          "pt": "Available/disponível é uma restrição decisiva nas duas línguas. A exige C primeiro e B é independente. A ordem de prioridade A antes de B antes de C permanece igual.",
+          "en": "Available/disponível is decisive in both languages. A requires C first and B is independent. Risk ranking A before B before C is unchanged."
+        },
+        "difficulty": {
+          "pt": "K3 médio: aplicar prioridades sob dependências. Não se pede otimização global, durações ou paralelismo.",
+          "en": "Moderate K3: apply prioritization under dependencies. Global optimization, durations and parallelism are not requested."
+        },
+        "optional": {
+          "pt": "Uma discussão de políticas alternativas pode enriquecer ensino, mas não torna C,A,B correto neste enunciado.",
+          "en": "Discussing alternative policies could enrich teaching without making C,A,B correct for this stem."
+        }
+      },
+      "references": {
+        "section": "5.1.5",
+        "EN": [47, 50],
+        "PT": [52, 55, 56]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "557f6a7110a782b0baf109412b7c0e44aad44a2269f1cae5e6d586e3043b1894"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    },
+    {
+      "questionId": "tl-046",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.2",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea",
+      "afterCanonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea",
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-046",
+        "answer": ["o3"],
+        "derivation": "All finite partition boundary values are 4,5,12,13: invalid-below max4, valid min5/max12, invalid-above min13. Their three-value neighborhoods {3,4,5},{4,5,6},{11,12,13},{12,13,14} unite to {3,4,5,6,11,12,13,14}. o1 gives only two-value set; o2 six values omits3/14 and is insufficient for all partitions; o4 adds7 and is nonminimal. No outer domain endpoints exist."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "As fronteiras finitas são 4,5,12,13. Expandindo cada uma com os vizinhos inteiros dos dois lados: {3,4,5}∪{4,5,6}∪{11,12,13}∪{12,13,14}={3,4,5,6,11,12,13,14}. São oito itens distintos necessários e suficientes; o3 é o mínimo.",
+          "en": "Finite boundaries are 4,5,12,13. Expand each by both integer neighbors: {3,4,5}∪{4,5,6}∪{11,12,13}∪{12,13,14}={3,4,5,6,11,12,13,14}. Eight distinct required items are necessary and sufficient; o3 is minimal."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "Quatro valores dão BVA de 2 valores; faltam os vizinhos adicionais.",
+            "en": "Four values provide two-value BVA; additional neighbors are missing."
+          },
+          "o2": {
+            "pt": "Os seis valores expandem só 5 e 12, omitindo 3 e 14 exigidos pelas fronteiras inválidas 4 e 13. Cobre 6/8 itens deste âmbito.",
+            "en": "Six values expand only 5 and 12, omitting 3 and 14 required around invalid boundaries 4 and 13. They cover 6/8 items in this scope."
+          },
+          "o4": {
+            "pt": "Cobre todos os itens mas acrescenta 7, logo não é mínimo. Cobertura e minimalidade são critérios diferentes.",
+            "en": "Covers every required item but adds 7, so it is not minimal. Coverage and minimality are separate criteria."
+          }
+        },
+        "translation": {
+          "pt": "Inteira/integer, sem limites/no domain limit, todas as fronteiras finitas/every finite boundary e mínimo/minimal preservam domínio e âmbito. Não há extremos de máquina ou endpoints artificiais. Os números dos oito valores e a união concordam.",
+          "en": "Integer/inteira, no domain limit/sem limites, every finite boundary/todas as fronteiras finitas and minimal/mínimo preserve scope. No machine endpoints or artificial outer limits apply. The eight numbers and their union agree."
+        },
+        "difficulty": {
+          "pt": "K3 médio a alto: identificar fronteiras de três partições, formar união sem duplicados e testar minimalidade. Se o âmbito fosse só os endpoints válidos, seis poderiam bastar, mas isso não é a premissa atual.",
+          "en": "Moderate-to-high K3: identify boundaries across three partitions, union overlapping neighborhoods and establish minimality. Six could suffice for valid-endpoints-only scope, which is not the stated premise."
+        },
+        "optional": {
+          "pt": "Nenhuma correção necessária. Um desenho adicional pode facilitar ensino sem mudar os oito itens requeridos.",
+          "en": "No correction is required. An additional diagram could aid teaching without changing the eight required items."
+        }
+      },
+      "references": {
+        "section": "4.2.2",
+        "EN": [38, 40],
+        "PT": [41, 43, 44]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change"
+    }
+  ]
+}

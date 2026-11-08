@@ -1,0 +1,1587 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-06",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "scope": "Phase 10H Batch 5 only",
+  "reviewMethod": "AI_REVIEWED",
+  "humanApprovedCount": 0,
+  "ownerAcceptedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-047",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.2",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c",
+      "afterCanonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-047",
+        "answer": ["o1"],
+        "reasoning": "Union of clipped neighbours of 0,7,8,22,23,30 in [0,30], less already tested boundaries: {1,6,9,21,24,29}. o2 omits endpoint neighbours1/29; o3 adds infeasible -1/31; o4 repeats existing tests.",
+        "derivation": "Union of clipped neighbours of 0,7,8,22,23,30 in [0,30], less already tested boundaries: {1,6,9,21,24,29}. o2 omits endpoint neighbours1/29; o3 adds infeasible -1/31; o4 repeats existing tests."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "B={0,7,8,22,23,30}; D={0,…,30}. A união de {b−1,b,b+1}∩D tem 12 itens. Subtrair B deixa {1,6,9,21,24,29}. O white paper §3, pp.2–4, inclui extremos finitos e exclui vizinhos impossíveis; §7,p.6 distingue impossível de inválido. Não é uma regra de ignorar entradas inválidas: 0–7 e23–30 são possíveis e rejeitadas.",
+          "en": "Union clipped integer neighbourhoods of all six boundary values, then subtract the already tested boundaries. The result is {1,6,9,21,24,29}. White-paper section3, pages2–4 includes finite outer endpoints and excludes impossible neighbours; section7,page6 distinguishes impossible from invalid inputs. Rejected but possible values remain in scope."
+        },
+        "translation": {
+          "pt": "Inteiros/integer, domínio/domain inclusivo0–30, rejeita/reject e não podem/cannot equivalem. Ambas as versões exigem conjunto adicional mínimo e todos os limites; números e explicações coincidem.",
+          "en": "Integer, inclusive0–30, rejection, impossible out-of-domain entry and minimal additional coverage are equivalent. Numeric alternatives and rationales agree."
+        },
+        "difficulty": {
+          "pt": "Médio/alto K3: identificar fronteiras de três partições, unir vizinhanças e calcular diferença mínima. Não basta recordar uma definição.",
+          "en": "Moderate/high K3: identify boundaries of three partitions, union their neighbourhoods and derive a minimum additional set."
+        },
+        "optional": {
+          "pt": "A reserva LOW da matriz anterior era hipótese. O white paper fornece agora suporte explícito para extremos finitos e exclusão de vizinhos impossíveis. Explicitar “itens exequíveis” seria opcional: o enunciado já o faz. Não generalizar a restrição do domínio.",
+          "en": "The earlier LOW concern was a hypothesis. The white paper now supplies explicit finite-endpoint and impossible-neighbour support. Adding “feasible items” is optional because the existing domain constraint already states that scope. Do not generalize this restriction."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "Faltam1/29, vizinhos internos dos extremos.",
+            "en": "Missing1/29, feasible neighbours of the outer endpoints."
+          },
+          "o3": {
+            "pt": "−1/31 são impossíveis e proibidos pelo domínio.",
+            "en": "−1/31 are impossible and forbidden by the stated domain."
+          },
+          "o4": {
+            "pt": "Repete B; nenhum vizinho em falta é acrescentado.",
+            "en": "Repeats B; adds none of the missing neighbours."
+          }
+        }
+      },
+      "references": {
+        "section": "4.2.2",
+        "EN": [38, 40],
+        "PT": [41, 43, 44],
+        "BVA-WP": {
+          "sections": ["2", "3", "4", "7"],
+          "pages": [2, 3, 4, 6]
+        }
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-047",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c",
+        "learningObjective": "FL-4.2.2",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.2.2",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.2.2",
+          "pdfPages": [40],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "1, 6, 9, 21, 24, 29",
+              "pt": "1, 6, 9, 21, 24, 29"
+            },
+            "explanation": {
+              "en": "Expanding all six boundaries within 0–30 gives twelve distinct values. Removing the six already tested leaves 1,6,9,21,24,29.",
+              "pt": "Expandir as seis fronteiras dentro de 0–30 dá doze valores distintos. Remover os seis já testados deixa 1,6,9,21,24,29."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The required in-domain union is {0,1,6,7,8,9,21,22,23,24,29,30}. Boundary 0 contributes only neighbour 1 inside the domain; boundary 30 contributes only 29. Subtract {0,7,8,22,23,30}, already covered by two-value BVA, to obtain the six additional values {1,6,9,21,24,29}. No out-of-domain test is required by this exercise.",
+          "pt": "A união exigida dentro do domínio é {0,1,6,7,8,9,21,22,23,24,29,30}. A fronteira 0 contribui apenas com o vizinho 1 dentro do domínio; a fronteira 30 contribui apenas com 29. Subtraia {0,7,8,22,23,30}, já coberto por BVA de 2 valores, para obter os seis valores adicionais {1,6,9,21,24,29}. Este exercício não exige testes fora do domínio."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "bc17f661a8232b6132e76b414f1a9e65a59edaf2fc03384e984e4d3f995d4ce6",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-27",
+          "section": "4.2.2",
+          "pages": [40],
+          "report": "docs/blueprint-validation.md#tl-047"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.2.2",
+            "pdfPages": [38, 40]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.2.2",
+            "pdfPages": [43, 44]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.2.2/K3: expansão dos limites das três partições dentro do domínio 0..30 e subtração dos já testados produz seis adicionais, o1. É aplicação com convenção local explícita para vizinhos inviáveis.",
+        "distractorAssessment": {
+          "o2": "Omite 1 e 29, vizinhos internos dos extremos de domínio.",
+          "o3": "Inclui -1 e 31 impossíveis/proibidos pelo enunciado.",
+          "o4": "Repete seis fronteiras já testadas, sem novos itens."
+        },
+        "wordingAndTranslationConcerns": "only integer/apenas inteiras, cannot/must not/não podem/nem devem e additional/adicional preservam restrições. Conjuntos numéricos idênticos.",
+        "potentialAmbiguity": "Syllabus define fronteira e dois vizinhos; não descreve explicitamente esta regra de recorte nos extremos do domínio. A chave é correta sob a convenção anunciada, mas “full three-value BVA” pode parecer alegação de equivalência geral ao exame. Validar essa convenção com humano.",
+        "difficultyAssessment": "Média a alta; K3 com recorte, união e diferença; carga de leitura relevante.",
+        "proposedCorrection": {
+          "description": "Qualificar cobertura como “todos os itens de BVA de 3 valores exequíveis dentro do domínio definido neste exercício”, em EN/PT, sem apresentar recorte dos extremos como regra universal expressa do syllabus. Não acrescentar -1/31 nem mudar chave.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": "B={0,7,8,22,23,30}; D={0..30}. U=∪({b-1,b,b+1}∩D)={0,1,6,7,8,9,21,22,23,24,29,30}. Já testado B; U−B={1,6,9,21,24,29}, o1. o2 falta 1/29; o3 viola D; o4 não adiciona U−B.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-071",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.1",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 2,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93",
+      "afterCanonicalSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93",
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-071",
+        "answer": ["o2"],
+        "reasoning": "Existing cover valid day partitions and PDF/CSV. Need below2,above45,otherformat. (1,XML),(46,PDF) covers all three; at least two cases required for two mutually exclusive day partitions. o1 misses both invalid day partitions;o3 misses above45;o4 misses otherformat. Valid only with explicit no-masking premise.",
+        "derivation": "Existing cover valid day partitions and PDF/CSV. Need below2,above45,otherformat. (1,XML),(46,PDF) covers all three; at least two cases required for two mutually exclusive day partitions. o1 misses both invalid day partitions;o3 misses above45;o4 misses otherformat. Valid only with explicit no-masking premise."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "Os testes existentes cobrem dias2–14 e15–45, PDF eCSV. Faltam dias<2, dias>45 e outro formato. (1,XML)/(46,PDF) completa as sete partições em dois testes; um só não pode ter simultaneamente dias<2 e>45. A premissa explícita permite dois campos inválidos sem mascaramento.",
+          "en": "Existing tests cover day partitions2–14/15–45 and PDF/CSV. Missing below2,above45 and other-format are covered by (1,XML)/(46,PDF). Two is minimal because one day value cannot occupy both missing day partitions. Explicit independent evaluation excludes defect masking."
+        },
+        "translation": {
+          "pt": "As quatro partições inteiras, três formatos, sete no total e avaliação independente incluindo inválidos estão nas duas línguas. Par adicional significa dois casos, não todas as combinações.",
+          "en": "Both languages preserve four integer day partitions, three format partitions, seven total, and independent evaluation including invalid values. Additional pair means two cases, not exhaustive combinations."
+        },
+        "difficulty": {
+          "pt": "K3 médio: calcular cobertura residual e provar o limite inferior; seleção fundamentada de dados de teste.",
+          "en": "Moderate K3: calculate residual coverage and prove a lower bound when selecting test data."
+        },
+        "optional": {
+          "pt": "Não extrapolar dois testes para aplicações que parem na primeira validação inválida. Não há obrigação de um teste por campo inválido sob a premissa deste cenário.",
+          "en": "Do not extrapolate two tests to applications that stop at the first invalid field. Separate invalid-field tests are not mandated under this scenario’s explicit no-masking premise."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "Repete duas partições válidas de dias; faltam as duas inválidas.",
+            "en": "Repeats both valid day partitions; both invalid ones remain uncovered."
+          },
+          "o3": {
+            "pt": "15 repete15–45; falta>45.",
+            "en": "15 repeats15–45; above45 remains uncovered."
+          },
+          "o4": {
+            "pt": "Cobre dias em falta, mas nunca outro formato.",
+            "en": "Covers missing days but never other-format."
+          }
+        }
+      },
+      "references": {
+        "section": "4.2.1",
+        "EN": [38, 39, 40],
+        "PT": [41, 42, 43]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "6b186551e61d6cb11ad7985c3d8413e84dc4d0318dd7eee54c30fa1bc9bc0856"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "6b186551e61d6cb11ad7985c3d8413e84dc4d0318dd7eee54c30fa1bc9bc0856"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o2"],
+          "canonicalSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o2"],
+          "canonicalSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-071",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93",
+        "learningObjective": "FL-4.2.1",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.2.1",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.2.1",
+          "pdfPages": [39, 40],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o2"],
+        "currentCorrectOptions": [
+          {
+            "id": "o2",
+            "text": {
+              "en": "(1, XML); (46, PDF)",
+              "pt": "(1, XML); (46, PDF)"
+            },
+            "explanation": {
+              "en": "The two tests cover both missing day partitions and XML covers the missing other-format partition.",
+              "pt": "Os dois testes cobrem ambas as partições de dias em falta e XML cobre a partição de outro formato em falta."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Three partitions are missing: low days, high days and other format. One test cannot cover both low and high days, so at least two are required. Independent evaluation lets XML share a test with a missing day partition.",
+          "pt": "Faltam três partições: dias abaixo do limite, dias acima do limite e outro formato. Um teste não pode cobrir simultaneamente dias abaixo e acima, pelo que são necessários pelo menos dois. A avaliação independente permite combinar XML com uma partição de dias em falta."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "89bb91ce0e413a5a5fe7a516db18ab47ccce0c7e70720016fc77c39d270d5f1d",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.2.1",
+          "pages": [39, 40],
+          "report": "docs/academic-audit.md#fase-6c--tl-071"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.2.1",
+            "pdfPages": [38, 39, 40]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.2.1",
+            "pdfPages": [41, 42, 43]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.2.1/K3: Each Choice requer cada partição de cada campo, não combinações. Faltam dias<2, dias>45 e outro formato; o2 cobre as três em dois testes sob independência explícita.",
+        "distractorAssessment": {
+          "o1": "2 e 45 repetem partições já cobertas; faltam ambos extremos rejeitados.",
+          "o3": "15 repete 15–45; >45 continua ausente.",
+          "o4": "Dias faltantes cobertos, mas formato outro não exercitado."
+        },
+        "wordingAndTranslationConcerns": "integer/inteiros, independent/independentemente, seven/sete e minimum additional pair/par adicional mínimo equivalentes. XML pertence a outro formato.",
+        "potentialAmbiguity": "Combinar dois campos inválidos pode mascarar validações em sistemas reais; o cenário exclui expressamente esse mascaramento. Não generalizar mínimo dois sem essa premissa.",
+        "difficultyAssessment": "Média a alta; K3, inventário de cobertura e prova de mínimo.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o2"],
+          "keyProposed": ["o2"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "Existentes (7,PDF)→dias[2,14]+PDF; (30,CSV)→dias[15,45]+CSV: 4/7 partições. Faltam Pbaixo,Palto,Foutro. Cada caso tem um só valor de dias, logo ≥2 casos. (1,XML) cobre Pbaixo+Foutro; (46,PDF) cobre Palto. União 7/7, dois casos mínimos, o2.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-073",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.4",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a",
+      "afterCanonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a",
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-073",
+        "answer": ["o3"],
+        "reasoning": "Execute all six events: Review-return-Returned-resubmit-Review-approve-Approved-revoke-Review-approve-Approved-publish-Published. Five distinct transitions; approve must be repeated after revoke, so lower bound6. o1 misses return/resubmit;o2 misses revoke;o4 resubmit invalid after revoke. Alternative shortest sequence approve,revoke,return,resubmit,approve,publish exists outside options.",
+        "derivation": "Execute all six events: Review-return-Returned-resubmit-Review-approve-Approved-revoke-Review-approve-Approved-publish-Published. Five distinct transitions; approve must be repeated after revoke, so lower bound6. o1 misses return/resubmit;o2 misses revoke;o4 resubmit invalid after revoke. Alternative shortest sequence approve,revoke,return,resubmit,approve,publish exists outside options."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "o3 executa return,resubmit,approve,revoke,approve,publish e cobre as cinco transições, terminando em Published. Approve tem de repetir-se após revoke: mínimo seis eventos. A enumeração completa encontra também approve,revoke,return,resubmit,approve,publish, fora das opções. O enunciado não exige unicidade global.",
+          "en": "o3 covers all five transitions and finishes Published in six events. Approve must repeat after revoke, proving a six-event lower bound. Exhaustive shortest-path enumeration also finds approve,revoke,return,resubmit,approve,publish outside the options. Global uniqueness is not required."
+        },
+        "translation": {
+          "pt": "Estados da tabela são bilingues e todos os tokens de eventos são idênticos. “Um teste mais curto” é português menos idiomático que “de comprimento mínimo”, mas não altera a única opção válida entre as quatro.",
+          "en": "Table state names are bilingual and event tokens identical. Portuguese “um teste mais curto” is less idiomatic than “de comprimento mínimo”, but does not create another valid option."
+        },
+        "difficulty": {
+          "pt": "K3 alto: simular todos os eventos, medir cobertura e demonstrar minimalidade. Reconhecer nomes de estados isolados não resolve.",
+          "en": "High K3: execute every event, measure transition coverage and establish minimality; recognizing isolated states is insufficient."
+        },
+        "optional": {
+          "pt": "Melhoria PT opcional: “Que sequência tem comprimento mínimo e satisfaz ambos os requisitos?”. Não aplicada por não haver erro de chave, ambiguidade decisiva ou necessidade substantiva. Não confundir cobertura de transições válidas com cobertura de todas as inválidas.",
+          "en": "Optional Portuguese refinement: “Que sequência tem comprimento mínimo e satisfaz ambos os requisitos?”. Not applied: no key error or decisive ambiguity. Valid-transition coverage does not require all invalid transitions."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "Termina corretamente mas omite return/resubmit.",
+            "en": "Ends correctly but omits return/resubmit."
+          },
+          "o2": {
+            "pt": "Omite revoke.",
+            "en": "Omits revoke."
+          },
+          "o4": {
+            "pt": "Após revoke está em Review; resubmit é inválido nesse estado.",
+            "en": "After revoke the state is Review; resubmit is invalid there."
+          }
+        }
+      },
+      "references": {
+        "section": "4.2.4",
+        "EN": [38, 41, 42],
+        "PT": [41, 45]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-073",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a",
+        "learningObjective": "FL-4.2.4",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.2.4",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.2.4",
+          "pdfPages": [41, 42],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o3"],
+        "currentCorrectOptions": [
+          {
+            "id": "o3",
+            "text": {
+              "en": "return, resubmit, approve, revoke, approve, publish",
+              "pt": "return, resubmit, approve, revoke, approve, publish"
+            },
+            "explanation": {
+              "en": "All five transitions are covered. Approve must occur twice to revoke once and still finish by publishing.",
+              "pt": "As cinco transições são cobertas. Approve tem de ocorrer duas vezes para revogar uma vez e ainda terminar com a publicação."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Five distinct transitions must be covered, but revoke returns to Review, so a second approve is required before publish. Six events are a lower bound and the selected valid sequence attains it. Event tokens are identical in both languages.",
+          "pt": "Têm de ser cobertas cinco transições distintas, mas revoke regressa a Revisão, pelo que é necessário um segundo approve antes de publish. Seis eventos são um limite inferior e a sequência válida escolhida atinge-o. Os identificadores de eventos são iguais nos dois idiomas."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "9c3ccedf23d705c1d62597b8b1e65a42414dc13ff51eec32ba9379ae3c6bee8c",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.2.4",
+          "pages": [41, 42],
+          "report": "docs/academic-audit.md#fase-5a--tl-073"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.2.4",
+            "pdfPages": [38, 41, 42]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.2.4",
+            "pdfPages": [41, 45]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.2.4/K3: sequência o3 cobre as cinco transições válidas, termina Publicada e tem seis eventos, mínimo demonstrável pela repetição necessária de approve.",
+        "distractorAssessment": {
+          "o1": "Omite Review→Returned e Returned→Review.",
+          "o2": "Omite Approved→Review por revoke.",
+          "o4": "Após revoke está Review; resubmit só existe em Returned."
+        },
+        "wordingAndTranslationConcerns": "Estados bilingues da tabela equivalentes e eventos literais mantidos. “a shortest” é melhor traduzido por “de comprimento mínimo”; “um teste mais curto” no PT pode sugerir comparação sem referência.",
+        "potentialAmbiguity": "Há outra sequência mínima que faça ciclo de revoke antes de return/resubmit, mas não está entre opções. Não se pede sequência mínima única global; o3 é única correta oferecida.",
+        "difficultyAssessment": "Alta; K3 com caminho, cobertura e prova de mínimo.",
+        "proposedCorrection": {
+          "description": "Opcional: PT “Que sequência tem comprimento mínimo e satisfaz ambos os requisitos?”; EN/PT da explicação pode omitir comentário editorial sobre tokens linguísticos iguais, mantendo derivação.",
+          "keyBefore": ["o3"],
+          "keyProposed": ["o3"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": "Review-return→Returned-resubmit→Review-approve→Approved-revoke→Review-approve→Approved-publish→Published. Cinco arestas distintas, approve duas vezes, total seis. Para usar revoke e depois publicar é preciso entrar em Approved duas vezes; só approve o faz. Limite inferior 5+1=6, atingido por o3.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-074",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.5.3",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72",
+      "afterCanonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72",
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-074",
+        "answer": ["o4"],
+        "reasoning": "Two untested refusal causes are nonborrower and count>=2, with no reservation. Refusal preserves count0 or2. o1 repeats success and omits nonborrower;o2 incorrectly permits count2;o3 incorrectly permits nonborrower. No need exhaustive combinations.",
+        "derivation": "Two untested refusal causes are nonborrower and count>=2, with no reservation. Refusal preserves count0 or2. o1 repeats success and omits nonborrower;o2 incorrectly permits count2;o3 incorrectly permits nonborrower. No need exhaustive combinations."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "Renovação requer titular, ausência de reserva e contagem<2. Já existem sucesso e recusa por reserva. Faltam falta de titularidade e limite atingido, isolados pela ausência de reserva. o4 prevê recusa mantendo0 e2, respetivamente.",
+          "en": "Renewal requires borrower ownership, no reservation and count<2. Success and reservation refusal are already covered. Missing ownership and limit refusal are isolated by the explicit no-reservation premise; o4 refuses and preserves counts0 and2."
+        },
+        "translation": {
+          "pt": "“Contagem anterior”/prior count, “inferior a2”/below2, incrementa/increments e mantém/unchanged preservam entradas e pós-condições, nas quatro opções.",
+          "en": "Prior count, below2, increments on success and unchanged on refusal preserve inputs and postconditions across all four alternatives."
+        },
+        "difficulty": {
+          "pt": "K3 médio: derivar exemplos negativos de critérios acordados antes da implementação e calcular estado final. Não só identificar a sigla ATDD.",
+          "en": "Moderate K3: derive negative examples from agreed criteria before implementation and calculate final state, rather than recall the ATDD acronym."
+        },
+        "optional": {
+          "pt": "Não exige todas as combinações possíveis nem um plano ATDD completo. A explicação liga critérios a exemplos antes do código; não há defeito confirmado.",
+          "en": "The question does not require exhaustive combinations or an entire ATDD plan. The explanation connects pre-implementation criteria to examples; no confirmed defect."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "Resultados corretos, mas omite recusa por falta de titularidade.",
+            "en": "Correct outcomes but misses ownership refusal."
+          },
+          "o2": {
+            "pt": "Contagem2 não pode ter sucesso nem incrementar para3.",
+            "en": "Count2 must not succeed or increment to3."
+          },
+          "o3": {
+            "pt": "Outro requerente não pode ter sucesso.",
+            "en": "A different requester must not succeed."
+          }
+        }
+      },
+      "references": {
+        "section": "4.5.3",
+        "EN": [38, 46],
+        "PT": [41, 50, 51]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-074",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72",
+        "learningObjective": "FL-4.5.3",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.5.3",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.5",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.5.3",
+          "pdfPages": [46],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o4"],
+        "currentCorrectOptions": [
+          {
+            "id": "o4",
+            "text": {
+              "en": "Other requester/count 0 → refusal/0; borrower/count 2 → refusal/2.",
+              "pt": "Outro requerente/contagem 0 → recusa/0; titular/contagem 2 → recusa/2."
+            },
+            "explanation": {
+              "en": "These exercise ownership refusal and limit refusal separately, with unchanged counts in both cases.",
+              "pt": "Estes exercitam separadamente a recusa por falta de titularidade e por limite, mantendo as contagens em ambos os casos."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Derive examples and expected state changes from the agreed acceptance criteria before coding. The missing refusal rules concern ownership and the renewal limit; absence of a reservation isolates those conditions.",
+          "pt": "Derivam-se exemplos e alterações de estado esperadas dos critérios de aceitação acordados antes do código. As regras de recusa em falta dizem respeito à titularidade e ao limite de renovações; a ausência de reserva isola essas condições."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "93fc8333af47c731251af84ecb401d34ab5ba5c1d464e16bb98458cbf58ed63f",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.5.3",
+          "pages": [46],
+          "report": "docs/academic-audit.md#fase-5a--tl-074"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.5.3",
+            "pdfPages": [38, 46]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.5.3",
+            "pdfPages": [41, 50, 51]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.5.3/K3: derivar exemplos e pós-condições das três condições conjuntivas. Faltam recusas por titularidade e limite; o4 isola cada uma sem reserva e mantém contagem.",
+        "distractorAssessment": {
+          "o1": "Resultados individuais corretos, mas primeiro é novo sucesso, não recusa por titularidade.",
+          "o2": "Outro requerente recusa certo; count2 não satisfaz <2, sucesso3 é errado.",
+          "o3": "Count2 recusa certo; outro requerente não pode obter sucesso1."
+        },
+        "wordingAndTranslationConcerns": "below2/inferior a2, prior count/contagem anterior e unchanged/mantém preservam oráculo e pós-estado; borrower/titular do empréstimo adequado.",
+        "potentialAmbiguity": "Não se pede todas as combinações de três condições, apenas duas regras de recusa não exercitadas. No reservation explícito impede confundir causa da recusa.",
+        "difficultyAssessment": "Média a alta; K3, condições e alteração de estado.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o4"],
+          "keyProposed": ["o4"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "Aceitar=Titular∧¬Reserva∧(c<2). Se aceitar c′=c+1; senão c′=c. Existentes cobrem sucesso e recusa Reserva. Novo1: ¬Titular,¬Reserva,c0→recusa,c′0. Novo2: Titular,¬Reserva,c2→recusa,c′2. o4; o1 falta titularidade, o2/o3 violam oráculos.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-076",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-5.1.4",
+      "cognitiveLevel": "K3",
+      "chapter": 5,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648",
+      "afterCanonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648",
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-076",
+        "answer": ["o3"],
+        "reasoning": "X=(3+4*6+15)/6=7; Y=(2+4*5+8)/6=5; setup3 gives15 person-hours. o1 omits setup;o2 uses modes6+5+3;o4 uses unweighted means8+5+3. Not calendar duration or sum of deviations; linearity of expectation does not require independence.",
+        "derivation": "X=(3+4*6+15)/6=7; Y=(2+4*5+8)/6=5; setup3 gives15 person-hours. o1 omits setup;o2 uses modes6+5+3;o4 uses unweighted means8+5+3. Not calendar duration or sum of deviations; linearity of expectation does not require independence."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "X=(3+4×6+15)/6=7; Y=(2+4×5+8)/6=5; somar preparação3 uma vez dá15 pessoas-hora. É esforço esperado aditivo, não duração decorrida, garantia ou intervalo de confiança. Independência não é necessária para linearidade da esperança.",
+          "en": "X=(3+4×6+15)/6=7; Y=(2+4×5+8)/6=5; add setup3 exactly once:15 person-hours. This is additive expected effort, not elapsed duration, a guarantee or confidence interval. Linearity of expectation does not require independence."
+        },
+        "translation": {
+          "pt": "Ordem otimista/mais provável/pessimista e todos os números da tabela são iguais. Ponderada/weighted, aditivos/additive e preparação não incluída/not included preservam a operação e unidade.",
+          "en": "Optimistic/most-likely/pessimistic ordering and every table number agree. Weighted, additive and setup not included preserve the operation and unit."
+        },
+        "difficulty": {
+          "pt": "K3 médio: aplicar duas médias e agregar esforço fixo, distinguindo modos e médias simples.",
+          "en": "Moderate K3: apply two weighted means and aggregate fixed effort, distinguishing modes and unweighted means."
+        },
+        "optional": {
+          "pt": "Não somar desvios-padrão. Se fosse pedida incerteza conjunta, seria outra análise; não é solicitada aqui. Não inferir calendário nem paralelismo.",
+          "en": "Do not add standard deviations. Combined uncertainty would require a different analysis; it is not requested. Do not infer schedule or parallelism."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "12 omite preparação3.",
+            "en": "12 omits setup3."
+          },
+          "o2": {
+            "pt": "14 soma modos6+5+3; não médias ponderadas.",
+            "en": "14 adds modes6+5+3, not weighted means."
+          },
+          "o4": {
+            "pt": "16 usa médias simples8+5+3.",
+            "en": "16 uses unweighted means8+5+3."
+          }
+        }
+      },
+      "references": {
+        "section": "5.1.4",
+        "EN": [47, 49, 50],
+        "PT": [52, 54, 55]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-076",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648",
+        "learningObjective": "FL-5.1.4",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.1.4",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "5.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.1.4",
+          "pdfPages": [49, 50],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o3"],
+        "currentCorrectOptions": [
+          {
+            "id": "o3",
+            "text": {
+              "en": "15 person-hours",
+              "pt": "15 pessoas-hora"
+            },
+            "explanation": {
+              "en": "X=(3+4×6+15)/6=7; Y=(2+4×5+8)/6=5; total=7+5+3=15.",
+              "pt": "X=(3+4×6+15)/6=7; Y=(2+4×5+8)/6=5; total=7+5+3=15."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Apply E=(a+4m+b)/6 to each task before adding the fixed setup once. Effort is not elapsed duration; no parallelism or confidence-interval assumption is needed.",
+          "pt": "Aplica-se E=(a+4m+b)/6 a cada tarefa antes de somar uma vez a preparação fixa. Esforço não é duração decorrida; não é necessária uma suposição sobre paralelismo ou intervalo de confiança."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "2d2a56c2b76f91656c959dfa3d7de4f0de802107ebdedbbe0208a9e0411938e5",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "5.1.4",
+          "pages": [49, 50],
+          "report": "docs/academic-audit.md#fase-5a--tl-076"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.1.4",
+            "pdfPages": [47, 49, 50]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.1.4",
+            "pdfPages": [52, 54, 55]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.1.4/K3: média ponderada três pontos por tarefa, soma de esforços e setup uma vez resulta 15 pessoas-hora, o3; não é duração nem intervalo de confiança.",
+        "distractorAssessment": {
+          "o1": "12 soma tarefas e omite setup3.",
+          "o2": "14 usa modas6+5+setup3, não média ponderada.",
+          "o4": "16 usa médias simples X8,Y5 e setup3, não ponderação 1:4:1."
+        },
+        "wordingAndTranslationConcerns": "person-hours/pessoas-hora, weighted/ponderada, additive/aditivos e not included/não incluído preservados. Tabela bilingue otimista/provável/pessimista corretamente ordenada.",
+        "potentialAmbiguity": "A independência não é necessária para somar valores esperados, mas não prejudica cálculo. Não somar SD nem inferir paralelismo: pergunta só esforço esperado.",
+        "difficultyAssessment": "Média; K3, três operações e evitar dupla contagem.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o3"],
+          "keyProposed": ["o3"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "X=(3+4×6+15)/6=42/6=7; Y=(2+4×5+8)/6=30/6=5. Total=7+5+3=15 pessoas-hora. Não setup por tarefa; não duração. o1=12, o2=6+5+3=14, o4=(3+6+15)/3+(2+5+8)/3+3=16.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-077",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-5.1.5",
+      "cognitiveLevel": "K3",
+      "chapter": 5,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb",
+      "afterCanonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb",
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-077",
+        "answer": ["o2"],
+        "reasoning": "Slot1 runnable A4,D5: D. Slot2 onlyA: A. Slot3 B9,C7: B. Slot4C. o1 violates localpriority atslot1;o3 violates atslot3;o4 uses unavailableC atslot1. Global optimization is not requested.",
+        "derivation": "Slot1 runnable A4,D5: D. Slot2 onlyA: A. Slot3 B9,C7: B. Slot4C. o1 violates localpriority atslot1;o3 violates atslot3;o4 uses unavailableC atslot1. Global optimization is not requested."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "Intervalos:1 executáveis A4,D5 →D;2 apenasA →A;3 B9,C7 →B;4 →C. A dependência B→A termina antes de B; C só fica disponível a partir3. A política é maior risco executável agora, sem reservar intervalos.",
+          "en": "Slots:1 runnable A4,D5 →D;2 onlyA →A;3 B9,C7 →B;4 →C. B’s prerequisite A completes earlier; C is available from3 onward. The local policy chooses highest current runnable risk without reserving slots."
+        },
+        "translation": {
+          "pt": "Desde/a partir/from, anteriores/earlier, cada intervalo/each slot e sem reservar/without reserving são equivalentes. Riscos e dependência da tabela coincidem.",
+          "en": "From onward, earlier slots, each slot and without reserving are equivalent; table risk values and dependency agree."
+        },
+        "difficulty": {
+          "pt": "K3 alto: aplicar dinamicamente dependências, disponibilidade e prioridade a cada decisão.",
+          "en": "High K3: dynamically apply dependency, availability and priority constraints at each decision."
+        },
+        "optional": {
+          "pt": "Uma política global de desbloquear B cedo poderia escolher A antes de D, mas não é a política indicada. Sem empates não há desempate implícito. Não alterar o cenário para preferir outra otimização.",
+          "en": "A global policy unlocking B earlier could choose A before D, but that is not the stated policy. No ties require an implicit tie-breaker. Do not replace the scenario with another optimization objective."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "A primeiro viola D5>A4 entre executáveis.",
+            "en": "A first violates D5>A4 among runnable tests."
+          },
+          "o3": {
+            "pt": "C antes de B no intervalo3 viola B9>C7.",
+            "en": "C before B in slot3 violates B9>C7."
+          },
+          "o4": {
+            "pt": "C no intervalo1 viola disponibilidade.",
+            "en": "C in slot1 violates availability."
+          }
+        }
+      },
+      "references": {
+        "section": "5.1.5",
+        "EN": [47, 50],
+        "PT": [52, 55, 56]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-077",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb",
+        "learningObjective": "FL-5.1.5",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.1.5",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "5.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.1.5",
+          "pdfPages": [50, 51],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o2"],
+        "currentCorrectOptions": [
+          {
+            "id": "o2",
+            "text": {
+              "en": "D, A, B, C",
+              "pt": "D, A, B, C"
+            },
+            "explanation": {
+              "en": "Slot 1 chooses D over A; slot 2 runs A; slot 3 chooses newly enabled B over C; C is last.",
+              "pt": "O intervalo 1 escolhe D em vez de A; o 2 executa A; o 3 escolhe B, entretanto habilitado, em vez de C; C fica para o fim."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Availability and dependencies constrain risk prioritisation. The runnable sets are {A,D}, then {A}, then {B,C}, then {C}, giving D,A,B,C.",
+          "pt": "A disponibilidade e as dependências condicionam a priorização por risco. Os conjuntos executáveis são {A,D}, depois {A}, depois {B,C} e por fim {C}, originando D,A,B,C."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "3e80c283827c6e6d65b4699bb64a2f1c04240d5e7c4fc2ea26d2c3fee0ce9d88",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "5.1.5",
+          "pages": [50, 51],
+          "report": "docs/academic-audit.md#fase-5a--tl-077"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.1.5",
+            "pdfPages": [47, 50]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.1.5",
+            "pdfPages": [52, 55, 56]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.1.5/K3: priorização de risco condicionada por dependências/recursos. Regra gulosa explícita sem reservas produz D,A,B,C, o2.",
+        "distractorAssessment": {
+          "o1": "Slot1 D5 é executável e tem risco maior que A4; A primeiro viola regra.",
+          "o3": "Slot3 B9 e C7 executáveis: C antes de B viola maior risco.",
+          "o4": "C sem ambiente no slot1, viola disponibilidade desde3."
+        },
+        "wordingAndTranslationConcerns": "earlier slots/intervalos anteriores, from3 onward/a partir3 e without reserving/sem reservar preservam algoritmo. Tabela riscos A4,B9,C7,D5 e dependência B→A iguais nos idiomas.",
+        "potentialAmbiguity": "Não otimizar globalmente para desbloquear B cedo: política local está expressa. Sem empates, duração igual e disponibilidade definida removem ordens alternativas entre opções.",
+        "difficultyAssessment": "Alta; K3, simulação de quatro slots com restrições.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o2"],
+          "keyProposed": ["o2"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "s1 runnable={A4,D5}; B9 espera A, C7 espera3→D. s2={A4}→A. s3={B9,C7}→B. s4={C7}→C. D,A,B,C. D primeiro não bloqueia A, já que escolher maior risco executável é requisito.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-086",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.2",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "7dc185d75521a3ac3976d4c3ddffca55bb254fa9ab3ed5a45bbf582c27591c99",
+      "afterCanonicalSHA256": "7dc185d75521a3ac3976d4c3ddffca55bb254fa9ab3ed5a45bbf582c27591c99",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-086",
+        "answer": ["o1"],
+        "reasoning": "Internal boundary values4,5,11,12,20,21. Neighbour-union {3,4,5,6,10,11,12,13,19,20,21,22}; subtract existing yields{5,11,13,21}. o2 misses13;o3 adds excluded endpoints and misses11/13;o4 repeats20 and misses21. Restricted internal scope is not universal full-domain BVA.",
+        "derivation": "Internal boundary values4,5,11,12,20,21. Neighbour-union {3,4,5,6,10,11,12,13,19,20,21,22}; subtract existing yields{5,11,13,21}. o2 misses13;o3 adds excluded endpoints and misses11/13;o4 repeats20 and misses21. Restricted internal scope is not universal full-domain BVA."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "Há três mudanças de partição, com seis valores de fronteira:4/5,11/12,20/21. Vizinhanças unidas:{3,4,5,6},{10,11,12,13},{19,20,21,22}. Dos12 itens,8 já estão cobertos; faltam5,11,13,21. O white paper §2–4,pp.2–4 diferencia ponto de mudança de valores fronteira e manda unir conjuntos sobrepostos.",
+          "en": "Three partition changes have six boundary values:4/5,11/12,20/21. Their neighbourhood unions are {3,4,5,6},{10,11,12,13},{19,20,21,22}. Eight of12 items are covered; missing5,11,13,21. White-paper sections2–4,pages2–4 distinguish borders from boundary values and union overlapping coverage sets."
+        },
+        "translation": {
+          "pt": "Âmbito interno/internal scope e extremos não alvos/endpoints not targets são explícitos. Ambos os lados/both sides, todos os valores, intervalos e tabela são equivalentes.",
+          "en": "Internal scope and endpoints not targets are explicit. Both sides, all values, intervals and table entries are equivalent."
+        },
+        "difficulty": {
+          "pt": "K3 alto: derivar seis vizinhanças, desduplicar em12 e calcular complemento mínimo.",
+          "en": "High K3: derive six neighbourhoods, deduplicate to12 items and calculate a minimal complement."
+        },
+        "optional": {
+          "pt": "A justificação de o1 fala em “três fronteiras internas”; lida com a explicação geral refere três interfaces, não três valores fronteira. Distinguir seis valores é útil pedagogicamente, mas a explicação geral já o faz. A exclusão dos extremos é escopo local; não é cobertura completa do domínio. Incluindo extremos, seriam também necessários0,1,29,30.",
+          "en": "The o1 rationale’s “three internal boundary neighbourhoods” denotes three interfaces when read with the general explanation, not three boundary values. Distinguishing six values is pedagogically useful and already done in the general explanation. Excluding endpoints is local scope, not full-domain coverage; including them would additionally require0,1,29,30."
+        },
+        "distractors": {
+          "o2": {
+            "pt": "Falta13, vizinho de12, apesar de conter fronteiras em falta.",
+            "en": "Missing13, neighbour of12, despite supplying missing boundary values."
+          },
+          "o3": {
+            "pt": "Acrescenta extremos excluídos0/30 e omite11/13.",
+            "en": "Adds excluded endpoints0/30 and omits11/13."
+          },
+          "o4": {
+            "pt": "Repete20 já coberto e omite21.",
+            "en": "Repeats already covered20 and omits21."
+          }
+        }
+      },
+      "references": {
+        "section": "4.2.2",
+        "EN": [38, 40],
+        "PT": [41, 43, 44],
+        "BVA-WP": {
+          "sections": ["2", "3", "4", "7"],
+          "pages": [2, 3, 4, 6]
+        }
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7dc185d75521a3ac3976d4c3ddffca55bb254fa9ab3ed5a45bbf582c27591c99"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-086",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "7dc185d75521a3ac3976d4c3ddffca55bb254fa9ab3ed5a45bbf582c27591c99",
+        "learningObjective": "FL-4.2.2",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.2.2",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.2.2",
+          "pdfPages": [40],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "5, 11, 13, 21",
+              "pt": "5, 11, 13, 21"
+            },
+            "explanation": {
+              "en": "These are precisely the four missing distinct items from the three internal boundary neighbourhoods.",
+              "pt": "Estes são precisamente os quatro itens distintos em falta nas vizinhanças das três fronteiras internas."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Internal boundary pairs are 4/5, 11/12 and 20/21. Their 3-value neighbourhood unions are {3,4,5,6}, {10,11,12,13} and {19,20,21,22}: 12 items. Eight distinct items were exercised. The missing set is {5,11,13,21}; all four are necessary.",
+          "pt": "Os pares de fronteira internos são 4/5, 11/12 e 20/21. As uniões das vizinhanças de 3 valores são {3,4,5,6}, {10,11,12,13} e {19,20,21,22}: 12 itens. Foram exercitados oito itens distintos. O conjunto em falta é {5,11,13,21}; os quatro são necessários."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "3f934162e18d5c3071282a717d6e813033d44f80b5c70c0a466b6b1f240f3a1a",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.2.2",
+          "pages": [40],
+          "report": "docs/academic-audit.md#fase-7--tl-086"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.2.2",
+            "pdfPages": [38, 40]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.2.2",
+            "pdfPages": [41, 43, 44]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.2.2/K3: BVA de três valores com âmbito interno explicitado; união de 12 itens, oito já exercitados, quatro faltantes em o1.",
+        "distractorAssessment": {
+          "o2": "Só {5,11,21} cobre valores fronteira faltantes, omite vizinho13 de três valores.",
+          "o3": "0/30 fora de alvos internos e não substituem 11/13 faltantes.",
+          "o4": "20 já exercitado; falta21."
+        },
+        "wordingAndTranslationConcerns": "scoped coverage/cobertura definida e endpoints not targets/extremos não alvos preservam âmbito, sem alegação de 100% global. Tabela quatro intervalos inteiros igual nos idiomas.",
+        "potentialAmbiguity": "Os três pontos de mudança têm seis valores de fronteira (4/5,11/12,20/21); “three neighbourhoods” na explicação são uniões de ambos os lados, não só três valores. Não incluir endpoints excluídos.",
+        "difficultyAssessment": "Alta; K3, união de vizinhanças e cobertura adicional.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "P={0..4,5..11,12..20,21..30}. B interno={4,5,11,12,20,21}. U={3,4,5,6,10,11,12,13,19,20,21,22}. E={3,4,6,10,12,19,20,22}. U−E={5,11,13,21}; 8/12→12/12 com quatro adicionais, o1 mínimo.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    },
+    {
+      "questionId": "tl-087",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.3",
+      "cognitiveLevel": "K3",
+      "chapter": 4,
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "858175546438de957c706e97299dbb8f5182ba5e14e0423b0a1a19f37ac56d60",
+      "afterCanonicalSHA256": "858175546438de957c706e97299dbb8f5182ba5e14e0423b0a1a19f37ac56d60",
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "independentSolution": {
+        "questionId": "tl-087",
+        "answer": ["o2"],
+        "reasoning": "Rules: trusted&quota R1, trusted&notquota&retry R2, trusted&notquota&notretry R3, untrusted R4. Existing cases hitR1,R4,R1,R4,R2 =>3/4=75%; add(T,F,F) hitsR3. o1 counts concrete5/8 instead;o3 confuses repetitions with newcolumns;o4 repeatsR2. Four columns represent eight concrete combinations, disjoint and exhaustive.",
+        "derivation": "Rules: trusted&quota R1, trusted&notquota&retry R2, trusted&notquota&notretry R3, untrusted R4. Existing cases hitR1,R4,R1,R4,R2 =>3/4=75%; add(T,F,F) hitsR3. o1 counts concrete5/8 instead;o3 confuses repetitions with newcolumns;o4 repeatsR2. Four columns represent eight concrete combinations, disjoint and exhaustive."
+      },
+      "analysis": {
+        "reason": {
+          "pt": "As oito combinações distribuem-se sem sobreposição: R1 tem2; R2 tem1; R3 tem1; R4 tem4. Casos executados→R1,R4,R1,R4,R2. Cobertura de colunas distintas=3/4=75%; (T,F,F) cobre R3. “–” é indiferente, não F nem impossível.",
+          "en": "All eight combinations form disjoint rules: R1 contains2, R2 contains1, R3 contains1, R4 contains4. Executed cases map to R1,R4,R1,R4,R2. Distinct-column coverage=3/4=75%; (T,F,F) coversR3. “–” means irrelevant, not false or infeasible."
+        },
+        "translation": {
+          "pt": "S/Q/R e T/F são definidos explicitamente nas duas línguas; PSTQB usa V/F mas admite outra notação. Distintas/distinct e viáveis/feasible fixam o denominador4. 62.5 usa ponto decimal também em PT sem alterar o valor.",
+          "en": "Both languages explicitly define S/Q/R and T/F; PSTQB uses V/F but allows other notation. Distinct feasible columns fix denominator4. The Portuguese62.5 decimal point does not change its value."
+        },
+        "difficulty": {
+          "pt": "K3 alto: aplicar regras minimizadas, desduplicar cobertura e derivar novo caso para a regra residual.",
+          "en": "High K3: apply minimized rules, deduplicate coverage and derive a new case for the missing rule."
+        },
+        "optional": {
+          "pt": "Localizar62,5 e explicitar X/ação e branco/não ação seriam melhorias opcionais. O objetivo e as ações em linhas tornam a tabela interpretável. Cobrir quatro colunas não afirma executar todas as oito combinações.",
+          "en": "Localizing62.5 and explicitly defining X/action and blank/no action would be optional improvements. The objective and action rows make the table interpretable. Covering four columns does not mean executing every concrete combination."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "5/8=62,5% mede combinações concretas, não colunas.",
+            "en": "5/8=62.5% measures concrete combinations, not columns."
+          },
+          "o3": {
+            "pt": "Repetições R1/R4 e valores T/F não cobrem R3.",
+            "en": "Repeated R1/R4 cases and condition T/F values do not coverR3."
+          },
+          "o4": {
+            "pt": "(T,F,T) repeteR2; não cobreR3.",
+            "en": "(T,F,T) repeatsR2 and does not coverR3."
+          }
+        }
+      },
+      "references": {
+        "section": "4.2.3",
+        "EN": [38, 41],
+        "PT": [41, 44, 45]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "858175546438de957c706e97299dbb8f5182ba5e14e0423b0a1a19f37ac56d60"
+        }
+      ],
+      "comparisonWithStoredKey": "MATCH",
+      "impact": "Documentation only; no key, wording, explanation, version, persistence or revision change",
+      "previousAIReviewRecord": {
+        "questionId": "tl-087",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "858175546438de957c706e97299dbb8f5182ba5e14e0423b0a1a19f37ac56d60",
+        "learningObjective": "FL-4.2.3",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.2.3",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.2.3",
+          "pdfPages": [41],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o2"],
+        "currentCorrectOptions": [
+          {
+            "id": "o2",
+            "text": {
+              "en": "75%; (T,F,F)",
+              "pt": "75%; (T,F,F)"
+            },
+            "explanation": {
+              "en": "R1, R2 and R4 are covered; (T,F,F) exercises the missing R3. Three of four columns means 75%.",
+              "pt": "R1, R2 e R4 estão cobertas; (T,F,F) exercita a R3 em falta. Três de quatro colunas correspondem a 75%."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The first and third cases map to R1; the second and fourth map to R4; the fifth maps to R2. Therefore 3/4=75%. R3 requires a trusted sender outside quota with no retry: (T,F,F). The four columns partition all eight input combinations without overlap.",
+          "pt": "O primeiro e o terceiro casos correspondem a R1; o segundo e o quarto, a R4; o quinto, a R2. Portanto, 3/4=75%. R3 exige um remetente de confiança fora da quota e sem repetição: (T,F,F). As quatro colunas repartem as oito combinações de entrada sem sobreposição."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "00f38493503d5118d0b0529871c5ca063df549d83962bdef3c71e96884ea9afa",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.2.3",
+          "pages": [41],
+          "report": "docs/academic-audit.md#fase-7--tl-087"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.2.3",
+            "pdfPages": [38, 41]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.2.3",
+            "pdfPages": [41, 44, 45]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.2.3/K3: mapear execuções a colunas distintas resulta R1/R2/R4=3/4=75%; (T,F,F) cobre R3 faltante, o2.",
+        "distractorAssessment": {
+          "o1": "62,5%=5/8 mede combinações, não quatro regras da tabela.",
+          "o3": "V/F por condição não cobre a regra R3; cinco execuções não garantem todas colunas.",
+          "o4": "75% correto, mas (T,F,T) repete R2 em vez de R3."
+        },
+        "wordingAndTranslationConcerns": "distinct feasible columns/colunas viáveis distintas preserva denominador. S/Q/R, T/F e – definidos; ações da tabela bilingues. 62.5% em PT usa ponto decimal, compreensível; pode localizar para 62,5% em futura edição.",
+        "potentialAmbiguity": "Tabela minimizada não conta cada combinação como regra. R1 tem2 combinações, R2/R3 uma cada, R4 quatro; cobrir uma basta por coluna segundo critério indicado.",
+        "difficultyAssessment": "Alta; K3, mapeamento com repetições e seleção de complemento.",
+        "proposedCorrection": {
+          "description": "Opcional: explicitar legenda X/ação e branco/não ação, e uniformizar separador decimal PT, mantendo T/F/– e os valores.",
+          "keyBefore": ["o2"],
+          "keyProposed": ["o2"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": "R1=T,T,–; R2=T,F,T; R3=T,F,F; R4=F,–,–. Casos:1→R1,2→R4,3→R1,4→R4,5→R2. Distintos3/4=75%. Adicionar T,F,F→R3→4/4. R1(2)+R2(1)+R3(1)+R4(4)=8 combinações sem sobreposição.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      }
+    }
+  ]
+}

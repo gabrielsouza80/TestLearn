@@ -1,0 +1,374 @@
+[
+  {
+    "questionId": "tl-084",
+    "original": {
+      "id": "tl-084",
+      "chapter": 2,
+      "lo": "FL-2.2.2",
+      "level": "K2",
+      "topic": "Functional and non-functional testing",
+      "type": "multiple",
+      "required": 2,
+      "text": {
+        "en": "For a warehouse service, requirements specify the stock quantity returned for a valid barcode and a 95th-percentile response latency of at most 300 ms with 200 concurrent users. Tests use API calls derived from these requirements, not code structure. Select TWO correct classifications.",
+        "pt": "Para um serviço de armazém, os requisitos especificam a quantidade em stock devolvida para um código de barras válido e uma latência de resposta no percentil 95 de, no máximo, 300 ms com 200 utilizadores concorrentes. Os testes usam chamadas à API derivadas destes requisitos, não da estrutura do código. Selecione DUAS classificações corretas."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Checking the returned stock quantity targets functional correctness.",
+            "pt": "Verificar a quantidade em stock devolvida visa a correção funcional."
+          },
+          "explanation": {
+            "en": "The assertion checks what the service does: returning the specified stock value for the input.",
+            "pt": "A asserção verifica o que o serviço faz: devolver o valor de stock especificado para a entrada."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Checking latency is functional testing because it executes the same stock query.",
+            "pt": "Verificar a latência é teste funcional porque executa a mesma consulta de stock."
+          },
+          "explanation": {
+            "en": "A non-functional test can reuse a functional operation while assessing a performance constraint rather than its functional output.",
+            "pt": "Um teste não funcional pode reutilizar uma operação funcional enquanto avalia uma restrição de desempenho, em vez do resultado funcional."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "The concurrent users make the test level system integration, irrespective of the systems involved.",
+            "pt": "Os utilizadores concorrentes tornam o nível de teste integração de sistemas, independentemente dos sistemas envolvidos."
+          },
+          "explanation": {
+            "en": "Concurrency is a load characteristic, not evidence of interfaces with external systems. Test level depends on the object and scope.",
+            "pt": "A concorrência é uma característica de carga, não evidência de interfaces com sistemas externos. O nível de teste depende do objeto e do âmbito."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Checking the latency limit targets the non-functional characteristic performance efficiency.",
+            "pt": "Verificar o limite de latência visa a característica não funcional eficiência de desempenho."
+          },
+          "explanation": {
+            "en": "The time constraint describes how well the service performs its function. It is a non-functional quality constraint.",
+            "pt": "A restrição temporal descreve quão bem o serviço realiza a função. É uma restrição de qualidade não funcional."
+          }
+        },
+        {
+          "id": "o5",
+          "text": {
+            "en": "Using an API makes both tests white-box, even when their basis is the requirements.",
+            "pt": "Usar uma API torna ambos os testes de caixa-branca, mesmo quando a sua base são os requisitos."
+          },
+          "explanation": {
+            "en": "The derivation basis, not the interface used to execute a test, distinguishes specification-based from structure-based testing.",
+            "pt": "A base de derivação, e não a interface usada para executar um teste, distingue testes baseados na especificação de testes baseados na estrutura."
+          }
+        }
+      ],
+      "correct": ["o1", "o4"],
+      "explanation": {
+        "en": "The output assertion is functional; the latency assertion is non-functional. They can exercise the same operation. API access and concurrency do not by themselves determine a white-box basis or a system-integration test level.",
+        "pt": "A asserção sobre o resultado é funcional; a asserção sobre a latência é não funcional. Ambas podem exercitar a mesma operação. O acesso pela API e a concorrência, por si só, não determinam uma base de caixa-branca nem o nível de integração de sistemas."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.2.2",
+        "pages": [29, 30],
+        "report": "docs/academic-audit.md#fase-7--tl-084"
+      }
+    },
+    "proposed": {
+      "id": "tl-084",
+      "chapter": 2,
+      "lo": "FL-2.2.2",
+      "level": "K2",
+      "topic": "Functional and non-functional testing",
+      "type": "multiple",
+      "required": 2,
+      "text": {
+        "en": "For a warehouse service, requirements specify the stock quantity returned for a valid barcode and a 95th-percentile response latency of at most 300 ms with 200 concurrent users. Tests use API calls derived from these requirements, not code structure. Select TWO correct classifications.",
+        "pt": "Para um serviço de armazém, os requisitos especificam a quantidade em stock devolvida para um código de barras válido e uma latência de resposta no percentil 95 de, no máximo, 300 ms com 200 utilizadores concorrentes. Os testes usam chamadas à API derivadas destes requisitos, não da estrutura do código. Selecione DUAS classificações corretas."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Checking the returned stock quantity targets functional correctness.",
+            "pt": "Verificar a quantidade em stock devolvida visa a correção funcional."
+          },
+          "explanation": {
+            "en": "The assertion checks what the service does: returning the specified stock value for the input.",
+            "pt": "A asserção verifica o que o serviço faz: devolver o valor de stock especificado para a entrada."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Checking latency is functional testing because it executes the same stock query.",
+            "pt": "Verificar a latência é teste funcional porque executa a mesma consulta de stock."
+          },
+          "explanation": {
+            "en": "A non-functional test can reuse a functional operation while assessing a performance constraint rather than its functional output.",
+            "pt": "Um teste não funcional pode reutilizar uma operação funcional enquanto avalia uma restrição de desempenho, em vez do resultado funcional."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "The concurrent users make the test level system integration, irrespective of the systems involved.",
+            "pt": "Os utilizadores concorrentes tornam o nível de teste integração de sistemas, independentemente dos sistemas envolvidos."
+          },
+          "explanation": {
+            "en": "Concurrency is a load characteristic, not evidence of interfaces with external systems. Test level depends on the object and scope.",
+            "pt": "A concorrência é uma característica de carga, não evidência de interfaces com sistemas externos. O nível de teste depende do objeto e do âmbito."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Checking the latency limit targets the non-functional characteristic performance efficiency.",
+            "pt": "Verificar o limite de latência visa a característica não funcional eficiência de desempenho."
+          },
+          "explanation": {
+            "en": "The time constraint describes how well the service performs its function. It is a non-functional quality constraint.",
+            "pt": "A restrição temporal descreve quão bem o serviço realiza a função. É uma restrição de qualidade não funcional."
+          }
+        },
+        {
+          "id": "o5",
+          "text": {
+            "en": "Using an API makes both tests white-box, even when their basis is the requirements.",
+            "pt": "Usar uma API torna ambos os testes de caixa-branca, mesmo quando a sua base são os requisitos."
+          },
+          "explanation": {
+            "en": "The derivation basis, not the interface used to execute a test, distinguishes specification-based from structure-based testing.",
+            "pt": "A base de derivação, e não a interface usada para executar um teste, distingue testes baseados na especificação de testes baseados na estrutura."
+          }
+        }
+      ],
+      "correct": ["o1", "o4"],
+      "explanation": {
+        "en": "The output assertion is functional; the latency assertion is non-functional. They can exercise the same operation. API access and concurrency do not by themselves determine a white-box basis or a system-integration test level.",
+        "pt": "A asserção sobre o resultado é funcional; a asserção sobre a latência é não funcional. Ambas podem exercitar a mesma operação. O acesso pela API e a concorrência, por si só, não determinam uma base de caixa-branca nem o nível de integração de sistemas."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.2.2",
+        "pages": [29, 30],
+        "report": "docs/academic-audit.md#fase-7--tl-084"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-085",
+    "original": {
+      "id": "tl-085",
+      "chapter": 5,
+      "lo": "FL-5.2.4",
+      "level": "K2",
+      "topic": "Product risk control",
+      "type": "multiple",
+      "required": 2,
+      "text": {
+        "en": "A smart-meter project has completed initial identification and assessment of billing risks; the register already contains likelihood and impact ratings. Select TWO proposed actions that perform product risk control rather than repeat that initial analysis.",
+        "pt": "Um projeto de contadores inteligentes concluiu a identificação e avaliação iniciais dos riscos de faturação; o registo já contém classificações de probabilidade e impacto. Selecione DUAS ações propostas que realizam controlo do risco de produto, em vez de repetir essa análise inicial."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "List potential billing-risk events before evaluating their significance.",
+            "pt": "Listar potenciais eventos de risco de faturação antes de avaliar a sua importância."
+          },
+          "explanation": {
+            "en": "Creating the initial risk list is risk identification, part of risk analysis, not execution or monitoring of a response.",
+            "pt": "Criar a lista inicial de riscos é identificação do risco, parte da análise, não execução nem monitorização de uma resposta."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Execute clock-change tests selected to mitigate the assessed billing risk.",
+            "pt": "Executar testes de mudança da hora selecionados para mitigar o risco de faturação avaliado."
+          },
+          "explanation": {
+            "en": "Executing a planned testing response to reduce an assessed risk is risk mitigation, which is part of product risk control.",
+            "pt": "Executar uma resposta de teste planeada para reduzir um risco avaliado é mitigação do risco, que faz parte do controlo do risco de produto."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Estimate likelihood and impact to rank the billing risks.",
+            "pt": "Estimar a probabilidade e o impacto para ordenar os riscos de faturação."
+          },
+          "explanation": {
+            "en": "Initial likelihood and impact assessment belongs to risk analysis. It precedes choosing and implementing a control response.",
+            "pt": "A avaliação inicial de probabilidade e impacto pertence à análise do risco. Precede a escolha e implementação de uma resposta de controlo."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Group the assessed billing risks by quality characteristic before selecting treatments.",
+            "pt": "Agrupar os riscos de faturação avaliados por característica de qualidade antes de selecionar tratamentos."
+          },
+          "explanation": {
+            "en": "Categorization in the initial assessment supports risk analysis; it does not itself implement or monitor a treatment.",
+            "pt": "A categorização na avaliação inicial apoia a análise do risco; por si só, não implementa nem monitoriza um tratamento."
+          }
+        },
+        {
+          "id": "o5",
+          "text": {
+            "en": "Check whether mitigation is effective and revise the response when emerging risks require it.",
+            "pt": "Verificar se a mitigação é eficaz e rever a resposta quando os riscos emergentes o exigirem."
+          },
+          "explanation": {
+            "en": "Risk monitoring checks effectiveness, improves information about risk and identifies emerging risks so the response can be adapted.",
+            "pt": "A monitorização do risco verifica a eficácia, melhora a informação sobre o risco e identifica riscos emergentes para permitir adaptar a resposta."
+          }
+        }
+      ],
+      "correct": ["o2", "o5"],
+      "explanation": {
+        "en": "Product risk control combines mitigation and monitoring. Running the selected clock-change tests implements mitigation; checking effectiveness and adapting the response performs monitoring/control. The other activities describe initial identification or assessment.",
+        "pt": "O controlo do risco de produto combina mitigação e monitorização. Executar os testes de mudança da hora selecionados implementa a mitigação; verificar a eficácia e adaptar a resposta realiza monitorização/controlo. As outras atividades descrevem identificação ou avaliação iniciais."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.2.3–5.2.4",
+        "pages": [52, 53],
+        "report": "docs/academic-audit.md#fase-7--tl-085"
+      }
+    },
+    "proposed": {
+      "id": "tl-085",
+      "chapter": 5,
+      "lo": "FL-5.2.4",
+      "level": "K2",
+      "topic": "Product risk control",
+      "type": "multiple",
+      "required": 2,
+      "text": {
+        "en": "A smart-meter project has completed initial identification and assessment of billing risks; the register already contains likelihood and impact ratings. Select TWO proposed actions that perform product risk control rather than repeat that initial analysis.",
+        "pt": "Um projeto de contadores inteligentes concluiu a identificação e avaliação iniciais dos riscos de faturação; o registo já contém classificações de probabilidade e impacto. Selecione DUAS ações propostas que realizam controlo do risco de produto, em vez de repetir essa análise inicial."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "List potential billing-risk events before evaluating their significance.",
+            "pt": "Listar potenciais eventos de risco de faturação antes de avaliar a sua importância."
+          },
+          "explanation": {
+            "en": "Creating the initial risk list is risk identification, part of risk analysis, not execution or monitoring of a response.",
+            "pt": "Criar a lista inicial de riscos é identificação do risco, parte da análise, não execução nem monitorização de uma resposta."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Execute clock-change tests selected to mitigate the assessed billing risk.",
+            "pt": "Executar testes de mudança da hora selecionados para mitigar o risco de faturação avaliado."
+          },
+          "explanation": {
+            "en": "Executing a planned testing response to reduce an assessed risk is risk mitigation, which is part of product risk control.",
+            "pt": "Executar uma resposta de teste planeada para reduzir um risco avaliado é mitigação do risco, que faz parte do controlo do risco de produto."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Estimate likelihood and impact to rank the billing risks.",
+            "pt": "Estimar a probabilidade e o impacto para ordenar os riscos de faturação."
+          },
+          "explanation": {
+            "en": "Initial likelihood and impact assessment belongs to risk analysis. It precedes choosing and implementing a control response.",
+            "pt": "A avaliação inicial de probabilidade e impacto pertence à análise do risco. Precede a escolha e implementação de uma resposta de controlo."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Group the assessed billing risks by quality characteristic before selecting treatments.",
+            "pt": "Agrupar os riscos de faturação avaliados por característica de qualidade antes de selecionar tratamentos."
+          },
+          "explanation": {
+            "en": "Categorization in the initial assessment supports risk analysis; it does not itself implement or monitor a treatment.",
+            "pt": "A categorização na avaliação inicial apoia a análise do risco; por si só, não implementa nem monitoriza um tratamento."
+          }
+        },
+        {
+          "id": "o5",
+          "text": {
+            "en": "Check whether mitigation is effective and revise the response when emerging risks require it.",
+            "pt": "Verificar se a mitigação é eficaz e rever a resposta quando os riscos emergentes o exigirem."
+          },
+          "explanation": {
+            "en": "Risk monitoring checks effectiveness, improves information about risk and identifies emerging risks so the response can be adapted.",
+            "pt": "A monitorização do risco verifica a eficácia, melhora a informação sobre o risco e identifica riscos emergentes para permitir adaptar a resposta."
+          }
+        }
+      ],
+      "correct": ["o2", "o5"],
+      "explanation": {
+        "en": "Product risk control combines mitigation and monitoring. Running the selected clock-change tests implements mitigation; checking effectiveness and adapting the response performs monitoring/control. The other activities describe initial identification or assessment.",
+        "pt": "O controlo do risco de produto combina mitigação e monitorização. Executar os testes de mudança da hora selecionados implementa a mitigação; verificar a eficácia e adaptar a resposta realiza monitorização/controlo. As outras atividades descrevem identificação ou avaliação iniciais."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.2.3–5.2.4",
+        "pages": [52, 53],
+        "report": "docs/academic-audit.md#fase-7--tl-085"
+      }
+    },
+    "changed": false
+  }
+]

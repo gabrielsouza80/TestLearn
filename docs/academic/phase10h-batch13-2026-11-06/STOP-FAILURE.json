@@ -1,0 +1,28 @@
+{
+  "status": "STOPPED_CRITICAL_GATE_FAILURE",
+  "recordedAt": "2026-11-07T01:32:10.492802+00:00",
+  "command": "rtk proxy python C:/TestLearn/tmp/phase10h-batch13-20261106/verify.py batch13-specific",
+  "exitCode": 1,
+  "toolChunk": "c9f8e2",
+  "failureOutputProvenance": "Exact traceback copied from tool output; not a new execution or reconstructed PASS.",
+  "failureLog": "C:/TestLearn/tmp/phase10h-batch13-20261106/batch13-specific-FAILURE.log",
+  "matches": [
+    {
+      "file": "docs/academic/phase10h-batch13-2026-11-06/reports/tl-049.md",
+      "match": "ão1",
+      "context": "a 15.\n\nA lista EN de fatores começa na p.19 e continua na20; PT concentra a secção1.4.2 na p.21. Domínio, necessidades e restrições influenciam técnicas, cobertura"
+    }
+  ],
+  "observedCause": "Report tl-049 contains secção1.4.2 and na20 without spaces. The inherited prose assertion matches ão1 inside secção1; it was intended to detect identifier collisions. This is a readability defect in new evidence, not evidence of a bank edit. No fix or weakened assertion was applied.",
+  "testsNotReached": [
+    "Batch13 negative mutations",
+    "GLOBAL13 negative mutations",
+    "two-layer mutation routing demonstration"
+  ],
+  "resumeCondition": "Explicit authorization to correct the new documentation or verification as justified, then reexecute all required gates. Do not export before all pass.",
+  "bankModified": false,
+  "newOwnerAccepted": 0,
+  "newHumanApproved": 0,
+  "finalZIPCreated": false,
+  "failurePreserved": true
+}

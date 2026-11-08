@@ -1,0 +1,80 @@
+{
+  "id": "tl-078",
+  "chapter": 5,
+  "lo": "FL-5.5.1",
+  "level": "K3",
+  "topic": "Defect reports",
+  "type": "scenario",
+  "required": 1,
+  "text": {
+    "en": "On staging build r204, a tester creates offline item L-42, reconnects and presses Sync once. The agreed behaviour is one server record. Two records appear instead; trace t42 records the request. Repeating those steps reproduces the result. Which report summary accurately preserves the evidence and is most useful for investigation?",
+    "pt": "Na compilação r204 em pré-produção, um testador cria o item L-42 offline, restabelece a ligação e prime Sincronizar uma vez. O comportamento acordado é um registo no servidor. Aparecem dois registos; o trace t42 regista o pedido. Repetir esses passos reproduz o resultado. Que resumo de relatório preserva corretamente a evidência e é mais útil para investigação?"
+  },
+  "options": [
+    {
+      "id": "o1",
+      "text": {
+        "en": "r204/staging: create L-42 offline, reconnect, Sync once; expected 1 record, observed 2; reproducible, trace t42.",
+        "pt": "r204/pré-produção: criar L-42 offline, restabelecer ligação, Sincronizar uma vez; esperado 1 registo, obtidos 2; reproduzível, trace t42."
+      },
+      "explanation": {
+        "en": "This includes the actual build/environment, necessary preconditions and steps, expected/actual results and evidence without inventing a cause.",
+        "pt": "Isto inclui a compilação/ambiente reais, pré-condições e passos necessários, resultados esperados/obtidos e evidência, sem inventar uma causa."
+      }
+    },
+    {
+      "id": "o2",
+      "text": {
+        "en": "r204/staging: create L-42 offline, reconnect, Sync once; expected 2 records, observed 1; reproducible, trace t42.",
+        "pt": "r204/pré-produção: criar L-42 offline, restabelecer ligação, Sincronizar uma vez; esperados 2 registos, obtido 1; reproduzível, trace t42."
+      },
+      "explanation": {
+        "en": "The expected and observed counts are reversed, so the report contradicts the observed anomaly.",
+        "pt": "As contagens esperada e observada estão trocadas, pelo que o relatório contradiz a anomalia observada."
+      }
+    },
+    {
+      "id": "o3",
+      "text": {
+        "en": "r204/staging: create L-42 online, press Sync once; expected 1 record, observed 2; reproducible, trace t42.",
+        "pt": "r204/pré-produção: criar L-42 online, premir Sincronizar uma vez; esperado 1 registo, obtidos 2; reproduzível, trace t42."
+      },
+      "explanation": {
+        "en": "The offline precondition and reconnection step were replaced by an online flow, preventing faithful reproduction.",
+        "pt": "A pré-condição offline e o restabelecimento da ligação foram substituídos por um fluxo online, impedindo a reprodução fiel."
+      }
+    },
+    {
+      "id": "o4",
+      "text": {
+        "en": "r205/staging: create L-42 offline, reconnect, Sync once; expected 1 record, observed 2; confirmed server race, trace t42.",
+        "pt": "r205/pré-produção: criar L-42 offline, restabelecer ligação, Sincronizar uma vez; esperado 1 registo, obtidos 2; concorrência no servidor confirmada, trace t42."
+      },
+      "explanation": {
+        "en": "The build identifier is wrong and a server race is asserted without evidence establishing that cause.",
+        "pt": "O identificador da compilação está errado e afirma-se concorrência no servidor sem evidência que estabeleça essa causa."
+      }
+    }
+  ],
+  "correct": ["o1"],
+  "explanation": {
+    "en": "Construct the report from observed facts, not a guessed cause. The selected summary supports reproduction and investigation; a full report can also contain identifiers, impact, priority and tracking fields.",
+    "pt": "Constrói-se o relatório a partir de factos observados, não de uma causa suposta. O resumo escolhido apoia a reprodução e investigação; um relatório completo também pode conter identificadores, impacto, prioridade e campos de acompanhamento."
+  },
+  "origin": "original",
+  "syllabus": "4.0.1",
+  "version": 1,
+  "review": "AI_REVIEWED",
+  "translationReview": "AI_REVIEWED",
+  "humanApproval": "PENDING",
+  "examEligible": true,
+  "tags": ["phase5a-variability"],
+  "academicReview": {
+    "method": "AI_REVIEWED",
+    "status": "PASS",
+    "reviewedAt": "2026-10-28",
+    "section": "5.5",
+    "pages": [56, 57],
+    "report": "docs/academic-audit.md#fase-5a--tl-078"
+  }
+}

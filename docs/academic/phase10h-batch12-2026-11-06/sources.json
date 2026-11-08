@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "v4.0.1; 2024-09-15",
+      "fileName": "ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [
+        14,
+        20,
+        24,
+        28,
+        32,
+        35,
+        36,
+        37,
+        47,
+        48,
+        52,
+        53,
+        54,
+        55,
+        58,
+        59
+      ],
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "provenance": "Official project source-library copy freshly read and hashed. EN web opened; PT fetch timed out. No new PT download or remote-byte equivalence claimed.",
+      "pageConvention": "Physical PDF pages, cover=1, checked individually."
+    },
+    {
+      "language": "PT",
+      "edition": "v4.0; tradução 1.0; 21-04-2023",
+      "fileName": "ISTQB_CTFL_Syllabus-v4.0-PT_v1.0 (1).pdf",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [
+        15,
+        22,
+        26,
+        30,
+        35,
+        38,
+        39,
+        40,
+        52,
+        53,
+        57,
+        58,
+        59,
+        60,
+        61,
+        64,
+        65
+      ],
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "provenance": "Official project source-library copy freshly read and hashed. EN web opened; PT fetch timed out. No new PT download or remote-byte equivalence claimed.",
+      "pageConvention": "Physical PDF pages, cover=1, checked individually."
+    }
+  ],
+  "limitations": "Distinct editions, not textually identical. EN4.0.1 primary; compare PT4.0 translation1.0. No separate glossary consultation needed or claimed. Specific tool capability matching is reviewer application of non-functional tool category, not a quoted syllabus list of load/APM products. Full copyrighted PDFs/pages not bundled."
+}

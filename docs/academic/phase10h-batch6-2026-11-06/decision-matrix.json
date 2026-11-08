@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "scope": "Phase 10H Batch 6 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-06",
+  "reviewMethod": "AI_REVIEWED",
+  "humanApprovedCount": 0,
+  "ownerAcceptedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-088",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-4.2.4",
+      "cognitiveLevel": "K3",
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "69f4515bd7a9d728c94424470f64babc27e126c8b1783d587267b69cf5bd83f8",
+      "afterCanonicalSHA256": "69f4515bd7a9d728c94424470f64babc27e126c8b1783d587267b69cf5bd83f8",
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "independentSolution": {
+        "questionId": "tl-088",
+        "answer": ["o3"],
+        "derivation": "Initial Locked. Existing grant,revoke,revoke covers Locked/grant→Open,Open/revoke→Suspended,Suspended/revoke→Locked. Existing grant,revoke,grant also covers Suspended/grant→Open. All four valid cells are covered; missing Locked/revoke INVALID and Open/grant INVALID. o3 X=revoke attempts first missing cell and stops Locked; Y=grant,grant reaches Open then attempts second missing cell and stops Open. Six of six cells covered. o1 only repeats valid cells. o2 adds Locked/revoke but not Open/grant. o4 X stops immediately on revoke; later grant,grant are not executed, so Open/grant remains uncovered; Y ends Suspended without new coverage. Unique among offered pairs; alternative equivalent suites could exist outside the options. Stop-on-first-invalid is the question’s explicit processing rule, not a universal real-system law."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Os testes existentes cobrem os quatro pares válidos: Locked/grant,Open/revoke,Suspended/revoke,Suspended/grant. Faltam Locked/revoke eOpen/grant. X=revoke tenta o primeiro, mantém Locked e termina; Y=grant,grant chega aOpen e tenta o segundo, mantendo Open e terminando. São6/6pares. A regra de um inválido exige no mínimo dois testes adicionais. Só o3 satisfaz as duas exigências entre as opções; não se afirma unicidade de todas as suites possíveis.",
+          "en": "Existing tests cover all four valid pairs. Missing Locked/revoke and Open/grant require two tests under the one-invalid-attempt rule. o3 attempts the former from Locked and the latter after reaching Open, stopping in unchanged states Locked and Open. Six of six pairs are covered. Only o3 satisfies the offered choices; other suites outside the options may also work."
+        },
+        "scope": {
+          "pt": "O syllabus §4.2.4 descreve cobertura de transições válidas e inválidas e recomenda isolar um inválido por caso para reduzir mascaramento. Não prescreve que todo sistema pare no primeiro inválido. Estado inicial Locked, rejeição sem mudança e paragem são premissas literais deste exercício. INVALID é uma célula inválida explícita, não um novo estado nem transição válida.",
+          "en": "Syllabus section4.2.4 distinguishes valid and invalid-transition coverage and explains isolating invalid attempts to reduce masking. It does not prescribe universal system termination. Initial Locked, unchanged state on rejection, and first-invalid stopping are explicit exercise premises. INVALID denotes an invalid cell, not a new state or valid transition."
+        },
+        "translation": {
+          "pt": "Locked/Open/Suspended egrant/revoke são identificadores iguais nas duas línguas. “Cada teste”/each test reinicia Locked; “no máximo uma”/at most one e “primeiro”/first preservam cardinalidade e paragem. A tabela única é bilingue no cabeçalho. Explicação geral e quatro justificações mantêm os mesmos pares e cobertura.",
+          "en": "State/event identifiers are identical in both languages. Each test restarts Locked; at most one and first preserve cardinality and stopping order. The shared table has a bilingual header. General and all four option rationales identify the same pairs and coverage."
+        },
+        "difficulty": {
+          "pt": "K3 efetivo, dificuldade qualitativa média/alta: aplicar a máquina em dez execuções (duas existentes eX/Ydas quatro opções), recalcular cobertura e separar sequência escrita de eventos efetivamente processados. Não basta recordar os nomes dos critérios. Não equivale a conceção autónoma de uma suite industrial.",
+          "en": "Genuine K3, qualitatively moderate/high: apply the machine to ten runs (two existing plus X/Y for four choices), recompute coverage and distinguish listed events from processed events. Recalling criterion names is insufficient; this is not proof of autonomous industrial-suite design."
+        },
+        "optional": {
+          "pt": "Melhoria opcional na justificação de o4: explicitar “Se executada integralmente, X continuaria após o inválido; sob a regra dada, o sufixo não é executado e Open/grant permanece por cobrir.” A redação atual caracteriza um plano não permitido, não demonstra erro na chave. Nenhuma alteração aplicada ou obrigatória.",
+          "en": "Optional o4 rationale clarification: distinguish the nonconforming listed plan from the actual stopped trace; later grant events do not execute and Open/grant remains uncovered. Current wording rejects the prohibited plan correctly. No confirmed key/content defect or mandatory correction."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "X terminaOpen; Y terminaOpen. Ambos só repetem pares válidos já cobertos; cobertura total4/6.",
+            "en": "X endsOpen and Y endsOpen. Both repeat existing valid pairs; total coverage4/6."
+          },
+          "o2": {
+            "pt": "X terminaLocked ao inválido; Y terminaLocked por três passos válidos. Só acrescentaLocked/revoke; total5/6, faltaOpen/grant.",
+            "en": "X stopsLocked on invalid revoke; Y endsLocked after three valid events. Adds onlyLocked/revoke; total5/6, Open/grant missing."
+          },
+          "o4": {
+            "pt": "X paraLocked logo emrevoke; os dois grant seguintes não são executados. Y terminaSuspended. Plano viola a política e cobertura efetiva é5/6; Open/grant falta.",
+            "en": "X stopsLocked on its first revoke; the two later grants do not execute. Y endsSuspended. The plan violates policy and effective coverage is5/6, missingOpen/grant."
+          }
+        },
+        "refs": {
+          "section": "4.2.4",
+          "EN": [38, 41, 42],
+          "PT": [41, 45]
+        }
+      },
+      "references": {
+        "section": "4.2.4",
+        "EN": [38, 41, 42],
+        "PT": [41, 45]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "69f4515bd7a9d728c94424470f64babc27e126c8b1783d587267b69cf5bd83f8"
+        }
+      ],
+      "previousAIReviewRecord": {
+        "questionId": "tl-088",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "69f4515bd7a9d728c94424470f64babc27e126c8b1783d587267b69cf5bd83f8",
+        "learningObjective": "FL-4.2.4",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.2.4",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "4.2",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.2.4",
+          "pdfPages": [41, 42],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o3"],
+        "currentCorrectOptions": [
+          {
+            "id": "o3",
+            "text": {
+              "en": "X: revoke; Y: grant, grant",
+              "pt": "X: revoke; Y: grant, grant"
+            },
+            "explanation": {
+              "en": "X attempts Locked/revoke; Y reaches Open then attempts Open/grant. Each test stops at its single invalid event, adding both missing pairs.",
+              "pt": "X tenta Locked/revoke; Y chega a Open e depois tenta Open/grant. Cada teste termina no seu único evento inválido, acrescentando ambos os pares em falta."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The existing tests cover Locked/grant, Open/revoke, Suspended/revoke and Suspended/grant: all four valid pairs. The uncovered pairs are Locked/revoke and Open/grant. They require separate tests under the one-invalid-event rule; revoke and grant,grant cover them.",
+          "pt": "Os testes existentes cobrem Locked/grant, Open/revoke, Suspended/revoke e Suspended/grant: os quatro pares válidos. Os pares não cobertos são Locked/revoke e Open/grant. Exigem testes separados segundo a regra de um evento inválido; revoke e grant,grant cobrem-nos."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "2eb41f09ef07e2523dd15d1dbd368542c2dfa553de7996b843974f204fcfd873",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.2.4",
+          "pages": [41, 42],
+          "report": "docs/academic-audit.md#fase-7--tl-088"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.2.4",
+            "pdfPages": [38, 41, 42]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.2.4",
+            "pdfPages": [41, 45]
+          }
+        ],
+        "correctAnswerJustification": "FL-4.2.4/K3: cobertura de todas transições inclui quatro válidas e duas inválidas tentadas; com limite um inválido e parar, o3 acrescenta pares Locked/revoke e Open/grant.",
+        "distractorAssessment": {
+          "o1": "Só transições válidas já cobertas; não adiciona inválidas.",
+          "o2": "X cobre Locked/revoke, Y só válidas; falta Open/grant.",
+          "o4": "X continua após primeiro inválido em Locked, violando regra de paragem."
+        },
+        "wordingAndTranslationConcerns": "States Locked/Open/Suspended e eventos grant/revoke mantidos como identificadores nos dois idiomas; INVALID definido como rejeição sem mudança, não nova transição válida. at most/no máximo e stop/terminar equivalentes.",
+        "potentialAmbiguity": "A regra de parar ao primeiro inválido é premissa explícita do exercício, alinhada a evitar mascaramento; não afirmar que todo sistema real obriga encerramento da sessão após evento inválido.",
+        "difficultyAssessment": "Alta; K3, rederivação de duas execuções e seis pares.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o3"],
+          "keyProposed": ["o3"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "E1: Locked-grant→Open-revoke→Suspended-revoke→Locked. E2: Locked-grant→Open-revoke→Suspended-grant→Open. Cobertos quatro válidos,4/6. Faltam Locked/revoke e Open/grant. X=revoke a partir Locked tenta primeiro; Y=grant,grant chega Open e tenta segundo. Cada teste termina no inválido; 6/6, o3.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank, key, version, historical, persistence or runtime change"
+    },
+    {
+      "questionId": "tl-089",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "ownerDecision": null,
+      "learningObjective": "FL-5.1.4",
+      "cognitiveLevel": "K3",
+      "questionVersion": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "4f54534aa53d3c59983f1ce4722e672d6e5d69631aa5701081915a6b6f97c92f",
+      "afterCanonicalSHA256": "4f54534aa53d3c59983f1ce4722e672d6e5d69631aa5701081915a6b6f97c92f",
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "independentSolution": {
+        "questionId": "tl-089",
+        "answer": ["o4"],
+        "derivation": "Preparation=(2+4×3+4)/6=3; A=(3+4×5+13)/6=6; B=(2+4×4+6)/6=4 person-hours. RepeatB=0.5×4=2; fixedsetup=2 once, distinct from preparation. Total=3+6+4+2+2=17 person-hours, exact, no rounding. Parallel execution using different testers changes possible elapsed duration but not summed effort. No elapsed-duration claim is justified without further resource/calendar assumptions. o1=13 omits repeat and setup (also coincides with erroneous parallel-max arithmetic); o2=15 omits either one of the two equal2 contributions; o3=18 results from unweighted means3+7+4+2+2; o5=20 can result from repeating preparation3. No confidence interval or SD is requested."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Preparação=(2+4×3+4)/6=3; A=(3+4×5+13)/6=6; B=(2+4×4+6)/6=4pessoas-hora. RepetiçãoB=50%×4=2; configuração separada=2uma vez. Soma3+6+4+2+2=17, sem arredondar. Sobreposição não remove esforço de qualquer testador.",
+          "en": "Preparation=(2+4×3+4)/6=3; A=(3+4×5+13)/6=6; B=(2+4×4+6)/6=4person-hours. RepeatB=50%×4=2; separate setup=2once. Sum3+6+4+2+2=17 exactly, with no rounding. Overlap does not remove either tester’s effort."
+        },
+        "scope": {
+          "pt": "O syllabus §5.1.4 descreve estimar esforço e a média ponderada de três pontos; reconhece erro de estimativa. A fórmula é também expressa na questão. A repetição seletiva deB, fator50%, preparação/configuração distintas e ocorrência única são premissas próprias do exercício. Não são regras universais de estimativa.",
+          "en": "Syllabus section5.1.4 describes effort estimation and a weighted three-point mean, recognizing estimation error. The exercise explicitly specifies that formula. Selective repeatB, its50%factor, distinct preparation/setup and single occurrence are local premises, not universal estimation rules."
+        },
+        "translation": {
+          "pt": "Pessoas-hora/person-hours, não duração/not elapsed e50%só deB coincidem. As três linhas preservam ordem a,m,b e todos os números. Preparation/preparação é trabalho estimado; setup/configuração é adicionalfixo, excluído das linhas. “Podem sobrepor-se”/may overlap não declara cronograma concreto. Explicações gerais e cinco alternativas equivalentes.",
+          "en": "Person-hours, not elapsed duration and50%ofB alone agree. Three rows preserve a,m,b ordering and every number. Preparation is estimated work; setup is separate fixed work excluded from rows. May overlap does not define an actual schedule. General rationales and all five alternatives are equivalent."
+        },
+        "difficulty": {
+          "pt": "K3 efetivo, dificuldade qualitativa média/alta: aplicar três médias ponderadas, selecionar a base correta para repetição e agregar sem dupla contagem. A distinção entre esforço e duração é aplicada ao cenário, não simples recordação.",
+          "en": "Genuine K3, qualitatively moderate/high: apply three weighted means, select the correct repeat base, and aggregate without double counting. Effort versus duration is applied to the scenario rather than merely recalled."
+        },
+        "optional": {
+          "pt": "A alternativa15 pode resultar tanto de omitir a repetição como de omitir a configuração, ambas com valor2. A justificação apresenta uma via correta de erro, sem precisar ser exclusiva. O mesmo vale para outras contas erradas que coincidam numericamente. Uniformizar espaços/separador0,5emPT seria editorial. Não se calcula duração nem se introduz SD/confiança.",
+          "en": "15 can result from omitting either repeat or setup because both equal2. Its rationale supplies one valid error route, not an exclusive diagnosis. Other wrong arithmetic may also coincide numerically. Portuguese decimal formatting/spacing would be editorial. No calendar duration, SD or confidence level is calculated."
+        },
+        "distractors": {
+          "o1": {
+            "pt": "13=3+max(6,4)+2+2substitui incorretamente soma de esforço por máximo; também coincide com omitir repetição econfiguração. Não é duração de calendário demonstrada.",
+            "en": "13=3+max(6,4)+2+2incorrectly substitutes a parallel maximum for summed effort; also matches omitting repeat and setup. It is not a demonstrated calendar duration."
+          },
+          "o2": {
+            "pt": "15=3+6+4+2omite repetição deB, conforme justificação; omitir configuração daria o mesmo número.",
+            "en": "15=3+6+4+2omits repeatB as the stored rationale describes; omitting setup yields the same number."
+          },
+          "o3": {
+            "pt": "18usa média simples paraA:(3+5+13)/3=7, em vez de6; as outras linhas continuam3e4.",
+            "en": "18uses A’s unweighted mean(3+5+13)/3=7 instead of6; the other rows remain3and4."
+          },
+          "o5": {
+            "pt": "20=3+6+4+50%×(6+4)+2repete metade deA+Bem vez de sóB. Também poderia resultar de outra dupla contagem; não torna a opção correta.",
+            "en": "20=3+6+4+50%×(6+4)+2repeats half ofA+B instead ofB alone. Other double-counting routes can coincide without making it correct."
+          }
+        },
+        "refs": {
+          "section": "5.1.4",
+          "EN": [47, 49, 50],
+          "PT": [52, 54, 55]
+        }
+      },
+      "references": {
+        "section": "5.1.4",
+        "EN": [47, 49, 50],
+        "PT": [52, 54, 55]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "4f54534aa53d3c59983f1ce4722e672d6e5d69631aa5701081915a6b6f97c92f"
+        }
+      ],
+      "previousAIReviewRecord": {
+        "questionId": "tl-089",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "4f54534aa53d3c59983f1ce4722e672d6e5d69631aa5701081915a6b6f97c92f",
+        "learningObjective": "FL-5.1.4",
+        "syllabusChapter": 5,
+        "syllabusSection": "5.1.4",
+        "cognitiveLevel": "K3",
+        "learningObjectiveSection": "5.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "5.1.4",
+          "pdfPages": [49, 50],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o4"],
+        "currentCorrectOptions": [
+          {
+            "id": "o4",
+            "text": {
+              "en": "17 person-hours",
+              "pt": "17 pessoas-hora"
+            },
+            "explanation": {
+              "en": "Weighted preparation=3, A=6 and B=4. Repeat B=2 and fixed setup=2, giving 3+6+4+2+2=17.",
+              "pt": "Preparação ponderada=3, A=6 e B=4. A repetição de B=2 e a configuração fixa=2, dando 3+6+4+2+2=17."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Preparation: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Only B repeats: 0.5×4=2. Add the separate setup once: 3+6+4+2+2=17 person-hours. Concurrent execution does not remove effort.",
+          "pt": "Preparação: (2+4×3+4)/6=3. A: (3+4×5+13)/6=6. B: (2+4×4+6)/6=4. Só B se repete: 0.5×4=2. Acrescentar a configuração separada uma vez: 3+6+4+2+2=17 pessoas-hora. A execução concorrente não elimina esforço."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4", "o5"],
+        "alternativeFieldsSHA256": "818356474f7b34b6148cb2ca9fa8891a0032c28b3e6876fe292b02bf0d9fbfe8",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 10
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "5.1.4",
+          "pages": [49, 50],
+          "report": "docs/academic-audit.md#fase-7--tl-089"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "5.1.4",
+            "pdfPages": [47, 49, 50]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "5.1.4",
+            "pdfPages": [52, 54, 55]
+          }
+        ],
+        "correctAnswerJustification": "FL-5.1.4/K3: calcular médias por linha, somar pessoas-hora, repetir só metade de B e setup único:17, o4. Cinco opções, uma chave, required=1.",
+        "distractorAssessment": {
+          "o1": "13 usa máximo das execuções paralelas em vez da soma do esforço.",
+          "o2": "15 omite repetição B=2.",
+          "o3": "18 usa média simples de A=7 em vez ponderada6.",
+          "o5": "20 repete metade de A+B=5 em vez de metade B=2."
+        },
+        "wordingAndTranslationConcerns": "person-effort/esforço em pessoas-hora e not elapsed/não duração preservam unidade. Preparation/preparação e separate setup/configuração separados nos dois textos; 50% só B e once/uma vez mantidos.",
+        "potentialAmbiguity": "Sobreposição não reduz soma de esforço; não calcular duração sem capacidade/calendário. Fórmula explícita evita disputa entre média simples e PERT ponderada; nenhuma hipótese de confiança é necessária.",
+        "difficultyAssessment": "Alta; K3, várias linhas, repetição e esforço versus duração.",
+        "proposedCorrection": {
+          "description": null,
+          "keyBefore": ["o4"],
+          "keyProposed": ["o4"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "NONE",
+        "workedSolution": "Prep=(2+4×3+4)/6=18/6=3. A=(3+4×5+13)/6=36/6=6. B=(2+4×4+6)/6=24/6=4. Repetição0,5×4=2; setup2. Total3+6+4+2+2=17. o1=3+max(6,4)+2+2=13; o2=15; o3=3+7+4+2+2=18; o5=3+6+4+5+2=20.",
+        "humanQuestion": "Rever solução sem consultar chave; confirmar LO/K, unicidade/cardinalidade, traduções e cada explicação; decidir proposta sem aplicar automaticamente."
+      },
+      "impact": "Documentation only; no bank, key, version, historical, persistence or runtime change"
+    }
+  ]
+}

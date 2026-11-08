@@ -1,0 +1,328 @@
+[
+  {
+    "id": "tl-025",
+    "lo": "FL-4.2.1",
+    "level": "K3",
+    "text": {
+      "en": "An integer quantity is accepted from 3 to 8 inclusive. Which smallest set covers the below-range, valid and above-range partitions?",
+      "pt": "Uma quantidade inteira é aceite de 3 a 8 inclusive. Que conjunto mínimo cobre as partições abaixo do intervalo, válida e acima do intervalo?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "2, 5, 9",
+          "pt": "2, 5, 9"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "2, 9",
+          "pt": "2, 9"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "3, 5, 8",
+          "pt": "3, 5, 8"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "2, 3, 5",
+          "pt": "2, 3, 5"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-026",
+    "lo": "FL-4.2.2",
+    "level": "K3",
+    "text": {
+      "en": "An integer score from 10 to 20 inclusive is valid; all other integers are rejected. Which set gives full 2-value boundary value analysis coverage of the boundaries between the three partitions?",
+      "pt": "Uma pontuação inteira de 10 a 20 inclusive é válida; todos os outros inteiros são rejeitados. Que conjunto dá cobertura completa de análise de valor fronteira de 2 valores nas fronteiras entre as três partições?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "10, 11, 20, 21",
+          "pt": "10, 11, 20, 21"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "10, 15, 20",
+          "pt": "10, 15, 20"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "9, 10, 20, 21",
+          "pt": "9, 10, 20, 21"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "9, 10, 19, 20",
+          "pt": "9, 10, 19, 20"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-027",
+    "lo": "FL-4.2.3",
+    "level": "K3",
+    "text": {
+      "en": "Using the decision table (T = true, F = false, X = grant free delivery), which input derives a test case for rule R1?",
+      "pt": "Usando a tabela de decisão (T = verdadeiro, F = falso, X = conceder entrega gratuita), que entrada permite obter um caso de teste para a regra R1?"
+    },
+    "table": {
+      "headers": [
+        "Condition / action · Condição / ação",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "rows": [
+        ["Member? / Membro?", "T", "T", "F", "F"],
+        ["Total ≥ 50?", "T", "F", "T", "F"],
+        ["Free delivery? / Entrega gratuita?", "X", "", "", ""]
+      ]
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Member = no; total = 60",
+          "pt": "Membro = não; total = 60"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Member = yes; total = 60",
+          "pt": "Membro = sim; total = 60"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Member = yes; total = 20",
+          "pt": "Membro = sim; total = 20"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Member = no; total = 20",
+          "pt": "Membro = não; total = 20"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-028",
+    "lo": "FL-4.2.4",
+    "level": "K3",
+    "text": {
+      "en": "An order starts Draft. Submit moves Draft to Pending; Pay moves Pending to Paid. All other event/state combinations are invalid. Which sequence reaches Paid using only valid transitions?",
+      "pt": "Uma encomenda começa em Rascunho. Submeter passa para Pendente; Pagar passa de Pendente para Paga. Todas as outras combinações de evento e estado são inválidas. Que sequência chega a Paga só com transições válidas?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Submit, Pay, Pay",
+          "pt": "Submeter, Pagar, Pagar"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Submit, Submit",
+          "pt": "Submeter, Submeter"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Submit, Pay",
+          "pt": "Submeter, Pagar"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Pay, Submit",
+          "pt": "Pagar, Submeter"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-029",
+    "lo": "FL-4.5.3",
+    "level": "K3",
+    "text": {
+      "en": "Before implementation, business, development and testing agree: delivery costs 5 for totals below 50 and is free for totals at least 50. Which pair of ATDD acceptance examples correctly covers both sides of that threshold?",
+      "pt": "Antes da implementação, representantes de negócio, desenvolvimento e testes acordam: a entrega custa 5 para totais inferiores a 50 e é gratuita para totais de pelo menos 50. Que par de exemplos de aceitação ATDD cobre corretamente os dois lados desse limiar?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Given total 49, when delivery is priced, then charge 5; given total 50, when delivery is priced, then charge 0.",
+          "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 5; dado um total de 50, quando se calcula a entrega, então cobrar 0."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 0.",
+          "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 0."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 5.",
+          "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 5."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Given total 49, when delivery is priced, then charge 5; given total 50, when delivery is priced, then charge 5.",
+          "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 5; dado um total de 50, quando se calcula a entrega, então cobrar 5."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-036",
+    "lo": "FL-5.1.4",
+    "level": "K3",
+    "text": {
+      "en": "Using three-point estimation (optimistic + 4 × most likely + pessimistic) / 6, the estimates are 2, 5 and 14 person-hours respectively. What is the weighted estimate?",
+      "pt": "Usando a estimativa de três pontos (otimista + 4 × mais provável + pessimista) / 6, as estimativas são, respetivamente, 2, 5 e 14 pessoas-hora. Qual é a estimativa ponderada?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "5 person-hours",
+          "pt": "5 pessoas-hora"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "6 person-hours",
+          "pt": "6 pessoas-hora"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "14 person-hours",
+          "pt": "14 pessoas-hora"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "7 person-hours",
+          "pt": "7 pessoas-hora"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-037",
+    "lo": "FL-5.1.5",
+    "level": "K3",
+    "text": {
+      "en": "Risk priority is A before B before C, but A requires C to run first. B is independent. Which order respects the dependency and runs the highest-risk available test first?",
+      "pt": "A prioridade de risco é A antes de B antes de C, mas A exige executar C primeiro. B é independente. Que ordem respeita a dependência e executa primeiro o teste disponível de maior risco?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "B, A, C",
+          "pt": "B, A, C"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "A, B, C",
+          "pt": "A, B, C"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "C, A, B",
+          "pt": "C, A, B"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "B, C, A",
+          "pt": "B, C, A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-046",
+    "lo": "FL-4.2.2",
+    "level": "K3",
+    "text": {
+      "en": "An integer input has no lower or upper domain limit. Values below 5 are rejected, 5 to 12 inclusive are accepted, and values above 12 are rejected. Consider every finite boundary of all three partitions. Which minimal set gives 100% three-value BVA coverage?",
+      "pt": "Uma entrada inteira não tem limite inferior nem superior de domínio. Os valores inferiores a 5 são rejeitados, os de 5 a 12 inclusive são aceites e os superiores a 12 são rejeitados. Considere todas as fronteiras finitas das três partições. Que conjunto mínimo dá 100% de cobertura de BVA de 3 valores?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "3, 4, 5, 6, 11, 12, 13, 14",
+          "pt": "3, 4, 5, 6, 11, 12, 13, 14"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "4, 5, 12, 13",
+          "pt": "4, 5, 12, 13"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "4, 5, 6, 11, 12, 13",
+          "pt": "4, 5, 6, 11, 12, 13"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "3, 4, 5, 6, 7, 11, 12, 13, 14",
+          "pt": "3, 4, 5, 6, 7, 11, 12, 13, 14"
+        }
+      }
+    ]
+  }
+]

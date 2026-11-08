@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-001",
+    "lo": "FL-1.1.1",
+    "level": "K1",
+    "text": {
+      "en": "Select TWO useful testing objectives.",
+      "pt": "Selecione DOIS objetivos úteis dos testes."
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Find defects in work products",
+          "pt": "Encontrar defeitos em produtos de trabalho"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Guarantee every user is satisfied",
+          "pt": "Garantir a satisfação de todos os utilizadores"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Provide information for a release decision",
+          "pt": "Fornecer informação para uma decisão de lançamento"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Prove that no defects exist",
+          "pt": "Provar que não existem defeitos"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-006",
+    "lo": "FL-1.4.1",
+    "level": "K2",
+    "text": {
+      "en": "A tester derives test conditions from requirements. Which activity is this?",
+      "pt": "Um testador deriva condições de teste a partir de requisitos. Que atividade é esta?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Test analysis",
+          "pt": "Análise de teste"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Test completion",
+          "pt": "Conclusão do teste"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Test design",
+          "pt": "Conceção de teste"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Test execution",
+          "pt": "Execução de teste"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-013",
+    "lo": "FL-2.1.5",
+    "level": "K2",
+    "text": {
+      "en": "Reviewing acceptance criteria before coding is an example of what?",
+      "pt": "Rever critérios de aceitação antes de programar é um exemplo de quê?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Test completion",
+          "pt": "Conclusão do teste"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Shift left",
+          "pt": "Shift left"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Test execution",
+          "pt": "Execução de teste"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Regression testing",
+          "pt": "Teste de regressão"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-014",
+    "lo": "FL-2.3.1",
+    "level": "K2",
+    "text": {
+      "en": "An operational service moves to a new database engine. Why plan maintenance testing?",
+      "pt": "Um serviço em operação muda para outro motor de base de dados. Porquê planear testes de manutenção?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Existing test results remain sufficient for the new environment because application features are unchanged",
+          "pt": "Os resultados anteriores continuam a ser suficientes para o novo ambiente porque as funcionalidades da aplicação não mudaram"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Migration can affect the data and existing behavior, even without application code changes",
+          "pt": "A migração pode afetar dados e comportamento existente, mesmo sem alterar o código da aplicação"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Data-migration checks replace regression checks of the service behavior",
+          "pt": "As verificações da migração de dados substituem as verificações de regressão do comportamento do serviço"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Maintenance testing concerns code changes rather than environment migrations",
+          "pt": "Os testes de manutenção dizem respeito a alterações de código, não a migrações de ambiente"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-015",
+    "lo": "FL-3.1.1",
+    "level": "K1",
+    "text": {
+      "en": "Which item is directly examinable by reviewing its written content, without executing the application?",
+      "pt": "Que item pode ser examinado diretamente através da revisão do seu conteúdo escrito, sem executar a aplicação?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "The observed checkout behavior after selecting Pay",
+          "pt": "O comportamento da compra observado após selecionar Pagar"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "The application's memory growth under concurrent load",
+          "pt": "O crescimento de memória da aplicação sob carga concorrente"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Documented requirements for checkout validation rules",
+          "pt": "Os requisitos escritos sobre regras de validação da compra"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The checkout service's measured response latency",
+          "pt": "A latência de resposta medida no serviço de compras"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-017",
+    "lo": "FL-3.1.3",
+    "level": "K2",
+    "text": {
+      "en": "Review finds contradictory date requirements; execution finds an incorrect date displayed. Which statement is accurate?",
+      "pt": "Uma revisão encontra requisitos contraditórios de datas; a execução encontra uma data incorreta apresentada. Qual afirmação é correta?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Both found failures because both results conflict with expectations",
+          "pt": "Ambos encontraram falhas porque ambos os resultados contrariam as expectativas"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Static testing found a defect directly; dynamic testing observed a failure",
+          "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Static testing observed a failure; dynamic testing directly located the code defect",
+          "pt": "O teste estático observou uma falha; o dinâmico localizou diretamente o defeito no código"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Both directly found code defects because each result identifies the faulty statement",
+          "pt": "Ambos encontraram diretamente defeitos no código porque cada resultado identifica a instrução incorreta"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-019",
+    "lo": "FL-4.1.1",
+    "level": "K2",
+    "text": {
+      "en": "Tests derived from externally specified behaviour, without using code structure, belong to which family?",
+      "pt": "Testes derivados do comportamento especificado externamente, sem usar a estrutura do código, pertencem a que família?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "White-box techniques",
+          "pt": "Técnicas de caixa-branca"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Experience-based techniques",
+          "pt": "Técnicas baseadas na experiência"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Risk-based testing",
+          "pt": "Teste baseado no risco"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Black-box techniques",
+          "pt": "Técnicas de caixa-preta"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-023",
+    "lo": "FL-4.4.2",
+    "level": "K2",
+    "text": {
+      "en": "A tester learns about a new search feature while designing, executing and evaluating tests in a timeboxed session guided by a test charter. Which technique is most directly characterized by these combined activities?",
+      "pt": "Um testador aprende sobre uma nova funcionalidade de pesquisa enquanto concebe, executa e avalia testes numa sessão de duração definida, orientada por uma carta de testes. Que técnica é mais diretamente caracterizada por estas atividades combinadas?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Session-based exploratory testing",
+          "pt": "Teste exploratório baseado em sessões"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Replay of predefined test scripts without adapting them",
+          "pt": "Repetição de scripts de teste predefinidos sem os adaptar"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Error guessing",
+          "pt": "Antecipação de erros"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Checklist-based testing",
+          "pt": "Teste baseado em checklists"
+        }
+      }
+    ]
+  }
+]

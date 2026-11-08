@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-11-06T12:33:59.356492+00:00",
+  "method": "AI review, not independent human SME review. Read only projection with deterministic SHA-256-shuffled options, no stored keys/explanations displayed. User critical points were available. Full bank including existing key was recorded privately for later comparison but not consulted to derive these answers. This is procedural blindness to stored keys, not proof of no prior model knowledge.",
+  "projectionSHA256": "3d6e179f16ffdbd43b47bfa7d4c07171e8037009fff7c8252704a2b2a8de089d",
+  "solutions": [
+    {
+      "questionId": "tl-088",
+      "answer": ["o3"],
+      "derivation": "Initial Locked. Existing grant,revoke,revoke covers Locked/grant→Open,Open/revoke→Suspended,Suspended/revoke→Locked. Existing grant,revoke,grant also covers Suspended/grant→Open. All four valid cells are covered; missing Locked/revoke INVALID and Open/grant INVALID. o3 X=revoke attempts first missing cell and stops Locked; Y=grant,grant reaches Open then attempts second missing cell and stops Open. Six of six cells covered. o1 only repeats valid cells. o2 adds Locked/revoke but not Open/grant. o4 X stops immediately on revoke; later grant,grant are not executed, so Open/grant remains uncovered; Y ends Suspended without new coverage. Unique among offered pairs; alternative equivalent suites could exist outside the options. Stop-on-first-invalid is the question’s explicit processing rule, not a universal real-system law."
+    },
+    {
+      "questionId": "tl-089",
+      "answer": ["o4"],
+      "derivation": "Preparation=(2+4×3+4)/6=3; A=(3+4×5+13)/6=6; B=(2+4×4+6)/6=4 person-hours. RepeatB=0.5×4=2; fixedsetup=2 once, distinct from preparation. Total=3+6+4+2+2=17 person-hours, exact, no rounding. Parallel execution using different testers changes possible elapsed duration but not summed effort. No elapsed-duration claim is justified without further resource/calendar assumptions. o1=13 omits repeat and setup (also coincides with erroneous parallel-max arithmetic); o2=15 omits either one of the two equal2 contributions; o3=18 results from unweighted means3+7+4+2+2; o5=20 can result from repeating preparation3. No confidence interval or SD is requested."
+    }
+  ]
+}

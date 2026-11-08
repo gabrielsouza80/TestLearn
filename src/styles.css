@@ -1366,6 +1366,14 @@ input[type='number'] {
   background: var(--warning-surface);
   border-color: var(--warning);
 }
+.pedagogical-review-notice {
+  margin-block: 0.75rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.pedagogical-review-notice p {
+  margin: 0.25rem 0 0;
+}
 .writer-status-row {
   display: flex;
   flex-wrap: wrap;

@@ -1,0 +1,456 @@
+[
+  {
+    "questionId": "tl-011",
+    "previousRevision": "2026-10-27.9",
+    "currentRevision": "2026-10-27.10",
+    "before": {
+      "id": "tl-011",
+      "chapter": 2,
+      "lo": "FL-2.2.3",
+      "level": "K2",
+      "topic": "Regression",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "After fixing a discount defect, the team reruns its failing test and checks unaffected payment flows. What are these checks respectively?",
+        "pt": "Após corrigir um defeito num desconto, a equipa repete o teste que falhou e verifica fluxos de pagamento não alterados. Que testes são, respetivamente?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Confirmation and regression",
+            "pt": "Confirmação e regressão"
+          },
+          "explanation": {
+            "en": "Confirmation verifies the fix; regression checks adverse effects elsewhere.",
+            "pt": "A confirmação verifica a correção; a regressão procura efeitos adversos noutras áreas."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Regression and confirmation",
+            "pt": "Regressão e confirmação"
+          },
+          "explanation": {
+            "en": "The order is reversed.",
+            "pt": "A ordem está invertida."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Both are confirmation testing",
+            "pt": "Ambos são testes de confirmação"
+          },
+          "explanation": {
+            "en": "Confirmation checks whether the original defect was fixed. Checking other payment flows for adverse effects of the change is regression testing.",
+            "pt": "A confirmação verifica se o defeito original foi corrigido. Verificar outros fluxos de pagamento para detetar efeitos adversos da alteração é teste de regressão."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Both are regression testing",
+            "pt": "Ambos são testes de regressão"
+          },
+          "explanation": {
+            "en": "The first check specifically confirms the fix by repeating the previously failing test. The second checks for adverse effects elsewhere.",
+            "pt": "A primeira verificação confirma especificamente a correção ao repetir o teste que falhava. A segunda procura efeitos adversos noutras áreas."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Confirmation verifies the fix; regression checks adverse effects elsewhere.",
+        "pt": "A confirmação verifica a correção; a regressão procura efeitos adversos noutras áreas."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.2.3",
+        "pages": [30, 31],
+        "report": "docs/academic-audit.md#fase-5b--tl-011"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "after": {
+      "id": "tl-011",
+      "chapter": 2,
+      "lo": "FL-2.2.3",
+      "level": "K2",
+      "topic": "Regression",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "After fixing a discount defect, the team reruns the test that previously failed to verify the fix. It also tests payment flows whose implementation was not changed, to check for adverse effects of the fix. What are these checks respectively?",
+        "pt": "Após corrigir um defeito num desconto, a equipa repete o teste que falhou anteriormente para verificar a correção. Testa também fluxos de pagamento cuja implementação não foi alterada, para procurar efeitos adversos da correção. Que testes são, respetivamente?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Confirmation and regression",
+            "pt": "Confirmação e regressão"
+          },
+          "explanation": {
+            "en": "The first check is confirmation testing: it verifies that the original defect was fixed. The second is regression testing: it checks for adverse consequences of the change. Regression can concern the changed component, other components, connected systems or the environment; unchanged implementation does not guarantee unaffected behavior.",
+            "pt": "A primeira verificação é teste de confirmação: verifica se o defeito original foi corrigido. A segunda é teste de regressão: procura consequências adversas da alteração. A regressão pode abranger o componente alterado, outros componentes, sistemas interligados ou o ambiente; uma implementação não alterada não garante um comportamento sem efeitos adversos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Regression and confirmation",
+            "pt": "Regressão e confirmação"
+          },
+          "explanation": {
+            "en": "The order is reversed.",
+            "pt": "A ordem está invertida."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Both are confirmation testing",
+            "pt": "Ambos são testes de confirmação"
+          },
+          "explanation": {
+            "en": "Confirmation checks whether the original defect was fixed. Checking other payment flows for adverse effects of the change is regression testing.",
+            "pt": "A confirmação verifica se o defeito original foi corrigido. Verificar outros fluxos de pagamento para detetar efeitos adversos da alteração é teste de regressão."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Both are regression testing",
+            "pt": "Ambos são testes de regressão"
+          },
+          "explanation": {
+            "en": "The first check verifies the original defect fix, so it is confirmation testing. The second checks for adverse consequences of the change, so it is regression testing.",
+            "pt": "A primeira verificação verifica a correção do defeito original, pelo que é teste de confirmação. A segunda procura consequências adversas da alteração, pelo que é teste de regressão."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The first check is confirmation testing: it verifies that the original defect was fixed. The second is regression testing: it checks for adverse consequences of the change. Regression can concern the changed component, other components, connected systems or the environment; unchanged implementation does not guarantee unaffected behavior.",
+        "pt": "A primeira verificação é teste de confirmação: verifica se o defeito original foi corrigido. A segunda é teste de regressão: procura consequências adversas da alteração. A regressão pode abranger o componente alterado, outros componentes, sistemas interligados ou o ambiente; uma implementação não alterada não garante um comportamento sem efeitos adversos."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-11-05",
+        "section": "2.2.3",
+        "pages": [30, 31],
+        "report": "docs/academic/phase10h-batch1-2026-11-05/decisions.md#tl-011"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changedFields": [
+      "text",
+      "options",
+      "explanation",
+      "version",
+      "academicReview"
+    ],
+    "beforeCanonicalSHA256": "a2213c90fdca17ebd289978f394ce5afc48612b9e45e20d309d04aaccf64ad35",
+    "afterCanonicalSHA256": "c2abfddc606a1a3dfdd54c025cdf64abc92c3147f0a2859706436d0cce01a974",
+    "originalDecision": {
+      "questionId": "tl-011",
+      "previousVersion": 2,
+      "version": 3,
+      "previousSHA256": "a2213c90fdca17ebd289978f394ce5afc48612b9e45e20d309d04aaccf64ad35",
+      "correctedSHA256": "c2abfddc606a1a3dfdd54c025cdf64abc92c3147f0a2859706436d0cce01a974",
+      "keyBefore": ["o1"],
+      "keyAfter": ["o1"],
+      "learningObjective": "FL-2.2.3",
+      "cognitiveLevel": "K2",
+      "status": "AI_CORRECTED_PENDING_HUMAN",
+      "humanDecision": null,
+      "developmentOnly": true
+    },
+    "ownerAcceptance": {
+      "state": "OWNER_ACCEPTED",
+      "record": {
+        "questionId": "tl-011",
+        "acceptedCanonicalSHA256": "c2abfddc606a1a3dfdd54c025cdf64abc92c3147f0a2859706436d0cce01a974",
+        "acceptedVersion": 3,
+        "acceptedAnswerKey": ["o1"],
+        "ownerDecision": "OWNER_ACCEPTED",
+        "independentAcademicApproval": "PENDING",
+        "humanApprovalInBank": "PENDING"
+      },
+      "source": "docs/academic/phase10h-batch1-2026-11-05/owner-acceptance-2026-11-05.json",
+      "sourceSHA256": "f58dda08be5c9d1856c5921c1fb26e360e5146ec2329d790c8a90244c8685938",
+      "recordedOn": "2026-11-05",
+      "independentAcademicApproval": "PENDING"
+    },
+    "authorizationBoundary": "User authorized controlled Batch1 corrections then explicitly accepted these exact versions; not production authorization",
+    "humanAcademicApproval": "PENDING"
+  },
+  {
+    "questionId": "tl-090",
+    "previousRevision": "2026-10-27.9",
+    "currentRevision": "2026-10-27.10",
+    "before": {
+      "id": "tl-090",
+      "chapter": 5,
+      "lo": "FL-5.5.1",
+      "level": "K3",
+      "topic": "Repairing an evidence-based defect report",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "Evidence below is from an isolated test with a synthetic transfer. A colleague drafts: QA / inventory-3.8.1; steps: \"Confirm transfer\"; expected: stock 20, Confirmed; actual: stock 18, Draft, HTTP 409; diagnosis: \"database deadlock confirmed\"; evidence: none attached. Keep the environment/build fields. Which replacement for the other fields prepares an accurate reproducible report supported by the evidence?",
+        "pt": "A evidência abaixo provém de um teste isolado com uma transferência sintética. Um colega redige: QA / inventory-3.8.1; passos: \"Confirmar transferência\"; esperado: stock 20, Confirmed; obtido: stock 18, Draft, HTTP 409; diagnóstico: \"bloqueio mútuo na base de dados confirmado\"; evidência: nenhum anexo. Manter os campos de ambiente/versão. Que substituição dos restantes campos prepara um relatório exato e reproduzível sustentado pela evidência?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm once; expected: 20, Confirmed; actual: 18, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 20, Confirmed; obtido: 18, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida."
+          },
+          "explanation": {
+            "en": "This retains the reversed quantities. Starting at 20, a successful transfer of 2 should leave 18; the observed stock remains 20.",
+            "pt": "Isto mantém as quantidades invertidas. Partindo de 20, uma transferência bem-sucedida de 2 deve deixar 18; o stock observado mantém-se em 20."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm once; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida."
+          },
+          "explanation": {
+            "en": "This restores the preconditions/data/step, derives the expected quantity correctly, preserves actual observations and cites the available evidence without asserting a cause.",
+            "pt": "Isto repõe pré-condições/dados/passo, deriva corretamente a quantidade esperada, preserva as observações obtidas e cita a evidência disponível sem afirmar uma causa."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm twice; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar duas vezes; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida."
+          },
+          "explanation": {
+            "en": "The observed test pressed Confirm once. Adding a second press changes the reproduction procedure rather than documenting the evidence.",
+            "pt": "O teste observado premiu Confirmar uma vez. Acrescentar uma segunda pressão altera o procedimento de reprodução em vez de documentar a evidência."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, create draft T-91 quantity 2, Confirm once; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; database deadlock confirmed.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; bloqueio mútuo na base de dados confirmado."
+          },
+          "explanation": {
+            "en": "The HTTP error and unchanged stock do not establish a database deadlock. A hypothesis must not be presented as a confirmed cause without supporting evidence.",
+            "pt": "O erro HTTP e o stock inalterado não demonstram um bloqueio mútuo na base de dados. Uma hipótese não deve ser apresentada como causa confirmada sem evidência que a suporte."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "Keep the verified QA/build fields. Record role stock-clerk, initial SKU-4 stock 20, creation of draft T-91 quantity 2 and one Confirm action. The agreed stock change is 20−2=18 with status Confirmed; the actual observation is stock 20, Draft and HTTP 409. Attach req-b7 and shot-b7; the cause remains unestablished. Selecting a repair applies report preparation rules, but does not replace independently writing a report.",
+        "pt": "Manter os campos QA/versão verificados. Registar o papel stock-clerk, SKU-4 com stock inicial 20, criação do rascunho T-91 com quantidade 2 e uma ação Confirmar. A alteração de stock acordada é 20−2=18 com estado Confirmed; a observação obtida é stock 20, Draft e HTTP 409. Anexar req-b7 e shot-b7; a causa continua não estabelecida. Selecionar uma correção aplica regras de preparação de relatórios, mas não substitui escrever um relatório de forma autónoma."
+      },
+      "table": {
+        "headers": [
+          "Evidence / Evidência",
+          "Observed or agreed data / Dados observados ou acordados"
+        ],
+        "rows": [
+          ["Environment/build / Ambiente/versão", "QA / inventory-3.8.1"],
+          [
+            "Precondition / Pré-condição",
+            "stock-clerk; SKU-4 stock 20; no T-91 / T-91 inexistente"
+          ],
+          [
+            "Input/action / Entrada/ação",
+            "create draft T-91, SKU-4, quantity 2; Confirm once / criar rascunho T-91, SKU-4, quantidade 2; Confirmar uma vez"
+          ],
+          [
+            "Agreed / Acordado",
+            "reduce stock by quantity and set Confirmed / reduzir stock pela quantidade e definir Confirmed"
+          ],
+          ["Actual / Obtido", "stock 20; Draft; HTTP 409"],
+          [
+            "Available / Disponível",
+            "req-b7: one POST, HTTP 409 / um POST, HTTP 409; shot-b7: not confirmed / não confirmado"
+          ]
+        ]
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.5",
+        "pages": [56, 57],
+        "report": "docs/academic-audit.md#fase-7--tl-090"
+      }
+    },
+    "after": {
+      "id": "tl-090",
+      "chapter": 5,
+      "lo": "FL-5.5.1",
+      "level": "K3",
+      "topic": "Repairing an evidence-based defect report",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "Evidence below is from an isolated test with a synthetic transfer. A colleague drafts: QA / inventory-3.8.1; steps: \"Confirm transfer\"; expected: stock 20, Confirmed; actual: stock 18, Draft, HTTP 409; diagnosis: \"database deadlock confirmed\"; evidence: none attached. Keep the environment/build fields. Which replacement for the other fields prepares an accurate reproducible report supported by the evidence?",
+        "pt": "A evidência abaixo provém de um teste isolado com uma transferência sintética. Um colega redige: QA / inventory-3.8.1; passos: \"Confirmar transferência\"; esperado: stock 20, Confirmed; obtido: stock 18, Draft, HTTP 409; diagnóstico: \"bloqueio mútuo na base de dados confirmado\"; evidência: nenhum anexo. Manter os campos de ambiente/versão. Que substituição dos restantes campos prepara um relatório exato e reproduzível sustentado pela evidência?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, no existing T-91, create draft T-91 quantity 2, Confirm once; expected: 20, Confirmed; actual: 18, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, T-91 inexistente, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 20, Confirmed; obtido: 18, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida."
+          },
+          "explanation": {
+            "en": "This retains the reversed quantities. Starting at 20, a successful transfer of 2 should leave 18; the observed stock remains 20.",
+            "pt": "Isto mantém as quantidades invertidas. Partindo de 20, uma transferência bem-sucedida de 2 deve deixar 18; o stock observado mantém-se em 20."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, no existing T-91, create draft T-91 quantity 2, Confirm once; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, T-91 inexistente, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida."
+          },
+          "explanation": {
+            "en": "This restores the role, initial stock and absence of T-91 before creating the draft, preserves the single confirmation step, derives expected stock 18 from 20 − 2, and reports the actual stock 20, Draft and HTTP 409 with the available evidence, without asserting a cause.",
+            "pt": "Repõe a função, o stock inicial e a inexistência de T-91 antes de criar o rascunho, preserva o único passo de confirmação, deriva o stock esperado 18 de 20 − 2 e regista o stock observado 20, Draft e HTTP 409 com as evidências disponíveis, sem afirmar uma causa."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, no existing T-91, create draft T-91 quantity 2, Confirm twice; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; cause not established.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, T-91 inexistente, criar rascunho T-91 com quantidade 2, Confirmar duas vezes; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; causa não estabelecida."
+          },
+          "explanation": {
+            "en": "The observed test pressed Confirm once. Adding a second press changes the reproduction procedure rather than documenting the evidence.",
+            "pt": "O teste observado premiu Confirmar uma vez. Acrescentar uma segunda pressão altera o procedimento de reprodução em vez de documentar a evidência."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Steps: stock-clerk, SKU-4 stock 20, no existing T-91, create draft T-91 quantity 2, Confirm once; expected: 18, Confirmed; actual: 20, Draft, HTTP 409; evidence: req-b7 + shot-b7; database deadlock confirmed.",
+            "pt": "Passos: stock-clerk, SKU-4 com stock 20, T-91 inexistente, criar rascunho T-91 com quantidade 2, Confirmar uma vez; esperado: 18, Confirmed; obtido: 20, Draft, HTTP 409; evidência: req-b7 + shot-b7; bloqueio mútuo na base de dados confirmado."
+          },
+          "explanation": {
+            "en": "The HTTP error and unchanged stock do not establish a database deadlock. A hypothesis must not be presented as a confirmed cause without supporting evidence.",
+            "pt": "O erro HTTP e o stock inalterado não demonstram um bloqueio mútuo na base de dados. Uma hipótese não deve ser apresentada como causa confirmada sem evidência que a suporte."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "The documented precondition is that transfer T-91 does not exist before creating its draft; T-91 is a transfer identifier, not a test case. Record the stock-clerk role, SKU-4 stock 20, no existing T-91, creation of draft T-91 quantity 2 and Confirm once. Expected: 20 − 2 = 18 and Confirmed. Actual: stock 20, Draft and HTTP 409. Cite req-b7 and shot-b7; neither attachment establishes the cause. Selecting a repair applies report preparation rules, but does not replace independently writing a report.",
+        "pt": "A pré-condição documentada é a inexistência da transferência T-91 antes de criar o seu rascunho; T-91 é um identificador de transferência, não um caso de teste. Registar a função stock-clerk, stock 20 de SKU-4, T-91 inexistente, criação do rascunho T-91 com quantidade 2 e Confirmar uma vez. Esperado: 20 − 2 = 18 e Confirmed. Observado: stock 20, Draft e HTTP 409. Referenciar req-b7 e shot-b7; nenhum anexo estabelece a causa. Selecionar uma correção aplica regras de preparação de relatórios, mas não substitui a redação independente de um relatório."
+      },
+      "table": {
+        "headers": [
+          "Evidence / Evidência",
+          "Observed or agreed data / Dados observados ou acordados"
+        ],
+        "rows": [
+          ["Environment/build / Ambiente/versão", "QA / inventory-3.8.1"],
+          [
+            "Precondition / Pré-condição",
+            "stock-clerk; SKU-4 stock 20; no T-91 / T-91 inexistente"
+          ],
+          [
+            "Input/action / Entrada/ação",
+            "create draft T-91, SKU-4, quantity 2; Confirm once / criar rascunho T-91, SKU-4, quantidade 2; Confirmar uma vez"
+          ],
+          [
+            "Agreed / Acordado",
+            "reduce stock by quantity and set Confirmed / reduzir stock pela quantidade e definir Confirmed"
+          ],
+          ["Actual / Obtido", "stock 20; Draft; HTTP 409"],
+          [
+            "Available / Disponível",
+            "req-b7: one POST, HTTP 409 / um POST, HTTP 409; shot-b7: not confirmed / não confirmado"
+          ]
+        ]
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 2,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase7-advanced"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-11-05",
+        "section": "5.5",
+        "pages": [56, 57],
+        "report": "docs/academic/phase10h-batch1-2026-11-05/decisions.md#tl-090"
+      }
+    },
+    "changedFields": ["options", "explanation", "version", "academicReview"],
+    "beforeCanonicalSHA256": "4cd336bf348f4c4611885be1c95f7fca8ea947a56c2bf356600a68ec5912ff1c",
+    "afterCanonicalSHA256": "3984959d5f7172efc45e23db788abe3834a1b711ae54058b88e8070b2c0d74b7",
+    "originalDecision": {
+      "questionId": "tl-090",
+      "previousVersion": 1,
+      "version": 2,
+      "previousSHA256": "4cd336bf348f4c4611885be1c95f7fca8ea947a56c2bf356600a68ec5912ff1c",
+      "correctedSHA256": "3984959d5f7172efc45e23db788abe3834a1b711ae54058b88e8070b2c0d74b7",
+      "keyBefore": ["o2"],
+      "keyAfter": ["o2"],
+      "learningObjective": "FL-5.5.1",
+      "cognitiveLevel": "K3",
+      "status": "AI_CORRECTED_PENDING_HUMAN",
+      "humanDecision": null,
+      "developmentOnly": true
+    },
+    "ownerAcceptance": {
+      "state": "OWNER_ACCEPTED",
+      "record": {
+        "questionId": "tl-090",
+        "acceptedCanonicalSHA256": "3984959d5f7172efc45e23db788abe3834a1b711ae54058b88e8070b2c0d74b7",
+        "acceptedVersion": 2,
+        "acceptedAnswerKey": ["o2"],
+        "ownerDecision": "OWNER_ACCEPTED",
+        "independentAcademicApproval": "PENDING",
+        "humanApprovalInBank": "PENDING"
+      },
+      "source": "docs/academic/phase10h-batch1-2026-11-05/owner-acceptance-2026-11-05.json",
+      "sourceSHA256": "f58dda08be5c9d1856c5921c1fb26e360e5146ec2329d790c8a90244c8685938",
+      "recordedOn": "2026-11-05",
+      "independentAcademicApproval": "PENDING"
+    },
+    "authorizationBoundary": "User authorized controlled Batch1 corrections then explicitly accepted these exact versions; not production authorization",
+    "humanAcademicApproval": "PENDING"
+  }
+]

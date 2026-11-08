@@ -1,0 +1,744 @@
+[
+  {
+    "questionId": "tl-069",
+    "optionId": "o1",
+    "text": {
+      "en": "Developers write component tests first, then implement and refactor the corresponding code.",
+      "pt": "Os programadores escrevem primeiro testes de componentes e depois implementam e refatoram o código correspondente."
+    },
+    "publishedExplanation": {
+      "en": "This describes the usual TDD cycle rather than the characteristic shared-language emphasis of BDD.",
+      "pt": "Isto descreve o ciclo habitual de TDD, em vez da ênfase característica do BDD numa linguagem partilhada."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "A sequência de testes de componentes primeiro, implementação e refatoração corresponde a TDD; não define a ênfase do BDD em linguagem partilhada.",
+    "reviewEN": "Writing component tests before implementation and refactoring characterises TDD. It can coexist with BDD, but alone does not identify the shared behaviour-example approach asked for.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.1.3": {
+        "EN": [26],
+        "PT": [28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-069",
+    "optionId": "o2",
+    "text": {
+      "en": "Reviewers examine the source code against a checklist before it enters the build pipeline.",
+      "pt": "Os revisores examinam o código-fonte com uma checklist antes da entrada no pipeline de compilação."
+    },
+    "publishedExplanation": {
+      "en": "This describes a static review practice, not behaviour examples directing implementation.",
+      "pt": "Isto descreve uma prática de revisão estática, não exemplos de comportamento a orientar a implementação."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "A revisão estática por checklist pode complementar o trabalho, mas não é a definição de exemplos comportamentais a orientar o desenvolvimento.",
+    "reviewEN": "Reviewing source code against a checklist is a static review activity. It may improve quality but is not the defining behaviour-driven development description.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.1.3": {
+        "EN": [26],
+        "PT": [28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-069",
+    "optionId": "o3",
+    "text": {
+      "en": "The team expresses behaviour in shared natural-language examples that become executable tests.",
+      "pt": "A equipa expressa o comportamento em exemplos de linguagem natural partilhada que se tornam testes executáveis."
+    },
+    "publishedExplanation": {
+      "en": "BDD expresses desired behaviour in understandable examples, commonly Given/When/Then, linked to execution.",
+      "pt": "O BDD expressa o comportamento pretendido em exemplos compreensíveis, habitualmente Given/When/Then, ligados à execução."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: comportamento partilhado em linguagem natural ligado à execução caracteriza BDD; a explicação geral preserva a necessidade de código de suporte.",
+    "reviewEN": "Shared natural-language examples express intended behaviour and connect to executable tests. This characterises BDD; it does not imply infallible generation without implementation, bindings or team agreement.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.1.3": {
+        "EN": [26],
+        "PT": [28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-069",
+    "optionId": "o4",
+    "text": {
+      "en": "Testers design and evaluate tests while exploring the implemented feature in a timed session.",
+      "pt": "Os testadores concebem e avaliam testes enquanto exploram a funcionalidade implementada numa sessão com duração definida."
+    },
+    "publishedExplanation": {
+      "en": "This describes exploratory testing, not the test-first behavioural specification approach.",
+      "pt": "Isto descreve teste exploratório, não a abordagem de especificação do comportamento antes da implementação."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Conceber e avaliar durante exploração com duração definida caracteriza teste exploratório, não a especificação comportamental test-first pedida.",
+    "reviewEN": "Designing and evaluating tests during timed exploration characterises exploratory testing. That can complement development but is not the test-first BDD description sought.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.1.3": {
+        "EN": [26],
+        "PT": [28]
+      }
+    }
+  },
+  {
+    "questionId": "tl-070",
+    "optionId": "o1",
+    "text": {
+      "en": "Black-box; experience-based; white-box.",
+      "pt": "Caixa-preta; baseada na experiência; caixa-branca."
+    },
+    "publishedExplanation": {
+      "en": "Bruno uses internal structure; Carla uses prior incident experience, so the last two classifications are reversed.",
+      "pt": "Bruno usa estrutura interna; Carla usa experiência de incidentes anteriores, pelo que as últimas duas classificações estão trocadas."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Ana está bem classificada, mas Bruno usa estrutura e Carla incidentes anteriores; as duas últimas classificações estão trocadas, como a explicação indica.",
+    "reviewEN": "Ana is correctly classified as black-box, but Bruno uses internal structure rather than past experience, and Carla uses incident experience rather than a structural model. The final two classifications are reversed.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "4.1": {
+        "EN": [39],
+        "PT": [42]
+      }
+    }
+  },
+  {
+    "questionId": "tl-070",
+    "optionId": "o2",
+    "text": {
+      "en": "White-box; black-box; experience-based.",
+      "pt": "Caixa-branca; caixa-preta; baseada na experiência."
+    },
+    "publishedExplanation": {
+      "en": "The first two classifications are reversed: rules specify behaviour while control-flow branches describe structure.",
+      "pt": "As duas primeiras classificações estão trocadas: as regras especificam comportamento e os ramos descrevem estrutura."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "As duas primeiras categorias estão trocadas: regras externas são caixa-preta e ramos internos são caixa-branca; só a terceira permanece correta.",
+    "reviewEN": "Ana derives tests from external cancellation rules, not internal structure; Bruno explicitly uses internal branches, not black-box specifications. The third classification alone is correct.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "4.1": {
+        "EN": [39],
+        "PT": [42]
+      }
+    }
+  },
+  {
+    "questionId": "tl-070",
+    "optionId": "o3",
+    "text": {
+      "en": "Experience-based; white-box; black-box.",
+      "pt": "Baseada na experiência; caixa-branca; caixa-preta."
+    },
+    "publishedExplanation": {
+      "en": "Ana uses specified rules rather than personal experience, while Carla uses incident patterns rather than a specification.",
+      "pt": "Ana usa regras especificadas em vez de experiência pessoal, enquanto Carla usa padrões de incidentes em vez de uma especificação."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "A classificação estrutural de Bruno está correta, mas Ana não deriva de incidentes e Carla não deriva apenas de uma especificação; as pontas estão trocadas.",
+    "reviewEN": "Bruno is structural, but Ana uses specified cancellation behaviour rather than past incidents, and Carla uses incident patterns rather than only a specification. The first and third classifications are incorrect.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "4.1": {
+        "EN": [39],
+        "PT": [42]
+      }
+    }
+  },
+  {
+    "questionId": "tl-070",
+    "optionId": "o4",
+    "text": {
+      "en": "Black-box; white-box; experience-based.",
+      "pt": "Caixa-preta; caixa-branca; baseada na experiência."
+    },
+    "publishedExplanation": {
+      "en": "The sources of test derivation are specified behaviour, internal structure and tester experience, respectively.",
+      "pt": "As fontes da derivação são, respetivamente, comportamento especificado, estrutura interna e experiência do testador."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: a sequência caixa-preta, caixa-branca e experiência corresponde exatamente a Ana, Bruno e Carla e à origem de cada conjunto de testes.",
+    "reviewEN": "Ana uses specification-based black-box derivation, Bruno uses structure-based white-box derivation and Carla uses experience-based derivation. The stated respective order matches all three.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "4.1": {
+        "EN": [39],
+        "PT": [42]
+      }
+    }
+  },
+  {
+    "questionId": "tl-075",
+    "optionId": "o1",
+    "text": {
+      "en": "Compare the script names and accept the pass if they match the earlier test log.",
+      "pt": "Comparar os nomes dos scripts e aceitar a aprovação se coincidirem com o registo anterior."
+    },
+    "publishedExplanation": {
+      "en": "Names do not identify versions of the application, schema, data and environment that may affect the result.",
+      "pt": "Os nomes não identificam as versões da aplicação, esquema, dados e ambiente que podem afetar o resultado."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Nomes coincidentes não identificam versões da aplicação, dados e ambiente; aceitar o novo PASS por esse critério não reproduz a configuração anterior.",
+    "reviewEN": "Matching script names does not establish identical script versions or application, database and environment state. A passing result under changed configuration cannot by itself invalidate the earlier failure.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.4": {
+        "EN": [56],
+        "PT": [62]
+      }
+    }
+  },
+  {
+    "questionId": "tl-075",
+    "optionId": "o2",
+    "text": {
+      "en": "Restore the application build while keeping the current schema and regenerated seed data.",
+      "pt": "Restaurar a compilação da aplicação mantendo o esquema atual e os dados iniciais regenerados."
+    },
+    "publishedExplanation": {
+      "en": "Restoring one item leaves other relevant configuration items different from the original baseline.",
+      "pt": "Restaurar um item deixa outros itens de configuração relevantes diferentes da base de referência original."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Restaurar só a aplicação deixa esquema e dados diferentes ou sem equivalência demonstrada; a explicação identifica corretamente essa restauração parcial.",
+    "reviewEN": "Restoring only the application build leaves the schema and seed data uncontrolled relative to the observed failing configuration. Reproduction requires the relevant baseline items to remain consistent together.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.4": {
+        "EN": [56],
+        "PT": [62]
+      }
+    }
+  },
+  {
+    "questionId": "tl-075",
+    "optionId": "o3",
+    "text": {
+      "en": "Recover the recorded baseline of build, schema, data, scripts and environment configuration for the rerun.",
+      "pt": "Recuperar a base de referência registada da compilação, esquema, dados, scripts e configuração do ambiente para repetir o teste."
+    },
+    "publishedExplanation": {
+      "en": "CM identifies related versioned items so an earlier baseline can be reproduced and results compared meaningfully.",
+      "pt": "A gestão de configurações identifica itens relacionados e versionados para reproduzir uma base anterior e comparar resultados com significado."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: recuperar a baseline relacionada de compilação, esquema, dados, scripts e ambiente apoia reprodução; não promete controlar toda condição externa.",
+    "reviewEN": "Recovering the recorded build, schema, seed data, scripts and environment baseline controls the identified configuration variables and best supports comparison. It supports reproduction without guaranteeing every external timing or service condition.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.4": {
+        "EN": [56],
+        "PT": [62]
+      }
+    }
+  },
+  {
+    "questionId": "tl-075",
+    "optionId": "o4",
+    "text": {
+      "en": "Use the newest versions of each item and attach the old failure log to the new pass.",
+      "pt": "Usar as versões mais recentes de cada item e anexar o registo da falha antiga à nova aprovação."
+    },
+    "publishedExplanation": {
+      "en": "This documents two observations but does not establish equivalent configurations or reproduce the old baseline.",
+      "pt": "Isto documenta duas observações, mas não estabelece configurações equivalentes nem reproduz a base anterior."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Usar itens mais novos e anexar o log antigo documenta duas observações, mas não estabelece equivalência de configurações nem correção demonstrada da falha.",
+    "reviewEN": "Newest independent versions need not reproduce the original baseline. Attaching an old failure log to a new pass does not make the configurations comparable or establish that the original issue was fixed.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.4": {
+        "EN": [56],
+        "PT": [62]
+      }
+    }
+  },
+  {
+    "questionId": "tl-079",
+    "optionId": "o1",
+    "text": {
+      "en": "Static analysis reporting complexity and coding-rule violations.",
+      "pt": "Análise estática que reporta complexidade e violações de regras de código."
+    },
+    "publishedExplanation": {
+      "en": "These measurements can guide testing but do not establish which branches the executed tests actually traversed.",
+      "pt": "Estas medidas podem orientar testes, mas não estabelecem os ramos efetivamente percorridos pelos testes executados."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Complexidade e regras estáticas podem orientar testes, mas não medem por si os ramos realmente percorridos pelas execuções descritas.",
+    "reviewEN": "Static complexity and coding-rule violations describe code properties without showing which internal branches the executed tests traversed. The capability as described lacks the requested execution coverage evidence.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.1": {
+        "EN": [59],
+        "PT": [65]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-079",
+    "optionId": "o2",
+    "text": {
+      "en": "Test management reporting requirements linked to executed cases.",
+      "pt": "Gestão de testes que reporta requisitos ligados aos casos executados."
+    },
+    "publishedExplanation": {
+      "en": "Requirements traceability is already available and is not runtime branch coverage.",
+      "pt": "A rastreabilidade de requisitos já está disponível e não é cobertura de ramos em execução."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Ligar requisitos a casos executados já fornece rastreabilidade, mas não a evidência estrutural de ramos internos em falta no cenário.",
+    "reviewEN": "Requirements linked to executed cases provide traceability and requirements coverage information, not a direct measurement of exercised internal control-flow branches.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.1": {
+        "EN": [59],
+        "PT": [65]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-079",
+    "optionId": "o3",
+    "text": {
+      "en": "Test execution reporting the number of passed assertions.",
+      "pt": "Execução de testes que reporta o número de asserções aprovadas."
+    },
+    "publishedExplanation": {
+      "en": "Assertion counts do not identify the internal branches exercised or remaining uncovered.",
+      "pt": "Contagens de asserções não identificam os ramos internos exercitados ou ainda sem cobertura."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O número de asserções aprovadas indica resultados, sem identificar ramos exercitados ou ainda não cobertos; a explicação separa corretamente essas medidas.",
+    "reviewEN": "A count of passed assertions reports test outcomes. It cannot identify which structural branches were exercised and which remain uncovered without an additional coverage capability.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.1": {
+        "EN": [59],
+        "PT": [65]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-079",
+    "optionId": "o4",
+    "text": {
+      "en": "Coverage measurement associating executed tests with instrumented branches.",
+      "pt": "Medição de cobertura que associa os testes executados aos ramos instrumentados."
+    },
+    "publishedExplanation": {
+      "en": "Execution and coverage tools can measure structural coverage, revealing branches for additional tests.",
+      "pt": "Ferramentas de execução e cobertura podem medir cobertura estrutural, revelando ramos para testes adicionais."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: associar testes executados a ramos instrumentados fornece diretamente cobertura estrutural para orientar testes adicionais, sem garantir correção completa.",
+    "reviewEN": "Associating executed tests with instrumented branches directly measures the structural coverage requested. That evidence can guide new test design without proving all behaviour is correct.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.1": {
+        "EN": [59],
+        "PT": [65]
+      },
+      "4.3.2": {
+        "EN": [43],
+        "PT": [46, 47]
+      }
+    }
+  },
+  {
+    "questionId": "tl-080",
+    "optionId": "o1",
+    "text": {
+      "en": "Inconsistent repetition of identical test data by people.",
+      "pt": "Repetição inconsistente de dados de teste idênticos por pessoas."
+    },
+    "publishedExplanation": {
+      "en": "This is a human consistency issue that automation can help reduce, not the vendor dependency described.",
+      "pt": "Isto é um problema de consistência humana que a automação pode ajudar a reduzir, não a dependência do fornecedor descrita."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Inconsistência de repetição humana é um problema que automação pode reduzir; não corresponde à dependência de suporte anunciada no cenário.",
+    "reviewEN": "Inconsistent manual repetition is a human execution concern that automation can reduce. No such inconsistency is reported, and it does not explain the announced end of vendor platform support.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.2": {
+        "EN": [59, 60],
+        "PT": [65, 66]
+      }
+    }
+  },
+  {
+    "questionId": "tl-080",
+    "optionId": "o2",
+    "text": {
+      "en": "Dependency on a tool vendor and continuing platform compatibility.",
+      "pt": "Dependência de um fornecedor de ferramentas e da continuidade da compatibilidade com a plataforma."
+    },
+    "publishedExplanation": {
+      "en": "Vendor support and compatibility can threaten continued use of an otherwise working automated suite.",
+      "pt": "O suporte do fornecedor e a compatibilidade podem ameaçar a continuidade de uma suite automatizada que funciona."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: fornecedor e compatibilidade futura ameaçam continuidade, mas não significam que os testes já tenham falhado ou que os resultados atuais sejam inválidos.",
+    "reviewEN": "Dependence on a proprietary runner exposes vendor and platform-compatibility risk when support is scheduled to end. The risk is future-facing and is not evidence that the current tests fail immediately.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.2": {
+        "EN": [59, 60],
+        "PT": [65, 66]
+      }
+    }
+  },
+  {
+    "questionId": "tl-080",
+    "optionId": "o3",
+    "text": {
+      "en": "Limited access to execution statistics for management reporting.",
+      "pt": "Acesso limitado a estatísticas de execução para relatórios de gestão."
+    },
+    "publishedExplanation": {
+      "en": "Reporting capability is not the problem described; the announced change concerns continued support.",
+      "pt": "A capacidade de reporte não é o problema descrito; a alteração anunciada diz respeito à continuidade do suporte."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "O cenário não diz que faltam estatísticas ou relatórios; o evento anunciado refere continuidade de suporte e compatibilidade da ferramenta.",
+    "reviewEN": "Limited execution statistics may be a separate tooling limitation, but the scenario provides no evidence of missing reports. It specifically identifies a vendor support and compatibility dependency.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.2": {
+        "EN": [59, 60],
+        "PT": [65, 66]
+      }
+    }
+  },
+  {
+    "questionId": "tl-080",
+    "optionId": "o4",
+    "text": {
+      "en": "Excessive effort spent manually comparing expected and actual outputs.",
+      "pt": "Esforço excessivo na comparação manual de resultados esperados e obtidos."
+    },
+    "publishedExplanation": {
+      "en": "Reducing such repetitive effort is a potential automation benefit, not this vendor-support risk.",
+      "pt": "Reduzir esse esforço repetitivo é uma vantagem potencial da automação, não este risco de suporte do fornecedor."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Comparação manual excessiva é esforço que automação pode reduzir, não a consequência específica do anúncio de fim de suporte do executor.",
+    "reviewEN": "Manual comparison effort is not the risk demonstrated by the vendor announcement. Automation may reduce that effort, but this does not remove dependence on a supported runner platform.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "6.2": {
+        "EN": [59, 60],
+        "PT": [65, 66]
+      }
+    }
+  },
+  {
+    "questionId": "tl-081",
+    "optionId": "o1",
+    "text": {
+      "en": "An external reviewer can challenge assumptions without sharing the author's perspective.",
+      "pt": "Um revisor externo pode questionar pressupostos sem partilhar a perspetiva do autor."
+    },
+    "publishedExplanation": {
+      "en": "This is a potential benefit of independent testing; no external review takes place in this scenario.",
+      "pt": "Esta é uma vantagem potencial do teste independente; não ocorre revisão externa neste cenário."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Uma perspetiva externa pode questionar pressupostos, mas não aparece neste cenário; a explicação corretamente distingue independência de partilha de competências.",
+    "reviewEN": "Independent review may challenge assumptions, but no external reviewer appears in this scenario. The described benefit is cross-skilled collaboration inside the team rather than independent perspective.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "1.5.2": {
+        "EN": [22],
+        "PT": [24]
+      }
+    }
+  },
+  {
+    "questionId": "tl-081",
+    "optionId": "o2",
+    "text": {
+      "en": "An automated suite can repeat checks consistently while reducing manual execution effort.",
+      "pt": "Uma suite automatizada pode repetir verificações de forma consistente, reduzindo o esforço de execução manual."
+    },
+    "publishedExplanation": {
+      "en": "This is an automation benefit; the scenario describes a trained team member performing the task.",
+      "pt": "Esta é uma vantagem da automação; o cenário descreve um membro formado da equipa a executar a tarefa."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Repetição automatizada pode reduzir esforço, mas o cenário descreve uma pessoa formada a executar uma tarefa e comunicar com o negócio.",
+    "reviewEN": "Consistent automated repetition can reduce manual effort, but the scenario describes a qualified person learning and performing a check with business communication, not an automation benefit.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "1.5.2": {
+        "EN": [22],
+        "PT": [24]
+      }
+    }
+  },
+  {
+    "questionId": "tl-081",
+    "optionId": "o3",
+    "text": {
+      "en": "Cross-skilled members can perform testing tasks and maintain shared responsibility for quality.",
+      "pt": "Membros com competências partilhadas podem executar tarefas de teste e manter responsabilidade conjunta pela qualidade."
+    },
+    "publishedExplanation": {
+      "en": "Any team member with the necessary skills can perform the task; transferring testing knowledge enables that flexibility.",
+      "pt": "Qualquer membro com as competências necessárias pode executar a tarefa; transferir conhecimento de testes permite essa flexibilidade."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: membros com conhecimentos adequados podem executar tarefas e partilhar qualidade; formação e qualificação são condições explícitas, não intercambialidade irrestrita.",
+    "reviewEN": "A qualified cross-skilled team member can perform a testing task and discuss its meaning with business representatives while quality remains a shared responsibility. Qualification is an explicit condition, not an assumption of universal interchangeability.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "1.5.2": {
+        "EN": [22],
+        "PT": [24]
+      }
+    }
+  },
+  {
+    "questionId": "tl-081",
+    "optionId": "o4",
+    "text": {
+      "en": "A versioned baseline can make test configurations reproducible when team members change.",
+      "pt": "Uma base de referência versionada pode tornar as configurações de teste reproduzíveis quando mudam os membros da equipa."
+    },
+    "publishedExplanation": {
+      "en": "This is configuration management support, not the knowledge-sharing benefit demonstrated here.",
+      "pt": "Isto é apoio da gestão de configurações, não a vantagem de partilha de conhecimento demonstrada aqui."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Baselines versionadas apoiam reprodução de configurações, mas não são o mecanismo de colaboração e formação transversal descrito neste caso.",
+    "reviewEN": "Versioned configuration baselines support reproduction, but the scenario concerns teaching skills and sharing quality responsibility. No baseline reconstruction or configuration change is described.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "1.5.2": {
+        "EN": [22],
+        "PT": [24]
+      }
+    }
+  },
+  {
+    "questionId": "tl-082",
+    "optionId": "o1",
+    "text": {
+      "en": "Q4: technology-facing tests that critique the product.",
+      "pt": "Q4: testes orientados para a tecnologia que avaliam criticamente o produto."
+    },
+    "publishedExplanation": {
+      "en": "Non-functional performance and reliability investigation fits the technology-facing, product-critique quadrant.",
+      "pt": "A investigação não funcional de desempenho e fiabilidade enquadra-se no quadrante tecnológico de avaliação crítica do produto."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: investigar concorrência, recursos e tempo de resposta do produto enquadra-se em Q4, orientação técnica com avaliação crítica de qualidades não funcionais.",
+    "reviewEN": "Q4 is technology-facing and critiques the product, including performance and other non-functional concerns. Concurrent integrated-service tests investigating resource exhaustion and response-time degradation match that purpose.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.1.7": {
+        "EN": [51],
+        "PT": [56, 57]
+      }
+    }
+  },
+  {
+    "questionId": "tl-082",
+    "optionId": "o2",
+    "text": {
+      "en": "Q1: technology-facing tests that support the team.",
+      "pt": "Q1: testes orientados para a tecnologia que apoiam a equipa."
+    },
+    "publishedExplanation": {
+      "en": "Q1 includes component and component-integration tests supporting development; the stated purpose here is product critique.",
+      "pt": "Q1 inclui testes de componentes e integração de componentes que apoiam o desenvolvimento; o objetivo indicado aqui é avaliar criticamente o produto."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Q1 apoia construção por testes técnicos de componentes e integração; o propósito aqui é avaliar limites do produto integrado, não apenas apoiar codificação.",
+    "reviewEN": "Q1 technology-facing tests support development, commonly at component or component-integration level. The scenario instead critiques an integrated increment for resource and performance limits before release.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.1.7": {
+        "EN": [51],
+        "PT": [56, 57]
+      }
+    }
+  },
+  {
+    "questionId": "tl-082",
+    "optionId": "o3",
+    "text": {
+      "en": "Q2: business-facing tests that support the team.",
+      "pt": "Q2: testes orientados para o negócio que apoiam a equipa."
+    },
+    "publishedExplanation": {
+      "en": "Q2 guides development through business examples and acceptance criteria, unlike the stated technical investigation.",
+      "pt": "Q2 orienta o desenvolvimento através de exemplos de negócio e critérios de aceitação, ao contrário da investigação técnica indicada."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Q2 usa exemplos e critérios orientados para o negócio para apoiar desenvolvimento; não é o objetivo técnico de investigação de recursos descrito.",
+    "reviewEN": "Q2 business-facing tests support the team, such as acceptance examples guiding implementation. The stated internal resource and response-time investigation is technical product critique, not this purpose.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.1.7": {
+        "EN": [51],
+        "PT": [56, 57]
+      }
+    }
+  },
+  {
+    "questionId": "tl-082",
+    "optionId": "o4",
+    "text": {
+      "en": "Q3: business-facing tests that critique the product.",
+      "pt": "Q3: testes orientados para o negócio que avaliam criticamente o produto."
+    },
+    "publishedExplanation": {
+      "en": "Q3 includes user-oriented exploration and usability; this scenario explicitly concerns technical resource and response behaviour.",
+      "pt": "Q3 inclui exploração orientada para utilizadores e usabilidade; este cenário diz respeito explicitamente a recursos técnicos e tempos de resposta."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Q3 também critica o produto, mas pela perspetiva de utilizadores e negócio; a questão especifica investigação técnica de carga, recursos e tempos.",
+    "reviewEN": "Q3 business-facing tests critique the product from user or business perspectives. Product critique alone is insufficient: the specified concurrent technical resource investigation distinguishes Q4 here.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.1.7": {
+        "EN": [51],
+        "PT": [56, 57]
+      }
+    }
+  },
+  {
+    "questionId": "tl-083",
+    "optionId": "o1",
+    "text": {
+      "en": "An inspection fits the first step because its author can act as both review leader and scribe.",
+      "pt": "Uma inspeção adequa-se à primeira etapa porque o autor pode atuar como líder de revisão e redator."
+    },
+    "publishedExplanation": {
+      "en": "In an inspection the author cannot act as review leader or scribe. This assignment contradicts the defined roles.",
+      "pt": "Numa inspeção, o autor não pode atuar como líder de revisão nem redator. Esta atribuição contraria os papéis definidos."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta: numa inspeção o autor não pode atuar como líder ou redator; a justificação do distrator contraria as restrições explicitadas na fonte.",
+    "reviewEN": "In an inspection the author cannot act as review leader or scribe, so the justification is false. The first author-led learning step instead fits a walkthrough rather than the proposed inspection role arrangement.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-083",
+    "optionId": "o2",
+    "text": {
+      "en": "An author-led walkthrough can support the shared-learning purpose of the first step.",
+      "pt": "Um walkthrough conduzido pelo autor pode apoiar a aprendizagem partilhada pretendida na primeira etapa."
+    },
+    "publishedExplanation": {
+      "en": "Walkthroughs are led by the author and can educate participants and build understanding of the work product.",
+      "pt": "Os walkthroughs são conduzidos pelo autor e podem formar os participantes e criar compreensão do produto de trabalho."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: um walkthrough conduzido pelo autor pode educar participantes e construir entendimento; pode não exclui outros objetivos também legítimos.",
+    "reviewEN": "An author-led walkthrough can educate participants and build shared understanding. The option says can support, which fits the first stage without claiming this is its only possible objective.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-083",
+    "optionId": "o3",
+    "text": {
+      "en": "The moderated second step is a walkthrough because a moderator, rather than the author, leads it.",
+      "pt": "A segunda etapa moderada é um walkthrough porque é conduzida por um moderador, em vez do autor."
+    },
+    "publishedExplanation": {
+      "en": "Author leadership characterizes a walkthrough. Technically qualified reviewers seeking consensus under a moderator characterize a technical review.",
+      "pt": "A condução pelo autor caracteriza um walkthrough. Revisores tecnicamente qualificados que procuram consenso com um moderador caracterizam uma revisão técnica."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta: moderação por alguém distinto do autor não define walkthrough; a combinação de pares qualificados e consenso corresponde à revisão técnica aqui.",
+    "reviewEN": "A walkthrough is led by the author, so classifying the moderated second stage as a walkthrough because it is led by someone else reverses the defining distinction. The stated peers and consensus fit a technical review.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-083",
+    "optionId": "o4",
+    "text": {
+      "en": "A technical review fits the second step with qualified reviewers, moderation and a consensus objective.",
+      "pt": "Uma revisão técnica adequa-se à segunda etapa, com revisores qualificados, moderação e um objetivo de consenso."
+    },
+    "publishedExplanation": {
+      "en": "A technical review is led by a moderator and performed by technically qualified reviewers; gaining consensus is one of its objectives.",
+      "pt": "Uma revisão técnica é conduzida por um moderador e realizada por revisores tecnicamente qualificados; obter consenso é um dos seus objetivos."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: revisão técnica com qualificação, moderador e consenso corresponde à segunda etapa; deve ser selecionada em conjunto com o2.",
+    "reviewEN": "A technical review uses technically qualified reviewers, is led by a moderator and aims at consensus or technical decisions. All three features align with the second stage described.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  },
+  {
+    "questionId": "tl-083",
+    "optionId": "o5",
+    "text": {
+      "en": "To pursue consensus in the second step, a technical review must use the full inspection process and collect its improvement metrics.",
+      "pt": "Para procurar consenso na segunda etapa, uma revisão técnica tem de seguir todo o processo de inspeção e recolher as suas métricas de melhoria."
+    },
+    "publishedExplanation": {
+      "en": "A technical review can seek consensus without becoming an inspection. The full generic process and required improvement metrics characterize inspection, not every technical review.",
+      "pt": "Uma revisão técnica pode procurar consenso sem se tornar uma inspeção. O processo genérico completo e as métricas de melhoria exigidas caracterizam a inspeção, não todas as revisões técnicas."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta: procurar consenso não obriga toda revisão técnica a usar o processo completo e métricas de inspeção; pode escolher formalidade, mas tem de é excessivo.",
+    "reviewEN": "A technical review need not use the full inspection process and its improvement metrics simply to pursue consensus. Those additional formality requirements characterise inspections, not every technical review.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "3.2.4": {
+        "EN": [36, 37],
+        "PT": [39, 40]
+      }
+    }
+  }
+]

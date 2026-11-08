@@ -1,0 +1,1003 @@
+{
+  "comparisons": [
+    {
+      "browser": "chromium",
+      "variant": "current",
+      "rootScrollWidth": 352,
+      "rootClientWidth": 320,
+      "offenders": [
+        {
+          "selector": "fieldset.options",
+          "scrollWidth": 300,
+          "clientWidth": 300,
+          "bounds": {
+            "x": 52.1875,
+            "y": 4200.625,
+            "width": 300.296875,
+            "height": 3179.421875,
+            "right": 352.484375,
+            "bottom": 7380.046875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 4286.359375,
+            "width": 300.296875,
+            "height": 709.109375,
+            "right": 352.484375,
+            "bottom": 4995.46875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 4314.546875,
+            "width": 131.75,
+            "height": 652.734375,
+            "right": 324.296875,
+            "bottom": 4967.28125
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5016.265625,
+            "width": 300.296875,
+            "height": 883.171875,
+            "right": 352.484375,
+            "bottom": 5899.4375
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5044.453125,
+            "width": 131.75,
+            "height": 826.796875,
+            "right": 324.296875,
+            "bottom": 5871.25
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5920.234375,
+            "width": 300.296875,
+            "height": 709.109375,
+            "right": 352.484375,
+            "bottom": 6629.34375
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5948.421875,
+            "width": 131.75,
+            "height": 652.734375,
+            "right": 324.296875,
+            "bottom": 6601.15625
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 6650.140625,
+            "width": 300.296875,
+            "height": 709.109375,
+            "right": 352.484375,
+            "bottom": 7359.25
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 6678.328125,
+            "width": 131.75,
+            "height": 652.734375,
+            "right": 324.296875,
+            "bottom": 7331.0625
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 290,
+          "clientWidth": 290,
+          "bounds": {
+            "x": 52.1875,
+            "y": 7647.015625,
+            "width": 292.4375,
+            "height": 108.375,
+            "right": 344.625,
+            "bottom": 7755.390625
+          }
+        },
+        {
+          "selector": "div.",
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "bounds": {
+            "x": 52.1875,
+            "y": 7779.390625,
+            "width": 292.4375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7855.375
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 116,
+          "clientWidth": 116,
+          "bounds": {
+            "x": 226.765625,
+            "y": 7779.390625,
+            "width": 117.859375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7855.375
+          }
+        }
+      ],
+      "withoutNotice": 352
+    },
+    {
+      "browser": "chromium",
+      "variant": "HEAD-no-notice",
+      "rootScrollWidth": 352,
+      "rootClientWidth": 320,
+      "offenders": [
+        {
+          "selector": "fieldset.options",
+          "scrollWidth": 300,
+          "clientWidth": 300,
+          "bounds": {
+            "x": 52.1875,
+            "y": 3502.34375,
+            "width": 300.296875,
+            "height": 3179.421875,
+            "right": 352.484375,
+            "bottom": 6681.765625
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 3588.078125,
+            "width": 300.296875,
+            "height": 709.109375,
+            "right": 352.484375,
+            "bottom": 4297.1875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 3616.265625,
+            "width": 131.75,
+            "height": 652.734375,
+            "right": 324.296875,
+            "bottom": 4269
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 4317.984375,
+            "width": 300.296875,
+            "height": 883.171875,
+            "right": 352.484375,
+            "bottom": 5201.15625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 4346.171875,
+            "width": 131.75,
+            "height": 826.796875,
+            "right": 324.296875,
+            "bottom": 5172.96875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5221.953125,
+            "width": 300.296875,
+            "height": 709.109375,
+            "right": 352.484375,
+            "bottom": 5931.0625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5250.140625,
+            "width": 131.75,
+            "height": 652.734375,
+            "right": 324.296875,
+            "bottom": 5902.875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5951.859375,
+            "width": 300.296875,
+            "height": 709.109375,
+            "right": 352.484375,
+            "bottom": 6660.96875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5980.046875,
+            "width": 131.75,
+            "height": 652.734375,
+            "right": 324.296875,
+            "bottom": 6632.78125
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 290,
+          "clientWidth": 290,
+          "bounds": {
+            "x": 52.1875,
+            "y": 6948.734375,
+            "width": 292.4375,
+            "height": 108.375,
+            "right": 344.625,
+            "bottom": 7057.109375
+          }
+        },
+        {
+          "selector": "div.",
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "bounds": {
+            "x": 52.1875,
+            "y": 7081.109375,
+            "width": 292.4375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7157.09375
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 116,
+          "clientWidth": 116,
+          "bounds": {
+            "x": 226.765625,
+            "y": 7081.109375,
+            "width": 117.859375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7157.09375
+          }
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "variant": "current",
+      "rootScrollWidth": 352,
+      "rootClientWidth": 320,
+      "offenders": [
+        {
+          "selector": "fieldset.options",
+          "scrollWidth": 300,
+          "clientWidth": 300,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 4157.91650390625,
+            "width": 300.23333740234375,
+            "height": 3352.550048828125,
+            "right": 352.43333435058594,
+            "bottom": 7510.466552734375
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 4243.66650390625,
+            "width": 300.23333740234375,
+            "height": 752.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 4996.0665283203125
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 4271.86669921875,
+            "width": 131.65000915527344,
+            "height": 696,
+            "right": 324.23333740234375,
+            "bottom": 4967.86669921875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 5016.86669921875,
+            "width": 300.23333740234375,
+            "height": 926.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 5943.2667236328125
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 5045.06689453125,
+            "width": 131.65000915527344,
+            "height": 870,
+            "right": 324.23333740234375,
+            "bottom": 5915.06689453125
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 5964.06689453125,
+            "width": 300.23333740234375,
+            "height": 752.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 6716.4669189453125
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 5992.2666015625,
+            "width": 131.65000915527344,
+            "height": 696,
+            "right": 324.23333740234375,
+            "bottom": 6688.2666015625
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 6737.2666015625,
+            "width": 300.23333740234375,
+            "height": 752.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 7489.6666259765625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 6765.466796875,
+            "width": 131.65000915527344,
+            "height": 696,
+            "right": 324.23333740234375,
+            "bottom": 7461.466796875
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 290,
+          "clientWidth": 290,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 7777.466796875,
+            "width": 292.433349609375,
+            "height": 108.40000915527344,
+            "right": 344.6333465576172,
+            "bottom": 7885.866806030273
+          }
+        },
+        {
+          "selector": "div.",
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 7909.86669921875,
+            "width": 292.433349609375,
+            "height": 76,
+            "right": 344.6333465576172,
+            "bottom": 7985.86669921875
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 116,
+          "clientWidth": 116,
+          "bounds": {
+            "x": 226.78334045410156,
+            "y": 7909.86669921875,
+            "width": 117.84999084472656,
+            "height": 76,
+            "right": 344.6333312988281,
+            "bottom": 7985.86669921875
+          }
+        }
+      ],
+      "withoutNotice": 352
+    },
+    {
+      "browser": "firefox",
+      "variant": "HEAD-no-notice",
+      "rootScrollWidth": 352,
+      "rootClientWidth": 320,
+      "offenders": [
+        {
+          "selector": "fieldset.options",
+          "scrollWidth": 300,
+          "clientWidth": 300,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 3459.800048828125,
+            "width": 300.23333740234375,
+            "height": 3352.550048828125,
+            "right": 352.43333435058594,
+            "bottom": 6812.35009765625
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 3545.550048828125,
+            "width": 300.23333740234375,
+            "height": 752.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 4297.9500732421875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 3573.75,
+            "width": 131.65000915527344,
+            "height": 696,
+            "right": 324.23333740234375,
+            "bottom": 4269.75
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 4318.75,
+            "width": 300.23333740234375,
+            "height": 926.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 5245.1500244140625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 4346.9501953125,
+            "width": 131.65000915527344,
+            "height": 870,
+            "right": 324.23333740234375,
+            "bottom": 5216.9501953125
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 5265.9501953125,
+            "width": 300.23333740234375,
+            "height": 752.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 6018.3502197265625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 5294.14990234375,
+            "width": 131.65000915527344,
+            "height": 696,
+            "right": 324.23333740234375,
+            "bottom": 5990.14990234375
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 6039.14990234375,
+            "width": 300.23333740234375,
+            "height": 752.4000244140625,
+            "right": 352.43333435058594,
+            "bottom": 6791.5499267578125
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.5833282470703,
+            "y": 6067.35009765625,
+            "width": 131.65000915527344,
+            "height": 696,
+            "right": 324.23333740234375,
+            "bottom": 6763.35009765625
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 290,
+          "clientWidth": 290,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 7079.35009765625,
+            "width": 292.433349609375,
+            "height": 108.39999389648438,
+            "right": 344.6333465576172,
+            "bottom": 7187.750091552734
+          }
+        },
+        {
+          "selector": "div.",
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "bounds": {
+            "x": 52.19999694824219,
+            "y": 7211.75,
+            "width": 292.433349609375,
+            "height": 76,
+            "right": 344.6333465576172,
+            "bottom": 7287.75
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 116,
+          "clientWidth": 116,
+          "bounds": {
+            "x": 226.78334045410156,
+            "y": 7211.75,
+            "width": 117.84999084472656,
+            "height": 76,
+            "right": 344.6333312988281,
+            "bottom": 7287.75
+          }
+        }
+      ]
+    },
+    {
+      "browser": "webkit",
+      "variant": "current",
+      "rootScrollWidth": 352,
+      "rootClientWidth": 320,
+      "offenders": [
+        {
+          "selector": "fieldset.options",
+          "scrollWidth": 300,
+          "clientWidth": 300,
+          "bounds": {
+            "x": 52.1875,
+            "y": 4214.265625,
+            "width": 300.296875,
+            "height": 3178.421875,
+            "right": 352.484375,
+            "bottom": 7392.6875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 4300,
+            "width": 300.296875,
+            "height": 708.875,
+            "right": 352.484375,
+            "bottom": 5008.875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 4328.1875,
+            "width": 131.75,
+            "height": 652.5,
+            "right": 324.296875,
+            "bottom": 4980.6875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5029.671875,
+            "width": 300.296875,
+            "height": 882.875,
+            "right": 352.484375,
+            "bottom": 5912.546875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5057.859375,
+            "width": 131.75,
+            "height": 826.5,
+            "right": 324.296875,
+            "bottom": 5884.359375
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5933.34375,
+            "width": 300.296875,
+            "height": 708.875,
+            "right": 352.484375,
+            "bottom": 6642.21875
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5961.53125,
+            "width": 131.75,
+            "height": 652.5,
+            "right": 324.296875,
+            "bottom": 6614.03125
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 6663.015625,
+            "width": 300.296875,
+            "height": 708.875,
+            "right": 352.484375,
+            "bottom": 7371.890625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 6691.203125,
+            "width": 131.75,
+            "height": 652.5,
+            "right": 324.296875,
+            "bottom": 7343.703125
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 290,
+          "clientWidth": 290,
+          "bounds": {
+            "x": 52.1875,
+            "y": 7659.65625,
+            "width": 292.4375,
+            "height": 108.375,
+            "right": 344.625,
+            "bottom": 7768.03125
+          }
+        },
+        {
+          "selector": "div.",
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "bounds": {
+            "x": 52.1875,
+            "y": 7792.03125,
+            "width": 292.4375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7868.015625
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 116,
+          "clientWidth": 116,
+          "bounds": {
+            "x": 226.765625,
+            "y": 7792.03125,
+            "width": 117.859375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7868.015625
+          }
+        }
+      ],
+      "withoutNotice": 352
+    },
+    {
+      "browser": "webkit",
+      "variant": "HEAD-no-notice",
+      "rootScrollWidth": 352,
+      "rootClientWidth": 320,
+      "offenders": [
+        {
+          "selector": "fieldset.options",
+          "scrollWidth": 300,
+          "clientWidth": 300,
+          "bounds": {
+            "x": 52.1875,
+            "y": 3516.203125,
+            "width": 300.296875,
+            "height": 3178.421875,
+            "right": 352.484375,
+            "bottom": 6694.625
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 3601.9375,
+            "width": 300.296875,
+            "height": 708.875,
+            "right": 352.484375,
+            "bottom": 4310.8125
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 3630.125,
+            "width": 131.75,
+            "height": 652.5,
+            "right": 324.296875,
+            "bottom": 4282.625
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 4331.609375,
+            "width": 300.296875,
+            "height": 882.875,
+            "right": 352.484375,
+            "bottom": 5214.484375
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 4359.796875,
+            "width": 131.75,
+            "height": 826.5,
+            "right": 324.296875,
+            "bottom": 5186.296875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5235.28125,
+            "width": 300.296875,
+            "height": 708.875,
+            "right": 352.484375,
+            "bottom": 5944.15625
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5263.46875,
+            "width": 131.75,
+            "height": 652.5,
+            "right": 324.296875,
+            "bottom": 5915.96875
+          }
+        },
+        {
+          "selector": "label.option",
+          "scrollWidth": 298,
+          "clientWidth": 298,
+          "bounds": {
+            "x": 52.1875,
+            "y": 5964.953125,
+            "width": 300.296875,
+            "height": 708.875,
+            "right": 352.484375,
+            "bottom": 6673.828125
+          }
+        },
+        {
+          "selector": "span.option-text",
+          "scrollWidth": 132,
+          "clientWidth": 132,
+          "bounds": {
+            "x": 192.546875,
+            "y": 5993.140625,
+            "width": 131.75,
+            "height": 652.5,
+            "right": 324.296875,
+            "bottom": 6645.640625
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 290,
+          "clientWidth": 290,
+          "bounds": {
+            "x": 52.1875,
+            "y": 6961.59375,
+            "width": 292.4375,
+            "height": 108.375,
+            "right": 344.625,
+            "bottom": 7069.96875
+          }
+        },
+        {
+          "selector": "div.",
+          "scrollWidth": 292,
+          "clientWidth": 292,
+          "bounds": {
+            "x": 52.1875,
+            "y": 7093.96875,
+            "width": 292.4375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7169.953125
+          }
+        },
+        {
+          "selector": "button.",
+          "scrollWidth": 116,
+          "clientWidth": 116,
+          "bounds": {
+            "x": 226.765625,
+            "y": 7093.96875,
+            "width": 117.859375,
+            "height": 75.984375,
+            "right": 344.625,
+            "bottom": 7169.953125
+          }
+        }
+      ]
+    }
+  ],
+  "mobile": {
+    "exactOldLocatorCount": 0,
+    "textContent": "✓ Correct answer",
+    "score": {
+      "correct": 1,
+      "total": 2,
+      "unanswered": 1,
+      "passed": null
+    }
+  }
+}
+
+STDERR

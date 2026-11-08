@@ -1,0 +1,171 @@
+{
+  "reviewerType": "AI",
+  "method": "Read PT/EN projection with hash-shuffled alternatives only; record all8 answers and32 alternative rationales before published-key, explanation or prior-decision reveal. Procedural separation is not human review or proof against prior model knowledge.",
+  "projectionSHA256": "a9df53cb3d2b4d69a787c2ca0eb417184c3b482f8e08c966830fa28f32254bb1",
+  "publishedKeysConsultedBeforeRecording": false,
+  "publishedExplanationsConsultedBeforeRecording": false,
+  "solutions": [
+    {
+      "questionId": "tl-048",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "Os testes dão evidência delimitada sobre qualidade e o risco de cobrança dupla para informar stakeholders. Não decidem automaticamente a disponibilização nem provam ausência de defeitos nas viagens não testadas. Transfers num operador de transportes são transbordos, não transferências bancárias.",
+      "optionAssessmentsEN": {
+        "o1": "Following a documented process can support confidence, but these product test results do not establish process compliance as sufficient release evidence.",
+        "o2": "The observed double charge and successful tested journeys supply product-quality and concrete risk evidence for stakeholder judgment, within the tested scope.",
+        "o3": "A passing proportion alone ignores the significance of charging defects; testing informs rather than mechanically dictates the business release decision.",
+        "o4": "Revealing a charging failure is testing; repairing faulty charging logic is debugging/development, not the direct contribution of test execution described."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o4",
+        "o2"
+      ]
+    },
+    {
+      "questionId": "tl-049",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "A abordagem deve adaptar disponibilidade, cobertura e conservação das evidências às obrigações e riscos do serviço de emergência. Não basta manter o método por a linguagem ser igual, só aumentar exemplos funcionais ou escolher formalidade máxima sem análise do contexto.",
+      "optionAssessmentsEN": {
+        "o1": "More functional examples alone do not address strict availability or the evidence-retention audit obligation; the existing targets and detail cannot be assumed adequate.",
+        "o2": "A common implementation language does not fix the domain risks, availability obligations, regulatory context or appropriate testware detail.",
+        "o3": "Tailoring availability testing, coverage and retained evidence addresses the service-specific risk and obligations together.",
+        "o4": "Maximum formality selected before assessing obligations substitutes a blanket rule for contextual tailoring. Formality may ultimately be appropriate, but must be justified."
+      },
+      "shuffledOrder": [
+        "o4",
+        "o1",
+        "o2",
+        "o3"
+      ]
+    },
+    {
+      "questionId": "tl-050",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o4"
+      ],
+      "reasonPT": "Rever o calendário após atraso é controlo/gestão de testes; derivar casos de condições é conceção técnica de testes. A mesma pessoa pode acumular funções. A classificação depende da tarefa predominante, não do título profissional ou exclusividade.",
+      "optionAssessmentsEN": {
+        "o1": "Both tasks involve decisions, but that does not classify technical case derivation as test management; the nature of each task matters.",
+        "o2": "Being a team member rather than a designated manager does not turn schedule control into the technical testing role.",
+        "o3": "The task distinction is largely right, but the inference that different people must perform them is unsupported and contrary to possible role combination.",
+        "o4": "Schedule control is mainly management and deriving cases is mainly technical testing; a single person may perform both roles in context."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o1",
+        "o4",
+        "o3"
+      ]
+    },
+    {
+      "questionId": "tl-051",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "É necessário ouvir a regra prevista, esclarecer o significado de negócio com um exemplo e discutir evidência construtivamente. A classificação reportada não prova defeito confirmado. Mais reproduções ou relatórios não resolvem por si a divergência semântica; atribuir unilateralmente o negócio ao programador não garante resolução.",
+      "optionAssessmentsEN": {
+        "o1": "Listening, concrete comparison against agreed business meaning and constructive evidence discussion address the semantic disagreement without declaring either participant automatically right.",
+        "o2": "More data may help reproduce behaviour, but deferring discussion of the disputed business term does not resolve the interpretation problem.",
+        "o3": "Implementation terminology can aid communication, but delegating the business meaning solely to the developer does not establish the agreed business rule.",
+        "o4": "Escalation can become appropriate if discussion fails; immediate escalation based on counts of similar reports does not establish the correctness of the tester interpretation."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o2",
+        "o4",
+        "o1"
+      ]
+    },
+    {
+      "questionId": "tl-052",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "Incrementos utilizáveis frequentes com requisitos mutáveis pedem teste estático e dinâmico dentro dos incrementos, feedback rápido e regressão ao longo da evolução. Adiar toda regressão ou teste dinâmico de sistema ao fim perde feedback; planos detalhados imutáveis ignoram mudança.",
+      "optionAssessmentsEN": {
+        "o1": "Reviewing requirements early is useful, but deferring dynamic system testing until the final increment fails to support usable intermediate increments adequately.",
+        "o2": "Early planning is helpful, but designing every detail upfront and freezing it ignores the explicit possibility of requirement changes between increments.",
+        "o3": "Static and dynamic checks within increments, rapid feedback and evolving regression address both incremental delivery and change risk.",
+        "o4": "New acceptance tests alone omit effects on existing behaviour; deferring regression until final release gives late feedback on accumulating changes."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o4",
+        "o1",
+        "o2"
+      ]
+    },
+    {
+      "questionId": "tl-053",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "Automação pode reduzir repetição e acelerar feedback, mas requer preparação/manutenção e não elimina investigação manual centrada no utilizador no cenário. DevOps promove colaboração; não transfere simplesmente os testes para operações após publicação.",
+      "optionAssessmentsEN": {
+        "o1": "DevOps does not require every testing activity to be a repeatable automated check; exploratory user-focused investigation is not eliminated by the pipeline.",
+        "o2": "Faster feedback and reduced repetitive work are potential benefits, while maintaining automation and human user-focused testing remain relevant in this scenario.",
+        "o3": "A collaborative delivery pipeline does not mainly move testing ownership to operations after deployment; this is a siloed misunderstanding.",
+        "o4": "Faster execution does not justify deferring maintenance until a production regression; stale or unreliable checks undermine useful feedback."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o4",
+        "o1",
+        "o2"
+      ]
+    },
+    {
+      "questionId": "tl-054",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o4"
+      ],
+      "reasonPT": "Verificar os registos devolvidos é objetivo funcional; medir tempo de resposta com carga acordada é não funcional. Ambos estão no nível de sistema e podem executar a mesma função; a classificação pede objetivo principal, não nível nem inferência de caixa-branca.",
+      "optionAssessmentsEN": {
+        "o1": "Executing the same search does not make every objective functional; response-time behaviour under workload is a non-functional quality concern.",
+        "o2": "The statement fixes both at system-test level; it gives no basis for reclassifying the first as component testing.",
+        "o3": "Nothing about using implementation structure versus external specifications is given; white-box/black-box is not the stated objective contrast.",
+        "o4": "Specified records test what the function does, while response time under agreed workload tests how well it performs; functional versus non-functional is the best objective classification."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o4",
+        "o3",
+        "o1"
+      ]
+    },
+    {
+      "questionId": "tl-057",
+      "recordedAt": "2026-11-07T01:22:27.943027+00:00",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "Após registo individual, discutir e analisar anomalias para determinar defeitos, responsáveis, ações e seguimento é comunicação e análise. Não é início, revisão individual já feita nem correção/elaboração de relatórios ainda não descrita.",
+      "optionAssessmentsEN": {
+        "o1": "Review initiation prepares participants, access and roles before review work; the scenario is already analysing individually logged anomalies.",
+        "o2": "Determining anomaly status, ownership, required actions and possible follow-up in discussion matches communication and analysis.",
+        "o3": "Individual anomaly identification has already occurred; the current joint status/action discussion is a different activity.",
+        "o4": "Fixing defects and reporting results follow decisions; agreeing actions and classifying anomalies does not itself mean the product has been corrected or the review reported."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o3",
+        "o1",
+        "o4"
+      ]
+    }
+  ],
+  "ownerAccepted": false,
+  "humanApproved": false
+}

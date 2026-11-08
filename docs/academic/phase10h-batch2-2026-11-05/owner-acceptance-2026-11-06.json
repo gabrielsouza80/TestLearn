@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-11-06",
+  "decisionMaker": "Gabriel",
+  "role": "TestLearn product owner",
+  "authority": "Explicit Batch 3 user instruction",
+  "decision": "OWNER_ACCEPTED",
+  "scope": "Exact reviewed Batch 2 versions, content, explanations and existing keys only",
+  "reviewedPackageSHA256": "8f3aac344149477d7b09c210be124b65ab765b28860e43b4ac5945e8bc93beca",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "contentRevision": "2026-10-27.10",
+  "independentHumanSMEReviewVerified": false,
+  "professionalReviewerCertificationAsserted": false,
+  "independentAcademicApproval": "PENDING",
+  "deploymentAuthorization": false,
+  "unreviewedQuestionsApproved": false,
+  "historicalBatch2FindingsPreserved": true,
+  "questions": [
+    {
+      "questionId": "tl-008",
+      "acceptedVersion": 4,
+      "acceptedCanonicalSHA256": "30caf057d01c8d5c890700ccffe1561113b26473c464fa124718db374671705f",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-020",
+      "acceptedVersion": 2,
+      "acceptedCanonicalSHA256": "7132fb341fa5ad761ded41da162ae1bcdb644b1cd681acfc3a4fc01f320af43a",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-021",
+      "acceptedVersion": 2,
+      "acceptedCanonicalSHA256": "e41abdf84b8fd2714355fa15040de0c0ad6a34dd49dfc705e231f7c121898e54",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-035",
+      "acceptedVersion": 3,
+      "acceptedCanonicalSHA256": "e14348d9fe1de2402f0c59d1bdaa5fc03f4f659051e87219e302dbbd2a9fc3dc",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-038",
+      "acceptedVersion": 3,
+      "acceptedCanonicalSHA256": "672f337178b6a27526fedce6a040d0fab229484d7fe71a10d8553ab775acefa6",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING",
+      "ownerQualification": "The published answer is academically defensible and aligns with the ISTQB CTFL FL-5.5.1/K3 multiple-choice examination approach. Its difficulty is relatively low for K3, so a more demanding alternative may be developed later.",
+      "optionalFutureImprovementImplemented": false
+    },
+    {
+      "questionId": "tl-063",
+      "acceptedVersion": 1,
+      "acceptedCanonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-064",
+      "acceptedVersion": 1,
+      "acceptedCanonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f",
+      "acceptedKey": ["o3"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    },
+    {
+      "questionId": "tl-072",
+      "acceptedVersion": 1,
+      "acceptedCanonicalSHA256": "02f55caefec08711eb6b07191a25a4c16e510fa45471e54fadbae9dfb99924a5",
+      "acceptedKey": ["o1"],
+      "ownerDecision": "OWNER_ACCEPTED",
+      "independentAcademicApproval": "PENDING",
+      "humanApprovalInBank": "PENDING"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-11-06T13:02:28.905505+00:00",
+  "method": "AI review, not human SME certification. Only the deterministically shuffled projection without keys/explanations was read before recording. User linguistic hints were known; this is blind-to-key reasoning in this execution, not proof of no prior model knowledge. Full bank was privately recorded for later comparison, not used for this solution.",
+  "projectionSHA256": "195edee3fa5189c7a867c2ef211b264cd661ec10d2a41fce804d0bfd0642ef25",
+  "solutions": [
+    {
+      "questionId": "tl-022",
+      "answer": ["o1"],
+      "derivation": "The basis is the tester’s personal knowledge of failures in similar products, an experience-based selection rationale: error guessing. Statement testing requires code statements; no such basis is given. Exploratory testing emphasizes concurrent learning/design/execution, which is not described. Dates including29February could be used in boundary tests, but no ordered partitions, limits, precision or boundary-derived selection are given; date subject matter alone does not establish BVA. The Portuguese leap-day phrase is awkward/potentially less precise but does not remove the explicitly experiential selection basis. “O seu conhecimento” retains personal possession without requiring first-hand witnessing. Unique offered answero1."
+    },
+    {
+      "questionId": "tl-041",
+      "answer": ["o2"],
+      "derivation": "Whole-team approach benefits from complementary competencies and collaboration toward quality goals. It does not transfer all accountability to testers, exclude testers from discussion, or require a completed-development handover before testing. Thereforeo2 is uniquely defensible. Delivery team is broader than a programmers-only reading of equipa de desenvolvimento, but development team can also mean a cross-functional product team; the named approach and explicit team options favour the latter. Need inspect full explanations and official PT terminology before deciding whether this lexical scope risk is a confirmed defect or optional clarity improvement."
+    }
+  ]
+}

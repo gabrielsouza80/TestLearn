@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-11-06T13:27:40.028021+00:00",
+  "method": "AI review, not independent human SME approval/certification. Only the deterministically SHA-256-shuffled projection was consulted before these solutions; keys/explanations were not displayed. User focus hints were available. Full bank privately captured for later comparison but not used to solve. Procedural blind-to-key in this execution, not proof of no prior model knowledge.",
+  "projectionSHA256": "54bc42f69f09eac070edc2820435ebd6c0a1632fe177ab8a0be53b6cb8ab6160",
+  "solutions": [
+    {
+      "questionId": "tl-001",
+      "answer": ["o1", "o4"],
+      "derivation": "TWO/DOIS requires exactly two. Information for a release decision and finding defects are useful objectives. Proving absence of all defects and guaranteeing every user’s satisfaction are absolute claims testing cannot establish. This is recognition of objectives, K1; no translation alters cardinality."
+    },
+    {
+      "questionId": "tl-006",
+      "answer": ["o1"],
+      "derivation": "Deriving test conditions from requirements identifies what to test: test analysis. Test design elaborates cases/data/how to test, execution runs tests, completion consolidates outcomes/testware. Activities may overlap in practice, but the described work product is a test condition, making o1 the best match."
+    },
+    {
+      "questionId": "tl-013",
+      "answer": ["o1"],
+      "derivation": "Reviewing acceptance criteria before coding is early static review, hence shift left. It is not executing the application, regression after changes, or end-of-test completion. Before coding and antes de programar carry the same timing for the work under discussion; no claim that all testing must occur before all project code."
+    },
+    {
+      "questionId": "tl-014",
+      "answer": ["o1"],
+      "derivation": "An operational service migrating database engine changes its environment and can affect data/behaviour even with unchanged application code. Maintenance testing considers migration impacts; prior results do not automatically prove compatibility, maintenance is not code-only, and data checks do not substitute all behavioural regression. Can/pode describes potential impact, not guaranteed failure or a universal fixed test obligation."
+    },
+    {
+      "questionId": "tl-015",
+      "answer": ["o1"],
+      "derivation": "Documented checkout-validation requirements are written work products that can be reviewed without running the application. Measured latency, memory growth under concurrent load and actual checkout behaviour describe dynamic observations, not their documentary representations. One could review a report of those observations statically, but no such report is the offered item. Checkout/compra has some lexical scope difference, without changing the artifact-versus-behaviour criterion."
+    },
+    {
+      "questionId": "tl-017",
+      "answer": ["o1"],
+      "derivation": "Contradictory requirements are a defect directly found in a work product by review. An incorrectly displayed date observed during execution is a failure. Neither observation alone locates the faulty code statement or proves a particular human mistake/root cause. Defect/failure is not interchangeable with human error. Only o1 preserves this distinction."
+    },
+    {
+      "questionId": "tl-019",
+      "answer": ["o1"],
+      "derivation": "Externally specified behaviour is the stated derivation basis and code structure is excluded: black-box techniques. White-box requires structure; experience-based derives from tester experience rather than the supplied specification basis. Risk-based testing can influence selection/priorities alongside any technique family, but no risk criterion is given and it is not the requested family in this classification."
+    },
+    {
+      "questionId": "tl-023",
+      "answer": ["o1"],
+      "derivation": "Learning while designing, executing and evaluating, in a timeboxed session guided by a charter, characterizes session-based exploratory testing. Unadapted predefined replay lacks the described adaptive design; error guessing can contribute experience-based ideas without defining this full process; a checklist alone does not characterize concurrent learning/design/execution. The scenario describes this structured variant, not a universal requirement that all exploratory testing must use timeboxes/charters."
+    }
+  ]
+}

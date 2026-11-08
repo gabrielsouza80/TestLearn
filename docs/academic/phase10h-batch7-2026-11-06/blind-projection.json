@@ -1,0 +1,80 @@
+[
+  {
+    "id": "tl-022",
+    "lo": "FL-4.4.1",
+    "level": "K2",
+    "text": {
+      "en": "A tester selects date-parsing cases using personal knowledge of leap-day failures in similar products. Which technique best explains the basis for selecting these cases?",
+      "pt": "Um testador seleciona casos de interpretação de datas usando o seu conhecimento de falhas em dias bissextos em produtos semelhantes. Que técnica melhor explica a base de seleção destes casos?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Boundary value analysis",
+          "pt": "Análise de valor fronteira"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Error guessing",
+          "pt": "Antecipação de erros"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Exploratory testing",
+          "pt": "Teste exploratório"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Statement testing",
+          "pt": "Teste de instruções"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-041",
+    "lo": "FL-1.5.2",
+    "level": "K1",
+    "text": {
+      "en": "A delivery team adopts the whole team approach. Which benefit is associated with this approach?",
+      "pt": "Uma equipa de desenvolvimento adota a whole team approach. Que vantagem está associada a esta abordagem?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Quality accountability is transferred entirely from developers to the testing role.",
+          "pt": "A responsabilidade pela qualidade é transferida integralmente dos programadores para a função de teste."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Keeping testers outside team discussions preserves the main benefit of this approach.",
+          "pt": "Manter os testadores fora das discussões da equipa preserva a principal vantagem desta abordagem."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Testing starts only after developers have handed over all completed implementation work.",
+          "pt": "Os testes só começam depois de os programadores entregarem todo o trabalho de implementação concluído."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Complementary skills and close collaboration help the team achieve its quality goals.",
+          "pt": "Competências complementares e colaboração próxima ajudam a equipa a alcançar os seus objetivos de qualidade."
+        }
+      }
+    ]
+  }
+]

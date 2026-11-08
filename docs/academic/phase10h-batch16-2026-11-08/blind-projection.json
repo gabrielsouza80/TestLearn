@@ -1,0 +1,96 @@
+[
+  {
+    "id": "tl-084",
+    "lo": "FL-2.2.2",
+    "level": "K2",
+    "required": 2,
+    "text": {
+      "en": "For a warehouse service, requirements specify the stock quantity returned for a valid barcode and a 95th-percentile response latency of at most 300 ms with 200 concurrent users. Tests use API calls derived from these requirements, not code structure. Select TWO correct classifications.",
+      "pt": "Para um serviço de armazém, os requisitos especificam a quantidade em stock devolvida para um código de barras válido e uma latência de resposta no percentil 95 de, no máximo, 300 ms com 200 utilizadores concorrentes. Os testes usam chamadas à API derivadas destes requisitos, não da estrutura do código. Selecione DUAS classificações corretas."
+    },
+    "options": [
+      {
+        "id": "o5",
+        "text": {
+          "en": "Using an API makes both tests white-box, even when their basis is the requirements.",
+          "pt": "Usar uma API torna ambos os testes de caixa-branca, mesmo quando a sua base são os requisitos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Checking latency is functional testing because it executes the same stock query.",
+          "pt": "Verificar a latência é teste funcional porque executa a mesma consulta de stock."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Checking the latency limit targets the non-functional characteristic performance efficiency.",
+          "pt": "Verificar o limite de latência visa a característica não funcional eficiência de desempenho."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "The concurrent users make the test level system integration, irrespective of the systems involved.",
+          "pt": "Os utilizadores concorrentes tornam o nível de teste integração de sistemas, independentemente dos sistemas envolvidos."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Checking the returned stock quantity targets functional correctness.",
+          "pt": "Verificar a quantidade em stock devolvida visa a correção funcional."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-085",
+    "lo": "FL-5.2.4",
+    "level": "K2",
+    "required": 2,
+    "text": {
+      "en": "A smart-meter project has completed initial identification and assessment of billing risks; the register already contains likelihood and impact ratings. Select TWO proposed actions that perform product risk control rather than repeat that initial analysis.",
+      "pt": "Um projeto de contadores inteligentes concluiu a identificação e avaliação iniciais dos riscos de faturação; o registo já contém classificações de probabilidade e impacto. Selecione DUAS ações propostas que realizam controlo do risco de produto, em vez de repetir essa análise inicial."
+    },
+    "options": [
+      {
+        "id": "o5",
+        "text": {
+          "en": "Check whether mitigation is effective and revise the response when emerging risks require it.",
+          "pt": "Verificar se a mitigação é eficaz e rever a resposta quando os riscos emergentes o exigirem."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Execute clock-change tests selected to mitigate the assessed billing risk.",
+          "pt": "Executar testes de mudança da hora selecionados para mitigar o risco de faturação avaliado."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Estimate likelihood and impact to rank the billing risks.",
+          "pt": "Estimar a probabilidade e o impacto para ordenar os riscos de faturação."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "List potential billing-risk events before evaluating their significance.",
+          "pt": "Listar potenciais eventos de risco de faturação antes de avaliar a sua importância."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Group the assessed billing risks by quality characteristic before selecting treatments.",
+          "pt": "Agrupar os riscos de faturação avaliados por característica de qualidade antes de selecionar tratamentos."
+        }
+      }
+    ]
+  }
+]

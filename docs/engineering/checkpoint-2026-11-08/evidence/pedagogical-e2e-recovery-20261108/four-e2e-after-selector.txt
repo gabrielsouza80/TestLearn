@@ -1,0 +1,123 @@
+
+Running 4 tests using 1 worker
+
+  ✘  1 [chromium] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (4.1s)
+  ✘  2 [firefox] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (7.2s)
+  ✘  3 [webkit] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (8.5s)
+  ✓  4 [mobile] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score (4.6s)
+
+
+  1) [chromium] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      85 |       () => document.documentElement.scrollWidth <= window.innerWidth,
+      86 |     ),
+    > 87 |   ).toBe(true);
+         |     ^
+      88 |   await page
+      89 |     .getByRole('note')
+      90 |     .screenshot({
+        at C:\TestLearn\tmp\develop-workspace\tests\e2e\pedagogical-review-notice.spec.ts:87:5
+
+    Error Context: ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [firefox] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      85 |       () => document.documentElement.scrollWidth <= window.innerWidth,
+      86 |     ),
+    > 87 |   ).toBe(true);
+         |     ^
+      88 |   await page
+      89 |     .getByRole('note')
+      90 |     .screenshot({
+        at C:\TestLearn\tmp\develop-workspace\tests\e2e\pedagogical-review-notice.spec.ts:87:5
+
+    Error Context: ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      85 |       () => document.documentElement.scrollWidth <= window.innerWidth,
+      86 |     ),
+    > 87 |   ).toBe(true);
+         |     ^
+      88 |   await page
+      89 |     .getByRole('note')
+      90 |     .screenshot({
+        at C:\TestLearn\tmp\develop-workspace\tests\e2e\pedagogical-review-notice.spec.ts:87:5
+
+    Error Context: ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\pedagogical-e2e-recovery-20261108\four-e2e-results\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+    [firefox] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+    [webkit] › tests\e2e\pedagogical-review-notice.spec.ts:10:1 › bilingual notice is keyboard-accessible, responsive and isolated; practice retains answers and score 
+  1 passed (42.8s)
+
+STDERR
+[WebServer] (node:137788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] node_modules/zod/v4/core/util.js (400:0): A comment
+[WebServer] 
+[WebServer] "// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+[WebServer] 
+[WebServer] in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[WebServer] node_modules/zod/v4/core/regexes.js (74:0): A comment
+[WebServer] 
+[WebServer] "/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+[WebServer]  * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+[WebServer]  * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+[WebServer] 
+[WebServer] in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[WebServer] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:139936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:147388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:143284) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:124780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

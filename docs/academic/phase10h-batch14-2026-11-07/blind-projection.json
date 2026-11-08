@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-058",
+    "lo": "FL-3.2.5",
+    "level": "K1",
+    "text": {
+      "en": "A review leader is preparing a review of a revised deployment guide. Which arrangement is a recognised success factor for reviews?",
+      "pt": "Um líder de revisão prepara uma revisão de um guia atualizado de colocação em serviço de software. Que medida é um fator reconhecido de sucesso das revisões?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Define clear objectives and measurable exit criteria, and provide adequate preparation time.",
+          "pt": "Definir objetivos claros e critérios de saída mensuráveis e disponibilizar tempo adequado para preparação."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Combine all related manuals into one large review package to reduce the number of sessions.",
+          "pt": "Juntar todos os manuais relacionados num grande pacote de revisão para reduzir o número de sessões."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Allocate the preparation time to the meeting instead, so everyone encounters the guide together.",
+          "pt": "Transferir o tempo de preparação para a reunião, para que todos contactem com o guia em conjunto."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Use the same review type for every work product to avoid context-dependent decisions.",
+          "pt": "Usar o mesmo tipo de revisão para todos os produtos de trabalho para evitar decisões dependentes do contexto."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-059",
+    "lo": "FL-4.3.3",
+    "level": "K2",
+    "text": {
+      "en": "A component's specification is incomplete. Tests derived from its code exercise every branch, but a required audit-recording function has not been implemented. Which statement best describes the value and limitation of this white-box testing?",
+      "pt": "A especificação de um componente está incompleta. Testes derivados do código exercitam todos os ramos, mas uma função obrigatória de registo de auditoria não foi implementada. Que afirmação melhor descreve o valor e a limitação deste teste caixa-branca?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "The branch results measure requirements coverage, while the missing audit function reduces statement coverage.",
+          "pt": "Os resultados dos ramos medem a cobertura de requisitos, enquanto a função de auditoria ausente reduz a cobertura de instruções."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "An incomplete specification makes code-derived tests unsuitable for detecting implementation defects.",
+          "pt": "Uma especificação incompleta torna os testes derivados do código inadequados para detetar defeitos de implementação."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Full branch coverage demonstrates that all required functions are present, including audit recording.",
+          "pt": "A cobertura total de ramos demonstra que todas as funções obrigatórias estão presentes, incluindo o registo de auditoria."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "It provides objective coverage of implemented structure, but may miss the omitted audit requirement.",
+          "pt": "Fornece cobertura objetiva da estrutura implementada, mas pode não detetar a omissão do requisito de auditoria."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-060",
+    "lo": "FL-4.4.3",
+    "level": "K2",
+    "text": {
+      "en": "Two testers use the same high-level checklist for a document editor but choose different examples and action sequences. A new severe defect is then found outside the current checklist. Which response best reflects checklist-based testing?",
+      "pt": "Dois testadores usam a mesma checklist de alto nível para um editor de documentos, mas escolhem exemplos e sequências de ações diferentes. É depois encontrado um novo defeito grave fora da checklist atual. Que resposta melhor reflete o teste baseado em checklists?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Keep the checklist unchanged and handle every future severe defect only through a separate exploratory charter.",
+          "pt": "Manter a checklist inalterada e tratar todos os futuros defeitos graves apenas através de uma carta de teste exploratório separada."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Recognise the repeatability trade-off and update the checklist with a directly checkable condition informed by the defect.",
+          "pt": "Reconhecer o compromisso de repetibilidade e atualizar a checklist com uma condição diretamente verificável baseada no defeito."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Discard the checklist because different examples demonstrate that it cannot provide useful consistency.",
+          "pt": "Abandonar a checklist porque exemplos diferentes demonstram que não pode proporcionar consistência útil."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Require identical execution steps for every item while continuing to describe the checklist as high-level guidance.",
+          "pt": "Exigir passos de execução idênticos para cada item, continuando a descrever a checklist como orientação de alto nível."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-061",
+    "lo": "FL-4.5.1",
+    "level": "K2",
+    "text": {
+      "en": "A draft story says that laboratory staff need to amend a sample label, but does not explain when changes are allowed or why they matter. What should business representatives, developers and testers do together before implementation?",
+      "pt": "Uma user story inicial indica que os trabalhadores de um laboratório precisam de alterar a etiqueta de uma amostra, mas não explica quando são permitidas alterações nem por que são importantes. O que devem fazer em conjunto os representantes do negócio, os programadores e os testadores antes da implementação?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Ask the business representative to complete the story alone, then estimate it without further discussion.",
+          "pt": "Pedir ao representante do negócio que conclua a story sozinho e depois estimá-la sem mais discussão."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Discuss the user goal and business value, explore permitted and forbidden examples, and agree testable acceptance criteria.",
+          "pt": "Discutir o objetivo do utilizador e o valor de negócio, explorar exemplos permitidos e proibidos e acordar critérios de aceitação testáveis."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Let developers select the simplest amendment rule and ask testers to document it as the expected result.",
+          "pt": "Deixar os programadores escolher a regra de alteração mais simples e pedir aos testadores que a documentem como resultado esperado."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Convert the draft into a detailed implementation task list and defer acceptance criteria until the first demonstration.",
+          "pt": "Converter o rascunho numa lista detalhada de tarefas de implementação e adiar os critérios de aceitação até à primeira demonstração."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-065",
+    "lo": "FL-5.3.1",
+    "level": "K1",
+    "text": {
+      "en": "A dashboard for a library lending service contains several test metrics. Which metric is classified as a product quality metric rather than a test progress, defect or coverage metric?",
+      "pt": "Um dashboard de um serviço de empréstimos de uma biblioteca contém várias métricas de teste. Que métrica é classificada como métrica de qualidade do produto, em vez de métrica de progresso do teste, de defeitos ou de cobertura?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Number of high-priority defects that remain open.",
+          "pt": "Número de defeitos de prioridade elevada que permanecem abertos."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Percentage of specified lending requirements covered by tests.",
+          "pt": "Percentagem de requisitos de empréstimo especificados cobertos por testes."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Number of planned test cases that have been executed.",
+          "pt": "Número de casos de teste planeados que foram executados."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Measured response time of the lending service.",
+          "pt": "Tempo de resposta medido do serviço de empréstimos."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-066",
+    "lo": "FL-5.3.3",
+    "level": "K2",
+    "text": {
+      "en": "A distributed team needs rapid visibility of blocked tests across time zones. A steering group needs a weekly summary of release risks. No regulation mandates a single communication format. Which communication arrangement best suits these needs?",
+      "pt": "Uma equipa distribuída precisa de visibilidade rápida dos testes bloqueados em diferentes fusos horários. Um grupo de direção precisa de um resumo semanal dos riscos da entrega. Nenhum regulamento impõe um único formato de comunicação. Que organização da comunicação melhor satisfaz estas necessidades?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Give the steering group the unfiltered execution log and ask it to derive release risks independently.",
+          "pt": "Fornecer ao grupo de direção o registo de execução sem tratamento e pedir-lhe que derive os riscos da entrega de forma independente."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Send the weekly steering summary to everyone and use it as the team's only blocker notification.",
+          "pt": "Enviar o resumo semanal da direção a todos e usá-lo como única notificação de bloqueios da equipa."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Use a daily live call as the sole record for both audiences, without retaining status information.",
+          "pt": "Usar uma chamada diária em direto como único registo para ambos os públicos, sem conservar informação de estado."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Maintain an up-to-date shared dashboard with asynchronous blocker notifications, and provide a concise weekly risk summary for the steering group.",
+          "pt": "Manter um dashboard partilhado atualizado com notificações assíncronas de bloqueios e fornecer um resumo semanal conciso de riscos ao grupo de direção."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-067",
+    "lo": "FL-1.3.1",
+    "level": "K2",
+    "text": {
+      "en": "A payroll replacement passes the tests for every specified calculation. During a pilot, clerks cannot complete the month-end workflow because a necessary approval step was not specified. Which response best addresses the testing principle illustrated?",
+      "pt": "Uma aplicação de substituição de processamento salarial passa os testes de todos os cálculos especificados. Num piloto, os trabalhadores não conseguem concluir o fecho mensal porque uma aprovação necessária não foi especificada. Que resposta melhor aplica o princípio de teste ilustrado?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Expand calculation regression tests to increase confidence in the already specified rules.",
+          "pt": "Expandir a regressão dos cálculos para aumentar a confiança nas regras já especificadas."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Refresh the calculation test data to counter the declining effectiveness of repeated tests.",
+          "pt": "Renovar os dados de teste dos cálculos para contrariar a menor eficácia de testes repetidos."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Concentrate testing on the calculation modules with the most historical defects.",
+          "pt": "Concentrar os testes nos módulos de cálculo com mais defeitos históricos."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Validate the complete month-end workflow with users and revise the agreed requirements.",
+          "pt": "Validar o fluxo completo de fecho mensal com os utilizadores e rever os requisitos acordados."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-068",
+    "lo": "FL-2.1.2",
+    "level": "K1",
+    "text": {
+      "en": "A team is selecting practices for reviewing an early draft of a new interface specification. Which practice is applicable across software development lifecycles?",
+      "pt": "Uma equipa escolhe práticas para rever uma versão inicial de uma nova especificação de interface. Que prática é aplicável a diferentes ciclos de vida de desenvolvimento de software?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Base review timing on completion of coding rather than availability of the draft.",
+          "pt": "Basear a calendarização da revisão na conclusão do código em vez da disponibilidade da versão inicial."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Start test analysis when the corresponding development work product becomes available.",
+          "pt": "Iniciar a análise de teste quando o produto de trabalho de desenvolvimento correspondente estiver disponível."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Apply the lifecycle's dynamic test sequence as the schedule for specification reviews.",
+          "pt": "Aplicar a sequência de testes dinâmicos do ciclo de vida como calendário das revisões da especificação."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Use the same test objectives for component testing and acceptance testing.",
+          "pt": "Usar os mesmos objetivos no teste de componentes e no teste de aceitação."
+        }
+      }
+    ]
+  }
+]

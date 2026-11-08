@@ -1,0 +1,44 @@
+
+STDERR
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Runtime/history/test/config change outside the explicit task scope
++ actual - expected
+
++ [
++   'src/App.tsx',
++   'src/styles.css',
++   'src/learning/PedagogicalReviewNotice.tsx',
++   'src/learning/pedagogical-review-notices.ts',
++   'tests/e2e/pedagogical-feedback-negative.spec.ts',
++   'tests/e2e/pedagogical-review-notice.spec.ts',
++   'tests/fixtures/pedagogical-notice-integrity.json',
++   'tests/integration/pedagogical-review-notice.test.tsx',
++   'tests/integration/pedagogical-review-scope.test.tsx',
++   'tests/unit/pedagogical-notice-integrity.test.ts'
++ ]
+- []
+
+    at file:///C:/TestLearn/tmp/develop-workspace/scripts/check-academic-deliverables.mjs:471:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'src/App.tsx',
+    'src/styles.css',
+    'src/learning/PedagogicalReviewNotice.tsx',
+    'src/learning/pedagogical-review-notices.ts',
+    'tests/e2e/pedagogical-feedback-negative.spec.ts',
+    'tests/e2e/pedagogical-review-notice.spec.ts',
+    'tests/fixtures/pedagogical-notice-integrity.json',
+    'tests/integration/pedagogical-review-notice.test.tsx',
+    'tests/integration/pedagogical-review-scope.test.tsx',
+    'tests/unit/pedagogical-notice-integrity.test.ts'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

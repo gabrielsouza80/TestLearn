@@ -1,0 +1,166 @@
+{
+  "questionId": "tl-062",
+  "original": {
+    "id": "tl-062",
+    "lo": "FL-5.1.2",
+    "chapter": 5,
+    "level": "K1",
+    "topic": "Iteration planning",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "During planning for the next iteration of a museum booking system, which contribution is typically made by a tester?",
+      "pt": "Durante o planeamento da próxima iteração de um sistema de reservas de um museu, que contributo é tipicamente dado por um testador?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Set the business ordering of the entire product backlog on behalf of the product owner.",
+          "pt": "Definir a ordenação de negócio de todo o backlog do produto em nome do product owner."
+        },
+        "explanation": {
+          "en": "Testers inform priorities through risk and testing knowledge, but this is not the typical testing contribution to iteration planning.",
+          "pt": "Os testadores apoiam as prioridades com conhecimento de riscos e testes, mas esse não é o contributo típico de teste para o planeamento da iteração."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Select the implementation architecture before the team discusses acceptance criteria.",
+          "pt": "Selecionar a arquitetura de implementação antes de a equipa discutir os critérios de aceitação."
+        },
+        "explanation": {
+          "en": "Architecture decisions may involve many roles; this does not describe the tester's characteristic planning contribution.",
+          "pt": "As decisões de arquitetura podem envolver várias funções; isto não descreve o contributo característico do testador para o planeamento."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Report only the previous iteration's defect count, leaving testability and effort until execution starts.",
+          "pt": "Reportar apenas a contagem de defeitos da iteração anterior, deixando a testabilidade e o esforço para o início da execução."
+        },
+        "explanation": {
+          "en": "Testability, risks, testing tasks and effort are useful inputs during planning, not matters to defer until execution.",
+          "pt": "A testabilidade, os riscos, as tarefas e o esforço de teste são contributos úteis durante o planeamento, não assuntos a adiar até à execução."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Assess story testability, identify testing tasks and help estimate the associated test effort.",
+          "pt": "Avaliar a testabilidade das stories, identificar tarefas de teste e ajudar a estimar o esforço de teste associado."
+        },
+        "explanation": {
+          "en": "These are typical tester contributions to iteration planning alongside detailed risk analysis and refinement of functional and non-functional aspects.",
+          "pt": "Estes são contributos típicos do testador para o planeamento da iteração, a par da análise detalhada de riscos e do refinamento de aspetos funcionais e não funcionais."
+        }
+      }
+    ],
+    "correct": ["o4"],
+    "explanation": {
+      "en": "Testers contribute before execution by clarifying testability, risks, tasks and effort. This recognises a planning contribution; no calculation or prioritisation algorithm is required.",
+      "pt": "Os testadores contribuem antes da execução, esclarecendo testabilidade, riscos, tarefas e esforço. Reconhece-se aqui um contributo para o planeamento; não é exigido cálculo nem algoritmo de priorização."
+    },
+    "origin": "original",
+    "syllabus": "4.0.1",
+    "version": 1,
+    "review": "AI_REVIEWED",
+    "translationReview": "AI_REVIEWED",
+    "humanApproval": "PENDING",
+    "examEligible": true,
+    "tags": ["syllabus-coverage-phase4"],
+    "academicReview": {
+      "method": "AI_REVIEWED",
+      "status": "PASS",
+      "reviewedAt": "2026-10-27",
+      "section": "5.1.2",
+      "pages": [48, 49],
+      "report": "docs/academic-audit.md#tl-062"
+    }
+  },
+  "proposed": {
+    "id": "tl-062",
+    "lo": "FL-5.1.2",
+    "chapter": 5,
+    "level": "K1",
+    "topic": "Iteration planning",
+    "type": "single",
+    "required": 1,
+    "text": {
+      "en": "During planning for the next iteration of a museum booking system, which contribution is typically made by a tester?",
+      "pt": "Durante o planeamento da próxima iteração de um sistema de reservas de um museu, que contributo é tipicamente dado por um testador?"
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "Set the business ordering of the entire product backlog on behalf of the product owner.",
+          "pt": "Definir a ordenação de negócio de todo o backlog do produto em nome do product owner."
+        },
+        "explanation": {
+          "en": "Testers inform priorities through risk and testing knowledge, but this is not the typical testing contribution to iteration planning.",
+          "pt": "Os testadores apoiam as prioridades com conhecimento de riscos e testes, mas esse não é o contributo típico de teste para o planeamento da iteração."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Select the implementation architecture before the team discusses acceptance criteria.",
+          "pt": "Selecionar a arquitetura de implementação antes de a equipa discutir os critérios de aceitação."
+        },
+        "explanation": {
+          "en": "Architecture decisions may involve many roles; this does not describe the tester's characteristic planning contribution.",
+          "pt": "As decisões de arquitetura podem envolver várias funções; isto não descreve o contributo característico do testador para o planeamento."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Report only the previous iteration's defect count, leaving testability and effort until execution starts.",
+          "pt": "Reportar apenas a contagem de defeitos da iteração anterior, deixando a testabilidade e o esforço para o início da execução."
+        },
+        "explanation": {
+          "en": "Testability, risks, testing tasks and effort are useful inputs during planning, not matters to defer until execution.",
+          "pt": "A testabilidade, os riscos, as tarefas e o esforço de teste são contributos úteis durante o planeamento, não assuntos a adiar até à execução."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Assess story testability, identify testing tasks and help estimate the associated test effort.",
+          "pt": "Avaliar a testabilidade das stories, identificar tarefas de teste e ajudar a estimar o esforço de teste associado."
+        },
+        "explanation": {
+          "en": "These are typical tester contributions to iteration planning alongside detailed risk analysis and refinement of functional and non-functional aspects.",
+          "pt": "Estes são contributos típicos do testador para o planeamento da iteração, a par da análise detalhada de riscos e do refinamento de aspetos funcionais e não funcionais."
+        }
+      }
+    ],
+    "correct": ["o4"],
+    "explanation": {
+      "en": "Testers contribute before execution by clarifying testability, risks, tasks and effort. This recognises a planning contribution; no calculation or prioritisation algorithm is required.",
+      "pt": "Os testadores contribuem antes da execução, esclarecendo testabilidade, riscos, tarefas e esforço. Reconhece-se aqui um contributo para o planeamento; não é exigido cálculo nem algoritmo de priorização."
+    },
+    "origin": "original",
+    "syllabus": "4.0.1",
+    "version": 1,
+    "review": "AI_REVIEWED",
+    "translationReview": "AI_REVIEWED",
+    "humanApproval": "PENDING",
+    "examEligible": true,
+    "tags": ["syllabus-coverage-phase4"],
+    "academicReview": {
+      "method": "AI_REVIEWED",
+      "status": "PASS",
+      "reviewedAt": "2026-10-27",
+      "section": "5.1.2",
+      "pages": [48, 49],
+      "report": "docs/academic-audit.md#tl-062"
+    }
+  },
+  "changed": false,
+  "beforeCanonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+  "afterCanonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+}

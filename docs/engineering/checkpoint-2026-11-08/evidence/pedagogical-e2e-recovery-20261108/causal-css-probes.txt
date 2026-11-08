@@ -1,0 +1,7 @@
+
+STDERR
+page.addStyleTag: Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-uwrB+NrijRRRdNf9+sE/jE4+GonHKd5vTrSeeM8w63k='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.
+    at C:\TestLearn\tmp\pedagogical-e2e-recovery-20261108\constraint-probes.cjs:14:29 {
+  log: [],
+  name: 'Error'
+}

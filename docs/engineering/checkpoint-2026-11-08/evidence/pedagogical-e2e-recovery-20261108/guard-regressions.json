@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "scripts/check-release.test.mjs",
+    "scripts/check-retained-assets.test.mjs",
+    "scripts/check-live-asset-retention.test.mjs",
+    "scripts/check-retained-append-only.test.mjs",
+    "scripts/check-advanced-isolation.test.mjs",
+    "scripts/check-vercel-build.test.mjs"
+  ],
+  "startedUTC": "2026-11-08T12:11:08.085068+00:00",
+  "finishedUTC": "2026-11-08T12:12:26.825078+00:00",
+  "wallSeconds": 78.729,
+  "exitCode": 0
+}

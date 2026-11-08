@@ -1,0 +1,769 @@
+{
+  "createdUTC": "2026-11-08T12:48:01.977910+00:00",
+  "copied": [
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\typecheck.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/typecheck.json",
+      "sha256": "d6cdd34b882547241406c425caf0c9ddad9ec87ddcd7effe6bc056e582cd39da"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\typecheck.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/typecheck.txt",
+      "sha256": "20401d03f1a9dfe9e8bfa56e8561daa17f42866d82cc018831fc70f27223ed7e"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\vitest-full.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/vitest-full.json",
+      "sha256": "9eb2bf4c078e7dbe8ef893ba468f8c40766a77ae3db49c915eed35a53c32b7a7"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\vitest-full.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/vitest-full.txt",
+      "sha256": "07de5d2879d76a13ee0d86f42e6790cfdc4ba552667c67af8f86f0c3ff95011c"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\STOP-FAILURE.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/STOP-FAILURE.json",
+      "sha256": "68d3200a766b69c30ced4c7d6857ff7f98d958cac163ecd8b2641c3b37b77751"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\tdd-red.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/tdd-red.json",
+      "sha256": "e2ddc4b34f6d903299bb9af114385ef3422a7113847c531caaef59f0e9a15c25"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\tdd-red.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-20261108/tdd-red.txt",
+      "sha256": "e581817b0a205990cc0595a0d6699bcd2a3bc2498e4768576bb9af095ccbfd9f"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\typescript-diagnostic-map.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-diagnostic-map.json",
+      "sha256": "2ab51c873a90ef94c1fd86a8f29d1f0523126f8ab8132022a77265896967f15d"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\typescript-red.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-red.json",
+      "sha256": "78e61333036f4fa1a2870ddb776811e82c2722b866d1470d0e0da3481b8e686a"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\typescript-red.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-red.txt",
+      "sha256": "20401d03f1a9dfe9e8bfa56e8561daa17f42866d82cc018831fc70f27223ed7e"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\typescript-green.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-green.json",
+      "sha256": "9cc922c3952a79faf10ea47f5f1c2a0d3317f8dd26971ad19337912b02a47139"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\typescript-green.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/typescript-green.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\blueprint-isolated-1.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/blueprint-isolated-1.json",
+      "sha256": "3cd7c870a811c02030dd5edb164de8b3d91b907bd4c2c6b202bc574910137e0a"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\blueprint-isolated-1.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/blueprint-isolated-1.txt",
+      "sha256": "4e3c6ea44eb4327fb2eb1f44638e94c933585907c6665e943cec5c7e7981c2a7"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\blueprint-isolated-2.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/blueprint-isolated-2.json",
+      "sha256": "a795db254b79ab3beb2f467e048fc075db2e0cde3e48446769851e01d3911e78"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\blueprint-isolated-2.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/blueprint-isolated-2.txt",
+      "sha256": "29f7d3629870cec193215cdc09df86df300fe3c550b746323f5b34d35ea0d6b4"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\vitest-full-sequential.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/vitest-full-sequential.json",
+      "sha256": "1e061e6a1f69f712cab8c7f9407fc0e12c59e8699a2fdebc54f72d3068cf82b0"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\vitest-full-sequential.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/vitest-full-sequential.txt",
+      "sha256": "6e9c2d2bf720cfca066bb0ef3db2f27600a4d03755914d4b0d82feb48493572d"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\resource-measurement-limitation.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/resource-measurement-limitation.json",
+      "sha256": "2fee1123f366f47297f46614e78f78c16d632af4d17080767c87d248680c88c2"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\STOP-E2E-FAILURE.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-notice-recovery-20261108/STOP-E2E-FAILURE.json",
+      "sha256": "abdf55cef3d8ae09d5b2c45c9df03d68bbf3c552dc99ed6a14389342567f2d64"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\diagnosis.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/diagnosis.json",
+      "sha256": "8ea4322ae0e716d9491fb00208e82250afec6f2d4a2b4c9aba63422c02b0d396"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\baseline-provenance.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/baseline-provenance.json",
+      "sha256": "d83d432126af825270f07e728d33de384877d39152bfb0f804517e686b6d905a"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\integrity-final.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/integrity-final.json",
+      "sha256": "b29ebd94ca38ba078731e761357b27818557b4b9c14315abc15887aa081d410e"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\FINAL-STATUS.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/FINAL-STATUS.json",
+      "sha256": "8b5fd1880228ef1667554c3395c69544d60202fed384e7a84a4e13aeb1dc3c90"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\EVIDENCE-MANIFEST.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/EVIDENCE-MANIFEST.json",
+      "sha256": "053c0686f8c2d1affaaa9330ce3eecd34634d91849325e8070ca619e64b2d8d4"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\browser-diagnosis.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/browser-diagnosis.json",
+      "sha256": "39b6659172b80df9cd67fe95dc5244fc4fb41edc194de891932bf2c01f9b7c2b"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\browser-diagnosis.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/browser-diagnosis.txt",
+      "sha256": "b577ff1454203073cc4123fc0539dc50f6eff00352dbe7c2292aba0085ccd595"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-after-selector.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/four-e2e-after-selector.json",
+      "sha256": "8dc557971e2b12f7a4e1ff1cedebbfc861f809368d74b7a9787a6dd56114dd2f"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-after-selector.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/four-e2e-after-selector.txt",
+      "sha256": "e4fe24ed31731ca1f5b74a49bd813245af0f5681fcf5aaa8a7f7373b43534eac"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\e2e-all-relevant.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/e2e-all-relevant.json",
+      "sha256": "ed27396fb9987ea9958b25bb5b4722414dc89e60ff9861dd5a520da8a61bc7af"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\e2e-all-relevant.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/e2e-all-relevant.txt",
+      "sha256": "c569be613eeaeee8409918af8f2413292fe99023ff75adc69e643f893ee904c4"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\guard-regressions.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/guard-regressions.json",
+      "sha256": "b8cc15da4ff8ea37194ccc3a608e0bc38658eafdcc81748b51ce2179fc1f6c07"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\guard-regressions.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/guard-regressions.txt",
+      "sha256": "f74c25ab65cd07d31832bd8e53312c87f8f4216045e66551fba14f64a2db1714"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\academic-legacy-scope.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/academic-legacy-scope.json",
+      "sha256": "cd8a5a63dc45281d982830fe5529187ed0d5691f58860b3114e47a773946a5a5"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\academic-legacy-scope.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/academic-legacy-scope.txt",
+      "sha256": "f5f325115eb668f89c26c5224490de39bb94eae445c9814f47ec922eca66ffc8"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-global-check.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/format-global-check.json",
+      "sha256": "fd7e3242c3a20f75d8838a9891054071fb530785725b5cb14e9b94fbc0ebf9ba"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-global-check.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/format-global-check.txt",
+      "sha256": "d9971d90f7ce78309b4e8d40ae20145f88dd298cb9772221856c3692db6dfbfd"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\preexisting-format-findings.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/preexisting-format-findings.json",
+      "sha256": "a4338064e8895e0ba9d4751756e4e97606ede97b53d647a6aeab839f7ab2a910"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\causal-css-probes.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/causal-css-probes.json",
+      "sha256": "85137b23da3cb36a8b5372826cba1d7d8a6dbf69049cac672c816ca02385d60f"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\causal-css-probes.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/causal-css-probes.txt",
+      "sha256": "956469d1abb986cabf58c9e23d84f6b69d06c27af02826613b12d7010986fa40"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\causal-css-probes-properties.json",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/causal-css-probes-properties.json",
+      "sha256": "9332b00317a0832867ec33470732ae52d79cddd8276212a3f9abc476d1341031"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\causal-css-probes-properties.txt",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/pedagogical-e2e-recovery-20261108/causal-css-probes-properties.txt",
+      "sha256": "5e48629ad4e1d9717127c537e02f22d69010e2fb68ac07b0955b0635dcb26fce"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\chromium-current-320-200.png",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/layout/chromium-current-320-200.png",
+      "sha256": "2cc5d9e3ff344a2fca628c83b42da688125aecf1760f565a8e9a6d3ffde1e8a8"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\chromium-HEAD-no-notice-320-200.png",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/layout/chromium-HEAD-no-notice-320-200.png",
+      "sha256": "a6da574516f545b4326f2ff1e1f88dbcb314a85ee85965023e2942e074b2a4fa"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\firefox-current-320-200.png",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/layout/firefox-current-320-200.png",
+      "sha256": "6ba4e75c8030571be342b6a1db11377392d2c1be53d09e2e1ce3c334728edc77"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\firefox-HEAD-no-notice-320-200.png",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/layout/firefox-HEAD-no-notice-320-200.png",
+      "sha256": "a7ab89f3fe143d4db148fc1098d79d475d0611a6ce379fc378d1735298e1abcd"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\webkit-current-320-200.png",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/layout/webkit-current-320-200.png",
+      "sha256": "bebae7b818258fd32d545ab33bf3ebec05c24161f49e868bcfd58c755d098f17"
+    },
+    {
+      "source": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\webkit-HEAD-no-notice-320-200.png",
+      "destination": "docs/engineering/checkpoint-2026-11-08/evidence/layout/webkit-HEAD-no-notice-320-200.png",
+      "sha256": "1195bb41f771cf94b95d8d0e6dbc80e9b092f4ae5d8968b984db7d5fd690ce82"
+    }
+  ],
+  "localOnly": [
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\bank-before.json",
+      "sha256": "47ff00be3a7cfaf62bd1bd74dd353f70e5a7530dc0e9b28a29ac360213d128a9",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\formatting.json",
+      "sha256": "b5c8d72c89c9dd90333878e45bb9963786cc635f4aec3604f8d39fa437db8435",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\formatting.txt",
+      "sha256": "9e8b8d94d501a1428446e9b52a1a08d46796a187f6247e16640c865eabb0b738",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\lint.json",
+      "sha256": "bec950ca2d25e711e4fb300ed98b84fe78f60571998be27647eb4eba57a958bb",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\lint.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\preflight.json",
+      "sha256": "93a2b5c7e3d0d2c2844cedbb73c431cd0e9d6592f3ca77c85fe08173256495bf",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\recovery-typescript-red.json",
+      "sha256": "78e61333036f4fa1a2870ddb776811e82c2722b866d1470d0e0da3481b8e686a",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\recovery-typescript-red.txt",
+      "sha256": "20401d03f1a9dfe9e8bfa56e8561daa17f42866d82cc018831fc70f27223ed7e",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\run.py",
+      "sha256": "894da7e9b3dcb7eefb6b709ea04b38c8ce4c644322e1dad4158bb289942cc505",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\targeted-green.json",
+      "sha256": "4cc59992b558f5cd248351affd6ed5d4674228ddbe050ff7fc2164bccd587ae8",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\targeted-green.txt",
+      "sha256": "b07a76391103e32bc07e44bf65fa065d8188aa804bf6901b711d9f8fbd1cc750",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\tdd-green.json",
+      "sha256": "501706774864d9499897a1c35cd763b7a9dfbe64c418e25752ac5b3b0ce48b49",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-20261108\\tdd-green.txt",
+      "sha256": "9df020d2d0338fd982bc9ec26a6241155b4a6896b406516fcf76bc04c8c0caa1",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\build.json",
+      "sha256": "ce040028411d7485147b18cc8531b861a42b12b36deba3e6c1e96a6ec6770393",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\build.txt",
+      "sha256": "3be51a5b923ffc639e06670a3cc7872812f4fc3de664380c60bcf5aace1fb035",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\e2e-relevant.json",
+      "sha256": "df6d0aceb8cf6755edbe55c45be57dde09bdf6073466f9769d6bbe3aa5d82bc2",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\e2e-relevant.txt",
+      "sha256": "7f55f315ba5811c14e17507893a3085880f394e4338134016a641a0e06d6b667",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\experimental-isolation.json",
+      "sha256": "1f1c8a92b013580747eda64a9ed8da551cc3e8142b882a916fcb75165e91501f",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\experimental-isolation.txt",
+      "sha256": "70c949ed3e9a57786107fdcdda999e05c92c4c5633fd63049b43f0a201095597",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\format-test.json",
+      "sha256": "b61cd56686b9c36347d93a668c2b6937789354309fabbd5f481bd6216b60988d",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\format-test.txt",
+      "sha256": "8572d8ae4158f7473bc2c3a0362134e2541b29090a64c77f4281c2a3d9e9aea4",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\lint.json",
+      "sha256": "3e3f80d21842a38aba1e39ba62f2166fb3e9adbb5ff3ea370791cabd80a09a9d",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\lint.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\pedagogical-review-notice.before.tsx",
+      "sha256": "51cac8cdffe495463bf9b19d670256a971e3f34d482f916116fff04ce91bfc1c",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\preflight.json",
+      "sha256": "55dde2592e8f4694e0d8113b137fd46f57d9846a2df279446d5f5f9ebe7d8784",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\prior-typecheck.txt",
+      "sha256": "20401d03f1a9dfe9e8bfa56e8561daa17f42866d82cc018831fc70f27223ed7e",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\production-typecheck.json",
+      "sha256": "98a2d9187eeec51d5b1e4463d6b7f7bc2c460f3d5566750e9f3d7a7ca3b5c64c",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\production-typecheck.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\release-guard.json",
+      "sha256": "68db61e8676aa32d8520c801eeec9e7508206c8cb5d74e51d0f32c661a4a77f8",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\release-guard.txt",
+      "sha256": "a4dbb89849de8dca301962c9f6a81ef3ca057ea8adddde67a00f5aa3ba92e830",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\retained-assets.json",
+      "sha256": "d34c7845b4793b95144eb28d5bf1610f0477640c793c3aa646ca6fb46e58f171",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\retained-assets.txt",
+      "sha256": "dc6e8519f63c7d7ef03b67fbc084d81094d4ede26866bb26e941585ee7811c60",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\run.py",
+      "sha256": "5235747c63fddb3f53577b4fc0dba3bfd72d9cbe2852f6466211d40d0b4b9556",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\targeted-after-typescript.json",
+      "sha256": "b59b376791ae2c3886d6967ccb08f6af38cb50234f047d2855380e38467cbfae",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\targeted-after-typescript.txt",
+      "sha256": "ad6711ff19b80b56e10f78d49af15ec34e3fc9a79f80aafdc7d157e2552a0afb",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\.last-run.json",
+      "sha256": "83c5cc96fd07d9cd8fb077b1be5578142b999b4a7df54bd81149db71a8bf12b3",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\error-context.md",
+      "sha256": "977a2b2829d55fe1b5a04d8a3c449c26028f540e87f8db0473b65ce998532519",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\trace.zip",
+      "sha256": "51bec11e0a6759588e8e3dc12d550f888495a75b744f3ee00d9735a32cee020e",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\error-context.md",
+      "sha256": "977a2b2829d55fe1b5a04d8a3c449c26028f540e87f8db0473b65ce998532519",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\trace.zip",
+      "sha256": "60d3c087fd542f27f38adb00ea78a055608fce9c7179b0bd9a8adeb58d37d7ec",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-mobile\\error-context.md",
+      "sha256": "c00d534415af031924122872ea101c2fbfa045c0c0f845f733c1c87f41620e0a",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-mobile\\notice-320-text-200-percent.png",
+      "sha256": "c04e3ab4377e6a98807bacadbbfc0a84d57e2b016bee572981648837dd05c6a0",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-mobile\\trace.zip",
+      "sha256": "172c1efa4b43eabf1e2ccaa0efc629c5bc9de0d525338ef09839c09f041063e7",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\error-context.md",
+      "sha256": "9f5da7756984ee81cde20e8db21757ca3ac27fe4227d8a77c277c221e40fd4c7",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-notice-recovery-20261108\\playwright-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\trace.zip",
+      "sha256": "992c486b70be353e79edffe54ad126c2ec91abc6a2ddb204c8ae01eb05e2733f",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\baseline-build.json",
+      "sha256": "53aceb7835d2dea9c1a9264195536f23f5cf49e1dc56559bac1d73b516fffc74",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\baseline-build.txt",
+      "sha256": "249d1f1226f677a0aff9afceae7d177cbbf96b7f2151f8818482be4561e9a8e9",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\build.json",
+      "sha256": "2dcefc0b77a08928f3d880e3b2b7c6a7df875cedfee0b40347563249fcd8eced",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\build.txt",
+      "sha256": "50975a19a1b8d598542a4d13e75d2161324e35d0a7ef5d40f57acb45d487ea67",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\chromium-baseline-transient-causal-probe.png",
+      "sha256": "e7fa6908fbb8f2285ffa829438ee4cd3880e517f0708d18beb3b23581235e31a",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\constraint-probes.cjs",
+      "sha256": "4d3183517939ffbcf5684c393c3ff408cc6ba927414be9290740b4f41e99bd14",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\diagnose.cjs",
+      "sha256": "9b9e2c9a466c81751f213847ab0474510f14885654b4bbb0ccccb3efb21420d3",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\diff-check.json",
+      "sha256": "499afa3d1ed6c7a285a211099db02264ad27173363f1452225ce10d2657b7f0f",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\diff-check.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\e2e-before.spec.ts",
+      "sha256": "be60358f86ed7d42eafae3ba0bd2358b5737d0f1edb9f7c37d75d022c9583614",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-final-check.json",
+      "sha256": "0a0c662a4bfaf307f6086c0f012884b9d37355a1aa8312292e4a86c068e4b937",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-final-check.txt",
+      "sha256": "acc6cad55ff3e3c40e354133ade4a4c74da311969b2d25732ba8d29b4369ab25",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-new-negative.json",
+      "sha256": "875029f9374553736fbc747c8aa6d5d4ad39670534d1b63e6daec61b946ebfd5",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-new-negative.txt",
+      "sha256": "4313af244dfbf0301f8b74be5131323475cfa8a1bdb3d05a9e4353eee9d6cf71",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-owned-check.json",
+      "sha256": "e9511a009ae2e275f0938c7016e14412b20fcea2e1f147966a769246c7c16eec",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-owned-check.txt",
+      "sha256": "acc6cad55ff3e3c40e354133ade4a4c74da311969b2d25732ba8d29b4369ab25",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-owned.json",
+      "sha256": "3633e570383d6fea88b10b60260ef78102fed88ee7dab7252e27e5e2bc2a7671",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-owned.txt",
+      "sha256": "d8505e981a87121469cd56321c711f3f5f00590c4b03e7182c53b67064769ee1",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-report-final.json",
+      "sha256": "62a1fb74abad83d45de230b2805963abed5919194eee5d8dfa1ef749202c222a",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\format-report-final.txt",
+      "sha256": "afef31684cf95a381b2339848b6d280eef845c486f29afb5a793cc56eb4d41ac",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\full-vitest-sequential.json",
+      "sha256": "997dce582dfe6a6d5eb5e91cb865a079763385830dfc94794ddd26a133b53e50",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\full-vitest-sequential.txt",
+      "sha256": "12a0458540e08328abd30fe44b0a1ae794d154e0f06a7e75a0e17e29646f4ead",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\git-status-final.txt",
+      "sha256": "e6f5388657f7339a685fb11938719d8ed0c3acf7efe460fe6fc5b8560ae17ee8",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\isolation.json",
+      "sha256": "300db312b87483acf7c34a9ae2d7d7c9ff8a4396df645208b8e52fbbf7193e80",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\isolation.txt",
+      "sha256": "70c949ed3e9a57786107fdcdda999e05c92c4c5633fd63049b43f0a201095597",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\lint.json",
+      "sha256": "394057d752f7ff892e9fd4515e9746d62134638a42e208123a1cd5c25a7d9dc3",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\lint.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\mobile-correct-feedback.png",
+      "sha256": "fc15bb4be1f12ea7aece67a6f13e746b42f68b31fea502890fe457e2f2b46e65",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\preflight.json",
+      "sha256": "6b31c9f891dd26aef1b37e23dd9e8ad6e6137038d771e2072fb5e111a24a767f",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\prepare-baseline.py",
+      "sha256": "b603a237894cd01077b1d52bf9f5d75d0f403e134af47fd810bb373549a2259a",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\production-typecheck.json",
+      "sha256": "e68dc4c84b25dac8bf5afa5364bf473e954abed839f050e9fb4d53a3c77dbd7f",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\production-typecheck.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\release.json",
+      "sha256": "10931b4350616567338a4f29fcd161c4b9d8066583e4222f05ac919b4eac83c8",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\release.txt",
+      "sha256": "a4dbb89849de8dca301962c9f6a81ef3ca057ea8adddde67a00f5aa3ba92e830",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\retained.json",
+      "sha256": "68125fa75dc5caed287cea6522cf31d970492580cbe0b45840631086301a29e2",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\retained.txt",
+      "sha256": "dc6e8519f63c7d7ef03b67fbc084d81094d4ede26866bb26e941585ee7811c60",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\run.py",
+      "sha256": "ff6dcdbc17dd4ddfff79717d0f915e29ccba59ff829f64009cfc68848e84f846",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\typescript.json",
+      "sha256": "4fc6f6a30670af23fe16d158242bfacbdd4bf8dae26e7ee1f4670e8a2ed6c2ac",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\typescript.txt",
+      "sha256": "1643f6abc16fad2d66c6268cab1c723e3fcd3a05afd75615b8fb99e26fd58011",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\.last-run.json",
+      "sha256": "0eb2d1bc1ed814d67a4d1199ccc1796ed21b5f810c6fe27503d76ceb995ba782",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\error-context.md",
+      "sha256": "ad8775755abab6f570820ec99f5559a29e05b7e30b0f4c87068f4fb4bec46122",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\trace.zip",
+      "sha256": "786715181cf368c18c6d654e843d56f7e4774e4ef0208c7bc8458bb3602a4a95",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\error-context.md",
+      "sha256": "ad8775755abab6f570820ec99f5559a29e05b7e30b0f4c87068f4fb4bec46122",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\trace.zip",
+      "sha256": "ff615d0fc989b003af92a5fc3e4af256376d377d3d6b89ba912a2b4b47402759",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-mobile\\notice-320-text-200-percent.png",
+      "sha256": "c04e3ab4377e6a98807bacadbbfc0a84d57e2b016bee572981648837dd05c6a0",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\error-context.md",
+      "sha256": "5d60663070a2b4d07190f084b688474c2c21a7442b6e0d014e0d4eeebcb25cee",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\all-relevant-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\trace.zip",
+      "sha256": "02dda384c357c994b011c36a55169b7c58e8b9c9df159ccc6ca11e89c2047d7a",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\.last-run.json",
+      "sha256": "0eb2d1bc1ed814d67a4d1199ccc1796ed21b5f810c6fe27503d76ceb995ba782",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\error-context.md",
+      "sha256": "ad8775755abab6f570820ec99f5559a29e05b7e30b0f4c87068f4fb4bec46122",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-chromium\\trace.zip",
+      "sha256": "d39cf69cedcfc302554e2c7dc02e921fbc7061fcf4a9c6e309d268fedfb4e404",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\error-context.md",
+      "sha256": "ad8775755abab6f570820ec99f5559a29e05b7e30b0f4c87068f4fb4bec46122",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-firefox\\trace.zip",
+      "sha256": "24a3cb960f32f8a766c64dcad9dea572902a7ac73224698fd3cb52638ba58bca",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-mobile\\notice-320-text-200-percent.png",
+      "sha256": "c04e3ab4377e6a98807bacadbbfc0a84d57e2b016bee572981648837dd05c6a0",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\error-context.md",
+      "sha256": "5d60663070a2b4d07190f084b688474c2c21a7442b6e0d014e0d4eeebcb25cee",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    },
+    {
+      "path": "C:\\TestLearn\\tmp\\pedagogical-e2e-recovery-20261108\\four-e2e-results\\pedagogical-review-notice--ea1d2-e-retains-answers-and-score-webkit\\trace.zip",
+      "sha256": "27e511a390ff05a3591ba2f2c18f76bee6ab459615460956fcf702e580a5031c",
+      "reason": "Original remains local; detailed temporary trace/build/helper or duplicate evidence excluded from public checkpoint. Selected sanitized reports/logs and key screenshots are preserved."
+    }
+  ],
+  "frozenAcademicZIP": {
+    "path": "evidence/reconciliation-baseline.zip",
+    "sha256": "ed772087d8fbbb87a989676095a2756436d1a1f60dc08bb96b40edcf13691ff7",
+    "members": 597
+  },
+  "ignoredCategories": [
+    "dist/",
+    "node_modules/",
+    "playwright-report/",
+    "test-results/",
+    "tmp/",
+    "tsconfig.tsbuildinfo"
+  ],
+  "integrity": {
+    "questions": 90,
+    "alternatives": 364,
+    "objectives": 64,
+    "archives": 9,
+    "revision": "2026-10-27.10",
+    "humanPending": 90
+  },
+  "gitNormalization": "Existing text=auto eol=lf may normalize plain-text Git blobs. Original academic bytes and metadata remain recoverable from the authenticated binary ZIP; original working files are not rewritten."
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-024",
+    "lo": "FL-4.5.2",
+    "level": "K2",
+    "text": {
+      "en": "A team needs an acceptance example that explicitly states the starting context, triggering action and observable expected result. Which criterion best meets that need?",
+      "pt": "Uma equipa precisa de um exemplo de aceitação que explicite o contexto inicial, a ação desencadeadora e o resultado esperado observável. Que critério melhor satisfaz essa necessidade?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "When the basket opens, calculate its total by calling the pricing service",
+          "pt": "Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "A basket with no items must have a total of zero.",
+          "pt": "Um cesto sem artigos deve ter um total igual a zero."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The basket total must equal the sum of its item prices.",
+          "pt": "O total do cesto deve ser igual à soma dos preços dos seus artigos."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Given an empty basket, when opened, then show a zero total",
+          "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-030",
+    "lo": "FL-5.1.6",
+    "level": "K1",
+    "text": {
+      "en": "Which distribution is generally encouraged by a test pyramid?",
+      "pt": "Que distribuição é geralmente incentivada pela pirâmide de testes?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Many large end-to-end tests, fewer isolated low-level tests",
+          "pt": "Muitos testes grandes de ponta a ponta, menos testes pequenos e isolados"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Many integration tests, fewer component and end-to-end tests",
+          "pt": "Muitos testes de integração, menos testes de componente e de ponta a ponta"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Many small low-level tests, fewer large end-to-end tests",
+          "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Equal numbers of tests at each level",
+          "pt": "Um número igual de testes em cada nível"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-032",
+    "lo": "FL-5.1.3",
+    "level": "K2",
+    "text": {
+      "en": "A team requires an available test environment before system testing starts and stakeholder acceptance of the residual risk before declaring testing complete. How are these classified?",
+      "pt": "Uma equipa exige a disponibilidade do ambiente de teste antes de iniciar o teste de sistema e a aceitação do risco residual pelos stakeholders antes de declarar os testes concluídos. Como se classificam estes critérios?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Both are entry criteria",
+          "pt": "Ambos são critérios de entrada"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Exit criterion, then entry criterion",
+          "pt": "Critério de saída, depois critério de entrada"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Entry criterion, then exit criterion",
+          "pt": "Critério de entrada, depois critério de saída"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Both are exit criteria",
+          "pt": "Ambos são critérios de saída"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-033",
+    "lo": "FL-5.2.2",
+    "level": "K2",
+    "text": {
+      "en": "Which possibility is a product risk rather than a project risk?",
+      "pt": "Qual das seguintes possibilidades é um risco de produto em vez de um risco de projeto?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "A tester leaves the team",
+          "pt": "Um testador sai da equipa"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "A test environment arrives late",
+          "pt": "Um ambiente de teste chega atrasado"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "An invoice calculates the wrong tax",
+          "pt": "Uma fatura calcula imposto incorreto"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "A test-tool supplier misses the agreed delivery date",
+          "pt": "Um fornecedor de uma ferramenta de teste falha a data de entrega acordada"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-040",
+    "lo": "FL-6.2.1",
+    "level": "K1",
+    "text": {
+      "en": "A team is planning test automation. Which issue should be recorded as a risk rather than an expected benefit?",
+      "pt": "Uma equipa está a planear a automação de testes. Que questão deve ser registada como risco em vez de benefício esperado?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Obtaining tool-supported coverage metrics that would be difficult to collect by hand",
+          "pt": "Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Underestimating the effort to maintain automated test scripts",
+          "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Reducing repetitive manual test execution effort",
+          "pt": "Reduzir o esforço de execução manual repetitiva de testes"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Improving the repeatability of test execution",
+          "pt": "Melhorar a repetibilidade da execução de testes"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-044",
+    "lo": "FL-5.1.7",
+    "level": "K2",
+    "text": {
+      "en": "Business representatives explore a working reporting dashboard to discover awkward user workflows and challenge whether it meets their needs. In the testing quadrants model, which quadrant best describes this activity?",
+      "pt": "Representantes do negócio exploram um painel de relatórios funcional para descobrir dificuldades nos fluxos dos utilizadores e questionar se satisfaz as suas necessidades. No modelo dos quadrantes de testes, que quadrante melhor descreve esta atividade?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Q3: business-facing tests that critique the product.",
+          "pt": "Q3: testes orientados para o negócio que criticam o produto."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Q1: technology-facing tests that support the team.",
+          "pt": "Q1: testes orientados para a tecnologia que suportam a equipa."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Q4: technology-facing tests that critique the product.",
+          "pt": "Q4: testes orientados para a tecnologia que criticam o produto."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Q2: business-facing tests that support the team.",
+          "pt": "Q2: testes orientados para o negócio que suportam a equipa."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-055",
+    "lo": "FL-3.1.2",
+    "level": "K2",
+    "text": {
+      "en": "Before implementation, a review of a data-export specification reveals two incompatible retention rules. The product owner resolves the conflict before code and tests are derived. What is the main value of static testing in this situation?",
+      "pt": "Antes da implementação, uma revisão da especificação de exportação de dados revela duas regras de conservação incompatíveis. O product owner resolve o conflito antes de serem derivados o código e os testes. Qual é o principal valor do teste estático nesta situação?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "It confirms that implementing either documented rule would satisfy the users' retention needs.",
+          "pt": "Confirma que implementar qualquer uma das regras documentadas satisfaria as necessidades de conservação dos utilizadores."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "It provides runtime evidence that exported data complies with the agreed retention period.",
+          "pt": "Fornece evidência em execução de que os dados exportados cumprem o período de conservação acordado."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "It establishes the regression test results that will be needed after the retention logic changes.",
+          "pt": "Estabelece os resultados dos testes de regressão que serão necessários após alterações à lógica de conservação."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "It prevents the conflicting rules from propagating into derived work products and reduces potential later rework.",
+          "pt": "Evita que as regras contraditórias se propaguem para os produtos de trabalho derivados e reduz o potencial retrabalho posterior."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-056",
+    "lo": "FL-3.2.1",
+    "level": "K1",
+    "text": {
+      "en": "A team asks warehouse staff to review short demonstrations of an evolving picking workflow each week. Which benefit is associated with early and frequent stakeholder feedback?",
+      "pt": "Uma equipa pede semanalmente aos trabalhadores do armazém que revejam pequenas demonstrações de um fluxo de preparação de encomendas em evolução. Que vantagem está associada ao feedback antecipado e frequente dos stakeholders?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "A replacement for acceptance criteria because users have already seen the workflow.",
+          "pt": "Uma substituição dos critérios de aceitação porque os utilizadores já viram o fluxo."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "A stable baseline that makes later requirement changes unnecessary.",
+          "pt": "Uma base de referência estável que torna desnecessárias alterações posteriores aos requisitos."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Earlier discovery of misunderstandings about user needs, reducing the risk of costly rework.",
+          "pt": "Descoberta mais cedo de equívocos sobre as necessidades dos utilizadores, reduzindo o risco de retrabalho dispendioso."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Evidence that all warehouse staff will accept the completed implementation.",
+          "pt": "Evidência de que todos os trabalhadores do armazém aceitarão a implementação concluída."
+        }
+      }
+    ]
+  }
+]

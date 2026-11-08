@@ -1,0 +1,167 @@
+{
+  "diagnostics": [
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 40,
+      "column": 60,
+      "code": "TS2769",
+      "sourceLine": "    const notice = screen.getByRole('note', { name: title, exact: true });",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 56,
+      "column": 9,
+      "code": "TS2769",
+      "sourceLine": "        exact: true,",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 87,
+      "column": 64,
+      "code": "TS2769",
+      "sourceLine": "    screen.queryByRole('button', { name: 'Confirmar resposta', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 93,
+      "column": 7,
+      "code": "TS2769",
+      "sourceLine": "      exact: true,",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 97,
+      "column": 52,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Seguinte', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 101,
+      "column": 52,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Anterior', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 105,
+      "column": 56,
+      "code": "TS2769",
+      "sourceLine": "    screen.queryByRole('region', { name: 'Explica\u00e7\u00e3o', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 136,
+      "column": 7,
+      "code": "TS2769",
+      "sourceLine": "      exact: true,",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 140,
+      "column": 62,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Confirmar resposta', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 144,
+      "column": 54,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('region', { name: 'Explica\u00e7\u00e3o', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 147,
+      "column": 52,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Seguinte', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 150,
+      "column": 56,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('heading', { name: other.text.pt, exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 155,
+      "column": 52,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Anterior', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 160,
+      "column": 59,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Terminar sess\u00e3o', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 163,
+      "column": 64,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('button', { name: 'Confirmar e terminar', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    },
+    {
+      "file": "tests/integration/pedagogical-review-notice.test.tsx",
+      "lineBefore": 166,
+      "column": 50,
+      "code": "TS2769",
+      "sourceLine": "    screen.getByRole('heading', { name: '1 / 2', exact: true }),",
+      "cause": "Unsupported exact option in Testing Library ByRoleOptions; name string is already exact in installed queryAllByRole/matches implementation",
+      "fix": "Remove only incompatible exact property; retain identical accessible name matcher and assertions"
+    }
+  ],
+  "sameAsHistorical16": true,
+  "installedVersions": {
+    "@testing-library/react": "16.3.3",
+    "@testing-library/dom": "10.4.2"
+  },
+  "apiEvidence": [
+    {
+      "path": "node_modules/@testing-library/dom/types/queries.d.ts",
+      "sha256": "a934063af84f8117b8ce51851c1af2b76efe960aa4c7b48d0343a1b15c01aedf"
+    },
+    {
+      "path": "node_modules/@testing-library/dom/dist/queries/role.js",
+      "sha256": "b84766f4caa2005fca0968aa353e213ce7ae70ed1fad009f59f3fa96cdf496cc"
+    },
+    {
+      "path": "node_modules/@testing-library/dom/dist/matches.js",
+      "sha256": "dd2eb866168551c34477ab57ce2371c828bc775c06f11f0da060019bbdabc6a8"
+    }
+  ]
+}

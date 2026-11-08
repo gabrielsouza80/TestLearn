@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "v4.0.1; 2024-09-15",
+      "fileName": "ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [24, 29, 30, 47, 52, 53],
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "provenance": "Official copy supplied in project source library, read and hashed in this session. Official EN and PT endpoints accessible this execution. Official local copies read and hashed; no remote raw-byte equality claim.",
+      "pageConvention": "Physical PDF page including cover as1; offsets checked individually."
+    },
+    {
+      "language": "PT",
+      "edition": "v4.0; tradução 1.0; 21-04-2023",
+      "fileName": "ISTQB_CTFL_Syllabus-v4.0-PT_v1.0 (1).pdf",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [26, 31, 32, 33, 52, 58, 59],
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "provenance": "Official copy supplied in project source library, read and hashed in this session. Official EN and PT endpoints accessible this execution. Official local copies read and hashed; no remote raw-byte equality claim.",
+      "pageConvention": "Physical PDF page including cover as1; offsets checked individually."
+    }
+  ],
+  "consultedOn": "2026-11-08",
+  "limitations": "EN4.0.1 and PT4.0 translation1.0 are distinct editions, not textually identical. Syllabus sections suffice for these concepts; no separate glossary consultation claimed. Examples and counterexamples are reviewer contextual interpretations, not new official business rules. Full copyrighted PDFs/page texts are not bundled."
+}

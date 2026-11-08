@@ -1,0 +1,1038 @@
+{
+  "scope": "Phase 10H Batch 11 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-06",
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-002",
+      "learningObjective": "FL-1.2.2",
+      "cognitiveLevel": "K1",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df",
+      "afterCanonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.2.2": {
+          "EN": [17],
+          "PT": [18]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "Melhorar a forma como a equipa realiza revisões é melhoria preventiva do processo. Executar um teste, reportar uma falha ou rever um módulo são atividades centradas no produto, mesmo quando os seus resultados alimentam QA. Primarily/principalmente mantém esse foco principal, não uma separação absoluta de pessoas ou de toda a informação.",
+      "counterEvidencePT": "Uma revisão pode incluir avaliação do cumprimento de processos e ser usada numa auditoria de QA; contudo, a opção o4 especifica revisão do código-fonte do módulo, não auditoria do processo. Reportar falhas também pode desencadear melhoria, mas reportar o problema do produto não equivale por si a melhorar o processo.",
+      "translationAssessmentPT": "Primarily/principalmente preserva o qualificador. Improving/melhorar descreve a mesma ação sobre o processo de revisão. Checkout/compra refere uma operação do produto. EN especifica product failure in a build; PT usa falha numa versão: produto e build são menos explícitos em PT, mas o contexto mantém falha do software, sem transformar a atividade em melhoria processual.",
+      "pedagogyAssessmentPT": "K1: reconhecimento da relação entre testes e QA. Baixa dificuldade e distratores claros são adequados ao reconhecimento; a alternativa o4 exige distinguir o objeto revisto do processo de revisão. As explicações curtas de o2/o3 são suficientes em conjunto com a explicação geral e a de o4. A expressão finds defects directly descreve deteção estática, não garantia de encontrar defeitos em toda revisão.",
+      "editionDifferencePT": "EN descreve testing como abordagem corretiva do produto; PT apresenta QC e situa testes como uma das suas formas. Ambos situam QA como prevenção e melhoria processual. Não se inferiu que QA tem sucesso garantido nem que testes sejam executados só por uma profissão.",
+      "criticalPairs": [
+        {
+          "en": "primarily",
+          "pt": "principalmente"
+        },
+        {
+          "en": "Improving the team review process",
+          "pt": "Melhorar o processo de revisão da equipa"
+        },
+        {
+          "en": "Reviewing the source code",
+          "pt": "Rever o código-fonte"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0001a37ce447e7a46ad3688ba8e077b9016b71360caf4814701b5ad1ba12b1fe",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "be587591b0485d8292577931de988ef73b0846ea6cfde546b24779254d5780dd",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "be587591b0485d8292577931de988ef73b0846ea6cfde546b24779254d5780dd",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "be587591b0485d8292577931de988ef73b0846ea6cfde546b24779254d5780dd",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "30b519fff79e908c8b5be9944ccb2c76a7c42f98843482b777710a092b6ee8c2",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "30b519fff79e908c8b5be9944ccb2c76a7c42f98843482b777710a092b6ee8c2",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-003",
+      "learningObjective": "FL-1.1.2",
+      "cognitiveLevel": "K2",
+      "questionVersion": 4,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0",
+      "afterCanonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.1.2": {
+          "EN": [16],
+          "PT": [17]
+        },
+        "2.2.3": {
+          "EN": [30],
+          "PT": [33]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "A combinação de diagnosticar o defeito que causou a falha e reparar código identifica debugging. A questão não diz que todo o ato de encontrar defeitos é debugging: testes estáticos encontram-nos diretamente. Comparar resultados de um novo teste, confirmar uma correção e procurar efeitos adversos são atividades de teste no contexto especificado.",
+      "counterEvidencePT": "Reproduzir uma falha, executar instrumentação e comparar resultados também podem ocorrer em debugging. Isso não faz da descrição completa de o2 a melhor resposta em vez de testes: ali se diz execução de um novo teste. Uma pessoa pode desempenhar ambos os trabalhos. A chave depende do diagnóstico/remoção em o1, não do cargo ou da reprodução isolada.",
+      "translationAssessmentPT": "Diagnosing/diagnosticar e repairing/corrigir conservam as duas ações de o1. May/pode na explicação evita tornar reprodução obrigatória. Actual and expected/obtidos e esperados, confirmation/confirmação e adverse effects/efeitos adversos são equivalentes. Debugging (depuração) torna o empréstimo explícito.",
+      "pedagogyAssessmentPT": "K2: diferenciar tipos de atividades, apesar de a opção correta ser reconhecível e o cenário mínimo. Compreender a diferença entre diagnóstico/remoção e verificação justifica o nível. A explicação de o2 explicita a sobreposição da reprodução e evita a falsa regra de exclusividade. A comparação lexical dos PDFs exige a ressalva de tradução abaixo.",
+      "editionDifferencePT": "Diferença real dos textos: EN 4.0.1, p.16, diz “Diagnosis (finding the defect)”; PT 4.0 tradução1.0, p.17, diz “Diagnóstico (encontrar a causa raiz do defeito)” e “Corrigir a causa”. O parágrafo PT envolvente continua a falar nas causas da falha (defeitos) e na sua eliminação. Não são PDFs textualmente idênticos. Para o item, localizar/reparar o defeito segue o EN primário e o contexto de ambos; não se impõe uma investigação organizacional de causa raiz em todo debugging.",
+      "criticalPairs": [
+        {
+          "en": "rather than testing",
+          "pt": "em vez de aos testes"
+        },
+        {
+          "en": "Diagnosing the defect",
+          "pt": "Diagnosticar o defeito"
+        },
+        {
+          "en": "repairing the faulty code",
+          "pt": "corrigir o código incorreto"
+        },
+        {
+          "en": "can also be part of debugging",
+          "pt": "também pode fazer parte do debugging"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a27a7105aac68e3e46e55eb30af267af95181c8326135c58909eaee2dbcd7b61",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "63022f92eb3bc79277cc1e875c00f13327383e2999fa71a9cb0f61ac1450befa",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "63022f92eb3bc79277cc1e875c00f13327383e2999fa71a9cb0f61ac1450befa",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "63022f92eb3bc79277cc1e875c00f13327383e2999fa71a9cb0f61ac1450befa",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "5c9274bacd737c25875f67dab6f4a545cf5571d84eb0c7a8e417a0448769de95",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "5c9274bacd737c25875f67dab6f4a545cf5571d84eb0c7a8e417a0448769de95",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-004",
+      "learningObjective": "FL-1.2.3",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e",
+      "afterCanonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.2.3": {
+          "EN": [17],
+          "PT": [18, 19]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "O objeto perguntado é a fórmula incorreta escrita, isto é, um defeito no produto de trabalho. A interpretação incorreta é erro humano. O cenário não declara execução nem resultado observado, e não fornece uma causa subjacente do processo. Pode haver falha ao executar o defeito, mas ela não é inevitável em todos os dados e percursos.",
+      "counterEvidencePT": "Na linguagem comum chama-se erro à fórmula; neste contexto de conceitos ISTQB é necessário distinguir a ação humana da imperfeição no artefacto. Um defeito pode ser causa de uma falha, mas isso não prova que seja a causa raiz do processo de desenvolvimento pedida em o4. Não se exige que o leitor invente formação insuficiente, pressa ou uma execução específica.",
+      "translationAssessmentPT": "Misunderstands/interpreta mal, wrong formula/fórmula errada e observed failure/falha observada preservam causa e objeto. May cause/pode causar conserva possibilidade. O exemplo fiscal é apenas domínio sintético; não pede conhecimento de regras tributárias.",
+      "pedagogyAssessmentPT": "K2: distinguir conceitos aplicando-os a um exemplo simples. A explicação geral liga os quatro conceitos e afirma explicitamente a ausência de causa raiz específica; a brevidade de o2/o3 não elimina essa fundamentação. Não se deduz que todos os erros produzam defeitos ou que todos os defeitos causem falhas.",
+      "editionDifferencePT": "EN p.17 e PT pp.18–19 admitem falhas condicionais e causas subjacentes. PT explicita possibilidade também na introdução de defeitos. Não se transfere uma relação possível para uma regra inevitável.",
+      "criticalPairs": [
+        {
+          "en": "misunderstands",
+          "pt": "interpreta mal"
+        },
+        {
+          "en": "An observed failure",
+          "pt": "Uma falha observada"
+        },
+        {
+          "en": "may cause",
+          "pt": "pode causar"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "83f4853efe69021438443ae3c78a4d67ae4fdb4e99710b17d0292f3cefeae3b4",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-005",
+      "learningObjective": "FL-1.3.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35",
+      "afterCanonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.3": {
+          "EN": [17, 18],
+          "PT": [19]
+        },
+        "2.2.3": {
+          "EN": [30],
+          "PT": [33]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "As falhas relatadas não são exercitadas pela bateria existente. Rever testes e dados para lacunas, conservando regressão útil, responde ao princípio de desgaste dos testes. Não é um pedido para executar apenas confirmação da última correção nem para abandonar a bateria anterior; não há promessa de deteção exaustiva ou de ausência de defeitos.",
+      "counterEvidencePT": "Alterar a ordem pode revelar novas falhas dependentes de estado; repetir mais vezes pode revelar intermitência. Esses são contraexemplos reais a uma leitura universal dos distratores. Porém o cenário não identifica essas causas e o1 é a revisão abrangente que pode decidir os testes e dados adequados. O4 não é uma segunda melhor resposta apenas por poder ajudar num caso especializado. A explicação de o4 deve ser lida como insuficiência da técnica isolada face à lacuna, não impossibilidade universal de revelar novas falhas.",
+      "translationAssessmentPT": "Suite/bateria designa conjunto de testes, não um único caso ou uma ferramenta. Repeated/repetidas, unchanged/inalterados, missing/em falta e retaining/mantendo mantêm a política de conservar cobertura útil. A explicação o2 usa can/pode e a o4 may/pode, preservando benefícios possíveis sem garantia.",
+      "pedagogyAssessmentPT": "K2: relacionar o comportamento observado com um princípio e escolher uma resposta apropriada; não se exige cálculo ou desenho completo de uma bateria. É uma faceta do LO dos sete princípios, não prova de domínio dos sete. Há uma melhoria opcional da explicação de o4 para reforçar a ausência de garantia de cobertura, registada separadamente.",
+      "editionDifferencePT": "EN princípio5 permite modificar testes/dados e criar novos testes, conservando o benefício de regressão repetida; PT p.19 faz a mesma ressalva. A terminologia de confirmação/regressão apoia a distinção mas o LO primário é 1.3, não 2.2.3.",
+      "criticalPairs": [
+        {
+          "en": "suite",
+          "pt": "bateria"
+        },
+        {
+          "en": "retaining useful regression checks",
+          "pt": "mantendo verificações de regressão úteis"
+        },
+        {
+          "en": "may reveal order dependencies",
+          "pt": "pode revelar dependências de ordem"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3ab8f71c15eb84d361ad12acdb97658912a518d6125ddeebb1f5bd907c262b85",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-007",
+      "learningObjective": "FL-1.4.4",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a",
+      "afterCanonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.4.4": {
+          "EN": [20, 21],
+          "PT": [22, 23]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "As ligações ajudam a localizar testes potencialmente afetados por uma alteração do requisito. Não executam testes nem inferem automaticamente os resultados esperados atualizados. May/podem conserva a natureza potencial da necessidade de revisão: uma ligação não exige editar todos os testes.",
+      "counterEvidencePT": "Ferramentas podem ligar requisitos a resultados e mostrar cobertura ou gerar testes a partir de especificações executáveis. Contudo, o cenário apenas fornece ligações requisito-teste, não atualização automática validada nem uma nova execução. Esses contextos adicionais não justificam o2 ou o3. A ausência de edição do script também não prova ausência de impacto.",
+      "translationAssessmentPT": "Requirement-to-test links/ligações entre requisitos e testes conserva as extremidades da relação. Conditions/condições e expected results/resultados esperados referem o conteúdo do teste. May need revision/podem precisar de revisão é possibilidade em ambas as línguas; still pass/continuam a passar exige evidência que ligações isoladas não dão.",
+      "pedagogyAssessmentPT": "K2: explicar um benefício concreto de rastreabilidade numa mudança, distinguindo relações de resultados. A explicação correta é muito breve mas precisa; os distratores explicam limites e complementam-na. Não é questão de independência de testes, que corresponde a FL-1.5.3 e não a este ID/LO. Não se avaliou outra questão para forçar a orientação inicial.",
+      "editionDifferencePT": "EN pp.20–21 e PT pp.22–23 sustentam análise de impacto e cobertura. Independência de testes não é o conceito normativo deste item. Nenhuma evidência de execução nasce automaticamente de uma ligação.",
+      "criticalPairs": [
+        {
+          "en": "requirement-to-test links",
+          "pt": "ligações entre requisitos e testes"
+        },
+        {
+          "en": "may need revision",
+          "pt": "podem precisar de revisão"
+        },
+        {
+          "en": "not a new execution result",
+          "pt": "não um novo resultado de execução"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f199f05e5cc6ef6d6d4f314faa8961f3a07c46a774b5795be9cb236b7ade19fb",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-009",
+      "learningObjective": "FL-2.1.2",
+      "cognitiveLevel": "K1",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c",
+      "afterCanonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "2.1.2": {
+          "EN": [25, 26],
+          "PT": [27, 28]
+        }
+      },
+      "LOPages": {
+        "EN": [24],
+        "PT": [26]
+      },
+      "assessmentPT": "Boa prática transversal: iniciar análise de teste durante a atividade de desenvolvimento correspondente, a partir de produtos preliminares disponíveis. Isso não afirma que software inexistente pode ser executado; análise/revisão e execução têm pré-requisitos diferentes. Os níveis conservam objetivos distintos.",
+      "counterEvidencePT": "Alguns testes dinâmicos precisam de código executável e um ambiente disponível, e os ciclos de vida organizam atividades de forma distinta. Isso não é fundamento para adiar toda análise até acabar implementação. Revisões podem ser informais e os objetivos entre níveis podem sobrepor-se parcialmente; nem isso torna os objetivos globalmente idênticos ou elimina o valor de revisões precoces.",
+      "translationAssessmentPT": "During related development work/durante o desenvolvimento relacionado conserva correspondência temporal. Available draft work products/produtos preliminares disponíveis mantém a condição de existência de uma base, não código final. Across/aos vários não obriga a todos os projetos terem o mesmo calendário ou formato de documentação.",
+      "pedagogyAssessmentPT": "K1: reconhecer boa prática geral; não requer aplicar um plano de ciclo de vida. As explicações de o2/o4 explicitam a distinção entre esperar por código e analisar rascunhos, compensando a brevidade da explicação geral. Não há contradição entre início precoce e adaptação de contexto.",
+      "editionDifferencePT": "EN pp.25–26 e PT pp.27–28 distribuem as boas práticas por duas páginas. Não se assumiu um deslocamento universal entre documentos. As duas versões suportam análise correspondente e revisão de rascunhos.",
+      "criticalPairs": [
+        {
+          "en": "during related development work",
+          "pt": "durante o desenvolvimento relacionado"
+        },
+        {
+          "en": "available draft work products",
+          "pt": "produtos preliminares disponíveis"
+        },
+        {
+          "en": "the same test objectives",
+          "pt": "os mesmos objetivos de teste"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fde2f7e471fa7452e8dc63a8c295deab398fcfda5599b66cdfd2f677ad504d86",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-010",
+      "learningObjective": "FL-2.1.3",
+      "cognitiveLevel": "K1",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b",
+      "afterCanonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "2.1.3": {
+          "EN": [26],
+          "PT": [28]
+        }
+      },
+      "LOPages": {
+        "EN": [24],
+        "PT": [26]
+      },
+      "assessmentPT": "O ciclo repetido de teste de componente, código que o satisfaça e refatorização identifica TDD. ATDD e BDD também são test-first, mas a sua definição não é este ciclo específico; CI integra alterações e pode executar testes, sem definir por si a forma de programar.",
+      "counterEvidencePT": "BDD pode ser descrito como evolução de TDD e uma equipa pode combinar TDD, ATDD, BDD e CI. Coexistência não torna todos os rótulos igualmente precisos para a descrição pedida. Não se exclui execução de testes após refatorização nem se infere que a ausência de alteração funcional pretendida elimina risco. A pergunta pede reconhecimento, não um plano completo de refatorização.",
+      "translationAssessmentPT": "Repeated cycle/ciclo repetido, writing a component test/escrever um teste de componente, satisfy/satisfaça e refactoring/refatorizar preservam sequência e objetos, incluindo testes e código. PT oficial usa reestruturados onde EN usa refactored; refatorizar é tecnicamente apropriado no item. BDD usually/frequentemente é preservado nas explicações.",
+      "pedagogyAssessmentPT": "K1: reconhecer o exemplo característico de TDD é adequado; não exige demonstrar código, calcular cobertura ou escolher testes de regressão. O termo componente torna a opção mais discriminante face a ATDD/BDD. A explicação não promete que uma bateria limitada prove equivalência comportamental após toda refatorização.",
+      "editionDifferencePT": "PT p.28 usa reestruturados na descrição de TDD e Considerando/Quando/Então no BDD; o item usa refatorizar e Dado/Quando/Então, mantendo os conceitos. O reconhecimento do ciclo não implica que testes sejam desnecessários quando o comportamento pretendido se mantém.",
+      "criticalPairs": [
+        {
+          "en": "refactoring the tests and code",
+          "pt": "refatorizar os testes e o código"
+        },
+        {
+          "en": "component test",
+          "pt": "teste de componente"
+        },
+        {
+          "en": "can run automated tests",
+          "pt": "pode executar testes automatizados"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c774707bdc18c7bcadfc629db1cb423e91a3fbcba9c0bb5e270308cb7e40ea47",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-012",
+      "learningObjective": "FL-2.2.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44",
+      "afterCanonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "2.2.1": {
+          "EN": [28, 29],
+          "PT": [31, 32]
+        }
+      },
+      "LOPages": {
+        "EN": [24],
+        "PT": [26]
+      },
+      "assessmentPT": "A fronteira e o foco explícitos são interação entre dois módulos da mesma aplicação: integração de componentes. Testar o sistema completo pode atravessar a interface, mas não muda o melhor nível para um teste cujo alvo é essa interface. Integração de sistemas envolve outras aplicações/sistemas/serviços externos.",
+      "counterEvidencePT": "Arquiteturas distribuídas podem chamar módulos a serviços independentes; a pergunta especifica componentes dentro de uma aplicação e não dá evidência de sistemas externos. Um teste de aceitação pode percorrer o cálculo e a faturação, mas o objetivo descrito é a interface interna, não validação de negócio/prontidão. O termo module não é por si uma regra universal de nível.",
+      "translationAssessmentPT": "Focuses/centra-se, interface/interface e within one application/da mesma aplicação mantêm a fronteira. Fits best/mais adequado pede o melhor enquadramento, não a afirmação de que apenas um nível pode executar esse percurso. In isolation/isolado contrasta explicitamente com interação entre módulos.",
+      "pedagogyAssessmentPT": "K2: distinguir níveis a partir do âmbito/objetivo de um cenário curto. A explicação geral é breve mas correta e os distratores preservam os limites. Não confundir nível com tipo funcional ou com estrutura organizacional da equipa; uma equipa independente pode executar vários níveis.",
+      "editionDifferencePT": "EN enumera níveis na p.29 após introdução na28; PT enumera na31 e continua atributos na32. System testing aborda o sistema global, não é sinónimo de integração interna. O domínio fiscal/faturação não exige conhecer taxas nem legislação.",
+      "criticalPairs": [
+        {
+          "en": "within one application",
+          "pt": "da mesma aplicação"
+        },
+        {
+          "en": "fits best",
+          "pt": "mais adequado"
+        },
+        {
+          "en": "in isolation",
+          "pt": "isolado"
+        }
+      ],
+      "unresolvedMandatoryIssues": [],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "73e75787fb8740e544a875bfc4e95cfc612e04fd6577aef0bfaf7e96ff4cb7b5",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44",
+          "equalCurrent": true
+        }
+      ]
+    }
+  ]
+}

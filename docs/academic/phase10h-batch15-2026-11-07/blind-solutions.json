@@ -1,0 +1,175 @@
+{
+  "reviewerType": "AI",
+  "method": "Key-free bilingual deterministic shuffled projection, including all five options and two required selections in tl-083. Answers recorded before published key/explanation reveal; not human SME review.",
+  "publishedKeysConsultedBeforeRecording": false,
+  "publishedExplanationsConsultedBeforeRecording": false,
+  "ownerAccepted": false,
+  "humanApproved": false,
+  "projectionSHA256": "aff93d794c6007e86a00fd032d80d4be919b27f979758cf051e25af33a644034",
+  "scopeClarification": "Eight questions contain33 alternatives, not32: authenticated tl-083 has5 and asksTWO. All options preserved; no bank edit.",
+  "solutions": [
+    {
+      "questionId": "tl-069",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "BDD expressa comportamento esperado em linguagem natural compreensível e partilhada, com exemplos ligados a testes executáveis. Não se confunde com ciclo de testes de componentes primeiro, revisão de código ou exploração da funcionalidade já implementada.",
+      "optionAssessmentsEN": {
+        "o1": "Writing component tests before implementation and refactoring characterises TDD. It can coexist with BDD, but alone does not identify the shared behaviour-example approach asked for.",
+        "o2": "Reviewing source code against a checklist is a static review activity. It may improve quality but is not the defining behaviour-driven development description.",
+        "o3": "Shared natural-language examples express intended behaviour and connect to executable tests. This characterises BDD; it does not imply infallible generation without implementation, bindings or team agreement.",
+        "o4": "Designing and evaluating tests during timed exploration characterises exploratory testing. That can complement development but is not the test-first BDD description sought."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o4",
+        "o1",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-070",
+      "answer": [
+        "o4"
+      ],
+      "reasonPT": "Ana usa regras de negócio sem estrutura interna, Bruno usa ramos do fluxo de controlo e Carla usa experiência de incidentes. A ordem é caixa-preta, caixa-branca e baseada na experiência; automatizar execução não altera a origem conceptual dos testes.",
+      "optionAssessmentsEN": {
+        "o1": "Ana is correctly classified as black-box, but Bruno uses internal structure rather than past experience, and Carla uses incident experience rather than a structural model. The final two classifications are reversed.",
+        "o2": "Ana derives tests from external cancellation rules, not internal structure; Bruno explicitly uses internal branches, not black-box specifications. The third classification alone is correct.",
+        "o3": "Bruno is structural, but Ana uses specified cancellation behaviour rather than past incidents, and Carla uses incident patterns rather than only a specification. The first and third classifications are incorrect.",
+        "o4": "Ana uses specification-based black-box derivation, Bruno uses structure-based white-box derivation and Carla uses experience-based derivation. The stated respective order matches all three."
+      },
+      "shuffledOrder": [
+        "o1",
+        "o3",
+        "o4",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-075",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "Reproduzir a referência registada requer identificar versões relacionadas de compilação, esquema, dados, script e configuração. Repetir o nome ou conteúdo do script não controla o ambiente; recuperar essa baseline apoia comparação, sem garantir reproduzir qualquer condição externa.",
+      "optionAssessmentsEN": {
+        "o1": "Matching script names does not establish identical script versions or application, database and environment state. A passing result under changed configuration cannot by itself invalidate the earlier failure.",
+        "o2": "Restoring only the application build leaves the schema and seed data uncontrolled relative to the observed failing configuration. Reproduction requires the relevant baseline items to remain consistent together.",
+        "o3": "Recovering the recorded build, schema, seed data, scripts and environment baseline controls the identified configuration variables and best supports comparison. It supports reproduction without guaranteeing every external timing or service condition.",
+        "o4": "Newest independent versions need not reproduce the original baseline. Attaching an old failure log to a new pass does not make the configurations comparable or establish that the original issue was fixed."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o1",
+        "o3",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-079",
+      "answer": [
+        "o4"
+      ],
+      "reasonPT": "A evidência pedida é dos ramos internos realmente exercitados, e não apenas de requisitos associados ou asserções aprovadas. Medição de cobertura ligada a ramos instrumentados fornece diretamente a informação estrutural necessária para orientar testes adicionais.",
+      "optionAssessmentsEN": {
+        "o1": "Static complexity and coding-rule violations describe code properties without showing which internal branches the executed tests traversed. The capability as described lacks the requested execution coverage evidence.",
+        "o2": "Requirements linked to executed cases provide traceability and requirements coverage information, not a direct measurement of exercised internal control-flow branches.",
+        "o3": "A count of passed assertions reports test outcomes. It cannot identify which structural branches were exercised and which remain uncovered without an additional coverage capability.",
+        "o4": "Associating executed tests with instrumented branches directly measures the structural coverage requested. That evidence can guide new test design without proving all behaviour is correct."
+      },
+      "shuffledOrder": [
+        "o1",
+        "o3",
+        "o2",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-080",
+      "answer": [
+        "o2"
+      ],
+      "reasonPT": "O anúncio de fim de suporte do executor proprietário evidencia dependência do fornecedor e compatibilidade futura. Não demonstra que os testes já falhem hoje, nem que haja uma dificuldade atual de repetição humana, estatísticas ou comparação manual.",
+      "optionAssessmentsEN": {
+        "o1": "Inconsistent manual repetition is a human execution concern that automation can reduce. No such inconsistency is reported, and it does not explain the announced end of vendor platform support.",
+        "o2": "Dependence on a proprietary runner exposes vendor and platform-compatibility risk when support is scheduled to end. The risk is future-facing and is not evidence that the current tests fail immediately.",
+        "o3": "Limited execution statistics may be a separate tooling limitation, but the scenario provides no evidence of missing reports. It specifically identifies a vendor support and compatibility dependency.",
+        "o4": "Manual comparison effort is not the risk demonstrated by the vendor announcement. Automation may reduce that effort, but this does not remove dependence on a supported runner platform."
+      },
+      "shuffledOrder": [
+        "o4",
+        "o1",
+        "o3",
+        "o2"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-081",
+      "answer": [
+        "o3"
+      ],
+      "reasonPT": "A competência foi ensinada e o programador é explicitamente qualificado, permitindo partilhar tarefas e responsabilidade pela qualidade com comunicação ao negócio. Isto não dispensa especialização nem exige que qualquer membro sem preparação execute qualquer tarefa.",
+      "optionAssessmentsEN": {
+        "o1": "Independent review may challenge assumptions, but no external reviewer appears in this scenario. The described benefit is cross-skilled collaboration inside the team rather than independent perspective.",
+        "o2": "Consistent automated repetition can reduce manual effort, but the scenario describes a qualified person learning and performing a check with business communication, not an automation benefit.",
+        "o3": "A qualified cross-skilled team member can perform a testing task and discuss its meaning with business representatives while quality remains a shared responsibility. Qualification is an explicit condition, not an assumption of universal interchangeability.",
+        "o4": "Versioned configuration baselines support reproduction, but the scenario concerns teaching skills and sharing quality responsibility. No baseline reconstruction or configuration change is described."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o2",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-082",
+      "answer": [
+        "o1"
+      ],
+      "reasonPT": "Pedidos concorrentes no serviço integrado procuram esgotamento de recursos e degradação de desempenho do produto existente. O foco técnico que avalia criticamente o produto corresponde a Q4; não é estimativa de esforço nem apenas apoio unitário à construção.",
+      "optionAssessmentsEN": {
+        "o1": "Q4 is technology-facing and critiques the product, including performance and other non-functional concerns. Concurrent integrated-service tests investigating resource exhaustion and response-time degradation match that purpose.",
+        "o2": "Q1 technology-facing tests support development, commonly at component or component-integration level. The scenario instead critiques an integrated increment for resource and performance limits before release.",
+        "o3": "Q2 business-facing tests support the team, such as acceptance examples guiding implementation. The stated internal resource and response-time investigation is technical product critique, not this purpose.",
+        "o4": "Q3 business-facing tests critique the product from user or business perspectives. Product critique alone is insufficient: the specified concurrent technical resource investigation distinguishes Q4 here."
+      },
+      "shuffledOrder": [
+        "o3",
+        "o1",
+        "o2",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    },
+    {
+      "questionId": "tl-083",
+      "answer": [
+        "o2",
+        "o4"
+      ],
+      "reasonPT": "São pedidas duas afirmações entre cinco opções. A primeira etapa conduzida pelo autor para partilhar entendimento corresponde a walkthrough; a segunda com pares qualificados, moderação e consenso corresponde a revisão técnica. Inspeção não permite autor como líder/redator e o seu processo completo não é obrigatório para toda revisão técnica.",
+      "optionAssessmentsEN": {
+        "o1": "In an inspection the author cannot act as review leader or scribe, so the justification is false. The first author-led learning step instead fits a walkthrough rather than the proposed inspection role arrangement.",
+        "o2": "An author-led walkthrough can educate participants and build shared understanding. The option says can support, which fits the first stage without claiming this is its only possible objective.",
+        "o3": "A walkthrough is led by the author, so classifying the moderated second stage as a walkthrough because it is led by someone else reverses the defining distinction. The stated peers and consensus fit a technical review.",
+        "o4": "A technical review uses technically qualified reviewers, is led by a moderator and aims at consensus or technical decisions. All three features align with the second stage described.",
+        "o5": "A technical review need not use the full inspection process and its improvement metrics simply to pursue consensus. Those additional formality requirements characterise inspections, not every technical review."
+      },
+      "shuffledOrder": [
+        "o2",
+        "o5",
+        "o3",
+        "o1",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:30:39.344922+00:00"
+    }
+  ]
+}

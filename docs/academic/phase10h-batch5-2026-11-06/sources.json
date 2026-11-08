@@ -1,0 +1,64 @@
+{
+  "primary": "SYL-EN",
+  "limitations": [
+    "AI review only, not human SME certification; no empirical difficulty calibration.",
+    "PT reference is v4.0 translation1.0, not the EN v4.0.1 errata edition.",
+    "Syllabus local bytes read and hashed; official URLs opened in web tool. Local copies are not asserted byte-identical to fresh downloads.",
+    "BVA PDF local download returned HTTP403. Official web tool parsed all7 pages; no file SHA-256 or fresh byte identity is asserted. Full copyrighted PDFs are not redistributed.",
+    "BVA white paper has no printed version/publication date identified; URL path2025/10 alone is not proof of publication date."
+  ],
+  "sources": [
+    {
+      "sourceId": "SYL-EN",
+      "language": "EN",
+      "edition": "4.0.1",
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [38, 39, 40, 41, 42, 46, 47, 49, 50],
+      "consultedOn": "2026-11-06",
+      "method": "local PDF text extraction plus official web PDF confirmation",
+      "relevantSections": [
+        "4.2.1",
+        "4.2.2",
+        "4.2.3",
+        "4.2.4",
+        "4.5.3",
+        "5.1.4",
+        "5.1.5"
+      ]
+    },
+    {
+      "sourceId": "SYL-PT",
+      "language": "PT",
+      "edition": "4.0 translation1.0",
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [41, 42, 43, 44, 45, 50, 51, 52, 54, 55, 56],
+      "consultedOn": "2026-11-06",
+      "method": "local PDF text extraction plus official web PDF confirmation",
+      "relevantSections": [
+        "4.2.1",
+        "4.2.2",
+        "4.2.3",
+        "4.2.4",
+        "4.5.3",
+        "5.1.4",
+        "5.1.5"
+      ]
+    },
+    {
+      "sourceId": "BVA-WP",
+      "language": "EN-BVA",
+      "edition": "No printed edition identified",
+      "url": "https://istqb.org/wp-content/uploads/2025/10/Boundary-Value-Analysis-white-paper.pdf",
+      "sha256": null,
+      "pageCount": 7,
+      "pagesConsulted": [1, 2, 3, 4, 5, 6, 7],
+      "consultedOn": "2026-11-06",
+      "method": "official web PDF parsed text; local download403; no byte hash",
+      "relevantSections": ["2", "3", "4", "7"]
+    }
+  ]
+}

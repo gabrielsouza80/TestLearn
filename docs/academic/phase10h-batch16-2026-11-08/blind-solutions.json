@@ -1,0 +1,57 @@
+{
+  "reviewerType": "AI",
+  "method": "Key-free bilingual projection including required selection count and all five options in deterministic shuffled order. Solutions stored before published keys/explanations. Not human SME review.",
+  "publishedKeysConsultedBeforeRecording": false,
+  "publishedExplanationsConsultedBeforeRecording": false,
+  "ownerAccepted": false,
+  "humanApproved": false,
+  "projectionSHA256": "a538a5d0b07c4d5ba08c250926b564042feca271860eb7e675c925dd3aae8b76",
+  "solutions": [
+    {
+      "questionId": "tl-084",
+      "answer": [
+        "o1",
+        "o4"
+      ],
+      "reasonPT": "A quantidade devolvida compara o resultado funcional com o requisito. O percentil 95 da latência, sob 200 utilizadores concorrentes, mede eficiência de desempenho. No máximo é inclusivo: p95=300 ms cumpre esse limite; não exige que todas as respostas tenham latência até 300 ms. O requisito não especifica método estatístico, amostragem ou duração, pelo que não se inventam. A origem em requisitos sem estrutura indica caixa-preta; API e concorrência não fixam técnica nem nível.",
+      "optionAssessmentsEN": {
+        "o1": "Returned stock quantity checks the required functional result for a valid barcode, so it targets functional correctness. Correctness of the quantity is distinct from how quickly that quantity is returned.",
+        "o2": "Executing the same query does not make its latency objective functional. The objective is how well the function performs, so a timing constraint remains non-functional even when it shares inputs and execution with a functional test.",
+        "o3": "Concurrent users specify a workload condition, not a test level. System integration concerns the relevant system boundaries and interfaces; concurrency alone cannot establish which systems are involved.",
+        "o4": "The response-latency requirement targets performance efficiency. At most300 ms is inclusive, and a95th-percentile limit is not a maximum over every individual response. The200-concurrent-user condition must be retained when interpreting this measurement.",
+        "o5": "The interface used does not determine white-box derivation. The statement explicitly derives API tests from requirements and not internal structure, so the tests remain specification-based black-box tests."
+      },
+      "shuffledOrder": [
+        "o5",
+        "o2",
+        "o4",
+        "o3",
+        "o1"
+      ],
+      "recordedAt": "2026-11-07T23:59:13.612875+00:00"
+    },
+    {
+      "questionId": "tl-085",
+      "answer": [
+        "o2",
+        "o5"
+      ],
+      "reasonPT": "A identificação e avaliação iniciais já produziram probabilidade e impacto. Executar testes orientados ao risco avaliado é mitigação; acompanhar eficácia e adaptar respostas a riscos emergentes é monitorização e controlo. Listar eventos, estimar classificações e agrupar riscos são tarefas de análise neste contexto. A distinção não proíbe análise futura quando surgirem riscos novos; impede apresentar repetição da análise inicial como a ação de controlo pedida.",
+      "optionAssessmentsEN": {
+        "o1": "Listing potential events before judging significance is risk identification, a component of analysis already completed in the scenario. It is not the proposed implementation or monitoring of risk responses requested here.",
+        "o2": "Executing clock-change tests selected against an assessed billing risk implements a mitigation measure. It does not guarantee elimination of every billing risk or require inventing a particular tariff or daylight-saving rule.",
+        "o3": "Estimating likelihood and impact and ranking risks is risk assessment, part of the initial analysis. Reassessment can be useful later, but this option simply repeats the analysis explicitly completed in the stem.",
+        "o4": "Grouping assessed risks by quality characteristic helps organise analysis before treatment selection. As stated it does not implement mitigation or monitor effectiveness, unlike the two control actions among the options.",
+        "o5": "Checking whether mitigation works and revising responses when emerging risks require it monitors and adapts product risk control. It allows future analysis of new information rather than asserting that initial analysis must never be revisited."
+      },
+      "shuffledOrder": [
+        "o5",
+        "o2",
+        "o3",
+        "o1",
+        "o4"
+      ],
+      "recordedAt": "2026-11-07T23:59:13.612875+00:00"
+    }
+  ]
+}

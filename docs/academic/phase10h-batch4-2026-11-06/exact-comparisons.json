@@ -1,0 +1,1314 @@
+[
+  {
+    "questionId": "tl-025",
+    "original": {
+      "id": "tl-025",
+      "chapter": 4,
+      "lo": "FL-4.2.1",
+      "level": "K3",
+      "topic": "Equivalence partitioning",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "An integer quantity is accepted from 3 to 8 inclusive. Which smallest set covers the below-range, valid and above-range partitions?",
+        "pt": "Uma quantidade inteira é aceite de 3 a 8 inclusive. Que conjunto mínimo cobre as partições abaixo do intervalo, válida e acima do intervalo?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "2, 5, 9",
+            "pt": "2, 5, 9"
+          },
+          "explanation": {
+            "en": "Each of the three partitions has one representative.",
+            "pt": "Cada uma das três partições tem um representante."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "3, 5, 8",
+            "pt": "3, 5, 8"
+          },
+          "explanation": {
+            "en": "All three values are in the valid partition.",
+            "pt": "Os três valores estão na partição válida."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "2, 9",
+            "pt": "2, 9"
+          },
+          "explanation": {
+            "en": "The valid partition is not covered.",
+            "pt": "A partição válida não está coberta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "2, 3, 5",
+            "pt": "2, 3, 5"
+          },
+          "explanation": {
+            "en": "2 covers the below-range partition; 3 and 5 both cover the valid partition. No value covers the above-range partition, so the three-value set is insufficient.",
+            "pt": "2 cobre a partição abaixo do intervalo; 3 e 5 cobrem ambos a partição válida. Nenhum valor cobre a partição acima do intervalo, pelo que o conjunto de três valores é insuficiente."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Each of the three partitions has one representative.",
+        "pt": "Cada uma das três partições tem um representante."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.1",
+        "pages": [39, 40],
+        "report": "docs/academic-audit.md#fase-5b--tl-025"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-025",
+      "chapter": 4,
+      "lo": "FL-4.2.1",
+      "level": "K3",
+      "topic": "Equivalence partitioning",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "An integer quantity is accepted from 3 to 8 inclusive. Which smallest set covers the below-range, valid and above-range partitions?",
+        "pt": "Uma quantidade inteira é aceite de 3 a 8 inclusive. Que conjunto mínimo cobre as partições abaixo do intervalo, válida e acima do intervalo?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "2, 5, 9",
+            "pt": "2, 5, 9"
+          },
+          "explanation": {
+            "en": "Each of the three partitions has one representative.",
+            "pt": "Cada uma das três partições tem um representante."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "3, 5, 8",
+            "pt": "3, 5, 8"
+          },
+          "explanation": {
+            "en": "All three values are in the valid partition.",
+            "pt": "Os três valores estão na partição válida."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "2, 9",
+            "pt": "2, 9"
+          },
+          "explanation": {
+            "en": "The valid partition is not covered.",
+            "pt": "A partição válida não está coberta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "2, 3, 5",
+            "pt": "2, 3, 5"
+          },
+          "explanation": {
+            "en": "2 covers the below-range partition; 3 and 5 both cover the valid partition. No value covers the above-range partition, so the three-value set is insufficient.",
+            "pt": "2 cobre a partição abaixo do intervalo; 3 e 5 cobrem ambos a partição válida. Nenhum valor cobre a partição acima do intervalo, pelo que o conjunto de três valores é insuficiente."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Each of the three partitions has one representative.",
+        "pt": "Cada uma das três partições tem um representante."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.1",
+        "pages": [39, 40],
+        "report": "docs/academic-audit.md#fase-5b--tl-025"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-026",
+    "original": {
+      "id": "tl-026",
+      "chapter": 4,
+      "lo": "FL-4.2.2",
+      "level": "K3",
+      "topic": "Boundary values",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "An integer score from 10 to 20 inclusive is valid; all other integers are rejected. Which set gives full 2-value boundary value analysis coverage of the boundaries between the three partitions?",
+        "pt": "Uma pontuação inteira de 10 a 20 inclusive é válida; todos os outros inteiros são rejeitados. Que conjunto dá cobertura completa de análise de valor fronteira de 2 valores nas fronteiras entre as três partições?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "9, 10, 20, 21",
+            "pt": "9, 10, 20, 21"
+          },
+          "explanation": {
+            "en": "The boundary pairs are 9/10 and 20/21. The four distinct coverage items are 9, 10, 20 and 21. This is 2-value BVA, not 3-value BVA.",
+            "pt": "Os pares de valores fronteira são 9/10 e 20/21. Os quatro itens de cobertura distintos são 9, 10, 20 e 21. Trata-se de BVA de 2 valores, não de BVA de 3 valores."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "10, 15, 20",
+            "pt": "10, 15, 20"
+          },
+          "explanation": {
+            "en": "The neighbouring invalid values are missing.",
+            "pt": "Faltam os valores inválidos vizinhos."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "9, 10, 19, 20",
+            "pt": "9, 10, 19, 20"
+          },
+          "explanation": {
+            "en": "This incorrectly treats 19/20 as the upper boundary pair. Since 20 is valid, the upper pair must be 20/21; 21 is missing.",
+            "pt": "Isto trata incorretamente 19/20 como o par de fronteira superior. Como 20 é válido, o par superior tem de ser 20/21; falta 21."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "10, 11, 20, 21",
+            "pt": "10, 11, 20, 21"
+          },
+          "explanation": {
+            "en": "This incorrectly treats 10/11 as the lower boundary pair. Since 10 is valid, the lower pair must be 9/10; 9 is missing.",
+            "pt": "Isto trata incorretamente 10/11 como o par de fronteira inferior. Como 10 é válido, o par inferior tem de ser 9/10; falta 9."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The boundary pairs are 9/10 and 20/21. The four distinct coverage items are 9, 10, 20 and 21. This is 2-value BVA, not 3-value BVA.",
+        "pt": "Os pares de valores fronteira são 9/10 e 20/21. Os quatro itens de cobertura distintos são 9, 10, 20 e 21. Trata-se de BVA de 2 valores, não de BVA de 3 valores."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.2",
+        "pages": [40],
+        "report": "docs/academic-audit.md#fase-5b--tl-026"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-026",
+      "chapter": 4,
+      "lo": "FL-4.2.2",
+      "level": "K3",
+      "topic": "Boundary values",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "An integer score from 10 to 20 inclusive is valid; all other integers are rejected. Which set gives full 2-value boundary value analysis coverage of the boundaries between the three partitions?",
+        "pt": "Uma pontuação inteira de 10 a 20 inclusive é válida; todos os outros inteiros são rejeitados. Que conjunto dá cobertura completa de análise de valor fronteira de 2 valores nas fronteiras entre as três partições?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "9, 10, 20, 21",
+            "pt": "9, 10, 20, 21"
+          },
+          "explanation": {
+            "en": "The boundary pairs are 9/10 and 20/21. The four distinct coverage items are 9, 10, 20 and 21. This is 2-value BVA, not 3-value BVA.",
+            "pt": "Os pares de valores fronteira são 9/10 e 20/21. Os quatro itens de cobertura distintos são 9, 10, 20 e 21. Trata-se de BVA de 2 valores, não de BVA de 3 valores."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "10, 15, 20",
+            "pt": "10, 15, 20"
+          },
+          "explanation": {
+            "en": "The neighbouring invalid values are missing.",
+            "pt": "Faltam os valores inválidos vizinhos."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "9, 10, 19, 20",
+            "pt": "9, 10, 19, 20"
+          },
+          "explanation": {
+            "en": "This incorrectly treats 19/20 as the upper boundary pair. Since 20 is valid, the upper pair must be 20/21; 21 is missing.",
+            "pt": "Isto trata incorretamente 19/20 como o par de fronteira superior. Como 20 é válido, o par superior tem de ser 20/21; falta 21."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "10, 11, 20, 21",
+            "pt": "10, 11, 20, 21"
+          },
+          "explanation": {
+            "en": "This incorrectly treats 10/11 as the lower boundary pair. Since 10 is valid, the lower pair must be 9/10; 9 is missing.",
+            "pt": "Isto trata incorretamente 10/11 como o par de fronteira inferior. Como 10 é válido, o par inferior tem de ser 9/10; falta 9."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The boundary pairs are 9/10 and 20/21. The four distinct coverage items are 9, 10, 20 and 21. This is 2-value BVA, not 3-value BVA.",
+        "pt": "Os pares de valores fronteira são 9/10 e 20/21. Os quatro itens de cobertura distintos são 9, 10, 20 e 21. Trata-se de BVA de 2 valores, não de BVA de 3 valores."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.2",
+        "pages": [40],
+        "report": "docs/academic-audit.md#fase-5b--tl-026"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-027",
+    "original": {
+      "id": "tl-027",
+      "chapter": 4,
+      "lo": "FL-4.2.3",
+      "level": "K3",
+      "topic": "Decision tables",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "Using the decision table (T = true, F = false, X = grant free delivery), which input derives a test case for rule R1?",
+        "pt": "Usando a tabela de decisão (T = verdadeiro, F = falso, X = conceder entrega gratuita), que entrada permite obter um caso de teste para a regra R1?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Member = yes; total = 60",
+            "pt": "Membro = sim; total = 60"
+          },
+          "explanation": {
+            "en": "Rule R1 requires membership and a total of at least 50. A member with total 60 satisfies both conditions and must receive free delivery.",
+            "pt": "A regra R1 exige que o cliente seja membro e que o total seja pelo menos 50. Um membro com total 60 satisfaz ambas as condições e deve receber entrega gratuita."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Member = no; total = 60",
+            "pt": "Membro = não; total = 60"
+          },
+          "explanation": {
+            "en": "A non-member with total 60 satisfies only the total condition, which is R3, not R1.",
+            "pt": "Um não membro com total 60 satisfaz apenas a condição do total, o que corresponde a R3, não a R1."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Member = yes; total = 20",
+            "pt": "Membro = sim; total = 20"
+          },
+          "explanation": {
+            "en": "A member with total 20 satisfies only membership, which is R2, not R1.",
+            "pt": "Um membro com total 20 satisfaz apenas a condição de ser membro, o que corresponde a R2, não a R1."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Member = no; total = 20",
+            "pt": "Membro = não; total = 20"
+          },
+          "explanation": {
+            "en": "These inputs satisfy neither condition and exercise R4, not R1. R1 requires membership and a total of at least 50.",
+            "pt": "Estas entradas não satisfazem nenhuma das condições e exercitam R4, não R1. R1 exige que o cliente seja membro e que o total seja pelo menos 50."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Rule R1 requires membership and a total of at least 50. A member with total 60 satisfies both conditions and must receive free delivery.",
+        "pt": "A regra R1 exige que o cliente seja membro e que o total seja pelo menos 50. Um membro com total 60 satisfaz ambas as condições e deve receber entrega gratuita."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.3",
+        "pages": [41],
+        "report": "docs/academic-audit.md#fase-5b--tl-027"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original",
+      "table": {
+        "headers": [
+          "Condition / action · Condição / ação",
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "rows": [
+          ["Member? / Membro?", "T", "T", "F", "F"],
+          ["Total ≥ 50?", "T", "F", "T", "F"],
+          ["Free delivery? / Entrega gratuita?", "X", "", "", ""]
+        ]
+      }
+    },
+    "proposed": {
+      "id": "tl-027",
+      "chapter": 4,
+      "lo": "FL-4.2.3",
+      "level": "K3",
+      "topic": "Decision tables",
+      "type": "table",
+      "required": 1,
+      "text": {
+        "en": "Using the decision table (T = true, F = false, X = grant free delivery), which input derives a test case for rule R1?",
+        "pt": "Usando a tabela de decisão (T = verdadeiro, F = falso, X = conceder entrega gratuita), que entrada permite obter um caso de teste para a regra R1?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Member = yes; total = 60",
+            "pt": "Membro = sim; total = 60"
+          },
+          "explanation": {
+            "en": "Rule R1 requires membership and a total of at least 50. A member with total 60 satisfies both conditions and must receive free delivery.",
+            "pt": "A regra R1 exige que o cliente seja membro e que o total seja pelo menos 50. Um membro com total 60 satisfaz ambas as condições e deve receber entrega gratuita."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Member = no; total = 60",
+            "pt": "Membro = não; total = 60"
+          },
+          "explanation": {
+            "en": "A non-member with total 60 satisfies only the total condition, which is R3, not R1.",
+            "pt": "Um não membro com total 60 satisfaz apenas a condição do total, o que corresponde a R3, não a R1."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Member = yes; total = 20",
+            "pt": "Membro = sim; total = 20"
+          },
+          "explanation": {
+            "en": "A member with total 20 satisfies only membership, which is R2, not R1.",
+            "pt": "Um membro com total 20 satisfaz apenas a condição de ser membro, o que corresponde a R2, não a R1."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Member = no; total = 20",
+            "pt": "Membro = não; total = 20"
+          },
+          "explanation": {
+            "en": "These inputs satisfy neither condition and exercise R4, not R1. R1 requires membership and a total of at least 50.",
+            "pt": "Estas entradas não satisfazem nenhuma das condições e exercitam R4, não R1. R1 exige que o cliente seja membro e que o total seja pelo menos 50."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Rule R1 requires membership and a total of at least 50. A member with total 60 satisfies both conditions and must receive free delivery.",
+        "pt": "A regra R1 exige que o cliente seja membro e que o total seja pelo menos 50. Um membro com total 60 satisfaz ambas as condições e deve receber entrega gratuita."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.3",
+        "pages": [41],
+        "report": "docs/academic-audit.md#fase-5b--tl-027"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original",
+      "table": {
+        "headers": [
+          "Condition / action · Condição / ação",
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "rows": [
+          ["Member? / Membro?", "T", "T", "F", "F"],
+          ["Total ≥ 50?", "T", "F", "T", "F"],
+          ["Free delivery? / Entrega gratuita?", "X", "", "", ""]
+        ]
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-028",
+    "original": {
+      "id": "tl-028",
+      "chapter": 4,
+      "lo": "FL-4.2.4",
+      "level": "K3",
+      "topic": "State transitions",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "An order starts Draft. Submit moves Draft to Pending; Pay moves Pending to Paid. All other event/state combinations are invalid. Which sequence reaches Paid using only valid transitions?",
+        "pt": "Uma encomenda começa em Rascunho. Submeter passa para Pendente; Pagar passa de Pendente para Paga. Todas as outras combinações de evento e estado são inválidas. Que sequência chega a Paga só com transições válidas?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Submit, Pay",
+            "pt": "Submeter, Pagar"
+          },
+          "explanation": {
+            "en": "From Draft, Submit reaches Pending; Pay then reaches Paid. Both transitions are valid.",
+            "pt": "A partir de Rascunho, Submeter leva a Pendente; depois Pagar leva a Paga. Ambas as transições são válidas."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Pay, Submit",
+            "pt": "Pagar, Submeter"
+          },
+          "explanation": {
+            "en": "Pay is initially invalid.",
+            "pt": "Pagar é inicialmente inválido."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Submit, Submit",
+            "pt": "Submeter, Submeter"
+          },
+          "explanation": {
+            "en": "The second Submit is invalid in Pending and the order never reaches Paid.",
+            "pt": "O segundo Submeter é inválido em Pendente e a encomenda nunca chega a Paga."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Submit, Pay, Pay",
+            "pt": "Submeter, Pagar, Pagar"
+          },
+          "explanation": {
+            "en": "Submit and Pay reach Paid, but the extra Pay is invalid in Paid. Reaching the target before an invalid event does not make the whole sequence valid.",
+            "pt": "Submeter e Pagar levam a Paga, mas o Pagar adicional é inválido em Paga. Chegar ao destino antes de um evento inválido não torna válida a sequência completa."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "From Draft, Submit reaches Pending; Pay then reaches Paid. Both transitions are valid.",
+        "pt": "A partir de Rascunho, Submeter leva a Pendente; depois Pagar leva a Paga. Ambas as transições são válidas."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.4",
+        "pages": [41, 42],
+        "report": "docs/academic-audit.md#fase-5b--tl-028"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-028",
+      "chapter": 4,
+      "lo": "FL-4.2.4",
+      "level": "K3",
+      "topic": "State transitions",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "An order starts Draft. Submit moves Draft to Pending; Pay moves Pending to Paid. All other event/state combinations are invalid. Which sequence reaches Paid using only valid transitions?",
+        "pt": "Uma encomenda começa em Rascunho. Submeter passa para Pendente; Pagar passa de Pendente para Paga. Todas as outras combinações de evento e estado são inválidas. Que sequência chega a Paga só com transições válidas?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Submit, Pay",
+            "pt": "Submeter, Pagar"
+          },
+          "explanation": {
+            "en": "From Draft, Submit reaches Pending; Pay then reaches Paid. Both transitions are valid.",
+            "pt": "A partir de Rascunho, Submeter leva a Pendente; depois Pagar leva a Paga. Ambas as transições são válidas."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Pay, Submit",
+            "pt": "Pagar, Submeter"
+          },
+          "explanation": {
+            "en": "Pay is initially invalid.",
+            "pt": "Pagar é inicialmente inválido."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Submit, Submit",
+            "pt": "Submeter, Submeter"
+          },
+          "explanation": {
+            "en": "The second Submit is invalid in Pending and the order never reaches Paid.",
+            "pt": "O segundo Submeter é inválido em Pendente e a encomenda nunca chega a Paga."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Submit, Pay, Pay",
+            "pt": "Submeter, Pagar, Pagar"
+          },
+          "explanation": {
+            "en": "Submit and Pay reach Paid, but the extra Pay is invalid in Paid. Reaching the target before an invalid event does not make the whole sequence valid.",
+            "pt": "Submeter e Pagar levam a Paga, mas o Pagar adicional é inválido em Paga. Chegar ao destino antes de um evento inválido não torna válida a sequência completa."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "From Draft, Submit reaches Pending; Pay then reaches Paid. Both transitions are valid.",
+        "pt": "A partir de Rascunho, Submeter leva a Pendente; depois Pagar leva a Paga. Ambas as transições são válidas."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.2.4",
+        "pages": [41, 42],
+        "report": "docs/academic-audit.md#fase-5b--tl-028"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-029",
+    "original": {
+      "id": "tl-029",
+      "chapter": 4,
+      "lo": "FL-4.5.3",
+      "level": "K3",
+      "topic": "ATDD",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "Before implementation, business, development and testing agree: delivery costs 5 for totals below 50 and is free for totals at least 50. Which pair of ATDD acceptance examples correctly covers both sides of that threshold?",
+        "pt": "Antes da implementação, representantes de negócio, desenvolvimento e testes acordam: a entrega custa 5 para totais inferiores a 50 e é gratuita para totais de pelo menos 50. Que par de exemplos de aceitação ATDD cobre corretamente os dois lados desse limiar?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 5; given total 50, when delivery is priced, then charge 0.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 5; dado um total de 50, quando se calcula a entrega, então cobrar 0."
+          },
+          "explanation": {
+            "en": "49 is below 50 and costs 5; 50 meets the inclusive threshold and costs 0. Both acceptance examples are derived before implementation from the agreed rule.",
+            "pt": "49 é inferior a 50 e implica um custo de 5; 50 satisfaz o limiar inclusivo e implica um custo de 0. Ambos os exemplos de aceitação são derivados da regra acordada antes da implementação."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 0.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 0."
+          },
+          "explanation": {
+            "en": "The expectation for 49 contradicts the below-threshold charge.",
+            "pt": "O resultado esperado para 49 contradiz o custo aplicável abaixo do limiar."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 5; given total 50, when delivery is priced, then charge 5.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 5; dado um total de 50, quando se calcula a entrega, então cobrar 5."
+          },
+          "explanation": {
+            "en": "The expectation for 50 wrongly excludes the inclusive threshold.",
+            "pt": "O resultado esperado para 50 exclui incorretamente o limiar inclusivo."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 5.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 5."
+          },
+          "explanation": {
+            "en": "Both expected results are reversed: 49 is below 50 and must cost 5; the inclusive threshold makes delivery free at 50.",
+            "pt": "Ambos os resultados esperados estão invertidos: 49 é inferior a 50 e implica um custo de 5; o limiar inclusivo torna a entrega gratuita em 50."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "49 is below 50 and costs 5; 50 meets the inclusive threshold and costs 0. Both acceptance examples are derived before implementation from the agreed rule.",
+        "pt": "49 é inferior a 50 e implica um custo de 5; 50 satisfaz o limiar inclusivo e implica um custo de 0. Ambos os exemplos de aceitação são derivados da regra acordada antes da implementação."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.5.3",
+        "pages": [46],
+        "report": "docs/academic-audit.md#fase-5b--tl-029"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-029",
+      "chapter": 4,
+      "lo": "FL-4.5.3",
+      "level": "K3",
+      "topic": "ATDD",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "Before implementation, business, development and testing agree: delivery costs 5 for totals below 50 and is free for totals at least 50. Which pair of ATDD acceptance examples correctly covers both sides of that threshold?",
+        "pt": "Antes da implementação, representantes de negócio, desenvolvimento e testes acordam: a entrega custa 5 para totais inferiores a 50 e é gratuita para totais de pelo menos 50. Que par de exemplos de aceitação ATDD cobre corretamente os dois lados desse limiar?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 5; given total 50, when delivery is priced, then charge 0.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 5; dado um total de 50, quando se calcula a entrega, então cobrar 0."
+          },
+          "explanation": {
+            "en": "49 is below 50 and costs 5; 50 meets the inclusive threshold and costs 0. Both acceptance examples are derived before implementation from the agreed rule.",
+            "pt": "49 é inferior a 50 e implica um custo de 5; 50 satisfaz o limiar inclusivo e implica um custo de 0. Ambos os exemplos de aceitação são derivados da regra acordada antes da implementação."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 0.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 0."
+          },
+          "explanation": {
+            "en": "The expectation for 49 contradicts the below-threshold charge.",
+            "pt": "O resultado esperado para 49 contradiz o custo aplicável abaixo do limiar."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 5; given total 50, when delivery is priced, then charge 5.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 5; dado um total de 50, quando se calcula a entrega, então cobrar 5."
+          },
+          "explanation": {
+            "en": "The expectation for 50 wrongly excludes the inclusive threshold.",
+            "pt": "O resultado esperado para 50 exclui incorretamente o limiar inclusivo."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Given total 49, when delivery is priced, then charge 0; given total 50, when delivery is priced, then charge 5.",
+            "pt": "Dado um total de 49, quando se calcula a entrega, então cobrar 0; dado um total de 50, quando se calcula a entrega, então cobrar 5."
+          },
+          "explanation": {
+            "en": "Both expected results are reversed: 49 is below 50 and must cost 5; the inclusive threshold makes delivery free at 50.",
+            "pt": "Ambos os resultados esperados estão invertidos: 49 é inferior a 50 e implica um custo de 5; o limiar inclusivo torna a entrega gratuita em 50."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "49 is below 50 and costs 5; 50 meets the inclusive threshold and costs 0. Both acceptance examples are derived before implementation from the agreed rule.",
+        "pt": "49 é inferior a 50 e implica um custo de 5; 50 satisfaz o limiar inclusivo e implica um custo de 0. Ambos os exemplos de aceitação são derivados da regra acordada antes da implementação."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.5.3",
+        "pages": [46],
+        "report": "docs/academic-audit.md#fase-5b--tl-029"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-036",
+    "original": {
+      "id": "tl-036",
+      "chapter": 5,
+      "lo": "FL-5.1.4",
+      "level": "K3",
+      "topic": "Estimation",
+      "type": "calculation",
+      "required": 1,
+      "text": {
+        "en": "Using three-point estimation (optimistic + 4 × most likely + pessimistic) / 6, the estimates are 2, 5 and 14 person-hours respectively. What is the weighted estimate?",
+        "pt": "Usando a estimativa de três pontos (otimista + 4 × mais provável + pessimista) / 6, as estimativas são, respetivamente, 2, 5 e 14 pessoas-hora. Qual é a estimativa ponderada?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "6 person-hours",
+            "pt": "6 pessoas-hora"
+          },
+          "explanation": {
+            "en": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 person-hours.",
+            "pt": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 pessoas-hora."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "7 person-hours",
+            "pt": "7 pessoas-hora"
+          },
+          "explanation": {
+            "en": "7 is the unweighted mean (2 + 5 + 14) / 3; it omits the required weighting.",
+            "pt": "7 é a média não ponderada (2 + 5 + 14) / 3; omite a ponderação exigida."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "14 person-hours",
+            "pt": "14 pessoas-hora"
+          },
+          "explanation": {
+            "en": "14 is the pessimistic estimate alone, not the weighted estimate.",
+            "pt": "14 é apenas a estimativa pessimista, não a estimativa ponderada."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "5 person-hours",
+            "pt": "5 pessoas-hora"
+          },
+          "explanation": {
+            "en": "5 is the most likely estimate alone. Applying the required weights gives (2 + 4 × 5 + 14) / 6 = 6, not 5.",
+            "pt": "5 é apenas a estimativa mais provável. Aplicar os pesos exigidos dá (2 + 4 × 5 + 14) / 6 = 6, não 5."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 person-hours.",
+        "pt": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 pessoas-hora."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.4",
+        "pages": [49, 50],
+        "report": "docs/academic-audit.md#fase-5b--tl-036"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-036",
+      "chapter": 5,
+      "lo": "FL-5.1.4",
+      "level": "K3",
+      "topic": "Estimation",
+      "type": "calculation",
+      "required": 1,
+      "text": {
+        "en": "Using three-point estimation (optimistic + 4 × most likely + pessimistic) / 6, the estimates are 2, 5 and 14 person-hours respectively. What is the weighted estimate?",
+        "pt": "Usando a estimativa de três pontos (otimista + 4 × mais provável + pessimista) / 6, as estimativas são, respetivamente, 2, 5 e 14 pessoas-hora. Qual é a estimativa ponderada?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "6 person-hours",
+            "pt": "6 pessoas-hora"
+          },
+          "explanation": {
+            "en": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 person-hours.",
+            "pt": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 pessoas-hora."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "7 person-hours",
+            "pt": "7 pessoas-hora"
+          },
+          "explanation": {
+            "en": "7 is the unweighted mean (2 + 5 + 14) / 3; it omits the required weighting.",
+            "pt": "7 é a média não ponderada (2 + 5 + 14) / 3; omite a ponderação exigida."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "14 person-hours",
+            "pt": "14 pessoas-hora"
+          },
+          "explanation": {
+            "en": "14 is the pessimistic estimate alone, not the weighted estimate.",
+            "pt": "14 é apenas a estimativa pessimista, não a estimativa ponderada."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "5 person-hours",
+            "pt": "5 pessoas-hora"
+          },
+          "explanation": {
+            "en": "5 is the most likely estimate alone. Applying the required weights gives (2 + 4 × 5 + 14) / 6 = 6, not 5.",
+            "pt": "5 é apenas a estimativa mais provável. Aplicar os pesos exigidos dá (2 + 4 × 5 + 14) / 6 = 6, não 5."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 person-hours.",
+        "pt": "(2 + 4 × 5 + 14) / 6 = 36 / 6 = 6 pessoas-hora."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.4",
+        "pages": [49, 50],
+        "report": "docs/academic-audit.md#fase-5b--tl-036"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-037",
+    "original": {
+      "id": "tl-037",
+      "chapter": 5,
+      "lo": "FL-5.1.5",
+      "level": "K3",
+      "topic": "Prioritization",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "Risk priority is A before B before C, but A requires C to run first. B is independent. Which order respects the dependency and runs the highest-risk available test first?",
+        "pt": "A prioridade de risco é A antes de B antes de C, mas A exige executar C primeiro. B é independente. Que ordem respeita a dependência e executa primeiro o teste disponível de maior risco?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "B, C, A",
+            "pt": "B, C, A"
+          },
+          "explanation": {
+            "en": "Initially only B and C are available; B has higher risk. C then enables A.",
+            "pt": "Inicialmente só B e C estão disponíveis; B tem risco maior. Depois C permite A."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "A, B, C",
+            "pt": "A, B, C"
+          },
+          "explanation": {
+            "en": "A cannot run before C.",
+            "pt": "A não pode ser executado antes de C."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "C, A, B",
+            "pt": "C, A, B"
+          },
+          "explanation": {
+            "en": "This runs lower-risk C while higher-risk B is available.",
+            "pt": "Isto executa C de menor risco quando B de maior risco está disponível."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "B, A, C",
+            "pt": "B, A, C"
+          },
+          "explanation": {
+            "en": "B is correctly chosen first, but A is still blocked until C runs. After B, execute C and then A.",
+            "pt": "B é corretamente escolhido primeiro, mas A continua bloqueado até executar C. Após B, executar C e depois A."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Initially only B and C are available; B has higher risk. C then enables A.",
+        "pt": "Inicialmente só B e C estão disponíveis; B tem risco maior. Depois C permite A."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.5",
+        "pages": [50, 51],
+        "report": "docs/academic-audit.md#fase-5b--tl-037"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-037",
+      "chapter": 5,
+      "lo": "FL-5.1.5",
+      "level": "K3",
+      "topic": "Prioritization",
+      "type": "scenario",
+      "required": 1,
+      "text": {
+        "en": "Risk priority is A before B before C, but A requires C to run first. B is independent. Which order respects the dependency and runs the highest-risk available test first?",
+        "pt": "A prioridade de risco é A antes de B antes de C, mas A exige executar C primeiro. B é independente. Que ordem respeita a dependência e executa primeiro o teste disponível de maior risco?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "B, C, A",
+            "pt": "B, C, A"
+          },
+          "explanation": {
+            "en": "Initially only B and C are available; B has higher risk. C then enables A.",
+            "pt": "Inicialmente só B e C estão disponíveis; B tem risco maior. Depois C permite A."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "A, B, C",
+            "pt": "A, B, C"
+          },
+          "explanation": {
+            "en": "A cannot run before C.",
+            "pt": "A não pode ser executado antes de C."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "C, A, B",
+            "pt": "C, A, B"
+          },
+          "explanation": {
+            "en": "This runs lower-risk C while higher-risk B is available.",
+            "pt": "Isto executa C de menor risco quando B de maior risco está disponível."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "B, A, C",
+            "pt": "B, A, C"
+          },
+          "explanation": {
+            "en": "B is correctly chosen first, but A is still blocked until C runs. After B, execute C and then A.",
+            "pt": "B é corretamente escolhido primeiro, mas A continua bloqueado até executar C. Após B, executar C e depois A."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Initially only B and C are available; B has higher risk. C then enables A.",
+        "pt": "Inicialmente só B e C estão disponíveis; B tem risco maior. Depois C permite A."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.5",
+        "pages": [50, 51],
+        "report": "docs/academic-audit.md#fase-5b--tl-037"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-046",
+    "original": {
+      "id": "tl-046",
+      "chapter": 4,
+      "lo": "FL-4.2.2",
+      "level": "K3",
+      "topic": "Boundary values",
+      "type": "calculation",
+      "required": 1,
+      "text": {
+        "en": "An integer input has no lower or upper domain limit. Values below 5 are rejected, 5 to 12 inclusive are accepted, and values above 12 are rejected. Consider every finite boundary of all three partitions. Which minimal set gives 100% three-value BVA coverage?",
+        "pt": "Uma entrada inteira não tem limite inferior nem superior de domínio. Os valores inferiores a 5 são rejeitados, os de 5 a 12 inclusive são aceites e os superiores a 12 são rejeitados. Considere todas as fronteiras finitas das três partições. Que conjunto mínimo dá 100% de cobertura de BVA de 3 valores?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "4, 5, 12, 13",
+            "pt": "4, 5, 12, 13"
+          },
+          "explanation": {
+            "en": "These are the four finite partition boundaries and give two-value coverage; their other neighbours are missing.",
+            "pt": "Estas são as quatro fronteiras finitas das partições e dão cobertura de 2 valores; faltam os outros vizinhos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "4, 5, 6, 11, 12, 13",
+            "pt": "4, 5, 6, 11, 12, 13"
+          },
+          "explanation": {
+            "en": "This expands only the accepted partition endpoints 5 and 12. It misses neighbours 3 and 14 of the rejected partition boundaries 4 and 13.",
+            "pt": "Isto expande apenas os extremos 5 e 12 da partição aceite. Omite os vizinhos 3 e 14 das fronteiras 4 e 13 das partições rejeitadas."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "3, 4, 5, 6, 11, 12, 13, 14",
+            "pt": "3, 4, 5, 6, 11, 12, 13, 14"
+          },
+          "explanation": {
+            "en": "Expand boundaries 4, 5, 12 and 13 by one integer on each side. The union has eight values: 3, 4, 5, 6, 11, 12, 13, 14.",
+            "pt": "Expanda as fronteiras 4, 5, 12 e 13 por um inteiro de cada lado. A união tem oito valores: 3, 4, 5, 6, 11, 12, 13, 14."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "3, 4, 5, 6, 7, 11, 12, 13, 14",
+            "pt": "3, 4, 5, 6, 7, 11, 12, 13, 14"
+          },
+          "explanation": {
+            "en": "This covers the required values but includes unnecessary interior value 7, so it is not minimal.",
+            "pt": "Isto cobre os valores exigidos, mas inclui o valor interior desnecessário 7, pelo que não é mínimo."
+          }
+        }
+      ],
+      "correct": ["o3"],
+      "explanation": {
+        "en": "The partitions are x≤4, 5≤x≤12 and x≥13. Finite boundaries are 4,5,12,13. Three-value BVA adds each boundary and both immediate integer neighbours: {3,4,5,6} ∪ {11,12,13,14}. All eight are needed. Two-value BVA here needs only {4,5,12,13}; the domain has no finite external endpoints to add.",
+        "pt": "As partições são x≤4, 5≤x≤12 e x≥13. As fronteiras finitas são 4,5,12,13. A BVA de 3 valores acrescenta cada fronteira e ambos os vizinhos inteiros imediatos: {3,4,5,6} ∪ {11,12,13,14}. São necessários os oito valores. A BVA de 2 valores exige aqui apenas {4,5,12,13}; o domínio não tem extremos externos finitos a acrescentar."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["bva-3-value", "unbounded-integer-domain"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.2.2",
+        "pages": [40],
+        "report": "docs/blueprint-validation.md#tl-046"
+      }
+    },
+    "proposed": {
+      "id": "tl-046",
+      "chapter": 4,
+      "lo": "FL-4.2.2",
+      "level": "K3",
+      "topic": "Boundary values",
+      "type": "calculation",
+      "required": 1,
+      "text": {
+        "en": "An integer input has no lower or upper domain limit. Values below 5 are rejected, 5 to 12 inclusive are accepted, and values above 12 are rejected. Consider every finite boundary of all three partitions. Which minimal set gives 100% three-value BVA coverage?",
+        "pt": "Uma entrada inteira não tem limite inferior nem superior de domínio. Os valores inferiores a 5 são rejeitados, os de 5 a 12 inclusive são aceites e os superiores a 12 são rejeitados. Considere todas as fronteiras finitas das três partições. Que conjunto mínimo dá 100% de cobertura de BVA de 3 valores?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "4, 5, 12, 13",
+            "pt": "4, 5, 12, 13"
+          },
+          "explanation": {
+            "en": "These are the four finite partition boundaries and give two-value coverage; their other neighbours are missing.",
+            "pt": "Estas são as quatro fronteiras finitas das partições e dão cobertura de 2 valores; faltam os outros vizinhos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "4, 5, 6, 11, 12, 13",
+            "pt": "4, 5, 6, 11, 12, 13"
+          },
+          "explanation": {
+            "en": "This expands only the accepted partition endpoints 5 and 12. It misses neighbours 3 and 14 of the rejected partition boundaries 4 and 13.",
+            "pt": "Isto expande apenas os extremos 5 e 12 da partição aceite. Omite os vizinhos 3 e 14 das fronteiras 4 e 13 das partições rejeitadas."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "3, 4, 5, 6, 11, 12, 13, 14",
+            "pt": "3, 4, 5, 6, 11, 12, 13, 14"
+          },
+          "explanation": {
+            "en": "Expand boundaries 4, 5, 12 and 13 by one integer on each side. The union has eight values: 3, 4, 5, 6, 11, 12, 13, 14.",
+            "pt": "Expanda as fronteiras 4, 5, 12 e 13 por um inteiro de cada lado. A união tem oito valores: 3, 4, 5, 6, 11, 12, 13, 14."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "3, 4, 5, 6, 7, 11, 12, 13, 14",
+            "pt": "3, 4, 5, 6, 7, 11, 12, 13, 14"
+          },
+          "explanation": {
+            "en": "This covers the required values but includes unnecessary interior value 7, so it is not minimal.",
+            "pt": "Isto cobre os valores exigidos, mas inclui o valor interior desnecessário 7, pelo que não é mínimo."
+          }
+        }
+      ],
+      "correct": ["o3"],
+      "explanation": {
+        "en": "The partitions are x≤4, 5≤x≤12 and x≥13. Finite boundaries are 4,5,12,13. Three-value BVA adds each boundary and both immediate integer neighbours: {3,4,5,6} ∪ {11,12,13,14}. All eight are needed. Two-value BVA here needs only {4,5,12,13}; the domain has no finite external endpoints to add.",
+        "pt": "As partições são x≤4, 5≤x≤12 e x≥13. As fronteiras finitas são 4,5,12,13. A BVA de 3 valores acrescenta cada fronteira e ambos os vizinhos inteiros imediatos: {3,4,5,6} ∪ {11,12,13,14}. São necessários os oito valores. A BVA de 2 valores exige aqui apenas {4,5,12,13}; o domínio não tem extremos externos finitos a acrescentar."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["bva-3-value", "unbounded-integer-domain"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.2.2",
+        "pages": [40],
+        "report": "docs/blueprint-validation.md#tl-046"
+      }
+    },
+    "changed": false
+  }
+]

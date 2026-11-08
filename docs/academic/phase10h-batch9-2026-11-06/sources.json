@@ -1,0 +1,43 @@
+{
+  "consultedOn": "2026-11-06",
+  "primary": "ISTQB CTFL EN4.0.1, with comparison to official PSTQB PT4.0translation1.0",
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "4.0.1,2024-09-15",
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "localByteSHA256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [
+        32, 33, 34, 35, 36, 38, 45, 46, 47, 49, 50, 51, 52, 53, 58, 59, 60
+      ],
+      "method": "Fresh local PDF extraction; ENofficial web open succeeded"
+    },
+    {
+      "language": "PT",
+      "edition": "4.0 translation1.0,syllabus date2023-04-21",
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "localByteSHA256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [
+        35, 36, 37, 38, 39, 41, 49, 50, 52, 54, 55, 56, 57, 58, 64, 65, 66
+      ],
+      "method": "Fresh local official-translation PDF extraction; official web fetch timed out; no successful new remote download claimed"
+    }
+  ],
+  "limitations": [
+    "AI review, not independent human SME certification or approval.",
+    "Physical pages count the cover; PTpagination differs fromEN. PT4.0translation1.0does not claim everyEN4.0.1erratum.",
+    "Local-byte hashes are not asserted as fresh remote-download hashes.",
+    "No empirical difficulty or reader-comprehension study. Mechanical checks do not prove semantic equivalence.",
+    "Full copyrighted source PDFs/pages are not bundled. Original TestLearn questions are not official ISTQB exam questions."
+  ],
+  "editionNotes": [
+    {
+      "questionId": "tl-056",
+      "EN": "LO refers to stakeholder feedback; body§3.2.1clarifies stakeholder involvement.",
+      "PT": "LO label uses feedback...aos stakeholders; bodyp.38uses feedback frequente dos stakeholders.",
+      "assessment": "A preposition difference in the LO label, resolved by the aligned substantive body, not evidence that the question requires correction. No source text was altered."
+    }
+  ]
+}

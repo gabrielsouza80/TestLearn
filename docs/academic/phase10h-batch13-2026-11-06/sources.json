@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "v4.0.1; 2024-09-15",
+      "fileName": "ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [
+        14,
+        16,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        32,
+        35,
+        36
+      ],
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "provenance": "Official copy supplied in project source library, read and hashed in this session. EN web success; PT web timeout; no new PT download or remote-byte equality claimed.",
+      "pageConvention": "Physical PDF page including cover as1; offsets checked individually."
+    },
+    {
+      "language": "PT",
+      "edition": "v4.0; tradução 1.0; 21-04-2023",
+      "fileName": "ISTQB_CTFL_Syllabus-v4.0-PT_v1.0 (1).pdf",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [
+        15,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        32,
+        33,
+        35,
+        38,
+        39
+      ],
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "provenance": "Official copy supplied in project source library, read and hashed in this session. EN web success; PT web timeout; no new PT download or remote-byte equality claimed.",
+      "pageConvention": "Physical PDF page including cover as1; offsets checked individually."
+    }
+  ],
+  "consultedOn": "2026-11-07",
+  "limitations": "EN4.0.1 and PT4.0 translation1.0 are distinct editions, not textually identical. Syllabus sections suffice for these concepts; no separate glossary consultation claimed. Transport/refund examples are reviewer contextual interpretation, not new official definitions. Full copyrighted PDFs/page texts are not bundled."
+}

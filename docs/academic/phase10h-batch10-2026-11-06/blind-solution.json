@@ -1,0 +1,28 @@
+{
+  "questionId": "tl-062",
+  "recordedAt": "2026-11-06T15:48:39.944525+00:00",
+  "reviewerType": "AI",
+  "method": "Read only the PT/EN statement and hash-shuffled options o1,o4,o3,o2, without published key or explanations. Record answer before revealing full question or reading prior matrix. This procedural separation is not proof of human independence or resistance to model prior knowledge.",
+  "projectionSHA256": "d82a5cf4c0e008fd306fd4ff1b5f7b4c8d6c9d3d49ed59737cc34a58f2d2a0b0",
+  "answer": ["o4"],
+  "reasonPT": "O planeamento da próxima iteração requer preparar o trabalho de teste das stories candidatas. Avaliar testabilidade, identificar tarefas de teste e ajudar a estimar esforço é um contributo direto e típico. A pergunta não concede responsabilidade exclusiva ao testador.",
+  "reasonEN": "Planning the next iteration calls for preparing testing work for candidate stories. Assessing testability, identifying testing tasks and helping estimate test effort are direct typical contributions, without claiming tester exclusivity.",
+  "distractors": {
+    "o1": {
+      "pt": "Um testador pode informar prioridades com risco e qualidade, mas ordenar todo o backlog de negócio em nome do product owner não é o contributo típico de teste pedido. Não depende de proibir papéis acumulados.",
+      "en": "A tester may inform priorities with risk and quality information, but ordering the whole business backlog on behalf of the product owner is not the typical testing contribution asked for. This does not prohibit combined roles."
+    },
+    "o2": {
+      "pt": "Um testador pode colaborar na arquitetura e levantar testabilidade; escolher a arquitetura antes de discutir critérios de aceitação não corresponde ao contributo típico de planeamento de teste da iteração.",
+      "en": "A tester can collaborate on architecture and raise testability concerns; selecting implementation architecture before discussing acceptance criteria does not describe the typical iteration testing-planning contribution."
+    },
+    "o3": {
+      "pt": "Métricas anteriores podem informar o planeamento, mas reportar apenas uma contagem e adiar testabilidade e esforço até à execução omite preparação essencial explicitamente pedida.",
+      "en": "Previous metrics can inform planning, but reporting only a count and deferring testability and effort until execution omits the relevant preparation."
+    }
+  },
+  "alternativeKeyConsultedBeforeRecording": false,
+  "storedExplanationsConsultedBeforeRecording": false,
+  "ownerAccepted": false,
+  "humanApproved": false
+}

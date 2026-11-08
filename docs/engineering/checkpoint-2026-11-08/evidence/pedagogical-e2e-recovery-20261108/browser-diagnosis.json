@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "C:/TestLearn/tmp/pedagogical-e2e-recovery-20261108/diagnose.cjs"
+  ],
+  "startedUTC": "2026-11-08T11:59:57.427324+00:00",
+  "finishedUTC": "2026-11-08T12:00:13.784434+00:00",
+  "wallSeconds": 16.355,
+  "exitCode": 0
+}

@@ -1,0 +1,41 @@
+{
+  "atUTC": "2026-11-08T12:17:16.873887+00:00",
+  "state": "BLOCKED",
+  "reasons": [
+    "Three desktop E2E still fail on proven preexisting320px/text200percent overflow",
+    "Legacy academic scope allowlist rejects new presentation/test paths",
+    "Global Prettier check rejects45 preexisting unchanged evidence documents"
+  ],
+  "fixed": "Mobile feedback selector only; verified RED to GREEN and four negative controls",
+  "head": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "branch": "develop",
+  "modifiedPreexistingFiles": [
+    "tests/e2e/pedagogical-review-notice.spec.ts"
+  ],
+  "newFiles": [
+    "docs/experiments/pedagogical-e2e-recovery-2026-11-08.md",
+    "docs/experiments/preexisting-question-reflow-2026-11-08.md",
+    "tests/e2e/pedagogical-feedback-negative.spec.ts"
+  ],
+  "priorFilesUnchanged": 447,
+  "priorEvidenceFilesPreserved": 65,
+  "unitIntegration": {
+    "passed": 282,
+    "failed": 0,
+    "skipped": 0
+  },
+  "e2eRelevant": {
+    "passed": 37,
+    "failed": 3
+  },
+  "nodeGuardRegression": {
+    "passed": 91,
+    "failed": 0,
+    "skipped": 0
+  },
+  "finalScopedFormat": "PASS",
+  "globalFormat": "FAIL45 preexisting files",
+  "finalDiffCheckExitCode": 0,
+  "noApplicationBankHistoryScoringStorageOrApprovalChanges": true,
+  "noGitPublicationOrHumanPilot": true
+}

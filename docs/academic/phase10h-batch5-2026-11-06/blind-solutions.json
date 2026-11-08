@@ -1,0 +1,57 @@
+{
+  "recordedAt": "2026-11-06T02:25:36.669901+00:00",
+  "reviewer": "AI; not independent human SME review or certification",
+  "method": "Read only blind-projection.json with deterministic SHA-256-shuffled alternatives. Stored correct keys and explanations not inspected before recording these solutions. User critical-point hints were available; this is blind-to-key analysis, not an uninformed human experiment. Both PT/EN statements and all alternatives read. Syllabus comparison follows this initial derivation.",
+  "projectionSHA256": "fbd14145d6a5a261782a23cf91ce5c8e07a54b40b3910c61b7e44af7bcfe0dcb",
+  "solutions": [
+    {
+      "questionId": "tl-047",
+      "answer": ["o1"],
+      "reasoning": "Union of clipped neighbours of 0,7,8,22,23,30 in [0,30], less already tested boundaries: {1,6,9,21,24,29}. o2 omits endpoint neighbours1/29; o3 adds infeasible -1/31; o4 repeats existing tests.",
+      "derivation": "Union of clipped neighbours of 0,7,8,22,23,30 in [0,30], less already tested boundaries: {1,6,9,21,24,29}. o2 omits endpoint neighbours1/29; o3 adds infeasible -1/31; o4 repeats existing tests."
+    },
+    {
+      "questionId": "tl-071",
+      "answer": ["o2"],
+      "reasoning": "Existing cover valid day partitions and PDF/CSV. Need below2,above45,otherformat. (1,XML),(46,PDF) covers all three; at least two cases required for two mutually exclusive day partitions. o1 misses both invalid day partitions;o3 misses above45;o4 misses otherformat. Valid only with explicit no-masking premise.",
+      "derivation": "Existing cover valid day partitions and PDF/CSV. Need below2,above45,otherformat. (1,XML),(46,PDF) covers all three; at least two cases required for two mutually exclusive day partitions. o1 misses both invalid day partitions;o3 misses above45;o4 misses otherformat. Valid only with explicit no-masking premise."
+    },
+    {
+      "questionId": "tl-073",
+      "answer": ["o3"],
+      "reasoning": "Execute all six events: Review-return-Returned-resubmit-Review-approve-Approved-revoke-Review-approve-Approved-publish-Published. Five distinct transitions; approve must be repeated after revoke, so lower bound6. o1 misses return/resubmit;o2 misses revoke;o4 resubmit invalid after revoke. Alternative shortest sequence approve,revoke,return,resubmit,approve,publish exists outside options.",
+      "derivation": "Execute all six events: Review-return-Returned-resubmit-Review-approve-Approved-revoke-Review-approve-Approved-publish-Published. Five distinct transitions; approve must be repeated after revoke, so lower bound6. o1 misses return/resubmit;o2 misses revoke;o4 resubmit invalid after revoke. Alternative shortest sequence approve,revoke,return,resubmit,approve,publish exists outside options."
+    },
+    {
+      "questionId": "tl-074",
+      "answer": ["o4"],
+      "reasoning": "Two untested refusal causes are nonborrower and count>=2, with no reservation. Refusal preserves count0 or2. o1 repeats success and omits nonborrower;o2 incorrectly permits count2;o3 incorrectly permits nonborrower. No need exhaustive combinations.",
+      "derivation": "Two untested refusal causes are nonborrower and count>=2, with no reservation. Refusal preserves count0 or2. o1 repeats success and omits nonborrower;o2 incorrectly permits count2;o3 incorrectly permits nonborrower. No need exhaustive combinations."
+    },
+    {
+      "questionId": "tl-076",
+      "answer": ["o3"],
+      "reasoning": "X=(3+4*6+15)/6=7; Y=(2+4*5+8)/6=5; setup3 gives15 person-hours. o1 omits setup;o2 uses modes6+5+3;o4 uses unweighted means8+5+3. Not calendar duration or sum of deviations; linearity of expectation does not require independence.",
+      "derivation": "X=(3+4*6+15)/6=7; Y=(2+4*5+8)/6=5; setup3 gives15 person-hours. o1 omits setup;o2 uses modes6+5+3;o4 uses unweighted means8+5+3. Not calendar duration or sum of deviations; linearity of expectation does not require independence."
+    },
+    {
+      "questionId": "tl-077",
+      "answer": ["o2"],
+      "reasoning": "Slot1 runnable A4,D5: D. Slot2 onlyA: A. Slot3 B9,C7: B. Slot4C. o1 violates localpriority atslot1;o3 violates atslot3;o4 uses unavailableC atslot1. Global optimization is not requested.",
+      "derivation": "Slot1 runnable A4,D5: D. Slot2 onlyA: A. Slot3 B9,C7: B. Slot4C. o1 violates localpriority atslot1;o3 violates atslot3;o4 uses unavailableC atslot1. Global optimization is not requested."
+    },
+    {
+      "questionId": "tl-086",
+      "answer": ["o1"],
+      "reasoning": "Internal boundary values4,5,11,12,20,21. Neighbour-union {3,4,5,6,10,11,12,13,19,20,21,22}; subtract existing yields{5,11,13,21}. o2 misses13;o3 adds excluded endpoints and misses11/13;o4 repeats20 and misses21. Restricted internal scope is not universal full-domain BVA.",
+      "derivation": "Internal boundary values4,5,11,12,20,21. Neighbour-union {3,4,5,6,10,11,12,13,19,20,21,22}; subtract existing yields{5,11,13,21}. o2 misses13;o3 adds excluded endpoints and misses11/13;o4 repeats20 and misses21. Restricted internal scope is not universal full-domain BVA."
+    },
+    {
+      "questionId": "tl-087",
+      "answer": ["o2"],
+      "reasoning": "Rules: trusted&quota R1, trusted&notquota&retry R2, trusted&notquota&notretry R3, untrusted R4. Existing cases hitR1,R4,R1,R4,R2 =>3/4=75%; add(T,F,F) hitsR3. o1 counts concrete5/8 instead;o3 confuses repetitions with newcolumns;o4 repeatsR2. Four columns represent eight concrete combinations, disjoint and exhaustive.",
+      "derivation": "Rules: trusted&quota R1, trusted&notquota&retry R2, trusted&notquota&notretry R3, untrusted R4. Existing cases hitR1,R4,R1,R4,R2 =>3/4=75%; add(T,F,F) hitsR3. o1 counts concrete5/8 instead;o3 confuses repetitions with newcolumns;o4 repeatsR2. Four columns represent eight concrete combinations, disjoint and exhaustive."
+    }
+  ],
+  "originalBlindRecordSHA256": "a27794524f0409d4862a5f580739fad3b8aba91997954ddd9748690530742100"
+}

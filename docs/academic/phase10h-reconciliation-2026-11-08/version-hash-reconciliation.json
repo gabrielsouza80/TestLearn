@@ -1,0 +1,5675 @@
+{
+  "currentBankRawSHA256": "9a6bc09d6ab5a512cb53ea26dc7a1da5ae465167bf5e2b6ba8c9c9b34f332615",
+  "currentBankCanonicalSHA256": "3b1faffe3e89031fac6a76ee30e8f82e5a81d3ebea58f1857d0f36391bf9320a",
+  "contentRevision": "2026-10-27.10",
+  "historicalArchives": {
+    "src/data/archive/questions-2026-10-27.1.json": "b5f44fc33cfd55b8e7aea1fceff7348c32857580f04ef493156107788d5717f5",
+    "src/data/archive/questions-2026-10-27.2.json": "982e73ec30706a5e8cca992b80f9157d18cda2d3e77791b32430a804c3574cbb",
+    "src/data/archive/questions-2026-10-27.3.json": "cc70ebf8768c1236fcb89099d88ad275600d542078c1531c1195fe43f2f96d38",
+    "src/data/archive/questions-2026-10-27.4.json": "413e93605f8026e7a633f92c512c0f93b2a466867e4a1d4d3752dbd03ee1f104",
+    "src/data/archive/questions-2026-10-27.5.json": "c57da2c300f58dd5714a8c54746b9e1cd404b8134347c3b13123e83b97823a79",
+    "src/data/archive/questions-2026-10-27.6.json": "8bf1990ee8eb05f93eec529fe903a05db20ad72a649648f161f2847802c6012e",
+    "src/data/archive/questions-2026-10-27.7.json": "970ef782fbf61bdd92889ceea1fc8474064eec377058c01ec1198b927c0c4fef",
+    "src/data/archive/questions-2026-10-27.8.json": "d24f50e91af42eac9fc52896db9b2f856a0530536ab770882ac15e292f1f119e",
+    "src/data/archive/questions-2026-10-27.9.json": "89a0d7b2483afbbd279f7a1d9ac707d1ce9b4e049225be88a59c0dd30cd42bb2"
+  },
+  "deltaFromRevision9": ["tl-011", "tl-090"],
+  "explanation": "Only the two documented Batch1 corrections differ from revision9. Earlier archive metadata/key/content changes remain historical; no retroactive authorization asserted. Absence before an item was introduced is recorded, not treated as loss.",
+  "items": [
+    {
+      "questionId": "tl-001",
+      "version": 2,
+      "sha256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "1ee88b28401fd7ee52ff9fc500f74651dcd749461aa1a045a546de016ee7193f"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-002",
+      "version": 3,
+      "sha256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0001a37ce447e7a46ad3688ba8e077b9016b71360caf4814701b5ad1ba12b1fe"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "be587591b0485d8292577931de988ef73b0846ea6cfde546b24779254d5780dd"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "be587591b0485d8292577931de988ef73b0846ea6cfde546b24779254d5780dd"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "be587591b0485d8292577931de988ef73b0846ea6cfde546b24779254d5780dd"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "30b519fff79e908c8b5be9944ccb2c76a7c42f98843482b777710a092b6ee8c2"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "30b519fff79e908c8b5be9944ccb2c76a7c42f98843482b777710a092b6ee8c2"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0ff7fa41b7295ee5f5dc3087d11cfd116dc8e74da4f112af81121f9ae601b1df"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-003",
+      "version": 4,
+      "sha256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a27a7105aac68e3e46e55eb30af267af95181c8326135c58909eaee2dbcd7b61"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "63022f92eb3bc79277cc1e875c00f13327383e2999fa71a9cb0f61ac1450befa"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "63022f92eb3bc79277cc1e875c00f13327383e2999fa71a9cb0f61ac1450befa"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "63022f92eb3bc79277cc1e875c00f13327383e2999fa71a9cb0f61ac1450befa"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "5c9274bacd737c25875f67dab6f4a545cf5571d84eb0c7a8e417a0448769de95"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "5c9274bacd737c25875f67dab6f4a545cf5571d84eb0c7a8e417a0448769de95"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "f2ab547f90da78a02814524f214fa362d4d799927e59f97a582b04e7529535e0"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-004",
+      "version": 2,
+      "sha256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "83f4853efe69021438443ae3c78a4d67ae4fdb4e99710b17d0292f3cefeae3b4"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "0af925834384d989e10739299616e899121f54e52394d85aab51eef870fc6ff9"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "98cc0a0128b61d289938f3eadca49415717757d5adf7aafcdc0f11a08921ee0e"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-005",
+      "version": 2,
+      "sha256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3ab8f71c15eb84d361ad12acdb97658912a518d6125ddeebb1f5bd907c262b85"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "05c5741f44fd7803bdfb021aa02a1af58c55e925322373017ea83cfa2999d0e6"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "1b88f7e791e80867a1296e28ce78fd90695c9f28328b9ccc74874b890dd49a35"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-006",
+      "version": 3,
+      "sha256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8c70d67250dd21f034dd8252f1200f1e1e05e0d9204d28e452beacab48333290"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-007",
+      "version": 2,
+      "sha256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f199f05e5cc6ef6d6d4f314faa8961f3a07c46a774b5795be9cb236b7ade19fb"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "2f91a17a25f526a55cd85977d69509d26b597d507f244196889f391bdf68cf57"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "c0726c854ee926a619ced00e9776122368407abf3449771a1901b51b9b5e065a"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-008",
+      "version": 4,
+      "sha256": "30caf057d01c8d5c890700ccffe1561113b26473c464fa124718db374671705f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b1efef0b9833ebef4c16fc54a0a0dd29f1207ee89f5ec3c5dd34fed2d6b1e885"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3e4417d527ef31ad89ba0c60656e44bea1bcab246da710fdb776f739806ad520"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3e4417d527ef31ad89ba0c60656e44bea1bcab246da710fdb776f739806ad520"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3e4417d527ef31ad89ba0c60656e44bea1bcab246da710fdb776f739806ad520"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "e5064845e34a887648c7d331859d175b2dfc3892835c809a6232fe0c6e63ecf9"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "e5064845e34a887648c7d331859d175b2dfc3892835c809a6232fe0c6e63ecf9"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "30caf057d01c8d5c890700ccffe1561113b26473c464fa124718db374671705f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "30caf057d01c8d5c890700ccffe1561113b26473c464fa124718db374671705f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "30caf057d01c8d5c890700ccffe1561113b26473c464fa124718db374671705f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-009",
+      "version": 2,
+      "sha256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fde2f7e471fa7452e8dc63a8c295deab398fcfda5599b66cdfd2f677ad504d86"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a4d42a3bdfbd788d2ea987af77add7653552c03d5ec514070a316293593e4ded"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ba36aeccb6125f2e08b34421709cc01f8f2a10421984874df19899b6a4c9382c"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-010",
+      "version": 3,
+      "sha256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c774707bdc18c7bcadfc629db1cb423e91a3fbcba9c0bb5e270308cb7e40ea47"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "0e4ca87078aa0d7f7438565c76d36d61201f81c81deb343a245077804dda500a"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fb8e756c8ce786e34d7eda2dce5b6069220f646247bb339067e00b6359c48e7b"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-011",
+      "version": 3,
+      "sha256": "c2abfddc606a1a3dfdd54c025cdf64abc92c3147f0a2859706436d0cce01a974",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "a451e859d468b88a9eb57cf2e4de0c7c795ca6e0bbeae3fe2d886224dbeaecad"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fa9bd549bd9e7bcff82c863a10de6a2691e623b62dcfe8f242972326dd184f1f"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fa9bd549bd9e7bcff82c863a10de6a2691e623b62dcfe8f242972326dd184f1f"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fa9bd549bd9e7bcff82c863a10de6a2691e623b62dcfe8f242972326dd184f1f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fa9bd549bd9e7bcff82c863a10de6a2691e623b62dcfe8f242972326dd184f1f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fa9bd549bd9e7bcff82c863a10de6a2691e623b62dcfe8f242972326dd184f1f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "a2213c90fdca17ebd289978f394ce5afc48612b9e45e20d309d04aaccf64ad35"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "a2213c90fdca17ebd289978f394ce5afc48612b9e45e20d309d04aaccf64ad35"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "a2213c90fdca17ebd289978f394ce5afc48612b9e45e20d309d04aaccf64ad35"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-012",
+      "version": 3,
+      "sha256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "73e75787fb8740e544a875bfc4e95cfc612e04fd6577aef0bfaf7e96ff4cb7b5"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "60cf24c5d40171aaad342128b72836d7cb43e2dab96e54e46ebfba7ccbcc9f25"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1a836bc3c8bfca0ab095e6e48d50a61b144f7105523bfb5612b008fc00510b44"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-013",
+      "version": 2,
+      "sha256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "28d68cd2f51be4a39e4ad0dfd5b3fbcb9f20ad1a408a7cee9be4af1258ce4070"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-014",
+      "version": 2,
+      "sha256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b49eb939c65bdc561827d2e270e3093e42fb5d70cc1a5b4deee36188e735399d"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-015",
+      "version": 2,
+      "sha256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f53f5d678e2c04070624525bb32493305fc68d988610ce8b392d66a0ebba40b7"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-016",
+      "version": 3,
+      "sha256": "8b262220a636b7ce047fa7127c111fa231496642e4409759e3a7c5b17a908b7c",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1c61c92c4bf820610dc9d98cf00a1ad6aade83d8fb790910e8dcb8710d81049e"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e85a14c9c27aea46b64b33d8a52822c361ff498cd0b9e85ce3dcd072f8297b9b"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e85a14c9c27aea46b64b33d8a52822c361ff498cd0b9e85ce3dcd072f8297b9b"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e85a14c9c27aea46b64b33d8a52822c361ff498cd0b9e85ce3dcd072f8297b9b"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e85a14c9c27aea46b64b33d8a52822c361ff498cd0b9e85ce3dcd072f8297b9b"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e85a14c9c27aea46b64b33d8a52822c361ff498cd0b9e85ce3dcd072f8297b9b"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "8b262220a636b7ce047fa7127c111fa231496642e4409759e3a7c5b17a908b7c"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "8b262220a636b7ce047fa7127c111fa231496642e4409759e3a7c5b17a908b7c"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "8b262220a636b7ce047fa7127c111fa231496642e4409759e3a7c5b17a908b7c"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-017",
+      "version": 2,
+      "sha256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "5b01ed060509cd51b3669f6b7b1c82088b17019d5aa338c902c611017a49c7ab"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-018",
+      "version": 3,
+      "sha256": "9444c9830675b08a4435e5b969ea682d63039bf116249bf5300a9f51e5c397b9",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "183aefc50c12d776ebbbb75aa06ed17ddf01723696bca642b65c5e7935632dfa"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3b6ce0a46c577074c083cd39cba6623101c0703537f512c7c9fe02f1116ec49e"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3b6ce0a46c577074c083cd39cba6623101c0703537f512c7c9fe02f1116ec49e"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3b6ce0a46c577074c083cd39cba6623101c0703537f512c7c9fe02f1116ec49e"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3b6ce0a46c577074c083cd39cba6623101c0703537f512c7c9fe02f1116ec49e"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3b6ce0a46c577074c083cd39cba6623101c0703537f512c7c9fe02f1116ec49e"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "9444c9830675b08a4435e5b969ea682d63039bf116249bf5300a9f51e5c397b9"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "9444c9830675b08a4435e5b969ea682d63039bf116249bf5300a9f51e5c397b9"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "9444c9830675b08a4435e5b969ea682d63039bf116249bf5300a9f51e5c397b9"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-019",
+      "version": 2,
+      "sha256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "94adfeef8095ed9fdfe02bb573b1eb2fd26b45907b571a91f1d836a642457295"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-020",
+      "version": 2,
+      "sha256": "7132fb341fa5ad761ded41da162ae1bcdb644b1cd681acfc3a4fc01f320af43a",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "9fa6b7e5aec67ffa1e48ddc80d6a1a35af3fc8115271ae4edbb3ffd81ec06439"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f334a0706b71ba7ca373c64323b0d1630976f7cad3fc91c9875cdf6fd8ec00b9"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f334a0706b71ba7ca373c64323b0d1630976f7cad3fc91c9875cdf6fd8ec00b9"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f334a0706b71ba7ca373c64323b0d1630976f7cad3fc91c9875cdf6fd8ec00b9"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f334a0706b71ba7ca373c64323b0d1630976f7cad3fc91c9875cdf6fd8ec00b9"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f334a0706b71ba7ca373c64323b0d1630976f7cad3fc91c9875cdf6fd8ec00b9"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "7132fb341fa5ad761ded41da162ae1bcdb644b1cd681acfc3a4fc01f320af43a"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "7132fb341fa5ad761ded41da162ae1bcdb644b1cd681acfc3a4fc01f320af43a"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "7132fb341fa5ad761ded41da162ae1bcdb644b1cd681acfc3a4fc01f320af43a"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-021",
+      "version": 2,
+      "sha256": "e41abdf84b8fd2714355fa15040de0c0ad6a34dd49dfc705e231f7c121898e54",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "029ad73c462eee13f4c2a90328a9243702bcc10ab14ac8682edbb926f6d95026"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b1b6e63018d401c1604177d03ce27bdc9fbd34c9439a37f0c24f21496b749f3f"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b1b6e63018d401c1604177d03ce27bdc9fbd34c9439a37f0c24f21496b749f3f"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b1b6e63018d401c1604177d03ce27bdc9fbd34c9439a37f0c24f21496b749f3f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b1b6e63018d401c1604177d03ce27bdc9fbd34c9439a37f0c24f21496b749f3f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b1b6e63018d401c1604177d03ce27bdc9fbd34c9439a37f0c24f21496b749f3f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e41abdf84b8fd2714355fa15040de0c0ad6a34dd49dfc705e231f7c121898e54"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e41abdf84b8fd2714355fa15040de0c0ad6a34dd49dfc705e231f7c121898e54"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "e41abdf84b8fd2714355fa15040de0c0ad6a34dd49dfc705e231f7c121898e54"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-022",
+      "version": 3,
+      "sha256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7729e7ebc5e0ceff9648cbe7a3cbde2d17c9047eb4f852b091a329a2405a85b3"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "88352092cfac8ef8411baa40f8f517f620a2852f976a62a8d56c0d0b7d3502b8"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "093dc2e2ddc74cfea383381171b9fcacd36f787bc3d66e04e61de85369a4932c"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-023",
+      "version": 4,
+      "sha256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "dbaa42edf1e2e528f1ac3dfd7f701a6e08fb1555933fa9ef7e8a6b8cef86f845"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "f064a70883d779a9f65206d91e40a2c17b14e1698b12269870955930c2eefa0b"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "f064a70883d779a9f65206d91e40a2c17b14e1698b12269870955930c2eefa0b"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "f064a70883d779a9f65206d91e40a2c17b14e1698b12269870955930c2eefa0b"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "d4284a18654106a71ec033c8d249875c8224f3ba5897ff4510eb8d868fb55c29"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "d4284a18654106a71ec033c8d249875c8224f3ba5897ff4510eb8d868fb55c29"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-024",
+      "version": 3,
+      "sha256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "06e0eb872079b41ffb2e08ec145d2919b39d3c48309b0ebb683f798757a360ad"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "dd248f35f4afaca54f4931f504a248391ebdf3e2fa52c56270bce11dd1a27112"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-025",
+      "version": 2,
+      "sha256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "030a53552544af98f2fa00305c5889f6e425cd4765a4b394c3d1fdb124712e59"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "067a6fef88fe6e9d9a2a3e10cb8349de09adf954ae1c607b02a02b177bfd2c77"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "40675f554f349d3f07d662e7778ca9e9de1557eabcb17b95c6ed169de2c9c2ae"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-026",
+      "version": 3,
+      "sha256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "cc029f84ab0a61b85f51dfec93e4c3dcc865bff68ef0706589632f778203be23"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6953a3837000763d83e885d59dacf31fc7588750a8195129cac45d21eaf15b70"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a1da9bf0e82bd855160449b80c5568c00000aa41da53fba3745ba3cf9cccc6a"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-027",
+      "version": 3,
+      "sha256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "46598c0530cd8cdb9ab9327e548d707ce934ed9c483f9ff148d71a6e3aec7334"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "12474ad3af8fb9ab812451e1269ed747c517849a4a57a194d3431955c96fb796"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "fed7d098638062c4e819cdaa6e0b7651d46bd27a9d33c9527911a8d129daa7b3"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-028",
+      "version": 3,
+      "sha256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6f57e170e0396fd8c50dd75d32686a0a28deca1932c822bec672626c0f584e8b"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3950646661f1a9b5d993f0e2f2833d25b1d6ab25fa8e260b496ce1c9f83da8f2"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "76097379322ae69b5ac61fd0d2b783db011ffd2ecb93b3e32d1677704dddb59f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-029",
+      "version": 3,
+      "sha256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "e7a4830980fc75d66ad59383217447a40b4f73a028d561aedfc515eac665af9b"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b9789b7aaf2501ad5b194151bd3e0a3ad05b2825873f83c9548e9acb6b76626b"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "6a5d7343824ef6cbef6111441141bd867a1086dbe10d497b06118353ab53c230"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-030",
+      "version": 3,
+      "sha256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "852484cb5266c49bdf3cf977f9243b2de5bfca6d5a9ea7e530dae630b27193c9"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8b41cb4d00c67346c6cdb1508fe868bd3a1d6339602bc740598ab7bd1b2036d4"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "34e12241675c8679da153516d4b36cba5a5cc98be056d973518363627f3ba513"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-031",
+      "version": 3,
+      "sha256": "0def0fa4d9038c8059cd8ad5d0f5d7b3c43ba08bcfbb23f345f6adf682b9c1e0",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7a09777042db9519bd46f7ee1c2884fbb8d551ffed7881b9224dcb6a15dcc0ed"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "077099ff02a2228f385805a462574764d6c86058d02e079ca95dcbb3f0c9fe35"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "077099ff02a2228f385805a462574764d6c86058d02e079ca95dcbb3f0c9fe35"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "077099ff02a2228f385805a462574764d6c86058d02e079ca95dcbb3f0c9fe35"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "077099ff02a2228f385805a462574764d6c86058d02e079ca95dcbb3f0c9fe35"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "077099ff02a2228f385805a462574764d6c86058d02e079ca95dcbb3f0c9fe35"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0def0fa4d9038c8059cd8ad5d0f5d7b3c43ba08bcfbb23f345f6adf682b9c1e0"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0def0fa4d9038c8059cd8ad5d0f5d7b3c43ba08bcfbb23f345f6adf682b9c1e0"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0def0fa4d9038c8059cd8ad5d0f5d7b3c43ba08bcfbb23f345f6adf682b9c1e0"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-032",
+      "version": 3,
+      "sha256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "031607f7f54367db23946e6ba667f0526bd4c83668ffaa88d3370ddf28979205"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "03bc1f3bf27272a22403f322120728bc38338632bd403335f1cda0dbea3caec1"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "7f60217b3313eae469e74621d7576b74d6a2c7d565a401eb20f2f9d5d87a7c86"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-033",
+      "version": 3,
+      "sha256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f90b86cf47556f4c028a2c30a94f7d760bef29f2b98d2740a35ffc765049d45b"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6df91291ad6f971c9119ad5c51eeee527fb528cd05ef3bb44313be4077bb9fcd"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "1dc16a58ba1ddf343dad01afe41b833ff1e0c141d0331f646367f592541c2815"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-034",
+      "version": 2,
+      "sha256": "176b0c0fd90712ddaf00158b871ce4ed8a4b769d54cf1f86607539a81d713ca7",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "731347dce99d1a40141f50a57a997d910d8150dc83d6a4e93dd75557f2d4b753"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "4587ca916fb9d18785a018f19b1041f7b20afda541f8084ae6def60574989f8e"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "4587ca916fb9d18785a018f19b1041f7b20afda541f8084ae6def60574989f8e"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "4587ca916fb9d18785a018f19b1041f7b20afda541f8084ae6def60574989f8e"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "4587ca916fb9d18785a018f19b1041f7b20afda541f8084ae6def60574989f8e"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "4587ca916fb9d18785a018f19b1041f7b20afda541f8084ae6def60574989f8e"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "176b0c0fd90712ddaf00158b871ce4ed8a4b769d54cf1f86607539a81d713ca7"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "176b0c0fd90712ddaf00158b871ce4ed8a4b769d54cf1f86607539a81d713ca7"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "176b0c0fd90712ddaf00158b871ce4ed8a4b769d54cf1f86607539a81d713ca7"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-035",
+      "version": 3,
+      "sha256": "e14348d9fe1de2402f0c59d1bdaa5fc03f4f659051e87219e302dbbd2a9fc3dc",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3f526afc6d74b7c180eb5c4fafccb865dc887b8d39d0d22ec76ebb88aff8fda2"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ffe6c394928b0dc4bc0ae3ccf2f8b1d82247ce90b69d84e1148be72ae8f186c2"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ffe6c394928b0dc4bc0ae3ccf2f8b1d82247ce90b69d84e1148be72ae8f186c2"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ffe6c394928b0dc4bc0ae3ccf2f8b1d82247ce90b69d84e1148be72ae8f186c2"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ffe6c394928b0dc4bc0ae3ccf2f8b1d82247ce90b69d84e1148be72ae8f186c2"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "ffe6c394928b0dc4bc0ae3ccf2f8b1d82247ce90b69d84e1148be72ae8f186c2"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "e14348d9fe1de2402f0c59d1bdaa5fc03f4f659051e87219e302dbbd2a9fc3dc"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "e14348d9fe1de2402f0c59d1bdaa5fc03f4f659051e87219e302dbbd2a9fc3dc"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "e14348d9fe1de2402f0c59d1bdaa5fc03f4f659051e87219e302dbbd2a9fc3dc"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-036",
+      "version": 3,
+      "sha256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "9f277fd56f1075fde103b18fb75eecd435de09538a8666a9cb5450b7a2abfd5e"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d5f38b2ef55c90eb0be0728980498985e4c589bb36dfde5d1f94161dba065d15"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "0c11667531d5742d3c4b746a23bfc14a43b324193cdabb117e1a2325e92a90a3"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-037",
+      "version": 2,
+      "sha256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "557f6a7110a782b0baf109412b7c0e44aad44a2269f1cae5e6d586e3043b1894"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "de1ff2850b86a75029b0873a29e7fb72dc8e81956bd7a2df438f15877579ec25"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3fea905b66b188d711958edc0262027a44d7957b0dc18118eee2314334fc92f1"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-038",
+      "version": 3,
+      "sha256": "672f337178b6a27526fedce6a040d0fab229484d7fe71a10d8553ab775acefa6",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "86924813992388900b5d36e026121e5cedf042d9f3cc7c851119dac1d9b291e8"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6341b71a177c37db1e524437e19a4c98f66bc015b31a26256a7a0d08967f1751"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6341b71a177c37db1e524437e19a4c98f66bc015b31a26256a7a0d08967f1751"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6341b71a177c37db1e524437e19a4c98f66bc015b31a26256a7a0d08967f1751"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6341b71a177c37db1e524437e19a4c98f66bc015b31a26256a7a0d08967f1751"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "6341b71a177c37db1e524437e19a4c98f66bc015b31a26256a7a0d08967f1751"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "672f337178b6a27526fedce6a040d0fab229484d7fe71a10d8553ab775acefa6"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "672f337178b6a27526fedce6a040d0fab229484d7fe71a10d8553ab775acefa6"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "672f337178b6a27526fedce6a040d0fab229484d7fe71a10d8553ab775acefa6"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-039",
+      "version": 2,
+      "sha256": "593a5bd756107b0387eb6803ca9e06a2fa38d9a4f47014c969f5381dbfe4692f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b214e20991bd8247a1e81267d9ecf7a9acae2254f85284ffa47f23bc3e650948"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "325173bf62e832ea23b28428300ef84f5019c550d6ba171dfdf0b5e474d29799"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "325173bf62e832ea23b28428300ef84f5019c550d6ba171dfdf0b5e474d29799"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "325173bf62e832ea23b28428300ef84f5019c550d6ba171dfdf0b5e474d29799"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "325173bf62e832ea23b28428300ef84f5019c550d6ba171dfdf0b5e474d29799"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "325173bf62e832ea23b28428300ef84f5019c550d6ba171dfdf0b5e474d29799"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "593a5bd756107b0387eb6803ca9e06a2fa38d9a4f47014c969f5381dbfe4692f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "593a5bd756107b0387eb6803ca9e06a2fa38d9a4f47014c969f5381dbfe4692f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "593a5bd756107b0387eb6803ca9e06a2fa38d9a4f47014c969f5381dbfe4692f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-040",
+      "version": 3,
+      "sha256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "821d33f3f4f0172f354d75746c0d126101afffcd2a55d3cb1d39b8811470cad2"
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "b6a34d533c216d03e6a2aee5b8e985dc6c5013a78d727a1e584b67c8faf9c46c"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-041",
+      "version": 1,
+      "sha256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "bb2ef546b854b9c48951dfd3433466464e54eaf0b37f16c99811ecebe7be01b4"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-042",
+      "version": 1,
+      "sha256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "3537a79a65e62ee0c5c7d80eb17eaa751ce4a063548d877b778f9ddadbe0f735"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-043",
+      "version": 1,
+      "sha256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "70ecf4448366086f5c0ec828623f9044d477ab94a922bb40135d9e9af2c9b2d8"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-044",
+      "version": 1,
+      "sha256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-045",
+      "version": 1,
+      "sha256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "ca486bd1028c0b64f5f84de119c1c1bc935b3798eae827fafd70bc6c6bc88f79"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-046",
+      "version": 1,
+      "sha256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "21a87d241ad1e71b5d42727a2ed56cf257b74d83338e337865e0ddc3ce33c2ea"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-047",
+      "version": 1,
+      "sha256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "bfd3f459fc833b10780ac31d258fa67771e2717e479b72fa26b7a614019fa31c"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-048",
+      "version": 1,
+      "sha256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "0a0fd473714e1f0e8dc341512bef9367a37665fe9fd206fd41f4ec9362f62769"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-049",
+      "version": 1,
+      "sha256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5b9ad367653a5bf0cabb3c37033e85c309b97b82fa60b3d69a718bdf717d33fa"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-050",
+      "version": 1,
+      "sha256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "67fa25c4381a3088a94f0bc896cdc3dd7ba8591d104fb213baae70689bc0129b"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-051",
+      "version": 1,
+      "sha256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "1d38455b9ce7bac2dc8231c6062909cac6cfaad3135d4a008f0ae19f8185b320"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-052",
+      "version": 1,
+      "sha256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "be1c2ab791f4907429459e98d3ddcd798b3f7d33ffcc61c2b8ac2d550ce0e470"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-053",
+      "version": 1,
+      "sha256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "643542b1442a9287d7874b5a720e8a01fb55664d7ddb389819e08d6ef9e3e807"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-054",
+      "version": 1,
+      "sha256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "940623405d80906e6e6be3bdc84781114fc8033bf5ad5a5b96b45dbbc7e874ae"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-055",
+      "version": 1,
+      "sha256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "93eafb9f218b78b98e81fb520c5ebf355f546be186aa451da65a0b5e1825c043"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-056",
+      "version": 1,
+      "sha256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "5bd11c686943a22717afee509b42357df3dc59c93fa170bb7b9f81cc946f9ae9"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-057",
+      "version": 1,
+      "sha256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "9f7f8f2563d79f5009d6199fb2822641b7326c13730f27ec516ccd3a215f67fd"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-058",
+      "version": 2,
+      "sha256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "a3ee4d986b3d4aab7364d154507e967fee2c3f8d63ce9f99f913571c31648e9c"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-059",
+      "version": 1,
+      "sha256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-060",
+      "version": 1,
+      "sha256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-061",
+      "version": 1,
+      "sha256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-062",
+      "version": 1,
+      "sha256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-063",
+      "version": 1,
+      "sha256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8f6a52c43836446a18ea84e60d81b90628bf1ae8c82392fcbe2b1c7f4fed9c3f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-064",
+      "version": 1,
+      "sha256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "4a88f09cb6b2a59c74f6f146c9bf7685756ec2bdd8bcbcbf582f70c3ee29587f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-065",
+      "version": 1,
+      "sha256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-066",
+      "version": 1,
+      "sha256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f"
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f"
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-067",
+      "version": 1,
+      "sha256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-068",
+      "version": 1,
+      "sha256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-069",
+      "version": 2,
+      "sha256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "380c1227f399c856a86b11bd06f830cec6f75025a82adae69b10aabd9a986f81"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "380c1227f399c856a86b11bd06f830cec6f75025a82adae69b10aabd9a986f81"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o3"],
+          "canonicalSHA256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o3"],
+          "canonicalSHA256": "5ceb5524a517d84ee85d867b65e8a77343dc9f263c251630ae0cfe0c0044bf88"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-070",
+      "version": 1,
+      "sha256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "568f18f9033d037ac35d0a341a482505c60ffce44446c8ccff8b53ff9ec986e8"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-071",
+      "version": 2,
+      "sha256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "6b186551e61d6cb11ad7985c3d8413e84dc4d0318dd7eee54c30fa1bc9bc0856"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "6b186551e61d6cb11ad7985c3d8413e84dc4d0318dd7eee54c30fa1bc9bc0856"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o2"],
+          "canonicalSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o2"],
+          "canonicalSHA256": "948f3a75ab6267b7fbeb91f3cbb79188d83a1b470ca0d22bc566c98cbae7df93"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-072",
+      "version": 1,
+      "sha256": "02f55caefec08711eb6b07191a25a4c16e510fa45471e54fadbae9dfb99924a5",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "02f55caefec08711eb6b07191a25a4c16e510fa45471e54fadbae9dfb99924a5"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "02f55caefec08711eb6b07191a25a4c16e510fa45471e54fadbae9dfb99924a5"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "02f55caefec08711eb6b07191a25a4c16e510fa45471e54fadbae9dfb99924a5"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "02f55caefec08711eb6b07191a25a4c16e510fa45471e54fadbae9dfb99924a5"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-073",
+      "version": 1,
+      "sha256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "3e4cc01a2967410cb6d3757981e1f3820343fc5cdbcd74129fd3144162bc176a"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-074",
+      "version": 1,
+      "sha256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "5e8f7bc250c3d4b69048cee647e6a6b8204c8240ab326c6a7822a088342a0f72"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-075",
+      "version": 1,
+      "sha256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "e3573db6fb3c6e18cfacf71d6f34df8f7caf4a5648212039e7db869a0681f723"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-076",
+      "version": 1,
+      "sha256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "773d1c7c5576ce64d3c03da83d505a50d0efb4bbc8f533b839cc18ee35f08648"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-077",
+      "version": 1,
+      "sha256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "91d557752238523c04d364261965af66da200b977ce3bcede26d14e1078c9bdb"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-078",
+      "version": 1,
+      "sha256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "5619a0b21ce32f1520f7b552df844f73bbc3c9140da4cfbceac0cfd5e236f800"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-079",
+      "version": 1,
+      "sha256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "3d281fff792051c8ea68d1fc2fef2701b2c93c95e14ce5a97b41889bb608fc29"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-080",
+      "version": 1,
+      "sha256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "a8c56669c1259bbd90abb7bc6caef7c99ef82cd728adfc697df2c1b0b0ade32b"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-081",
+      "version": 1,
+      "sha256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "7f524a77ae865771fe94ed90d343caf777ec06bd1ac38b2c2a6542e9c6f35a43"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-082",
+      "version": 1,
+      "sha256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af"
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af"
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af"
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "6db583fcdba368ec8ddb760a64796f2c27ad1229099909ff214bef8c7ebcf1af"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-083",
+      "version": 1,
+      "sha256": "f31d575236f2c92922a162f519a70646956cff3d2057c8a2628276d9b5af521d",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2", "o4"],
+          "canonicalSHA256": "f31d575236f2c92922a162f519a70646956cff3d2057c8a2628276d9b5af521d"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-084",
+      "version": 1,
+      "sha256": "bd143f481130dccaa80bd6ac8c6ceb42e1566409aa8e10ed50063d884df76f39",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "bd143f481130dccaa80bd6ac8c6ceb42e1566409aa8e10ed50063d884df76f39"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-085",
+      "version": 1,
+      "sha256": "7e58e2424021b96398caee8e0b489767e952131b97e642a63edbd1d8d8f2c161",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2", "o5"],
+          "canonicalSHA256": "7e58e2424021b96398caee8e0b489767e952131b97e642a63edbd1d8d8f2c161"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-086",
+      "version": 1,
+      "sha256": "7dc185d75521a3ac3976d4c3ddffca55bb254fa9ab3ed5a45bbf582c27591c99",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7dc185d75521a3ac3976d4c3ddffca55bb254fa9ab3ed5a45bbf582c27591c99"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-087",
+      "version": 1,
+      "sha256": "858175546438de957c706e97299dbb8f5182ba5e14e0423b0a1a19f37ac56d60",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "858175546438de957c706e97299dbb8f5182ba5e14e0423b0a1a19f37ac56d60"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-088",
+      "version": 1,
+      "sha256": "69f4515bd7a9d728c94424470f64babc27e126c8b1783d587267b69cf5bd83f8",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "69f4515bd7a9d728c94424470f64babc27e126c8b1783d587267b69cf5bd83f8"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-089",
+      "version": 1,
+      "sha256": "4f54534aa53d3c59983f1ce4722e672d6e5d69631aa5701081915a6b6f97c92f",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "4f54534aa53d3c59983f1ce4722e672d6e5d69631aa5701081915a6b6f97c92f"
+        }
+      ]
+    },
+    {
+      "questionId": "tl-090",
+      "version": 2,
+      "sha256": "3984959d5f7172efc45e23db788abe3834a1b711ae54058b88e8070b2c0d74b7",
+      "history": [
+        {
+          "revision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "revision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "4cd336bf348f4c4611885be1c95f7fca8ea947a56c2bf356600a68ec5912ff1c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "v4.0.1;2024-09-15",
+      "fileName": "ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [14, 16, 17, 18, 20, 21, 24, 25, 26, 28, 29, 30],
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "provenance": "Official local source copy supplied in project source library, freshly read and hashed. EN web opened; PT web fetch timed out. No new PT download or remote-byte equivalence claimed.",
+      "pageConvention": "Physical PDF page, cover=1; labels individually checked."
+    },
+    {
+      "language": "PT",
+      "edition": "v4.0; tradução1.0;21-04-2023",
+      "fileName": "ISTQB_CTFL_Syllabus-v4.0-PT_v1.0 (1).pdf",
+      "sha256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [15, 17, 18, 19, 20, 22, 23, 26, 27, 28, 31, 32, 33],
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "provenance": "Official local source copy supplied in project source library, freshly read and hashed. EN web opened; PT web fetch timed out. No new PT download or remote-byte equivalence claimed.",
+      "pageConvention": "Physical PDF page, cover=1; labels individually checked."
+    }
+  ],
+  "limitations": "Distinct editions, not textually identical. Primary EN4.0.1; compare PT4.0 translation1.0. Specific debugging diagnosis difference recorded per report. No full copyrighted PDFs or full source-page text bundled. The syllabus suffices for these concepts; no separate glossary consultation is claimed."
+}

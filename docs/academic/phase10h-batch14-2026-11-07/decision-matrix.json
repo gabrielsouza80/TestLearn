@@ -1,0 +1,943 @@
+{
+  "scope": "Phase 10H Batch 14 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-07",
+  "dossierDateIdentifier": "2026-11-07 as requested; actual execution dates retained",
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-058",
+      "learningObjective": "FL-3.2.5",
+      "cognitiveLevel": "K1",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o4"],
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+      "afterCanonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "3.2.5": {
+          "EN": [37],
+          "PT": [40]
+        },
+        "3.2.4": {
+          "EN": [36, 37],
+          "PT": [39, 40]
+        }
+      },
+      "LOPages": {
+        "EN": [32],
+        "PT": [35]
+      },
+      "assessmentPT": "Objetivos claros, critérios de saída mensuráveis e tempo suficiente para preparação são fatores explícitos de sucesso. O guia de colocação em serviço é um produto de trabalho passível de revisão; não há motivo para retirar preparação ou impor um tipo único.",
+      "counterEvidencePT": "Num walkthrough a revisão individual prévia pode não ser obrigatória. Isso não torna falso reconhecer tempo adequado como fator de sucesso nem torna superior transferi-lo integralmente para a reunião. Um conjunto maior pode facilitar logística, mas juntar todos os manuais não é, por si, fator de eficácia. Não se promete que estes fatores garantam todos os defeitos detetados.",
+      "translationAssessmentPT": "Deployment guide corresponde a guia de colocação em serviço de software, não à execução do deployment. Revised/atualizado mantém o documento revisto; measurable exit criteria/critérios de saída mensuráveis é o mesmo conceito. Instead/em vez de transferir todo o tempo e every/todos mantêm os qualificadores que enfraquecem os distratores.",
+      "pedagogyAssessmentPT": "K1: reconhecer uma lista de fatores expressamente apresentada na secção 3.2.5. O cenário apenas contextualiza a recordação; não obriga a desenhar um processo K3. Os distratores contrastam preparação, dimensão do pacote e adaptação do tipo, sem exigir experiência específica de infraestruturas. As quatro explicações são suficientes para esta distinção.",
+      "editionDifferencePT": "EN v4.0.1, página 37, e PT v4.0 tradução 1.0, página 40, incluem objetivos, critérios mensuráveis e preparação. A ressalva de walkthrough consta de EN página 36 e PT página 40. Não se infere que todas as revisões imponham exatamente o mesmo processo ou pessoas distintas.",
+      "criticalPairs": [
+        {
+          "en": "revised deployment guide",
+          "pt": "guia atualizado de colocação em serviço de software"
+        },
+        {
+          "en": "measurable exit criteria",
+          "pt": "critérios de saída mensuráveis"
+        },
+        {
+          "en": "adequate preparation time",
+          "pt": "tempo adequado para preparação"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "a3ee4d986b3d4aab7364d154507e967fee2c3f8d63ce9f99f913571c31648e9c",
+          "equalCurrent": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o4"],
+          "canonicalSHA256": "f1959bc4d961799a3ea2d40451f5dbe827179852ff11549ae2116950aa0e69c7",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-059",
+      "learningObjective": "FL-4.3.3",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+      "afterCanonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "4.3.3": {
+          "EN": [43],
+          "PT": [47]
+        },
+        "4.3.2": {
+          "EN": [43],
+          "PT": [46, 47]
+        }
+      },
+      "LOPages": {
+        "EN": [38],
+        "PT": [41]
+      },
+      "assessmentPT": "A estrutura implementada pode ser medida objetivamente mesmo com especificação incompleta; funcionalidades ausentes podem não gerar qualquer ramo ou instrução no denominador. Logo a cobertura completa dos ramos não prova cobertura completa de requisitos e pode não revelar a auditoria omitida.",
+      "counterEvidencePT": "Um teste derivado do código pode observar um efeito que revele uma omissão; a opção correta diz pode não detetar, não nunca deteta. Uma exigência de auditoria pode ser conhecida noutro artefacto apesar da especificação incompleta. Não há contradição em saber que o requisito existe e não ter o implementado; cobertura mede o que está presente.",
+      "translationAssessmentPT": "May miss/pode não detetar preserva possibilidade, não obrigação de falhar. Every branch/todos os ramos e all required functions/todas as funções obrigatórias mantêm o alcance. Objective coverage/cobertura objetiva descreve medição estrutural, não prova de correção. Missing code/código ausente não entra artificialmente como instrução existente não coberta.",
+      "pedagogyAssessmentPT": "K2: explicar simultaneamente uma vantagem e uma limitação e distingui-las de métricas de requisitos. Não há cálculo ou aplicação K3. A explicação geral pede complemento baseado em requisitos, que exige esclarecer a especificação incompleta; não promete que bastará repetir a base incompleta para encontrar tudo. Cada distrator expõe uma confusão diferente.",
+      "editionDifferencePT": "EN secção 4.3.3 na página 43 e PT na página 47 descrevem explicitamente especificações incompletas e defeitos de omissão. EN secção 4.3.2 cabe na página 43; PT inicia na página 46 e continua na 47. O deslocamento de páginas foi verificado individualmente, sem presumir equivalência textual integral.",
+      "criticalPairs": [
+        {
+          "en": "may miss",
+          "pt": "pode não detetar"
+        },
+        {
+          "en": "objective coverage",
+          "pt": "cobertura objetiva"
+        },
+        {
+          "en": "every branch",
+          "pt": "todos os ramos"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "530c97e50a27b10a101d6427034146d9bcff50a5530d6ccc7988fd7897239fbc",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-060",
+      "learningObjective": "FL-4.4.3",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o3"],
+      "existingKey": ["o3"],
+      "proposedKey": ["o3"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+      "afterCanonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "4.4.3": {
+          "EN": [44, 45],
+          "PT": [48, 49]
+        }
+      },
+      "LOPages": {
+        "EN": [38],
+        "PT": [41]
+      },
+      "assessmentPT": "Checklists de alto nível dão condições comuns mas permitem exemplos e sequências distintos. Isso pode ampliar cobertura e reduzir repetibilidade. A análise do defeito novo deve informar atualização com condição separada e diretamente verificável, mantendo tamanho e relevância manejáveis.",
+      "counterEvidencePT": "Procedimentos idênticos podem aumentar repetibilidade quando essa é a necessidade, mas não são inerentes à orientação de alto nível e não resolvem a atualização. Cartas exploratórias são complementos defensáveis; congelar a lista e encaminhar todos os defeitos futuros apenas para outra técnica é o absoluto que torna o distrator incorreto.",
+      "translationAssessmentPT": "High-level/alto nível, directly checkable/diretamente verificável e every future severe defect only/todos os futuros defeitos graves apenas mantêm grau de detalhe, verificabilidade e exclusividade. Repeatability trade-off/compromisso de repetibilidade é legível no contexto de variabilidade; não indica que nenhum teste concreto possa ser repetido.",
+      "pedagogyAssessmentPT": "K2: explicar a natureza da técnica e a relação entre consistência, variabilidade e manutenção da lista. Não se pede criar a condição concreta, pelo que não é aplicação K3. As explicações individuais e geral delimitam a possibilidade de exploração e a necessidade de aprender com defeitos sem transformar a checklist numa bateria prescritiva completa.",
+      "editionDifferencePT": "A definição começa em EN página 44 e PT página 48; verificabilidade, atualização e compromisso de repetibilidade continuam em EN página 45 e PT página 49. Ambos os textos sustentam as três dimensões. Restrições da fonte sobre itens excessivamente gerais ou adequados a outros instrumentos não são requisitos novos inventados para este cenário.",
+      "criticalPairs": [
+        {
+          "en": "high-level checklist",
+          "pt": "checklist de alto nível"
+        },
+        {
+          "en": "directly checkable condition",
+          "pt": "condição diretamente verificável"
+        },
+        {
+          "en": "repeatability trade-off",
+          "pt": "compromisso de repetibilidade"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o3"],
+          "canonicalSHA256": "fe780efeb1775fe9ef0f838aedfd789eb9b617f731f628c347796b568a741bba",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-061",
+      "learningObjective": "FL-4.5.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o2"],
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+      "afterCanonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "4.5.1": {
+          "EN": [45],
+          "PT": [49]
+        },
+        "4.5.2": {
+          "EN": [45, 46],
+          "PT": [49, 50]
+        },
+        "2.2.3": {
+          "EN": [30],
+          "PT": [33]
+        }
+      },
+      "LOPages": {
+        "EN": [38],
+        "PT": [41]
+      },
+      "assessmentPT": "Faltam finalidade e regras de alteração da etiqueta. A conversação entre negócio, desenvolvimento e testes deve esclarecer valor, exemplos positivos e negativos e critérios testáveis antes de implementar. A confirmação dos três C refere-se a critérios de aceitação, não a repetir testes após corrigir um defeito.",
+      "counterEvidencePT": "Um representante pode redigir o cartão sozinho, mas a opção proíbe discussão posterior e perde as perspetivas pedidas. Tarefas técnicas podem ser úteis depois de clarificar o comportamento; não substituem o acordo sobre quando a alteração é permitida. Critérios podem evoluir, mas adiá-los deliberadamente neste cenário deixa a omissão por resolver.",
+      "translationAssessmentPT": "Before implementation/antes da implementação mantém o momento. Permitted and forbidden examples/exemplos permitidos e proibidos preserva ambas as polaridades. Amendment rule/regra de alteração significa alterar etiquetas, não alterar critérios arbitrariamente. Confirmation/confirmação na explicação usa os três C; teste de confirmação pós-correção é conceito distinto.",
+      "pedagogyAssessmentPT": "K2: explicar colaboração para obter entendimento e testabilidade, sem exigir derivar casos ATDD em K3. A opção correta cobre quem, para quê e em que condições; as explicações contrapõem conveniência técnica, autoria isolada e adiamento. A referência aos três C esclarece o termo confirmação e é pedagogicamente adequada, sem precisar modificar o banco.",
+      "editionDifferencePT": "As secções 4.5.1 e 4.5.2 estão em EN páginas 45–46 e PT páginas 49–50. Ambas relacionam os três C com critérios testáveis e cenários positivos/negativos. EN página 30 e PT página 33 definem teste de confirmação de defeito corrigido; esta referência de apoio impede confundir usos da palavra confirmação.",
+      "criticalPairs": [
+        {
+          "en": "before implementation",
+          "pt": "antes da implementação"
+        },
+        {
+          "en": "permitted and forbidden examples",
+          "pt": "exemplos permitidos e proibidos"
+        },
+        {
+          "en": "testable acceptance criteria",
+          "pt": "critérios de aceitação testáveis"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "76e5a5163149d97dd8272b46b1e90f4a9b94fe8b0ca2c4a95c37639944cba271",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-065",
+      "learningObjective": "FL-5.3.1",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o2"],
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+      "afterCanonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "5.3.1": {
+          "EN": [54],
+          "PT": [60]
+        }
+      },
+      "LOPages": {
+        "EN": [47],
+        "PT": [52]
+      },
+      "assessmentPT": "Tempo de resposta é exemplo explícito de métrica de qualidade do produto. Quantidade de casos executados mede progresso, defeitos abertos por prioridade mede defeitos e requisitos cobertos mede cobertura. A classificação pedida não equivale a dizer que outras métricas nunca informam decisões de qualidade.",
+      "counterEvidencePT": "Defeitos e cobertura podem ser usados como indicadores indiretos de qualidade, mas o enunciado pede a categoria segundo a taxonomia. O qualificador em vez de separa essas categorias. Um tempo medido sem contexto ou limiar não prova conformidade, e prioridade elevada não deve ser rebatizada como severidade elevada.",
+      "translationAssessmentPT": "Measured/medido preserva que existe observação, sem inventar unidades, valor, limiar ou carga. High-priority/prioridade elevada é fiel e distinto de severidade. Planned cases executed/casos planeados executados e specified requirements covered/requisitos especificados cobertos mantêm numerador e objeto, sem transformar cobertura em correção garantida.",
+      "pedagogyAssessmentPT": "K1: recordar categorias e exemplos de métricas da secção 5.3.1. O dashboard de biblioteca só contextualiza, sem cálculo de desempenho. A justificação breve de progresso em o1 é suficiente para esta classificação e complementada pela explicação geral; não exige uma extensão editorial sem defeito demonstrado.",
+      "editionDifferencePT": "EN página 54 e PT página 60 apresentam tempo de resposta entre métricas da qualidade do produto e prioridades de defeitos entre métricas de defeitos. As traduções de categorias são congruentes neste item. Não se extrapola que uma métrica isolada permita aprovar a qualidade ou a publicação.",
+      "criticalPairs": [
+        {
+          "en": "Measured response time",
+          "pt": "Tempo de resposta medido"
+        },
+        {
+          "en": "high-priority defects",
+          "pt": "defeitos de prioridade elevada"
+        },
+        {
+          "en": "coverage metric",
+          "pt": "métrica de cobertura"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "04d5337e7a0c9cbda71d8fad168ff53d7e5a5f11259545d65ead77703093a0b1",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-066",
+      "learningObjective": "FL-5.3.3",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o4"],
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+      "afterCanonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "5.3.3": {
+          "EN": [55],
+          "PT": [61]
+        },
+        "5.3.2": {
+          "EN": [54, 55],
+          "PT": [60, 61]
+        }
+      },
+      "LOPages": {
+        "EN": [47],
+        "PT": [52]
+      },
+      "assessmentPT": "Há duas necessidades explícitas: visibilidade rápida de bloqueios em fusos diferentes e síntese semanal de riscos para direção. Dashboard atualizado com notificações assíncronas e resumo adaptado satisfaz ambas. A ausência de regulamento impondo um formato deixa escolher canais segundo público e contexto.",
+      "counterEvidencePT": "Chamadas podem complementar canais assíncronos, mas como único registo sem informação retida não respondem ao cenário. Um log bruto pode ajudar analistas, mas não fornece por si a síntese pedida. Notificações assíncronas não garantem leitura instantânea; o cenário pede melhor adequação, não um SLA absoluto inventado.",
+      "translationAssessmentPT": "Rapid/rápida não é instantânea. Across time zones/em diferentes fusos horários, weekly/semanal e sole/único mantêm cadência, distribuição e exclusividade. Up-to-date/atualizado é premissa necessária para o dashboard funcionar. Release risks/riscos da entrega é coerente no contexto de gestão, sem tornar todas as comunicações necessariamente formais.",
+      "pedagogyAssessmentPT": "K2: exemplificar adaptação de canais e detalhe a stakeholders distintos e contrastar velocidade operacional com cadência de gestão. Não é preciso conhecer uma ferramenta específica. As quatro justificações e a explicação geral deixam claro que canais se podem combinar e que dashboard não substitui síntese de riscos para o destinatário.",
+      "editionDifferencePT": "EN secção 5.3.3 e PT correspondente estão nas páginas 55 e 61. Na secção de apoio 5.3.2, EN refere a equipa de teste e PT o gestor na produção de relatórios; essa diferença de edição não determina a opção aqui, que trata público e canais, não exclusividade de um papel.",
+      "criticalPairs": [
+        {
+          "en": "across time zones",
+          "pt": "em diferentes fusos horários"
+        },
+        {
+          "en": "weekly summary",
+          "pt": "resumo semanal"
+        },
+        {
+          "en": "asynchronous blocker notifications",
+          "pt": "notificações assíncronas de bloqueios"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "828b81c10e4a580455535fcddd9a8e92b67df153dc5b1fc137832f7fca68cf5f",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-067",
+      "learningObjective": "FL-1.3.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o2"],
+      "existingKey": ["o2"],
+      "proposedKey": ["o2"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+      "afterCanonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "1.3": {
+          "EN": [17, 18],
+          "PT": [19]
+        }
+      },
+      "LOPages": {
+        "EN": [14],
+        "PT": [15]
+      },
+      "assessmentPT": "O cenário ilustra a falácia da ausência de defeitos: verificar os cálculos especificados não assegura que o fluxo necessário aos utilizadores esteja completo. Validar o fecho com eles e rever os requisitos acordados enfrenta a aprovação de negócio omitida. Não se infere causa raiz humana ou intenção que o enunciado não fornece.",
+      "counterEvidencePT": "Regressão, priorização por agrupamento e dados novos são práticas legítimas noutros contextos, mas não resolvem a necessidade de aprovação ausente neste. Rever requisitos acordados implica colaboração e autorizações de negócio aplicáveis; não é permissão para modificar unilateralmente o sistema ou dispensar aprovação necessária.",
+      "translationAssessmentPT": "Every specified calculation/todos os cálculos especificados limita o sucesso ao que foi especificado, não a todas as necessidades. Necessary approval step/uma aprovação necessária é uma etapa do fluxo salarial, não aceite académico. Revise the agreed requirements/rever os requisitos acordados conserva a necessidade de clarificação partilhada.",
+      "pedagogyAssessmentPT": "K2: explicar qual princípio é evidenciado por cálculos corretos mas workflow inadequado, e distinguir alternativas ligadas a regressão, concentração e desgaste dos testes. As explicações não negam utilidade dessas práticas; apenas mostram por que não atacam o problema documentado. Não são precisos conhecimentos de legislação salarial.",
+      "editionDifferencePT": "EN introduz os princípios na página 17 e descreve a falácia na página 18. PT apresenta os sete princípios na página 19. Ambos distinguem verificação de validação das necessidades; a formulação e paginação são diferentes, não assumidas idênticas. A aprovação omitida é premissa do exemplo, não uma regra salarial oficial inventada.",
+      "criticalPairs": [
+        {
+          "en": "every specified calculation",
+          "pt": "todos os cálculos especificados"
+        },
+        {
+          "en": "necessary approval step",
+          "pt": "uma aprovação necessária"
+        },
+        {
+          "en": "revise the agreed requirements",
+          "pt": "rever os requisitos acordados"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2"],
+          "canonicalSHA256": "b863e4bc774a4f8b5c67071744ef6c1d12852b539ffab602cd902b33cd2efcdd",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-068",
+      "learningObjective": "FL-2.1.2",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o1"],
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+      "afterCanonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "2.1.2": {
+          "EN": [25, 26],
+          "PT": [27, 28]
+        }
+      },
+      "LOPages": {
+        "EN": [24],
+        "PT": [26]
+      },
+      "assessmentPT": "Iniciar análise quando está disponível o produto de trabalho correspondente e participar na revisão dos esboços são boas práticas transversais aos modelos. A especificação inicial permite análise e revisão sem esperar código executável. A correspondência entre atividades não torna iguais os objetivos dos níveis de teste.",
+      "counterEvidencePT": "Pode haver condicionantes que limitem recursos ou datas concretas; o item pergunta uma boa prática aplicável, não garante início imediato ao segundo. A sequência de testes dinâmicos pode influenciar execução, mas não obriga a adiar revisão estática. Objetivos específicos podem partilhar preocupações sem serem idênticos.",
+      "translationAssessmentPT": "Early draft/versão inicial e becomes available/estiver disponível mantêm disponibilidade de material ainda incompleto. Across software development lifecycles/a diferentes ciclos de vida expressa aplicabilidade transversal, sem restringir a um modelo. Corresponding/correspondente não significa que cada teste dinâmico possa executar sem código nem que objetivos de componentes e aceitação coincidam.",
+      "pedagogyAssessmentPT": "K1: reconhecer as boas práticas enumeradas na secção 2.1.2. A situação de um esboço de interface contextualiza a recordação, sem exigir desenho de uma estratégia K3. As explicações distinguem disponibilidade de produto de trabalho, análise antecipada, execução dinâmica e objetivos próprios de cada nível.",
+      "editionDifferencePT": "A secção 2.1.2 começa em EN página 25 e continua na página 26; em PT começa na página 27 e desenvolve a lista na página 28. Em ambas estão análise/conceção na fase correspondente e envolvimento em esboços. A localização foi conferida por página, sem aplicar um deslocamento uniforme ao PDF.",
+      "criticalPairs": [
+        {
+          "en": "early draft",
+          "pt": "versão inicial"
+        },
+        {
+          "en": "becomes available",
+          "pt": "estiver disponível"
+        },
+        {
+          "en": "corresponding development work product",
+          "pt": "produto de trabalho de desenvolvimento correspondente"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "40e52ec609896625603d9d5c38ee2b6209bf71634816e531033192d9207cee24",
+          "equalCurrent": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-048",
+    "lo": "FL-1.2.1",
+    "level": "K2",
+    "text": {
+      "en": "A transport operator must decide whether to release a new ticketing service. Tests reveal that some valid transfers are charged twice, while the other tested journeys meet their acceptance criteria. How does testing contribute most directly to this decision?",
+      "pt": "Um operador de transportes tem de decidir se disponibiliza um novo serviço de bilhetes. Os testes revelam que alguns transbordos válidos são cobrados duas vezes, enquanto as restantes viagens testadas cumprem os critérios de aceitação. Como contribuem os testes mais diretamente para esta decisão?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "They determine the release decision from the proportion of journeys that passed, regardless of the business impact.",
+          "pt": "Determinam a decisão de disponibilização pela proporção de viagens aprovadas, independentemente do impacto no negócio."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "They establish that the documented process was followed, which is sufficient evidence to release.",
+          "pt": "Demonstram que o processo documentado foi seguido, o que é evidência suficiente para disponibilizar o serviço."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "They improve the service directly by correcting the charging logic as part of test execution.",
+          "pt": "Melhoram diretamente o serviço ao corrigir a lógica de cobrança como parte da execução de teste."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "They provide evidence about product quality and a concrete risk for stakeholders to consider before release.",
+          "pt": "Fornecem evidência sobre a qualidade do produto e um risco concreto que os stakeholders devem considerar antes da disponibilização."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-049",
+    "lo": "FL-1.4.2",
+    "level": "K2",
+    "text": {
+      "en": "A team reuses a test approach from an internal meeting-room application for an emergency dispatch service. The latter has strict availability obligations and an audit requirement to retain evidence. What adaptation best reflects the new context?",
+      "pt": "Uma equipa reutiliza a abordagem de teste de uma aplicação interna de salas de reunião num serviço de coordenação de meios de emergência. Este último tem obrigações rigorosas de disponibilidade e uma exigência de auditoria de conservação de evidências. Que adaptação melhor reflete o novo contexto?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "Adopt the most formal test process available before assessing which obligations apply.",
+          "pt": "Adotar o processo de teste mais formal disponível antes de avaliar as obrigações aplicáveis."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Retain the coverage targets and evidence detail, increasing only the number of functional examples.",
+          "pt": "Manter as metas de cobertura e o detalhe das evidências, aumentando apenas o número de exemplos funcionais."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Use the same testware because the implementation language has not changed.",
+          "pt": "Usar os mesmos produtos de trabalho de teste porque a linguagem de implementação não mudou."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Tailor availability testing, coverage targets and retained evidence to the service risks and obligations.",
+          "pt": "Adaptar os testes de disponibilidade, as metas de cobertura e as evidências conservadas aos riscos e às obrigações do serviço."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-050",
+    "lo": "FL-1.4.5",
+    "level": "K2",
+    "text": {
+      "en": "In a small team, Joana revises the test schedule after an environment delay and then derives test cases from prioritised conditions. Which statement correctly compares her roles in these two tasks?",
+      "pt": "Numa equipa pequena, Joana revê o calendário de testes após um atraso no ambiente e depois deriva casos de teste a partir de condições priorizadas. Que afirmação compara corretamente as suas funções nestas duas tarefas?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Both tasks are testing because a team member rather than a designated manager performs them.",
+          "pt": "Ambas as tarefas são da função de teste porque são executadas por um membro da equipa e não por um gestor designado."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Both tasks are test management because they involve deciding what work the team will perform.",
+          "pt": "Ambas as tarefas são de gestão de testes porque envolvem decidir que trabalho a equipa vai executar."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Schedule revision is mainly test management; deriving the cases is mainly the testing role. One person may perform both.",
+          "pt": "A revisão do calendário é principalmente gestão de testes; derivar os casos pertence principalmente à função de teste. Uma pessoa pode desempenhar ambas."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Schedule revision is test management and test case derivation is testing, so separate people must perform them.",
+          "pt": "A revisão do calendário é gestão de testes e a derivação de casos é teste, pelo que têm de ser executadas por pessoas diferentes."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-051",
+    "lo": "FL-1.5.1",
+    "level": "K2",
+    "text": {
+      "en": "A developer says a reported refund failure is intended behaviour. The tester and developer use different meanings for \"refunded\". Which response best demonstrates the generic skills needed to resolve this disagreement?",
+      "pt": "Um programador afirma que uma falha de reembolso reportada é o comportamento previsto. O testador e o programador usam significados diferentes para «reembolsado». Que resposta melhor demonstra as competências gerais necessárias para resolver o desacordo?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Rewrite the report using implementation terminology so that the developer can decide the business meaning.",
+          "pt": "Reescrever o relatório com terminologia da implementação para que o programador decida o significado de negócio."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Repeat the same failure with more data before discussing what the business term means.",
+          "pt": "Repetir a mesma falha com mais dados antes de discutir o significado do termo de negócio."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Escalate the disputed classification immediately, using the number of similar reports to support the tester's interpretation.",
+          "pt": "Escalar imediatamente a classificação em disputa, usando o número de relatórios semelhantes para apoiar a interpretação do testador."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Ask the developer to explain the intended rule, compare a concrete example with the agreed business meaning, and discuss the evidence constructively.",
+          "pt": "Pedir ao programador que explique a regra prevista, comparar um exemplo concreto com o significado de negócio acordado e discutir a evidência de forma construtiva."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-052",
+    "lo": "FL-2.1.1",
+    "level": "K2",
+    "text": {
+      "en": "A team moves from a single end-of-project delivery to usable increments every two weeks. Requirements can change between increments. Which change to testing best addresses this lifecycle?",
+      "pt": "Uma equipa passa de uma única entrega no fim do projeto para incrementos utilizáveis a cada duas semanas. Os requisitos podem mudar entre incrementos. Que alteração aos testes melhor responde a este ciclo de vida?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "Perform static and dynamic testing within increments, with fast feedback and regression testing as the product grows.",
+          "pt": "Realizar testes estáticos e dinâmicos nos incrementos, com feedback rápido e testes de regressão à medida que o produto cresce."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Concentrate each iteration on new acceptance tests and reserve regression testing for the final release.",
+          "pt": "Concentrar cada iteração nos novos testes de aceitação e reservar os testes de regressão para a entrega final."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Keep dynamic system testing for the final increment, while reviewing each earlier increment's requirements.",
+          "pt": "Manter o teste dinâmico de sistema para o último incremento, revendo os requisitos de cada incremento anterior."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "Complete detailed test designs for all increments before the first iteration, then retain them unchanged.",
+          "pt": "Concluir conceções de teste detalhadas para todos os incrementos antes da primeira iteração e mantê-las inalteradas."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-053",
+    "lo": "FL-2.1.4",
+    "level": "K2",
+    "text": {
+      "en": "A team introduces a DevOps delivery pipeline with automated component and regression tests on each change. It also plans exploratory sessions for new user workflows. Which assessment best describes the testing impact?",
+      "pt": "Uma equipa introduz um pipeline de entrega DevOps com testes automatizados de componentes e de regressão em cada alteração. Planeia também sessões exploratórias para novos fluxos de utilização. Que avaliação melhor descreve o impacto nos testes?"
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "The pipeline mainly transfers responsibility for testing from development to operations after deployment.",
+          "pt": "O pipeline transfere principalmente a responsabilidade pelos testes do desenvolvimento para as operações após a disponibilização."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "The automated suite makes regression feedback faster, so its maintenance can wait until a production regression occurs.",
+          "pt": "A suite automatizada acelera o feedback de regressão, pelo que a sua manutenção pode esperar por uma regressão em produção."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "The exploratory sessions should move into the pipeline because DevOps testing must produce repeatable automated checks.",
+          "pt": "As sessões exploratórias devem passar para o pipeline porque os testes em DevOps têm de produzir verificações automatizadas repetíveis."
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "The pipeline can accelerate feedback and reduce repetitive manual work, while automation maintenance and user-focused manual testing remain necessary.",
+          "pt": "O pipeline pode acelerar o feedback e reduzir trabalho manual repetitivo, continuando a ser necessárias a manutenção da automação e o teste manual centrado no utilizador."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-054",
+    "lo": "FL-2.2.2",
+    "level": "K2",
+    "text": {
+      "en": "At system test level, one test checks whether a document search returns the specified records. Another runs the same search under an agreed workload to check its response time. How should their primary objectives be classified?",
+      "pt": "No nível de teste de sistema, um teste verifica se uma pesquisa de documentos devolve os registos especificados. Outro executa a mesma pesquisa com uma carga acordada para verificar o tempo de resposta. Como devem ser classificados os seus objetivos principais?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "The first is component testing; the second is system testing.",
+          "pt": "O primeiro é teste de componentes; o segundo é teste de sistema."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "The first is functional testing; the second is non-functional testing.",
+          "pt": "O primeiro é teste funcional; o segundo é teste não funcional."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "The first is white-box testing; the second is black-box testing.",
+          "pt": "O primeiro é teste caixa-branca; o segundo é teste caixa-preta."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Both are functional because they execute the same search function.",
+          "pt": "Ambos são funcionais porque executam a mesma função de pesquisa."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-057",
+    "lo": "FL-3.2.2",
+    "level": "K2",
+    "text": {
+      "en": "Reviewers have individually logged anomalies in an API specification. They now meet to decide which anomalies are defects, agree owners and actions, and assess whether follow-up is needed. Which review activity is taking place?",
+      "pt": "Os revisores registaram individualmente anomalias numa especificação de API. Reúnem-se agora para decidir quais são defeitos, acordar responsáveis e ações e avaliar a necessidade de acompanhamento. Que atividade de revisão está a decorrer?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Communication and analysis.",
+          "pt": "Comunicação e análise."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Individual review.",
+          "pt": "Revisão individual."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Review initiation.",
+          "pt": "Início da revisão."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Fixing and reporting.",
+          "pt": "Correção e elaboração de relatórios."
+        }
+      }
+    ]
+  }
+]

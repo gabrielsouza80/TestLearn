@@ -1,0 +1,26 @@
+{
+  "atUTC": "2026-11-08T12:13:30.735941+00:00",
+  "authenticatedReferenceSHA256": "ed772087d8fbbb87a989676095a2756436d1a1f60dc08bb96b40edcf13691ff7",
+  "completeBankObjectsEqual": 90,
+  "alternatives": 364,
+  "learningObjectives": 64,
+  "humanPending": 90,
+  "revision": "2026-10-27.10",
+  "archiveSHA256": {
+    "src/data/archive/questions-2026-10-27.1.json": "b5f44fc33cfd55b8e7aea1fceff7348c32857580f04ef493156107788d5717f5",
+    "src/data/archive/questions-2026-10-27.2.json": "982e73ec30706a5e8cca992b80f9157d18cda2d3e77791b32430a804c3574cbb",
+    "src/data/archive/questions-2026-10-27.3.json": "cc70ebf8768c1236fcb89099d88ad275600d542078c1531c1195fe43f2f96d38",
+    "src/data/archive/questions-2026-10-27.4.json": "413e93605f8026e7a633f92c512c0f93b2a466867e4a1d4d3752dbd03ee1f104",
+    "src/data/archive/questions-2026-10-27.5.json": "c57da2c300f58dd5714a8c54746b9e1cd404b8134347c3b13123e83b97823a79",
+    "src/data/archive/questions-2026-10-27.6.json": "8bf1990ee8eb05f93eec529fe903a05db20ad72a649648f161f2847802c6012e",
+    "src/data/archive/questions-2026-10-27.7.json": "970ef782fbf61bdd92889ceea1fc8474064eec377058c01ec1198b927c0c4fef",
+    "src/data/archive/questions-2026-10-27.8.json": "d24f50e91af42eac9fc52896db9b2f856a0530536ab770882ac15e292f1f119e",
+    "src/data/archive/questions-2026-10-27.9.json": "89a0d7b2483afbbd279f7a1d9ac707d1ce9b4e049225be88a59c0dd30cd42bb2"
+  },
+  "historicalEvidenceFilesPreserved": 65,
+  "modifiedExistingFiles": [
+    "tests/e2e/pedagogical-review-notice.spec.ts"
+  ],
+  "otherPreexistingFilesUnchanged": 447,
+  "stagedChanges": 0
+}

@@ -1,0 +1,3251 @@
+{
+  "schemaVersion": 1,
+  "scope": "Phase 10H Batch 8 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-06",
+  "reviewMethod": "AI_REVIEWED",
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-001",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-1.1.1",
+      "cognitiveLevel": "K1",
+      "questionVersion": 2,
+      "requiredAnswers": 2,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f",
+      "afterCanonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f",
+      "existingKey": ["o1", "o4"],
+      "proposedKey": ["o1", "o4"],
+      "independentSolution": {
+        "questionId": "tl-001",
+        "answer": ["o1", "o4"],
+        "derivation": "TWO/DOIS requires exactly two. Information for a release decision and finding defects are useful objectives. Proving absence of all defects and guaranteeing every user’s satisfaction are absolute claims testing cannot establish. This is recognition of objectives, K1; no translation alters cardinality."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "São pedidos exatamente DOIS objetivos. o1 fornece informação para decisões; o4 procura defeitos. o2 pretende provar ausência total de defeitos e o3 garantir satisfação universal: absolutos que os testes não asseguram. A única combinação correta oferecida é{o1,o4}, não uma resposta única de um só elemento.",
+          "en": "Exactly TWO objectives are requested. o1supplies decision information and o4finds defects. o2claims proof of total absence and o3universal satisfaction, which testing cannot guarantee. The unique offered correct set is{o1,o4}, not a single-element answer."
+        },
+        "translation": {
+          "pt": "TWO/DOIS e required=2 coincidem. Useful/úteis não exige uma lista exaustiva de objetivos. No defects/não existem defeitos e every user/todos os utilizadores preservam os absolutos. Work products/produtos de trabalho preserva que testes não se limitam a executar código.",
+          "en": "TWO/DOIS match required=2; useful does not require exhaustive objective coverage. No defects/every user retain the absolute quantifiers. Work products preserves the scope beyond executing code."
+        },
+        "contrary": {
+          "pt": "Distratores absolutos tornam a pergunta fácil; isso não os torna corretos nem invalida K1. Encontrar defeitos não é promessa de que todo teste encontrará defeitos. “Imperfeições” na justificação é sinónimo informal contextual, sem redefinir o termo defeito da alternativa.",
+          "en": "Absolute distractors make the item easy, not invalid forK1. Finding defects is an objective, not a promise that every test finds one. The rationale’s informal flaws wording does not redefine the explicit defect term in the option."
+        },
+        "teaching": {
+          "pt": "K1/FL-1.1.1: reconhecimento de objetivos, dificuldade qualitativa baixa. A explicação geral contrasta evidência útil e limites dos testes; é suficiente para este objetivo. Não se propõe tornar distratores mais difíceis apenas por preferência.",
+          "en": "K1/FL-1.1.1recognizes objectives; qualitatively low difficulty. The general explanation contrasts useful evidence with testing limits and is sufficient. No distractor redesign is proposed merely to increase difficulty."
+        },
+        "risks": {
+          "pt": "Nenhuma ambiguidade de cardinalidade ou segunda combinação defensável demonstrada. Baixa dificuldade não é defeito académico.",
+          "en": "No demonstrated cardinality ambiguity or second defensible set. Low difficulty is not an academic defect."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "DECISION_INFORMATION",
+            "pt": "Correta: informação para decisão de lançamento é um objetivo útil; não substitui a decisão do responsável.",
+            "en": "Correct: release-decision information is useful without making the release decision itself."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "ABSENCE_PROOF",
+            "pt": "Incorreta: não se prova ausência global de defeitos através de testes.",
+            "en": "Incorrect: testing does not establish global absence of defects."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "UNIVERSAL_SATISFACTION",
+            "pt": "Incorreta: garantir satisfação de todos vai além da evidência possível dos testes.",
+            "en": "Incorrect: guaranteeing every user’s satisfaction exceeds testing evidence."
+          },
+          "o4": {
+            "supportsAnswer": true,
+            "concept": "DEFECT_DISCOVERY",
+            "pt": "Correta: descobrir defeitos em produtos de trabalho é objetivo típico, incluindo documentos.",
+            "en": "Correct: finding defects in work products, including documents, is a typical objective."
+          }
+        },
+        "criticalPairs": [
+          ["TWO", "DOIS", "EQUIVALENT_CARDINALITY"],
+          ["no defects exist", "não existem defeitos", "EQUIVALENT_ABSOLUTE"],
+          ["every user", "todos os utilizadores", "EQUIVALENT_ABSOLUTE"],
+          ["work products", "produtos de trabalho", "EQUIVALENT_SCOPE"]
+        ]
+      },
+      "references": {
+        "section": "1.1.1",
+        "EN": [14, 15],
+        "PT": [15, 16, 17],
+        "supporting": [
+          {
+            "section": "1.3",
+            "EN": [17, 18],
+            "PT": [19]
+          }
+        ]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "1ee88b28401fd7ee52ff9fc500f74651dcd749461aa1a045a546de016ee7193f"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f"
+        }
+      ],
+      "optionalEditorialCandidate": null,
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-001",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "15d923673172ffada0dbf7c1d3fed68d8ae56934ebf09586cb60331edc7c966f",
+        "learningObjective": "FL-1.1.1",
+        "syllabusChapter": 1,
+        "syllabusSection": "1.1.1",
+        "cognitiveLevel": "K1",
+        "learningObjectiveSection": "1.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "1.1.1",
+          "pdfPages": [15],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1", "o4"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Provide information for a release decision",
+              "pt": "Fornecer informação para uma decisão de lançamento"
+            },
+            "explanation": {
+              "en": "Testing provides decision evidence and finds defects. It cannot guarantee defect absence or universal user satisfaction.",
+              "pt": "Os testes fornecem evidência para decisões e encontram defeitos. Não garantem a ausência de defeitos nem a satisfação de todos os utilizadores."
+            }
+          },
+          {
+            "id": "o4",
+            "text": {
+              "en": "Find defects in work products",
+              "pt": "Encontrar defeitos em produtos de trabalho"
+            },
+            "explanation": {
+              "en": "Finding flaws is a testing objective.",
+              "pt": "Encontrar imperfeições é um objetivo dos testes."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Testing provides decision evidence and finds defects. It cannot guarantee defect absence or universal user satisfaction.",
+          "pt": "Os testes fornecem evidência para decisões e encontram defeitos. Não garantem a ausência de defeitos nem a satisfação de todos os utilizadores."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "159738169e5c2d7cdc891ec20330e763a1b93d51270ff757812e57add185caf3",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-27",
+          "section": "1.1.1",
+          "pages": [15],
+          "report": "docs/academic-audit.md#tl-001"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "1.1.1",
+            "pdfPages": [15, 17]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "1.1.1",
+            "pdfPages": [16, 19]
+          }
+        ],
+        "correctAnswerJustification": "Informar uma decisão e descobrir defeitos são objetivos; não se pode provar ausência de defeitos nem garantir satisfação universal.",
+        "distractorAssessment": {
+          "o2": "Afirma prova de ausência; contraria o princípio 1.",
+          "o3": "Transforma confiança/validação numa garantia universal; rejeitar."
+        },
+        "wordingAndTranslationConcerns": "DOIS/TWO e required=2 concordam. EN/PT preservam objetivos e absolutos.",
+        "potentialAmbiguity": "Nenhuma segunda combinação defensável entre as quatro opções identificada.",
+        "difficultyAssessment": "Baixa; K1. Os dois absolutos tornam os distratores fáceis. Não representa treino avançado.",
+        "proposedCorrection": {
+          "description": "Melhoria opcional: distratores menos absolutos, mantendo os dois objetivos corretos.",
+          "keyBefore": ["o1", "o4"],
+          "keyProposed": ["o1", "o4"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Confirmar chave/conceito, plausibilidade e equivalência EN/PT; decidir correção proposta, se existir."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-006",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-1.4.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 3,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c",
+      "afterCanonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-006",
+        "answer": ["o1"],
+        "derivation": "Deriving test conditions from requirements identifies what to test: test analysis. Test design elaborates cases/data/how to test, execution runs tests, completion consolidates outcomes/testware. Activities may overlap in practice, but the described work product is a test condition, making o1 the best match."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Derivar condições a partir de requisitos define o que testar: análise. Conceção desenvolve condições em casos/dados e como testar. Execução corre testes e compara resultados; conclusão consolida trabalho. O produto descrito, não uma cronologia rígida, identifica o1.",
+          "en": "Deriving conditions from requirements establishes what to test: analysis. Design elaborates conditions into cases/data and how to test. Execution runs/compares tests and completion consolidates outcomes. The described work product, not a rigid chronology, identifieso1."
+        },
+        "translation": {
+          "pt": "Test conditions/condições de teste, requirements/requisitos e derives/deriva mantêm a atividade. Análise/analysis e conceção/design não foram trocadas. A justificação longa de o4 preserva condições→casos e o que→como.",
+          "en": "Conditions, requirements and derivation preserve the activity. Analysis and design are not interchanged. o4’s longer rationale preserves conditions→cases and what→how."
+        },
+        "contrary": {
+          "pt": "Na prática análise e conceção podem iterar ou sobrepor-se, e ambas usam técnicas. Isso não faz de definir condições a melhor descrição de execução/conclusão. A explicação de o1 é curta; contudo, contém o critério correto e o4 já o contrasta explicitamente.",
+          "en": "Analysis/design may iterate or overlap and both use techniques; that does not make defining conditions execution or completion. o1is brief but gives the correct criterion, supplemented by the explicit contrast ino4."
+        },
+        "teaching": {
+          "pt": "FL-1.4.1/K2: classificar a tarefa e explicar o seu resultado; não exige derivaçãoK3. Dificuldade baixa. A brevidade não impede a resposta nem transmite conceito falso; um exemplo adicional ajuda um principiante, mas é opcional.",
+          "en": "FL-1.4.1/K2classifies a task and explains its output, withoutK3derivation. Low difficulty. Brevity neither prevents answering nor teaches a false concept; an example can help beginners but is optional."
+        },
+        "risks": {
+          "pt": "Risco pedagógico baixo se o aluno ler só a frase de o1 e não o contraste de o4; não é ambiguidade confirmada da chave.",
+          "en": "Low pedagogical risk if only the brief o1line is read; not demonstrated key ambiguity."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "TEST_ANALYSIS",
+            "pt": "Correta: analisar requisitos para identificar condições é análise de teste.",
+            "en": "Correct: identifying test conditions from requirements is analysis."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "TEST_EXECUTION",
+            "pt": "Não se executam casos nem se comparam resultados neste cenário.",
+            "en": "No test runs or result comparisons are described."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "TEST_COMPLETION",
+            "pt": "Não há consolidação/arquivo/relatório de conclusão.",
+            "en": "No completion consolidation, archival or reporting is described."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "TEST_DESIGN",
+            "pt": "Desenvolver condições em casos é diferente de as identificar; a própria justificação distingue os dois.",
+            "en": "Elaborating conditions into cases differs from identifying conditions, as the rationale correctly explains."
+          }
+        },
+        "criticalPairs": [
+          ["test conditions", "condições de teste", "EQUIVALENT"],
+          ["from requirements", "a partir de requisitos", "EQUIVALENT"],
+          ["Test analysis", "Análise de teste", "EQUIVALENT"],
+          ["Test design", "Conceção de teste", "EQUIVALENT"]
+        ]
+      },
+      "references": {
+        "section": "1.4.1",
+        "EN": [14, 18, 19],
+        "PT": [15, 20, 21],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "8c70d67250dd21f034dd8252f1200f1e1e05e0d9204d28e452beacab48333290"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d01fd06ff485b305bb2c8b11a61ac5da4cd56580c1272a0d9dc13e15cb7aa623"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-006",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "Analysis identifies what needs testing.",
+          "pt": "A análise identifica o que é necessário testar."
+        },
+        "candidateText": {
+          "en": "Test analysis examines requirements to identify testable features and test conditions: what to test. For example, a condition may be that an invalid date is rejected; test design then turns that condition into cases with specific inputs and expected results.",
+          "pt": "A análise de teste examina requisitos para identificar características testáveis e condições de teste: o que testar. Por exemplo, uma condição pode ser a rejeição de uma data inválida; a conceção transforma depois essa condição em casos com entradas concretas e resultados esperados."
+        },
+        "original": {
+          "id": "tl-006",
+          "chapter": 1,
+          "lo": "FL-1.4.1",
+          "level": "K2",
+          "topic": "Test activities",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A tester derives test conditions from requirements. Which activity is this?",
+            "pt": "Um testador deriva condições de teste a partir de requisitos. Que atividade é esta?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Test analysis",
+                "pt": "Análise de teste"
+              },
+              "explanation": {
+                "en": "Analysis identifies what needs testing.",
+                "pt": "A análise identifica o que é necessário testar."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Test execution",
+                "pt": "Execução de teste"
+              },
+              "explanation": {
+                "en": "Execution runs tests and compares results.",
+                "pt": "A execução realiza testes e compara resultados."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Test completion",
+                "pt": "Conclusão do teste"
+              },
+              "explanation": {
+                "en": "Completion consolidates outcomes and assets.",
+                "pt": "A conclusão consolida resultados e recursos."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Test design",
+                "pt": "Conceção de teste"
+              },
+              "explanation": {
+                "en": "Analysis defines what to test as test conditions. Design elaborates those conditions into test cases and determines how to test them.",
+                "pt": "A análise define o que testar através de condições de teste. A conceção desenvolve essas condições em casos de teste e determina como as testar."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Analysis identifies what needs testing.",
+            "pt": "A análise identifica o que é necessário testar."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "1.4.1",
+            "pages": [18, 19],
+            "report": "docs/academic-audit.md#fase-5b--tl-006"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-006",
+          "chapter": 1,
+          "lo": "FL-1.4.1",
+          "level": "K2",
+          "topic": "Test activities",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A tester derives test conditions from requirements. Which activity is this?",
+            "pt": "Um testador deriva condições de teste a partir de requisitos. Que atividade é esta?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Test analysis",
+                "pt": "Análise de teste"
+              },
+              "explanation": {
+                "en": "Analysis identifies what needs testing.",
+                "pt": "A análise identifica o que é necessário testar."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Test execution",
+                "pt": "Execução de teste"
+              },
+              "explanation": {
+                "en": "Execution runs tests and compares results.",
+                "pt": "A execução realiza testes e compara resultados."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Test completion",
+                "pt": "Conclusão do teste"
+              },
+              "explanation": {
+                "en": "Completion consolidates outcomes and assets.",
+                "pt": "A conclusão consolida resultados e recursos."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Test design",
+                "pt": "Conceção de teste"
+              },
+              "explanation": {
+                "en": "Analysis defines what to test as test conditions. Design elaborates those conditions into test cases and determines how to test them.",
+                "pt": "A análise define o que testar através de condições de teste. A conceção desenvolve essas condições em casos de teste e determina como as testar."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Test analysis examines requirements to identify testable features and test conditions: what to test. For example, a condition may be that an invalid date is rejected; test design then turns that condition into cases with specific inputs and expected results.",
+            "pt": "A análise de teste examina requisitos para identificar características testáveis e condições de teste: o que testar. Por exemplo, uma condição pode ser a rejeição de uma data inválida; a conceção transforma depois essa condição em casos com entradas concretas e resultados esperados."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 3,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "1.4.1",
+            "pages": [18, 19],
+            "report": "docs/academic-audit.md#fase-5b--tl-006"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c",
+        "candidateCanonicalSHA256": "aae36fd1488a3b50b89067d73c96f8b49ec89b9114fc0932e565dbebf5e3b6f2",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 4,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-006",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "ba0d87c420b44384709fe07abefcf680bd7dbbc5f2daafd0c66bc78c2c76ad7c",
+        "learningObjective": "FL-1.4.1",
+        "syllabusChapter": 1,
+        "syllabusSection": "1.4.1",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "1.4",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "1.4.1",
+          "pdfPages": [18, 19],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Test analysis",
+              "pt": "Análise de teste"
+            },
+            "explanation": {
+              "en": "Analysis identifies what needs testing.",
+              "pt": "A análise identifica o que é necessário testar."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Analysis identifies what needs testing.",
+          "pt": "A análise identifica o que é necessário testar."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "406e74ffa4b2e7fc407866016ff2ce255ab4fd183b10c77c07d93b7e2858763b",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "1.4.1",
+          "pages": [18, 19],
+          "report": "docs/academic-audit.md#fase-5b--tl-006"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "1.4.1",
+            "pdfPages": [18, 19]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "1.4.1",
+            "pdfPages": [20, 21]
+          }
+        ],
+        "correctAnswerJustification": "Derivar condições a partir da base de teste é análise (o quê); elaborar casos e como executar é conceção.",
+        "distractorAssessment": {
+          "o2": "Não há execução ou comparação de resultados.",
+          "o3": "Não se está a consolidar/arquivar resultados num marco.",
+          "o4": "A conceção elabora condições em casos; o cenário ainda identifica condições."
+        },
+        "wordingAndTranslationConcerns": "Condições/conditions e análise/analysis correspondem. A explicação de o1 é correta mas breve.",
+        "potentialAmbiguity": "Atividades podem iterar; a tarefa descrita, não a cronologia, identifica análise.",
+        "difficultyAssessment": "Baixa; K2 com pista terminológica direta.",
+        "proposedCorrection": {
+          "description": "Opcional: acrescentar um exemplo de condição e contrastar com caso de teste, sem alterar a chave.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "workedSolution": null,
+        "humanQuestion": "Confirmar chave/conceito, plausibilidade e equivalência EN/PT; decidir correção proposta, se existir."
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-013",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-2.1.5",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900",
+      "afterCanonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-013",
+        "answer": ["o1"],
+        "derivation": "Reviewing acceptance criteria before coding is early static review, hence shift left. It is not executing the application, regression after changes, or end-of-test completion. Before coding and antes de programar carry the same timing for the work under discussion; no claim that all testing must occur before all project code."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Rever critérios antes de programar antecipa avaliação e feedback: shift left. É uma revisão estática, mas essa classificação não é uma das opções. Não se descreve execução do software, regressão por alteração ou conclusão dos testes.",
+          "en": "Review before coding brings evaluation/feedback earlier: shift left. It is also a static review, but that is not a competing offered answer. No software execution, change regression or completion is described."
+        },
+        "translation": {
+          "pt": "Reviewing/rever e before coding/antes de programar preservam revisão e anterioridade. Acceptance criteria/critérios de aceitação são a mesma base. Não se transformou revisão em execução nem se disse que todo o código do projeto tem de estar ausente.",
+          "en": "Reviewing and before coding preserve review and relative timing. Acceptance criteria are the same basis. Neither text turns review into execution or requires that no project code exist at all."
+        },
+        "contrary": {
+          "pt": "Critérios podem ser revistos também depois de código existir, e testes dinâmicos podem ser antecipados. O cenário dá um exemplo específico, não definição exclusiva. A explicação breve não diz que se dispensam testes posteriores.",
+          "en": "Criteria may also be reviewed after code exists and dynamic testing can shift earlier too. This is a specific example, not an exclusive definition. The short explanation does not say later testing is unnecessary."
+        },
+        "teaching": {
+          "pt": "FL-2.1.5/K2: reconhecer e explicar um exemplo de antecipação, dificuldade baixa. A explicação é correta mas pode ligar mais claramente a revisão à descoberta de ambiguidades/lacunas; enriquecimento é opcional.",
+          "en": "FL-2.1.5/K2recognizes/explains an early-testing example; low difficulty. The rationale is correct, with optional scope to explain ambiguity/gap detection more clearly."
+        },
+        "risks": {
+          "pt": "Risco baixo de extrapolar shift left para “só testar antes do código”; o enunciado não faz essa afirmação.",
+          "en": "Low risk of extrapolating shift left to testing only before coding; the item does not make that claim."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "SHIFT_LEFT",
+            "pt": "Correta: a avaliação de critérios é antecipada no ciclo de vida.",
+            "en": "Correct: evaluation of criteria is brought earlier in the lifecycle."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "TEST_EXECUTION",
+            "pt": "Revisão de critérios antes da implementação é estática, não uma execução do objeto.",
+            "en": "Pre-implementation criteria review is static, not execution of the object."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "REGRESSION",
+            "pt": "Não se pede detetar efeitos adversos de uma alteração; a justificação mantém essa diferença.",
+            "en": "Checking adverse effects of a change is not the stated purpose."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "COMPLETION",
+            "pt": "Não se descreve consolidação final; descreve-se feedback antecipado.",
+            "en": "This is early feedback, not completion consolidation."
+          }
+        },
+        "criticalPairs": [
+          [
+            "Reviewing acceptance criteria",
+            "Rever critérios de aceitação",
+            "EQUIVALENT"
+          ],
+          ["before coding", "antes de programar", "EQUIVALENT_TIMING"],
+          ["Earlier evaluation", "A avaliação antecipada", "EQUIVALENT"]
+        ]
+      },
+      "references": {
+        "section": "2.1.5",
+        "EN": [24, 27],
+        "PT": [26, 29, 30],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "28d68cd2f51be4a39e4ad0dfd5b3fbcb9f20ad1a408a7cee9be4af1258ce4070"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "7520dcccf095b9e3c98cbcd4e057427997ba4b169fad7f82005b153fed9945ca"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-013",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "Earlier evaluation gives earlier feedback.",
+          "pt": "A avaliação antecipada permite feedback mais cedo."
+        },
+        "candidateText": {
+          "en": "Reviewing acceptance criteria before implementation provides early feedback and can reveal ambiguities, gaps and inconsistencies. This illustrates shift left; it does not remove the need for testing later in the lifecycle.",
+          "pt": "Rever critérios de aceitação antes da implementação proporciona feedback antecipado e pode revelar ambiguidades, lacunas e inconsistências. Isto ilustra shift left; não elimina a necessidade de testar mais tarde no ciclo de vida."
+        },
+        "original": {
+          "id": "tl-013",
+          "chapter": 2,
+          "lo": "FL-2.1.5",
+          "level": "K2",
+          "topic": "Shift left",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Reviewing acceptance criteria before coding is an example of what?",
+            "pt": "Rever critérios de aceitação antes de programar é um exemplo de quê?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Shift left",
+                "pt": "Shift left"
+              },
+              "explanation": {
+                "en": "Earlier evaluation gives earlier feedback.",
+                "pt": "A avaliação antecipada permite feedback mais cedo."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Test execution",
+                "pt": "Execução de teste"
+              },
+              "explanation": {
+                "en": "Executing tests runs the test object and compares actual and expected results. Reviewing criteria before implementation is an earlier, static activity illustrating shift left.",
+                "pt": "A execução de teste executa o objeto de teste e compara os resultados obtidos e esperados. Rever critérios antes da implementação é uma atividade estática antecipada que ilustra shift left."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Regression testing",
+                "pt": "Teste de regressão"
+              },
+              "explanation": {
+                "en": "Regression testing checks adverse effects of changes. The described purpose is earlier feedback on acceptance criteria, not checking effects of a change.",
+                "pt": "O teste de regressão procura efeitos adversos de alterações. A finalidade descrita é obter feedback mais cedo sobre critérios de aceitação, não verificar efeitos de uma alteração."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Test completion",
+                "pt": "Conclusão do teste"
+              },
+              "explanation": {
+                "en": "Completion consolidates results and test assets after test activities. Reviewing criteria before coding brings evaluation earlier in the lifecycle.",
+                "pt": "A conclusão consolida resultados e recursos de teste após as atividades de teste. Rever critérios antes da programação antecipa a avaliação no ciclo de vida."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Earlier evaluation gives earlier feedback.",
+            "pt": "A avaliação antecipada permite feedback mais cedo."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "2.1.5",
+            "pages": [27],
+            "report": "docs/academic-audit.md#fase-5b--tl-013"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-013",
+          "chapter": 2,
+          "lo": "FL-2.1.5",
+          "level": "K2",
+          "topic": "Shift left",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Reviewing acceptance criteria before coding is an example of what?",
+            "pt": "Rever critérios de aceitação antes de programar é um exemplo de quê?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Shift left",
+                "pt": "Shift left"
+              },
+              "explanation": {
+                "en": "Earlier evaluation gives earlier feedback.",
+                "pt": "A avaliação antecipada permite feedback mais cedo."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Test execution",
+                "pt": "Execução de teste"
+              },
+              "explanation": {
+                "en": "Executing tests runs the test object and compares actual and expected results. Reviewing criteria before implementation is an earlier, static activity illustrating shift left.",
+                "pt": "A execução de teste executa o objeto de teste e compara os resultados obtidos e esperados. Rever critérios antes da implementação é uma atividade estática antecipada que ilustra shift left."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Regression testing",
+                "pt": "Teste de regressão"
+              },
+              "explanation": {
+                "en": "Regression testing checks adverse effects of changes. The described purpose is earlier feedback on acceptance criteria, not checking effects of a change.",
+                "pt": "O teste de regressão procura efeitos adversos de alterações. A finalidade descrita é obter feedback mais cedo sobre critérios de aceitação, não verificar efeitos de uma alteração."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Test completion",
+                "pt": "Conclusão do teste"
+              },
+              "explanation": {
+                "en": "Completion consolidates results and test assets after test activities. Reviewing criteria before coding brings evaluation earlier in the lifecycle.",
+                "pt": "A conclusão consolida resultados e recursos de teste após as atividades de teste. Rever critérios antes da programação antecipa a avaliação no ciclo de vida."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Reviewing acceptance criteria before implementation provides early feedback and can reveal ambiguities, gaps and inconsistencies. This illustrates shift left; it does not remove the need for testing later in the lifecycle.",
+            "pt": "Rever critérios de aceitação antes da implementação proporciona feedback antecipado e pode revelar ambiguidades, lacunas e inconsistências. Isto ilustra shift left; não elimina a necessidade de testar mais tarde no ciclo de vida."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "2.1.5",
+            "pages": [27],
+            "report": "docs/academic-audit.md#fase-5b--tl-013"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900",
+        "candidateCanonicalSHA256": "af315bc12f9b67b9f8bcbfd1f06de19d610412872300995052fd5d38ae1b0ea2",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 3,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-013",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "753f11a392722ef65a94fdecba5d1f345ce0495709007a7ef0cdb20986d0d900",
+        "learningObjective": "FL-2.1.5",
+        "syllabusChapter": 2,
+        "syllabusSection": "2.1.5",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "2.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "2.1.5",
+          "pdfPages": [27],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Shift left",
+              "pt": "Shift left"
+            },
+            "explanation": {
+              "en": "Earlier evaluation gives earlier feedback.",
+              "pt": "A avaliação antecipada permite feedback mais cedo."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Earlier evaluation gives earlier feedback.",
+          "pt": "A avaliação antecipada permite feedback mais cedo."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "d505ed2881ba70a5275b8c0aa43506c2f64e957794ea48eaaff3a82e52abd982",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "2.1.5",
+          "pages": [27],
+          "report": "docs/academic-audit.md#fase-5b--tl-013"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "2.1.5",
+            "pdfPages": [27]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "2.1.5",
+            "pdfPages": [29, 30]
+          }
+        ],
+        "correctAnswerJustification": "Rever critérios antes de implementar antecipa avaliação da especificação: exemplo explícito de shift left; FL-2.1.5/K2 adequado, embora o reconhecimento seja simples.",
+        "distractorAssessment": {
+          "o2": "Execução dinâmica requer executar o objeto; rever critérios é teste estático.",
+          "o3": "Não é indicada alteração nem procura de consequências adversas que caracterize regressão.",
+          "o4": "Conclusão consolida resultados/ativos; não caracteriza antecipação da revisão."
+        },
+        "wordingAndTranslationConcerns": "before coding/antes de programar e reviewing/rever são equivalentes; shift left permanece termo técnico nas duas línguas.",
+        "potentialAmbiguity": "Também é revisão estática, mas essa alternativa não existe. Não há segunda opção defensável entre as quatro.",
+        "difficultyAssessment": "Baixa; K2 limitado à classificação de um exemplo, sem explicar benefícios ou custos.",
+        "proposedCorrection": {
+          "description": "Enriquecer a explicação: rever critérios antes do código antecipa a descoberta de ambiguidades, lacunas e inconsistências; não dispensa testes posteriores no SDLC.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-014",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-2.3.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27",
+      "afterCanonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-014",
+        "answer": ["o1"],
+        "derivation": "An operational service migrating database engine changes its environment and can affect data/behaviour even with unchanged application code. Maintenance testing considers migration impacts; prior results do not automatically prove compatibility, maintenance is not code-only, and data checks do not substitute all behavioural regression. Can/pode describes potential impact, not guaranteed failure or a universal fixed test obligation."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Mudar o motor de base de dados altera o ambiente de um serviço operacional e pode afetar dados/comportamento. Migração é motivo de manutenção; sucesso da alteração e regressões são relevantes mesmo com código da aplicação inalterado. o1 mantém modalidade de possibilidade.",
+          "en": "A database-engine migration changes an operational service’s environment and may affect data/behaviour. Migration triggers maintenance considerations; change success/regressions matter even with unchanged application code. o1correctly states possibility."
+        },
+        "translation": {
+          "pt": "Operational/em operação, can/pode, existing behavior/comportamento existente e even without/mesmo sem mantêm contexto e modalidade. Não se traduziu “pode” como “vai” ou “tem de”, nem se tornou obrigatória conversão de dados.",
+          "en": "Operational, can, existing behaviour and even without preserve context and modality. Can is not translated as will/must, and data conversion is not made universally mandatory."
+        },
+        "contrary": {
+          "pt": "Nem toda mudança causa defeitos nem toda migração exige conversão de dados. Isso não invalida planear testes: o1 fala em risco possível. O âmbito depende do risco, do sistema e da dimensão da alteração; não se infere uma suite fixa para qualquer migração.",
+          "en": "Not every change causes defects or requires data conversion. That does not invalidate planning tests: o1states possible impact. Scope depends on change risk/system/change size, not a universal fixed suite."
+        },
+        "teaching": {
+          "pt": "FL-2.3.1/K2: explicar um gatilho concreto de manutenção; dificuldade baixa/média. A frase geral é suficiente, e as justificações dos distratores já explicam risco/regressão. Uma expansão é útil mas opcional.",
+          "en": "FL-2.3.1/K2explains a concrete maintenance trigger; low/moderate difficulty. The short summary is sufficient and distractor rationales explain risk/regression; expansion is optional."
+        },
+        "risks": {
+          "pt": "Risco baixo de inferir regressão garantida ou conversão obrigatória; nenhuma é afirmada.",
+          "en": "Low risk of reading guaranteed regression or mandatory conversion into wording that states neither."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "MAINTENANCE_MIGRATION",
+            "pt": "Correta: possibilidade de impacto justifica avaliar alteração e regressões.",
+            "en": "Correct: potential impact justifies evaluating change and regressions."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "OLD_RESULTS_SUFFICE",
+            "pt": "Requisitos iguais não demonstram comportamento correto num motor diferente.",
+            "en": "Unchanged requirements do not prove correct behaviour on another engine."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "CODE_ONLY_MAINTENANCE",
+            "pt": "Excluir migrações do ambiente contradiz os gatilhos de manutenção.",
+            "en": "Excluding environment migration contradicts maintenance triggers."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "DATA_REPLACES_REGRESSION",
+            "pt": "Verificar dados não substitui avaliar comportamento existente.",
+            "en": "Data verification does not replace evaluating existing behaviour."
+          }
+        },
+        "criticalPairs": [
+          ["operational service", "serviço em operação", "EQUIVALENT"],
+          ["can affect", "pode afetar", "EQUIVALENT_MODALITY"],
+          ["even without", "mesmo sem", "EQUIVALENT_CONDITION"],
+          ["database engine", "motor de base de dados", "EQUIVALENT"]
+        ]
+      },
+      "references": {
+        "section": "2.3",
+        "EN": [24, 31],
+        "PT": [26, 33, 34],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b49eb939c65bdc561827d2e270e3093e42fb5d70cc1a5b4deee36188e735399d"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "c93bfb9fc28972c2ad4532fe97cda5acccfd1733d07e4b3bc7f6abe5b1273a6f"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-014",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "Environment migration is a maintenance-testing trigger.",
+          "pt": "A migração do ambiente é um motivo para testes de manutenção."
+        },
+        "candidateText": {
+          "en": "Migrating the operational environment is a maintenance-testing trigger. Evaluate the migration and possible regressions, with scope based on the change risk, system size and change size. Data-conversion checks apply when relevant, not automatically to every migration.",
+          "pt": "Migrar o ambiente operacional é um motivo para testes de manutenção. Avaliam-se a migração e possíveis regressões, com âmbito baseado no risco da alteração e nas dimensões do sistema e da alteração. As verificações de conversão de dados aplicam-se quando pertinentes, não automaticamente a todas as migrações."
+        },
+        "original": {
+          "id": "tl-014",
+          "chapter": 2,
+          "lo": "FL-2.3.1",
+          "level": "K2",
+          "topic": "Maintenance",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "An operational service moves to a new database engine. Why plan maintenance testing?",
+            "pt": "Um serviço em operação muda para outro motor de base de dados. Porquê planear testes de manutenção?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Migration can affect the data and existing behavior, even without application code changes",
+                "pt": "A migração pode afetar dados e comportamento existente, mesmo sem alterar o código da aplicação"
+              },
+              "explanation": {
+                "en": "Environment migration is a maintenance-testing trigger.",
+                "pt": "A migração do ambiente é um motivo para testes de manutenção."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Existing test results remain sufficient for the new environment because application features are unchanged",
+                "pt": "Os resultados anteriores continuam a ser suficientes para o novo ambiente porque as funcionalidades da aplicação não mudaram"
+              },
+              "explanation": {
+                "en": "Unchanged feature requirements do not establish that the application behaves correctly with a different database engine. Migration can introduce regressions.",
+                "pt": "Requisitos funcionais inalterados não demonstram que a aplicação se comporta corretamente com outro motor de base de dados. A migração pode introduzir regressões."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Maintenance testing concerns code changes rather than environment migrations",
+                "pt": "Os testes de manutenção dizem respeito a alterações de código, não a migrações de ambiente"
+              },
+              "explanation": {
+                "en": "Maintenance testing can be triggered by environment upgrades or migrations, not just source-code changes.",
+                "pt": "Os testes de manutenção podem ser desencadeados por atualizações ou migrações do ambiente, não apenas por alterações ao código-fonte."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Data-migration checks replace regression checks of the service behavior",
+                "pt": "As verificações da migração de dados substituem as verificações de regressão do comportamento do serviço"
+              },
+              "explanation": {
+                "en": "Data correctness matters, but the new engine can also affect existing application behavior. Maintenance testing includes evaluating the change and possible regressions.",
+                "pt": "A correção dos dados é importante, mas o novo motor também pode afetar o comportamento existente da aplicação. Os testes de manutenção incluem avaliar a alteração e possíveis regressões."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Environment migration is a maintenance-testing trigger.",
+            "pt": "A migração do ambiente é um motivo para testes de manutenção."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "2.3",
+            "pages": [31],
+            "report": "docs/academic-audit.md#fase-5b--tl-014"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-014",
+          "chapter": 2,
+          "lo": "FL-2.3.1",
+          "level": "K2",
+          "topic": "Maintenance",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "An operational service moves to a new database engine. Why plan maintenance testing?",
+            "pt": "Um serviço em operação muda para outro motor de base de dados. Porquê planear testes de manutenção?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Migration can affect the data and existing behavior, even without application code changes",
+                "pt": "A migração pode afetar dados e comportamento existente, mesmo sem alterar o código da aplicação"
+              },
+              "explanation": {
+                "en": "Environment migration is a maintenance-testing trigger.",
+                "pt": "A migração do ambiente é um motivo para testes de manutenção."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Existing test results remain sufficient for the new environment because application features are unchanged",
+                "pt": "Os resultados anteriores continuam a ser suficientes para o novo ambiente porque as funcionalidades da aplicação não mudaram"
+              },
+              "explanation": {
+                "en": "Unchanged feature requirements do not establish that the application behaves correctly with a different database engine. Migration can introduce regressions.",
+                "pt": "Requisitos funcionais inalterados não demonstram que a aplicação se comporta corretamente com outro motor de base de dados. A migração pode introduzir regressões."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Maintenance testing concerns code changes rather than environment migrations",
+                "pt": "Os testes de manutenção dizem respeito a alterações de código, não a migrações de ambiente"
+              },
+              "explanation": {
+                "en": "Maintenance testing can be triggered by environment upgrades or migrations, not just source-code changes.",
+                "pt": "Os testes de manutenção podem ser desencadeados por atualizações ou migrações do ambiente, não apenas por alterações ao código-fonte."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Data-migration checks replace regression checks of the service behavior",
+                "pt": "As verificações da migração de dados substituem as verificações de regressão do comportamento do serviço"
+              },
+              "explanation": {
+                "en": "Data correctness matters, but the new engine can also affect existing application behavior. Maintenance testing includes evaluating the change and possible regressions.",
+                "pt": "A correção dos dados é importante, mas o novo motor também pode afetar o comportamento existente da aplicação. Os testes de manutenção incluem avaliar a alteração e possíveis regressões."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Migrating the operational environment is a maintenance-testing trigger. Evaluate the migration and possible regressions, with scope based on the change risk, system size and change size. Data-conversion checks apply when relevant, not automatically to every migration.",
+            "pt": "Migrar o ambiente operacional é um motivo para testes de manutenção. Avaliam-se a migração e possíveis regressões, com âmbito baseado no risco da alteração e nas dimensões do sistema e da alteração. As verificações de conversão de dados aplicam-se quando pertinentes, não automaticamente a todas as migrações."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "2.3",
+            "pages": [31],
+            "report": "docs/academic-audit.md#fase-5b--tl-014"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27",
+        "candidateCanonicalSHA256": "2abd7949cfa5c32ede4ec58e8683a61eb36298803b8c8f0d6c4e9a6c39e62a5f",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 3,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-014",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "097b7b185935afe35bf1aa220c8be6d3ed7a121165a5b9136c2b5d44d15cca27",
+        "learningObjective": "FL-2.3.1",
+        "syllabusChapter": 2,
+        "syllabusSection": "2.3",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "2.3",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "2.3",
+          "pdfPages": [31],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Migration can affect the data and existing behavior, even without application code changes",
+              "pt": "A migração pode afetar dados e comportamento existente, mesmo sem alterar o código da aplicação"
+            },
+            "explanation": {
+              "en": "Environment migration is a maintenance-testing trigger.",
+              "pt": "A migração do ambiente é um motivo para testes de manutenção."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Environment migration is a maintenance-testing trigger.",
+          "pt": "A migração do ambiente é um motivo para testes de manutenção."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "ad19611cea2e3253312cb295ccdfe4a742eb2e50d702c834cded53b2d39f2e27",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "2.3",
+          "pages": [31],
+          "report": "docs/academic-audit.md#fase-5b--tl-014"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "2.3",
+            "pdfPages": [31]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "2.3",
+            "pdfPages": [33, 34]
+          }
+        ],
+        "correctAnswerJustification": "Migração de um sistema operacional para outro motor de dados é gatilho de manutenção; podem mudar dados e comportamento sem mudança no código. FL-2.3.1/K2 coerente.",
+        "distractorAssessment": {
+          "o2": "Resultados do ambiente antigo não demonstram comportamento no novo motor.",
+          "o3": "O âmbito de manutenção inclui migrações/atualizações de ambiente, não apenas código.",
+          "o4": "Conversão de dados e regressão do comportamento são complementares; uma não substitui a outra."
+        },
+        "wordingAndTranslationConcerns": "operational/em operação, can/pode e even without/mesmo sem preservam modalidade e contexto. Motor de base de dados é equivalente a database engine.",
+        "potentialAmbiguity": "Não presumir que toda migração exige conversão de dados; o1 diz pode afetar, não obriga conversão. Escopo deve depender do risco.",
+        "difficultyAssessment": "Baixa a média; K2 num cenário concreto com três equívocos plausíveis.",
+        "proposedCorrection": {
+          "description": "Explicação opcional: avaliar o sucesso da migração e possíveis regressões; ajustar o âmbito ao risco e às dimensões da alteração e do sistema, sem exigir sempre conversão de dados.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-015",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-3.1.1",
+      "cognitiveLevel": "K1",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b",
+      "afterCanonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-015",
+        "answer": ["o1"],
+        "derivation": "Documented checkout-validation requirements are written work products that can be reviewed without running the application. Measured latency, memory growth under concurrent load and actual checkout behaviour describe dynamic observations, not their documentary representations. One could review a report of those observations statically, but no such report is the offered item. Checkout/compra has some lexical scope difference, without changing the artifact-versus-behaviour criterion."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "o1 oferece requisitos escritos, examináveis por revisão sem executar a aplicação. As outras opções são propriedades/comportamentos observados dinamicamente. A restrição “diretamente” e “conteúdo escrito” distingue o objeto avaliado de um eventual relatório sobre ele.",
+          "en": "o1offers written requirements reviewable without running the application. Other options describe dynamically observed properties/behaviour. Directly and written content distinguish the evaluated object from a possible report about it."
+        },
+        "translation": {
+          "pt": "Written content/conteúdo escrito e documented requirements/requisitos escritos preservam artefacto legível. Directly/diretamente e without/sem preservam a restrição. Checkout/compra é menos específico em PT, mas não altera o critério documento versus observação; Pay/Pagar é consistente.",
+          "en": "Written content/documented requirements retain a readable artifact. Directly and without preserve the restriction. Compra is less specific than checkout but leaves the document-versus-observation criterion intact; Pay/Pagar is consistent."
+        },
+        "contrary": {
+          "pt": "Uma medição já registada pode ser lida num relatório, e esse relatório pode ser revisto estaticamente. A opção diz latência medida, não relatório; o enunciado pede conteúdo escrito. A justificação de o3 reconhece explicitamente o relatório como outra atividade. Risco residual existe, sem segunda alternativa direta demonstrada.",
+          "en": "An already recorded measurement can be reviewed in a report, which is a static activity. The option offers measured latency, not a report, and the statement requires written content. o3’s rationale explicitly recognizes that report review is different. Residual risk exists without a demonstrated second direct answer."
+        },
+        "teaching": {
+          "pt": "FL-3.1.1/K1: reconhecer um produto revisto estaticamente, dificuldade baixa. A distinção não deve ser ensinada como “só requisitos admitem revisão”; muitos produtos de trabalho, incluindo relatórios, podem ser revistos.",
+          "en": "FL-3.1.1/K1recognizes a statically reviewable work product; low difficulty. It must not be taught as only requirements being reviewable; many work products, including reports, qualify."
+        },
+        "risks": {
+          "pt": "Risco interpretativo LOW em “measured/medida” permitir pensar num resultado documentado, não oferecido explicitamente. Uma redação verbal da opção reduz a inferência sem mudar a chave.",
+          "en": "LOWinterpretation risk: measured may prompt an unoffered documented-result reading. A verbal option wording reduces that inference without changing the key."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "WRITTEN_REQUIREMENTS",
+            "pt": "Correta: os requisitos estão expressamente documentados/escritos.",
+            "en": "Correct: requirements are explicitly documented/written."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "MEASURE_LATENCY",
+            "pt": "A latência medida é observação dinâmica, não conteúdo documental oferecido; reconhecer a leitura alternativa de relatório sem a inventar.",
+            "en": "Measured latency is a dynamic observation, not an offered document; acknowledge report interpretation without inventing one."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "OBSERVE_MEMORY",
+            "pt": "Memória sob carga é observada com execução; rever relatório posterior é outra atividade.",
+            "en": "Memory under load is observed during execution; reviewing a later report is different."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "OBSERVE_CHECKOUT",
+            "pt": "Observar o efeito de Pagar exige execução; um requisito desse efeito seria revisto estaticamente, mas não é esta opção.",
+            "en": "Observing Pay behaviour requires execution; a written requirement about it would be a different static object."
+          }
+        },
+        "criticalPairs": [
+          ["written content", "conteúdo escrito", "EQUIVALENT_ARTIFACT"],
+          [
+            "Documented requirements",
+            "Os requisitos escritos",
+            "EQUIVALENT_ARTIFACT"
+          ],
+          ["directly", "diretamente", "EQUIVALENT_RESTRICTION"],
+          ["without executing", "sem executar", "EQUIVALENT_RESTRICTION"],
+          [
+            "measured response latency",
+            "latência de resposta medida",
+            "SAME_RESIDUAL_REPORT_READING"
+          ],
+          ["after selecting Pay", "após selecionar Pagar", "EQUIVALENT_CONTEXT"]
+        ]
+      },
+      "references": {
+        "section": "3.1.1",
+        "EN": [32, 33],
+        "PT": [35, 36],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f53f5d678e2c04070624525bb32493305fc68d988610ce8b392d66a0ebba40b7"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "fd53078a499abb4f1abaac11ef8959e13d17c5e265d32b1ababdbd1530a1815c"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-015",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["options", "o2", "text"],
+        "originalText": {
+          "en": "The checkout service's measured response latency",
+          "pt": "A latência de resposta medida no serviço de compras"
+        },
+        "candidateText": {
+          "en": "Measuring the checkout service's response latency",
+          "pt": "Medir a latência de resposta do serviço de compras"
+        },
+        "original": {
+          "id": "tl-015",
+          "chapter": 3,
+          "lo": "FL-3.1.1",
+          "level": "K1",
+          "topic": "Static work products",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Which item is directly examinable by reviewing its written content, without executing the application?",
+            "pt": "Que item pode ser examinado diretamente através da revisão do seu conteúdo escrito, sem executar a aplicação?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Documented requirements for checkout validation rules",
+                "pt": "Os requisitos escritos sobre regras de validação da compra"
+              },
+              "explanation": {
+                "en": "Requirements can be inspected directly.",
+                "pt": "Os requisitos podem ser inspecionados diretamente."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "The checkout service's measured response latency",
+                "pt": "A latência de resposta medida no serviço de compras"
+              },
+              "explanation": {
+                "en": "Measuring response latency requires execution under defined conditions; it is a dynamic evaluation rather than inspection of a document.",
+                "pt": "Medir a latência de resposta exige execução em condições definidas; é uma avaliação dinâmica, não a inspeção de um documento."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "The application's memory growth under concurrent load",
+                "pt": "O crescimento de memória da aplicação sob carga concorrente"
+              },
+              "explanation": {
+                "en": "Memory growth during a load test is observed while the application executes. A later review of a written report would be a different, static activity.",
+                "pt": "O crescimento da memória durante um teste de carga é observado com a aplicação em execução. Rever posteriormente um relatório escrito seria uma atividade diferente, estática."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "The observed checkout behavior after selecting Pay",
+                "pt": "O comportamento da compra observado após selecionar Pagar"
+              },
+              "explanation": {
+                "en": "Observing the behavior after an action requires executing the application. A requirement describing that behavior can instead be reviewed statically.",
+                "pt": "Observar o comportamento após uma ação exige executar a aplicação. Um requisito que descreva esse comportamento pode, em alternativa, ser revisto estaticamente."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Requirements can be inspected directly.",
+            "pt": "Os requisitos podem ser inspecionados diretamente."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "3.1.1",
+            "pages": [33],
+            "report": "docs/academic-audit.md#fase-5b--tl-015"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-015",
+          "chapter": 3,
+          "lo": "FL-3.1.1",
+          "level": "K1",
+          "topic": "Static work products",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Which item is directly examinable by reviewing its written content, without executing the application?",
+            "pt": "Que item pode ser examinado diretamente através da revisão do seu conteúdo escrito, sem executar a aplicação?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Documented requirements for checkout validation rules",
+                "pt": "Os requisitos escritos sobre regras de validação da compra"
+              },
+              "explanation": {
+                "en": "Requirements can be inspected directly.",
+                "pt": "Os requisitos podem ser inspecionados diretamente."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Measuring the checkout service's response latency",
+                "pt": "Medir a latência de resposta do serviço de compras"
+              },
+              "explanation": {
+                "en": "Measuring response latency requires execution under defined conditions; it is a dynamic evaluation rather than inspection of a document.",
+                "pt": "Medir a latência de resposta exige execução em condições definidas; é uma avaliação dinâmica, não a inspeção de um documento."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "The application's memory growth under concurrent load",
+                "pt": "O crescimento de memória da aplicação sob carga concorrente"
+              },
+              "explanation": {
+                "en": "Memory growth during a load test is observed while the application executes. A later review of a written report would be a different, static activity.",
+                "pt": "O crescimento da memória durante um teste de carga é observado com a aplicação em execução. Rever posteriormente um relatório escrito seria uma atividade diferente, estática."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "The observed checkout behavior after selecting Pay",
+                "pt": "O comportamento da compra observado após selecionar Pagar"
+              },
+              "explanation": {
+                "en": "Observing the behavior after an action requires executing the application. A requirement describing that behavior can instead be reviewed statically.",
+                "pt": "Observar o comportamento após uma ação exige executar a aplicação. Um requisito que descreva esse comportamento pode, em alternativa, ser revisto estaticamente."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Requirements can be inspected directly.",
+            "pt": "Os requisitos podem ser inspecionados diretamente."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "3.1.1",
+            "pages": [33],
+            "report": "docs/academic-audit.md#fase-5b--tl-015"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b",
+        "candidateCanonicalSHA256": "787393606718cd5dab47f26e210b6a48d70fb126d7e89c1bb0cd4f22a7123f51",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 3,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-015",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "3230a0db86ddcdf03432fd2813f478eb2b7827bc60876819ede181b22402649b",
+        "learningObjective": "FL-3.1.1",
+        "syllabusChapter": 3,
+        "syllabusSection": "3.1.1",
+        "cognitiveLevel": "K1",
+        "learningObjectiveSection": "3.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "3.1.1",
+          "pdfPages": [33],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Documented requirements for checkout validation rules",
+              "pt": "Os requisitos escritos sobre regras de validação da compra"
+            },
+            "explanation": {
+              "en": "Requirements can be inspected directly.",
+              "pt": "Os requisitos podem ser inspecionados diretamente."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Requirements can be inspected directly.",
+          "pt": "Os requisitos podem ser inspecionados diretamente."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "fad798d9e5792f6d1558c43118fc680401e581d9b6ddea6e0a8a5b2de22e0aa7",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "3.1.1",
+          "pages": [33],
+          "report": "docs/academic-audit.md#fase-5b--tl-015"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "3.1.1",
+            "pdfPages": [33]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "3.1.1",
+            "pdfPages": [36]
+          }
+        ],
+        "correctAnswerJustification": "Requisitos escritos são produtos legíveis/revisáveis sem execução; FL-3.1.1/K1 adequado. o1 é o único produto textual explicitamente oferecido.",
+        "distractorAssessment": {
+          "o2": "A medição da latência depende de execução; rever um relatório já produzido seria outra atividade.",
+          "o3": "Crescimento de memória sob carga é observado dinamicamente; relatório escrito seria objeto distinto.",
+          "o4": "Observar comportamento após Pagar exige execução; não equivale a rever requisito que o descreve."
+        },
+        "wordingAndTranslationConcerns": "written/documented corresponde a escritos; checkout traduzido por compra mantém o domínio. directly/diretamente e without/sem limitam a atividade.",
+        "potentialAmbiguity": "measured/medida pode sugerir um resultado já registado, passível de revisão. O enunciado exige conteúdo escrito e a opção não oferece relatório; risco residual baixo.",
+        "difficultyAssessment": "Baixa; K1 com contraste claro entre requisito e observações dinâmicas.",
+        "proposedCorrection": {
+          "description": "Melhoria opcional em o2: usar “Measuring the checkout service response latency” / “Medir a latência de resposta do serviço de compras”, eliminando a leitura de um resultado já documentado. Explicar que relatórios também podem ser revistos estaticamente.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-017",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-3.1.3",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6",
+      "afterCanonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-017",
+        "answer": ["o1"],
+        "derivation": "Contradictory requirements are a defect directly found in a work product by review. An incorrectly displayed date observed during execution is a failure. Neither observation alone locates the faulty code statement or proves a particular human mistake/root cause. Defect/failure is not interchangeable with human error. Only o1 preserves this distinction."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "A revisão identifica diretamente contradição nos requisitos: defeito no produto de trabalho. A execução observa data incorreta: falha. Não se identificam automaticamente uma instrução de código ou um erro humano específico; o cenário não demonstra ligação causal entre os dois achados.",
+          "en": "Review directly identifies contradictory requirements: a work-product defect. Execution observes an incorrect date: a failure. Neither automatically identifies a faulty code statement or specific human mistake; no causal link between the two findings is demonstrated."
+        },
+        "translation": {
+          "pt": "Contradictory/contraditórios, directly/diretamente, defect/defeito e failure/falha mantêm conceitos. “Data incorreta apresentada” é resultado observado, não tradução de erro humano. A explicação geral usa “imperfeições” informalmente; as alternativas e justificações usam os termos precisos.",
+          "en": "Contradictory, directly, defect and failure preserve the concepts. An incorrectly displayed date is an observed outcome, not a human error. The informal flaws word in the summary does not replace the precise terms in the options/rationales."
+        },
+        "contrary": {
+          "pt": "Testes dinâmicos, seguidos de análise, podem levar à localização de defeitos. Isso não significa que a observação por si só já identificou a instrução defeituosa. “Execution exposes failures” é descrição do mecanismo no cenário com falha observada, não garantia de que qualquer execução falhe.",
+          "en": "Dynamic testing plus analysis may lead to defects; the observation alone does not locate the faulty statement. Execution exposes failures describes the mechanism in this failed scenario, not a guarantee that every run fails."
+        },
+        "teaching": {
+          "pt": "FL-3.1.3/K2: comparar dois mecanismos a partir de achados concretos, dificuldade baixa/média. Convém separar erro humano, defeito, falha e causa raiz; a questão não atribui culpados nem prova uma causa comum.",
+          "en": "FL-3.1.3/K2compares mechanisms using concrete findings; low/moderate difficulty. Human error, defect, failure and root cause must remain distinct; no blame or shared cause is established."
+        },
+        "risks": {
+          "pt": "Risco baixo de generalizar a explicação breve para toda execução ou supor causa comum; a chave não depende dessas inferências.",
+          "en": "Low risk of generalizing the brief summary to every run or assuming common causation; neither is needed for the key."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "DIRECT_DEFECT_OBSERVED_FAILURE",
+            "pt": "Correta: defeito direto na revisão, falha observada na execução.",
+            "en": "Correct: direct review defect, observed execution failure."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "REVERSED_MECHANISMS",
+            "pt": "Inverte os mecanismos e inventa diagnóstico direto de código.",
+            "en": "Reverses the mechanisms and invents direct code diagnosis."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "BOTH_FAILURES",
+            "pt": "Contradição documental não é falha de execução só por contrariar expectativas.",
+            "en": "A document contradiction is not an execution failure merely because it conflicts with expectations."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "BOTH_CODE_DEFECTS",
+            "pt": "O requisito defeituoso não é código; o resultado incorreto não localiza por si só uma instrução.",
+            "en": "The requirement defect is not code, and the output alone does not locate a statement."
+          }
+        },
+        "criticalPairs": [
+          [
+            "contradictory date requirements",
+            "requisitos contraditórios de datas",
+            "EQUIVALENT_DEFECT"
+          ],
+          ["defect directly", "diretamente um defeito", "EQUIVALENT_DEFECT"],
+          ["observed a failure", "observou uma falha", "EQUIVALENT_FAILURE"],
+          [
+            "faulty statement",
+            "instrução incorreta",
+            "SAME_UNSUPPORTED_DIAGNOSIS"
+          ]
+        ]
+      },
+      "references": {
+        "section": "3.1.3",
+        "EN": [32, 34],
+        "PT": [35, 37],
+        "supporting": [
+          {
+            "section": "1.2.3",
+            "EN": [17],
+            "PT": [18, 19]
+          }
+        ]
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "5b01ed060509cd51b3669f6b7b1c82088b17019d5aa338c902c611017a49c7ab"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "b29dc3eb167ef2faad9cc84552c185df6d3b7a21906982acb93c41d3e5aa7d23"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-017",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "Review can find flaws without execution; execution exposes failures.",
+          "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+        },
+        "candidateText": {
+          "en": "The review directly identifies a defect in the requirements. The incorrect displayed date is an observed failure whose cause requires further analysis. The scenario does not establish that the two findings share a cause, and executing tests does not guarantee finding a failure.",
+          "pt": "A revisão identifica diretamente um defeito nos requisitos. A data incorreta apresentada é uma falha observada cuja causa exige análise adicional. O cenário não demonstra que os dois achados tenham a mesma causa, e executar testes não garante encontrar uma falha."
+        },
+        "original": {
+          "id": "tl-017",
+          "chapter": 3,
+          "lo": "FL-3.1.3",
+          "level": "K2",
+          "topic": "Static versus dynamic",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Review finds contradictory date requirements; execution finds an incorrect date displayed. Which statement is accurate?",
+            "pt": "Uma revisão encontra requisitos contraditórios de datas; a execução encontra uma data incorreta apresentada. Qual afirmação é correta?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Static testing found a defect directly; dynamic testing observed a failure",
+                "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+              },
+              "explanation": {
+                "en": "Review can find flaws without execution; execution exposes failures.",
+                "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Static testing observed a failure; dynamic testing directly located the code defect",
+                "pt": "O teste estático observou uma falha; o dinâmico localizou diretamente o defeito no código"
+              },
+              "explanation": {
+                "en": "The mechanisms are reversed: a document review finds the inconsistency directly, while the wrong displayed date is an observed failure requiring further analysis to locate its cause.",
+                "pt": "Os mecanismos estão invertidos: a revisão do documento encontra diretamente a inconsistência, enquanto a data incorreta apresentada é uma falha observada que exige análise adicional para localizar a causa."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Both found failures because both results conflict with expectations",
+                "pt": "Ambos encontraram falhas porque ambos os resultados contrariam as expectativas"
+              },
+              "explanation": {
+                "en": "A failure is a deviation observed during execution. Contradictory written requirements are defects found without executing the application.",
+                "pt": "Uma falha é um desvio observado durante a execução. Requisitos escritos contraditórios são defeitos encontrados sem executar a aplicação."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Both directly found code defects because each result identifies the faulty statement",
+                "pt": "Ambos encontraram diretamente defeitos no código porque cada resultado identifica a instrução incorreta"
+              },
+              "explanation": {
+                "en": "The review found a requirements defect, not a code statement. The displayed failure alone does not identify which code statement caused it.",
+                "pt": "A revisão encontrou um defeito nos requisitos, não uma instrução de código. A falha apresentada, por si só, não identifica a instrução de código que a causou."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Review can find flaws without execution; execution exposes failures.",
+            "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "3.1.3",
+            "pages": [34],
+            "report": "docs/academic-audit.md#fase-5b--tl-017"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-017",
+          "chapter": 3,
+          "lo": "FL-3.1.3",
+          "level": "K2",
+          "topic": "Static versus dynamic",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Review finds contradictory date requirements; execution finds an incorrect date displayed. Which statement is accurate?",
+            "pt": "Uma revisão encontra requisitos contraditórios de datas; a execução encontra uma data incorreta apresentada. Qual afirmação é correta?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Static testing found a defect directly; dynamic testing observed a failure",
+                "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+              },
+              "explanation": {
+                "en": "Review can find flaws without execution; execution exposes failures.",
+                "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Static testing observed a failure; dynamic testing directly located the code defect",
+                "pt": "O teste estático observou uma falha; o dinâmico localizou diretamente o defeito no código"
+              },
+              "explanation": {
+                "en": "The mechanisms are reversed: a document review finds the inconsistency directly, while the wrong displayed date is an observed failure requiring further analysis to locate its cause.",
+                "pt": "Os mecanismos estão invertidos: a revisão do documento encontra diretamente a inconsistência, enquanto a data incorreta apresentada é uma falha observada que exige análise adicional para localizar a causa."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Both found failures because both results conflict with expectations",
+                "pt": "Ambos encontraram falhas porque ambos os resultados contrariam as expectativas"
+              },
+              "explanation": {
+                "en": "A failure is a deviation observed during execution. Contradictory written requirements are defects found without executing the application.",
+                "pt": "Uma falha é um desvio observado durante a execução. Requisitos escritos contraditórios são defeitos encontrados sem executar a aplicação."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Both directly found code defects because each result identifies the faulty statement",
+                "pt": "Ambos encontraram diretamente defeitos no código porque cada resultado identifica a instrução incorreta"
+              },
+              "explanation": {
+                "en": "The review found a requirements defect, not a code statement. The displayed failure alone does not identify which code statement caused it.",
+                "pt": "A revisão encontrou um defeito nos requisitos, não uma instrução de código. A falha apresentada, por si só, não identifica a instrução de código que a causou."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "The review directly identifies a defect in the requirements. The incorrect displayed date is an observed failure whose cause requires further analysis. The scenario does not establish that the two findings share a cause, and executing tests does not guarantee finding a failure.",
+            "pt": "A revisão identifica diretamente um defeito nos requisitos. A data incorreta apresentada é uma falha observada cuja causa exige análise adicional. O cenário não demonstra que os dois achados tenham a mesma causa, e executar testes não garante encontrar uma falha."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "3.1.3",
+            "pages": [34],
+            "report": "docs/academic-audit.md#fase-5b--tl-017"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6",
+        "candidateCanonicalSHA256": "3bb4ea446697ebb4172b83e29d3f273987ffaff1647bad8c70d797d6de371ee3",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 3,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-017",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "d6970fd1e3c435ea6b01ceb5e26bcd68779b3490e3ce9c57592d1477164fe2f6",
+        "learningObjective": "FL-3.1.3",
+        "syllabusChapter": 3,
+        "syllabusSection": "3.1.3",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "3.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "3.1.3",
+          "pdfPages": [34],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Static testing found a defect directly; dynamic testing observed a failure",
+              "pt": "O teste estático encontrou diretamente um defeito; o dinâmico observou uma falha"
+            },
+            "explanation": {
+              "en": "Review can find flaws without execution; execution exposes failures.",
+              "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Review can find flaws without execution; execution exposes failures.",
+          "pt": "A revisão pode encontrar imperfeições sem execução; a execução revela falhas."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "f5c0679f6148f0562e0192c24d72e91acf2e553626469dc900203cba4d04d108",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "3.1.3",
+          "pages": [34],
+          "report": "docs/academic-audit.md#fase-5b--tl-017"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "3.1.3",
+            "pdfPages": [34]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "3.1.3",
+            "pdfPages": [37]
+          }
+        ],
+        "correctAnswerJustification": "Contradição de requisitos é defeito encontrado diretamente; data errada em execução é falha. FL-3.1.3/K2 compara mecanismos corretamente.",
+        "distractorAssessment": {
+          "o2": "Inverte mecanismos e infere localização de código não demonstrada pela falha.",
+          "o3": "Conflito num documento é defeito, não falha observada em execução.",
+          "o4": "O primeiro achado é nos requisitos; nenhum achado identifica uma instrução de código específica."
+        },
+        "wordingAndTranslationConcerns": "contradictory/contraditórios, directly/diretamente e failure/falha mantêm os conceitos. Não se traduz defeito por erro humano.",
+        "potentialAmbiguity": "O cenário não demonstra que a contradição causou a data incorreta. A chave não exige essa relação. “execution exposes failures” deve ser lido como possibilidade, não como garantia de toda execução.",
+        "difficultyAssessment": "Baixa a média; K2 com dois achados independentes.",
+        "proposedCorrection": {
+          "description": "Explicação opcional: a revisão identifica diretamente o defeito nos requisitos; o resultado incorreto é uma falha cuja causa requer análise posterior. Não pressupor que os dois achados partilham causa.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-019",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-4.1.1",
+      "cognitiveLevel": "K2",
+      "questionVersion": 2,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100",
+      "afterCanonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-019",
+        "answer": ["o1"],
+        "derivation": "Externally specified behaviour is the stated derivation basis and code structure is excluded: black-box techniques. White-box requires structure; experience-based derives from tester experience rather than the supplied specification basis. Risk-based testing can influence selection/priorities alongside any technique family, but no risk criterion is given and it is not the requested family in this classification."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "A origem dos testes é comportamento especificado externamente e a estrutura do código é excluída da derivação: caixa-preta. Caixa-branca baseia-se na estrutura; experiência baseia-se no conhecimento do testador. Risco pode orientar âmbito/prioridade de testes de qualquer família, mas não é a família pedida por esta base.",
+          "en": "Externally specified behaviour is the derivation basis and code structure is excluded: black-box. White-box uses structure; experience-based uses tester knowledge. Risk may guide scope/priority with any family but is not the family defined by the supplied basis."
+        },
+        "translation": {
+          "pt": "Externally specified/especificado externamente e without using/sem usar preservam a base e a exclusão. Não se diz que o testador está proibido de conhecer o código, apenas que não o usa para derivar estes testes. Caixa-preta/branca e experiência mantêm a classificação.",
+          "en": "Externally specified and without using preserve the basis/exclusion. This does not forbid tester knowledge of code; it excludes structure as the derivation basis for these tests. The family names remain equivalent."
+        },
+        "contrary": {
+          "pt": "Testadores podem usar experiência ao aplicar caixa-preta, e testes podem ser priorizados por risco. Essa combinação real não altera a classificação solicitada pela origem especificada. Ausência de estrutura, sozinha, não bastaria; o enunciado também fornece positivamente a especificação.",
+          "en": "Experience may inform black-box work and risk may prioritize tests. Those combinations do not change the requested classification by derivation basis. No code structure alone would be insufficient, but the statement also positively supplies the specification."
+        },
+        "teaching": {
+          "pt": "FL-4.1.1/K2: distinguir bases de três famílias, dificuldade baixa. A explicação curta é correta; as justificações de o2/o3/o4 já dão o contraste. Não é necessário inventar novos requisitos ou aplicar uma técnicaK3.",
+          "en": "FL-4.1.1/K2distinguishes the three families’ bases; low difficulty. The short summary is correct, supplemented by o2/o3/o4contrasts. No new requirement orK3technique derivation is necessary."
+        },
+        "risks": {
+          "pt": "Risco baixo de ensinar famílias como atividades mutuamente exclusivas em todo o projeto; a pergunta classifica a base destes testes, não toda a estratégia.",
+          "en": "Low risk of treating families as mutually exclusive across an entire project; this item classifies these tests’ basis, not the whole strategy."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "BLACK_BOX_SPECIFICATION",
+            "pt": "Correta: derivação do comportamento especificado sem estrutura.",
+            "en": "Correct: specification-based derivation without structural basis."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "WHITE_BOX_STRUCTURE",
+            "pt": "Estrutura interna seria necessária como base, mas está excluída.",
+            "en": "Internal structure would be the basis, but is excluded."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "EXPERIENCE_BASIS",
+            "pt": "Conhecimento/experiência pode apoiar, mas não é a origem expressamente dada.",
+            "en": "Experience can support work but is not the expressly stated source."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "RISK_ORIENTATION",
+            "pt": "Risco orienta decisões e pode combinar-se com caixa-preta; não substitui a família pedida.",
+            "en": "Risk guides decisions and can combine with black-box; it does not replace the requested family."
+          }
+        },
+        "criticalPairs": [
+          [
+            "externally specified behaviour",
+            "comportamento especificado externamente",
+            "EQUIVALENT_BASIS"
+          ],
+          [
+            "without using code structure",
+            "sem usar a estrutura do código",
+            "EQUIVALENT_RESTRICTION"
+          ],
+          ["Black-box techniques", "Técnicas de caixa-preta", "EQUIVALENT"],
+          [
+            "Experience-based techniques",
+            "Técnicas baseadas na experiência",
+            "EQUIVALENT"
+          ]
+        ]
+      },
+      "references": {
+        "section": "4.1",
+        "EN": [38, 39],
+        "PT": [41, 42],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "94adfeef8095ed9fdfe02bb573b1eb2fd26b45907b571a91f1d836a642457295"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "f62a9378d3ac961479fa0efe09e9cb837d8c3e15b572d6a0b74c53b0dab01c69"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-019",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "The source is specified behaviour.",
+          "pt": "A origem é o comportamento especificado."
+        },
+        "candidateText": {
+          "en": "These tests are derived from specified behaviour independently of the implementation: black-box techniques. White-box techniques derive tests from internal structure, while experience-based techniques use tester knowledge and experience. Risk-based prioritization can be combined with these families.",
+          "pt": "Estes testes derivam do comportamento especificado, independentemente da implementação: técnicas de caixa-preta. As técnicas de caixa-branca derivam testes da estrutura interna, enquanto as baseadas na experiência usam o conhecimento e a experiência do testador. A priorização baseada no risco pode combinar-se com estas famílias."
+        },
+        "original": {
+          "id": "tl-019",
+          "chapter": 4,
+          "lo": "FL-4.1.1",
+          "level": "K2",
+          "topic": "Technique families",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Tests derived from externally specified behaviour, without using code structure, belong to which family?",
+            "pt": "Testes derivados do comportamento especificado externamente, sem usar a estrutura do código, pertencem a que família?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Black-box techniques",
+                "pt": "Técnicas de caixa-preta"
+              },
+              "explanation": {
+                "en": "The source is specified behaviour.",
+                "pt": "A origem é o comportamento especificado."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "White-box techniques",
+                "pt": "Técnicas de caixa-branca"
+              },
+              "explanation": {
+                "en": "White-box techniques use internal structure.",
+                "pt": "As técnicas de caixa-branca usam a estrutura interna."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Experience-based techniques",
+                "pt": "Técnicas baseadas na experiência"
+              },
+              "explanation": {
+                "en": "Experience-based techniques derive tests from tester knowledge and experience. The stated derivation basis is externally specified behavior, which identifies black-box techniques.",
+                "pt": "As técnicas baseadas na experiência derivam testes dos conhecimentos e da experiência do testador. A base de derivação indicada é o comportamento especificado externamente, o que identifica técnicas de caixa-preta."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Risk-based testing",
+                "pt": "Teste baseado no risco"
+              },
+              "explanation": {
+                "en": "Risk-based testing guides scope, depth and priority using assessed risks. It is not the CTFL technique family identified by deriving tests from specified behavior without code structure.",
+                "pt": "O teste baseado no risco orienta o âmbito, a profundidade e a prioridade usando os riscos avaliados. Não é a família de técnicas CTFL identificada pela derivação de testes do comportamento especificado sem usar a estrutura do código."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "The source is specified behaviour.",
+            "pt": "A origem é o comportamento especificado."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "4.1",
+            "pages": [39],
+            "report": "docs/academic-audit.md#fase-5b--tl-019"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-019",
+          "chapter": 4,
+          "lo": "FL-4.1.1",
+          "level": "K2",
+          "topic": "Technique families",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "Tests derived from externally specified behaviour, without using code structure, belong to which family?",
+            "pt": "Testes derivados do comportamento especificado externamente, sem usar a estrutura do código, pertencem a que família?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Black-box techniques",
+                "pt": "Técnicas de caixa-preta"
+              },
+              "explanation": {
+                "en": "The source is specified behaviour.",
+                "pt": "A origem é o comportamento especificado."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "White-box techniques",
+                "pt": "Técnicas de caixa-branca"
+              },
+              "explanation": {
+                "en": "White-box techniques use internal structure.",
+                "pt": "As técnicas de caixa-branca usam a estrutura interna."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Experience-based techniques",
+                "pt": "Técnicas baseadas na experiência"
+              },
+              "explanation": {
+                "en": "Experience-based techniques derive tests from tester knowledge and experience. The stated derivation basis is externally specified behavior, which identifies black-box techniques.",
+                "pt": "As técnicas baseadas na experiência derivam testes dos conhecimentos e da experiência do testador. A base de derivação indicada é o comportamento especificado externamente, o que identifica técnicas de caixa-preta."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Risk-based testing",
+                "pt": "Teste baseado no risco"
+              },
+              "explanation": {
+                "en": "Risk-based testing guides scope, depth and priority using assessed risks. It is not the CTFL technique family identified by deriving tests from specified behavior without code structure.",
+                "pt": "O teste baseado no risco orienta o âmbito, a profundidade e a prioridade usando os riscos avaliados. Não é a família de técnicas CTFL identificada pela derivação de testes do comportamento especificado sem usar a estrutura do código."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "These tests are derived from specified behaviour independently of the implementation: black-box techniques. White-box techniques derive tests from internal structure, while experience-based techniques use tester knowledge and experience. Risk-based prioritization can be combined with these families.",
+            "pt": "Estes testes derivam do comportamento especificado, independentemente da implementação: técnicas de caixa-preta. As técnicas de caixa-branca derivam testes da estrutura interna, enquanto as baseadas na experiência usam o conhecimento e a experiência do testador. A priorização baseada no risco pode combinar-se com estas famílias."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 2,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "4.1",
+            "pages": [39],
+            "report": "docs/academic-audit.md#fase-5b--tl-019"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100",
+        "candidateCanonicalSHA256": "7ec839bfad683be1d4d1b4da032f025c4cd25e8a1dac44057fda40c8295f3b3c",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 3,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-019",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "87318d66d89b5640ca9aa15567d2d5d9520c80012c9117f22ff44eff058be100",
+        "learningObjective": "FL-4.1.1",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.1",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "4.1",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.1",
+          "pdfPages": [39],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Black-box techniques",
+              "pt": "Técnicas de caixa-preta"
+            },
+            "explanation": {
+              "en": "The source is specified behaviour.",
+              "pt": "A origem é o comportamento especificado."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "The source is specified behaviour.",
+          "pt": "A origem é o comportamento especificado."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "b068be6a320366806fdfdb4bf0ffaa816bab48081d08cd0f6012b4da2cc93ac2",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.1",
+          "pages": [39],
+          "report": "docs/academic-audit.md#fase-5b--tl-019"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.1",
+            "pdfPages": [39]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.1",
+            "pdfPages": [42]
+          }
+        ],
+        "correctAnswerJustification": "A base é comportamento especificado sem referência à estrutura interna: caixa-preta. FL-4.1.1/K2 discrimina as três famílias pelo fundamento.",
+        "distractorAssessment": {
+          "o2": "Caixa-branca usa estrutura/processamento internos, excluídos expressamente.",
+          "o3": "Experiência usa conhecimento do testador; o cenário declara especificação como base de derivação.",
+          "o4": "Risco orienta foco/âmbito/profundidade/prioridade e pode combinar-se com famílias; não identifica esta base de derivação."
+        },
+        "wordingAndTranslationConcerns": "externally specified/especificado externamente e without/sem mantêm restrição. Caixa-preta/branca e experiência preservam classificação.",
+        "potentialAmbiguity": "Um teste pode ser priorizado por risco e derivado por caixa-preta; isso não torna o4 a família pedida. Não confundir independência da estrutura com proibição de o testador conhecer código.",
+        "difficultyAssessment": "Baixa; K2 por contraste entre bases, mas definição quase literal.",
+        "proposedCorrection": {
+          "description": "Explicação opcional: os casos derivam do comportamento especificado independentemente da implementação; caixa-branca deriva da estrutura e experiência do conhecimento do testador.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    },
+    {
+      "questionId": "tl-023",
+      "decision": "ACCEPT_AS_IS",
+      "reviewedOn": "2026-11-06",
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "learningObjective": "FL-4.4.2",
+      "cognitiveLevel": "K2",
+      "questionVersion": 4,
+      "requiredAnswers": 1,
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "beforeCanonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8",
+      "afterCanonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8",
+      "existingKey": ["o1"],
+      "proposedKey": ["o1"],
+      "independentSolution": {
+        "questionId": "tl-023",
+        "answer": ["o1"],
+        "derivation": "Learning while designing, executing and evaluating, in a timeboxed session guided by a charter, characterizes session-based exploratory testing. Unadapted predefined replay lacks the described adaptive design; error guessing can contribute experience-based ideas without defining this full process; a checklist alone does not characterize concurrent learning/design/execution. The scenario describes this structured variant, not a universal requirement that all exploratory testing must use timeboxes/charters."
+      },
+      "comparisonWithStoredKey": "MATCH",
+      "contentChanged": false,
+      "confirmedProblems": [],
+      "analysis": {
+        "reason": {
+          "pt": "Aprender enquanto concebe/executa/avalia, com duração delimitada e carta que orienta a sessão, caracteriza teste exploratório baseado em sessões. Não é mera repetição fixa nem derivação a partir de checklist; antecipação de erros pode ajudar sem substituir essa organização. Só o1 caracteriza a combinação dada.",
+          "en": "Learning while designing/executing/evaluating, within a timebox and guided by a charter, characterizes session-based exploratory testing. It is not fixed replay or checklist derivation; error guessing can contribute without replacing that organization. Onlyo1matches the combination."
+        },
+        "translation": {
+          "pt": "While/enquanto preserva simultaneidade; designing/concebe, executing/executa e evaluating/avalia preservam as três ações durante aprendizagem. Timeboxed session/sessão de duração definida e guided by a test charter/orientada por uma carta mantêm estrutura e objetivo. “Mais diretamente” evita exclusividade artificial.",
+          "en": "While preserves simultaneity, and designing/executing/evaluating retain all three actions during learning. Timeboxed session and charter guidance preserve structure. Most directly avoids artificial exclusivity."
+        },
+        "contrary": {
+          "pt": "Nem todo teste exploratório exige sessão formal, carta ou debrief. O cenário fornece uma variante baseada em sessões; não faltar menção a debrief não a invalida. “Duração definida” exprime uma delimitação de tempo aqui, não prescreve minutos universais nem duração fixa de todos os testes exploratórios.",
+          "en": "Not all exploration requires formal sessions/charters/debriefs. This scenario explicitly gives a session-based variant; absence of a debrief mention does not invalidate it. Defined duration here expresses a timebox, not universal minutes or fixed duration for all exploration."
+        },
+        "teaching": {
+          "pt": "FL-4.4.2/K2: explicar a caracterização conjunta, dificuldade baixa/média. A explicação geral é correta, embora omita avaliação/carta/timebox que já estão no enunciado e nos distratores. Expandi-la favorece autonomia do aluno, sem correção obrigatória.",
+          "en": "FL-4.4.2/K2explains the combined characteristics; low/moderate difficulty. The general rationale is correct but omits evaluation/charter/timebox already explicit in the statement/rationales. Expansion aids learning without being a mandatory correction."
+        },
+        "risks": {
+          "pt": "Risco pedagógico baixo de universalizar a variante por sessões ou confundir carta com checklist. As justificações existentes já distinguem os conceitos.",
+          "en": "Low teaching risk of universalizing sessions or confusing a charter with a checklist; existing rationales already distinguish them."
+        },
+        "options": {
+          "o1": {
+            "supportsAnswer": true,
+            "concept": "SESSION_BASED_EXPLORATORY",
+            "pt": "Correta: aprendizagem e desenho/execução/avaliação combinados, com sessão orientada.",
+            "en": "Correct: combined learning/design/execution/evaluation in a guided session."
+          },
+          "o2": {
+            "supportsAnswer": false,
+            "concept": "FIXED_REPLAY",
+            "pt": "Repetição sem adaptação não caracteriza descoberta e conceção durante aprendizagem.",
+            "en": "Unadapted replay does not characterize discovery/design during learning."
+          },
+          "o3": {
+            "supportsAnswer": false,
+            "concept": "ERROR_GUESSING",
+            "pt": "Pode apoiar ideias de teste, mas não define simultaneidade/sessão/carta descritas.",
+            "en": "Can supply test ideas but does not define the described concurrency/session/charter."
+          },
+          "o4": {
+            "supportsAnswer": false,
+            "concept": "CHECKLIST_DERIVATION",
+            "pt": "Carta fornece objetivos de sessão; não foi dada uma lista de condições da qual derivar testes.",
+            "en": "A charter gives session goals; no checklist condition derivation is supplied."
+          }
+        },
+        "criticalPairs": [
+          [
+            "while designing, executing and evaluating",
+            "enquanto concebe, executa e avalia",
+            "EQUIVALENT_SIMULTANEITY"
+          ],
+          [
+            "timeboxed session",
+            "sessão de duração definida",
+            "EQUIVALENT_TIMEBOX"
+          ],
+          ["test charter", "carta de testes", "EQUIVALENT_GUIDANCE"],
+          ["most directly", "mais diretamente", "EQUIVALENT_QUALIFIER"]
+        ]
+      },
+      "references": {
+        "section": "4.4.2",
+        "EN": [38, 44],
+        "PT": [41, 48],
+        "supporting": []
+      },
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": true,
+          "version": 1,
+          "key": ["o1"],
+          "canonicalSHA256": "dbaa42edf1e2e528f1ac3dfd7f701a6e08fb1555933fa9ef7e8a6b8cef86f845"
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "f064a70883d779a9f65206d91e40a2c17b14e1698b12269870955930c2eefa0b"
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "f064a70883d779a9f65206d91e40a2c17b14e1698b12269870955930c2eefa0b"
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 2,
+          "key": ["o1"],
+          "canonicalSHA256": "f064a70883d779a9f65206d91e40a2c17b14e1698b12269870955930c2eefa0b"
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "d4284a18654106a71ec033c8d249875c8224f3ba5897ff4510eb8d868fb55c29"
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 3,
+          "key": ["o1"],
+          "canonicalSHA256": "d4284a18654106a71ec033c8d249875c8224f3ba5897ff4510eb8d868fb55c29"
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8"
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8"
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 4,
+          "key": ["o1"],
+          "canonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8"
+        }
+      ],
+      "optionalEditorialCandidate": {
+        "questionId": "tl-023",
+        "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+        "applied": false,
+        "requiresExplicitOwnerAuthorization": true,
+        "path": ["explanation"],
+        "originalText": {
+          "en": "Learning, design and execution inform each other.",
+          "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+        },
+        "candidateText": {
+          "en": "In exploratory testing, learning and test design, execution and evaluation inform one another. Here a timebox and a charter with test objectives structure a session-based approach. Sessions are one way to organize exploratory testing, not a universal requirement.",
+          "pt": "No teste exploratório, a aprendizagem e a conceção, execução e avaliação de testes influenciam-se mutuamente. Aqui, uma duração delimitada e uma carta com objetivos de teste estruturam uma abordagem baseada em sessões. As sessões são uma forma de organizar o teste exploratório, não um requisito universal."
+        },
+        "original": {
+          "id": "tl-023",
+          "chapter": 4,
+          "lo": "FL-4.4.2",
+          "level": "K2",
+          "topic": "Exploratory testing",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A tester learns about a new search feature while designing, executing and evaluating tests in a timeboxed session guided by a test charter. Which technique is most directly characterized by these combined activities?",
+            "pt": "Um testador aprende sobre uma nova funcionalidade de pesquisa enquanto concebe, executa e avalia testes numa sessão de duração definida, orientada por uma carta de testes. Que técnica é mais diretamente caracterizada por estas atividades combinadas?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Session-based exploratory testing",
+                "pt": "Teste exploratório baseado em sessões"
+              },
+              "explanation": {
+                "en": "Learning, design and execution inform each other.",
+                "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Replay of predefined test scripts without adapting them",
+                "pt": "Repetição de scripts de teste predefinidos sem os adaptar"
+              },
+              "explanation": {
+                "en": "The tester designs and adapts tests while learning. Fixed replay does not explain that simultaneous learning, design and execution.",
+                "pt": "O testador concebe e adapta testes enquanto aprende. Uma repetição fixa não explica essa aprendizagem, conceção e execução em simultâneo."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Error guessing",
+                "pt": "Antecipação de erros"
+              },
+              "explanation": {
+                "en": "Error guessing selects likely defect targets using experience of errors and failures. Here the defining behavior is simultaneous learning, design and execution guided by a charter; error guessing could support, but does not replace, that exploratory approach.",
+                "pt": "A antecipação de erros seleciona alvos prováveis de defeitos usando a experiência de erros e falhas. Aqui, o comportamento distintivo é a aprendizagem, a conceção e a execução simultâneas orientadas por uma carta de testes; a antecipação de erros pode apoiar, mas não substitui, essa abordagem exploratória."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Checklist-based testing",
+                "pt": "Teste baseado em checklists"
+              },
+              "explanation": {
+                "en": "Checklist-based testing derives tests from a list of test conditions. A charter sets session objectives; the scenario describes discovering and adapting tests during the session, not deriving them from checklist entries.",
+                "pt": "O teste baseado em checklists deriva testes de uma lista de condições de teste. Uma carta de testes define objetivos da sessão; o cenário descreve descobrir e adaptar testes durante a sessão, não derivá-los de entradas de uma checklist."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "Learning, design and execution inform each other.",
+            "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 4,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "4.4.2",
+            "pages": [44],
+            "report": "docs/academic-audit.md#fase-5b--tl-023"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "candidate": {
+          "id": "tl-023",
+          "chapter": 4,
+          "lo": "FL-4.4.2",
+          "level": "K2",
+          "topic": "Exploratory testing",
+          "type": "single",
+          "required": 1,
+          "text": {
+            "en": "A tester learns about a new search feature while designing, executing and evaluating tests in a timeboxed session guided by a test charter. Which technique is most directly characterized by these combined activities?",
+            "pt": "Um testador aprende sobre uma nova funcionalidade de pesquisa enquanto concebe, executa e avalia testes numa sessão de duração definida, orientada por uma carta de testes. Que técnica é mais diretamente caracterizada por estas atividades combinadas?"
+          },
+          "options": [
+            {
+              "id": "o1",
+              "text": {
+                "en": "Session-based exploratory testing",
+                "pt": "Teste exploratório baseado em sessões"
+              },
+              "explanation": {
+                "en": "Learning, design and execution inform each other.",
+                "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+              }
+            },
+            {
+              "id": "o2",
+              "text": {
+                "en": "Replay of predefined test scripts without adapting them",
+                "pt": "Repetição de scripts de teste predefinidos sem os adaptar"
+              },
+              "explanation": {
+                "en": "The tester designs and adapts tests while learning. Fixed replay does not explain that simultaneous learning, design and execution.",
+                "pt": "O testador concebe e adapta testes enquanto aprende. Uma repetição fixa não explica essa aprendizagem, conceção e execução em simultâneo."
+              }
+            },
+            {
+              "id": "o3",
+              "text": {
+                "en": "Error guessing",
+                "pt": "Antecipação de erros"
+              },
+              "explanation": {
+                "en": "Error guessing selects likely defect targets using experience of errors and failures. Here the defining behavior is simultaneous learning, design and execution guided by a charter; error guessing could support, but does not replace, that exploratory approach.",
+                "pt": "A antecipação de erros seleciona alvos prováveis de defeitos usando a experiência de erros e falhas. Aqui, o comportamento distintivo é a aprendizagem, a conceção e a execução simultâneas orientadas por uma carta de testes; a antecipação de erros pode apoiar, mas não substitui, essa abordagem exploratória."
+              }
+            },
+            {
+              "id": "o4",
+              "text": {
+                "en": "Checklist-based testing",
+                "pt": "Teste baseado em checklists"
+              },
+              "explanation": {
+                "en": "Checklist-based testing derives tests from a list of test conditions. A charter sets session objectives; the scenario describes discovering and adapting tests during the session, not deriving them from checklist entries.",
+                "pt": "O teste baseado em checklists deriva testes de uma lista de condições de teste. Uma carta de testes define objetivos da sessão; o cenário descreve descobrir e adaptar testes durante a sessão, não derivá-los de entradas de uma checklist."
+              }
+            }
+          ],
+          "correct": ["o1"],
+          "explanation": {
+            "en": "In exploratory testing, learning and test design, execution and evaluation inform one another. Here a timebox and a charter with test objectives structure a session-based approach. Sessions are one way to organize exploratory testing, not a universal requirement.",
+            "pt": "No teste exploratório, a aprendizagem e a conceção, execução e avaliação de testes influenciam-se mutuamente. Aqui, uma duração delimitada e uma carta com objetivos de teste estruturam uma abordagem baseada em sessões. As sessões são uma forma de organizar o teste exploratório, não um requisito universal."
+          },
+          "review": "AI_REVIEWED",
+          "translationReview": "AI_REVIEWED",
+          "version": 4,
+          "humanApproval": "PENDING",
+          "academicReview": {
+            "method": "AI_REVIEWED",
+            "status": "PASS",
+            "reviewedAt": "2026-10-28",
+            "section": "4.4.2",
+            "pages": [44],
+            "report": "docs/academic-audit.md#fase-5b--tl-023"
+          },
+          "syllabus": "4.0.1",
+          "origin": "original"
+        },
+        "originalCanonicalSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8",
+        "candidateCanonicalSHA256": "7e0f0395941f43ec5366369df906a8e02244c1075e56545dde8b3f93fb6de7de",
+        "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+        "answerKeyImpact": "NONE",
+        "ID_LO_K_optionIdentityImpact": "NONE",
+        "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+        "futureVersionIfAuthorized": 5,
+        "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+        "testsIfAuthorized": [
+          "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+          "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+          "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+          "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+        ]
+      },
+      "priorLOWLabelNotUsedAsDecision": true,
+      "previousAIReviewRecord": {
+        "questionId": "tl-023",
+        "contentRevision": "2026-10-27.9",
+        "questionSHA256": "3267bc5ef044af2ec3f37e73b285884f97f3b851c44931c4edea46a0b84849d8",
+        "learningObjective": "FL-4.4.2",
+        "syllabusChapter": 4,
+        "syllabusSection": "4.4.2",
+        "cognitiveLevel": "K2",
+        "learningObjectiveSection": "4.4",
+        "declaredOfficialReference": {
+          "sourceId": "SYL-EN",
+          "section": "4.4.2",
+          "pdfPages": [44],
+          "provenance": "existing bank metadata; not evidence of a new review"
+        },
+        "currentCorrectAnswer": ["o1"],
+        "currentCorrectOptions": [
+          {
+            "id": "o1",
+            "text": {
+              "en": "Session-based exploratory testing",
+              "pt": "Teste exploratório baseado em sessões"
+            },
+            "explanation": {
+              "en": "Learning, design and execution inform each other.",
+              "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+            }
+          }
+        ],
+        "currentExplanation": {
+          "en": "Learning, design and execution inform each other.",
+          "pt": "A aprendizagem, a conceção e a execução influenciam-se mutuamente."
+        },
+        "alternativeIds": ["o1", "o2", "o3", "o4"],
+        "alternativeFieldsSHA256": "3a1fd5ee9208ea9bea681afa88ca7ac80819cd76b807d1ad63e8de2e8ba4270f",
+        "explanationFields": {
+          "questionLanguages": ["en", "pt"],
+          "alternativeExplanationsPresent": 8
+        },
+        "previousReviewDeclared": {
+          "method": "AI_REVIEWED",
+          "status": "PASS",
+          "reviewedAt": "2026-10-28",
+          "section": "4.4.2",
+          "pages": [44],
+          "report": "docs/academic-audit.md#fase-5b--tl-023"
+        },
+        "reviewStatus": "AI_REVIEWED_PENDING_HUMAN",
+        "reviewer": "Codex (AI; not independent human review)",
+        "reviewedOn": "2026-11-04",
+        "verifiedReferences": [
+          {
+            "sourceId": "SYL-EN",
+            "section": "4.4.2",
+            "pdfPages": [44]
+          },
+          {
+            "sourceId": "SYL-PT",
+            "section": "4.4.2",
+            "pdfPages": [48]
+          }
+        ],
+        "correctAnswerJustification": "Aprendizagem enquanto concebe/executa/avalia, timebox e carta caracterizam exploração baseada em sessões; FL-4.4.2/K2 correto.",
+        "distractorAssessment": {
+          "o2": "Repetição fixa não explica conceção e adaptação simultâneas.",
+          "o3": "Experiência pode apoiar exploração, mas não caracteriza o conjunto aprendizagem/conceção/execução em sessão.",
+          "o4": "Checklist fornece condições enumeradas; carta orienta objetivos da sessão, não é automaticamente lista de condições."
+        },
+        "wordingAndTranslationConcerns": "while/enquanto, timeboxed/duração definida e charter/carta de testes preservam simultaneidade e estrutura. Avaliação está expressa em ambos os enunciados.",
+        "potentialAmbiguity": "Nem toda exploração exige sessões/cartas. O cenário contém ambas, pelo que o1 específico é correto. Debrief é usual, não condição necessária ausente que invalide o cenário.",
+        "difficultyAssessment": "Baixa a média; K2, com várias pistas convergentes.",
+        "proposedCorrection": {
+          "description": "Explicação opcional: mencionar avaliação simultânea, carta com objetivos e duração definida; sessões são uma forma de estruturar testes exploratórios, não requisito universal.",
+          "keyBefore": ["o1"],
+          "keyProposed": ["o1"],
+          "applied": false
+        },
+        "humanDecision": null,
+        "severity": "LOW",
+        "humanQuestion": "Confirmar LO/K, chave única, todas as explicações e equivalência EN/PT; decidir melhorias editoriais propostas. Sem aprovação humana nesta execução.",
+        "workedSolution": null
+      },
+      "impact": "Documentation only; no bank/runtime/key/version/history/persistence change"
+    }
+  ]
+}

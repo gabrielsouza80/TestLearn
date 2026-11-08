@@ -1,0 +1,39 @@
+{
+  "id": "tl-062",
+  "lo": "FL-5.1.2",
+  "level": "K1",
+  "text": {
+    "en": "During planning for the next iteration of a museum booking system, which contribution is typically made by a tester?",
+    "pt": "Durante o planeamento da próxima iteração de um sistema de reservas de um museu, que contributo é tipicamente dado por um testador?"
+  },
+  "options": [
+    {
+      "id": "o1",
+      "text": {
+        "en": "Set the business ordering of the entire product backlog on behalf of the product owner.",
+        "pt": "Definir a ordenação de negócio de todo o backlog do produto em nome do product owner."
+      }
+    },
+    {
+      "id": "o4",
+      "text": {
+        "en": "Assess story testability, identify testing tasks and help estimate the associated test effort.",
+        "pt": "Avaliar a testabilidade das stories, identificar tarefas de teste e ajudar a estimar o esforço de teste associado."
+      }
+    },
+    {
+      "id": "o3",
+      "text": {
+        "en": "Report only the previous iteration's defect count, leaving testability and effort until execution starts.",
+        "pt": "Reportar apenas a contagem de defeitos da iteração anterior, deixando a testabilidade e o esforço para o início da execução."
+      }
+    },
+    {
+      "id": "o2",
+      "text": {
+        "en": "Select the implementation architecture before the team discusses acceptance criteria.",
+        "pt": "Selecionar a arquitetura de implementação antes de a equipa discutir os critérios de aceitação."
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "scope": "Phase 10H Batch 16 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-08",
+  "dossierDateIdentifier": "2026-11-08; actual UTC timestamps retained",
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0,
+  "decisions": [
+    {
+      "questionId": "tl-084",
+      "learningObjective": "FL-2.2.2",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 2,
+      "optionCount": 5,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o1", "o4"],
+      "existingKey": ["o1", "o4"],
+      "proposedKey": ["o1", "o4"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "bd143f481130dccaa80bd6ac8c6ceb42e1566409aa8e10ed50063d884df76f39",
+      "afterCanonicalSHA256": "bd143f481130dccaa80bd6ac8c6ceb42e1566409aa8e10ed50063d884df76f39",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "2.2.2": {
+          "EN": [29, 30],
+          "PT": [32, 33]
+        },
+        "2.2.1": {
+          "EN": [29],
+          "PT": [31, 32]
+        }
+      },
+      "LOPages": {
+        "EN": [24],
+        "PT": [26]
+      },
+      "assessmentPT": "O conjunto o1/o4 é único: quantidade em stock verifica correção funcional; latência sob carga visa eficiência de desempenho não funcional. As duas verificações podem usar a mesma consulta. A base são os requisitos, sem estrutura interna, pelo que chamar uma API não transforma testes em caixa-branca. Concorrência de 200 utilizadores é condição de carga, não definição do nível integração de sistemas.",
+      "counterEvidencePT": "Uma API pode ser usada num teste estrutural ou de integração, mas isso exigiria base estrutural ou âmbito de sistemas que o cenário não fornece; o5 e o3 impõem conclusões por si só. A falta de duração e método de quantil seria relevante para um ensaio de desempenho executável, mas não torna ambígua a classificação conceptual pedida. O percentil 95 não exige todas as respostas até 300 ms.",
+      "translationAssessmentPT": "At most/no máximo traduz o limite inclusivo p95 ≤ 300 ms; p95 igual a 300 ms satisfaz o limite, sem inventar tolerância de arredondamento. 95th-percentile/percentil 95 mantém estatística de distribuição, não máximo de cada resposta. With 200 concurrent users/com 200 utilizadores concorrentes preserva carga e simultaneidade. Select TWO/Selecione DUAS preserva duas respostas entre cinco. Estes factos matemáticos são interpretação do requisito, não uma definição de percentil inventada no syllabus.",
+      "pedagogyAssessmentPT": "K2: distinguir tipos funcionais/não funcionais e separá-los da base de derivação e do nível, explicando dois objetivos sobre a mesma operação. Não é necessário calcular um percentil, instrumentar uma API ou executar 200 utilizadores, o que seria outra tarefa. A explicação geral e as cinco justificações são corretas; não explicitam toda definição estatística, mas não a contradizem e são suficientes para o objetivo.",
+      "editionDifferencePT": "EN secção 2.2.2 começa na página 29 e continua na 30; PT está nas páginas 32–33. Ambas permitem derivar não funcionais de operações funcionais e distinguem bases de especificação/estrutura. A lista EN atualiza nomes e inclui safety, ao contrário da lista PT mais antiga; eficiência de desempenho está em ambas e esta diferença não altera o item. Níveis de sistema e integração são apoiados por EN página 29 e PT página 31.",
+      "criticalPairs": [
+        {
+          "en": "at most 300 ms",
+          "pt": "no máximo, 300 ms"
+        },
+        {
+          "en": "95th-percentile",
+          "pt": "percentil 95"
+        },
+        {
+          "en": "200 concurrent users",
+          "pt": "200 utilizadores concorrentes"
+        },
+        {
+          "en": "Select TWO",
+          "pt": "Selecione DUAS"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o1", "o4"],
+          "canonicalSHA256": "bd143f481130dccaa80bd6ac8c6ceb42e1566409aa8e10ed50063d884df76f39",
+          "equalCurrent": true
+        }
+      ]
+    },
+    {
+      "questionId": "tl-085",
+      "learningObjective": "FL-5.2.4",
+      "cognitiveLevel": "K2",
+      "questionVersion": 1,
+      "requiredAnswers": 2,
+      "optionCount": 5,
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "unresolvedMandatoryIssues": [],
+      "optionalEditorialProposal": null,
+      "independentAnswer": ["o2", "o5"],
+      "existingKey": ["o2", "o5"],
+      "proposedKey": ["o2", "o5"],
+      "keyComparison": "MATCH",
+      "beforeCanonicalSHA256": "7e58e2424021b96398caee8e0b489767e952131b97e642a63edbd1d8d8f2c161",
+      "afterCanonicalSHA256": "7e58e2424021b96398caee8e0b489767e952131b97e642a63edbd1d8d8f2c161",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "contentChanged": false,
+      "reviewMethod": "AI_REVIEWED",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "priorNONEUsedAsEvidence": false,
+      "references": {
+        "5.2.4": {
+          "EN": [53],
+          "PT": [59]
+        },
+        "5.2.3": {
+          "EN": [52, 53],
+          "PT": [58, 59]
+        }
+      },
+      "LOPages": {
+        "EN": [47],
+        "PT": [52]
+      },
+      "assessmentPT": "O conjunto o2/o5 distingue ações de controlo de repetição da análise inicial já concluída. Executar testes de mudança da hora escolhidos para reduzir um risco de faturação avaliado implementa mitigação. Verificar eficácia e adaptar respostas a riscos emergentes implementa monitorização/controlo. Listar eventos, classificar probabilidade/impacto e categorizar antes do tratamento são análise no contexto dado.",
+      "counterEvidencePT": "Identificação e avaliação podem voltar a ocorrer quando novos riscos ou informação surgem; a fonte diz que monitorização melhora a avaliação e identifica riscos emergentes. Rather than repeat initial analysis delimita a pergunta à análise inicial já feita, não proíbe análise futura. Agrupar riscos pode ajudar a selecionar mitigação, mas o4 não implementa nem acompanha tratamento. Nenhuma regra tarifária específica ou mecanismo de mudança de hora é inferido.",
+      "translationAssessmentPT": "Initial identification and assessment/identificação e avaliação iniciais e already contains/já contém mantêm a premissa temporal. Rather than repeat that initial analysis/em vez de repetir essa análise inicial não quer dizer nunca mais analisar. Assessed billing risk/risco de faturação avaliado mantém ligação entre testes e risco. When emerging risks require it/quando os riscos emergentes o exigirem condiciona a adaptação, sem garantir eliminação de risco.",
+      "pedagogyAssessmentPT": "K2: explicar medidas de resposta a riscos analisados e distingui-las de identificação, avaliação e categorização. Não se calculam probabilidades, impacto ou nível de risco K3. As cinco explicações e a síntese publicada sustentam a distinção sem impor um fluxo de gestão irreversível; monitorização pode alimentar nova análise. O contexto de contadores só exemplifica mitigação, não exige experiência de faturação.",
+      "editionDifferencePT": "EN secção 5.2.3 nas páginas 52–53 e PT nas páginas 58–59 descrevem identificação, avaliação e categorização. EN 5.2.4 na página 53 e PT na 59 definem mitigação e monitorização, incluindo eficácia e riscos emergentes. O exemplo de mudança da hora é aplicação do revisor à premissa publicada, não uma recomendação tarifária específica atribuída ao ISTQB.",
+      "criticalPairs": [
+        {
+          "en": "rather than repeat that initial analysis",
+          "pt": "em vez de repetir essa análise inicial"
+        },
+        {
+          "en": "likelihood and impact",
+          "pt": "probabilidade e impacto"
+        },
+        {
+          "en": "clock-change tests",
+          "pt": "testes de mudança da hora"
+        },
+        {
+          "en": "emerging risks",
+          "pt": "riscos emergentes"
+        }
+      ],
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o2", "o5"],
+          "canonicalSHA256": "7e58e2424021b96398caee8e0b489767e952131b97e642a63edbd1d8d8f2c161",
+          "equalCurrent": true
+        }
+      ]
+    }
+  ]
+}

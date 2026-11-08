@@ -1,0 +1,31 @@
+{
+  "consultedOn": "2026-11-06",
+  "primary": "EN CTFL4.0.1, errata edition in CTFL4.0 family",
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "4.0.1,2024-09-15",
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "localByteSHA256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [38, 41, 42, 47, 49, 50],
+      "method": "Fresh local PDF text extraction; official web PDF URLs opened in this execution; no fresh remote-byte identity assertion"
+    },
+    {
+      "language": "PT",
+      "edition": "4.0 translation1.0,syllabus date2023-04-21",
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "localByteSHA256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [41, 45, 52, 54, 55],
+      "method": "Fresh local PDF text extraction; official web PDF URLs opened in this execution; no fresh remote-byte identity assertion"
+    }
+  ],
+  "limitations": [
+    "AI review is not an independent human SME approval or certification.",
+    "PT4.0 translation1.0 is not asserted to include all EN4.0.1 errata.",
+    "Physical PDF pages count the cover. No full copyrighted PDFs or full source pages are redistributed.",
+    "Syllabus establishes techniques and coverage concepts; stop policy, table cells, selective repeat and setup are explicit question premises.",
+    "No empirical difficulty calibration. Effort arithmetic does not establish a calendar duration or confidence level."
+  ]
+}

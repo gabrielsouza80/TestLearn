@@ -1,0 +1,1314 @@
+[
+  {
+    "questionId": "tl-058",
+    "original": {
+      "id": "tl-058",
+      "lo": "FL-3.2.5",
+      "chapter": 3,
+      "level": "K1",
+      "topic": "Review success factors",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A review leader is preparing a review of a revised deployment guide. Which arrangement is a recognised success factor for reviews?",
+        "pt": "Um líder de revisão prepara uma revisão de um guia atualizado de colocação em serviço de software. Que medida é um fator reconhecido de sucesso das revisões?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Allocate the preparation time to the meeting instead, so everyone encounters the guide together.",
+            "pt": "Transferir o tempo de preparação para a reunião, para que todos contactem com o guia em conjunto."
+          },
+          "explanation": {
+            "en": "Adequate individual preparation supports effective review; replacing it with a first reading in the meeting undermines that factor.",
+            "pt": "Uma preparação individual adequada apoia uma revisão eficaz; substituí-la por uma primeira leitura na reunião prejudica esse fator."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use the same review type for every work product to avoid context-dependent decisions.",
+            "pt": "Usar o mesmo tipo de revisão para todos os produtos de trabalho para evitar decisões dependentes do contexto."
+          },
+          "explanation": {
+            "en": "The review type should suit objectives, the work product, participants and context.",
+            "pt": "O tipo de revisão deve adequar-se aos objetivos, ao produto de trabalho, aos participantes e ao contexto."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Combine all related manuals into one large review package to reduce the number of sessions.",
+            "pt": "Juntar todos os manuais relacionados num grande pacote de revisão para reduzir o número de sessões."
+          },
+          "explanation": {
+            "en": "Small chunks help reviewers maintain concentration; minimising session count is not the overriding success criterion.",
+            "pt": "Partes pequenas ajudam os revisores a manter a concentração; minimizar o número de sessões não é o critério de sucesso predominante."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Define clear objectives and measurable exit criteria, and provide adequate preparation time.",
+            "pt": "Definir objetivos claros e critérios de saída mensuráveis e disponibilizar tempo adequado para preparação."
+          },
+          "explanation": {
+            "en": "Clear goals, measurable exit criteria and sufficient preparation are explicit review success factors.",
+            "pt": "Objetivos claros, critérios de saída mensuráveis e preparação suficiente são fatores explícitos de sucesso das revisões."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "Reviews need an appropriate scope, preparation, support and clear goals. Efficiency does not come from removing preparation or making the reviewed material excessively large.",
+        "pt": "As revisões precisam de âmbito adequado, preparação, apoio e objetivos claros. A eficiência não resulta de eliminar a preparação ou tornar o material revisto excessivamente extenso."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 2,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "3.2.5",
+        "pages": [37],
+        "report": "docs/academic-audit.md#fase-41--tl-058"
+      }
+    },
+    "proposed": {
+      "id": "tl-058",
+      "lo": "FL-3.2.5",
+      "chapter": 3,
+      "level": "K1",
+      "topic": "Review success factors",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A review leader is preparing a review of a revised deployment guide. Which arrangement is a recognised success factor for reviews?",
+        "pt": "Um líder de revisão prepara uma revisão de um guia atualizado de colocação em serviço de software. Que medida é um fator reconhecido de sucesso das revisões?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Allocate the preparation time to the meeting instead, so everyone encounters the guide together.",
+            "pt": "Transferir o tempo de preparação para a reunião, para que todos contactem com o guia em conjunto."
+          },
+          "explanation": {
+            "en": "Adequate individual preparation supports effective review; replacing it with a first reading in the meeting undermines that factor.",
+            "pt": "Uma preparação individual adequada apoia uma revisão eficaz; substituí-la por uma primeira leitura na reunião prejudica esse fator."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use the same review type for every work product to avoid context-dependent decisions.",
+            "pt": "Usar o mesmo tipo de revisão para todos os produtos de trabalho para evitar decisões dependentes do contexto."
+          },
+          "explanation": {
+            "en": "The review type should suit objectives, the work product, participants and context.",
+            "pt": "O tipo de revisão deve adequar-se aos objetivos, ao produto de trabalho, aos participantes e ao contexto."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Combine all related manuals into one large review package to reduce the number of sessions.",
+            "pt": "Juntar todos os manuais relacionados num grande pacote de revisão para reduzir o número de sessões."
+          },
+          "explanation": {
+            "en": "Small chunks help reviewers maintain concentration; minimising session count is not the overriding success criterion.",
+            "pt": "Partes pequenas ajudam os revisores a manter a concentração; minimizar o número de sessões não é o critério de sucesso predominante."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Define clear objectives and measurable exit criteria, and provide adequate preparation time.",
+            "pt": "Definir objetivos claros e critérios de saída mensuráveis e disponibilizar tempo adequado para preparação."
+          },
+          "explanation": {
+            "en": "Clear goals, measurable exit criteria and sufficient preparation are explicit review success factors.",
+            "pt": "Objetivos claros, critérios de saída mensuráveis e preparação suficiente são fatores explícitos de sucesso das revisões."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "Reviews need an appropriate scope, preparation, support and clear goals. Efficiency does not come from removing preparation or making the reviewed material excessively large.",
+        "pt": "As revisões precisam de âmbito adequado, preparação, apoio e objetivos claros. A eficiência não resulta de eliminar a preparação ou tornar o material revisto excessivamente extenso."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 2,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "3.2.5",
+        "pages": [37],
+        "report": "docs/academic-audit.md#fase-41--tl-058"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-059",
+    "original": {
+      "id": "tl-059",
+      "lo": "FL-4.3.3",
+      "chapter": 4,
+      "level": "K2",
+      "topic": "White-box value",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A component's specification is incomplete. Tests derived from its code exercise every branch, but a required audit-recording function has not been implemented. Which statement best describes the value and limitation of this white-box testing?",
+        "pt": "A especificação de um componente está incompleta. Testes derivados do código exercitam todos os ramos, mas uma função obrigatória de registo de auditoria não foi implementada. Que afirmação melhor descreve o valor e a limitação deste teste caixa-branca?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "It provides objective coverage of implemented structure, but may miss the omitted audit requirement.",
+            "pt": "Fornece cobertura objetiva da estrutura implementada, mas pode não detetar a omissão do requisito de auditoria."
+          },
+          "explanation": {
+            "en": "White-box testing uses implementation structure even with an incomplete specification; absent functionality may have no structure to cover.",
+            "pt": "O teste caixa-branca usa a estrutura da implementação mesmo com uma especificação incompleta; uma funcionalidade ausente pode não ter estrutura a cobrir."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Full branch coverage demonstrates that all required functions are present, including audit recording.",
+            "pt": "A cobertura total de ramos demonstra que todas as funções obrigatórias estão presentes, incluindo o registo de auditoria."
+          },
+          "explanation": {
+            "en": "Coverage refers to implemented branches, not proof that every requirement was implemented.",
+            "pt": "A cobertura refere-se aos ramos implementados, não à prova de que todos os requisitos foram implementados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "An incomplete specification makes code-derived tests unsuitable for detecting implementation defects.",
+            "pt": "Uma especificação incompleta torna os testes derivados do código inadequados para detetar defeitos de implementação."
+          },
+          "explanation": {
+            "en": "Using the implementation is a strength when specifications are incomplete; this does not eliminate the separate omission limitation.",
+            "pt": "Usar a implementação é uma vantagem quando as especificações estão incompletas; isso não elimina a limitação distinta relativa a omissões."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "The branch results measure requirements coverage, while the missing audit function reduces statement coverage.",
+            "pt": "Os resultados dos ramos medem a cobertura de requisitos, enquanto a função de auditoria ausente reduz a cobertura de instruções."
+          },
+          "explanation": {
+            "en": "Branch and statement coverage measure existing code structure; missing code is not an uncovered statement in that implementation.",
+            "pt": "A cobertura de ramos e de instruções mede a estrutura do código existente; código ausente não é uma instrução não coberta dessa implementação."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Structural coverage can guide extra tests and increase confidence in code. Requirements-based testing is still needed to address omissions; full code coverage is not full requirements coverage.",
+        "pt": "A cobertura estrutural pode orientar testes adicionais e aumentar a confiança no código. Continuam a ser necessários testes baseados em requisitos para tratar omissões; cobertura total do código não é cobertura total de requisitos."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.3.3",
+        "pages": [43],
+        "report": "docs/academic-audit.md#tl-059"
+      }
+    },
+    "proposed": {
+      "id": "tl-059",
+      "lo": "FL-4.3.3",
+      "chapter": 4,
+      "level": "K2",
+      "topic": "White-box value",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A component's specification is incomplete. Tests derived from its code exercise every branch, but a required audit-recording function has not been implemented. Which statement best describes the value and limitation of this white-box testing?",
+        "pt": "A especificação de um componente está incompleta. Testes derivados do código exercitam todos os ramos, mas uma função obrigatória de registo de auditoria não foi implementada. Que afirmação melhor descreve o valor e a limitação deste teste caixa-branca?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "It provides objective coverage of implemented structure, but may miss the omitted audit requirement.",
+            "pt": "Fornece cobertura objetiva da estrutura implementada, mas pode não detetar a omissão do requisito de auditoria."
+          },
+          "explanation": {
+            "en": "White-box testing uses implementation structure even with an incomplete specification; absent functionality may have no structure to cover.",
+            "pt": "O teste caixa-branca usa a estrutura da implementação mesmo com uma especificação incompleta; uma funcionalidade ausente pode não ter estrutura a cobrir."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Full branch coverage demonstrates that all required functions are present, including audit recording.",
+            "pt": "A cobertura total de ramos demonstra que todas as funções obrigatórias estão presentes, incluindo o registo de auditoria."
+          },
+          "explanation": {
+            "en": "Coverage refers to implemented branches, not proof that every requirement was implemented.",
+            "pt": "A cobertura refere-se aos ramos implementados, não à prova de que todos os requisitos foram implementados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "An incomplete specification makes code-derived tests unsuitable for detecting implementation defects.",
+            "pt": "Uma especificação incompleta torna os testes derivados do código inadequados para detetar defeitos de implementação."
+          },
+          "explanation": {
+            "en": "Using the implementation is a strength when specifications are incomplete; this does not eliminate the separate omission limitation.",
+            "pt": "Usar a implementação é uma vantagem quando as especificações estão incompletas; isso não elimina a limitação distinta relativa a omissões."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "The branch results measure requirements coverage, while the missing audit function reduces statement coverage.",
+            "pt": "Os resultados dos ramos medem a cobertura de requisitos, enquanto a função de auditoria ausente reduz a cobertura de instruções."
+          },
+          "explanation": {
+            "en": "Branch and statement coverage measure existing code structure; missing code is not an uncovered statement in that implementation.",
+            "pt": "A cobertura de ramos e de instruções mede a estrutura do código existente; código ausente não é uma instrução não coberta dessa implementação."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Structural coverage can guide extra tests and increase confidence in code. Requirements-based testing is still needed to address omissions; full code coverage is not full requirements coverage.",
+        "pt": "A cobertura estrutural pode orientar testes adicionais e aumentar a confiança no código. Continuam a ser necessários testes baseados em requisitos para tratar omissões; cobertura total do código não é cobertura total de requisitos."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.3.3",
+        "pages": [43],
+        "report": "docs/academic-audit.md#tl-059"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-060",
+    "original": {
+      "id": "tl-060",
+      "lo": "FL-4.4.3",
+      "chapter": 4,
+      "level": "K2",
+      "topic": "Checklist-based testing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Two testers use the same high-level checklist for a document editor but choose different examples and action sequences. A new severe defect is then found outside the current checklist. Which response best reflects checklist-based testing?",
+        "pt": "Dois testadores usam a mesma checklist de alto nível para um editor de documentos, mas escolhem exemplos e sequências de ações diferentes. É depois encontrado um novo defeito grave fora da checklist atual. Que resposta melhor reflete o teste baseado em checklists?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Require identical execution steps for every item while continuing to describe the checklist as high-level guidance.",
+            "pt": "Exigir passos de execução idênticos para cada item, continuando a descrever a checklist como orientação de alto nível."
+          },
+          "explanation": {
+            "en": "Detailed identical procedures could increase repeatability, but are not inherent in a high-level checklist and do not address updating its conditions.",
+            "pt": "Procedimentos detalhados idênticos poderiam aumentar a repetibilidade, mas não são inerentes a uma checklist de alto nível nem tratam a atualização das suas condições."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Discard the checklist because different examples demonstrate that it cannot provide useful consistency.",
+            "pt": "Abandonar a checklist porque exemplos diferentes demonstram que não pode proporcionar consistência útil."
+          },
+          "explanation": {
+            "en": "High-level checklists can give consistent guidance while allowing variability and potentially broader coverage.",
+            "pt": "Checklists de alto nível podem orientar de forma consistente, permitindo variabilidade e uma cobertura potencialmente mais ampla."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Recognise the repeatability trade-off and update the checklist with a directly checkable condition informed by the defect.",
+            "pt": "Reconhecer o compromisso de repetibilidade e atualizar a checklist com uma condição diretamente verificável baseada no defeito."
+          },
+          "explanation": {
+            "en": "High-level items permit variation; defect analysis should inform regular updates without making the checklist unmanageably long.",
+            "pt": "Itens de alto nível permitem variação; a análise de defeitos deve orientar atualizações regulares sem tornar a checklist excessivamente longa."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Keep the checklist unchanged and handle every future severe defect only through a separate exploratory charter.",
+            "pt": "Manter a checklist inalterada e tratar todos os futuros defeitos graves apenas através de uma carta de teste exploratório separada."
+          },
+          "explanation": {
+            "en": "Exploration may complement the checklist, but ignoring new defect evidence prevents the checklist from evolving.",
+            "pt": "A exploração pode complementar a checklist, mas ignorar nova evidência de defeitos impede a sua evolução."
+          }
+        }
+      ],
+      "correct": ["o3"],
+      "explanation": {
+        "en": "Checklist-based testing covers listed conditions rather than prescribing identical detailed test cases. Maintain relevant, independently checkable items using experience and defect evidence.",
+        "pt": "O teste baseado em checklists cobre as condições listadas em vez de prescrever casos de teste detalhados idênticos. Deve manter itens relevantes e verificáveis individualmente, usando experiência e evidência de defeitos."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.4.3",
+        "pages": [44, 45],
+        "report": "docs/academic-audit.md#tl-060"
+      }
+    },
+    "proposed": {
+      "id": "tl-060",
+      "lo": "FL-4.4.3",
+      "chapter": 4,
+      "level": "K2",
+      "topic": "Checklist-based testing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Two testers use the same high-level checklist for a document editor but choose different examples and action sequences. A new severe defect is then found outside the current checklist. Which response best reflects checklist-based testing?",
+        "pt": "Dois testadores usam a mesma checklist de alto nível para um editor de documentos, mas escolhem exemplos e sequências de ações diferentes. É depois encontrado um novo defeito grave fora da checklist atual. Que resposta melhor reflete o teste baseado em checklists?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Require identical execution steps for every item while continuing to describe the checklist as high-level guidance.",
+            "pt": "Exigir passos de execução idênticos para cada item, continuando a descrever a checklist como orientação de alto nível."
+          },
+          "explanation": {
+            "en": "Detailed identical procedures could increase repeatability, but are not inherent in a high-level checklist and do not address updating its conditions.",
+            "pt": "Procedimentos detalhados idênticos poderiam aumentar a repetibilidade, mas não são inerentes a uma checklist de alto nível nem tratam a atualização das suas condições."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Discard the checklist because different examples demonstrate that it cannot provide useful consistency.",
+            "pt": "Abandonar a checklist porque exemplos diferentes demonstram que não pode proporcionar consistência útil."
+          },
+          "explanation": {
+            "en": "High-level checklists can give consistent guidance while allowing variability and potentially broader coverage.",
+            "pt": "Checklists de alto nível podem orientar de forma consistente, permitindo variabilidade e uma cobertura potencialmente mais ampla."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Recognise the repeatability trade-off and update the checklist with a directly checkable condition informed by the defect.",
+            "pt": "Reconhecer o compromisso de repetibilidade e atualizar a checklist com uma condição diretamente verificável baseada no defeito."
+          },
+          "explanation": {
+            "en": "High-level items permit variation; defect analysis should inform regular updates without making the checklist unmanageably long.",
+            "pt": "Itens de alto nível permitem variação; a análise de defeitos deve orientar atualizações regulares sem tornar a checklist excessivamente longa."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Keep the checklist unchanged and handle every future severe defect only through a separate exploratory charter.",
+            "pt": "Manter a checklist inalterada e tratar todos os futuros defeitos graves apenas através de uma carta de teste exploratório separada."
+          },
+          "explanation": {
+            "en": "Exploration may complement the checklist, but ignoring new defect evidence prevents the checklist from evolving.",
+            "pt": "A exploração pode complementar a checklist, mas ignorar nova evidência de defeitos impede a sua evolução."
+          }
+        }
+      ],
+      "correct": ["o3"],
+      "explanation": {
+        "en": "Checklist-based testing covers listed conditions rather than prescribing identical detailed test cases. Maintain relevant, independently checkable items using experience and defect evidence.",
+        "pt": "O teste baseado em checklists cobre as condições listadas em vez de prescrever casos de teste detalhados idênticos. Deve manter itens relevantes e verificáveis individualmente, usando experiência e evidência de defeitos."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.4.3",
+        "pages": [44, 45],
+        "report": "docs/academic-audit.md#tl-060"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-061",
+    "original": {
+      "id": "tl-061",
+      "lo": "FL-4.5.1",
+      "chapter": 4,
+      "level": "K2",
+      "topic": "Collaborative user stories",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A draft story says that laboratory staff need to amend a sample label, but does not explain when changes are allowed or why they matter. What should business representatives, developers and testers do together before implementation?",
+        "pt": "Uma user story inicial indica que os trabalhadores de um laboratório precisam de alterar a etiqueta de uma amostra, mas não explica quando são permitidas alterações nem por que são importantes. O que devem fazer em conjunto os representantes do negócio, os programadores e os testadores antes da implementação?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Let developers select the simplest amendment rule and ask testers to document it as the expected result.",
+            "pt": "Deixar os programadores escolher a regra de alteração mais simples e pedir aos testadores que a documentem como resultado esperado."
+          },
+          "explanation": {
+            "en": "Implementation convenience alone does not establish business value or shared agreement on permitted behaviour.",
+            "pt": "A conveniência de implementação, por si só, não estabelece valor de negócio nem acordo partilhado sobre o comportamento permitido."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Discuss the user goal and business value, explore permitted and forbidden examples, and agree testable acceptance criteria.",
+            "pt": "Discutir o objetivo do utilizador e o valor de negócio, explorar exemplos permitidos e proibidos e acordar critérios de aceitação testáveis."
+          },
+          "explanation": {
+            "en": "Conversation across the three perspectives builds a shared story and confirmation criteria, helping expose unclear or missing rules.",
+            "pt": "A conversação entre as três perspetivas constrói uma story partilhada e critérios de confirmação, ajudando a revelar regras pouco claras ou em falta."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Ask the business representative to complete the story alone, then estimate it without further discussion.",
+            "pt": "Pedir ao representante do negócio que conclua a story sozinho e depois estimá-la sem mais discussão."
+          },
+          "explanation": {
+            "en": "Business input is essential, but collaborative authorship includes development and testing perspectives to establish shared understanding and testability.",
+            "pt": "O contributo do negócio é essencial, mas a autoria colaborativa inclui as perspetivas de desenvolvimento e teste para estabelecer entendimento partilhado e testabilidade."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Convert the draft into a detailed implementation task list and defer acceptance criteria until the first demonstration.",
+            "pt": "Converter o rascunho numa lista detalhada de tarefas de implementação e adiar os critérios de aceitação até à primeira demonstração."
+          },
+          "explanation": {
+            "en": "A task list does not resolve the missing business rules; confirmation should inform implementation rather than wait for it.",
+            "pt": "Uma lista de tarefas não resolve as regras de negócio em falta; a confirmação deve orientar a implementação em vez de esperar por ela."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "Collaborative story writing combines business, development and testing perspectives. The card is supported by conversation and confirmation; a technical task list alone is insufficient.",
+        "pt": "A escrita colaborativa de user stories combina as perspetivas de negócio, desenvolvimento e teste. O cartão é apoiado pela conversação e confirmação; uma lista de tarefas técnicas, por si só, é insuficiente."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.5.1",
+        "pages": [45],
+        "report": "docs/academic-audit.md#tl-061"
+      }
+    },
+    "proposed": {
+      "id": "tl-061",
+      "lo": "FL-4.5.1",
+      "chapter": 4,
+      "level": "K2",
+      "topic": "Collaborative user stories",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A draft story says that laboratory staff need to amend a sample label, but does not explain when changes are allowed or why they matter. What should business representatives, developers and testers do together before implementation?",
+        "pt": "Uma user story inicial indica que os trabalhadores de um laboratório precisam de alterar a etiqueta de uma amostra, mas não explica quando são permitidas alterações nem por que são importantes. O que devem fazer em conjunto os representantes do negócio, os programadores e os testadores antes da implementação?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Let developers select the simplest amendment rule and ask testers to document it as the expected result.",
+            "pt": "Deixar os programadores escolher a regra de alteração mais simples e pedir aos testadores que a documentem como resultado esperado."
+          },
+          "explanation": {
+            "en": "Implementation convenience alone does not establish business value or shared agreement on permitted behaviour.",
+            "pt": "A conveniência de implementação, por si só, não estabelece valor de negócio nem acordo partilhado sobre o comportamento permitido."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Discuss the user goal and business value, explore permitted and forbidden examples, and agree testable acceptance criteria.",
+            "pt": "Discutir o objetivo do utilizador e o valor de negócio, explorar exemplos permitidos e proibidos e acordar critérios de aceitação testáveis."
+          },
+          "explanation": {
+            "en": "Conversation across the three perspectives builds a shared story and confirmation criteria, helping expose unclear or missing rules.",
+            "pt": "A conversação entre as três perspetivas constrói uma story partilhada e critérios de confirmação, ajudando a revelar regras pouco claras ou em falta."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Ask the business representative to complete the story alone, then estimate it without further discussion.",
+            "pt": "Pedir ao representante do negócio que conclua a story sozinho e depois estimá-la sem mais discussão."
+          },
+          "explanation": {
+            "en": "Business input is essential, but collaborative authorship includes development and testing perspectives to establish shared understanding and testability.",
+            "pt": "O contributo do negócio é essencial, mas a autoria colaborativa inclui as perspetivas de desenvolvimento e teste para estabelecer entendimento partilhado e testabilidade."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Convert the draft into a detailed implementation task list and defer acceptance criteria until the first demonstration.",
+            "pt": "Converter o rascunho numa lista detalhada de tarefas de implementação e adiar os critérios de aceitação até à primeira demonstração."
+          },
+          "explanation": {
+            "en": "A task list does not resolve the missing business rules; confirmation should inform implementation rather than wait for it.",
+            "pt": "Uma lista de tarefas não resolve as regras de negócio em falta; a confirmação deve orientar a implementação em vez de esperar por ela."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "Collaborative story writing combines business, development and testing perspectives. The card is supported by conversation and confirmation; a technical task list alone is insufficient.",
+        "pt": "A escrita colaborativa de user stories combina as perspetivas de negócio, desenvolvimento e teste. O cartão é apoiado pela conversação e confirmação; uma lista de tarefas técnicas, por si só, é insuficiente."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "4.5.1",
+        "pages": [45],
+        "report": "docs/academic-audit.md#tl-061"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-065",
+    "original": {
+      "id": "tl-065",
+      "lo": "FL-5.3.1",
+      "chapter": 5,
+      "level": "K1",
+      "topic": "Testing metrics",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A dashboard for a library lending service contains several test metrics. Which metric is classified as a product quality metric rather than a test progress, defect or coverage metric?",
+        "pt": "Um dashboard de um serviço de empréstimos de uma biblioteca contém várias métricas de teste. Que métrica é classificada como métrica de qualidade do produto, em vez de métrica de progresso do teste, de defeitos ou de cobertura?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Number of planned test cases that have been executed.",
+            "pt": "Número de casos de teste planeados que foram executados."
+          },
+          "explanation": {
+            "en": "This is a test progress metric.",
+            "pt": "Esta é uma métrica de progresso do teste."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Measured response time of the lending service.",
+            "pt": "Tempo de resposta medido do serviço de empréstimos."
+          },
+          "explanation": {
+            "en": "Response time measures a non-functional quality characteristic of the product.",
+            "pt": "O tempo de resposta mede uma característica de qualidade não funcional do produto."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Number of high-priority defects that remain open.",
+            "pt": "Número de defeitos de prioridade elevada que permanecem abertos."
+          },
+          "explanation": {
+            "en": "This is a defect metric; it can inform quality decisions but is not the product quality metric requested in this classification.",
+            "pt": "Esta é uma métrica de defeitos; pode apoiar decisões sobre qualidade, mas não é a métrica de qualidade do produto pedida nesta classificação."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Percentage of specified lending requirements covered by tests.",
+            "pt": "Percentagem de requisitos de empréstimo especificados cobertos por testes."
+          },
+          "explanation": {
+            "en": "This is a coverage metric, not a direct measurement of a product quality characteristic.",
+            "pt": "Esta é uma métrica de cobertura, não uma medição direta de uma característica de qualidade do produto."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "The syllabus distinguishes categories of metrics. Progress, defect and coverage metrics are valuable, but response time directly measures a product quality characteristic.",
+        "pt": "O syllabus distingue categorias de métricas. As métricas de progresso, defeitos e cobertura são úteis, mas o tempo de resposta mede diretamente uma característica de qualidade do produto."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.3.1",
+        "pages": [54],
+        "report": "docs/academic-audit.md#tl-065"
+      }
+    },
+    "proposed": {
+      "id": "tl-065",
+      "lo": "FL-5.3.1",
+      "chapter": 5,
+      "level": "K1",
+      "topic": "Testing metrics",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A dashboard for a library lending service contains several test metrics. Which metric is classified as a product quality metric rather than a test progress, defect or coverage metric?",
+        "pt": "Um dashboard de um serviço de empréstimos de uma biblioteca contém várias métricas de teste. Que métrica é classificada como métrica de qualidade do produto, em vez de métrica de progresso do teste, de defeitos ou de cobertura?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Number of planned test cases that have been executed.",
+            "pt": "Número de casos de teste planeados que foram executados."
+          },
+          "explanation": {
+            "en": "This is a test progress metric.",
+            "pt": "Esta é uma métrica de progresso do teste."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Measured response time of the lending service.",
+            "pt": "Tempo de resposta medido do serviço de empréstimos."
+          },
+          "explanation": {
+            "en": "Response time measures a non-functional quality characteristic of the product.",
+            "pt": "O tempo de resposta mede uma característica de qualidade não funcional do produto."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Number of high-priority defects that remain open.",
+            "pt": "Número de defeitos de prioridade elevada que permanecem abertos."
+          },
+          "explanation": {
+            "en": "This is a defect metric; it can inform quality decisions but is not the product quality metric requested in this classification.",
+            "pt": "Esta é uma métrica de defeitos; pode apoiar decisões sobre qualidade, mas não é a métrica de qualidade do produto pedida nesta classificação."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Percentage of specified lending requirements covered by tests.",
+            "pt": "Percentagem de requisitos de empréstimo especificados cobertos por testes."
+          },
+          "explanation": {
+            "en": "This is a coverage metric, not a direct measurement of a product quality characteristic.",
+            "pt": "Esta é uma métrica de cobertura, não uma medição direta de uma característica de qualidade do produto."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "The syllabus distinguishes categories of metrics. Progress, defect and coverage metrics are valuable, but response time directly measures a product quality characteristic.",
+        "pt": "O syllabus distingue categorias de métricas. As métricas de progresso, defeitos e cobertura são úteis, mas o tempo de resposta mede diretamente uma característica de qualidade do produto."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.3.1",
+        "pages": [54],
+        "report": "docs/academic-audit.md#tl-065"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-066",
+    "original": {
+      "id": "tl-066",
+      "lo": "FL-5.3.3",
+      "chapter": 5,
+      "level": "K2",
+      "topic": "Test status communication",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A distributed team needs rapid visibility of blocked tests across time zones. A steering group needs a weekly summary of release risks. No regulation mandates a single communication format. Which communication arrangement best suits these needs?",
+        "pt": "Uma equipa distribuída precisa de visibilidade rápida dos testes bloqueados em diferentes fusos horários. Um grupo de direção precisa de um resumo semanal dos riscos da entrega. Nenhum regulamento impõe um único formato de comunicação. Que organização da comunicação melhor satisfaz estas necessidades?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Send the weekly steering summary to everyone and use it as the team's only blocker notification.",
+            "pt": "Enviar o resumo semanal da direção a todos e usá-lo como única notificação de bloqueios da equipa."
+          },
+          "explanation": {
+            "en": "A weekly summary is too infrequent for the team's stated need for rapid visibility of blockers.",
+            "pt": "Um resumo semanal é demasiado pouco frequente para a necessidade indicada de visibilidade rápida dos bloqueios da equipa."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use a daily live call as the sole record for both audiences, without retaining status information.",
+            "pt": "Usar uma chamada diária em direto como único registo para ambos os públicos, sem conservar informação de estado."
+          },
+          "explanation": {
+            "en": "A sole live channel does not accommodate the stated time-zone needs or provide the tailored weekly risk summary.",
+            "pt": "Um único canal em direto não responde às necessidades indicadas de fusos horários nem fornece o resumo semanal de riscos adaptado ao público."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Give the steering group the unfiltered execution log and ask it to derive release risks independently.",
+            "pt": "Fornecer ao grupo de direção o registo de execução sem tratamento e pedir-lhe que derive os riscos da entrega de forma independente."
+          },
+          "explanation": {
+            "en": "An unfiltered technical log does not provide the requested audience-appropriate risk summary.",
+            "pt": "Um registo técnico sem tratamento não fornece o resumo de riscos pedido e adequado ao público."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Maintain an up-to-date shared dashboard with asynchronous blocker notifications, and provide a concise weekly risk summary for the steering group.",
+            "pt": "Manter um dashboard partilhado atualizado com notificações assíncronas de bloqueios e fornecer um resumo semanal conciso de riscos ao grupo de direção."
+          },
+          "explanation": {
+            "en": "Different stakeholders need different detail and frequency. Combining channels supports distributed teamwork and management decisions.",
+            "pt": "Stakeholders diferentes precisam de detalhe e frequência diferentes. Combinar canais apoia o trabalho distribuído e as decisões de gestão."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "Test status communication should fit the audience, timing and organizational context. More than one channel may be used; a dashboard does not remove the need for a tailored management summary.",
+        "pt": "A comunicação do estado do teste deve adequar-se ao público, à frequência e ao contexto organizacional. Pode usar-se mais de um canal; um dashboard não elimina a necessidade de um resumo adaptado à gestão."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.3.3",
+        "pages": [55],
+        "report": "docs/academic-audit.md#tl-066"
+      }
+    },
+    "proposed": {
+      "id": "tl-066",
+      "lo": "FL-5.3.3",
+      "chapter": 5,
+      "level": "K2",
+      "topic": "Test status communication",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A distributed team needs rapid visibility of blocked tests across time zones. A steering group needs a weekly summary of release risks. No regulation mandates a single communication format. Which communication arrangement best suits these needs?",
+        "pt": "Uma equipa distribuída precisa de visibilidade rápida dos testes bloqueados em diferentes fusos horários. Um grupo de direção precisa de um resumo semanal dos riscos da entrega. Nenhum regulamento impõe um único formato de comunicação. Que organização da comunicação melhor satisfaz estas necessidades?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Send the weekly steering summary to everyone and use it as the team's only blocker notification.",
+            "pt": "Enviar o resumo semanal da direção a todos e usá-lo como única notificação de bloqueios da equipa."
+          },
+          "explanation": {
+            "en": "A weekly summary is too infrequent for the team's stated need for rapid visibility of blockers.",
+            "pt": "Um resumo semanal é demasiado pouco frequente para a necessidade indicada de visibilidade rápida dos bloqueios da equipa."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use a daily live call as the sole record for both audiences, without retaining status information.",
+            "pt": "Usar uma chamada diária em direto como único registo para ambos os públicos, sem conservar informação de estado."
+          },
+          "explanation": {
+            "en": "A sole live channel does not accommodate the stated time-zone needs or provide the tailored weekly risk summary.",
+            "pt": "Um único canal em direto não responde às necessidades indicadas de fusos horários nem fornece o resumo semanal de riscos adaptado ao público."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Give the steering group the unfiltered execution log and ask it to derive release risks independently.",
+            "pt": "Fornecer ao grupo de direção o registo de execução sem tratamento e pedir-lhe que derive os riscos da entrega de forma independente."
+          },
+          "explanation": {
+            "en": "An unfiltered technical log does not provide the requested audience-appropriate risk summary.",
+            "pt": "Um registo técnico sem tratamento não fornece o resumo de riscos pedido e adequado ao público."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Maintain an up-to-date shared dashboard with asynchronous blocker notifications, and provide a concise weekly risk summary for the steering group.",
+            "pt": "Manter um dashboard partilhado atualizado com notificações assíncronas de bloqueios e fornecer um resumo semanal conciso de riscos ao grupo de direção."
+          },
+          "explanation": {
+            "en": "Different stakeholders need different detail and frequency. Combining channels supports distributed teamwork and management decisions.",
+            "pt": "Stakeholders diferentes precisam de detalhe e frequência diferentes. Combinar canais apoia o trabalho distribuído e as decisões de gestão."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "Test status communication should fit the audience, timing and organizational context. More than one channel may be used; a dashboard does not remove the need for a tailored management summary.",
+        "pt": "A comunicação do estado do teste deve adequar-se ao público, à frequência e ao contexto organizacional. Pode usar-se mais de um canal; um dashboard não elimina a necessidade de um resumo adaptado à gestão."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["syllabus-coverage-phase4"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.3.3",
+        "pages": [55],
+        "report": "docs/academic-audit.md#tl-066"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-067",
+    "original": {
+      "id": "tl-067",
+      "chapter": 1,
+      "lo": "FL-1.3.1",
+      "level": "K2",
+      "topic": "Testing principles",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A payroll replacement passes the tests for every specified calculation. During a pilot, clerks cannot complete the month-end workflow because a necessary approval step was not specified. Which response best addresses the testing principle illustrated?",
+        "pt": "Uma aplicação de substituição de processamento salarial passa os testes de todos os cálculos especificados. Num piloto, os trabalhadores não conseguem concluir o fecho mensal porque uma aprovação necessária não foi especificada. Que resposta melhor aplica o princípio de teste ilustrado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Expand calculation regression tests to increase confidence in the already specified rules.",
+            "pt": "Expandir a regressão dos cálculos para aumentar a confiança nas regras já especificadas."
+          },
+          "explanation": {
+            "en": "This strengthens verification but does not address the missing user workflow.",
+            "pt": "Isto reforça a verificação, mas não trata o fluxo de utilização em falta."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Validate the complete month-end workflow with users and revise the agreed requirements.",
+            "pt": "Validar o fluxo completo de fecho mensal com os utilizadores e rever os requisitos acordados."
+          },
+          "explanation": {
+            "en": "The absence-of-defects fallacy concerns satisfying specifications without satisfying actual user needs.",
+            "pt": "A falácia da ausência de defeitos diz respeito a cumprir especificações sem satisfazer as necessidades reais dos utilizadores."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Concentrate testing on the calculation modules with the most historical defects.",
+            "pt": "Concentrar os testes nos módulos de cálculo com mais defeitos históricos."
+          },
+          "explanation": {
+            "en": "Defect clustering can guide effort, but the observed problem is missing business behaviour.",
+            "pt": "A concentração de defeitos pode orientar o esforço, mas o problema observado é comportamento de negócio em falta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Refresh the calculation test data to counter the declining effectiveness of repeated tests.",
+            "pt": "Renovar os dados de teste dos cálculos para contrariar a menor eficácia de testes repetidos."
+          },
+          "explanation": {
+            "en": "Tests wearing out is a different principle; changing calculation data does not establish workflow suitability.",
+            "pt": "O desgaste dos testes é um princípio diferente; mudar os dados dos cálculos não estabelece a adequação do fluxo."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "Verification of specified rules needs complementary validation of users' goals. A successful pilot requires the missing approval need to be understood, not merely more passing calculation checks.",
+        "pt": "A verificação de regras especificadas precisa de validação complementar dos objetivos dos utilizadores. Um piloto bem-sucedido exige compreender a aprovação em falta, não apenas mais verificações de cálculos aprovadas."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase5a-variability"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "1.3",
+        "pages": [17, 18],
+        "report": "docs/academic-audit.md#fase-5a--tl-067"
+      }
+    },
+    "proposed": {
+      "id": "tl-067",
+      "chapter": 1,
+      "lo": "FL-1.3.1",
+      "level": "K2",
+      "topic": "Testing principles",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A payroll replacement passes the tests for every specified calculation. During a pilot, clerks cannot complete the month-end workflow because a necessary approval step was not specified. Which response best addresses the testing principle illustrated?",
+        "pt": "Uma aplicação de substituição de processamento salarial passa os testes de todos os cálculos especificados. Num piloto, os trabalhadores não conseguem concluir o fecho mensal porque uma aprovação necessária não foi especificada. Que resposta melhor aplica o princípio de teste ilustrado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Expand calculation regression tests to increase confidence in the already specified rules.",
+            "pt": "Expandir a regressão dos cálculos para aumentar a confiança nas regras já especificadas."
+          },
+          "explanation": {
+            "en": "This strengthens verification but does not address the missing user workflow.",
+            "pt": "Isto reforça a verificação, mas não trata o fluxo de utilização em falta."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Validate the complete month-end workflow with users and revise the agreed requirements.",
+            "pt": "Validar o fluxo completo de fecho mensal com os utilizadores e rever os requisitos acordados."
+          },
+          "explanation": {
+            "en": "The absence-of-defects fallacy concerns satisfying specifications without satisfying actual user needs.",
+            "pt": "A falácia da ausência de defeitos diz respeito a cumprir especificações sem satisfazer as necessidades reais dos utilizadores."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Concentrate testing on the calculation modules with the most historical defects.",
+            "pt": "Concentrar os testes nos módulos de cálculo com mais defeitos históricos."
+          },
+          "explanation": {
+            "en": "Defect clustering can guide effort, but the observed problem is missing business behaviour.",
+            "pt": "A concentração de defeitos pode orientar o esforço, mas o problema observado é comportamento de negócio em falta."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Refresh the calculation test data to counter the declining effectiveness of repeated tests.",
+            "pt": "Renovar os dados de teste dos cálculos para contrariar a menor eficácia de testes repetidos."
+          },
+          "explanation": {
+            "en": "Tests wearing out is a different principle; changing calculation data does not establish workflow suitability.",
+            "pt": "O desgaste dos testes é um princípio diferente; mudar os dados dos cálculos não estabelece a adequação do fluxo."
+          }
+        }
+      ],
+      "correct": ["o2"],
+      "explanation": {
+        "en": "Verification of specified rules needs complementary validation of users' goals. A successful pilot requires the missing approval need to be understood, not merely more passing calculation checks.",
+        "pt": "A verificação de regras especificadas precisa de validação complementar dos objetivos dos utilizadores. Um piloto bem-sucedido exige compreender a aprovação em falta, não apenas mais verificações de cálculos aprovadas."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase5a-variability"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "1.3",
+        "pages": [17, 18],
+        "report": "docs/academic-audit.md#fase-5a--tl-067"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-068",
+    "original": {
+      "id": "tl-068",
+      "chapter": 2,
+      "lo": "FL-2.1.2",
+      "level": "K1",
+      "topic": "Lifecycle",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team is selecting practices for reviewing an early draft of a new interface specification. Which practice is applicable across software development lifecycles?",
+        "pt": "Uma equipa escolhe práticas para rever uma versão inicial de uma nova especificação de interface. Que prática é aplicável a diferentes ciclos de vida de desenvolvimento de software?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Start test analysis when the corresponding development work product becomes available.",
+            "pt": "Iniciar a análise de teste quando o produto de trabalho de desenvolvimento correspondente estiver disponível."
+          },
+          "explanation": {
+            "en": "Early analysis and involvement in draft work products are good practices independent of the lifecycle model.",
+            "pt": "A análise antecipada e a participação nas versões iniciais dos produtos de trabalho são boas práticas independentes do modelo de ciclo de vida."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use the same test objectives for component testing and acceptance testing.",
+            "pt": "Usar os mesmos objetivos no teste de componentes e no teste de aceitação."
+          },
+          "explanation": {
+            "en": "Different test levels have specific objectives, helping avoid redundant activities.",
+            "pt": "Os níveis de teste diferentes têm objetivos específicos, ajudando a evitar atividades redundantes."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Base review timing on completion of coding rather than availability of the draft.",
+            "pt": "Basear a calendarização da revisão na conclusão do código em vez da disponibilidade da versão inicial."
+          },
+          "explanation": {
+            "en": "Waiting for coding loses the benefit of reviewing the specification when it is first available.",
+            "pt": "Esperar pela conclusão do código perde a vantagem de rever a especificação quando fica disponível."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Apply the lifecycle's dynamic test sequence as the schedule for specification reviews.",
+            "pt": "Aplicar a sequência de testes dinâmicos do ciclo de vida como calendário das revisões da especificação."
+          },
+          "explanation": {
+            "en": "Static reviews can begin with drafts; their timing need not follow availability of executable software.",
+            "pt": "As revisões estáticas podem começar com versões iniciais; a sua calendarização não precisa de seguir a disponibilidade de software executável."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "A corresponding test activity supports each development activity. Early analysis and review of drafts apply across lifecycles while each test level retains its own objectives.",
+        "pt": "Uma atividade de teste correspondente apoia cada atividade de desenvolvimento. A análise antecipada e a revisão de versões iniciais aplicam-se a diferentes ciclos de vida, mantendo cada nível os seus objetivos."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase5a-variability"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.1.2",
+        "pages": [25, 26],
+        "report": "docs/academic-audit.md#fase-5a--tl-068"
+      }
+    },
+    "proposed": {
+      "id": "tl-068",
+      "chapter": 2,
+      "lo": "FL-2.1.2",
+      "level": "K1",
+      "topic": "Lifecycle",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team is selecting practices for reviewing an early draft of a new interface specification. Which practice is applicable across software development lifecycles?",
+        "pt": "Uma equipa escolhe práticas para rever uma versão inicial de uma nova especificação de interface. Que prática é aplicável a diferentes ciclos de vida de desenvolvimento de software?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Start test analysis when the corresponding development work product becomes available.",
+            "pt": "Iniciar a análise de teste quando o produto de trabalho de desenvolvimento correspondente estiver disponível."
+          },
+          "explanation": {
+            "en": "Early analysis and involvement in draft work products are good practices independent of the lifecycle model.",
+            "pt": "A análise antecipada e a participação nas versões iniciais dos produtos de trabalho são boas práticas independentes do modelo de ciclo de vida."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use the same test objectives for component testing and acceptance testing.",
+            "pt": "Usar os mesmos objetivos no teste de componentes e no teste de aceitação."
+          },
+          "explanation": {
+            "en": "Different test levels have specific objectives, helping avoid redundant activities.",
+            "pt": "Os níveis de teste diferentes têm objetivos específicos, ajudando a evitar atividades redundantes."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Base review timing on completion of coding rather than availability of the draft.",
+            "pt": "Basear a calendarização da revisão na conclusão do código em vez da disponibilidade da versão inicial."
+          },
+          "explanation": {
+            "en": "Waiting for coding loses the benefit of reviewing the specification when it is first available.",
+            "pt": "Esperar pela conclusão do código perde a vantagem de rever a especificação quando fica disponível."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Apply the lifecycle's dynamic test sequence as the schedule for specification reviews.",
+            "pt": "Aplicar a sequência de testes dinâmicos do ciclo de vida como calendário das revisões da especificação."
+          },
+          "explanation": {
+            "en": "Static reviews can begin with drafts; their timing need not follow availability of executable software.",
+            "pt": "As revisões estáticas podem começar com versões iniciais; a sua calendarização não precisa de seguir a disponibilidade de software executável."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "A corresponding test activity supports each development activity. Early analysis and review of drafts apply across lifecycles while each test level retains its own objectives.",
+        "pt": "Uma atividade de teste correspondente apoia cada atividade de desenvolvimento. A análise antecipada e a revisão de versões iniciais aplicam-se a diferentes ciclos de vida, mantendo cada nível os seus objetivos."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": ["phase5a-variability"],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "2.1.2",
+        "pages": [25, 26],
+        "report": "docs/academic-audit.md#fase-5a--tl-068"
+      }
+    },
+    "changed": false
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "tl-088",
+    "lo": "FL-4.2.4",
+    "level": "K3",
+    "text": {
+      "en": "A lock controller starts each test in Locked. The complete state table gives the next state; INVALID means a rejected event that leaves the state unchanged. A test must stop at its first invalid event and may attempt at most one invalid transition. Existing tests are grant, revoke, revoke and grant, revoke, grant; each starts in Locked. Which pair of additional tests achieves 100% all-transitions coverage of the six state/event pairs?",
+      "pt": "Um controlador de bloqueio começa cada teste em Locked. A tabela de estados completa indica o estado seguinte; INVALID significa um evento rejeitado que mantém o estado. Um teste tem de terminar no primeiro evento inválido e pode tentar no máximo uma transição inválida. Os testes existentes são grant, revoke, revoke e grant, revoke, grant; cada um começa em Locked. Que par de testes adicionais atinge 100% de cobertura de todas as transições dos seis pares estado/evento?"
+    },
+    "table": {
+      "headers": ["State / Estado", "grant", "revoke"],
+      "rows": [
+        ["Locked", "Open", "INVALID"],
+        ["Open", "INVALID", "Suspended"],
+        ["Suspended", "Open", "Locked"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "X: grant; Y: grant, revoke, grant",
+          "pt": "X: grant; Y: grant, revoke, grant"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "X: revoke; Y: grant, revoke, revoke",
+          "pt": "X: revoke; Y: grant, revoke, revoke"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "X: revoke; Y: grant, grant",
+          "pt": "X: revoke; Y: grant, grant"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "X: revoke, grant, grant; Y: grant, revoke",
+          "pt": "X: revoke, grant, grant; Y: grant, revoke"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-089",
+    "lo": "FL-5.1.4",
+    "level": "K3",
+    "text": {
+      "en": "Estimate person-effort, not elapsed duration. Apply (a + 4m + b) / 6 to each table row, in person-hours. Preparation occurs once. Initial executions A and B may overlap using different testers. After both finish, one repeat of B takes 50% of its weighted execution effort; preparation and A are not repeated. A separate fixed setup of 2 person-hours is excluded from all rows and occurs once. What is the total effort including the repeat and setup?",
+      "pt": "Estimar esforço em pessoas-hora, não duração decorrida. Aplicar (a + 4m + b) / 6 a cada linha da tabela, em pessoas-hora. A preparação ocorre uma vez. As execuções iniciais A e B podem sobrepor-se usando testadores diferentes. Depois de ambas terminarem, uma repetição de B exige 50% do seu esforço de execução ponderado; a preparação e A não se repetem. Uma configuração fixa separada de 2 pessoas-hora está excluída de todas as linhas e ocorre uma vez. Qual é o esforço total incluindo repetição e configuração?"
+    },
+    "table": {
+      "headers": ["Activity / Atividade", "a", "m", "b"],
+      "rows": [
+        ["Preparation / Preparação", "2", "3", "4"],
+        ["A", "3", "5", "13"],
+        ["B", "2", "4", "6"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "15 person-hours",
+          "pt": "15 pessoas-hora"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "17 person-hours",
+          "pt": "17 pessoas-hora"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "13 person-hours",
+          "pt": "13 pessoas-hora"
+        }
+      },
+      {
+        "id": "o5",
+        "text": {
+          "en": "20 person-hours",
+          "pt": "20 pessoas-hora"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "18 person-hours",
+          "pt": "18 pessoas-hora"
+        }
+      }
+    ]
+  }
+]

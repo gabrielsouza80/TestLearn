@@ -1,0 +1,578 @@
+[
+  {
+    "questionId": "tl-024",
+    "optionId": "o1",
+    "text": {
+      "en": "Given an empty basket, when opened, then show a zero total",
+      "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+    },
+    "publishedRationale": {
+      "en": "The criterion describes a concrete context, event and observable outcome.",
+      "pt": "O critério descreve contexto, evento e resultado observável concretos."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: contém os três elementos, com total zero observável.",
+    "reviewEN": "Correct: all three elements are explicit with observable zero total.",
+    "concept": "CONTEXT_EVENT_OUTCOME",
+    "referenceSection": "4.5.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-024",
+    "optionId": "o2",
+    "text": {
+      "en": "The basket total must equal the sum of its item prices.",
+      "pt": "O total do cesto deve ser igual à soma dos preços dos seus artigos."
+    },
+    "publishedRationale": {
+      "en": "This is a rule-oriented criterion, not a Given/When/Then scenario.",
+      "pt": "Este é um critério orientado para regras, não um cenário Dado/Quando/Então."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Regra de soma válida noutro pedido; não explicita evento e contexto concreto.",
+    "reviewEN": "A potentially valid sum rule in another request, not the explicit concrete event/context requested.",
+    "concept": "RULE_SUM",
+    "referenceSection": "4.5.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-024",
+    "optionId": "o3",
+    "text": {
+      "en": "A basket with no items must have a total of zero.",
+      "pt": "Um cesto sem artigos deve ter um total igual a zero."
+    },
+    "publishedRationale": {
+      "en": "This states a rule without the explicit context/event/outcome structure.",
+      "pt": "Isto apresenta uma regra sem a estrutura explícita de contexto, evento e resultado."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Regra válida com cesto vazio e total zero; falta o evento explícito.",
+    "reviewEN": "A valid empty-basket/zero-total rule, lacking the explicit trigger.",
+    "concept": "RULE_EMPTY_BASKET",
+    "referenceSection": "4.5.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-024",
+    "optionId": "o4",
+    "text": {
+      "en": "When the basket opens, calculate its total by calling the pricing service",
+      "pt": "Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços"
+    },
+    "publishedRationale": {
+      "en": "This describes an implementation action, but omits the starting basket state and the observable expected total. It is not a complete acceptance example of the requested form.",
+      "pt": "Isto descreve uma ação de implementação, mas omite o estado inicial do cesto e o total esperado observável. Não é um exemplo de aceitação completo no formato solicitado."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Chamada ao serviço não fornece o contexto inicial nem o total esperado observável.",
+    "reviewEN": "A service call supplies neither initial state nor observable expected total.",
+    "concept": "IMPLEMENTATION_ACTION",
+    "referenceSection": "4.5.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-030",
+    "optionId": "o1",
+    "text": {
+      "en": "Many small low-level tests, fewer large end-to-end tests",
+      "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+    },
+    "publishedRationale": {
+      "en": "Smaller tests often give fast, focused feedback.",
+      "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: muitos testes pequenos de baixo nível, menosE2Egrandes, com qualificação geral.",
+    "reviewEN": "Correct: generally many small low-level tests and fewer largeE2Etests.",
+    "concept": "PYRAMID_BASE",
+    "referenceSection": "5.1.6",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-030",
+    "optionId": "o2",
+    "text": {
+      "en": "Many large end-to-end tests, fewer isolated low-level tests",
+      "pt": "Muitos testes grandes de ponta a ponta, menos testes pequenos e isolados"
+    },
+    "publishedRationale": {
+      "en": "This inverts the pyramid. Large end-to-end tests generally cost more time and provide less focused feedback than small isolated tests.",
+      "pt": "Isto inverte a pirâmide. Os testes grandes de ponta a ponta exigem geralmente mais tempo e dão feedback menos localizado do que os testes pequenos e isolados."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Inverte a proporção em ambas as línguas; PTtem substituição lexical descrita, sem tornar a opção correta.",
+    "reviewEN": "Inverted in both languages; acknowledged PTlexical substitution does not make it correct.",
+    "concept": "INVERTED_PYRAMID",
+    "referenceSection": "5.1.6",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-030",
+    "optionId": "o3",
+    "text": {
+      "en": "Equal numbers of tests at each level",
+      "pt": "Um número igual de testes em cada nível"
+    },
+    "publishedRationale": {
+      "en": "A pyramid represents different proportions according to granularity, isolation and execution cost, not equal counts across levels.",
+      "pt": "Uma pirâmide representa proporções diferentes de acordo com a granularidade, o isolamento e o custo de execução, não contagens iguais entre níveis."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Contagens iguais não representam a proporção piramidal, ainda que possam ocorrer num projeto específico.",
+    "reviewEN": "Equal counts do not depict the pyramid, even if a particular project has them.",
+    "concept": "EQUAL_COUNTS",
+    "referenceSection": "5.1.6",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-030",
+    "optionId": "o4",
+    "text": {
+      "en": "Many integration tests, fewer component and end-to-end tests",
+      "pt": "Muitos testes de integração, menos testes de componente e de ponta a ponta"
+    },
+    "publishedRationale": {
+      "en": "A concentration in the middle is a different distribution. The pyramid generally has a broad base of small isolated tests and fewer larger tests above.",
+      "pt": "Uma concentração no meio corresponde a uma distribuição diferente. A pirâmide tem geralmente uma base larga de testes pequenos e isolados e menos testes maiores nos níveis superiores."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Concentração de integração descreve outra distribuição, não a pirâmide geral pedida.",
+    "reviewEN": "Integration concentration describes another distribution, not the requested general pyramid.",
+    "concept": "MIDDLE_HEAVY",
+    "referenceSection": "5.1.6",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-032",
+    "optionId": "o1",
+    "text": {
+      "en": "Entry criterion, then exit criterion",
+      "pt": "Critério de entrada, depois critério de saída"
+    },
+    "publishedRationale": {
+      "en": "Entry supports starting; exit supports deciding completion.",
+      "pt": "A entrada apoia o início; a saída apoia a decisão de conclusão."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: início primeiro, conclusão depois.",
+    "reviewEN": "Correct: start condition first, completion condition second.",
+    "concept": "ENTRY_THEN_EXIT",
+    "referenceSection": "5.1.3",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-032",
+    "optionId": "o2",
+    "text": {
+      "en": "Exit criterion, then entry criterion",
+      "pt": "Critério de saída, depois critério de entrada"
+    },
+    "publishedRationale": {
+      "en": "The order is reversed.",
+      "pt": "A ordem está invertida."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Inverte as finalidades explicitamente dadas.",
+    "reviewEN": "Reverses the expressly given purposes.",
+    "concept": "REVERSED_ORDER",
+    "referenceSection": "5.1.3",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-032",
+    "optionId": "o3",
+    "text": {
+      "en": "Both are entry criteria",
+      "pt": "Ambos são critérios de entrada"
+    },
+    "publishedRationale": {
+      "en": "Environment availability is a precondition for starting, but accepted residual risk is specified here as a condition for declaring testing complete.",
+      "pt": "A disponibilidade do ambiente é uma pré-condição para começar, mas o risco residual aceite é aqui especificado como condição para declarar os testes concluídos."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "A segunda condição é declarada para conclusão, não início.",
+    "reviewEN": "Second condition concerns completion, not start.",
+    "concept": "BOTH_ENTRY",
+    "referenceSection": "5.1.3",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-032",
+    "optionId": "o4",
+    "text": {
+      "en": "Both are exit criteria",
+      "pt": "Ambos são critérios de saída"
+    },
+    "publishedRationale": {
+      "en": "The first condition must be met before system testing starts, so it is an entry criterion. The second supports the completion decision.",
+      "pt": "A primeira condição tem de ser satisfeita antes de começar o teste de sistema, pelo que é um critério de entrada. A segunda apoia a decisão de conclusão."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "A primeira condiciona início de teste, não a sua conclusão.",
+    "reviewEN": "First condition gates test start, not completion.",
+    "concept": "BOTH_EXIT",
+    "referenceSection": "5.1.3",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-033",
+    "optionId": "o1",
+    "text": {
+      "en": "An invoice calculates the wrong tax",
+      "pt": "Uma fatura calcula imposto incorreto"
+    },
+    "publishedRationale": {
+      "en": "Wrong tax threatens product quality.",
+      "pt": "Imposto incorreto ameaça a qualidade do produto."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: cálculo potencialmente incorreto afeta qualidade funcional do produto.",
+    "reviewEN": "Correct: potentially wrong calculation concerns product functional quality.",
+    "concept": "PRODUCT_FUNCTIONAL_RISK",
+    "referenceSection": "5.2.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-033",
+    "optionId": "o2",
+    "text": {
+      "en": "A tester leaves the team",
+      "pt": "Um testador sai da equipa"
+    },
+    "publishedRationale": {
+      "en": "Staff availability threatens project delivery.",
+      "pt": "A disponibilidade da equipa ameaça a entrega do projeto."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Disponibilidade de pessoas ameaça entrega e recursos.",
+    "reviewEN": "Staff availability threatens delivery/resources.",
+    "concept": "PROJECT_STAFF_RISK",
+    "referenceSection": "5.2.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-033",
+    "optionId": "o3",
+    "text": {
+      "en": "A test environment arrives late",
+      "pt": "Um ambiente de teste chega atrasado"
+    },
+    "publishedRationale": {
+      "en": "A late environment threatens the project schedule.",
+      "pt": "Um ambiente atrasado ameaça o calendário do projeto."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Atraso de ambiente ameaça o calendário; um defeito do ambiente seria outro enunciado.",
+    "reviewEN": "Environment delay threatens schedule; an environment defect would be another statement.",
+    "concept": "PROJECT_ENVIRONMENT_DELAY",
+    "referenceSection": "5.2.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-033",
+    "optionId": "o4",
+    "text": {
+      "en": "A test-tool supplier misses the agreed delivery date",
+      "pt": "Um fornecedor de uma ferramenta de teste falha a data de entrega acordada"
+    },
+    "publishedRationale": {
+      "en": "A supplier delivery delay threatens the project schedule and resources. Incorrect tax calculation concerns the product's functional quality.",
+      "pt": "Um atraso de entrega do fornecedor ameaça o calendário e os recursos do projeto. Um cálculo fiscal incorreto diz respeito à qualidade funcional do produto."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Atraso do fornecedor é risco de entrega/recursos, não cálculo funcional.",
+    "reviewEN": "Supplier delay threatens delivery/resources, not functional calculation.",
+    "concept": "PROJECT_SUPPLIER_DELAY",
+    "referenceSection": "5.2.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-040",
+    "optionId": "o1",
+    "text": {
+      "en": "Underestimating the effort to maintain automated test scripts",
+      "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+    },
+    "publishedRationale": {
+      "en": "Maintenance costs must be considered.",
+      "pt": "Os custos de manutenção têm de ser considerados."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: estimativa insuficiente pode inviabilizar planeamento/manutenção realistas.",
+    "reviewEN": "Correct: insufficient estimation threatens realistic maintenance planning.",
+    "concept": "UNDERESTIMATED_MAINTENANCE",
+    "referenceSection": "6.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-040",
+    "optionId": "o2",
+    "text": {
+      "en": "Reducing repetitive manual test execution effort",
+      "pt": "Reduzir o esforço de execução manual repetitiva de testes"
+    },
+    "publishedRationale": {
+      "en": "Reducing repetitive manual work is a potential benefit of automation. The risk is failing to budget realistically for introduction and maintenance effort.",
+      "pt": "Reduzir trabalho manual repetitivo é um benefício potencial da automação. O risco é não prever realisticamente o esforço de introdução e manutenção."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Reduzir trabalho repetitivo é benefício potencial, não o risco de estimativa.",
+    "reviewEN": "Reduced repetitive work is a potential benefit, not the estimation risk.",
+    "concept": "LESS_REPETITION_BENEFIT",
+    "referenceSection": "6.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-040",
+    "optionId": "o3",
+    "text": {
+      "en": "Improving the repeatability of test execution",
+      "pt": "Melhorar a repetibilidade da execução de testes"
+    },
+    "publishedRationale": {
+      "en": "Consistent, repeatable execution is a potential benefit. It does not eliminate the need to maintain scripts as the product changes.",
+      "pt": "Uma execução consistente e repetível é um benefício potencial. Não elimina a necessidade de manter os scripts à medida que o produto muda."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Repetibilidade é benefício potencial; não elimina manutenção.",
+    "reviewEN": "Repeatability is a potential benefit, not an elimination of maintenance.",
+    "concept": "REPEATABILITY_BENEFIT",
+    "referenceSection": "6.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-040",
+    "optionId": "o4",
+    "text": {
+      "en": "Obtaining tool-supported coverage metrics that would be difficult to collect by hand",
+      "pt": "Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente"
+    },
+    "publishedRationale": {
+      "en": "Tool-supported measurement can be a benefit. Underestimating the effort needed to keep automated tests and tools useful is the risk identified here.",
+      "pt": "A medição apoiada por ferramentas pode ser um benefício. Subestimar o esforço necessário para manter úteis os testes automatizados e as ferramentas é o risco aqui identificado."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Medições difíceis manualmente podem ser benefício, sem provar qualidade universal.",
+    "reviewEN": "Difficult-to-obtain manual measures can be a benefit without proving universal quality.",
+    "concept": "MEASUREMENT_BENEFIT",
+    "referenceSection": "6.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-044",
+    "optionId": "o1",
+    "text": {
+      "en": "Q1: technology-facing tests that support the team.",
+      "pt": "Q1: testes orientados para a tecnologia que suportam a equipa."
+    },
+    "publishedRationale": {
+      "en": "Q1 includes component and component integration tests; the scenario evaluates user workflows from a business perspective.",
+      "pt": "Q1 inclui testes de componentes e de integração de componentes; o cenário avalia fluxos de utilizadores de uma perspetiva de negócio."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Tecnologia+apoio da equipa não corresponde a explorar necessidades do negócio.",
+    "reviewEN": "Technology/team support does not match exploring business needs.",
+    "concept": "Q1_TECH_SUPPORT",
+    "referenceSection": "5.1.7",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-044",
+    "optionId": "o2",
+    "text": {
+      "en": "Q2: business-facing tests that support the team.",
+      "pt": "Q2: testes orientados para o negócio que suportam a equipa."
+    },
+    "publishedRationale": {
+      "en": "Q2 examples guide development; this scenario critiques an existing working product through exploration.",
+      "pt": "Os exemplos de Q2 orientam o desenvolvimento; este cenário critica um produto já funcional através da exploração."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Acerta negócio, mas orientar desenvolvimento não é a finalidade crítica expressa.",
+    "reviewEN": "Business-facing matches, but guiding development is not the stated critique purpose.",
+    "concept": "Q2_BUSINESS_SUPPORT",
+    "referenceSection": "5.1.7",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-044",
+    "optionId": "o3",
+    "text": {
+      "en": "Q4: technology-facing tests that critique the product.",
+      "pt": "Q4: testes orientados para a tecnologia que criticam o produto."
+    },
+    "publishedRationale": {
+      "en": "Although the product is being critiqued, the stated concerns are user workflows and business needs, not technology-facing quality evaluation.",
+      "pt": "Apesar de o produto ser criticado, as preocupações indicadas são os fluxos dos utilizadores e as necessidades do negócio, não uma avaliação orientada para a tecnologia."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Acerta avaliação crítica, mas a perspetiva dada é de utilizador/negócio.",
+    "reviewEN": "Critique matches, but the given perspective is user/business-facing.",
+    "concept": "Q4_TECH_CRITIQUE",
+    "referenceSection": "5.1.7",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-044",
+    "optionId": "o4",
+    "text": {
+      "en": "Q3: business-facing tests that critique the product.",
+      "pt": "Q3: testes orientados para o negócio que criticam o produto."
+    },
+    "publishedRationale": {
+      "en": "Q3 includes exploratory and usability testing from the user/business perspective, as described.",
+      "pt": "Q3 inclui testes exploratórios e de usabilidade da perspetiva do utilizador e do negócio, como no cenário descrito."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: negócio+avaliação crítica, compatível com exploração/usabilidade.",
+    "reviewEN": "Correct: business-facing product critique, consistent with exploration/usability.",
+    "concept": "Q3_BUSINESS_CRITIQUE",
+    "referenceSection": "5.1.7",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-055",
+    "optionId": "o1",
+    "text": {
+      "en": "It prevents the conflicting rules from propagating into derived work products and reduces potential later rework.",
+      "pt": "Evita que as regras contraditórias se propaguem para os produtos de trabalho derivados e reduz o potencial retrabalho posterior."
+    },
+    "publishedRationale": {
+      "en": "Early direct detection in the specification allows correction before downstream work is based on the defect.",
+      "pt": "A deteção direta e antecipada na especificação permite corrigir antes de o trabalho subsequente se basear no defeito."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta no cenário: deteção seguida da resolução impede propagar aquelas regras e reduz retrabalho potencial.",
+    "reviewEN": "Correct in context: detection followed by resolution avoids those conflicting rules propagating and reduces potential rework.",
+    "concept": "EARLY_RESOLUTION_PREVENTS_PROPAGATION",
+    "referenceSection": "3.1.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-055",
+    "optionId": "o2",
+    "text": {
+      "en": "It provides runtime evidence that exported data complies with the agreed retention period.",
+      "pt": "Fornece evidência em execução de que os dados exportados cumprem o período de conservação acordado."
+    },
+    "publishedRationale": {
+      "en": "The review does not execute the service and cannot measure runtime compliance of an implementation that does not yet exist.",
+      "pt": "A revisão não executa o serviço nem pode medir o cumprimento em execução por uma implementação que ainda não existe."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Revisão não executa implementação inexistente nem mede conformidade em execução.",
+    "reviewEN": "Review does not execute a nonexistent implementation or measure runtime compliance.",
+    "concept": "RUNTIME_EVIDENCE",
+    "referenceSection": "3.1.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-055",
+    "optionId": "o3",
+    "text": {
+      "en": "It establishes the regression test results that will be needed after the retention logic changes.",
+      "pt": "Estabelece os resultados dos testes de regressão que serão necessários após alterações à lógica de conservação."
+    },
+    "publishedRationale": {
+      "en": "The review clarifies the basis for later tests; it does not supply their execution results.",
+      "pt": "A revisão esclarece a base para testes posteriores; não fornece os seus resultados de execução."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Esclarecer a base ajuda testes futuros; não fornece resultados de execução de regressão.",
+    "reviewEN": "Clarifying a basis supports future tests but does not supply regression execution results.",
+    "concept": "REGRESSION_RESULTS",
+    "referenceSection": "3.1.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-055",
+    "optionId": "o4",
+    "text": {
+      "en": "It confirms that implementing either documented rule would satisfy the users' retention needs.",
+      "pt": "Confirma que implementar qualquer uma das regras documentadas satisfaria as necessidades de conservação dos utilizadores."
+    },
+    "publishedRationale": {
+      "en": "The rules conflict and require stakeholder resolution; documentation alone does not make either interpretation acceptable.",
+      "pt": "As regras são contraditórias e exigem resolução pelos stakeholders; estarem documentadas não torna qualquer interpretação aceitável."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Documentação contraditória não prova que qualquer regra satisfaz os utilizadores; a resolução é necessária.",
+    "reviewEN": "Conflicting documentation does not prove either rule meets user needs; resolution is necessary.",
+    "concept": "EITHER_RULE_ACCEPTABLE",
+    "referenceSection": "3.1.2",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-056",
+    "optionId": "o1",
+    "text": {
+      "en": "A stable baseline that makes later requirement changes unnecessary.",
+      "pt": "Uma base de referência estável que torna desnecessárias alterações posteriores aos requisitos."
+    },
+    "publishedRationale": {
+      "en": "Feedback helps understand changes earlier; it does not remove the possibility or need for change.",
+      "pt": "O feedback ajuda a compreender as alterações mais cedo; não elimina a possibilidade ou a necessidade de mudança."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Feedback não torna desnecessária toda alteração futura.",
+    "reviewEN": "Feedback does not make all later requirement changes unnecessary.",
+    "concept": "FIXED_REQUIREMENTS",
+    "referenceSection": "3.2.1",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-056",
+    "optionId": "o2",
+    "text": {
+      "en": "A replacement for acceptance criteria because users have already seen the workflow.",
+      "pt": "Uma substituição dos critérios de aceitação porque os utilizadores já viram o fluxo."
+    },
+    "publishedRationale": {
+      "en": "Demonstrations and feedback do not replace explicit, testable acceptance criteria.",
+      "pt": "As demonstrações e o feedback não substituem critérios de aceitação explícitos e testáveis."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Ter visto demonstrações não substitui critérios explícitos/testáveis.",
+    "reviewEN": "Having seen demos does not replace explicit testable criteria.",
+    "concept": "REPLACES_ACCEPTANCE_CRITERIA",
+    "referenceSection": "3.2.1",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-056",
+    "optionId": "o3",
+    "text": {
+      "en": "Earlier discovery of misunderstandings about user needs, reducing the risk of costly rework.",
+      "pt": "Descoberta mais cedo de equívocos sobre as necessidades dos utilizadores, reduzindo o risco de retrabalho dispendioso."
+    },
+    "publishedRationale": {
+      "en": "Frequent feedback supports shared understanding and earlier adaptation to stakeholder needs.",
+      "pt": "O feedback frequente apoia o entendimento partilhado e a adaptação antecipada às necessidades dos stakeholders."
+    },
+    "supportsIndependentAnswer": true,
+    "reviewPT": "Correta: entendimento partilhado e adaptação antecipada reduzem risco de retrabalho.",
+    "reviewEN": "Correct: shared understanding/earlier adaptation reduce rework risk.",
+    "concept": "EARLY_MISUNDERSTANDING_DISCOVERY",
+    "referenceSection": "3.2.1",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  },
+  {
+    "questionId": "tl-056",
+    "optionId": "o4",
+    "text": {
+      "en": "Evidence that all warehouse staff will accept the completed implementation.",
+      "pt": "Evidência de que todos os trabalhadores do armazém aceitarão a implementação concluída."
+    },
+    "publishedRationale": {
+      "en": "Feedback from demonstrations does not establish universal acceptance of a future completed product.",
+      "pt": "O feedback de demonstrações não estabelece a aceitação universal de um futuro produto concluído."
+    },
+    "supportsIndependentAnswer": false,
+    "reviewPT": "Amostras de feedback não provam aceitação por todos de uma implementação futura.",
+    "reviewEN": "Feedback samples do not prove everyone’s acceptance of a future implementation.",
+    "concept": "UNIVERSAL_FUTURE_ACCEPTANCE",
+    "referenceSection": "3.2.1",
+    "scenarioBoundary": "Reasons apply to the explicit question. A different purpose, actor, supplied artifact or model may change classification; see per-question contrary evidence."
+  }
+]

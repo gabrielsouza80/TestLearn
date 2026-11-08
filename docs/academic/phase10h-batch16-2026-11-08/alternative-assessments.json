@@ -1,0 +1,262 @@
+[
+  {
+    "questionId": "tl-084",
+    "optionId": "o1",
+    "text": {
+      "en": "Checking the returned stock quantity targets functional correctness.",
+      "pt": "Verificar a quantidade em stock devolvida visa a correção funcional."
+    },
+    "publishedExplanation": {
+      "en": "The assertion checks what the service does: returning the specified stock value for the input.",
+      "pt": "A asserção verifica o que o serviço faz: devolver o valor de stock especificado para a entrada."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: a quantidade devolvida para um código de barras válido compara o resultado com a especificação, visando correção funcional e não rapidez.",
+    "reviewEN": "Returned stock quantity checks the required functional result for a valid barcode, so it targets functional correctness. Correctness of the quantity is distinct from how quickly that quantity is returned.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.2.2": {
+        "EN": [29, 30],
+        "PT": [32, 33]
+      },
+      "2.2.1": {
+        "EN": [29],
+        "PT": [31, 32]
+      }
+    }
+  },
+  {
+    "questionId": "tl-084",
+    "optionId": "o2",
+    "text": {
+      "en": "Checking latency is functional testing because it executes the same stock query.",
+      "pt": "Verificar a latência é teste funcional porque executa a mesma consulta de stock."
+    },
+    "publishedExplanation": {
+      "en": "A non-functional test can reuse a functional operation while assessing a performance constraint rather than its functional output.",
+      "pt": "Um teste não funcional pode reutilizar uma operação funcional enquanto avalia uma restrição de desempenho, em vez do resultado funcional."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta: usar a mesma consulta não torna funcional o objetivo temporal; a fonte permite verificar exigências não funcionais durante uma função.",
+    "reviewEN": "Executing the same query does not make its latency objective functional. The objective is how well the function performs, so a timing constraint remains non-functional even when it shares inputs and execution with a functional test.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.2.2": {
+        "EN": [29, 30],
+        "PT": [32, 33]
+      },
+      "2.2.1": {
+        "EN": [29],
+        "PT": [31, 32]
+      }
+    }
+  },
+  {
+    "questionId": "tl-084",
+    "optionId": "o3",
+    "text": {
+      "en": "The concurrent users make the test level system integration, irrespective of the systems involved.",
+      "pt": "Os utilizadores concorrentes tornam o nível de teste integração de sistemas, independentemente dos sistemas envolvidos."
+    },
+    "publishedExplanation": {
+      "en": "Concurrency is a load characteristic, not evidence of interfaces with external systems. Test level depends on the object and scope.",
+      "pt": "A concorrência é uma característica de carga, não evidência de interfaces com sistemas externos. O nível de teste depende do objeto e do âmbito."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta: concorrência é condição de carga; não prova interfaces entre sistemas externos nem determina nível sem conhecer objeto e âmbito.",
+    "reviewEN": "Concurrent users specify a workload condition, not a test level. System integration concerns the relevant system boundaries and interfaces; concurrency alone cannot establish which systems are involved.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.2.2": {
+        "EN": [29, 30],
+        "PT": [32, 33]
+      },
+      "2.2.1": {
+        "EN": [29],
+        "PT": [31, 32]
+      }
+    }
+  },
+  {
+    "questionId": "tl-084",
+    "optionId": "o4",
+    "text": {
+      "en": "Checking the latency limit targets the non-functional characteristic performance efficiency.",
+      "pt": "Verificar o limite de latência visa a característica não funcional eficiência de desempenho."
+    },
+    "publishedExplanation": {
+      "en": "The time constraint describes how well the service performs its function. It is a non-functional quality constraint.",
+      "pt": "A restrição temporal descreve quão bem o serviço realiza a função. É uma restrição de qualidade não funcional."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: o limite do percentil de latência sob 200 utilizadores visa eficiência de desempenho; no máximo inclui igualdade, sem exigir todas as respostas abaixo do limiar.",
+    "reviewEN": "The response-latency requirement targets performance efficiency. At most300 ms is inclusive, and a95th-percentile limit is not a maximum over every individual response. The200-concurrent-user condition must be retained when interpreting this measurement.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.2.2": {
+        "EN": [29, 30],
+        "PT": [32, 33]
+      },
+      "2.2.1": {
+        "EN": [29],
+        "PT": [31, 32]
+      }
+    }
+  },
+  {
+    "questionId": "tl-084",
+    "optionId": "o5",
+    "text": {
+      "en": "Using an API makes both tests white-box, even when their basis is the requirements.",
+      "pt": "Usar uma API torna ambos os testes de caixa-branca, mesmo quando a sua base são os requisitos."
+    },
+    "publishedExplanation": {
+      "en": "The derivation basis, not the interface used to execute a test, distinguishes specification-based from structure-based testing.",
+      "pt": "A base de derivação, e não a interface usada para executar um teste, distingue testes baseados na especificação de testes baseados na estrutura."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta: executar através da API não é base estrutural; o enunciado exclui derivação da estrutura e explicita requisitos como fundamento.",
+    "reviewEN": "The interface used does not determine white-box derivation. The statement explicitly derives API tests from requirements and not internal structure, so the tests remain specification-based black-box tests.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "2.2.2": {
+        "EN": [29, 30],
+        "PT": [32, 33]
+      },
+      "2.2.1": {
+        "EN": [29],
+        "PT": [31, 32]
+      }
+    }
+  },
+  {
+    "questionId": "tl-085",
+    "optionId": "o1",
+    "text": {
+      "en": "List potential billing-risk events before evaluating their significance.",
+      "pt": "Listar potenciais eventos de risco de faturação antes de avaliar a sua importância."
+    },
+    "publishedExplanation": {
+      "en": "Creating the initial risk list is risk identification, part of risk analysis, not execution or monitoring of a response.",
+      "pt": "Criar a lista inicial de riscos é identificação do risco, parte da análise, não execução nem monitorização de uma resposta."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta neste pedido: listar eventos antes de avaliar importância é identificação, parte da análise inicial, e não implementação ou monitorização de resposta.",
+    "reviewEN": "Listing potential events before judging significance is risk identification, a component of analysis already completed in the scenario. It is not the proposed implementation or monitoring of risk responses requested here.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.2.4": {
+        "EN": [53],
+        "PT": [59]
+      },
+      "5.2.3": {
+        "EN": [52, 53],
+        "PT": [58, 59]
+      }
+    }
+  },
+  {
+    "questionId": "tl-085",
+    "optionId": "o2",
+    "text": {
+      "en": "Execute clock-change tests selected to mitigate the assessed billing risk.",
+      "pt": "Executar testes de mudança da hora selecionados para mitigar o risco de faturação avaliado."
+    },
+    "publishedExplanation": {
+      "en": "Executing a planned testing response to reduce an assessed risk is risk mitigation, which is part of product risk control.",
+      "pt": "Executar uma resposta de teste planeada para reduzir um risco avaliado é mitigação do risco, que faz parte do controlo do risco de produto."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: executar os testes de mudança da hora selecionados para o risco avaliado põe em prática mitigação; não garante eliminar todo risco de faturação.",
+    "reviewEN": "Executing clock-change tests selected against an assessed billing risk implements a mitigation measure. It does not guarantee elimination of every billing risk or require inventing a particular tariff or daylight-saving rule.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.2.4": {
+        "EN": [53],
+        "PT": [59]
+      },
+      "5.2.3": {
+        "EN": [52, 53],
+        "PT": [58, 59]
+      }
+    }
+  },
+  {
+    "questionId": "tl-085",
+    "optionId": "o3",
+    "text": {
+      "en": "Estimate likelihood and impact to rank the billing risks.",
+      "pt": "Estimar a probabilidade e o impacto para ordenar os riscos de faturação."
+    },
+    "publishedExplanation": {
+      "en": "Initial likelihood and impact assessment belongs to risk analysis. It precedes choosing and implementing a control response.",
+      "pt": "A avaliação inicial de probabilidade e impacto pertence à análise do risco. Precede a escolha e implementação de uma resposta de controlo."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta neste pedido: estimar probabilidade/impacto para ordenar riscos é avaliação; pode ser útil reavaliar mais tarde, mas aqui apenas repete a etapa inicial.",
+    "reviewEN": "Estimating likelihood and impact and ranking risks is risk assessment, part of the initial analysis. Reassessment can be useful later, but this option simply repeats the analysis explicitly completed in the stem.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.2.4": {
+        "EN": [53],
+        "PT": [59]
+      },
+      "5.2.3": {
+        "EN": [52, 53],
+        "PT": [58, 59]
+      }
+    }
+  },
+  {
+    "questionId": "tl-085",
+    "optionId": "o4",
+    "text": {
+      "en": "Group the assessed billing risks by quality characteristic before selecting treatments.",
+      "pt": "Agrupar os riscos de faturação avaliados por característica de qualidade antes de selecionar tratamentos."
+    },
+    "publishedExplanation": {
+      "en": "Categorization in the initial assessment supports risk analysis; it does not itself implement or monitor a treatment.",
+      "pt": "A categorização na avaliação inicial apoia a análise do risco; por si só, não implementa nem monitoriza um tratamento."
+    },
+    "supportsAnswer": false,
+    "reviewPT": "Incorreta neste pedido: agrupar por característica de qualidade categoriza a avaliação antes de tratamentos; por si só não executa nem acompanha a resposta.",
+    "reviewEN": "Grouping assessed risks by quality characteristic helps organise analysis before treatment selection. As stated it does not implement mitigation or monitor effectiveness, unlike the two control actions among the options.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.2.4": {
+        "EN": [53],
+        "PT": [59]
+      },
+      "5.2.3": {
+        "EN": [52, 53],
+        "PT": [58, 59]
+      }
+    }
+  },
+  {
+    "questionId": "tl-085",
+    "optionId": "o5",
+    "text": {
+      "en": "Check whether mitigation is effective and revise the response when emerging risks require it.",
+      "pt": "Verificar se a mitigação é eficaz e rever a resposta quando os riscos emergentes o exigirem."
+    },
+    "publishedExplanation": {
+      "en": "Risk monitoring checks effectiveness, improves information about risk and identifies emerging risks so the response can be adapted.",
+      "pt": "A monitorização do risco verifica a eficácia, melhora a informação sobre o risco e identifica riscos emergentes para permitir adaptar a resposta."
+    },
+    "supportsAnswer": true,
+    "reviewPT": "Correta: verificar eficácia e adaptar resposta por riscos emergentes é monitorização/controlo, compatível com recolher informação para melhorar avaliações futuras.",
+    "reviewEN": "Checking whether mitigation works and revising responses when emerging risks require it monitors and adapts product risk control. It allows future analysis of new information rather than asserting that initial analysis must never be revisited.",
+    "publishedExplanationAssessmentPT": "A explicação publicada foi confrontada com a análise individual acima e com as fontes; contraexemplos e limites do cenário estão explicitados no relatório. Não se transforma possibilidade em garantia nem se omite uma alternativa publicada.",
+    "references": {
+      "5.2.4": {
+        "EN": [53],
+        "PT": [59]
+      },
+      "5.2.3": {
+        "EN": [52, 53],
+        "PT": [58, 59]
+      }
+    }
+  }
+]

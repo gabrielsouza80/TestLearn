@@ -1,0 +1,746 @@
+[
+  {
+    "questionId": "tl-024",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "The criterion describes a concrete context, event and observable outcome.",
+      "pt": "O critério descreve contexto, evento e resultado observável concretos."
+    },
+    "candidateText": {
+      "en": "The requested example explicitly links an empty-basket context, opening action and observable zero total. Rule-oriented criteria are also valid acceptance formats, but o2 and o3 do not express all three requested elements. This single example does not imply complete story coverage.",
+      "pt": "O exemplo pedido liga explicitamente o contexto de cesto vazio, a ação de abrir e o total zero observável. Os critérios orientados a regras também são formatos de aceitação válidos, mas o2 e o3 não exprimem todos os três elementos pedidos. Este exemplo isolado não implica cobertura completa da user story."
+    },
+    "original": {
+      "id": "tl-024",
+      "chapter": 4,
+      "lo": "FL-4.5.2",
+      "level": "K2",
+      "topic": "Acceptance criteria",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team needs an acceptance example that explicitly states the starting context, triggering action and observable expected result. Which criterion best meets that need?",
+        "pt": "Uma equipa precisa de um exemplo de aceitação que explicite o contexto inicial, a ação desencadeadora e o resultado esperado observável. Que critério melhor satisfaz essa necessidade?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Given an empty basket, when opened, then show a zero total",
+            "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+          },
+          "explanation": {
+            "en": "The criterion describes a concrete context, event and observable outcome.",
+            "pt": "O critério descreve contexto, evento e resultado observável concretos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "The basket total must equal the sum of its item prices.",
+            "pt": "O total do cesto deve ser igual à soma dos preços dos seus artigos."
+          },
+          "explanation": {
+            "en": "This is a rule-oriented criterion, not a Given/When/Then scenario.",
+            "pt": "Este é um critério orientado para regras, não um cenário Dado/Quando/Então."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "A basket with no items must have a total of zero.",
+            "pt": "Um cesto sem artigos deve ter um total igual a zero."
+          },
+          "explanation": {
+            "en": "This states a rule without the explicit context/event/outcome structure.",
+            "pt": "Isto apresenta uma regra sem a estrutura explícita de contexto, evento e resultado."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "When the basket opens, calculate its total by calling the pricing service",
+            "pt": "Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços"
+          },
+          "explanation": {
+            "en": "This describes an implementation action, but omits the starting basket state and the observable expected total. It is not a complete acceptance example of the requested form.",
+            "pt": "Isto descreve uma ação de implementação, mas omite o estado inicial do cesto e o total esperado observável. Não é um exemplo de aceitação completo no formato solicitado."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The criterion describes a concrete context, event and observable outcome.",
+        "pt": "O critério descreve contexto, evento e resultado observável concretos."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.5.2",
+        "pages": [45, 46],
+        "report": "docs/academic-audit.md#fase-5b--tl-024"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-024",
+      "chapter": 4,
+      "lo": "FL-4.5.2",
+      "level": "K2",
+      "topic": "Acceptance criteria",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team needs an acceptance example that explicitly states the starting context, triggering action and observable expected result. Which criterion best meets that need?",
+        "pt": "Uma equipa precisa de um exemplo de aceitação que explicite o contexto inicial, a ação desencadeadora e o resultado esperado observável. Que critério melhor satisfaz essa necessidade?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Given an empty basket, when opened, then show a zero total",
+            "pt": "Dado um cesto vazio, quando é aberto, então apresenta total zero"
+          },
+          "explanation": {
+            "en": "The criterion describes a concrete context, event and observable outcome.",
+            "pt": "O critério descreve contexto, evento e resultado observável concretos."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "The basket total must equal the sum of its item prices.",
+            "pt": "O total do cesto deve ser igual à soma dos preços dos seus artigos."
+          },
+          "explanation": {
+            "en": "This is a rule-oriented criterion, not a Given/When/Then scenario.",
+            "pt": "Este é um critério orientado para regras, não um cenário Dado/Quando/Então."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "A basket with no items must have a total of zero.",
+            "pt": "Um cesto sem artigos deve ter um total igual a zero."
+          },
+          "explanation": {
+            "en": "This states a rule without the explicit context/event/outcome structure.",
+            "pt": "Isto apresenta uma regra sem a estrutura explícita de contexto, evento e resultado."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "When the basket opens, calculate its total by calling the pricing service",
+            "pt": "Quando o cesto é aberto, calcular o total através de uma chamada ao serviço de preços"
+          },
+          "explanation": {
+            "en": "This describes an implementation action, but omits the starting basket state and the observable expected total. It is not a complete acceptance example of the requested form.",
+            "pt": "Isto descreve uma ação de implementação, mas omite o estado inicial do cesto e o total esperado observável. Não é um exemplo de aceitação completo no formato solicitado."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "The requested example explicitly links an empty-basket context, opening action and observable zero total. Rule-oriented criteria are also valid acceptance formats, but o2 and o3 do not express all three requested elements. This single example does not imply complete story coverage.",
+        "pt": "O exemplo pedido liga explicitamente o contexto de cesto vazio, a ação de abrir e o total zero observável. Os critérios orientados a regras também são formatos de aceitação válidos, mas o2 e o3 não exprimem todos os três elementos pedidos. Este exemplo isolado não implica cobertura completa da user story."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "4.5.2",
+        "pages": [45, 46],
+        "report": "docs/academic-audit.md#fase-5b--tl-024"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "fa851be96d01839d044a574c67f8ee6c2fba4ba65ba7f7a0723c920cdd5d1a2a",
+    "candidateCanonicalSHA256": "04d643e10f4de9a057f56466e5a9b6f32ac46addcb309857ff886f779167feb7",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 4,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-030",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["options", "o2", "text"],
+    "originalText": {
+      "en": "Many large end-to-end tests, fewer isolated low-level tests",
+      "pt": "Muitos testes grandes de ponta a ponta, menos testes pequenos e isolados"
+    },
+    "candidateText": {
+      "en": "Many large end-to-end tests, fewer isolated low-level tests",
+      "pt": "Muitos testes grandes de ponta a ponta, menos testes isolados de baixo nível"
+    },
+    "original": {
+      "id": "tl-030",
+      "chapter": 5,
+      "lo": "FL-5.1.6",
+      "level": "K1",
+      "topic": "Test pyramid",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Which distribution is generally encouraged by a test pyramid?",
+        "pt": "Que distribuição é geralmente incentivada pela pirâmide de testes?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Many small low-level tests, fewer large end-to-end tests",
+            "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+          },
+          "explanation": {
+            "en": "Smaller tests often give fast, focused feedback.",
+            "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Many large end-to-end tests, fewer isolated low-level tests",
+            "pt": "Muitos testes grandes de ponta a ponta, menos testes pequenos e isolados"
+          },
+          "explanation": {
+            "en": "This inverts the pyramid. Large end-to-end tests generally cost more time and provide less focused feedback than small isolated tests.",
+            "pt": "Isto inverte a pirâmide. Os testes grandes de ponta a ponta exigem geralmente mais tempo e dão feedback menos localizado do que os testes pequenos e isolados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Equal numbers of tests at each level",
+            "pt": "Um número igual de testes em cada nível"
+          },
+          "explanation": {
+            "en": "A pyramid represents different proportions according to granularity, isolation and execution cost, not equal counts across levels.",
+            "pt": "Uma pirâmide representa proporções diferentes de acordo com a granularidade, o isolamento e o custo de execução, não contagens iguais entre níveis."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Many integration tests, fewer component and end-to-end tests",
+            "pt": "Muitos testes de integração, menos testes de componente e de ponta a ponta"
+          },
+          "explanation": {
+            "en": "A concentration in the middle is a different distribution. The pyramid generally has a broad base of small isolated tests and fewer larger tests above.",
+            "pt": "Uma concentração no meio corresponde a uma distribuição diferente. A pirâmide tem geralmente uma base larga de testes pequenos e isolados e menos testes maiores nos níveis superiores."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Smaller tests often give fast, focused feedback.",
+        "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.6",
+        "pages": [50, 51],
+        "report": "docs/academic-audit.md#fase-6c--tl-030"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-030",
+      "chapter": 5,
+      "lo": "FL-5.1.6",
+      "level": "K1",
+      "topic": "Test pyramid",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Which distribution is generally encouraged by a test pyramid?",
+        "pt": "Que distribuição é geralmente incentivada pela pirâmide de testes?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Many small low-level tests, fewer large end-to-end tests",
+            "pt": "Muitos testes pequenos de baixo nível, menos testes grandes de ponta a ponta"
+          },
+          "explanation": {
+            "en": "Smaller tests often give fast, focused feedback.",
+            "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Many large end-to-end tests, fewer isolated low-level tests",
+            "pt": "Muitos testes grandes de ponta a ponta, menos testes isolados de baixo nível"
+          },
+          "explanation": {
+            "en": "This inverts the pyramid. Large end-to-end tests generally cost more time and provide less focused feedback than small isolated tests.",
+            "pt": "Isto inverte a pirâmide. Os testes grandes de ponta a ponta exigem geralmente mais tempo e dão feedback menos localizado do que os testes pequenos e isolados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Equal numbers of tests at each level",
+            "pt": "Um número igual de testes em cada nível"
+          },
+          "explanation": {
+            "en": "A pyramid represents different proportions according to granularity, isolation and execution cost, not equal counts across levels.",
+            "pt": "Uma pirâmide representa proporções diferentes de acordo com a granularidade, o isolamento e o custo de execução, não contagens iguais entre níveis."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Many integration tests, fewer component and end-to-end tests",
+            "pt": "Muitos testes de integração, menos testes de componente e de ponta a ponta"
+          },
+          "explanation": {
+            "en": "A concentration in the middle is a different distribution. The pyramid generally has a broad base of small isolated tests and fewer larger tests above.",
+            "pt": "Uma concentração no meio corresponde a uma distribuição diferente. A pirâmide tem geralmente uma base larga de testes pequenos e isolados e menos testes maiores nos níveis superiores."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Smaller tests often give fast, focused feedback.",
+        "pt": "Os testes menores dão frequentemente feedback rápido e localizado."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.6",
+        "pages": [50, 51],
+        "report": "docs/academic-audit.md#fase-6c--tl-030"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "b9f41f5222ac38fb497ddec1bfc228d17b8b41639b512dca149593ee82f160de",
+    "candidateCanonicalSHA256": "7454755f82708a1f8d27ee0fda237615c192710215a6af16fa208e586f3b9bca",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 4,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-040",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["explanation"],
+    "originalText": {
+      "en": "Maintenance costs must be considered.",
+      "pt": "Os custos de manutenção têm de ser considerados."
+    },
+    "candidateText": {
+      "en": "Maintaining automated scripts requires planned effort. Underestimating that effort can make budgets and maintenance plans unrealistic; the risk is the inaccurate estimate, not the mere existence of maintenance costs.",
+      "pt": "Manter scripts automatizados exige esforço planeado. Subestimar esse esforço pode tornar orçamentos e planos de manutenção irrealistas; o risco é a estimativa imprecisa, não a mera existência de custos de manutenção."
+    },
+    "original": {
+      "id": "tl-040",
+      "chapter": 6,
+      "lo": "FL-6.2.1",
+      "level": "K1",
+      "topic": "Automation",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team is planning test automation. Which issue should be recorded as a risk rather than an expected benefit?",
+        "pt": "Uma equipa está a planear a automação de testes. Que questão deve ser registada como risco em vez de benefício esperado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Underestimating the effort to maintain automated test scripts",
+            "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+          },
+          "explanation": {
+            "en": "Maintenance costs must be considered.",
+            "pt": "Os custos de manutenção têm de ser considerados."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Reducing repetitive manual test execution effort",
+            "pt": "Reduzir o esforço de execução manual repetitiva de testes"
+          },
+          "explanation": {
+            "en": "Reducing repetitive manual work is a potential benefit of automation. The risk is failing to budget realistically for introduction and maintenance effort.",
+            "pt": "Reduzir trabalho manual repetitivo é um benefício potencial da automação. O risco é não prever realisticamente o esforço de introdução e manutenção."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Improving the repeatability of test execution",
+            "pt": "Melhorar a repetibilidade da execução de testes"
+          },
+          "explanation": {
+            "en": "Consistent, repeatable execution is a potential benefit. It does not eliminate the need to maintain scripts as the product changes.",
+            "pt": "Uma execução consistente e repetível é um benefício potencial. Não elimina a necessidade de manter os scripts à medida que o produto muda."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Obtaining tool-supported coverage metrics that would be difficult to collect by hand",
+            "pt": "Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente"
+          },
+          "explanation": {
+            "en": "Tool-supported measurement can be a benefit. Underestimating the effort needed to keep automated tests and tools useful is the risk identified here.",
+            "pt": "A medição apoiada por ferramentas pode ser um benefício. Subestimar o esforço necessário para manter úteis os testes automatizados e as ferramentas é o risco aqui identificado."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Maintenance costs must be considered.",
+        "pt": "Os custos de manutenção têm de ser considerados."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "6.2",
+        "pages": [59, 60],
+        "report": "docs/academic-audit.md#fase-5b--tl-040"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "candidate": {
+      "id": "tl-040",
+      "chapter": 6,
+      "lo": "FL-6.2.1",
+      "level": "K1",
+      "topic": "Automation",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team is planning test automation. Which issue should be recorded as a risk rather than an expected benefit?",
+        "pt": "Uma equipa está a planear a automação de testes. Que questão deve ser registada como risco em vez de benefício esperado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Underestimating the effort to maintain automated test scripts",
+            "pt": "Subestimar o esforço necessário para manter os scripts de teste automatizados"
+          },
+          "explanation": {
+            "en": "Maintenance costs must be considered.",
+            "pt": "Os custos de manutenção têm de ser considerados."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Reducing repetitive manual test execution effort",
+            "pt": "Reduzir o esforço de execução manual repetitiva de testes"
+          },
+          "explanation": {
+            "en": "Reducing repetitive manual work is a potential benefit of automation. The risk is failing to budget realistically for introduction and maintenance effort.",
+            "pt": "Reduzir trabalho manual repetitivo é um benefício potencial da automação. O risco é não prever realisticamente o esforço de introdução e manutenção."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Improving the repeatability of test execution",
+            "pt": "Melhorar a repetibilidade da execução de testes"
+          },
+          "explanation": {
+            "en": "Consistent, repeatable execution is a potential benefit. It does not eliminate the need to maintain scripts as the product changes.",
+            "pt": "Uma execução consistente e repetível é um benefício potencial. Não elimina a necessidade de manter os scripts à medida que o produto muda."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Obtaining tool-supported coverage metrics that would be difficult to collect by hand",
+            "pt": "Obter, com apoio de ferramentas, métricas de cobertura difíceis de recolher manualmente"
+          },
+          "explanation": {
+            "en": "Tool-supported measurement can be a benefit. Underestimating the effort needed to keep automated tests and tools useful is the risk identified here.",
+            "pt": "A medição apoiada por ferramentas pode ser um benefício. Subestimar o esforço necessário para manter úteis os testes automatizados e as ferramentas é o risco aqui identificado."
+          }
+        }
+      ],
+      "correct": ["o1"],
+      "explanation": {
+        "en": "Maintaining automated scripts requires planned effort. Underestimating that effort can make budgets and maintenance plans unrealistic; the risk is the inaccurate estimate, not the mere existence of maintenance costs.",
+        "pt": "Manter scripts automatizados exige esforço planeado. Subestimar esse esforço pode tornar orçamentos e planos de manutenção irrealistas; o risco é a estimativa imprecisa, não a mera existência de custos de manutenção."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "6.2",
+        "pages": [59, 60],
+        "report": "docs/academic-audit.md#fase-5b--tl-040"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "originalCanonicalSHA256": "54c59daacf5d024cf447db42fd143f2d2f20e4f4bc918f8ab3861502da66e2ca",
+    "candidateCanonicalSHA256": "76ff4615135f5161c07645982cbda7cb6ced6bc8710ad616d612564af39262ee",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 4,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  },
+  {
+    "questionId": "tl-044",
+    "kind": "OPTIONAL_EDITORIAL_NOT_CONFIRMED_DEFECT",
+    "applied": false,
+    "requiresExplicitOwnerAuthorization": true,
+    "path": ["options", "o2", "explanation"],
+    "originalText": {
+      "en": "Q2 examples guide development; this scenario critiques an existing working product through exploration.",
+      "pt": "Os exemplos de Q2 orientam o desenvolvimento; este cenário critica um produto já funcional através da exploração."
+    },
+    "candidateText": {
+      "en": "Q2 and Q3 can both involve running software. The distinction here is purpose: supporting development with business examples versus critically exploring workflows against user needs. The scenario describes the latter purpose, so Q3 fits better than Q2.",
+      "pt": "Q2 e Q3 podem ambos envolver software em execução. A distinção aqui é a finalidade: apoiar o desenvolvimento com exemplos de negócio ou explorar criticamente fluxos face às necessidades dos utilizadores. O cenário descreve a segunda finalidade, pelo que Q3 se adequa melhor do que Q2."
+    },
+    "original": {
+      "id": "tl-044",
+      "chapter": 5,
+      "lo": "FL-5.1.7",
+      "level": "K2",
+      "topic": "Testing quadrants",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Business representatives explore a working reporting dashboard to discover awkward user workflows and challenge whether it meets their needs. In the testing quadrants model, which quadrant best describes this activity?",
+        "pt": "Representantes do negócio exploram um painel de relatórios funcional para descobrir dificuldades nos fluxos dos utilizadores e questionar se satisfaz as suas necessidades. No modelo dos quadrantes de testes, que quadrante melhor descreve esta atividade?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Q1: technology-facing tests that support the team.",
+            "pt": "Q1: testes orientados para a tecnologia que suportam a equipa."
+          },
+          "explanation": {
+            "en": "Q1 includes component and component integration tests; the scenario evaluates user workflows from a business perspective.",
+            "pt": "Q1 inclui testes de componentes e de integração de componentes; o cenário avalia fluxos de utilizadores de uma perspetiva de negócio."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Q2: business-facing tests that support the team.",
+            "pt": "Q2: testes orientados para o negócio que suportam a equipa."
+          },
+          "explanation": {
+            "en": "Q2 examples guide development; this scenario critiques an existing working product through exploration.",
+            "pt": "Os exemplos de Q2 orientam o desenvolvimento; este cenário critica um produto já funcional através da exploração."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Q4: technology-facing tests that critique the product.",
+            "pt": "Q4: testes orientados para a tecnologia que criticam o produto."
+          },
+          "explanation": {
+            "en": "Although the product is being critiqued, the stated concerns are user workflows and business needs, not technology-facing quality evaluation.",
+            "pt": "Apesar de o produto ser criticado, as preocupações indicadas são os fluxos dos utilizadores e as necessidades do negócio, não uma avaliação orientada para a tecnologia."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Q3: business-facing tests that critique the product.",
+            "pt": "Q3: testes orientados para o negócio que criticam o produto."
+          },
+          "explanation": {
+            "en": "Q3 includes exploratory and usability testing from the user/business perspective, as described.",
+            "pt": "Q3 inclui testes exploratórios e de usabilidade da perspetiva do utilizador e do negócio, como no cenário descrito."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "The activity is business-facing and critiques the working product. These two axes identify Q3; the model does not classify every business-facing activity as Q2.",
+        "pt": "A atividade é orientada para o negócio e critica o produto funcional. Estes dois eixos identificam Q3; o modelo não classifica todas as atividades orientadas para o negócio como Q2."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.1.7",
+        "pages": [51],
+        "report": "docs/blueprint-validation.md#tl-044"
+      }
+    },
+    "candidate": {
+      "id": "tl-044",
+      "chapter": 5,
+      "lo": "FL-5.1.7",
+      "level": "K2",
+      "topic": "Testing quadrants",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Business representatives explore a working reporting dashboard to discover awkward user workflows and challenge whether it meets their needs. In the testing quadrants model, which quadrant best describes this activity?",
+        "pt": "Representantes do negócio exploram um painel de relatórios funcional para descobrir dificuldades nos fluxos dos utilizadores e questionar se satisfaz as suas necessidades. No modelo dos quadrantes de testes, que quadrante melhor descreve esta atividade?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Q1: technology-facing tests that support the team.",
+            "pt": "Q1: testes orientados para a tecnologia que suportam a equipa."
+          },
+          "explanation": {
+            "en": "Q1 includes component and component integration tests; the scenario evaluates user workflows from a business perspective.",
+            "pt": "Q1 inclui testes de componentes e de integração de componentes; o cenário avalia fluxos de utilizadores de uma perspetiva de negócio."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Q2: business-facing tests that support the team.",
+            "pt": "Q2: testes orientados para o negócio que suportam a equipa."
+          },
+          "explanation": {
+            "en": "Q2 and Q3 can both involve running software. The distinction here is purpose: supporting development with business examples versus critically exploring workflows against user needs. The scenario describes the latter purpose, so Q3 fits better than Q2.",
+            "pt": "Q2 e Q3 podem ambos envolver software em execução. A distinção aqui é a finalidade: apoiar o desenvolvimento com exemplos de negócio ou explorar criticamente fluxos face às necessidades dos utilizadores. O cenário descreve a segunda finalidade, pelo que Q3 se adequa melhor do que Q2."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Q4: technology-facing tests that critique the product.",
+            "pt": "Q4: testes orientados para a tecnologia que criticam o produto."
+          },
+          "explanation": {
+            "en": "Although the product is being critiqued, the stated concerns are user workflows and business needs, not technology-facing quality evaluation.",
+            "pt": "Apesar de o produto ser criticado, as preocupações indicadas são os fluxos dos utilizadores e as necessidades do negócio, não uma avaliação orientada para a tecnologia."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Q3: business-facing tests that critique the product.",
+            "pt": "Q3: testes orientados para o negócio que criticam o produto."
+          },
+          "explanation": {
+            "en": "Q3 includes exploratory and usability testing from the user/business perspective, as described.",
+            "pt": "Q3 inclui testes exploratórios e de usabilidade da perspetiva do utilizador e do negócio, como no cenário descrito."
+          }
+        }
+      ],
+      "correct": ["o4"],
+      "explanation": {
+        "en": "The activity is business-facing and critiques the working product. These two axes identify Q3; the model does not classify every business-facing activity as Q2.",
+        "pt": "A atividade é orientada para o negócio e critica o produto funcional. Estes dois eixos identificam Q3; o modelo não classifica todas as atividades orientadas para o negócio como Q2."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.1.7",
+        "pages": [51],
+        "report": "docs/blueprint-validation.md#tl-044"
+      }
+    },
+    "originalCanonicalSHA256": "8c0dbfcb05cce795cb2c9bc36175e347ebf375914e441e903aca16f02fa2a701",
+    "candidateCanonicalSHA256": "0c827f9b23667003788be254810e91a26c6554876043f233e8b02a8082ee78b4",
+    "severity": "LOW pedagogical/interpretation benefit, not a confirmed key error",
+    "answerKeyImpact": "NONE",
+    "ID_LO_K_optionIdentityImpact": "NONE",
+    "currentVersionRevisionPersistenceImpact": "NONE; no implementation",
+    "futureVersionIfAuthorized": 2,
+    "futureRevisionIfAuthorized": "Freeze current.10 and introduce next content revision under a separate authorized task; do not overwrite.1–.9 or old sessions",
+    "testsIfAuthorized": [
+      "Assert exact authorized PT/EN fields and unchanged90IDs/keys/LO/K/options/unaffected rationales.",
+      "Freeze and load.10; preserve.1–.9, active/completed sessions, scoring and backup round trips by revision.",
+      "Run relevant academic/release guards, unit tests, TypeScript/lint/build after extending revision contracts.",
+      "Targeted Playwright for rendered bilingual wording and language switching; no unsupported release claim."
+    ]
+  }
+]

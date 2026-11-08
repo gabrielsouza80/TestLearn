@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "tests/e2e/pedagogical-review-notice.spec.ts",
+    "--workers=1",
+    "--reporter=list",
+    "--output=C:/TestLearn/tmp/pedagogical-e2e-recovery-20261108/four-e2e-results"
+  ],
+  "startedUTC": "2026-11-08T12:04:45.685483+00:00",
+  "finishedUTC": "2026-11-08T12:05:29.541407+00:00",
+  "wallSeconds": 43.846,
+  "exitCode": 1
+}

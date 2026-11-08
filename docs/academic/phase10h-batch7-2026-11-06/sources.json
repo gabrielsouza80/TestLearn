@@ -1,0 +1,32 @@
+{
+  "consultedOn": "2026-11-06",
+  "primary": "ISTQB EN4.0.1, official errata edition of CTFL4.0",
+  "sources": [
+    {
+      "language": "EN",
+      "edition": "4.0.1,2024-09-15",
+      "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "localByteSHA256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1",
+      "pageCount": 78,
+      "pagesConsulted": [14, 22, 38, 40, 43, 44],
+      "method": "Fresh local PDF extraction and successful official web PDF open"
+    },
+    {
+      "language": "PT",
+      "edition": "4.0 translation1.0,syllabus date2023-04-21",
+      "url": "https://pstqb.pt/wp-content/uploads/2024/05/ISTQB_CTFL_Syllabus-v4.0-PT_v1.0.pdf",
+      "localByteSHA256": "ee82959e813673016a4872ad805b883b74e702224a307b728c807c24a269a496",
+      "pageCount": 85,
+      "pagesConsulted": [15, 24, 41, 43, 44, 47, 48],
+      "method": "Fresh local official-translation PDF extraction; official URL web fetch timed out in this execution; no fresh remote-byte verification claimed"
+    }
+  ],
+  "limitations": [
+    "AI review, not independent human SME approval or professional certification.",
+    "PT is4.0translation1.0, not asserted to include allEN4.0.1errata.",
+    "Pages are physical PDF pages counting cover. Local hashes are not asserted to be hashes of freshly downloaded remote bytes.",
+    "The syllabus supports the technique/concept distinctions; it does not define the Portuguese phrase dias bissextos or formally approve any proposed wording.",
+    "Optional Portuguese gloss abordagem de toda a equipa is reviewer wording; the PSTQB heading retains Whole Team Approach.",
+    "No empirical reader-comprehension study or psychometric difficulty calibration. No complete copyrighted PDFs/pages bundled."
+  ]
+}

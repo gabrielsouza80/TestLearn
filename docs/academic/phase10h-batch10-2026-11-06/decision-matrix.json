@@ -1,0 +1,140 @@
+{
+  "scope": "Phase 10H Batch 10 only",
+  "baseCommit": "3fd0a85d95ecb79539515833ee3cbe7869c58049",
+  "reviewedOn": "2026-11-06",
+  "decisions": [
+    {
+      "questionId": "tl-062",
+      "decision": "ACCEPT_AS_IS",
+      "confirmedProblems": [],
+      "confirmedProblemSeverity": null,
+      "interpretationRisk": "LOW: only if typical contributions are misread as an exclusive role boundary; existing wording and rationales already resist that reading.",
+      "learningObjective": "FL-5.1.2",
+      "cognitiveLevel": "K1",
+      "questionVersion": 1,
+      "requiredAnswers": 1,
+      "existingKey": ["o4"],
+      "proposedKey": ["o4"],
+      "independentAnswer": ["o4"],
+      "comparison": "MATCH",
+      "beforeCanonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+      "afterCanonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+      "contentRevisionBefore": "2026-10-27.10",
+      "contentRevisionAfter": "2026-10-27.10",
+      "ownerDecision": null,
+      "humanApproval": "PENDING",
+      "reviewMethod": "AI_REVIEWED",
+      "contentChanged": false,
+      "history": [
+        {
+          "contentRevision": "2026-10-27.1",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.2",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.3",
+          "present": false
+        },
+        {
+          "contentRevision": "2026-10-27.4",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.5",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.6",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.7",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.8",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+          "equalCurrent": true
+        },
+        {
+          "contentRevision": "2026-10-27.9",
+          "present": true,
+          "version": 1,
+          "key": ["o4"],
+          "canonicalSHA256": "387ffd2ae2e1b9c1e9c7f95dc420c930a4b165ceb3c1f2f1cef68ff7e4726a9a",
+          "equalCurrent": true
+        }
+      ],
+      "criticalPairs": [
+        [
+          "typically",
+          "tipicamente",
+          "Frequency/typicality, never exclusive responsibility."
+        ],
+        [
+          "next iteration",
+          "próxima iteração",
+          "Single iteration horizon, not entire release."
+        ],
+        [
+          "entire product backlog",
+          "todo o backlog do produto",
+          "Entire product scope retained in distractor o1."
+        ],
+        [
+          "before the team discusses acceptance criteria",
+          "antes de a equipa discutir os critérios de aceitação",
+          "Temporal ordering retained, not a universal prohibition."
+        ],
+        ["only", "apenas", "Restrictive quantifier in distractor o3 retained."],
+        [
+          "until execution starts",
+          "para o início da execução",
+          "Deferral to execution retained."
+        ],
+        [
+          "testing tasks",
+          "tarefas de teste",
+          "Technical testing work, not unrelated generic tasks."
+        ],
+        [
+          "help estimate",
+          "ajudar a estimar",
+          "Participation in estimation, not sole ownership or guaranteed duration."
+        ]
+      ],
+      "reasonPT": "A opção o4 reconhece atividades explícitas da secção 5.1.2; o1 desloca o foco para todo o produto, o2 para arquitetura, e o3 adia preparação útil. A unicidade não depende de exclusividade de funções.",
+      "reasonEN": "Option o4 recognises explicit 5.1.2 activities; o1 shifts to whole-product business ordering, o2 to architecture, and o3 defers useful preparation. Uniqueness does not depend on role exclusivity.",
+      "KlevelAssessment": "K1 recognition: a museum scenario supplies context, but no estimate calculation, prioritization algorithm or substantive K3 application is required. Easy distractors are a difficulty limitation, not a validity defect. This item assesses iteration planning, one part of the broader iteration-and-release LO; it does not alone prove mastery of the whole LO.",
+      "contraryEvidence": "A tester may also be a product owner or architect; previous defect metrics are useful and effort estimation also occurs in release planning. These facts do not make the full distractors the characteristic contribution asked for. Correctness is based on the scenario and complete option, not job-title prohibitions.",
+      "explanationQuality": "All four published option explanations are bilingual and accurate. General rationale correctly distinguishes recognition from calculation; its cognitive-level meta-comment is optional editorial matter, not academic misinformation.",
+      "mandatoryCorrection": null,
+      "optionalCandidatePath": "optional-candidate.json"
+    }
+  ],
+  "ownerAcceptedCount": 0,
+  "humanApprovedCount": 0,
+  "contentChanges": 0
+}

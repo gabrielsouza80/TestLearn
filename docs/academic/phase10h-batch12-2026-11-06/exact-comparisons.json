@@ -1,0 +1,1364 @@
+[
+  {
+    "questionId": "tl-016",
+    "original": {
+      "id": "tl-016",
+      "chapter": 3,
+      "lo": "FL-3.2.3",
+      "level": "K1",
+      "topic": "Review roles",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Who normally facilitates a review meeting and helps keep it effective?",
+        "pt": "Quem normalmente facilita uma reunião de revisão e ajuda a mantê-la eficaz?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "The moderator",
+            "pt": "O moderador"
+          },
+          "explanation": {
+            "en": "The moderator facilitates the review meeting through mediation, time management and a safe environment for participation. The scribe records information; the manager provides resources; the review leader organizes the review overall.",
+            "pt": "O moderador facilita a reunião de revisão através da mediação, da gestão do tempo e de um ambiente seguro para a participação. O redator regista informação; o gestor disponibiliza recursos; o líder de revisão organiza a revisão no seu conjunto."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "The scribe",
+            "pt": "O redator (anotador)"
+          },
+          "explanation": {
+            "en": "The scribe records anomalies and review decisions; this is not the meeting facilitation responsibility.",
+            "pt": "O redator regista anomalias e decisões da revisão; facilitar a reunião não é esta responsabilidade."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "The manager",
+            "pt": "O gestor"
+          },
+          "explanation": {
+            "en": "The manager provides resources and decides what will be reviewed; the moderator facilitates the meeting.",
+            "pt": "O gestor disponibiliza recursos e decide o que será revisto; o moderador facilita a reunião."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "The review leader",
+            "pt": "O líder de revisão"
+          },
+          "explanation": {
+            "en": "The review leader has overall responsibility and organizes participation, timing and location. The moderator is specifically responsible for effective meeting facilitation.",
+            "pt": "O líder de revisão tem responsabilidade global e organiza participantes, data e local. O moderador é especificamente responsável pela facilitação eficaz da reunião."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "The moderator facilitates the review meeting through mediation, time management and a safe environment for participation. The scribe records information; the manager provides resources; the review leader organizes the review overall.",
+        "pt": "O moderador facilita a reunião de revisão através da mediação, da gestão do tempo e de um ambiente seguro para a participação. O redator regista informação; o gestor disponibiliza recursos; o líder de revisão organiza a revisão no seu conjunto."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.2.3",
+        "pages": [
+          36
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-016"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-016",
+      "chapter": 3,
+      "lo": "FL-3.2.3",
+      "level": "K1",
+      "topic": "Review roles",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Who normally facilitates a review meeting and helps keep it effective?",
+        "pt": "Quem normalmente facilita uma reunião de revisão e ajuda a mantê-la eficaz?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "The moderator",
+            "pt": "O moderador"
+          },
+          "explanation": {
+            "en": "The moderator facilitates the review meeting through mediation, time management and a safe environment for participation. The scribe records information; the manager provides resources; the review leader organizes the review overall.",
+            "pt": "O moderador facilita a reunião de revisão através da mediação, da gestão do tempo e de um ambiente seguro para a participação. O redator regista informação; o gestor disponibiliza recursos; o líder de revisão organiza a revisão no seu conjunto."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "The scribe",
+            "pt": "O redator (anotador)"
+          },
+          "explanation": {
+            "en": "The scribe records anomalies and review decisions; this is not the meeting facilitation responsibility.",
+            "pt": "O redator regista anomalias e decisões da revisão; facilitar a reunião não é esta responsabilidade."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "The manager",
+            "pt": "O gestor"
+          },
+          "explanation": {
+            "en": "The manager provides resources and decides what will be reviewed; the moderator facilitates the meeting.",
+            "pt": "O gestor disponibiliza recursos e decide o que será revisto; o moderador facilita a reunião."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "The review leader",
+            "pt": "O líder de revisão"
+          },
+          "explanation": {
+            "en": "The review leader has overall responsibility and organizes participation, timing and location. The moderator is specifically responsible for effective meeting facilitation.",
+            "pt": "O líder de revisão tem responsabilidade global e organiza participantes, data e local. O moderador é especificamente responsável pela facilitação eficaz da reunião."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "The moderator facilitates the review meeting through mediation, time management and a safe environment for participation. The scribe records information; the manager provides resources; the review leader organizes the review overall.",
+        "pt": "O moderador facilita a reunião de revisão através da mediação, da gestão do tempo e de um ambiente seguro para a participação. O redator regista informação; o gestor disponibiliza recursos; o líder de revisão organiza a revisão no seu conjunto."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.2.3",
+        "pages": [
+          36
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-016"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-018",
+    "original": {
+      "id": "tl-018",
+      "chapter": 3,
+      "lo": "FL-3.2.4",
+      "level": "K2",
+      "topic": "Review types",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team needs the most formal review type, with defined roles and collected metrics. Which fits?",
+        "pt": "Uma equipa precisa do tipo de revisão mais formal, com papéis definidos e métricas recolhidas. Qual é adequado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Inspection",
+            "pt": "Inspeção"
+          },
+          "explanation": {
+            "en": "Inspection is the most formal CTFL review type: it follows the complete generic review process and collects metrics for process improvement. Defined roles or metrics in isolation do not turn another review type into an inspection.",
+            "pt": "A inspeção é o tipo de revisão CTFL mais formal: segue o processo genérico de revisão completo e recolhe métricas para melhorar o processo. Papéis definidos ou métricas, isoladamente, não transformam outro tipo de revisão numa inspeção."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Technical review",
+            "pt": "Revisão técnica"
+          },
+          "explanation": {
+            "en": "A technical review uses technically qualified reviewers and a moderator, but inspection is the most formal type described.",
+            "pt": "Uma revisão técnica envolve revisores tecnicamente qualificados e um moderador, mas a inspeção é o tipo mais formal descrito."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Walkthrough",
+            "pt": "Walkthrough"
+          },
+          "explanation": {
+            "en": "A walkthrough is led by the author and does not require the full inspection process and metrics.",
+            "pt": "Um walkthrough é conduzido pelo autor e não exige todo o processo de inspeção nem as suas métricas."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Informal review",
+            "pt": "Revisão informal"
+          },
+          "explanation": {
+            "en": "An informal review does not require the complete defined process and collected metrics characteristic of an inspection. Other review types may collect metrics, but inspection is the most formal CTFL type.",
+            "pt": "Uma revisão informal não exige o processo completo definido e as métricas recolhidas característicos de uma inspeção. Outros tipos podem recolher métricas, mas a inspeção é o tipo CTFL mais formal."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "Inspection is the most formal CTFL review type: it follows the complete generic review process and collects metrics for process improvement. Defined roles or metrics in isolation do not turn another review type into an inspection.",
+        "pt": "A inspeção é o tipo de revisão CTFL mais formal: segue o processo genérico de revisão completo e recolhe métricas para melhorar o processo. Papéis definidos ou métricas, isoladamente, não transformam outro tipo de revisão numa inspeção."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.2.4",
+        "pages": [
+          36,
+          37
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-018"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-018",
+      "chapter": 3,
+      "lo": "FL-3.2.4",
+      "level": "K2",
+      "topic": "Review types",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team needs the most formal review type, with defined roles and collected metrics. Which fits?",
+        "pt": "Uma equipa precisa do tipo de revisão mais formal, com papéis definidos e métricas recolhidas. Qual é adequado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Inspection",
+            "pt": "Inspeção"
+          },
+          "explanation": {
+            "en": "Inspection is the most formal CTFL review type: it follows the complete generic review process and collects metrics for process improvement. Defined roles or metrics in isolation do not turn another review type into an inspection.",
+            "pt": "A inspeção é o tipo de revisão CTFL mais formal: segue o processo genérico de revisão completo e recolhe métricas para melhorar o processo. Papéis definidos ou métricas, isoladamente, não transformam outro tipo de revisão numa inspeção."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Technical review",
+            "pt": "Revisão técnica"
+          },
+          "explanation": {
+            "en": "A technical review uses technically qualified reviewers and a moderator, but inspection is the most formal type described.",
+            "pt": "Uma revisão técnica envolve revisores tecnicamente qualificados e um moderador, mas a inspeção é o tipo mais formal descrito."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Walkthrough",
+            "pt": "Walkthrough"
+          },
+          "explanation": {
+            "en": "A walkthrough is led by the author and does not require the full inspection process and metrics.",
+            "pt": "Um walkthrough é conduzido pelo autor e não exige todo o processo de inspeção nem as suas métricas."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Informal review",
+            "pt": "Revisão informal"
+          },
+          "explanation": {
+            "en": "An informal review does not require the complete defined process and collected metrics characteristic of an inspection. Other review types may collect metrics, but inspection is the most formal CTFL type.",
+            "pt": "Uma revisão informal não exige o processo completo definido e as métricas recolhidas característicos de uma inspeção. Outros tipos podem recolher métricas, mas a inspeção é o tipo CTFL mais formal."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "Inspection is the most formal CTFL review type: it follows the complete generic review process and collects metrics for process improvement. Defined roles or metrics in isolation do not turn another review type into an inspection.",
+        "pt": "A inspeção é o tipo de revisão CTFL mais formal: segue o processo genérico de revisão completo e recolhe métricas para melhorar o processo. Papéis definidos ou métricas, isoladamente, não transformam outro tipo de revisão numa inspeção."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "3.2.4",
+        "pages": [
+          36,
+          37
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-018"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-031",
+    "original": {
+      "id": "tl-031",
+      "chapter": 5,
+      "lo": "FL-5.1.1",
+      "level": "K2",
+      "topic": "Test plan",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team needs a project-level document bringing together the agreed test scope, resources and approach. Which artifact addresses this need?",
+        "pt": "Uma equipa precisa de um documento ao nível do projeto que reúna o âmbito, os recursos e a abordagem de teste acordados. Que artefacto responde a esta necessidade?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Test plan",
+            "pt": "Plano de testes"
+          },
+          "explanation": {
+            "en": "A test plan communicates project-specific test objectives, scope, resources and processes. It brings these agreements together; a policy, execution schedule or completion report has a different purpose.",
+            "pt": "Um plano de testes comunica objetivos, âmbito, recursos e processos de teste específicos do projeto. Reúne esses acordos; uma política, um cronograma de execução ou um relatório de conclusão têm finalidades diferentes."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Test policy",
+            "pt": "Política de testes"
+          },
+          "explanation": {
+            "en": "A policy provides organizational direction. The project test plan communicates the specific scope, resources and approach for this testing effort.",
+            "pt": "Uma política fornece orientação organizacional. O plano de testes do projeto comunica o âmbito, os recursos e a abordagem específicos deste esforço de teste."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Test execution schedule",
+            "pt": "Cronograma de execução de testes"
+          },
+          "explanation": {
+            "en": "An execution schedule arranges test runs and dependencies. It does not bring together the project test objectives, scope, resources and approach as a test plan does.",
+            "pt": "Um cronograma de execução organiza execuções e dependências. Não reúne os objetivos, o âmbito, os recursos e a abordagem de teste do projeto como um plano de testes."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test completion report",
+            "pt": "Relatório de conclusão do teste"
+          },
+          "explanation": {
+            "en": "A completion report summarizes the outcomes of completed testing. It is not the planning document used to agree how the project testing will be organized.",
+            "pt": "Um relatório de conclusão resume os resultados dos testes concluídos. Não é o documento de planeamento usado para acordar como serão organizados os testes do projeto."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "A test plan communicates project-specific test objectives, scope, resources and processes. It brings these agreements together; a policy, execution schedule or completion report has a different purpose.",
+        "pt": "Um plano de testes comunica objetivos, âmbito, recursos e processos de teste específicos do projeto. Reúne esses acordos; uma política, um cronograma de execução ou um relatório de conclusão têm finalidades diferentes."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.1",
+        "pages": [
+          48
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-031"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-031",
+      "chapter": 5,
+      "lo": "FL-5.1.1",
+      "level": "K2",
+      "topic": "Test plan",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team needs a project-level document bringing together the agreed test scope, resources and approach. Which artifact addresses this need?",
+        "pt": "Uma equipa precisa de um documento ao nível do projeto que reúna o âmbito, os recursos e a abordagem de teste acordados. Que artefacto responde a esta necessidade?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Test plan",
+            "pt": "Plano de testes"
+          },
+          "explanation": {
+            "en": "A test plan communicates project-specific test objectives, scope, resources and processes. It brings these agreements together; a policy, execution schedule or completion report has a different purpose.",
+            "pt": "Um plano de testes comunica objetivos, âmbito, recursos e processos de teste específicos do projeto. Reúne esses acordos; uma política, um cronograma de execução ou um relatório de conclusão têm finalidades diferentes."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Test policy",
+            "pt": "Política de testes"
+          },
+          "explanation": {
+            "en": "A policy provides organizational direction. The project test plan communicates the specific scope, resources and approach for this testing effort.",
+            "pt": "Uma política fornece orientação organizacional. O plano de testes do projeto comunica o âmbito, os recursos e a abordagem específicos deste esforço de teste."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Test execution schedule",
+            "pt": "Cronograma de execução de testes"
+          },
+          "explanation": {
+            "en": "An execution schedule arranges test runs and dependencies. It does not bring together the project test objectives, scope, resources and approach as a test plan does.",
+            "pt": "Um cronograma de execução organiza execuções e dependências. Não reúne os objetivos, o âmbito, os recursos e a abordagem de teste do projeto como um plano de testes."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test completion report",
+            "pt": "Relatório de conclusão do teste"
+          },
+          "explanation": {
+            "en": "A completion report summarizes the outcomes of completed testing. It is not the planning document used to agree how the project testing will be organized.",
+            "pt": "Um relatório de conclusão resume os resultados dos testes concluídos. Não é o documento de planeamento usado para acordar como serão organizados os testes do projeto."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "A test plan communicates project-specific test objectives, scope, resources and processes. It brings these agreements together; a policy, execution schedule or completion report has a different purpose.",
+        "pt": "Um plano de testes comunica objetivos, âmbito, recursos e processos de teste específicos do projeto. Reúne esses acordos; uma política, um cronograma de execução ou um relatório de conclusão têm finalidades diferentes."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 3,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.1.1",
+        "pages": [
+          48
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-031"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-034",
+    "original": {
+      "id": "tl-034",
+      "chapter": 5,
+      "lo": "FL-5.2.3",
+      "level": "K2",
+      "topic": "Risk-based testing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Incorrect transfers and a cosmetic alignment issue have comparable estimated likelihood, but incorrect transfers have much higher impact. Which choice best bases test effort on the assessed product risk?",
+        "pt": "Transferências incorretas e um desalinhamento visual têm probabilidades estimadas comparáveis, mas as transferências incorretas têm impacto muito superior. Que escolha baseia melhor o esforço de teste no risco de produto avaliado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Allocate deeper testing to transfers, considering their likelihood and impact",
+            "pt": "Atribuir testes mais aprofundados às transferências, considerando a probabilidade e o impacto"
+          },
+          "explanation": {
+            "en": "Risk analysis guides effort and scope; both impact and likelihood matter.",
+            "pt": "A análise de risco orienta esforço e âmbito; impacto e probabilidade contam."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Prioritize the visual issue because users notice it immediately",
+            "pt": "Dar prioridade ao problema visual porque os utilizadores o notam imediatamente"
+          },
+          "explanation": {
+            "en": "Visibility alone is not the assessed risk level. With comparable likelihood, the much higher impact of incorrect transfers calls for deeper testing.",
+            "pt": "A visibilidade, por si só, não é o nível de risco avaliado. Com probabilidades comparáveis, o impacto muito superior das transferências incorretas exige testes mais aprofundados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Prioritize the visual issue because it is quicker to verify",
+            "pt": "Dar prioridade ao problema visual porque é mais rápido de verificar"
+          },
+          "explanation": {
+            "en": "Execution speed can affect scheduling, but it does not outweigh the stated higher product risk when deciding test thoroughness.",
+            "pt": "A rapidez de execução pode afetar o planeamento, mas não se sobrepõe ao risco de produto superior indicado ao decidir a profundidade dos testes."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Treat comparable likelihood as comparable risk and split effort equally",
+            "pt": "Tratar probabilidades comparáveis como riscos comparáveis e dividir o esforço igualmente"
+          },
+          "explanation": {
+            "en": "Risk level considers both likelihood and impact. Comparable likelihood does not imply comparable risk when the impacts differ substantially.",
+            "pt": "O nível de risco considera a probabilidade e o impacto. Probabilidades comparáveis não implicam riscos comparáveis quando os impactos diferem substancialmente."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "Risk analysis guides effort and scope; both impact and likelihood matter.",
+        "pt": "A análise de risco orienta esforço e âmbito; impacto e probabilidade contam."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.2.3",
+        "pages": [
+          52,
+          53
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-034"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-034",
+      "chapter": 5,
+      "lo": "FL-5.2.3",
+      "level": "K2",
+      "topic": "Risk-based testing",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "Incorrect transfers and a cosmetic alignment issue have comparable estimated likelihood, but incorrect transfers have much higher impact. Which choice best bases test effort on the assessed product risk?",
+        "pt": "Transferências incorretas e um desalinhamento visual têm probabilidades estimadas comparáveis, mas as transferências incorretas têm impacto muito superior. Que escolha baseia melhor o esforço de teste no risco de produto avaliado?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Allocate deeper testing to transfers, considering their likelihood and impact",
+            "pt": "Atribuir testes mais aprofundados às transferências, considerando a probabilidade e o impacto"
+          },
+          "explanation": {
+            "en": "Risk analysis guides effort and scope; both impact and likelihood matter.",
+            "pt": "A análise de risco orienta esforço e âmbito; impacto e probabilidade contam."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Prioritize the visual issue because users notice it immediately",
+            "pt": "Dar prioridade ao problema visual porque os utilizadores o notam imediatamente"
+          },
+          "explanation": {
+            "en": "Visibility alone is not the assessed risk level. With comparable likelihood, the much higher impact of incorrect transfers calls for deeper testing.",
+            "pt": "A visibilidade, por si só, não é o nível de risco avaliado. Com probabilidades comparáveis, o impacto muito superior das transferências incorretas exige testes mais aprofundados."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Prioritize the visual issue because it is quicker to verify",
+            "pt": "Dar prioridade ao problema visual porque é mais rápido de verificar"
+          },
+          "explanation": {
+            "en": "Execution speed can affect scheduling, but it does not outweigh the stated higher product risk when deciding test thoroughness.",
+            "pt": "A rapidez de execução pode afetar o planeamento, mas não se sobrepõe ao risco de produto superior indicado ao decidir a profundidade dos testes."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Treat comparable likelihood as comparable risk and split effort equally",
+            "pt": "Tratar probabilidades comparáveis como riscos comparáveis e dividir o esforço igualmente"
+          },
+          "explanation": {
+            "en": "Risk level considers both likelihood and impact. Comparable likelihood does not imply comparable risk when the impacts differ substantially.",
+            "pt": "O nível de risco considera a probabilidade e o impacto. Probabilidades comparáveis não implicam riscos comparáveis quando os impactos diferem substancialmente."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "Risk analysis guides effort and scope; both impact and likelihood matter.",
+        "pt": "A análise de risco orienta esforço e âmbito; impacto e probabilidade contam."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "5.2.3",
+        "pages": [
+          52,
+          53
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-034"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-039",
+    "original": {
+      "id": "tl-039",
+      "chapter": 6,
+      "lo": "FL-6.1.1",
+      "level": "K2",
+      "topic": "Tools",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team must generate thousands of simultaneous requests against a test environment and measure response latency under that generated load. Which tool fits best?",
+        "pt": "Uma equipa tem de gerar milhares de pedidos simultâneos contra um ambiente de teste e medir a latência de resposta sob essa carga gerada. Que ferramenta é mais adequada?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Load testing tool",
+            "pt": "Ferramenta de teste de carga"
+          },
+          "explanation": {
+            "en": "Load tools generate traffic and measure performance.",
+            "pt": "As ferramentas de carga geram tráfego e medem desempenho."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Static analysis tool",
+            "pt": "Ferramenta de análise estática"
+          },
+          "explanation": {
+            "en": "Static analysis examines code without executing the service. It does not generate the requested concurrent traffic or measure latency under that traffic.",
+            "pt": "A análise estática examina código sem executar o serviço. Não gera o tráfego concorrente solicitado nem mede a latência sob esse tráfego."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Application monitoring tool",
+            "pt": "Ferramenta de monitorização de aplicações"
+          },
+          "explanation": {
+            "en": "Monitoring can observe latency from existing traffic, but the requirement includes actively generating controlled concurrent requests against a test environment.",
+            "pt": "A monitorização pode observar a latência do tráfego existente, mas o requisito inclui gerar ativamente pedidos concorrentes controlados contra um ambiente de teste."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test management tool",
+            "pt": "Ferramenta de gestão de testes"
+          },
+          "explanation": {
+            "en": "Test management organizes plans, cases and results. Its primary role is not generating concurrent service load and measuring runtime performance.",
+            "pt": "A gestão de testes organiza planos, casos e resultados. A sua função principal não é gerar carga concorrente num serviço nem medir o desempenho em execução."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "Load tools generate traffic and measure performance.",
+        "pt": "As ferramentas de carga geram tráfego e medem desempenho."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "6.1",
+        "pages": [
+          59
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-039"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "proposed": {
+      "id": "tl-039",
+      "chapter": 6,
+      "lo": "FL-6.1.1",
+      "level": "K2",
+      "topic": "Tools",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A team must generate thousands of simultaneous requests against a test environment and measure response latency under that generated load. Which tool fits best?",
+        "pt": "Uma equipa tem de gerar milhares de pedidos simultâneos contra um ambiente de teste e medir a latência de resposta sob essa carga gerada. Que ferramenta é mais adequada?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Load testing tool",
+            "pt": "Ferramenta de teste de carga"
+          },
+          "explanation": {
+            "en": "Load tools generate traffic and measure performance.",
+            "pt": "As ferramentas de carga geram tráfego e medem desempenho."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Static analysis tool",
+            "pt": "Ferramenta de análise estática"
+          },
+          "explanation": {
+            "en": "Static analysis examines code without executing the service. It does not generate the requested concurrent traffic or measure latency under that traffic.",
+            "pt": "A análise estática examina código sem executar o serviço. Não gera o tráfego concorrente solicitado nem mede a latência sob esse tráfego."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Application monitoring tool",
+            "pt": "Ferramenta de monitorização de aplicações"
+          },
+          "explanation": {
+            "en": "Monitoring can observe latency from existing traffic, but the requirement includes actively generating controlled concurrent requests against a test environment.",
+            "pt": "A monitorização pode observar a latência do tráfego existente, mas o requisito inclui gerar ativamente pedidos concorrentes controlados contra um ambiente de teste."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Test management tool",
+            "pt": "Ferramenta de gestão de testes"
+          },
+          "explanation": {
+            "en": "Test management organizes plans, cases and results. Its primary role is not generating concurrent service load and measuring runtime performance.",
+            "pt": "A gestão de testes organiza planos, casos e resultados. A sua função principal não é gerar carga concorrente num serviço nem medir o desempenho em execução."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "Load tools generate traffic and measure performance.",
+        "pt": "As ferramentas de carga geram tráfego e medem desempenho."
+      },
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "version": 2,
+      "humanApproval": "PENDING",
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-28",
+        "section": "6.1",
+        "pages": [
+          59
+        ],
+        "report": "docs/academic-audit.md#fase-5b--tl-039"
+      },
+      "syllabus": "4.0.1",
+      "origin": "original"
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-042",
+    "original": {
+      "id": "tl-042",
+      "chapter": 1,
+      "lo": "FL-1.4.3",
+      "level": "K2",
+      "topic": "Testware",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester analyses booking requirements and records what needs testing, ordered by risk. No test cases or scripts have been written yet. Which work product best represents the output of this analysis?",
+        "pt": "Um testador analisa requisitos de reservas e regista o que deve ser testado, ordenado por risco. Ainda não foram escritos casos de teste nem scripts. Que produto de trabalho melhor representa o resultado desta análise?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Prioritised test conditions linked to the requirements.",
+            "pt": "Condições de teste priorizadas e ligadas aos requisitos."
+          },
+          "explanation": {
+            "en": "Test analysis produces test conditions, identifying what to test and relating it to the test basis.",
+            "pt": "A análise de teste produz condições de teste, identificando o que testar e relacionando-o com a base para testes."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Executable automation scripts for the booking workflow.",
+            "pt": "Scripts de automação executáveis para o fluxo de reservas."
+          },
+          "explanation": {
+            "en": "Scripts are test implementation work products, not the described analysis output.",
+            "pt": "Os scripts são produtos de trabalho da implementação do teste, não o resultado da análise descrita."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "A test completion report with archived results.",
+            "pt": "Um relatório de conclusão do teste com resultados arquivados."
+          },
+          "explanation": {
+            "en": "A completion report summarises completed testing; the scenario is still analysing requirements.",
+            "pt": "Um relatório de conclusão resume testes concluídos; o cenário ainda está na análise dos requisitos."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Detailed test cases with input data and expected results.",
+            "pt": "Casos de teste detalhados com dados de entrada e resultados esperados."
+          },
+          "explanation": {
+            "en": "Elaborating conditions into test cases is test design, explicitly not yet performed here.",
+            "pt": "Concretizar condições em casos de teste é conceção de teste, explicitamente ainda não realizada neste cenário."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "The described output is a prioritised set of test conditions. Test cases belong to design, scripts to implementation, and completion reports to completion.",
+        "pt": "O resultado descrito é um conjunto priorizado de condições de teste. Os casos de teste pertencem à conceção, os scripts à implementação e os relatórios de conclusão à conclusão."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "1.4.3",
+        "pages": [
+          20
+        ],
+        "report": "docs/blueprint-validation.md#tl-042"
+      }
+    },
+    "proposed": {
+      "id": "tl-042",
+      "chapter": 1,
+      "lo": "FL-1.4.3",
+      "level": "K2",
+      "topic": "Testware",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "A tester analyses booking requirements and records what needs testing, ordered by risk. No test cases or scripts have been written yet. Which work product best represents the output of this analysis?",
+        "pt": "Um testador analisa requisitos de reservas e regista o que deve ser testado, ordenado por risco. Ainda não foram escritos casos de teste nem scripts. Que produto de trabalho melhor representa o resultado desta análise?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Prioritised test conditions linked to the requirements.",
+            "pt": "Condições de teste priorizadas e ligadas aos requisitos."
+          },
+          "explanation": {
+            "en": "Test analysis produces test conditions, identifying what to test and relating it to the test basis.",
+            "pt": "A análise de teste produz condições de teste, identificando o que testar e relacionando-o com a base para testes."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Executable automation scripts for the booking workflow.",
+            "pt": "Scripts de automação executáveis para o fluxo de reservas."
+          },
+          "explanation": {
+            "en": "Scripts are test implementation work products, not the described analysis output.",
+            "pt": "Os scripts são produtos de trabalho da implementação do teste, não o resultado da análise descrita."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "A test completion report with archived results.",
+            "pt": "Um relatório de conclusão do teste com resultados arquivados."
+          },
+          "explanation": {
+            "en": "A completion report summarises completed testing; the scenario is still analysing requirements.",
+            "pt": "Um relatório de conclusão resume testes concluídos; o cenário ainda está na análise dos requisitos."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Detailed test cases with input data and expected results.",
+            "pt": "Casos de teste detalhados com dados de entrada e resultados esperados."
+          },
+          "explanation": {
+            "en": "Elaborating conditions into test cases is test design, explicitly not yet performed here.",
+            "pt": "Concretizar condições em casos de teste é conceção de teste, explicitamente ainda não realizada neste cenário."
+          }
+        }
+      ],
+      "correct": [
+        "o1"
+      ],
+      "explanation": {
+        "en": "The described output is a prioritised set of test conditions. Test cases belong to design, scripts to implementation, and completion reports to completion.",
+        "pt": "O resultado descrito é um conjunto priorizado de condições de teste. Os casos de teste pertencem à conceção, os scripts à implementação e os relatórios de conclusão à conclusão."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "1.4.3",
+        "pages": [
+          20
+        ],
+        "report": "docs/blueprint-validation.md#tl-042"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-043",
+    "original": {
+      "id": "tl-043",
+      "chapter": 2,
+      "lo": "FL-2.1.6",
+      "level": "K2",
+      "topic": "Retrospectives",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "At an iteration retrospective, the team identifies late interface feedback as a recurring problem. Which action best turns this finding into process improvement?",
+        "pt": "Numa retrospetiva de iteração, a equipa identifica o feedback tardio sobre interfaces como um problema recorrente. Que ação melhor transforma esta conclusão numa melhoria do processo?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Archive the suggestion without checking later whether anything changes.",
+            "pt": "Arquivar a sugestão sem verificar posteriormente se alguma coisa muda."
+          },
+          "explanation": {
+            "en": "Recording alone does not ensure that the recommended improvement is followed up.",
+            "pt": "O registo, por si só, não assegura o acompanhamento da melhoria recomendada."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use the retrospective to rank individual testers by the number of defects they missed.",
+            "pt": "Usar a retrospetiva para classificar individualmente os testadores pelo número de defeitos que não detetaram."
+          },
+          "explanation": {
+            "en": "Blaming individuals does not address the identified process issue or support team learning.",
+            "pt": "Culpabilizar pessoas não resolve o problema de processo identificado nem apoia a aprendizagem da equipa."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Agree on earlier interface reviews, assign responsibility, and check the outcome in the next iteration.",
+            "pt": "Acordar revisões de interfaces mais cedo, atribuir responsabilidades e verificar o resultado na iteração seguinte."
+          },
+          "explanation": {
+            "en": "This makes an improvement actionable and follows it up, supporting continuous improvement.",
+            "pt": "Isto torna a melhoria executável e permite acompanhá-la, apoiando a melhoria contínua."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Restrict the discussion to fixing the current interface defects and exclude changes to the testing process.",
+            "pt": "Limitar a discussão à correção dos defeitos atuais das interfaces e excluir alterações ao processo de teste."
+          },
+          "explanation": {
+            "en": "Fixing product defects is useful, but excluding process changes misses the retrospective improvement objective.",
+            "pt": "Corrigir defeitos do produto é útil, mas excluir alterações ao processo não cumpre o objetivo de melhoria da retrospetiva."
+          }
+        }
+      ],
+      "correct": [
+        "o3"
+      ],
+      "explanation": {
+        "en": "A retrospective examines what worked, what can improve and how to apply improvements. Agreed actions require follow-up rather than blame or passive archiving.",
+        "pt": "Uma retrospetiva analisa o que funcionou, o que pode melhorar e como aplicar melhorias. As ações acordadas exigem acompanhamento, em vez de culpabilização ou arquivo passivo."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "2.1.6",
+        "pages": [
+          28
+        ],
+        "report": "docs/blueprint-validation.md#tl-043"
+      }
+    },
+    "proposed": {
+      "id": "tl-043",
+      "chapter": 2,
+      "lo": "FL-2.1.6",
+      "level": "K2",
+      "topic": "Retrospectives",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "At an iteration retrospective, the team identifies late interface feedback as a recurring problem. Which action best turns this finding into process improvement?",
+        "pt": "Numa retrospetiva de iteração, a equipa identifica o feedback tardio sobre interfaces como um problema recorrente. Que ação melhor transforma esta conclusão numa melhoria do processo?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "Archive the suggestion without checking later whether anything changes.",
+            "pt": "Arquivar a sugestão sem verificar posteriormente se alguma coisa muda."
+          },
+          "explanation": {
+            "en": "Recording alone does not ensure that the recommended improvement is followed up.",
+            "pt": "O registo, por si só, não assegura o acompanhamento da melhoria recomendada."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "Use the retrospective to rank individual testers by the number of defects they missed.",
+            "pt": "Usar a retrospetiva para classificar individualmente os testadores pelo número de defeitos que não detetaram."
+          },
+          "explanation": {
+            "en": "Blaming individuals does not address the identified process issue or support team learning.",
+            "pt": "Culpabilizar pessoas não resolve o problema de processo identificado nem apoia a aprendizagem da equipa."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "Agree on earlier interface reviews, assign responsibility, and check the outcome in the next iteration.",
+            "pt": "Acordar revisões de interfaces mais cedo, atribuir responsabilidades e verificar o resultado na iteração seguinte."
+          },
+          "explanation": {
+            "en": "This makes an improvement actionable and follows it up, supporting continuous improvement.",
+            "pt": "Isto torna a melhoria executável e permite acompanhá-la, apoiando a melhoria contínua."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "Restrict the discussion to fixing the current interface defects and exclude changes to the testing process.",
+            "pt": "Limitar a discussão à correção dos defeitos atuais das interfaces e excluir alterações ao processo de teste."
+          },
+          "explanation": {
+            "en": "Fixing product defects is useful, but excluding process changes misses the retrospective improvement objective.",
+            "pt": "Corrigir defeitos do produto é útil, mas excluir alterações ao processo não cumpre o objetivo de melhoria da retrospetiva."
+          }
+        }
+      ],
+      "correct": [
+        "o3"
+      ],
+      "explanation": {
+        "en": "A retrospective examines what worked, what can improve and how to apply improvements. Agreed actions require follow-up rather than blame or passive archiving.",
+        "pt": "Uma retrospetiva analisa o que funcionou, o que pode melhorar e como aplicar melhorias. As ações acordadas exigem acompanhamento, em vez de culpabilização ou arquivo passivo."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "2.1.6",
+        "pages": [
+          28
+        ],
+        "report": "docs/blueprint-validation.md#tl-043"
+      }
+    },
+    "changed": false
+  },
+  {
+    "questionId": "tl-045",
+    "original": {
+      "id": "tl-045",
+      "chapter": 5,
+      "lo": "FL-5.3.2",
+      "level": "K2",
+      "topic": "Test reporting",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "System testing is still in progress. Coverage is behind plan, an environment outage blocks work, and a high-risk area remains untested. Management must decide whether to adjust resources. Which report best supports this decision?",
+        "pt": "O teste de sistema ainda está em curso. A cobertura está abaixo do planeado, uma indisponibilidade do ambiente bloqueia o trabalho e uma área de risco elevado ainda não foi testada. A gestão tem de decidir se ajusta os recursos. Que relatório melhor apoia esta decisão?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "A completion report declaring that the test level has ended and all exit criteria have been met.",
+            "pt": "Um relatório de conclusão que declara que o nível de teste terminou e todos os critérios de saída foram cumpridos."
+          },
+          "explanation": {
+            "en": "The level is ongoing and an important area is untested; declaring completion contradicts the given situation.",
+            "pt": "O nível está em curso e uma área importante não foi testada; declarar a conclusão contradiz a situação apresentada."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "A defect report describing only one observed application failure.",
+            "pt": "Um relatório de defeito que descreve apenas uma falha observada na aplicação."
+          },
+          "explanation": {
+            "en": "A single defect report does not summarise progress against plan, environment impediments and the remaining test risk.",
+            "pt": "Um relatório de um único defeito não resume o progresso face ao plano, os impedimentos do ambiente e o risco de teste restante."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "A progress report showing the reporting period, plan deviations, impediments, risk changes and planned next work.",
+            "pt": "Um relatório de progresso que apresenta o período reportado, os desvios do plano, os impedimentos, as alterações de risco e o trabalho seguinte planeado."
+          },
+          "explanation": {
+            "en": "Progress reports provide information during testing to support control decisions such as changing resources or schedule.",
+            "pt": "Os relatórios de progresso fornecem informação durante os testes para apoiar decisões de controlo, como alterar recursos ou calendário."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "A progress report listing individual activity totals without plan deviations, impediments or risk information.",
+            "pt": "Um relatório de progresso que lista totais de atividade individuais sem desvios do plano, impedimentos ou informação sobre riscos."
+          },
+          "explanation": {
+            "en": "Activity totals alone omit the evidence management needs to judge the stated resource and risk problem.",
+            "pt": "Os totais de atividade, por si só, omitem a evidência de que a gestão precisa para avaliar o problema de recursos e risco descrito."
+          }
+        }
+      ],
+      "correct": [
+        "o3"
+      ],
+      "explanation": {
+        "en": "During ongoing testing, a progress report communicates deviations, impediments and risks so stakeholders can make control decisions. A completion report serves a different point in the test lifecycle.",
+        "pt": "Durante os testes em curso, um relatório de progresso comunica desvios, impedimentos e riscos para os stakeholders poderem tomar decisões de controlo. Um relatório de conclusão corresponde a outro momento do ciclo de teste."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.3.2",
+        "pages": [
+          54,
+          55
+        ],
+        "report": "docs/blueprint-validation.md#tl-045"
+      }
+    },
+    "proposed": {
+      "id": "tl-045",
+      "chapter": 5,
+      "lo": "FL-5.3.2",
+      "level": "K2",
+      "topic": "Test reporting",
+      "type": "single",
+      "required": 1,
+      "text": {
+        "en": "System testing is still in progress. Coverage is behind plan, an environment outage blocks work, and a high-risk area remains untested. Management must decide whether to adjust resources. Which report best supports this decision?",
+        "pt": "O teste de sistema ainda está em curso. A cobertura está abaixo do planeado, uma indisponibilidade do ambiente bloqueia o trabalho e uma área de risco elevado ainda não foi testada. A gestão tem de decidir se ajusta os recursos. Que relatório melhor apoia esta decisão?"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "text": {
+            "en": "A completion report declaring that the test level has ended and all exit criteria have been met.",
+            "pt": "Um relatório de conclusão que declara que o nível de teste terminou e todos os critérios de saída foram cumpridos."
+          },
+          "explanation": {
+            "en": "The level is ongoing and an important area is untested; declaring completion contradicts the given situation.",
+            "pt": "O nível está em curso e uma área importante não foi testada; declarar a conclusão contradiz a situação apresentada."
+          }
+        },
+        {
+          "id": "o2",
+          "text": {
+            "en": "A defect report describing only one observed application failure.",
+            "pt": "Um relatório de defeito que descreve apenas uma falha observada na aplicação."
+          },
+          "explanation": {
+            "en": "A single defect report does not summarise progress against plan, environment impediments and the remaining test risk.",
+            "pt": "Um relatório de um único defeito não resume o progresso face ao plano, os impedimentos do ambiente e o risco de teste restante."
+          }
+        },
+        {
+          "id": "o3",
+          "text": {
+            "en": "A progress report showing the reporting period, plan deviations, impediments, risk changes and planned next work.",
+            "pt": "Um relatório de progresso que apresenta o período reportado, os desvios do plano, os impedimentos, as alterações de risco e o trabalho seguinte planeado."
+          },
+          "explanation": {
+            "en": "Progress reports provide information during testing to support control decisions such as changing resources or schedule.",
+            "pt": "Os relatórios de progresso fornecem informação durante os testes para apoiar decisões de controlo, como alterar recursos ou calendário."
+          }
+        },
+        {
+          "id": "o4",
+          "text": {
+            "en": "A progress report listing individual activity totals without plan deviations, impediments or risk information.",
+            "pt": "Um relatório de progresso que lista totais de atividade individuais sem desvios do plano, impedimentos ou informação sobre riscos."
+          },
+          "explanation": {
+            "en": "Activity totals alone omit the evidence management needs to judge the stated resource and risk problem.",
+            "pt": "Os totais de atividade, por si só, omitem a evidência de que a gestão precisa para avaliar o problema de recursos e risco descrito."
+          }
+        }
+      ],
+      "correct": [
+        "o3"
+      ],
+      "explanation": {
+        "en": "During ongoing testing, a progress report communicates deviations, impediments and risks so stakeholders can make control decisions. A completion report serves a different point in the test lifecycle.",
+        "pt": "Durante os testes em curso, um relatório de progresso comunica desvios, impedimentos e riscos para os stakeholders poderem tomar decisões de controlo. Um relatório de conclusão corresponde a outro momento do ciclo de teste."
+      },
+      "origin": "original",
+      "syllabus": "4.0.1",
+      "version": 1,
+      "review": "AI_REVIEWED",
+      "translationReview": "AI_REVIEWED",
+      "humanApproval": "PENDING",
+      "examEligible": true,
+      "tags": [],
+      "academicReview": {
+        "method": "AI_REVIEWED",
+        "status": "PASS",
+        "reviewedAt": "2026-10-27",
+        "section": "5.3.2",
+        "pages": [
+          54,
+          55
+        ],
+        "report": "docs/blueprint-validation.md#tl-045"
+      }
+    },
+    "changed": false
+  }
+]

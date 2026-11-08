@@ -1,0 +1,184 @@
+{
+  "command": [
+    "node",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit"
+  ],
+  "startedUTC": "2026-11-08T11:32:51.756771+00:00",
+  "finishedUTC": "2026-11-08T11:32:58.452788+00:00",
+  "exitCode": 0,
+  "wallSeconds": 6.695,
+  "logicalProcessors": 16,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "otherNodeProcessesAtStart": [
+    {
+      "pid": 32172,
+      "name": "node.exe"
+    },
+    {
+      "pid": 39568,
+      "name": "node.exe"
+    },
+    {
+      "pid": 54400,
+      "name": "node.exe"
+    },
+    {
+      "pid": 84468,
+      "name": "node.exe"
+    },
+    {
+      "pid": 18300,
+      "name": "node.exe"
+    },
+    {
+      "pid": 58240,
+      "name": "node.exe"
+    },
+    {
+      "pid": 81832,
+      "name": "node.exe"
+    },
+    {
+      "pid": 139872,
+      "name": "node.exe"
+    }
+  ],
+  "systemBefore": {
+    "idle": 59165018593750,
+    "kernel": 60323556250000,
+    "user": 1387645312500,
+    "availablePhysicalBytes": 1070825472,
+    "totalPhysicalBytes": 13628198912,
+    "memoryLoadPercent": 92
+  },
+  "systemAfter": {
+    "idle": 59165799375000,
+    "kernel": 60324425625000,
+    "user": 1387853906250,
+    "availablePhysicalBytes": 1023197184,
+    "totalPhysicalBytes": 13628198912,
+    "memoryLoadPercent": 92
+  },
+  "systemBusyPercentDuringRun": 27.57,
+  "sampledProcessTreePeakWorkingSetBytes": 575967232,
+  "sampledProcessTreeCPUSecondsLowerBound": 11.594,
+  "resourceSamples": [
+    {
+      "elapsedSeconds": 0.096,
+      "activeTreeProcesses": 1,
+      "treeWorkingSetBytes": 27922432
+    },
+    {
+      "elapsedSeconds": 0.388,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 80719872
+    },
+    {
+      "elapsedSeconds": 0.679,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 131182592
+    },
+    {
+      "elapsedSeconds": 0.97,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 173547520
+    },
+    {
+      "elapsedSeconds": 1.257,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 230707200
+    },
+    {
+      "elapsedSeconds": 1.551,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 315768832
+    },
+    {
+      "elapsedSeconds": 1.837,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 335347712
+    },
+    {
+      "elapsedSeconds": 2.122,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 386580480
+    },
+    {
+      "elapsedSeconds": 2.409,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 407416832
+    },
+    {
+      "elapsedSeconds": 2.691,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 415457280
+    },
+    {
+      "elapsedSeconds": 2.982,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 479629312
+    },
+    {
+      "elapsedSeconds": 3.27,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 483856384
+    },
+    {
+      "elapsedSeconds": 3.561,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 496541696
+    },
+    {
+      "elapsedSeconds": 3.851,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 502423552
+    },
+    {
+      "elapsedSeconds": 4.144,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 511578112
+    },
+    {
+      "elapsedSeconds": 4.438,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 514662400
+    },
+    {
+      "elapsedSeconds": 4.735,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 521908224
+    },
+    {
+      "elapsedSeconds": 5.024,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 524972032
+    },
+    {
+      "elapsedSeconds": 5.324,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 531030016
+    },
+    {
+      "elapsedSeconds": 5.616,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 534183936
+    },
+    {
+      "elapsedSeconds": 5.909,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 540368896
+    },
+    {
+      "elapsedSeconds": 6.2,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 552177664
+    },
+    {
+      "elapsedSeconds": 6.49,
+      "activeTreeProcesses": 2,
+      "treeWorkingSetBytes": 575967232
+    }
+  ],
+  "measurementLimit": "Read-only Windows counters sampled every250ms; short-lived processes may be missed. CPU is observed lower bound; system busy includes unrelated applications. Historical failed run has no equivalent resource counters."
+}

@@ -1,0 +1,20 @@
+{
+  "atUTC": "2026-11-08T12:45:10.625Z",
+  "projects": [
+    {
+      "id": "prj_lE5DcKsY473SnniV0CXXMC1aBx3w",
+      "name": "testlearn",
+      "repo": "gabrielsouza80/TestLearn",
+      "productionBranch": "main",
+      "ssoProtection": {
+        "deploymentType": "prod_deployment_urls_and_all_previews"
+      }
+    }
+  ],
+  "pagination": {
+    "count": 3,
+    "next": null,
+    "prev": 1793894678068
+  },
+  "billingPlan": "hobby"
+}

@@ -1,0 +1,372 @@
+[
+  {
+    "id": "tl-047",
+    "lo": "FL-4.2.2",
+    "level": "K3",
+    "text": {
+      "en": "A control accepts only integer inputs in domain 0 to 30 inclusive; values outside this domain cannot be entered and must not be tested. Within the domain, reject 0–7, accept 8–22, and reject 23–30. The six partition boundaries 0,7,8,22,23,30 have already been tested for two-value BVA. To reach full three-value BVA of all partitions, using only neighbours within the domain, which minimal additional set is needed?",
+      "pt": "Um controlo permite apenas entradas inteiras no domínio de 0 a 30 inclusive; os valores fora deste domínio não podem ser introduzidos nem devem ser testados. Dentro do domínio, rejeita 0–7, aceita 8–22 e rejeita 23–30. As seis fronteiras das partições 0,7,8,22,23,30 já foram testadas para BVA de 2 valores. Para alcançar cobertura completa de BVA de 3 valores de todas as partições, usando apenas vizinhos dentro do domínio, que conjunto adicional mínimo é necessário?"
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "0, 7, 8, 22, 23, 30",
+          "pt": "0, 7, 8, 22, 23, 30"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "-1, 1, 6, 9, 21, 24, 29, 31",
+          "pt": "-1, 1, 6, 9, 21, 24, 29, 31"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "6, 9, 21, 24",
+          "pt": "6, 9, 21, 24"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "1, 6, 9, 21, 24, 29",
+          "pt": "1, 6, 9, 21, 24, 29"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-071",
+    "lo": "FL-4.2.1",
+    "level": "K3",
+    "text": {
+      "en": "An archive service classifies integer retention days into four partitions: below 2, 2–14, 15–45, above 45. Format partitions are PDF, CSV and any other format. Each field is evaluated independently, including invalid values; one invalid field does not mask the other. Existing tests are (7, PDF) and (30, CSV). Which minimum additional pair achieves Each Choice coverage of all seven partitions?",
+      "pt": "Um serviço de arquivo classifica dias de conservação inteiros em quatro partições: abaixo de 2, 2–14, 15–45 e acima de 45. As partições do formato são PDF, CSV e qualquer outro formato. Cada campo é avaliado independentemente, incluindo valores inválidos; um campo inválido não oculta o outro. Os testes existentes são (7, PDF) e (30, CSV). Que par adicional mínimo atinge cobertura de Cada Escolha (Each Choice) das sete partições?"
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "(1, XML); (46, PDF)",
+          "pt": "(1, XML); (46, PDF)"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "(2, XML); (45, PDF)",
+          "pt": "(2, XML); (45, PDF)"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "(1, PDF); (46, CSV)",
+          "pt": "(1, PDF); (46, CSV)"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "(1, XML); (15, CSV)",
+          "pt": "(1, XML); (15, CSV)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-073",
+    "lo": "FL-4.2.4",
+    "level": "K3",
+    "text": {
+      "en": "A publication starts in Review. Its valid transitions are listed below; all other state/event pairs are invalid. A single test must finish in Published and cover every valid transition at least once. Which sequence is a shortest test meeting both requirements?",
+      "pt": "Uma publicação começa em Revisão. As transições válidas estão listadas abaixo; todos os outros pares estado/evento são inválidos. Um único teste tem de terminar em Publicada e cobrir cada transição válida pelo menos uma vez. Que sequência é um teste mais curto que satisfaz ambos os requisitos?"
+    },
+    "table": {
+      "headers": ["Source / Origem", "Event / Evento", "Target / Destino"],
+      "rows": [
+        ["Review / Revisão", "approve", "Approved / Aprovada"],
+        ["Review / Revisão", "return", "Returned / Devolvida"],
+        ["Returned / Devolvida", "resubmit", "Review / Revisão"],
+        ["Approved / Aprovada", "revoke", "Review / Revisão"],
+        ["Approved / Aprovada", "publish", "Published / Publicada"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "return, resubmit, approve, revoke, approve, publish",
+          "pt": "return, resubmit, approve, revoke, approve, publish"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "approve, revoke, resubmit, return, approve, publish",
+          "pt": "approve, revoke, resubmit, return, approve, publish"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "return, resubmit, approve, publish",
+          "pt": "return, resubmit, approve, publish"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "approve, revoke, approve, publish",
+          "pt": "approve, revoke, approve, publish"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-074",
+    "lo": "FL-4.5.3",
+    "level": "K3",
+    "text": {
+      "en": "Before implementation, a library team agrees: renewal is allowed when the requester is the borrower, there is no reservation and the prior renewal count is below 2. Success increments that count; refusal leaves it unchanged. Existing acceptance tests cover (borrower, no reservation, count 1) → success/count 2 and (borrower, reservation, count 0) → refusal/count 0. Which pair correctly adds tests for the two untested refusal rules? All proposed new cases have no reservation.",
+      "pt": "Antes da implementação, uma equipa de biblioteca acorda: a renovação é permitida quando o requerente é o titular do empréstimo, não há reserva e a contagem anterior de renovações é inferior a 2. O sucesso incrementa essa contagem; a recusa mantém-na. Os testes de aceitação existentes cobrem (titular, sem reserva, contagem 1) → sucesso/contagem 2 e (titular, com reserva, contagem 0) → recusa/contagem 0. Que par acrescenta corretamente testes para as duas regras de recusa ainda não testadas? Todos os novos casos propostos são sem reserva."
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "Other requester/count 0 → refusal/0; borrower/count 2 → success/3.",
+          "pt": "Outro requerente/contagem 0 → recusa/0; titular/contagem 2 → sucesso/3."
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "Other requester/count 0 → success/1; borrower/count 2 → refusal/2.",
+          "pt": "Outro requerente/contagem 0 → sucesso/1; titular/contagem 2 → recusa/2."
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "Borrower/count 0 → success/1; borrower/count 2 → refusal/2.",
+          "pt": "Titular/contagem 0 → sucesso/1; titular/contagem 2 → recusa/2."
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "Other requester/count 0 → refusal/0; borrower/count 2 → refusal/2.",
+          "pt": "Outro requerente/contagem 0 → recusa/0; titular/contagem 2 → recusa/2."
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-076",
+    "lo": "FL-5.1.4",
+    "level": "K3",
+    "text": {
+      "en": "Two testing tasks have the independent effort estimates shown below, in person-hours. Use the standard three-point weighted mean for each task. Both tasks must be completed, their efforts are additive, and a separate fixed setup effort of 3 person-hours is not included in either estimate. What is the total estimated effort including setup?",
+      "pt": "Duas tarefas de teste têm as estimativas independentes de esforço abaixo, em pessoas-hora. Use a média ponderada padrão de três pontos para cada tarefa. Ambas têm de ser concluídas, os esforços são aditivos e um esforço fixo separado de preparação de 3 pessoas-hora não está incluído em nenhuma estimativa. Qual é o esforço total estimado, incluindo a preparação?"
+    },
+    "table": {
+      "headers": [
+        "Task / Tarefa",
+        "Optimistic / Otimista",
+        "Most likely / Mais provável",
+        "Pessimistic / Pessimista"
+      ],
+      "rows": [
+        ["X", "3", "6", "15"],
+        ["Y", "2", "5", "8"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o3",
+        "text": {
+          "en": "15 person-hours",
+          "pt": "15 pessoas-hora"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "12 person-hours",
+          "pt": "12 pessoas-hora"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "14 person-hours",
+          "pt": "14 pessoas-hora"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "16 person-hours",
+          "pt": "16 pessoas-hora"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-077",
+    "lo": "FL-5.1.5",
+    "level": "K3",
+    "text": {
+      "en": "One tester runs one test in each numbered slot. Every test takes one slot and dependencies must have completed in earlier slots. C's environment is available from slot 3 onward; all other resources are available from slot 1. At each slot choose the highest-risk test among those currently runnable, without reserving slots. Which order follows this rule?",
+      "pt": "Um testador executa um teste em cada intervalo numerado. Cada teste ocupa um intervalo e as dependências têm de ter terminado em intervalos anteriores. O ambiente de C está disponível a partir do intervalo 3; os restantes recursos estão disponíveis desde o intervalo 1. Em cada intervalo escolhe-se o teste de maior risco entre os executáveis nesse momento, sem reservar intervalos. Que ordem segue esta regra?"
+    },
+    "table": {
+      "headers": ["Test / Teste", "Risk / Risco", "Dependency / Dependência"],
+      "rows": [
+        ["A", "4", "—"],
+        ["B", "9", "A"],
+        ["C", "7", "—"],
+        ["D", "5", "—"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o4",
+        "text": {
+          "en": "C, D, A, B",
+          "pt": "C, D, A, B"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "D, A, B, C",
+          "pt": "D, A, B, C"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "D, A, C, B",
+          "pt": "D, A, C, B"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "A, B, C, D",
+          "pt": "A, B, C, D"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-086",
+    "lo": "FL-4.2.2",
+    "level": "K3",
+    "text": {
+      "en": "An integer quota has domain 0–30 inclusive and the four partitions below. Scope is restricted to internal boundaries between adjacent partitions; domain endpoints are not coverage targets. Use 3-value BVA: each internal boundary value and both integer neighbours are coverage items, including both sides of each partition change. Existing tests are 3, 4, 6, 10, 12, 19, 20, 22. Which minimum additional set completes the scoped coverage?",
+      "pt": "Uma quota inteira tem domínio 0–30 inclusive e as quatro partições abaixo. O âmbito restringe-se às fronteiras internas entre partições adjacentes; os extremos do domínio não são alvos de cobertura. Usar BVA de 3 valores: cada valor de fronteira interna e ambos os vizinhos inteiros são itens de cobertura, incluindo ambos os lados de cada mudança de partição. Os testes existentes são 3, 4, 6, 10, 12, 19, 20, 22. Que conjunto adicional mínimo completa a cobertura definida?"
+    },
+    "table": {
+      "headers": ["Tier / Nível", "Integer interval / Intervalo inteiro"],
+      "rows": [
+        ["L0", "0–4"],
+        ["L1", "5–11"],
+        ["L2", "12–20"],
+        ["L3", "21–30"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o1",
+        "text": {
+          "en": "5, 11, 13, 21",
+          "pt": "5, 11, 13, 21"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "0, 5, 21, 30",
+          "pt": "0, 5, 21, 30"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "5, 11, 13, 20",
+          "pt": "5, 11, 13, 20"
+        }
+      },
+      {
+        "id": "o2",
+        "text": {
+          "en": "5, 11, 21",
+          "pt": "5, 11, 21"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tl-087",
+    "lo": "FL-4.2.3",
+    "level": "K3",
+    "text": {
+      "en": "A delivery gateway uses the complete decision table below. S means sender trusted, Q means within quota and R means retry allowed. T/F are true/false and – is irrelevant; each column is a feasible rule. Executed (S,Q,R) cases are (T,T,F), (F,T,F), (T,T,T), (F,F,T), (T,F,T). Measuring coverage by distinct feasible columns, which answer gives the current coverage and one additional case that completes it?",
+      "pt": "Um gateway de entrega usa a tabela de decisão completa abaixo. S significa remetente de confiança, Q significa dentro da quota e R significa repetição permitida. T/F são verdadeiro/falso e – é irrelevante; cada coluna é uma regra viável. Os casos (S,Q,R) executados são (T,T,F), (F,T,F), (T,T,T), (F,F,T), (T,F,T). Medindo a cobertura por colunas viáveis distintas, que resposta indica a cobertura atual e um caso adicional que a completa?"
+    },
+    "table": {
+      "headers": [
+        "Condition / action · Condição / ação",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "rows": [
+        ["S", "T", "T", "T", "F"],
+        ["Q", "T", "F", "F", "–"],
+        ["R", "–", "T", "F", "–"],
+        ["Send / Enviar", "X", "", "", ""],
+        ["Queue / Colocar em fila", "", "X", "", ""],
+        ["Reject quota / Rejeitar por quota", "", "", "X", ""],
+        ["Reject sender / Rejeitar remetente", "", "", "", "X"]
+      ]
+    },
+    "options": [
+      {
+        "id": "o2",
+        "text": {
+          "en": "75%; (T,F,F)",
+          "pt": "75%; (T,F,F)"
+        }
+      },
+      {
+        "id": "o3",
+        "text": {
+          "en": "100%; no additional case",
+          "pt": "100%; nenhum caso adicional"
+        }
+      },
+      {
+        "id": "o1",
+        "text": {
+          "en": "62.5%; (T,F,F)",
+          "pt": "62.5%; (T,F,F)"
+        }
+      },
+      {
+        "id": "o4",
+        "text": {
+          "en": "75%; (T,F,T)",
+          "pt": "75%; (T,F,T)"
+        }
+      }
+    ]
+  }
+]

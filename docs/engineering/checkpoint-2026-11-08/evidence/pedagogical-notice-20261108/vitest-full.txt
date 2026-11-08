@@ -1,0 +1,29 @@
+
+ RUN  v4.1.12 C:/TestLearn/tmp/develop-workspace
+
+ ❯ tests/unit/blueprint.test.ts (16 tests | 1 failed) 16220ms
+     × generates compliant examinations for 1,000 deterministic seeds with genuine pool variations 16089ms
+
+ Test Files  1 failed | 34 passed (35)
+      Tests  1 failed | 281 passed (282)
+   Start at  01:21:53
+   Duration  20.88s (transform 12.96s, setup 16.31s, import 31.95s, tests 96.87s, environment 77.94s)
+
+
+STDERR
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/blueprint.test.ts > official CTFL blueprint v1.19 (structural only) > generates compliant examinations for 1,000 deterministic seeds with genuine pool variations
+Error: Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/unit/blueprint.test.ts:78:3
+     76|     ]);
+     77|   });
+     78|   it('generates compliant examinations for 1,000 deterministic seeds w…
+       |   ^
+     79|     const combinations = new Set<string>();
+     80|     const orders = new Set<string>();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

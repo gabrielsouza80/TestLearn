@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "C:/TestLearn/tmp/pedagogical-e2e-recovery-20261108/constraint-probes.cjs"
+  ],
+  "startedUTC": "2026-11-08T12:02:51.786497+00:00",
+  "finishedUTC": "2026-11-08T12:02:54.375639+00:00",
+  "wallSeconds": 2.59,
+  "exitCode": 1
+}

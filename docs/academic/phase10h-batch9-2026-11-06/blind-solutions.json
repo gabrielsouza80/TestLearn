@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-11-06T14:15:35.595829+00:00",
+  "method": "AI pre-key review, not independent human SME certification. Only deterministic SHA-256-shuffled PT/ENprojection read before recording; stored keys/explanations not displayed. User focus hints known. Full bank privately recorded for later preservation comparison but not used for derivation. Procedural blind-to-key in this execution, not proof of no prior model knowledge.",
+  "projectionSHA256": "ed6bfacc6bc3118fb8e077531369a8914b44c63561d453f576632e5ec2216aee",
+  "solutions": [
+    {
+      "questionId": "tl-024",
+      "answer": ["o1"],
+      "derivation": "The request explicitly requires initial context, trigger and observable expected outcome. Given an empty basket supplies context; when opened supplies the event; showing zero supplies the result. The zero rule ino3is valid rule-oriented acceptance wording but lacks an explicit action, so does not best satisfy this specific request. o2is a sum rule rather than the requested scenario; o4names a trigger and internal service call but not starting empty context or an observable expected total. Unique offered matcho1; no universal requirement that all acceptance criteria useGiven/When/Then."
+    },
+    {
+      "questionId": "tl-030",
+      "answer": ["o1"],
+      "derivation": "A conventional test pyramid generally favours many small/isolated low-level tests and fewer large end-to-end tests. Generally preserves contextual variation, not a universal quota. o2inverts the pyramid; o3equal counts lack the pyramidal distribution; o4is integration-heavy rather than the conventional pyramid. Low-level describes granularity/scope, not low quality; small/large are not promised numeric sizes."
+    },
+    {
+      "questionId": "tl-032",
+      "answer": ["o1"],
+      "derivation": "Available environment before system-testing start is an entry criterion; stakeholder residual-risk acceptance before declaring testing complete is an exit criterion in this scenario. o2reverses temporal roles; o3mislabels the completion condition; o4mislabels the start condition. Risk acceptance is a local stated completion requirement, not proof of absence of defects or a universal sufficient release gate."
+    },
+    {
+      "questionId": "tl-033",
+      "answer": ["o1"],
+      "derivation": "The statement asks which possibility is a product risk. Incorrect tax in an invoice affects product functional correctness. Staff loss, late environment and supplier delay threaten project delivery/resources. The present-tense invoice example is scoped as a possible event, not a confirmed existing defect; invoice calculates is shorthand for invoicing functionality, not a physical paper calculating. Project risks can indirectly affect product quality without changing the primary classification of these offered examples."
+    },
+    {
+      "questionId": "tl-040",
+      "answer": ["o1"],
+      "derivation": "Underestimating maintenance effort for automated scripts is a risk, unlike reduced repetitive work, greater repeatability and useful automated metrics, which are potential benefits. Maintenance effort itself is an expected cost; underestimating it creates planning/budget/sustainability risk. Benefits are not guaranteed, but alternative unforeseen costs do not reverse the requested risk-versus-benefit polarity."
+    },
+    {
+      "questionId": "tl-044",
+      "answer": ["o4"],
+      "derivation": "Business representatives challenge a running dashboard against user workflow/needs: business-facing and product-critique, henceQ3. Q1is technology-facing team support;Q2business-facing team support rather than evaluating implemented product;Q4technology-facing critique. Working means operational, not proven correct;critique means reasoned evaluation, not gratuitous negativity. The four options’ quadrant number/axes must be checked against official model."
+    },
+    {
+      "questionId": "tl-055",
+      "answer": ["o1"],
+      "derivation": "Static review identifies conflicting retention rules and the owner resolves them before code/test derivation. This prevents those conflicting rules from being propagated in this stated case and reduces potential later rework; it does not guarantee every downstream artifact or outcome. o2invented runtime compliance evidence; o3invented executed regression results; o4claims either incompatible rule satisfies needs without evidence. Retention/conservação refers to keeping data for policy-defined periods, without inventing a legal retention duration."
+    },
+    {
+      "questionId": "tl-056",
+      "answer": ["o3"],
+      "derivation": "Weekly feedback from intended warehouse users during workflow evolution can reveal misunderstood needs early and reduce rework risk. It neither makes later requirements changes unnecessary nor replaces acceptance criteria nor proves every staff member will accept final implementation. Weekly is this example’s frequency, not a universally required cadence. Picking versus broader preparação de encomendas has lexical scope difference but does not change the feedback principle."
+    }
+  ]
+}
